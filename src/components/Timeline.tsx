@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useEditor, newClipId, projectDuration, snapTime, clipDisplayDur } from '../state/editorStore';
 import type { Clip, Track } from '../types';
 import { formatTime } from '../utils/media';
+import { WhisperDialog } from './WhisperDialog';
 
 const TRACK_HEADER_W = 150;
 const RULER_H = 28;
@@ -33,6 +34,8 @@ export function Timeline() {
   const clipGroupId = useEditor((s) => s.clipGroupId);
   const subtitles = useEditor((s) => s.subtitles);
   const subtitleSelection = useEditor((s) => s.subtitleSelection);
+  const [whisperOpen, setWhisperOpen] = useState(false);
+  const onOpenWhisper = () => setWhisperOpen(true);
   const addSubtitle = useEditor((s) => s.addSubtitle);
   const updateSubtitle = useEditor((s) => s.updateSubtitle);
   const removeSubtitle = useEditor((s) => s.removeSubtitle);
@@ -330,8 +333,6 @@ export function Timeline() {
             onAdd={(t) => {
               const id = addSubtitle({ start: t });
               useEditor.getState().setSubtitleSelection([id]);
-              // Park the playhead inside the new subtitle so it's visible
-              // on the canvas the moment it's created.
               setPlayhead(t + 0.05);
             }}
             onSelect={(id, additive) => {
@@ -340,6 +341,7 @@ export function Timeline() {
               if (sub) setPlayhead(sub.start + 0.05);
             }}
             onUpdate={(id, p) => updateSubtitle(id, p)}
+            onAutoGenerate={onOpenWhisper}
           />
           <div className="tracks" onMouseDown={startMarquee}>
             {tracks.map((track) => {
@@ -425,6 +427,7 @@ export function Timeline() {
         <span>플레이헤드: {formatTime(playhead)}</span>
         <span>길이: {formatTime(duration)}</span>
       </div>
+      {whisperOpen && <WhisperDialog onClose={() => setWhisperOpen(false)} />}
     </div>
   );
 }
@@ -796,6 +799,7 @@ function SubtitleTrack({
   onAdd,
   onSelect,
   onUpdate,
+  onAutoGenerate,
 }: {
   width: number;
   pps: number;
@@ -804,6 +808,7 @@ function SubtitleTrack({
   onAdd: (timelineSec: number) => void;
   onSelect: (id: string, additive: boolean) => void;
   onUpdate: (id: string, patch: Partial<import('../types').Subtitle>) => void;
+  onAutoGenerate: () => void;
 }) {
   const SUB_TRACK_HEIGHT = 36;
   return (
@@ -818,6 +823,9 @@ function SubtitleTrack({
             title="플레이헤드에 자막 추가"
           >
             + 자막
+          </button>
+          <button onClick={onAutoGenerate} title="음성 인식으로 자막 자동 생성 (Whisper)">
+            🎙 자동
           </button>
         </div>
       </div>

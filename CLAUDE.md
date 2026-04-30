@@ -121,6 +121,24 @@ Each `MediaAsset` may carry a `waveform: number[]` (packed `[min, max]` pairs) p
 
 The `Waveform` SVG component in `Timeline.tsx` slices the peaks for the clip's `[inPoint, outPoint]` range and emits one vertical line per output column. `preserveAspectRatio="none"` makes it stretch to the clip's pixel width without re-rendering when zoom changes.
 
+## Whisper auto-subtitles
+
+`src/utils/whisper.ts` wraps `@xenova/transformers` (lazy-loaded via dynamic import — kept out of the main bundle so users who never run transcription don't pay the ~830 KB cost). The flow:
+
+1. `extractAudioForWhisper(file)` — `AudioContext.decodeAudioData` on the asset's File, then `OfflineAudioContext` resamples to **16 kHz mono** (Whisper's required input format).
+2. `transcribe(audio, { model, language })` — first call downloads the model (40–500 MB cached in browser) and instantiates the ASR pipeline. Subsequent calls reuse the cached pipeline if model didn't change.
+3. Returns `TranscriptionChunk[]` with `start/end` in source-media seconds + `text`.
+
+`WhisperDialog` is opened from the **🎙 자동** button in the T1 subtitle track header. The user picks a clip (must have audio and not be an image), language, and model size. After processing, each chunk becomes a `Subtitle` with timeline mapping:
+
+```
+timelineStart = clip.start + chunk.start / clip.speed
+```
+
+Defaults are styled for video subs: ~white text with black outline + semi-transparent black background box, positioned at lower-third (`y = canvas.height * 0.38`).
+
+Models are served from HuggingFace; the `coi-serviceworker` rewrites response headers so cross-origin caching plays nicely with the COEP=`require-corp` page environment.
+
 ## Subtitles / text overlays
 
 `Subtitle` is a top-level entity in `state.subtitles: Record<string, Subtitle>` — independent from clips, rendered on a single dedicated "T1 자막" track that always appears above video tracks. `state.subtitleSelection` is mutually exclusive with `state.selection` (clips); selecting a subtitle clears the clip selection and vice-versa, so the properties panel can pick the right editor based on which is non-empty.
