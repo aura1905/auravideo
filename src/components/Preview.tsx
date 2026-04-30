@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef } from 'react';
 import { useEditor, projectDuration } from '../state/editorStore';
 import type { Clip } from '../types';
 import { formatTime } from '../utils/media';
+import { paintSubtitle } from '../utils/drawSubtitle';
 
 interface ClipMediaState {
   el: HTMLVideoElement;
@@ -243,26 +244,7 @@ function drawSubtitles(
     if (alpha <= 0) continue;
     ctx.save();
     ctx.globalAlpha = Math.max(0, Math.min(1, alpha));
-    const weight = s.bold ? 'bold' : 'normal';
-    const style = s.italic ? 'italic' : 'normal';
-    ctx.font = `${style} ${weight} ${s.fontSize}px sans-serif`;
-    ctx.textBaseline = 'middle';
-    ctx.textAlign = s.align;
-    const cx = W / 2 + s.x;
-    const cy = H / 2 + s.y;
-    // Multi-line support: split on \n and stack vertically.
-    const lines = s.text.split(/\r?\n/);
-    const lineHeight = s.fontSize * 1.2;
-    const totalH = lineHeight * lines.length;
-    const topY = cy - totalH / 2 + lineHeight / 2;
-    if (s.outline > 0) {
-      ctx.strokeStyle = '#000';
-      ctx.lineWidth = s.outline * 2;
-      ctx.lineJoin = 'round';
-      lines.forEach((line, i) => ctx.strokeText(line, cx, topY + i * lineHeight));
-    }
-    ctx.fillStyle = s.color;
-    lines.forEach((line, i) => ctx.fillText(line, cx, topY + i * lineHeight));
+    paintSubtitle(ctx, W, H, s);
     ctx.restore();
   }
 }

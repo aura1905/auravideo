@@ -1,5 +1,6 @@
 import { useEditor } from '../state/editorStore';
 import type { Clip, Subtitle } from '../types';
+import { FONT_PRESETS } from '../utils/drawSubtitle';
 
 export function PropertiesPanel() {
   const selection = useEditor((s) => s.selection);
@@ -322,6 +323,26 @@ function SubtitleProps({
         decimals={0}
         onChange={(v) => apply({ fontSize: v })}
       />
+      <Field label="폰트">
+        <select
+          value={first.fontFamily ?? 'sans-serif'}
+          onChange={(e) => apply({ fontFamily: e.target.value })}
+        >
+          {FONT_PRESETS.map((f) => (
+            <option key={f.value} value={f.value}>
+              {f.label}
+            </option>
+          ))}
+        </select>
+      </Field>
+      <Field label="폰트 (직접 입력)">
+        <input
+          type="text"
+          value={first.fontFamily ?? ''}
+          onChange={(e) => apply({ fontFamily: e.target.value })}
+          placeholder='예: "Pretendard", sans-serif'
+        />
+      </Field>
       <Field label="색상">
         <input type="color" value={first.color} onChange={(e) => apply({ color: e.target.value })} />
       </Field>
@@ -383,6 +404,55 @@ function SubtitleProps({
       <Field label="기울임">
         <input type="checkbox" checked={first.italic} onChange={(e) => apply({ italic: e.target.checked })} />
       </Field>
+      <details className="props-section" open={!!first.bgColor}>
+        <summary>배경 박스</summary>
+        <Field label="배경 사용">
+          <input
+            type="checkbox"
+            checked={!!first.bgColor}
+            onChange={(e) => apply({ bgColor: e.target.checked ? '#000000' : '' })}
+          />
+        </Field>
+        {first.bgColor && (
+          <>
+            <Field label="배경 색">
+              <input
+                type="color"
+                value={first.bgColor || '#000000'}
+                onChange={(e) => apply({ bgColor: e.target.value })}
+              />
+            </Field>
+            <SliderInput
+              label="불투명도 (%)"
+              value={(first.bgOpacity ?? 0.65) * 100}
+              min={0}
+              max={100}
+              step={1}
+              decimals={0}
+              suffix="%"
+              onChange={(v) => apply({ bgOpacity: v / 100 })}
+            />
+            <SliderInput
+              label="패딩 (px)"
+              value={first.bgPadding ?? 12}
+              min={0}
+              max={100}
+              step={1}
+              decimals={0}
+              onChange={(v) => apply({ bgPadding: v })}
+            />
+            <Field label="박스 너비">
+              <select
+                value={first.bgWidth ?? 'text'}
+                onChange={(e) => apply({ bgWidth: e.target.value as Subtitle['bgWidth'] })}
+              >
+                <option value="text">텍스트 폭</option>
+                <option value="full">전체 폭 (lower-third)</option>
+              </select>
+            </Field>
+          </>
+        )}
+      </details>
     </div>
   );
 }

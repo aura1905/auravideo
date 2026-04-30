@@ -86,6 +86,14 @@ export interface Subtitle {
   // Optional black outline thickness for legibility against any background.
   // 0 = no outline.
   outline: number;
+  // CSS font-family. Default 'sans-serif'. Stored as a CSS font-family string
+  // so users can pick from a curated list or type their own.
+  fontFamily: string;
+  // Background box behind the text. Empty/falsy = no box.
+  bgColor: string;
+  bgOpacity: number;      // 0..1
+  bgPadding: number;      // px around the text
+  bgWidth: 'text' | 'full'; // text-fitted vs. full-canvas-width (lower-third)
 }
 
 export interface Track {

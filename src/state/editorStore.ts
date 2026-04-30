@@ -319,6 +319,11 @@ export const useEditor = create<EditorState>()(
       bold: s.bold ?? false,
       italic: s.italic ?? false,
       outline: s.outline ?? 2,
+      fontFamily: s.fontFamily ?? 'sans-serif',
+      bgColor: s.bgColor ?? '',
+      bgOpacity: s.bgOpacity ?? 0.65,
+      bgPadding: s.bgPadding ?? 12,
+      bgWidth: s.bgWidth ?? 'text',
     };
     set((st) => ({ subtitles: { ...st.subtitles, [id]: sub } }));
     return id;

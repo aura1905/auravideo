@@ -1,6 +1,7 @@
 import { FFmpeg } from '@ffmpeg/ffmpeg';
 import { fetchFile, toBlobURL } from '@ffmpeg/util';
 import type { Clip, MediaAsset, Subtitle, Track, ProjectSettings } from '../types';
+import { paintSubtitle } from './drawSubtitle';
 
 // ffmpeg-core ESM files are copied into public/ffmpeg-core by a Vite plugin
 // (see vite.config.ts). Multi-threaded build: needs the worker file too, plus
@@ -65,26 +66,7 @@ async function renderSubtitleToPng(s: Subtitle, W: number, H: number): Promise<U
   c.height = H;
   const ctx = c.getContext('2d');
   if (!ctx) return null;
-  const weight = s.bold ? 'bold' : 'normal';
-  const style = s.italic ? 'italic' : 'normal';
-  ctx.font = `${style} ${weight} ${s.fontSize}px sans-serif`;
-  ctx.textBaseline = 'middle';
-  ctx.textAlign = s.align;
-  const cx = W / 2 + s.x;
-  const cy = H / 2 + s.y;
-  const lines = s.text.split(/\r?\n/);
-  const lineHeight = s.fontSize * 1.2;
-  const totalH = lineHeight * lines.length;
-  const topY = cy - totalH / 2 + lineHeight / 2;
-  if (s.outline > 0) {
-    ctx.strokeStyle = '#000';
-    ctx.lineWidth = s.outline * 2;
-    ctx.lineJoin = 'round';
-    lines.forEach((line, i) => ctx.strokeText(line, cx, topY + i * lineHeight));
-  }
-  ctx.fillStyle = s.color;
-  lines.forEach((line, i) => ctx.fillText(line, cx, topY + i * lineHeight));
-  // Encode to PNG
+  paintSubtitle(ctx, W, H, s);
   const blob: Blob | null = await new Promise((resolve) => c.toBlob((b) => resolve(b), 'image/png'));
   if (!blob) return null;
   const ab = await blob.arrayBuffer();
