@@ -82,6 +82,15 @@ export function MediaLibrary() {
       muted: false,
       speed: 1,
       audioTail: 0,
+      transformX: 0,
+      transformY: 0,
+      transformScale: 1,
+      transformRotation: 0,
+      transformOpacity: 1,
+      brightness: 0,
+      contrast: 1,
+      saturation: 1,
+      gamma: 1,
     };
     addClip(clip);
   };

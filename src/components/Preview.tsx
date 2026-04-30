@@ -312,14 +312,39 @@ function drawFrame(
         if (m.cacheValid) {
           const vw = m.cache.width || a.width || W;
           const vh = m.cache.height || a.height || H;
-          const scale = Math.min(W / vw, H / vh);
-          const dw = vw * scale;
-          const dh = vh * scale;
-          const dx = (W - dw) / 2;
-          const dy = (H - dh) / 2;
-          try {
-            ctx.drawImage(m.cache, dx, dy, dw, dh);
-          } catch {}
+          const baseScale = Math.min(W / vw, H / vh);
+          // User transform multiplies the fit-to-canvas scale.
+          const userScale = c.transformScale ?? 1;
+          const totalScale = baseScale * userScale;
+          const dw = vw * totalScale;
+          const dh = vh * totalScale;
+          const dx = (W - dw) / 2 + (c.transformX ?? 0);
+          const dy = (H - dh) / 2 + (c.transformY ?? 0);
+          ctx.globalAlpha = Math.max(0, Math.min(1, alpha * (c.transformOpacity ?? 1)));
+          // Color correction via canvas filter — fast, GPU-accelerated where
+          // available. Map our fields to the closest CSS filter primitives.
+          const br = c.brightness ?? 0;
+          const co = c.contrast ?? 1;
+          const sa = c.saturation ?? 1;
+          // CSS brightness: 1 = original, 0 = black, 2 = double
+          const cssBrightness = 1 + br;
+          const filterStr = `brightness(${cssBrightness.toFixed(3)}) contrast(${co.toFixed(3)}) saturate(${sa.toFixed(3)})`;
+          ctx.filter = filterStr;
+          const rot = c.transformRotation ?? 0;
+          if (rot !== 0) {
+            ctx.save();
+            ctx.translate(dx + dw / 2, dy + dh / 2);
+            ctx.rotate((rot * Math.PI) / 180);
+            try {
+              ctx.drawImage(m.cache, -dw / 2, -dh / 2, dw, dh);
+            } catch {}
+            ctx.restore();
+          } else {
+            try {
+              ctx.drawImage(m.cache, dx, dy, dw, dh);
+            } catch {}
+          }
+          ctx.filter = 'none';
         }
         ctx.globalAlpha = 1;
       } else if (head >= visualEnd && head < audioEnd && isPlaying) {

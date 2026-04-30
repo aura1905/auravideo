@@ -131,6 +131,114 @@ export function PropertiesPanel() {
           ))}
         </div>
       </Field>
+      <details className="props-section">
+        <summary>변환 (위치/크기/회전)</summary>
+        <SliderInput
+          label="X 오프셋 (px)"
+          value={first.transformX ?? 0}
+          min={-2000}
+          max={2000}
+          step={1}
+          decimals={0}
+          onChange={(v) => apply({ transformX: v })}
+        />
+        <SliderInput
+          label="Y 오프셋 (px)"
+          value={first.transformY ?? 0}
+          min={-2000}
+          max={2000}
+          step={1}
+          decimals={0}
+          onChange={(v) => apply({ transformY: v })}
+        />
+        <SliderInput
+          label="크기 (%)"
+          value={(first.transformScale ?? 1) * 100}
+          min={5}
+          max={400}
+          step={1}
+          decimals={0}
+          suffix="%"
+          onChange={(v) => apply({ transformScale: v / 100 })}
+        />
+        <SliderInput
+          label="회전 (°)"
+          value={first.transformRotation ?? 0}
+          min={-180}
+          max={180}
+          step={1}
+          decimals={0}
+          suffix="°"
+          onChange={(v) => apply({ transformRotation: v })}
+        />
+        <SliderInput
+          label="투명도 (%)"
+          value={(first.transformOpacity ?? 1) * 100}
+          min={0}
+          max={100}
+          step={1}
+          decimals={0}
+          suffix="%"
+          onChange={(v) => apply({ transformOpacity: v / 100 })}
+        />
+        <button
+          onClick={() =>
+            apply({
+              transformX: 0,
+              transformY: 0,
+              transformScale: 1,
+              transformRotation: 0,
+              transformOpacity: 1,
+            })
+          }
+        >
+          변환 리셋
+        </button>
+      </details>
+      <details className="props-section">
+        <summary>색 보정</summary>
+        <SliderInput
+          label="밝기"
+          value={first.brightness ?? 0}
+          min={-1}
+          max={1}
+          step={0.01}
+          decimals={2}
+          onChange={(v) => apply({ brightness: v })}
+        />
+        <SliderInput
+          label="대비"
+          value={first.contrast ?? 1}
+          min={0}
+          max={2}
+          step={0.01}
+          decimals={2}
+          onChange={(v) => apply({ contrast: v })}
+        />
+        <SliderInput
+          label="채도"
+          value={first.saturation ?? 1}
+          min={0}
+          max={3}
+          step={0.01}
+          decimals={2}
+          onChange={(v) => apply({ saturation: v })}
+        />
+        <SliderInput
+          label="감마"
+          value={first.gamma ?? 1}
+          min={0.1}
+          max={3}
+          step={0.01}
+          decimals={2}
+          onChange={(v) => apply({ gamma: v })}
+        />
+        <button
+          onClick={() => apply({ brightness: 0, contrast: 1, saturation: 1, gamma: 1 })}
+        >
+          색 보정 리셋
+        </button>
+      </details>
       {(() => {
         const onVideoTrack = tracks.find((t) => t.id === first.trackId)?.kind === 'video';
         if (!onVideoTrack || !asset?.hasAudio) return null;

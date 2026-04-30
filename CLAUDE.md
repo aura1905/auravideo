@@ -121,6 +121,22 @@ Each `MediaAsset` may carry a `waveform: number[]` (packed `[min, max]` pairs) p
 
 The `Waveform` SVG component in `Timeline.tsx` slices the peaks for the clip's `[inPoint, outPoint]` range and emits one vertical line per output column. `preserveAspectRatio="none"` makes it stretch to the clip's pixel width without re-rendering when zoom changes.
 
+## Visual transform (PIP, rotation, opacity)
+
+`Clip` carries `transformX`/`transformY` (px from canvas center), `transformScale` (1 = fit-to-canvas), `transformRotation` (degrees), `transformOpacity` (0..1). Apply via the **변환** collapsible section in the properties panel; reset button restores defaults.
+
+**Preview**: in `drawFrame` the cached frame is drawn at `(W - dw)/2 + transformX, (H - dh)/2 + transformY` where `dw = vw * baseScale * userScale`. Rotation uses `ctx.translate + rotate + drawImage(-dw/2,-dh/2,...)` around the clip center. Color correction is applied via `ctx.filter = brightness() contrast() saturate()` before the draw and reset to `'none'` after.
+
+**Export**: the per-clip filter chain is `trim → setpts → scale=W*userScale:H*userScale:force_original_aspect_ratio=decrease` (no longer pads to canvas — that's how PIP works), then optional `eq=brightness=:contrast=:saturation=:gamma=`, then `format=yuva420p`, optional `rotate=rad:c=black@0:ow=...:oh=...` with bounding-box expressions, optional `colorchannelmixer=aa=opacity` for static opacity, then fades, then `tpad`. Final `overlay` uses expressions `x=(main_w-overlay_w)/2+TX` so the rotated bounding box is centered correctly.
+
+## Color correction
+
+`brightness` (-1..1, FFmpeg eq additive), `contrast` (0..2, multiplicative around 0.5), `saturation` (0..3), `gamma` (0.1..3). Defaults are `0/1/1/1` (identity). The export filter is only emitted when at least one differs from default. Preview's CSS filter approximates the same look (it doesn't have a separate gamma primitive, so subtle gamma differences won't appear in preview but will in the final export).
+
+## PWA install
+
+`public/manifest.webmanifest` + `public/icon.svg` provide install eligibility. The existing `coi-serviceworker.js` satisfies the service-worker requirement. The topbar conditionally shows an "⬇ 앱 설치" button when the browser fires `beforeinstallprompt`; on click we call `prompt()` and dismiss the button regardless of the user's choice.
+
 ## Audio tail (L-cut)
 
 `Clip.audioTail` (seconds) extends a clip's audio playback past its visual end so background sound rings out smoothly across the next visual cut. Implementation principle: visual logic uses `visualEnd = start + displayDur` unchanged; **audio** logic uses `audioEnd = visualEnd + min(audioTail, tailCap)` where `tailCap = (asset.duration - outPoint) / speed` is what's actually available in the source media.

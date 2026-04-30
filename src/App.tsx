@@ -14,6 +14,7 @@ export function App() {
   const [saveOpen, setSaveOpen] = useState(false);
   const [openOpen, setOpenOpen] = useState(false);
   const [restored, setRestored] = useState(false);
+  const [installPrompt, setInstallPrompt] = useState<any>(null);
   const settings = useEditor((s) => s.settings);
   const setSettings = useEditor((s) => s.setSettings);
   const canUndo = useTemporal((t) => t.pastStates.length > 0);
@@ -27,6 +28,17 @@ export function App() {
   }, []);
   useAutosave(restored);
   useGlobalShortcuts();
+
+  // Capture the deferred install prompt so we can offer an explicit
+  // "Install app" button instead of relying on the browser's hidden UI.
+  useEffect(() => {
+    const onBeforeInstallPrompt = (e: Event) => {
+      e.preventDefault();
+      setInstallPrompt(e);
+    };
+    window.addEventListener('beforeinstallprompt', onBeforeInstallPrompt);
+    return () => window.removeEventListener('beforeinstallprompt', onBeforeInstallPrompt);
+  }, []);
 
   // Warn before tab close if there is content
   useEffect(() => {
@@ -117,6 +129,21 @@ export function App() {
         <button onClick={redo} disabled={!canRedo} title="다시 실행 (Ctrl+Y / Ctrl+Shift+Z)">↷ 다시</button>
         <button onClick={() => setSaveOpen(true)} title="프로젝트 저장">💾 저장</button>
         <button onClick={() => setOpenOpen(true)} title="프로젝트 열기">📂 열기</button>
+        {installPrompt && (
+          <button
+            onClick={async () => {
+              try {
+                installPrompt.prompt();
+                await installPrompt.userChoice;
+              } finally {
+                setInstallPrompt(null);
+              }
+            }}
+            title="브라우저 앱처럼 설치 (오프라인에서도 동작)"
+          >
+            ⬇ 앱 설치
+          </button>
+        )}
         <button className="primary" onClick={() => setExportOpen(true)}>
           내보내기
         </button>

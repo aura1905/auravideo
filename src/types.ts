@@ -46,6 +46,18 @@ export interface Clip {
   // naturally over the next visual cut. Source media must have material to
   // cover the tail (clamped at asset duration). Default 0 = no tail.
   audioTail: number;
+  // Visual transform applied during compositing. All defaults make the clip
+  // fill the canvas with original aspect ratio (current behavior unchanged).
+  transformX: number;       // px offset from canvas center, default 0
+  transformY: number;       // px offset from canvas center, default 0
+  transformScale: number;   // 1 = fit-to-canvas (current default), <1 shrinks
+  transformRotation: number; // degrees, default 0
+  transformOpacity: number; // 0..1, default 1
+  // Color correction (FFmpeg eq filter compatible)
+  brightness: number;  // -1..1, default 0 (additive)
+  contrast: number;    // 0..2, default 1 (multiplicative around 0.5)
+  saturation: number;  // 0..3, default 1
+  gamma: number;       // 0.1..10, default 1
 }
 
 export interface Marker {

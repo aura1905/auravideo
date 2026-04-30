@@ -146,18 +146,47 @@ function buildCommand({ clips, assets, tracks, settings, duration, masterVolume,
     if (!a) return;
     const idx = ensureInput(c.assetId);
     const speed = c.speed ?? 1;
-    const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed); // timeline-seconds
+    const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed);
     const fi = Math.min(c.fadeIn, displayDur / 2);
     const fo = Math.min(c.fadeOut, displayDur / 2);
+    const userScale = c.transformScale ?? 1;
+    const tx = c.transformX ?? 0;
+    const ty = c.transformY ?? 0;
+    const rot = c.transformRotation ?? 0;
+    const op = c.transformOpacity ?? 1;
+    const br = c.brightness ?? 0;
+    const co = c.contrast ?? 1;
+    const sa = c.saturation ?? 1;
+    const ga = c.gamma ?? 1;
+    // 1) trim, setpts, scale to fit canvas with user scale, rotate, color
+    //    correction, fades, alpha, format. Then tpad+overlay at offset.
+    // Scale factor: fit-to-canvas × userScale, applied via scale=W*userScale:H*userScale
+    // with force_original_aspect_ratio=decrease. We DO NOT pad to W×H so smaller
+    // scales become true PIP (the overlay is the actual rendered size).
+    const targetW = Math.max(2, Math.round(W * userScale));
+    const targetH = Math.max(2, Math.round(H * userScale));
     const filters: string[] = [
       `trim=start=${c.inPoint.toFixed(3)}:end=${c.outPoint.toFixed(3)}`,
-      // After trim/setpts the stream's duration is (outPoint-inPoint). Scaling
-      // PTS by 1/speed then makes the output occupy displayDur seconds.
       speed !== 1 ? `setpts=(PTS-STARTPTS)/${speed.toFixed(4)}` : `setpts=PTS-STARTPTS`,
-      `scale=${W}:${H}:force_original_aspect_ratio=decrease`,
-      `pad=${W}:${H}:(${W}-iw)/2:(${H}-ih)/2:color=black`,
-      `format=yuva420p`,
+      `scale=${targetW}:${targetH}:force_original_aspect_ratio=decrease`,
     ];
+    // Color correction via FFmpeg's eq filter — only emit when non-default
+    // to keep the graph short for the common case.
+    if (br !== 0 || co !== 1 || sa !== 1 || ga !== 1) {
+      filters.push(`eq=brightness=${br.toFixed(3)}:contrast=${co.toFixed(3)}:saturation=${sa.toFixed(3)}:gamma=${ga.toFixed(3)}`);
+    }
+    filters.push('format=yuva420p');
+    if (rot !== 0) {
+      const rad = (rot * Math.PI) / 180;
+      // Expand the rotate output canvas so corners aren't clipped.
+      filters.push(
+        `rotate=${rad.toFixed(5)}:c=black@0:ow=abs(iw*cos(${rad.toFixed(5)}))+abs(ih*sin(${rad.toFixed(5)})):oh=abs(iw*sin(${rad.toFixed(5)}))+abs(ih*cos(${rad.toFixed(5)}))`
+      );
+    }
+    if (op < 1 - 1e-3) {
+      // Multiply the alpha channel.
+      filters.push(`colorchannelmixer=aa=${op.toFixed(3)}`);
+    }
     if (fi > 0) filters.push(`fade=t=in:st=0:d=${fi.toFixed(3)}:alpha=1`);
     if (fo > 0) filters.push(`fade=t=out:st=${(displayDur - fo).toFixed(3)}:d=${fo.toFixed(3)}:alpha=1`);
     if (c.start > 0) {
@@ -167,8 +196,10 @@ function buildCommand({ clips, assets, tracks, settings, duration, masterVolume,
     filterParts.push(`[${idx}:v]${filters.join(',')}[${label}]`);
 
     const outLabel = `vo${i}`;
+    // overlay_w / overlay_h are the (possibly rotated) overlay dimensions.
+    // main_w / main_h are the canvas dimensions. Center + user offset.
     filterParts.push(
-      `[${lastVideoLabel}][${label}]overlay=eof_action=pass:shortest=0[${outLabel}]`
+      `[${lastVideoLabel}][${label}]overlay=x='(main_w-overlay_w)/2+(${tx})':y='(main_h-overlay_h)/2+(${ty})':eof_action=pass:shortest=0[${outLabel}]`
     );
     lastVideoLabel = outLabel;
   });
