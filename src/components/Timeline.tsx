@@ -74,7 +74,8 @@ export function Timeline() {
       if (e.key === 'Delete' || e.key === 'Backspace') {
         const target = e.target as HTMLElement;
         if (target?.tagName === 'INPUT' || target?.tagName === 'TEXTAREA' || target?.isContentEditable) return;
-        if (selection.length) {
+        const st = useEditor.getState();
+        if (selection.length || st.subtitleSelection.length) {
           e.preventDefault();
           deleteSelection();
         }
@@ -237,7 +238,11 @@ export function Timeline() {
         >
           ✂ 자르기
         </button>
-        <button onClick={deleteSelection} disabled={selection.length === 0} title="선택 삭제 (Del)">
+        <button
+          onClick={deleteSelection}
+          disabled={selection.length === 0 && subtitleSelection.length === 0}
+          title="선택 삭제 (Del)"
+        >
           🗑 삭제
         </button>
         <button
