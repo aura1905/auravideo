@@ -162,10 +162,21 @@ export function Timeline() {
         <div className="timeline-grid" style={{ width: TRACK_HEADER_W + totalWidth }}>
           <Ruler width={totalWidth} pps={pixelsPerSecond} onMouseDown={startScrub} />
           <div className="tracks">
-            {tracks.map((track) => (
+            {tracks.map((track) => {
+              // For video tracks, higher in the UI = drawn on top of canvas.
+              const videoTracks = tracks.filter((t) => t.kind === 'video');
+              const videoIdx = track.kind === 'video' ? videoTracks.findIndex((t) => t.id === track.id) : -1;
+              const zLabel =
+                videoIdx === 0 && videoTracks.length > 1
+                  ? '앞'
+                  : videoIdx === videoTracks.length - 1 && videoTracks.length > 1
+                  ? '뒤'
+                  : null;
+              return (
               <TrackRow
                 key={track.id}
                 track={track}
+                zLabel={zLabel}
                 width={totalWidth}
                 pps={pixelsPerSecond}
                 onMute={() => toggleMute(track.id)}
@@ -207,7 +218,8 @@ export function Timeline() {
                     />
                   ))}
               </TrackRow>
-            ))}
+              );
+            })}
           </div>
           <Playhead time={playhead} pps={pixelsPerSecond} onMouseDown={startPlayheadDrag} />
         </div>
@@ -250,6 +262,7 @@ function Ruler({
 
 function TrackRow({
   track,
+  zLabel,
   width,
   pps,
   children,
@@ -259,6 +272,7 @@ function TrackRow({
   onDropAsset,
 }: {
   track: Track;
+  zLabel: string | null;
   width: number;
   pps: number;
   children: React.ReactNode;
@@ -270,8 +284,17 @@ function TrackRow({
   const [over, setOver] = useState(false);
   return (
     <div className="track-row" style={{ height: track.height }}>
-      <div className="track-header" style={{ width: TRACK_HEADER_W }}>
+      <div
+        className="track-header"
+        style={{ width: TRACK_HEADER_W }}
+        title={
+          track.kind === 'video'
+            ? '비디오 트랙 — 위쪽 트랙(V1)이 캔버스 앞에, 아래로 갈수록 뒤로 깔립니다'
+            : undefined
+        }
+      >
         <span className={`track-name ${track.kind}`}>{track.name}</span>
+        {zLabel && <span className={`z-badge ${zLabel === '앞' ? 'front' : 'back'}`}>{zLabel}</span>}
         <div className="track-buttons">
           <button onClick={onMute} className={track.muted ? 'on' : ''} title="음소거">M</button>
           {track.kind === 'video' && (

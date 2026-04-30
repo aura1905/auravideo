@@ -6,7 +6,13 @@ import { formatTime } from '../utils/media';
 interface ClipMediaState {
   el: HTMLVideoElement;
   ready: boolean;
-  // for video: also acts as the visual source.
+  // Per-clip frame cache. We blit the last-known good frame here whenever the
+  // video reports readyState >= HAVE_CURRENT_DATA. The main canvas always reads
+  // from the cache, so a video being mid-seek can no longer cause a higher
+  // track to "disappear" and reveal a lower track underneath.
+  cache: HTMLCanvasElement;
+  cacheCtx: CanvasRenderingContext2D | null;
+  cacheValid: boolean;
 }
 
 export function Preview() {
@@ -78,9 +84,21 @@ export function Preview() {
       v.width = a.width || 320;
       v.height = a.height || 180;
       container.appendChild(v);
-      const state: ClipMediaState = { el: v, ready: false };
+      const cache = document.createElement('canvas');
+      cache.width = a.width || 320;
+      cache.height = a.height || 180;
+      const cacheCtx = cache.getContext('2d');
+      const state: ClipMediaState = {
+        el: v,
+        ready: false,
+        cache,
+        cacheCtx,
+        cacheValid: false,
+      };
       v.onloadeddata = () => {
         state.ready = true;
+        if (v.videoWidth) cache.width = v.videoWidth;
+        if (v.videoHeight) cache.height = v.videoHeight;
       };
       map.set(c.id, state);
     }
@@ -236,17 +254,31 @@ function drawFrame(
           alpha *= (end - head) / c.fadeOut;
         }
         ctx.globalAlpha = Math.max(0, Math.min(1, alpha));
-        if (m.el.readyState >= 2) {
-          // contain fit
-          const vw = m.el.videoWidth || a.width || W;
-          const vh = m.el.videoHeight || a.height || H;
+        // Refresh the per-clip cache from the live video whenever a fresh
+        // frame is available. This keeps a "last known good frame" around so
+        // a higher track stays on top even while its source is mid-seek.
+        if (m.el.readyState >= 2 && m.cacheCtx) {
+          const vw = m.el.videoWidth || m.cache.width;
+          const vh = m.el.videoHeight || m.cache.height;
+          if (vw && vh && (m.cache.width !== vw || m.cache.height !== vh)) {
+            m.cache.width = vw;
+            m.cache.height = vh;
+          }
+          try {
+            m.cacheCtx.drawImage(m.el, 0, 0, m.cache.width, m.cache.height);
+            m.cacheValid = true;
+          } catch {}
+        }
+        if (m.cacheValid) {
+          const vw = m.cache.width || a.width || W;
+          const vh = m.cache.height || a.height || H;
           const scale = Math.min(W / vw, H / vh);
           const dw = vw * scale;
           const dh = vh * scale;
           const dx = (W - dw) / 2;
           const dy = (H - dh) / 2;
           try {
-            ctx.drawImage(m.el, dx, dy, dw, dh);
+            ctx.drawImage(m.cache, dx, dy, dw, dh);
           } catch {}
         }
         ctx.globalAlpha = 1;

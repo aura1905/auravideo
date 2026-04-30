@@ -302,6 +302,15 @@ input[type=number], input[type=text], select {
 }
 .track-name.video { background: rgba(79, 140, 255, 0.2); color: #b8cdff; }
 .track-name.audio { background: rgba(44, 128, 96, 0.2); color: #a6e2c5; }
+.z-badge {
+  font-size: 10px;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.z-badge.front { background: rgba(255, 84, 112, 0.2); color: #ff96a8; }
+.z-badge.back { background: rgba(255, 255, 255, 0.06); color: var(--muted); }
 .track-buttons { display: flex; gap: 2px; }
 .track-buttons button {
   width: 22px;
