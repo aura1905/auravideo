@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { useEditor, newClipId } from '../state/editorStore';
-import { loadMediaFile, formatTime } from '../utils/media';
+import { loadMediaFile, generateWaveform, formatTime } from '../utils/media';
 import type { MediaAsset, Clip } from '../types';
 
 export function MediaLibrary() {
@@ -14,6 +14,19 @@ export function MediaLibrary() {
   const [busy, setBusy] = useState(false);
   const [dragOver, setDragOver] = useState(false);
 
+  const updateAssetSilent = (id: string, patch: Partial<MediaAsset>) => {
+    const cur = useEditor.getState().assets[id];
+    if (!cur) return;
+    // Don't pollute undo history with derived-cache mutations like waveforms.
+    const t = (useEditor as any).temporal.getState();
+    t.pause();
+    try {
+      useEditor.setState({ assets: { ...useEditor.getState().assets, [id]: { ...cur, ...patch } } });
+    } finally {
+      t.resume();
+    }
+  };
+
   const handleFiles = async (files: FileList | File[]) => {
     setBusy(true);
     try {
@@ -21,6 +34,13 @@ export function MediaLibrary() {
         try {
           const a = await loadMediaFile(f);
           addAsset(a);
+          // Generate waveform asynchronously so the UI isn't blocked.
+          generateWaveform(f, 100)
+            .then((r) => {
+              if (!r) return;
+              updateAssetSilent(a.id, { waveform: r.peaks, waveformPeaksPerSecond: r.peaksPerSecond });
+            })
+            .catch(() => {});
         } catch (e) {
           console.error(e);
         }
@@ -52,6 +72,7 @@ export function MediaLibrary() {
       fadeOut: 0,
       volume: 1,
       muted: false,
+      speed: 1,
     };
     addClip(clip);
   };

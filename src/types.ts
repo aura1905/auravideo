@@ -11,6 +11,11 @@ export interface MediaAsset {
   hasVideo: boolean;
   hasAudio: boolean;
   thumbnail?: string; // dataURL
+  // Mono audio peaks: a Float32Array of [min0, max0, min1, max1, ...]
+  // packed pairs covering the full duration, ~200 buckets per second target.
+  // Generated lazily after the asset is added to the library.
+  waveform?: number[];
+  waveformPeaksPerSecond?: number;
 }
 
 export interface Clip {
@@ -27,6 +32,9 @@ export interface Clip {
   fadeOut: number; // seconds
   volume: number; // 0..2 (1 = original)
   muted: boolean;
+  // playback speed multiplier (1 = normal, >1 = fast, <1 = slow). The clip's
+  // visible duration on the timeline is (outPoint - inPoint) / speed.
+  speed: number;
 }
 
 export interface Track {

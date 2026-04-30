@@ -29,6 +29,7 @@ interface EditorState {
   updateClip: (id: string, patch: Partial<Clip>) => void;
   removeClip: (id: string) => void;
   splitClipAt: (clipId: string, time: number) => void;
+  detachAudio: (clipId: string) => void;
 
   setPlayhead: (t: number) => void;
   setPlaying: (b: boolean) => void;
@@ -121,23 +122,44 @@ export const useEditor = create<EditorState>()(
     const s = get();
     const c = s.clips[clipId];
     if (!c) return;
-    const localOffset = time - c.start;
-    const clipDur = c.outPoint - c.inPoint;
-    if (localOffset <= 0.05 || localOffset >= clipDur - 0.05) return;
+    const speed = c.speed ?? 1;
+    const localTimelineOffset = time - c.start;
+    const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed);
+    if (localTimelineOffset <= 0.05 || localTimelineOffset >= displayDur - 0.05) return;
+    // Convert timeline offset into source-media offset.
+    const mediaOffset = localTimelineOffset * speed;
     const left: Clip = {
       ...c,
-      outPoint: c.inPoint + localOffset,
-      // halve the fadeOut into the right segment
+      outPoint: c.inPoint + mediaOffset,
       fadeOut: 0,
     };
     const right: Clip = {
       ...c,
       id: uid(),
-      start: c.start + localOffset,
-      inPoint: c.inPoint + localOffset,
+      start: c.start + localTimelineOffset,
+      inPoint: c.inPoint + mediaOffset,
       fadeIn: 0,
     };
     set((st) => ({ clips: { ...st.clips, [left.id]: left, [right.id]: right } }));
+  },
+  detachAudio: (clipId) => {
+    const s = get();
+    const c = s.clips[clipId];
+    if (!c) return;
+    const a = s.assets[c.assetId];
+    if (!a || !a.hasAudio) return;
+    // Find the first non-hidden audio track or create one.
+    let audioTrack = s.tracks.find((t) => t.kind === 'audio');
+    if (!audioTrack) {
+      const id = uid();
+      const newTrack: Track = { id, kind: 'audio', name: 'A1', height: 56, muted: false, hidden: false };
+      set((st) => ({ tracks: [...st.tracks, newTrack] }));
+      audioTrack = newTrack;
+    }
+    const newClip: Clip = { ...c, id: uid(), trackId: audioTrack.id };
+    set((st) => ({
+      clips: { ...st.clips, [newClip.id]: newClip, [c.id]: { ...c, muted: true } },
+    }));
   },
 
   setPlayhead: (t) => set({ playhead: Math.max(0, t) }),
@@ -209,6 +231,14 @@ export function clearHistory() {
   (useEditor.temporal.getState() as TemporalState<Tracked>).clear();
 }
 
+/** Visible duration of a clip on the timeline, after speed scaling.
+ * (Source media duration is `outPoint - inPoint`; at speed S it occupies
+ * `(outPoint - inPoint) / S` seconds of timeline.) */
+export function clipDisplayDur(c: Clip): number {
+  const speed = c.speed ?? 1;
+  return (c.outPoint - c.inPoint) / Math.max(0.01, speed);
+}
+
 export function snapTime(t: number): number {
   const s = useEditor.getState();
   if (!s.snapEnabled) return t;
@@ -220,7 +250,7 @@ export function snapTime(t: number): number {
 export function projectDuration(state: EditorState): number {
   let max = 0;
   for (const c of Object.values(state.clips)) {
-    const end = c.start + (c.outPoint - c.inPoint);
+    const end = c.start + clipDisplayDur(c);
     if (end > max) max = end;
   }
   return Math.max(max, 5); // minimum visible

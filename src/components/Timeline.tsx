@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { useEditor, newClipId, projectDuration, snapTime } from '../state/editorStore';
+import { useEditor, newClipId, projectDuration, snapTime, clipDisplayDur } from '../state/editorStore';
 import type { Clip, Track } from '../types';
 import { formatTime } from '../utils/media';
 
@@ -107,8 +107,8 @@ export function Timeline() {
       return;
     }
     const [left, right] = a.start <= b.start ? [a, b] : [b, a];
-    const leftDur = left.outPoint - left.inPoint;
-    const rightDur = right.outPoint - right.inPoint;
+    const leftDur = clipDisplayDur(left);
+    const rightDur = clipDisplayDur(right);
     const leftEnd = left.start + leftDur;
     const overlap = leftEnd - right.start;
     // Cap any fade at half of each clip's duration to keep things sane.
@@ -239,6 +239,7 @@ export function Timeline() {
                     fadeOut: 0,
                     volume: 1,
                     muted: false,
+                    speed: 1,
                   };
                   addClip(clip);
                   setSelection([clip.id]);
@@ -384,9 +385,10 @@ function ClipView({
   onSelect: (additive: boolean) => void;
   onUpdate: (p: Partial<Clip>) => void;
 }) {
-  const dur = clip.outPoint - clip.inPoint;
+  const speed = clip.speed ?? 1;
+  const displayDur = clipDisplayDur(clip);
   const left = clip.start * pps;
-  const width = Math.max(2, dur * pps);
+  const width = Math.max(2, displayDur * pps);
   const dragRef = useRef<{ mode: 'move' | 'left' | 'right'; startX: number; clip: Clip } | null>(null);
 
   const onMouseDown = (e: React.MouseEvent, mode: 'move' | 'left' | 'right') => {
@@ -405,17 +407,21 @@ function ClipView({
       } else if (d.mode === 'left') {
         // snap on the timeline-position side, derive inPoint from the diff
         const newStart = snap(Math.max(0, d.clip.start + dxSec));
-        const consumed = newStart - d.clip.start;
+        const consumed = newStart - d.clip.start; // timeline seconds
+        // At speed S, every timeline second consumed eats S seconds of source media.
+        const mediaConsumed = consumed * speed;
         const maxIn = d.clip.outPoint - 0.1;
-        const newIn = Math.min(Math.max(0, d.clip.inPoint + consumed), maxIn);
-        const adjustedConsumed = newIn - d.clip.inPoint;
-        onUpdate({ inPoint: newIn, start: Math.max(0, d.clip.start + adjustedConsumed) });
+        const newIn = Math.min(Math.max(0, d.clip.inPoint + mediaConsumed), maxIn);
+        const adjustedMedia = newIn - d.clip.inPoint;
+        const adjustedTimeline = adjustedMedia / speed;
+        onUpdate({ inPoint: newIn, start: Math.max(0, d.clip.start + adjustedTimeline) });
       } else if (d.mode === 'right') {
         // snap the end position on the timeline, derive outPoint
-        const dur0 = d.clip.outPoint - d.clip.inPoint;
-        const newEnd = snap(Math.max(d.clip.start + 0.1, d.clip.start + dur0 + dxSec));
-        const newDur = newEnd - d.clip.start;
-        const newOut = Math.max(d.clip.inPoint + 0.1, Math.min((asset?.duration ?? Infinity), d.clip.inPoint + newDur));
+        const dispDur0 = clipDisplayDur(d.clip);
+        const newEnd = snap(Math.max(d.clip.start + 0.1, d.clip.start + dispDur0 + dxSec));
+        const newTimelineDur = newEnd - d.clip.start;
+        const newMediaDur = newTimelineDur * speed;
+        const newOut = Math.max(d.clip.inPoint + 0.1, Math.min((asset?.duration ?? Infinity), d.clip.inPoint + newMediaDur));
         onUpdate({ outPoint: newOut });
       }
     };
@@ -440,6 +446,16 @@ function ClipView({
         {asset?.thumbnail && asset.hasVideo && (
           <div className="clip-thumb" style={{ backgroundImage: `url(${asset.thumbnail})` }} />
         )}
+        {asset?.waveform && asset.waveformPeaksPerSecond && (
+          <Waveform
+            peaks={asset.waveform}
+            pps={asset.waveformPeaksPerSecond}
+            inPoint={clip.inPoint}
+            outPoint={clip.outPoint}
+            width={width}
+            video={!!asset.hasVideo}
+          />
+        )}
         <span className="clip-label">{asset?.name ?? '?'}</span>
         {clip.fadeIn > 0 && (
           <div className="fade-marker fade-in" style={{ width: clip.fadeIn * pps }} />
@@ -463,6 +479,59 @@ function ClipView({
       </button>
       <div className="clip-handle right" onMouseDown={(e) => onMouseDown(e, 'right')} />
     </div>
+  );
+}
+
+function Waveform({
+  peaks,
+  pps,
+  inPoint,
+  outPoint,
+  width,
+  video,
+}: {
+  peaks: number[];
+  pps: number; // peaks per second
+  inPoint: number;
+  outPoint: number;
+  width: number;
+  video: boolean;
+}) {
+  // Sample the peaks within [inPoint, outPoint] mapped to [0, width].
+  const startIdx = Math.max(0, Math.floor(inPoint * pps));
+  const endIdx = Math.min(peaks.length / 2, Math.ceil(outPoint * pps));
+  const span = Math.max(1, endIdx - startIdx);
+  // Render at most ~3 peaks/px to avoid pathological SVG sizes.
+  const targetCols = Math.min(span, Math.max(20, Math.floor(width * 1.5)));
+  const step = span / targetCols;
+  const H = 40;
+  const mid = H / 2;
+  let path = '';
+  for (let i = 0; i < targetCols; i++) {
+    const sub = startIdx + Math.floor(i * step);
+    const subEnd = startIdx + Math.floor((i + 1) * step);
+    let mn = 0;
+    let mx = 0;
+    for (let j = sub; j < subEnd && j < endIdx; j++) {
+      const lo = peaks[j * 2];
+      const hi = peaks[j * 2 + 1];
+      if (lo < mn) mn = lo;
+      if (hi > mx) mx = hi;
+    }
+    const x = (i / targetCols) * 100;
+    const y1 = mid + mn * mid * 0.95;
+    const y2 = mid + mx * mid * 0.95;
+    path += `M${x.toFixed(2)} ${y1.toFixed(2)}L${x.toFixed(2)} ${y2.toFixed(2)}`;
+  }
+  return (
+    <svg
+      className={`clip-waveform ${video ? 'video' : 'audio'}`}
+      preserveAspectRatio="none"
+      viewBox={`0 0 100 ${H}`}
+      aria-hidden="true"
+    >
+      <path d={path} stroke="currentColor" strokeWidth={0.5} fill="none" />
+    </svg>
   );
 }
 

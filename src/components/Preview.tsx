@@ -216,24 +216,27 @@ function drawFrame(
   for (const t of drawOrder) {
     for (const c of clips) {
       if (c.trackId !== t.id) continue;
-      const dur = c.outPoint - c.inPoint;
-      const end = c.start + dur;
+      const speed = c.speed ?? 1;
+      const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed);
+      const end = c.start + displayDur;
       const m = media.get(c.id);
       if (!m) continue;
       const a = assets[c.assetId];
       if (!a || !a.hasVideo) continue;
 
       if (head >= c.start && head < end) {
-        const localTime = c.inPoint + (head - c.start);
-        // sync video
+        // Map timeline position to source-media time taking speed into account.
+        const localTime = c.inPoint + (head - c.start) * speed;
         try {
+          // Browsers clamp playbackRate to ~[0.0625, 16]; mirror that.
+          const rate = Math.max(0.0625, Math.min(16, speed));
+          if (m.el.playbackRate !== rate) m.el.playbackRate = rate;
           if (isPlaying) {
-            // keep playing; nudge if drift
             if (Math.abs(m.el.currentTime - localTime) > 0.2) {
               m.el.currentTime = localTime;
             }
             if (m.el.paused) {
-              m.el.muted = true; // visual only
+              m.el.muted = true;
               m.el.play().catch(() => {});
             }
           } else {
@@ -298,11 +301,14 @@ function drawFrame(
       if (!m) continue;
       const a = assets[c.assetId];
       if (!a) continue;
-      const dur = c.outPoint - c.inPoint;
-      const end = c.start + dur;
+      const speed = c.speed ?? 1;
+      const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed);
+      const end = c.start + displayDur;
       if (head >= c.start && head < end) {
-        const localTime = c.inPoint + (head - c.start);
+        const localTime = c.inPoint + (head - c.start) * speed;
         if (isPlaying) {
+          const rate = Math.max(0.0625, Math.min(16, speed));
+          if (m.el.playbackRate !== rate) m.el.playbackRate = rate;
           if (Math.abs(m.el.currentTime - localTime) > 0.2) m.el.currentTime = localTime;
           let vol = c.volume;
           if (c.fadeIn > 0 && head - c.start < c.fadeIn) vol *= (head - c.start) / c.fadeIn;
@@ -320,14 +326,16 @@ function drawFrame(
     }
   }
 
-  // Also apply audio volume from active VIDEO clips (since their videos contain audio too)
+  // Also apply audio volume from active VIDEO clips (their <video> elements
+  // also produce audio); rate already set in the visual loop above.
   for (const t of videoTracks) {
     for (const c of clips) {
       if (c.trackId !== t.id) continue;
       const m = media.get(c.id);
       if (!m) continue;
-      const dur = c.outPoint - c.inPoint;
-      const end = c.start + dur;
+      const speed = c.speed ?? 1;
+      const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed);
+      const end = c.start + displayDur;
       if (head >= c.start && head < end && isPlaying) {
         let vol = c.volume;
         if (c.fadeIn > 0 && head - c.start < c.fadeIn) vol *= (head - c.start) / c.fadeIn;

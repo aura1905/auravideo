@@ -25,6 +25,56 @@ export async function loadMediaFile(file: File): Promise<MediaAsset> {
   };
 }
 
+/** Decode the asset's audio into a compact min/max peak array. Heavy work,
+ * intended to be called after the asset is added to the library so the UI
+ * isn't blocked. Returns the peaks array and the bucket density. */
+export async function generateWaveform(
+  file: File,
+  peaksPerSecond = 100
+): Promise<{ peaks: number[]; peaksPerSecond: number } | null> {
+  try {
+    const ab = await file.arrayBuffer();
+    const Ctx = (window.AudioContext || (window as any).webkitAudioContext) as typeof AudioContext;
+    if (!Ctx) return null;
+    const ctx = new Ctx();
+    let buffer: AudioBuffer;
+    try {
+      buffer = await ctx.decodeAudioData(ab.slice(0));
+    } catch {
+      ctx.close();
+      return null;
+    }
+    const totalSamples = buffer.length;
+    const dur = buffer.duration;
+    const numBuckets = Math.max(1, Math.floor(dur * peaksPerSecond));
+    const samplesPerBucket = Math.max(1, Math.floor(totalSamples / numBuckets));
+    // Mix down to mono peaks (max abs across channels).
+    const peaks: number[] = new Array(numBuckets * 2);
+    const channels: Float32Array[] = [];
+    for (let c = 0; c < buffer.numberOfChannels; c++) channels.push(buffer.getChannelData(c));
+    for (let i = 0; i < numBuckets; i++) {
+      const start = i * samplesPerBucket;
+      const end = Math.min(start + samplesPerBucket, totalSamples);
+      let mn = 0;
+      let mx = 0;
+      for (let s = start; s < end; s++) {
+        let sample = 0;
+        for (const ch of channels) {
+          if (Math.abs(ch[s]) > Math.abs(sample)) sample = ch[s];
+        }
+        if (sample < mn) mn = sample;
+        else if (sample > mx) mx = sample;
+      }
+      peaks[i * 2] = mn;
+      peaks[i * 2 + 1] = mx;
+    }
+    ctx.close();
+    return { peaks, peaksPerSecond };
+  } catch {
+    return null;
+  }
+}
+
 function probeMedia(url: string, isVideo: boolean): Promise<{ duration: number; width?: number; height?: number }> {
   return new Promise((resolve, reject) => {
     const el: HTMLVideoElement | HTMLAudioElement = isVideo ? document.createElement('video') : document.createElement('audio');

@@ -5,7 +5,9 @@ export function PropertiesPanel() {
   const selection = useEditor((s) => s.selection);
   const clips = useEditor((s) => s.clips);
   const assets = useEditor((s) => s.assets);
+  const tracks = useEditor((s) => s.tracks);
   const updateClip = useEditor((s) => s.updateClip);
+  const detachAudio = useEditor((s) => s.detachAudio);
 
   if (selection.length === 0) {
     return (
@@ -82,6 +84,16 @@ export function PropertiesPanel() {
           onChange={(e) => apply({ fadeOut: parseFloat(e.target.value) })}
         />
       </Field>
+      <Field label={`속도: ${((first.speed ?? 1) * 100).toFixed(0)}%`}>
+        <input
+          type="range"
+          min={0.25}
+          max={4}
+          step={0.05}
+          value={first.speed ?? 1}
+          onChange={(e) => apply({ speed: parseFloat(e.target.value) })}
+        />
+      </Field>
       <Field label={`볼륨: ${(first.volume * 100).toFixed(0)}%`}>
         <input
           type="range"
@@ -99,6 +111,20 @@ export function PropertiesPanel() {
           onChange={(e) => apply({ muted: e.target.checked })}
         />
       </Field>
+      {(() => {
+        const onVideoTrack = tracks.find((t) => t.id === first.trackId)?.kind === 'video';
+        if (!onVideoTrack || !asset?.hasAudio) return null;
+        return (
+          <button
+            onClick={() => {
+              for (const id of selection) detachAudio(id);
+            }}
+            title="이 비디오 클립의 오디오를 새 오디오 트랙 클립으로 분리하고, 원본은 음소거합니다"
+          >
+            🎙 오디오 분리
+          </button>
+        );
+      })()}
     </div>
   );
 }

@@ -59,23 +59,26 @@ function buildCommand({ clips, assets, tracks, settings, duration, rangeStart, r
   const outDur = re - rs;
 
   // Translate clips to a 0-based timeline starting at rs, clipping to [rs, re].
+  // All time values here are TIMELINE seconds; trims must be converted to
+  // source-media seconds when adjusting inPoint/outPoint for a sped-up clip.
   if (rs > 0 || re < duration) {
     const transformed: Clip[] = [];
     for (const c of clips) {
-      const clipDur = c.outPoint - c.inPoint;
-      const cEnd = c.start + clipDur;
-      if (cEnd <= rs) continue; // before range
-      if (c.start >= re) continue; // after range
-      const trimLeft = Math.max(0, rs - c.start);
-      const trimRight = Math.max(0, cEnd - re);
+      const speed = c.speed ?? 1;
+      const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed);
+      const cEnd = c.start + displayDur;
+      if (cEnd <= rs) continue;
+      if (c.start >= re) continue;
+      const trimLeftTL = Math.max(0, rs - c.start);
+      const trimRightTL = Math.max(0, cEnd - re);
+      const newDisplayDur = displayDur - trimLeftTL - trimRightTL;
       transformed.push({
         ...c,
         start: Math.max(0, c.start - rs),
-        inPoint: c.inPoint + trimLeft,
-        outPoint: c.outPoint - trimRight,
-        // proportionally clip fades to the new clip duration
-        fadeIn: Math.min(c.fadeIn, (c.outPoint - trimRight) - (c.inPoint + trimLeft)),
-        fadeOut: Math.min(c.fadeOut, (c.outPoint - trimRight) - (c.inPoint + trimLeft)),
+        inPoint: c.inPoint + trimLeftTL * speed,
+        outPoint: c.outPoint - trimRightTL * speed,
+        fadeIn: Math.min(c.fadeIn, newDisplayDur),
+        fadeOut: Math.min(c.fadeOut, newDisplayDur),
       });
     }
     clips = transformed;
@@ -137,18 +140,21 @@ function buildCommand({ clips, assets, tracks, settings, duration, rangeStart, r
     const a = assets[c.assetId];
     if (!a) return;
     const idx = ensureInput(c.assetId);
-    const dur = c.outPoint - c.inPoint;
-    const fi = Math.min(c.fadeIn, dur / 2);
-    const fo = Math.min(c.fadeOut, dur / 2);
+    const speed = c.speed ?? 1;
+    const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed); // timeline-seconds
+    const fi = Math.min(c.fadeIn, displayDur / 2);
+    const fo = Math.min(c.fadeOut, displayDur / 2);
     const filters: string[] = [
       `trim=start=${c.inPoint.toFixed(3)}:end=${c.outPoint.toFixed(3)}`,
-      `setpts=PTS-STARTPTS`,
+      // After trim/setpts the stream's duration is (outPoint-inPoint). Scaling
+      // PTS by 1/speed then makes the output occupy displayDur seconds.
+      speed !== 1 ? `setpts=(PTS-STARTPTS)/${speed.toFixed(4)}` : `setpts=PTS-STARTPTS`,
       `scale=${W}:${H}:force_original_aspect_ratio=decrease`,
       `pad=${W}:${H}:(${W}-iw)/2:(${H}-ih)/2:color=black`,
       `format=yuva420p`,
     ];
     if (fi > 0) filters.push(`fade=t=in:st=0:d=${fi.toFixed(3)}:alpha=1`);
-    if (fo > 0) filters.push(`fade=t=out:st=${(dur - fo).toFixed(3)}:d=${fo.toFixed(3)}:alpha=1`);
+    if (fo > 0) filters.push(`fade=t=out:st=${(displayDur - fo).toFixed(3)}:d=${fo.toFixed(3)}:alpha=1`);
     if (c.start > 0) {
       filters.push(`tpad=start_duration=${c.start.toFixed(3)}:start_mode=add:color=black@0`);
     }
@@ -173,20 +179,35 @@ function buildCommand({ clips, assets, tracks, settings, duration, rangeStart, r
     if (!a) return;
     if (c.muted || entry.trackMuted) return;
     const idx = ensureInput(c.assetId);
-    const dur = c.outPoint - c.inPoint;
-    const fi = Math.min(c.fadeIn, dur / 2);
-    const fo = Math.min(c.fadeOut, dur / 2);
+    const speed = c.speed ?? 1;
+    const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed); // timeline-seconds
+    const fi = Math.min(c.fadeIn, displayDur / 2);
+    const fo = Math.min(c.fadeOut, displayDur / 2);
     const startMs = Math.round(c.start * 1000);
     const filters: string[] = [
       `atrim=start=${c.inPoint.toFixed(3)}:end=${c.outPoint.toFixed(3)}`,
       `asetpts=PTS-STARTPTS`,
-      `volume=${c.volume.toFixed(3)}`,
     ];
+    // atempo accepts factors in [0.5, 2.0] in a single instance. Chain it
+    // multiple times to handle factors outside that range (e.g. 4× = 2*2,
+    // 0.25× = 0.5*0.5).
+    if (Math.abs(speed - 1) > 1e-3) {
+      let remaining = speed;
+      while (remaining > 2.0) {
+        filters.push(`atempo=2.0`);
+        remaining /= 2.0;
+      }
+      while (remaining < 0.5) {
+        filters.push(`atempo=0.5`);
+        remaining /= 0.5;
+      }
+      filters.push(`atempo=${remaining.toFixed(4)}`);
+    }
+    filters.push(`volume=${c.volume.toFixed(3)}`);
     if (fi > 0) filters.push(`afade=t=in:st=0:d=${fi.toFixed(3)}`);
-    if (fo > 0) filters.push(`afade=t=out:st=${(dur - fo).toFixed(3)}:d=${fo.toFixed(3)}`);
+    if (fo > 0) filters.push(`afade=t=out:st=${(displayDur - fo).toFixed(3)}:d=${fo.toFixed(3)}`);
     if (startMs > 0) filters.push(`adelay=${startMs}|${startMs}`);
     const label = `a${i}`;
-    // Use [idx:a]? to allow inputs with no audio stream
     filterParts.push(`[${idx}:a]${filters.join(',')}[${label}]`);
     audioLabels.push(label);
   });
