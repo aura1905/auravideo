@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { useEditor, newClipId } from '../state/editorStore';
-import { loadMediaFile, generateWaveform, formatTime } from '../utils/media';
+import { loadMediaFile, generateWaveform, generateThumbnailStrip, formatTime } from '../utils/media';
 import type { MediaAsset, Clip } from '../types';
 
 export function MediaLibrary() {
@@ -41,6 +41,14 @@ export function MediaLibrary() {
               updateAssetSilent(a.id, { waveform: r.peaks, waveformPeaksPerSecond: r.peaksPerSecond });
             })
             .catch(() => {});
+          if (a.hasVideo && a.duration > 4) {
+            generateThumbnailStrip(a.url, a.duration)
+              .then((r) => {
+                if (!r) return;
+                updateAssetSilent(a.id, { thumbnailStrip: r.frames, thumbnailStripStep: r.step });
+              })
+              .catch(() => {});
+          }
         } catch (e) {
           console.error(e);
         }

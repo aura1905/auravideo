@@ -1,6 +1,6 @@
 import JSZip from 'jszip';
 import { useEditor, clearHistory } from '../state/editorStore';
-import type { Clip, MediaAsset, Track, ProjectSettings } from '../types';
+import type { Clip, Marker, MediaAsset, Track, ProjectSettings } from '../types';
 import { putProject, getProject, getBlob, type StoredProject } from './db';
 
 export interface SerializedAsset {
@@ -24,6 +24,13 @@ export interface SerializedState {
   snapEnabled: boolean;
   snapInterval: number;
   assets: SerializedAsset[];
+  // optional fields added in later versions; absent in old projects.
+  masterVolume?: number;
+  rippleEnabled?: boolean;
+  clipGroups?: Record<string, string[]>;
+  clipGroupId?: Record<string, string>;
+  trackLocked?: Record<string, boolean>;
+  markers?: Marker[];
 }
 
 const uid = () => Math.random().toString(36).slice(2, 10);
@@ -55,6 +62,12 @@ export function serializeState(): { state: SerializedState; assetBlobs: Map<stri
     snapEnabled: s.snapEnabled,
     snapInterval: s.snapInterval,
     assets,
+    masterVolume: s.masterVolume,
+    rippleEnabled: s.rippleEnabled,
+    clipGroups: s.clipGroups,
+    clipGroupId: s.clipGroupId,
+    trackLocked: s.trackLocked,
+    markers: s.markers,
   };
   return { state, assetBlobs: blobs };
 }
@@ -113,6 +126,12 @@ export async function loadProject(id: string): Promise<boolean> {
     pixelsPerSecond: state.pixelsPerSecond ?? 80,
     snapEnabled: state.snapEnabled ?? true,
     snapInterval: state.snapInterval ?? 0.5,
+    masterVolume: state.masterVolume ?? 1,
+    rippleEnabled: state.rippleEnabled ?? false,
+    clipGroups: state.clipGroups ?? {},
+    clipGroupId: state.clipGroupId ?? {},
+    trackLocked: state.trackLocked ?? {},
+    markers: state.markers ?? [],
     selection: [],
     playhead: 0,
     isPlaying: false,
@@ -183,6 +202,12 @@ export async function importProjectZip(file: File): Promise<void> {
     pixelsPerSecond: state.pixelsPerSecond ?? 80,
     snapEnabled: state.snapEnabled ?? true,
     snapInterval: state.snapInterval ?? 0.5,
+    masterVolume: state.masterVolume ?? 1,
+    rippleEnabled: state.rippleEnabled ?? false,
+    clipGroups: state.clipGroups ?? {},
+    clipGroupId: state.clipGroupId ?? {},
+    trackLocked: state.trackLocked ?? {},
+    markers: state.markers ?? [],
     selection: [],
     playhead: 0,
     isPlaying: false,

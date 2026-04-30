@@ -10,7 +10,11 @@ export interface MediaAsset {
   height?: number;
   hasVideo: boolean;
   hasAudio: boolean;
-  thumbnail?: string; // dataURL
+  thumbnail?: string; // dataURL — single representative frame
+  // Multi-frame strip: one dataURL every `thumbnailStripStep` source seconds,
+  // generated lazily so long clips show a filmstrip instead of a single frame.
+  thumbnailStrip?: string[];
+  thumbnailStripStep?: number;
   // Mono audio peaks: a Float32Array of [min0, max0, min1, max1, ...]
   // packed pairs covering the full duration, ~200 buckets per second target.
   // Generated lazily after the asset is added to the library.
@@ -35,6 +39,15 @@ export interface Clip {
   // playback speed multiplier (1 = normal, >1 = fast, <1 = slow). The clip's
   // visible duration on the timeline is (outPoint - inPoint) / speed.
   speed: number;
+  // Optional user-assigned color label (CSS color), for visual organization.
+  color?: string;
+}
+
+export interface Marker {
+  id: string;
+  time: number;
+  text: string;
+  color: string;
 }
 
 export interface Track {
@@ -44,6 +57,7 @@ export interface Track {
   height: number;
   muted: boolean;
   hidden: boolean;
+  volume: number; // 0..2 (1 = original)
 }
 
 export interface ProjectSettings {

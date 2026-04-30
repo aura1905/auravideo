@@ -3,20 +3,23 @@ import react from '@vitejs/plugin-react';
 import fs from 'node:fs';
 import path from 'node:path';
 
-// Copy ffmpeg-core ESM files into public/ffmpeg/ so they can be served
-// at /ffmpeg/ffmpeg-core.js. We use ESM because @ffmpeg/ffmpeg 0.12 spawns
-// a module-type Worker and falls back to dynamic import for the core.
+// Copy ffmpeg-core ESM files into public/ffmpeg-core/ so they can be served
+// at /ffmpeg-core/ffmpeg-core.js. We use the multi-threaded core for ~2-4x
+// faster export — it requires SharedArrayBuffer (already provided by the
+// COOP/COEP headers in dev and the coi-serviceworker in production).
 function copyFfmpegCore() {
   return {
     name: 'copy-ffmpeg-core',
     buildStart() {
-      const src = path.resolve('node_modules/@ffmpeg/core/dist/esm');
+      const src = path.resolve('node_modules/@ffmpeg/core-mt/dist/esm');
       const dst = path.resolve('public/ffmpeg-core');
       try {
         fs.mkdirSync(dst, { recursive: true });
-        for (const f of ['ffmpeg-core.js', 'ffmpeg-core.wasm']) {
+        const files = ['ffmpeg-core.js', 'ffmpeg-core.wasm', 'ffmpeg-core.worker.js'];
+        for (const f of files) {
           const from = path.join(src, f);
           const to = path.join(dst, f);
+          if (!fs.existsSync(from)) continue;
           if (!fs.existsSync(to) || fs.statSync(from).mtimeMs > fs.statSync(to).mtimeMs) {
             fs.copyFileSync(from, to);
           }

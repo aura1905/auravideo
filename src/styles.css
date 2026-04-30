@@ -210,6 +210,27 @@ input[type=number], input[type=text], select {
 }
 .preview-controls .time { color: var(--muted); font-variant-numeric: tabular-nums; min-width: 130px; text-align: right; font-size: 12px; }
 .preview-controls input[type=range] { accent-color: var(--accent); }
+.master-vol {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 8px;
+  border-left: 1px solid var(--border);
+}
+.master-vol input[type=range] { width: 100px; }
+.master-vol .vol-icon {
+  background: transparent;
+  border: 0;
+  padding: 0 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.master-vol .vol-percent {
+  font-size: 11px;
+  color: var(--muted);
+  min-width: 36px;
+  text-align: right;
+}
 
 /* Timeline */
 .timeline {
@@ -279,19 +300,70 @@ input[type=number], input[type=text], select {
   color: var(--muted);
   white-space: nowrap;
 }
+.marker {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: var(--marker-color, #f7c948);
+  cursor: pointer;
+}
+.marker .marker-flag {
+  position: absolute;
+  top: 2px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid var(--marker-color, #f7c948);
+}
+.marker:hover { filter: brightness(1.2); }
 
 .tracks { display: flex; flex-direction: column; }
 .track-row { display: flex; border-bottom: 1px solid var(--border); }
 .track-header {
   display: flex;
-  align-items: center;
-  padding: 0 8px;
-  gap: 6px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4px 6px;
+  gap: 3px;
   background: var(--panel-2);
   border-right: 1px solid var(--border);
   position: sticky;
   left: 0;
   z-index: 4;
+}
+.track-header-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.track-vol {
+  width: 100%;
+  accent-color: var(--accent);
+  margin: 0;
+}
+.track-resize {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 5px;
+  cursor: ns-resize;
+  z-index: 3;
+}
+.track-resize:hover { background: rgba(79, 140, 255, 0.4); }
+.track-row { position: relative; }
+.track-row.locked .clip { cursor: not-allowed; }
+.track-row.locked .clip-handle { display: none; }
+
+.marquee {
+  position: fixed;
+  pointer-events: none;
+  background: rgba(79, 140, 255, 0.15);
+  border: 1px dashed var(--accent);
+  z-index: 7;
 }
 .track-name {
   font-weight: 600;
@@ -357,6 +429,20 @@ input[type=number], input[type=text], select {
   background-position: center;
   opacity: 0.55;
 }
+.clip-strip {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  opacity: 0.6;
+  overflow: hidden;
+}
+.clip-strip-cell {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+.clip-strip-cell:last-child { border-right: none; }
 .clip-waveform {
   position: absolute;
   left: 0;
@@ -427,6 +513,33 @@ input[type=number], input[type=text], select {
 .clip-mute.on {
   background: var(--danger);
   border-color: transparent;
+}
+.clip.has-color {
+  border-top: 3px solid var(--clip-color, transparent);
+}
+.color-row { display: flex; gap: 4px; flex-wrap: wrap; }
+.color-swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  padding: 0;
+  cursor: pointer;
+}
+.color-swatch.on { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(79, 140, 255, 0.3); }
+
+.clip.grouped::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--group-color, var(--accent));
+  box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.55);
+  z-index: 4;
+  pointer-events: none;
 }
 .clip.muted::after {
   content: '';

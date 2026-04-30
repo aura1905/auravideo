@@ -121,6 +121,39 @@ Each `MediaAsset` may carry a `waveform: number[]` (packed `[min, max]` pairs) p
 
 The `Waveform` SVG component in `Timeline.tsx` slices the peaks for the clip's `[inPoint, outPoint]` range and emits one vertical line per output column. `preserveAspectRatio="none"` makes it stretch to the clip's pixel width without re-rendering when zoom changes.
 
+## Volume & mute
+
+There are four levels that all multiply together for both preview and export:
+1. `clip.volume` (0–2, properties panel slider/input)
+2. `track.volume` (0–2, slider in track header)
+3. `state.masterVolume` (0–2, slider in preview controls)
+4. Fade in/out (clamps at clip boundaries)
+
+Plus three independent kill-switches: `clip.muted`, `track.muted`, and the master mute icon (toggles `masterVolume` to 0/1). Export multiplies the same factors into a single `volume=` filter per clip; the GainNode/Web-Audio path is intentionally not used (kept simple via `HTMLMediaElement.volume`).
+
+## Track features
+
+- `track.volume` (0–2), `track.muted`, `track.hidden`, `track.height` (28–200), and `state.trackLocked[id]` are all per-track. Locked tracks reject drops and disable clip drag/trim (selection still works).
+- Track height is dragged via the bottom edge of the track row.
+
+## Clip groups
+
+`state.clipGroups` (groupId → clipId[]) and `state.clipGroupId` (clipId → groupId) maintain bidirectional pointers. `groupClips` removes the given clips from any prior group then creates a new one. `ungroupClip` dissolves the group when fewer than 2 members remain. `detachAudio` auto-groups the original video clip with its newly-created audio clip so they stay in sync until the user un-groups them.
+
+When dragging a clip in 'move' mode, the drag captures `memberStarts` for every group sibling at drag-start and applies a single absolute delta on each mousemove (not incremental). This avoids accumulating drift from rapid mousemove events.
+
+## Markers
+
+`state.markers: Marker[]` (id, time, text, color). Press **M** to add at the playhead. Right-click a marker on the ruler to delete; click/scrub seeks to it. Markers are tracked by the temporal middleware so undo/redo also covers them.
+
+## Multi-threaded FFmpeg
+
+We ship `@ffmpeg/core-mt` (not the single-thread `@ffmpeg/core`). It needs SharedArrayBuffer, which requires `crossOriginIsolated` — provided by the COOP/COEP headers in dev (Vite config) and `coi-serviceworker.js` in production. The Vite `copyFfmpegCore` plugin now also copies `ffmpeg-core.worker.js` from `node_modules/@ffmpeg/core-mt/dist/esm/` to `public/ffmpeg-core/`, and `export.ts` passes its URL through `toBlobURL` as `workerURL` in `ff.load()`.
+
+## Snap
+
+`snapTime(t, opts)` returns the nearest of three candidates within an 8-px-equivalent tolerance: the grid value (if `snapEnabled`), every other clip's start/end (excluding ones in `opts.excludeClipIds`), and the playhead. Caller is expected to pass `excludeClipIds: [draggedId]` so a dragged clip doesn't snap to itself. `pps` should be passed for accurate pixel-distance comparisons at non-default zoom.
+
 ## Clip speed
 
 `Clip.speed` (default 1) scales playback. **Source-media duration** is `outPoint - inPoint`; **timeline duration** is `(outPoint - inPoint) / speed` — always go through the `clipDisplayDur` helper from `editorStore.ts`. Code to audit when touching anything timeline-related:

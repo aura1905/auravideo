@@ -142,6 +142,15 @@ export function useGlobalShortcuts() {
           useEditor.getState().setZoom(80);
           break;
         }
+        case 'm':
+        case 'M': {
+          e.preventDefault();
+          const s = useEditor.getState();
+          const t = s.playhead;
+          const text = prompt('마커 이름 (선택사항):', '') ?? '';
+          s.addMarker({ time: t, text, color: '#f7c948' });
+          break;
+        }
       }
     };
     window.addEventListener('keydown', onKey);

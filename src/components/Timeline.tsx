@@ -3,7 +3,7 @@ import { useEditor, newClipId, projectDuration, snapTime, clipDisplayDur } from 
 import type { Clip, Track } from '../types';
 import { formatTime } from '../utils/media';
 
-const TRACK_HEADER_W = 110;
+const TRACK_HEADER_W = 150;
 const RULER_H = 28;
 
 export function Timeline() {
@@ -25,10 +25,16 @@ export function Timeline() {
   const removeTrack = useEditor((s) => s.removeTrack);
   const toggleMute = useEditor((s) => s.toggleTrackMute);
   const toggleHidden = useEditor((s) => s.toggleTrackHidden);
+  const setTrackVolume = useEditor((s) => s.setTrackVolume);
+  const setTrackHeight = useEditor((s) => s.setTrackHeight);
+  const toggleTrackLock = useEditor((s) => s.toggleTrackLock);
+  const trackLocked = useEditor((s) => s.trackLocked);
   const snapEnabled = useEditor((s) => s.snapEnabled);
   const snapInterval = useEditor((s) => s.snapInterval);
   const setSnapEnabled = useEditor((s) => s.setSnapEnabled);
   const setSnapInterval = useEditor((s) => s.setSnapInterval);
+  const rippleEnabled = useEditor((s) => s.rippleEnabled);
+  const setRippleEnabled = useEditor((s) => s.setRippleEnabled);
 
   const duration = useMemo(() => projectDuration(useEditor.getState()), [clips]);
   const totalWidth = Math.max(800, (duration + 5) * pixelsPerSecond);
@@ -62,7 +68,7 @@ export function Timeline() {
         if (target?.tagName === 'INPUT' || target?.tagName === 'TEXTAREA' || target?.isContentEditable) return;
         if (selection.length) {
           e.preventDefault();
-          for (const id of selection) removeClip(id);
+          deleteSelection();
         }
       } else if (e.key.toLowerCase() === 's') {
         const target = e.target as HTMLElement;
@@ -82,7 +88,18 @@ export function Timeline() {
   };
 
   const deleteSelection = () => {
-    for (const id of selection) removeClip(id);
+    const st = useEditor.getState();
+    if (st.rippleEnabled) {
+      // Ripple-delete each in DESCENDING start order so each removal's gap
+      // closes correctly without shifting the next selection target's start.
+      const ordered = [...selection]
+        .map((id) => st.clips[id])
+        .filter(Boolean)
+        .sort((a, b) => b.start - a.start);
+      for (const c of ordered) st.rippleDelete(c.id);
+    } else {
+      for (const id of selection) removeClip(id);
+    }
   };
 
   // Convert a mouse clientX to a timeline time, applying snap (Alt = bypass).
@@ -142,6 +159,50 @@ export function Timeline() {
     st.updateClip(right.id, { fadeIn: fade });
   };
 
+  const startMarquee = (e: React.MouseEvent) => {
+    if (e.button !== 0) return;
+    // Only start on empty track area background (not on a clip).
+    const target = e.target as HTMLElement;
+    if (!target.classList.contains('track-area')) return;
+    const root = timelineRootRef.current;
+    if (!root) return;
+    const startX = e.clientX;
+    const startY = e.clientY;
+    const additive = e.shiftKey;
+    const initialSel = additive ? new Set(useEditor.getState().selection) : new Set<string>();
+    if (!additive) useEditor.getState().setSelection([]);
+    const overlay = document.createElement('div');
+    overlay.className = 'marquee';
+    document.body.appendChild(overlay);
+
+    const update = (ev: MouseEvent) => {
+      const x1 = Math.min(startX, ev.clientX);
+      const y1 = Math.min(startY, ev.clientY);
+      const x2 = Math.max(startX, ev.clientX);
+      const y2 = Math.max(startY, ev.clientY);
+      overlay.style.left = `${x1}px`;
+      overlay.style.top = `${y1}px`;
+      overlay.style.width = `${x2 - x1}px`;
+      overlay.style.height = `${y2 - y1}px`;
+      const hit = new Set<string>(initialSel);
+      const clipEls = root.querySelectorAll<HTMLElement>('.clip');
+      clipEls.forEach((el) => {
+        const r = el.getBoundingClientRect();
+        if (r.right < x1 || r.left > x2 || r.bottom < y1 || r.top > y2) return;
+        const id = el.dataset.clipId;
+        if (id) hit.add(id);
+      });
+      useEditor.getState().setSelection(Array.from(hit));
+    };
+    const onUp = () => {
+      window.removeEventListener('mousemove', update);
+      window.removeEventListener('mouseup', onUp);
+      overlay.remove();
+    };
+    window.addEventListener('mousemove', update);
+    window.addEventListener('mouseup', onUp);
+  };
+
   const startPlayheadDrag = (e: React.MouseEvent) => {
     e.stopPropagation();
     e.preventDefault();
@@ -170,11 +231,34 @@ export function Timeline() {
           🗑 삭제
         </button>
         <button
+          className={rippleEnabled ? 'on' : ''}
+          onClick={() => setRippleEnabled(!rippleEnabled)}
+          title="Ripple 모드: 클립 삭제 시 같은 트랙 뒤 클립을 자동으로 앞당김"
+        >
+          ⏩ Ripple
+        </button>
+        <button
           onClick={applyCrossfade}
           disabled={selection.length !== 2}
           title="같은 트랙의 두 클립 사이에 크로스페이드 적용 (겹침이 있으면 그 길이, 없으면 기본 1초로 끌어붙임)"
         >
           ⇌ 크로스페이드
+        </button>
+        <button
+          onClick={() => useEditor.getState().groupClips(selection)}
+          disabled={selection.length < 2}
+          title="선택된 클립들을 묶기 (한 클립 이동 시 함께 움직임)"
+        >
+          🔗 그룹
+        </button>
+        <button
+          onClick={() => {
+            for (const id of selection) useEditor.getState().ungroupClip(id);
+          }}
+          disabled={selection.length === 0}
+          title="선택된 클립들의 그룹 해제"
+        >
+          ✂ 그룹 해제
         </button>
         <span className="toolbar-sep" />
         <button onClick={() => addTrack('video')} title="비디오 트랙 추가">+ V</button>
@@ -209,12 +293,21 @@ export function Timeline() {
           value={pixelsPerSecond}
           onChange={(e) => setZoom(parseInt(e.target.value, 10))}
         />
-        <span className="hint">Ctrl+휠/+/- 줌 · 0 줌 리셋 · Del 삭제 · S 자르기 · Alt 스냅 해제</span>
+        <span className="hint">Ctrl+휠/+/- 줌 · 0 리셋 · Del 삭제 · S 자르기 · M 마커 · Alt 스냅 해제</span>
       </div>
       <div className="timeline-body" ref={scrollRef}>
         <div className="timeline-grid" style={{ width: TRACK_HEADER_W + totalWidth }}>
-          <Ruler width={totalWidth} pps={pixelsPerSecond} onMouseDown={startScrub} />
-          <div className="tracks">
+          <Ruler
+            width={totalWidth}
+            pps={pixelsPerSecond}
+            onMouseDown={startScrub}
+            markers={useEditor.getState().markers}
+            onMarkerClick={(id) => {
+              const m = useEditor.getState().markers.find((x) => x.id === id);
+              if (m) setPlayhead(m.time);
+            }}
+          />
+          <div className="tracks" onMouseDown={startMarquee}>
             {tracks.map((track) => {
               // For video tracks, higher in the UI = drawn on top of canvas.
               const videoTracks = tracks.filter((t) => t.kind === 'video');
@@ -232,9 +325,13 @@ export function Timeline() {
                 zLabel={zLabel}
                 width={totalWidth}
                 pps={pixelsPerSecond}
+                locked={!!trackLocked[track.id]}
                 onMute={() => toggleMute(track.id)}
                 onHide={() => toggleHidden(track.id)}
                 onRemove={() => removeTrack(track.id)}
+                onVolume={(v) => setTrackVolume(track.id, v)}
+                onHeight={(h) => setTrackHeight(track.id, h)}
+                onToggleLock={() => toggleTrackLock(track.id)}
                 onDropAsset={(assetId, atSec) => {
                   const a = assets[assetId];
                   if (!a) return;
@@ -267,6 +364,8 @@ export function Timeline() {
                       asset={assets[c.assetId]}
                       pps={pixelsPerSecond}
                       selected={selection.includes(c.id)}
+                      locked={!!trackLocked[track.id]}
+                      groupId={useEditor.getState().clipGroupId[c.id]}
                       onSelect={(additive) => toggleSelection(c.id, additive)}
                       onUpdate={(p) => updateClip(c.id, p)}
                     />
@@ -290,10 +389,14 @@ function Ruler({
   width,
   pps,
   onMouseDown,
+  markers,
+  onMarkerClick,
 }: {
   width: number;
   pps: number;
   onMouseDown: (e: React.MouseEvent) => void;
+  markers: import('../types').Marker[];
+  onMarkerClick: (id: string) => void;
 }) {
   const targetPx = 80;
   const candidates = [0.1, 0.25, 0.5, 1, 2, 5, 10, 30, 60, 120, 300];
@@ -309,6 +412,26 @@ function Ruler({
             <span>{formatTime(t).replace(/\.\d+$/, '')}</span>
           </div>
         ))}
+        {markers.map((m) => (
+          <div
+            key={m.id}
+            className="marker"
+            style={{ left: m.time * pps, ['--marker-color' as any]: m.color }}
+            title={`${m.text} (${formatTime(m.time)})`}
+            onMouseDown={(e) => {
+              e.stopPropagation();
+              onMarkerClick(m.id);
+            }}
+            onContextMenu={(e) => {
+              e.preventDefault();
+              if (confirm(`마커 삭제: "${m.text}"?`)) {
+                useEditor.getState().removeMarker(m.id);
+              }
+            }}
+          >
+            <div className="marker-flag" />
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -319,25 +442,46 @@ function TrackRow({
   zLabel,
   width,
   pps,
+  locked,
   children,
   onMute,
   onHide,
   onRemove,
+  onVolume,
+  onHeight,
+  onToggleLock,
   onDropAsset,
 }: {
   track: Track;
   zLabel: string | null;
   width: number;
   pps: number;
+  locked: boolean;
   children: React.ReactNode;
   onMute: () => void;
   onHide: () => void;
   onRemove: () => void;
+  onVolume: (v: number) => void;
+  onHeight: (h: number) => void;
+  onToggleLock: () => void;
   onDropAsset: (assetId: string, atSec: number) => void;
 }) {
   const [over, setOver] = useState(false);
+  const onResizeMouseDown = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    e.preventDefault();
+    const startY = e.clientY;
+    const startH = track.height;
+    const onMove = (ev: MouseEvent) => onHeight(startH + (ev.clientY - startY));
+    const onUp = () => {
+      window.removeEventListener('mousemove', onMove);
+      window.removeEventListener('mouseup', onUp);
+    };
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('mouseup', onUp);
+  };
   return (
-    <div className="track-row" style={{ height: track.height }}>
+    <div className={`track-row ${locked ? 'locked' : ''}`} style={{ height: track.height }}>
       <div
         className="track-header"
         style={{ width: TRACK_HEADER_W }}
@@ -347,20 +491,34 @@ function TrackRow({
             : undefined
         }
       >
-        <span className={`track-name ${track.kind}`}>{track.name}</span>
-        {zLabel && <span className={`z-badge ${zLabel === '앞' ? 'front' : 'back'}`}>{zLabel}</span>}
+        <div className="track-header-row">
+          <span className={`track-name ${track.kind}`}>{track.name}</span>
+          {zLabel && <span className={`z-badge ${zLabel === '앞' ? 'front' : 'back'}`}>{zLabel}</span>}
+        </div>
         <div className="track-buttons">
           <button onClick={onMute} className={track.muted ? 'on' : ''} title="음소거">M</button>
           {track.kind === 'video' && (
             <button onClick={onHide} className={track.hidden ? 'on' : ''} title="숨김">H</button>
           )}
+          <button onClick={onToggleLock} className={locked ? 'on' : ''} title="잠금">🔒</button>
           <button onClick={onRemove} title="트랙 삭제">×</button>
         </div>
+        <input
+          type="range"
+          className="track-vol"
+          min={0}
+          max={2}
+          step={0.01}
+          value={track.volume ?? 1}
+          onChange={(e) => onVolume(parseFloat(e.target.value))}
+          title={`트랙 볼륨: ${Math.round((track.volume ?? 1) * 100)}%`}
+        />
       </div>
       <div
         className={`track-area ${over ? 'over' : ''}`}
         style={{ width, height: track.height }}
         onDragOver={(e) => {
+          if (locked) return;
           if (e.dataTransfer.types.includes('text/asset-id')) {
             e.preventDefault();
             setOver(true);
@@ -368,6 +526,7 @@ function TrackRow({
         }}
         onDragLeave={() => setOver(false)}
         onDrop={(e) => {
+          if (locked) return;
           e.preventDefault();
           setOver(false);
           const assetId = e.dataTransfer.getData('text/asset-id');
@@ -379,6 +538,7 @@ function TrackRow({
       >
         {children}
       </div>
+      <div className="track-resize" onMouseDown={onResizeMouseDown} title="트랙 높이 드래그" />
     </div>
   );
 }
@@ -388,6 +548,8 @@ function ClipView({
   asset,
   pps,
   selected,
+  locked,
+  groupId,
   onSelect,
   onUpdate,
 }: {
@@ -395,6 +557,8 @@ function ClipView({
   asset: import('../types').MediaAsset | undefined;
   pps: number;
   selected: boolean;
+  locked: boolean;
+  groupId?: string;
   onSelect: (additive: boolean) => void;
   onUpdate: (p: Partial<Clip>) => void;
 }) {
@@ -407,18 +571,42 @@ function ClipView({
   const onMouseDown = (e: React.MouseEvent, mode: 'move' | 'left' | 'right') => {
     e.stopPropagation();
     onSelect(e.shiftKey);
-    dragRef.current = { mode, startX: e.clientX, clip };
+    if (locked) return; // selection allowed, but no drag/trim on locked tracks
+    // Snapshot starts of all group members at drag-start so subsequent
+    // mousemoves can apply a single absolute delta instead of accumulating.
+    const st0 = useEditor.getState();
+    const gid = st0.clipGroupId[clip.id];
+    const memberIds = gid ? (st0.clipGroups[gid] ?? [clip.id]) : [clip.id];
+    const memberStarts: Record<string, number> = {};
+    for (const mid of memberIds) {
+      const m = st0.clips[mid];
+      if (m) memberStarts[mid] = m.start;
+    }
+    (dragRef as any).current = { mode, startX: e.clientX, clip, memberStarts };
     const onMove = (ev: MouseEvent) => {
       const d = dragRef.current;
       if (!d) return;
       const dxSec = (ev.clientX - d.startX) / pps;
       const noSnap = ev.altKey;
-      const snap = (t: number) => (noSnap ? t : snapTime(t));
+      const snap = (t: number) => (noSnap ? t : snapTime(t, { excludeClipIds: [d.clip.id], pps }));
       if (d.mode === 'move') {
         const target = Math.max(0, d.clip.start + dxSec);
-        onUpdate({ start: snap(target) });
+        const snapped = snap(target);
+        const delta = snapped - d.clip.start;
+        const memberStarts = (d as any).memberStarts as Record<string, number> | undefined;
+        if (memberStarts) {
+          let allowed = delta;
+          for (const mid of Object.keys(memberStarts)) {
+            if (memberStarts[mid] + allowed < 0) allowed = -memberStarts[mid];
+          }
+          for (const mid of Object.keys(memberStarts)) {
+            useEditor.getState().updateClip(mid, { start: Math.max(0, memberStarts[mid] + allowed) });
+          }
+        } else {
+          onUpdate({ start: snapped });
+        }
       } else if (d.mode === 'left') {
-        // snap on the timeline-position side, derive inPoint from the diff
+        // (no group sync on trim — only on move)
         const newStart = snap(Math.max(0, d.clip.start + dxSec));
         const consumed = newStart - d.clip.start; // timeline seconds
         // At speed S, every timeline second consumed eats S seconds of source media.
@@ -449,15 +637,31 @@ function ClipView({
 
   return (
     <div
-      className={`clip ${selected ? 'selected' : ''} ${asset?.hasVideo ? 'video' : 'audio'} ${clip.muted ? 'muted' : ''}`}
-      style={{ left, width }}
+      className={`clip ${selected ? 'selected' : ''} ${asset?.hasVideo ? 'video' : 'audio'} ${clip.muted ? 'muted' : ''} ${groupId ? 'grouped' : ''} ${clip.color ? 'has-color' : ''}`}
+      data-clip-id={clip.id}
+      style={{
+        left,
+        width,
+        ...(groupId ? { ['--group-color' as any]: groupColor(groupId) } : {}),
+        ...(clip.color ? { ['--clip-color' as any]: clip.color } : {}),
+      }}
       title={asset?.name ?? ''}
       onMouseDown={(e) => onMouseDown(e, 'move')}
     >
       <div className="clip-handle left" onMouseDown={(e) => onMouseDown(e, 'left')} />
       <div className="clip-content">
-        {asset?.thumbnail && asset.hasVideo && (
-          <div className="clip-thumb" style={{ backgroundImage: `url(${asset.thumbnail})` }} />
+        {asset?.hasVideo && asset.thumbnailStrip && asset.thumbnailStripStep ? (
+          <ThumbStrip
+            frames={asset.thumbnailStrip}
+            step={asset.thumbnailStripStep}
+            inPoint={clip.inPoint}
+            outPoint={clip.outPoint}
+            width={width}
+          />
+        ) : (
+          asset?.thumbnail && asset.hasVideo && (
+            <div className="clip-thumb" style={{ backgroundImage: `url(${asset.thumbnail})` }} />
+          )
         )}
         {asset?.waveform && asset.waveformPeaksPerSecond && (
           <Waveform
@@ -491,6 +695,51 @@ function ClipView({
         {clip.muted ? '🔇' : '🔊'}
       </button>
       <div className="clip-handle right" onMouseDown={(e) => onMouseDown(e, 'right')} />
+    </div>
+  );
+}
+
+function groupColor(id: string): string {
+  // Map a group id to a deterministic pleasant hue.
+  let h = 0;
+  for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) >>> 0;
+  return `hsl(${h % 360}, 70%, 60%)`;
+}
+
+function ThumbStrip({
+  frames,
+  step,
+  inPoint,
+  outPoint,
+  width,
+}: {
+  frames: string[];
+  step: number;
+  inPoint: number;
+  outPoint: number;
+  width: number;
+}) {
+  // Pick frames whose source-time bucket falls inside [inPoint, outPoint],
+  // then space them evenly across the clip's pixel width.
+  const startIdx = Math.max(0, Math.floor(inPoint / step));
+  const endIdx = Math.min(frames.length, Math.ceil(outPoint / step));
+  const visible = frames.slice(startIdx, Math.max(startIdx + 1, endIdx));
+  // Density: about one frame per 80 px.
+  const slots = Math.max(1, Math.min(visible.length, Math.floor(width / 80) || 1));
+  const picks: string[] = [];
+  for (let i = 0; i < slots; i++) {
+    const idx = Math.floor((i / Math.max(1, slots - 1)) * (visible.length - 1));
+    picks.push(visible[Math.min(idx, visible.length - 1)]);
+  }
+  return (
+    <div className="clip-strip">
+      {picks.map((src, i) => (
+        <div
+          key={i}
+          className="clip-strip-cell"
+          style={{ backgroundImage: `url(${src})`, flex: 1 }}
+        />
+      ))}
     </div>
   );
 }

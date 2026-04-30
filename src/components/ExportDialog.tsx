@@ -53,6 +53,7 @@ export function ExportDialog({ onClose }: { onClose: () => void }) {
           tracks: state.tracks,
           settings: state.settings,
           duration: dur,
+          masterVolume: state.masterVolume,
           rangeStart: range.start,
           rangeEnd: range.end,
         },

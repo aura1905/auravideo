@@ -1,12 +1,16 @@
 import { create, useStore } from 'zustand';
 import { temporal, type TemporalState } from 'zundo';
-import type { Clip, MediaAsset, ProjectSettings, Track } from '../types';
+import type { Clip, MediaAsset, Marker, ProjectSettings, Track } from '../types';
 
 interface EditorState {
   assets: Record<string, MediaAsset>;
   tracks: Track[]; // ordered top → bottom
   clips: Record<string, Clip>;
   settings: ProjectSettings;
+  trackLocked: Record<string, boolean>; // by track id
+  clipGroups: Record<string, string[]>; // groupId -> [clipId, ...]
+  clipGroupId: Record<string, string>; // clipId -> groupId
+  markers: Marker[];
   // playback
   playhead: number; // seconds
   isPlaying: boolean;
@@ -15,6 +19,8 @@ interface EditorState {
   selection: string[];
   snapEnabled: boolean;
   snapInterval: number; // seconds
+  masterVolume: number; // 0..2 (1 = original)
+  rippleEnabled: boolean;
 
   // actions
   addAsset: (a: MediaAsset) => void;
@@ -24,6 +30,9 @@ interface EditorState {
   removeTrack: (id: string) => void;
   toggleTrackMute: (id: string) => void;
   toggleTrackHidden: (id: string) => void;
+  setTrackVolume: (id: string, vol: number) => void;
+  setTrackHeight: (id: string, height: number) => void;
+  toggleTrackLock: (id: string) => void;
 
   addClip: (clip: Clip) => void;
   updateClip: (id: string, patch: Partial<Clip>) => void;
@@ -41,17 +50,26 @@ interface EditorState {
   setSettings: (s: Partial<ProjectSettings>) => void;
   setSnapEnabled: (b: boolean) => void;
   setSnapInterval: (s: number) => void;
+  setMasterVolume: (v: number) => void;
+  setRippleEnabled: (b: boolean) => void;
+  rippleDelete: (clipId: string) => void;
+  groupClips: (clipIds: string[]) => void;
+  ungroupClip: (clipId: string) => void;
+  setClipColor: (clipId: string, color?: string) => void;
+  addMarker: (m: Omit<Marker, 'id'>) => void;
+  updateMarker: (id: string, patch: Partial<Marker>) => void;
+  removeMarker: (id: string) => void;
 }
 
 const uid = () => Math.random().toString(36).slice(2, 10);
 
 const defaultTracks: Track[] = [
-  { id: 'v1', kind: 'video', name: 'V1', height: 64, muted: false, hidden: false },
-  { id: 'v2', kind: 'video', name: 'V2', height: 64, muted: false, hidden: false },
-  { id: 'v3', kind: 'video', name: 'V3', height: 64, muted: false, hidden: false },
-  { id: 'a1', kind: 'audio', name: 'A1', height: 56, muted: false, hidden: false },
-  { id: 'a2', kind: 'audio', name: 'A2', height: 56, muted: false, hidden: false },
-  { id: 'a3', kind: 'audio', name: 'A3', height: 56, muted: false, hidden: false },
+  { id: 'v1', kind: 'video', name: 'V1', height: 64, muted: false, hidden: false, volume: 1 },
+  { id: 'v2', kind: 'video', name: 'V2', height: 64, muted: false, hidden: false, volume: 1 },
+  { id: 'v3', kind: 'video', name: 'V3', height: 64, muted: false, hidden: false, volume: 1 },
+  { id: 'a1', kind: 'audio', name: 'A1', height: 56, muted: false, hidden: false, volume: 1 },
+  { id: 'a2', kind: 'audio', name: 'A2', height: 56, muted: false, hidden: false, volume: 1 },
+  { id: 'a3', kind: 'audio', name: 'A3', height: 56, muted: false, hidden: false, volume: 1 },
 ];
 
 // Debounce state used by the temporal handleSet hook below. Shared with
@@ -66,12 +84,18 @@ export const useEditor = create<EditorState>()(
   tracks: defaultTracks,
   clips: {},
   settings: { width: 1920, height: 1080, fps: 30, duration: 60 },
+  trackLocked: {},
+  clipGroups: {},
+  clipGroupId: {},
+  markers: [],
   playhead: 0,
   isPlaying: false,
   pixelsPerSecond: 80,
   selection: [],
   snapEnabled: true,
   snapInterval: 0.5,
+  masterVolume: 1,
+  rippleEnabled: false,
 
   addAsset: (a) => set((s) => ({ assets: { ...s.assets, [a.id]: a } })),
   removeAsset: (id) =>
@@ -89,7 +113,7 @@ export const useEditor = create<EditorState>()(
     const sameKind = get().tracks.filter((t) => t.kind === kind);
     const name = `${kind === 'video' ? 'V' : 'A'}${sameKind.length + 1}`;
     set((s) => ({
-      tracks: [...s.tracks, { id, kind, name, height: kind === 'video' ? 64 : 56, muted: false, hidden: false }],
+      tracks: [...s.tracks, { id, kind, name, height: kind === 'video' ? 64 : 56, muted: false, hidden: false, volume: 1 }],
     }));
     return id;
   },
@@ -105,6 +129,18 @@ export const useEditor = create<EditorState>()(
     set((s) => ({ tracks: s.tracks.map((t) => (t.id === id ? { ...t, muted: !t.muted } : t)) })),
   toggleTrackHidden: (id) =>
     set((s) => ({ tracks: s.tracks.map((t) => (t.id === id ? { ...t, hidden: !t.hidden } : t)) })),
+  setTrackVolume: (id, vol) =>
+    set((s) => ({
+      tracks: s.tracks.map((t) =>
+        t.id === id ? { ...t, volume: Math.max(0, Math.min(2, vol)) } : t
+      ),
+    })),
+  setTrackHeight: (id, height) =>
+    set((s) => ({
+      tracks: s.tracks.map((t) => (t.id === id ? { ...t, height: Math.max(28, Math.min(200, height)) } : t)),
+    })),
+  toggleTrackLock: (id) =>
+    set((s) => ({ trackLocked: { ...s.trackLocked, [id]: !s.trackLocked[id] } })),
 
   addClip: (clip) => set((s) => ({ clips: { ...s.clips, [clip.id]: clip } })),
   updateClip: (id, patch) =>
@@ -148,18 +184,21 @@ export const useEditor = create<EditorState>()(
     if (!c) return;
     const a = s.assets[c.assetId];
     if (!a || !a.hasAudio) return;
-    // Find the first non-hidden audio track or create one.
     let audioTrack = s.tracks.find((t) => t.kind === 'audio');
     if (!audioTrack) {
       const id = uid();
-      const newTrack: Track = { id, kind: 'audio', name: 'A1', height: 56, muted: false, hidden: false };
+      const newTrack: Track = { id, kind: 'audio', name: 'A1', height: 56, muted: false, hidden: false, volume: 1 };
       set((st) => ({ tracks: [...st.tracks, newTrack] }));
       audioTrack = newTrack;
     }
-    const newClip: Clip = { ...c, id: uid(), trackId: audioTrack.id };
+    const newClipId = uid();
+    const newClip: Clip = { ...c, id: newClipId, trackId: audioTrack.id };
     set((st) => ({
       clips: { ...st.clips, [newClip.id]: newClip, [c.id]: { ...c, muted: true } },
     }));
+    // Auto-group the original video clip with its detached audio clip so
+    // they continue to move together unless the user un-groups them.
+    get().groupClips([clipId, newClipId]);
   },
 
   setPlayhead: (t) => set({ playhead: Math.max(0, t) }),
@@ -178,6 +217,81 @@ export const useEditor = create<EditorState>()(
   setSettings: (p) => set((s) => ({ settings: { ...s.settings, ...p } })),
   setSnapEnabled: (b) => set({ snapEnabled: b }),
   setSnapInterval: (n) => set({ snapInterval: Math.max(0.01, n) }),
+  setMasterVolume: (v) => set({ masterVolume: Math.max(0, Math.min(2, v)) }),
+  setRippleEnabled: (b) => set({ rippleEnabled: b }),
+  rippleDelete: (clipId) => {
+    const s = get();
+    const c = s.clips[clipId];
+    if (!c) return;
+    const speed = c.speed ?? 1;
+    const removedDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed);
+    const removedStart = c.start;
+    set((st) => {
+      const { [clipId]: _, ...rest } = st.clips;
+      // Pull every clip on the same track that starts after the removed one
+      // earlier by the removed clip's display duration.
+      const updated: Record<string, Clip> = {};
+      for (const [id, cl] of Object.entries(rest)) {
+        if (cl.trackId === c.trackId && cl.start > removedStart) {
+          updated[id] = { ...cl, start: Math.max(0, cl.start - removedDur) };
+        } else {
+          updated[id] = cl;
+        }
+      }
+      return { clips: updated, selection: st.selection.filter((x) => x !== clipId) };
+    });
+  },
+  groupClips: (clipIds) => {
+    if (clipIds.length < 2) return;
+    const gid = uid();
+    set((s) => {
+      // remove these clips from any prior groups first
+      const groups = { ...s.clipGroups };
+      const idMap = { ...s.clipGroupId };
+      for (const cid of clipIds) {
+        const old = idMap[cid];
+        if (old && groups[old]) {
+          groups[old] = groups[old].filter((x) => x !== cid);
+          if (groups[old].length < 2) delete groups[old];
+        }
+      }
+      groups[gid] = [...clipIds];
+      for (const cid of clipIds) idMap[cid] = gid;
+      return { clipGroups: groups, clipGroupId: idMap };
+    });
+  },
+  ungroupClip: (clipId) => {
+    set((s) => {
+      const gid = s.clipGroupId[clipId];
+      if (!gid) return s;
+      const groups = { ...s.clipGroups };
+      const remaining = (groups[gid] ?? []).filter((x) => x !== clipId);
+      if (remaining.length < 2) {
+        // group dissolves
+        delete groups[gid];
+        const idMap = { ...s.clipGroupId };
+        for (const cid of s.clipGroups[gid] ?? []) delete idMap[cid];
+        return { clipGroups: groups, clipGroupId: idMap };
+      }
+      groups[gid] = remaining;
+      const idMap = { ...s.clipGroupId };
+      delete idMap[clipId];
+      return { clipGroups: groups, clipGroupId: idMap };
+    });
+  },
+  setClipColor: (clipId, color) =>
+    set((s) => {
+      const c = s.clips[clipId];
+      if (!c) return s;
+      return { clips: { ...s.clips, [clipId]: { ...c, color } } };
+    }),
+  addMarker: (m) =>
+    set((s) => ({ markers: [...s.markers, { ...m, id: uid() }].sort((a, b) => a.time - b.time) })),
+  updateMarker: (id, patch) =>
+    set((s) => ({
+      markers: s.markers.map((m) => (m.id === id ? { ...m, ...patch } : m)).sort((a, b) => a.time - b.time),
+    })),
+  removeMarker: (id) => set((s) => ({ markers: s.markers.filter((m) => m.id !== id) })),
     }),
     {
       // Only track edit-meaningful state. UI state (playhead, isPlaying,
@@ -188,6 +302,10 @@ export const useEditor = create<EditorState>()(
         clips: state.clips,
         settings: state.settings,
         assets: state.assets,
+        clipGroups: state.clipGroups,
+        clipGroupId: state.clipGroupId,
+        trackLocked: state.trackLocked,
+        markers: state.markers,
       }),
       // Coalesce rapid changes (drags, scrubbing-while-trimming) into one
       // undo step. The FIRST past-state in a burst is what we eventually push,
@@ -210,7 +328,7 @@ export const useEditor = create<EditorState>()(
 );
 
 // Hook for components that need to react to undo/redo availability.
-type Tracked = Pick<EditorState, 'tracks' | 'clips' | 'settings' | 'assets'>;
+type Tracked = Pick<EditorState, 'tracks' | 'clips' | 'settings' | 'assets' | 'clipGroups' | 'clipGroupId' | 'trackLocked' | 'markers'>;
 export function useTemporal<T>(selector: (s: TemporalState<Tracked>) => T) {
   return useStore(useEditor.temporal as any, selector as (state: unknown) => T);
 }
@@ -239,12 +357,47 @@ export function clipDisplayDur(c: Clip): number {
   return (c.outPoint - c.inPoint) / Math.max(0.01, speed);
 }
 
-export function snapTime(t: number): number {
+export function snapTime(t: number, opts?: { excludeClipIds?: string[]; pps?: number }): number {
   const s = useEditor.getState();
   if (!s.snapEnabled) return t;
-  const step = s.snapInterval;
-  if (step <= 0) return t;
-  return Math.round(t / step) * step;
+  let best = t;
+  let bestDist = Infinity;
+  // Grid snap candidate.
+  if (s.snapInterval > 0) {
+    const grid = Math.round(t / s.snapInterval) * s.snapInterval;
+    const d = Math.abs(grid - t);
+    if (d < bestDist) {
+      best = grid;
+      bestDist = d;
+    }
+  }
+  // Clip-edge candidates: every other clip's start and end.
+  const exclude = new Set(opts?.excludeClipIds ?? []);
+  // Tolerance: within 8 px equivalent at the current zoom — tight enough to
+  // not fight grid snap when the user is far from any clip.
+  const pps = opts?.pps ?? s.pixelsPerSecond;
+  const edgeTol = 8 / Math.max(1, pps);
+  for (const c of Object.values(s.clips)) {
+    if (exclude.has(c.id)) continue;
+    const dur = clipDisplayDur(c);
+    const candidates = [c.start, c.start + dur];
+    for (const cand of candidates) {
+      const d = Math.abs(cand - t);
+      if (d < bestDist && d <= edgeTol) {
+        best = cand;
+        bestDist = d;
+      }
+    }
+  }
+  // Playhead is also a useful snap target.
+  {
+    const cand = s.playhead;
+    const d = Math.abs(cand - t);
+    if (d < bestDist && d <= edgeTol) {
+      best = cand;
+    }
+  }
+  return best;
 }
 
 export function projectDuration(state: EditorState): number {

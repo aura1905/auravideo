@@ -109,6 +109,19 @@ export function PropertiesPanel() {
           onChange={(e) => apply({ muted: e.target.checked })}
         />
       </Field>
+      <Field label="컬러 라벨">
+        <div className="color-row">
+          {[undefined, '#ff5470', '#f7c948', '#7ad07a', '#4fb6ff', '#a674ff', '#ff8a50'].map((c, i) => (
+            <button
+              key={i}
+              className={`color-swatch ${(first.color ?? null) === (c ?? null) ? 'on' : ''}`}
+              style={{ background: c ?? 'transparent', borderStyle: c ? 'solid' : 'dashed' }}
+              title={c ?? '없음'}
+              onClick={() => apply({ color: c })}
+            />
+          ))}
+        </div>
+      </Field>
       {(() => {
         const onVideoTrack = tracks.find((t) => t.id === first.trackId)?.kind === 'video';
         if (!onVideoTrack || !asset?.hasAudio) return null;

@@ -3,11 +3,11 @@ import { fetchFile, toBlobURL } from '@ffmpeg/util';
 import type { Clip, MediaAsset, Track, ProjectSettings } from '../types';
 
 // ffmpeg-core ESM files are copied into public/ffmpeg-core by a Vite plugin
-// (see vite.config.ts) and served as same-origin static assets. (We avoid
-// /ffmpeg/ as a path because Vite's dependency resolver appears to intercept
-// it under some configurations.)
+// (see vite.config.ts). Multi-threaded build: needs the worker file too, plus
+// SharedArrayBuffer (provided by COOP/COEP headers / coi-serviceworker).
 const CORE_JS_URL = '/ffmpeg-core/ffmpeg-core.js';
 const CORE_WASM_URL = '/ffmpeg-core/ffmpeg-core.wasm';
+const CORE_WORKER_URL = '/ffmpeg-core/ffmpeg-core.worker.js';
 
 export type ProgressCb = (info: { phase: string; progress: number; log?: string }) => void;
 
@@ -21,9 +21,14 @@ async function getFFmpeg(onLog?: (m: string) => void): Promise<FFmpeg> {
   });
   // Load core from local bundle. toBlobURL is required because the worker
   // that runs ffmpeg-core needs same-origin blob URLs to importScripts the JS.
+  // For the multi-threaded core we also pass the worker script URL.
+  if (!self.crossOriginIsolated) {
+    onLog?.('warning: not crossOriginIsolated — multi-threaded ffmpeg requires SharedArrayBuffer');
+  }
   await ff.load({
     coreURL: await toBlobURL(CORE_JS_URL, 'text/javascript'),
     wasmURL: await toBlobURL(CORE_WASM_URL, 'application/wasm'),
+    workerURL: await toBlobURL(CORE_WORKER_URL, 'text/javascript'),
   });
   ffmpegSingleton = ff;
   return ff;
@@ -35,8 +40,9 @@ interface BuildArgs {
   tracks: Track[];
   settings: ProjectSettings;
   duration: number;
-  rangeStart?: number; // optional in-point in timeline seconds
-  rangeEnd?: number;   // optional out-point in timeline seconds
+  masterVolume: number;
+  rangeStart?: number;
+  rangeEnd?: number;
 }
 
 interface BuiltCommand {
@@ -49,7 +55,7 @@ function sanitize(name: string): string {
   return name.replace(/[^a-zA-Z0-9._-]/g, '_');
 }
 
-function buildCommand({ clips, assets, tracks, settings, duration, rangeStart, rangeEnd }: BuildArgs): BuiltCommand {
+function buildCommand({ clips, assets, tracks, settings, duration, masterVolume, rangeStart, rangeEnd }: BuildArgs): BuiltCommand {
   const W = settings.width;
   const H = settings.height;
   const FPS = settings.fps;
@@ -107,14 +113,13 @@ function buildCommand({ clips, assets, tracks, settings, duration, rangeStart, r
   }
 
   // collect audio: from audio tracks AND from video tracks (each video clip carries its source audio)
-  const audioClips: { clip: Clip; trackMuted: boolean }[] = [];
+  const audioClips: { clip: Clip; trackMuted: boolean; trackVolume: number }[] = [];
   for (const t of [...videoTracks, ...audioTracks]) {
     for (const c of clips) {
       if (c.trackId !== t.id) continue;
       const a = assets[c.assetId];
       if (!a) continue;
-      // assume hasAudio if not video-only; we'll feed [idx:a?] which can be empty — handle by skipping if no audio stream
-      audioClips.push({ clip: c, trackMuted: t.muted });
+      audioClips.push({ clip: c, trackMuted: t.muted, trackVolume: t.volume ?? 1 });
     }
   }
 
@@ -203,7 +208,8 @@ function buildCommand({ clips, assets, tracks, settings, duration, rangeStart, r
       }
       filters.push(`atempo=${remaining.toFixed(4)}`);
     }
-    filters.push(`volume=${c.volume.toFixed(3)}`);
+    const effectiveVol = c.volume * (entry.trackVolume ?? 1) * (masterVolume ?? 1);
+    filters.push(`volume=${effectiveVol.toFixed(3)}`);
     if (fi > 0) filters.push(`afade=t=in:st=0:d=${fi.toFixed(3)}`);
     if (fo > 0) filters.push(`afade=t=out:st=${(displayDur - fo).toFixed(3)}:d=${fo.toFixed(3)}`);
     if (startMs > 0) filters.push(`adelay=${startMs}|${startMs}`);

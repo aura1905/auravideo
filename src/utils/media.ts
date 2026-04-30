@@ -25,6 +25,65 @@ export async function loadMediaFile(file: File): Promise<MediaAsset> {
   };
 }
 
+/** Generate evenly spaced thumbnails across a video so long clips can show
+ * a filmstrip on the timeline. Returns dataURLs and the source-second step
+ * between frames. Capped at 12 frames to keep memory in check. */
+export async function generateThumbnailStrip(
+  url: string,
+  duration: number,
+  maxFrames = 12
+): Promise<{ frames: string[]; step: number } | null> {
+  if (!duration || duration < 0.5) return null;
+  const frames: string[] = [];
+  const v = document.createElement('video');
+  v.preload = 'auto';
+  v.muted = true;
+  v.crossOrigin = 'anonymous';
+  v.src = url;
+  await new Promise<void>((resolve, reject) => {
+    v.onloadeddata = () => resolve();
+    v.onerror = () => reject(new Error('video load failed'));
+  }).catch(() => null);
+  if (!v.videoWidth) {
+    v.removeAttribute('src');
+    v.load();
+    return null;
+  }
+  const step = duration / Math.min(maxFrames, Math.max(2, Math.ceil(duration / 2)));
+  const W = 80;
+  const H = Math.round((v.videoHeight / Math.max(1, v.videoWidth)) * W) || 45;
+  const c = document.createElement('canvas');
+  c.width = W;
+  c.height = H;
+  const ctx = c.getContext('2d');
+  if (!ctx) return null;
+  for (let t = step / 2; t < duration; t += step) {
+    try {
+      v.currentTime = t;
+      await new Promise<void>((resolve) => {
+        const onSeeked = () => {
+          v.removeEventListener('seeked', onSeeked);
+          resolve();
+        };
+        v.addEventListener('seeked', onSeeked);
+        // safety timeout
+        setTimeout(() => {
+          v.removeEventListener('seeked', onSeeked);
+          resolve();
+        }, 3000);
+      });
+      ctx.drawImage(v, 0, 0, W, H);
+      frames.push(c.toDataURL('image/jpeg', 0.6));
+    } catch {
+      break;
+    }
+  }
+  v.removeAttribute('src');
+  v.load();
+  if (frames.length === 0) return null;
+  return { frames, step };
+}
+
 /** Decode the asset's audio into a compact min/max peak array. Heavy work,
  * intended to be called after the asset is added to the library so the UI
  * isn't blocked. Returns the peaks array and the bucket density. */

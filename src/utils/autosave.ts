@@ -23,7 +23,13 @@ export function useAutosave(enabled: boolean) {
         state.settings === prev.settings &&
         state.snapEnabled === prev.snapEnabled &&
         state.snapInterval === prev.snapInterval &&
-        state.pixelsPerSecond === prev.pixelsPerSecond
+        state.pixelsPerSecond === prev.pixelsPerSecond &&
+        state.masterVolume === prev.masterVolume &&
+        state.rippleEnabled === prev.rippleEnabled &&
+        state.clipGroups === prev.clipGroups &&
+        state.clipGroupId === prev.clipGroupId &&
+        state.trackLocked === prev.trackLocked &&
+        state.markers === prev.markers
       ) {
         return;
       }

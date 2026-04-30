@@ -22,8 +22,10 @@ export function Preview() {
   const settings = useEditor((s) => s.settings);
   const playhead = useEditor((s) => s.playhead);
   const isPlaying = useEditor((s) => s.isPlaying);
+  const masterVolume = useEditor((s) => s.masterVolume);
   const setPlayhead = useEditor((s) => s.setPlayhead);
   const setPlaying = useEditor((s) => s.setPlaying);
+  const setMasterVolume = useEditor((s) => s.setMasterVolume);
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const hiddenContainerRef = useRef<HTMLDivElement>(null);
@@ -126,7 +128,18 @@ export function Preview() {
       }
       lastTickRef.current = now;
 
-      drawFrame(ctx, canvas.width, canvas.height, state.tracks, Object.values(state.clips), state.assets, head, mediaMapRef.current, state.isPlaying);
+      drawFrame(
+        ctx,
+        canvas.width,
+        canvas.height,
+        state.tracks,
+        Object.values(state.clips),
+        state.assets,
+        head,
+        mediaMapRef.current,
+        state.isPlaying,
+        state.masterVolume
+      );
 
       rafRef.current = requestAnimationFrame(tick);
     };
@@ -189,6 +202,24 @@ export function Preview() {
         <span className="time">
           {formatTime(playhead)} / {formatTime(duration)}
         </span>
+        <span className="master-vol" title="마스터 볼륨 (전체 출력에 적용)">
+          <button
+            className="vol-icon"
+            onClick={() => setMasterVolume(masterVolume > 0 ? 0 : 1)}
+            title={masterVolume > 0 ? '마스터 음소거' : '마스터 음소거 해제'}
+          >
+            {masterVolume === 0 ? '🔇' : masterVolume < 0.5 ? '🔈' : masterVolume < 1.2 ? '🔉' : '🔊'}
+          </button>
+          <input
+            type="range"
+            min={0}
+            max={2}
+            step={0.01}
+            value={masterVolume}
+            onChange={(e) => setMasterVolume(parseFloat(e.target.value))}
+          />
+          <span className="vol-percent">{Math.round(masterVolume * 100)}%</span>
+        </span>
       </div>
     </div>
   );
@@ -203,7 +234,8 @@ function drawFrame(
   assets: Record<string, import('../types').MediaAsset>,
   head: number,
   media: Map<string, ClipMediaState>,
-  isPlaying: boolean
+  isPlaying: boolean,
+  masterVolume: number
 ) {
   ctx.fillStyle = '#000';
   ctx.fillRect(0, 0, W, H);
@@ -310,7 +342,7 @@ function drawFrame(
           const rate = Math.max(0.0625, Math.min(16, speed));
           if (m.el.playbackRate !== rate) m.el.playbackRate = rate;
           if (Math.abs(m.el.currentTime - localTime) > 0.2) m.el.currentTime = localTime;
-          let vol = c.volume;
+          let vol = c.volume * (t.volume ?? 1) * masterVolume;
           if (c.fadeIn > 0 && head - c.start < c.fadeIn) vol *= (head - c.start) / c.fadeIn;
           if (c.fadeOut > 0 && end - head < c.fadeOut) vol *= (end - head) / c.fadeOut;
           if (t.muted || c.muted) vol = 0;
@@ -337,7 +369,7 @@ function drawFrame(
       const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed);
       const end = c.start + displayDur;
       if (head >= c.start && head < end && isPlaying) {
-        let vol = c.volume;
+        let vol = c.volume * (t.volume ?? 1) * masterVolume;
         if (c.fadeIn > 0 && head - c.start < c.fadeIn) vol *= (head - c.start) / c.fadeIn;
         if (c.fadeOut > 0 && end - head < c.fadeOut) vol *= (end - head) / c.fadeOut;
         if (t.muted || c.muted) vol = 0;
