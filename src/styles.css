@@ -376,6 +376,17 @@ input[type=number], input[type=text], select {
 .track-name.audio { background: rgba(44, 128, 96, 0.2); color: #a6e2c5; }
 .track-name.subtitle { background: rgba(247, 201, 72, 0.2); color: #f7c948; }
 .track-row.subtitle-track .track-area { background: rgba(247, 201, 72, 0.04); }
+.subtitle-track .track-buttons {
+  flex-wrap: wrap;
+  gap: 3px;
+}
+.subtitle-track .track-buttons button {
+  width: auto;
+  height: 22px;
+  padding: 0 6px;
+  font-size: 11px;
+  white-space: nowrap;
+}
 .subtitle-block {
   position: absolute;
   top: 4px;
