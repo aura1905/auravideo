@@ -12,6 +12,7 @@ export interface SerializedAsset {
   height?: number;
   hasVideo: boolean;
   hasAudio: boolean;
+  isImage?: boolean;
   thumbnail?: string;
 }
 
@@ -50,6 +51,7 @@ export function serializeState(): { state: SerializedState; assetBlobs: Map<stri
       height: a.height,
       hasVideo: a.hasVideo,
       hasAudio: a.hasAudio,
+      isImage: a.isImage,
       thumbnail: a.thumbnail,
     });
     blobs.set(a.id, a.file);
@@ -109,6 +111,7 @@ export async function loadProject(id: string): Promise<boolean> {
       height: meta.height,
       hasVideo: meta.hasVideo,
       hasAudio: meta.hasAudio,
+      isImage: meta.isImage ?? meta.fileType?.startsWith('image/'),
       thumbnail: meta.thumbnail,
     };
   }
@@ -187,6 +190,7 @@ export async function importProjectZip(file: File): Promise<void> {
       height: meta.height,
       hasVideo: meta.hasVideo,
       hasAudio: meta.hasAudio,
+      isImage: meta.isImage ?? meta.fileType?.startsWith('image/'),
       thumbnail: meta.thumbnail,
     };
   }

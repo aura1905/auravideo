@@ -176,6 +176,11 @@ function buildCommand(
     inputIndex[assetId] = idx;
     const fsName = `in${idx}_${sanitize(a.name)}`;
     fileMap.push({ fsName, file: a.file });
+    // Image inputs need -loop 1 + -framerate so FFmpeg treats them as a
+    // continuous video stream of the project FPS instead of a single frame.
+    if (a.isImage) {
+      inputArgs.push('-loop', '1', '-framerate', String(FPS));
+    }
     inputArgs.push('-i', fsName);
     return idx;
   };

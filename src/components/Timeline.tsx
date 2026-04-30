@@ -378,7 +378,7 @@ export function Timeline() {
                     trackId: track.id,
                     start: Math.max(0, atSec),
                     inPoint: 0,
-                    outPoint: a.duration,
+                    outPoint: a.isImage ? Math.min(5, a.duration) : a.duration,
                     fadeIn: 0,
                     fadeOut: 0,
                     volume: 1,

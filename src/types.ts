@@ -5,11 +5,13 @@ export interface MediaAsset {
   name: string;
   url: string; // object URL
   file: File;
-  duration: number; // seconds
+  duration: number; // seconds (for images: a generous nominal — the clip
+                     //  itself is what defines visible duration on the timeline)
   width?: number;
   height?: number;
   hasVideo: boolean;
   hasAudio: boolean;
+  isImage?: boolean; // true for PNG/JPG/etc — rendered as a still frame
   thumbnail?: string; // dataURL — single representative frame
   // Multi-frame strip: one dataURL every `thumbnailStripStep` source seconds,
   // generated lazily so long clips show a filmstrip instead of a single frame.

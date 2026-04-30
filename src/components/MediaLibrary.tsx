@@ -75,7 +75,8 @@ export function MediaLibrary() {
       trackId: candidate.id,
       start,
       inPoint: 0,
-      outPoint: asset.duration,
+      // Images get a 5s default visible duration; video/audio uses real length.
+      outPoint: asset.isImage ? Math.min(5, asset.duration) : asset.duration,
       fadeIn: 0,
       fadeOut: 0,
       volume: 1,
@@ -123,7 +124,7 @@ export function MediaLibrary() {
           ref={inputRef}
           type="file"
           multiple
-          accept="video/*,audio/*"
+          accept="video/*,audio/*,image/*"
           style={{ display: 'none' }}
           onChange={(e) => {
             if (e.target.files) handleFiles(e.target.files);

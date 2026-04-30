@@ -5,12 +5,14 @@ import { formatTime } from '../utils/media';
 import { paintSubtitle } from '../utils/drawSubtitle';
 
 interface ClipMediaState {
-  el: HTMLVideoElement;
+  kind: 'video' | 'image';
+  el: HTMLVideoElement | null;   // null for image clips
+  imgEl: HTMLImageElement | null; // null for video clips
   ready: boolean;
-  // Per-clip frame cache. We blit the last-known good frame here whenever the
-  // video reports readyState >= HAVE_CURRENT_DATA. The main canvas always reads
-  // from the cache, so a video being mid-seek can no longer cause a higher
-  // track to "disappear" and reveal a lower track underneath.
+  // Per-clip frame cache. For video: we blit the last-known good frame here
+  // whenever the video reports readyState >= HAVE_CURRENT_DATA. For images:
+  // we paint once after the image loads. The main canvas always reads from
+  // the cache so a higher track stays on top even while a video is mid-seek.
   cache: HTMLCanvasElement;
   cacheCtx: CanvasRenderingContext2D | null;
   cacheValid: boolean;
@@ -47,11 +49,14 @@ export function Preview() {
       const st = map.get(id);
       if (!st) return;
       try {
-        st.el.pause();
-        st.el.removeAttribute('src');
-        st.el.load();
+        if (st.el) {
+          st.el.pause();
+          st.el.removeAttribute('src');
+          st.el.load();
+          st.el.remove();
+        }
+        if (st.imgEl) st.imgEl.remove();
       } catch {}
-      st.el.remove();
       map.delete(id);
     };
 
@@ -65,7 +70,8 @@ export function Preview() {
       }
       const a = assets[c.assetId];
       const expectedSrc = a?.url ?? '';
-      const currentSrc = map.get(id)!.el.currentSrc || map.get(id)!.el.src;
+      const m = map.get(id)!;
+      const currentSrc = m.el?.currentSrc || m.el?.src || m.imgEl?.src || '';
       if (!a || currentSrc !== expectedSrc) {
         removeEntry(id);
       }
@@ -76,6 +82,39 @@ export function Preview() {
       if (map.has(c.id)) continue;
       const a = assets[c.assetId];
       if (!a) continue;
+      const cache = document.createElement('canvas');
+      cache.width = a.width || 320;
+      cache.height = a.height || 180;
+      const cacheCtx = cache.getContext('2d');
+      if (a.isImage) {
+        const img = new Image();
+        img.style.position = 'absolute';
+        img.style.left = '-99999px';
+        img.src = a.url;
+        container.appendChild(img);
+        const state: ClipMediaState = {
+          kind: 'image',
+          el: null,
+          imgEl: img,
+          ready: false,
+          cache,
+          cacheCtx,
+          cacheValid: false,
+        };
+        img.onload = () => {
+          state.ready = true;
+          if (img.naturalWidth) cache.width = img.naturalWidth;
+          if (img.naturalHeight) cache.height = img.naturalHeight;
+          if (cacheCtx) {
+            try {
+              cacheCtx.drawImage(img, 0, 0, cache.width, cache.height);
+              state.cacheValid = true;
+            } catch {}
+          }
+        };
+        map.set(c.id, state);
+        continue;
+      }
       const v = document.createElement('video');
       v.src = a.url;
       v.preload = 'auto';
@@ -87,12 +126,10 @@ export function Preview() {
       v.width = a.width || 320;
       v.height = a.height || 180;
       container.appendChild(v);
-      const cache = document.createElement('canvas');
-      cache.width = a.width || 320;
-      cache.height = a.height || 180;
-      const cacheCtx = cache.getContext('2d');
       const state: ClipMediaState = {
+        kind: 'video',
         el: v,
+        imgEl: null,
         ready: false,
         cache,
         cacheCtx,
@@ -156,7 +193,7 @@ export function Preview() {
   useEffect(() => {
     if (!isPlaying) {
       for (const m of mediaMapRef.current.values()) {
-        if (!m.el.paused) m.el.pause();
+        if (m.el && !m.el.paused) m.el.pause();
       }
     }
   }, [isPlaying]);
@@ -286,29 +323,31 @@ function drawFrame(
       if (!a || !a.hasVideo) continue;
 
       if (head >= c.start && head < visualEnd) {
-        // Map timeline position to source-media time taking speed into account.
-        const localTime = c.inPoint + (head - c.start) * speed;
-        try {
-          // Browsers clamp playbackRate to ~[0.0625, 16]; mirror that.
-          const rate = Math.max(0.0625, Math.min(16, speed));
-          if (m.el.playbackRate !== rate) m.el.playbackRate = rate;
-          if (isPlaying) {
-            if (Math.abs(m.el.currentTime - localTime) > 0.2) {
-              m.el.currentTime = localTime;
-            }
-            if (m.el.paused) {
-              m.el.muted = true;
-              m.el.play().catch(() => {});
-            }
-          } else {
-            if (!m.el.paused) m.el.pause();
-            if (Math.abs(m.el.currentTime - localTime) > 0.05) {
-              try {
+        // Image clips skip all the video sync — their cache is populated once
+        // at load time and never changes.
+        if (m.el) {
+          const localTime = c.inPoint + (head - c.start) * speed;
+          try {
+            const rate = Math.max(0.0625, Math.min(16, speed));
+            if (m.el.playbackRate !== rate) m.el.playbackRate = rate;
+            if (isPlaying) {
+              if (Math.abs(m.el.currentTime - localTime) > 0.2) {
                 m.el.currentTime = localTime;
-              } catch {}
+              }
+              if (m.el.paused) {
+                m.el.muted = true;
+                m.el.play().catch(() => {});
+              }
+            } else {
+              if (!m.el.paused) m.el.pause();
+              if (Math.abs(m.el.currentTime - localTime) > 0.05) {
+                try {
+                  m.el.currentTime = localTime;
+                } catch {}
+              }
             }
-          }
-        } catch {}
+          } catch {}
+        }
         // alpha (fade) — visual fade uses visualEnd, not audioEnd.
         let alpha = 1;
         if (c.fadeIn > 0 && head - c.start < c.fadeIn) {
@@ -319,9 +358,9 @@ function drawFrame(
         }
         ctx.globalAlpha = Math.max(0, Math.min(1, alpha));
         // Refresh the per-clip cache from the live video whenever a fresh
-        // frame is available. This keeps a "last known good frame" around so
-        // a higher track stays on top even while its source is mid-seek.
-        if (m.el.readyState >= 2 && m.cacheCtx) {
+        // frame is available. (Image clips: skip — their cache was populated
+        // once at load time and never changes.)
+        if (m.el && m.el.readyState >= 2 && m.cacheCtx) {
           const vw = m.el.videoWidth || m.cache.width;
           const vh = m.el.videoHeight || m.cache.height;
           if (vw && vh && (m.cache.width !== vw || m.cache.height !== vh)) {
@@ -371,7 +410,7 @@ function drawFrame(
           ctx.filter = 'none';
         }
         ctx.globalAlpha = 1;
-      } else if (head >= visualEnd && head < audioEnd && isPlaying) {
+      } else if (head >= visualEnd && head < audioEnd && isPlaying && m.el) {
         // Visual region ended but audio tail is still playing — keep the
         // <video> element rolling so its audio output continues. Don't draw
         // anything new (lower tracks may be drawn in their own iterations).
@@ -381,7 +420,7 @@ function drawFrame(
             m.el.play().catch(() => {});
           }
         } catch {}
-      } else {
+      } else if (m.el) {
         if (!m.el.paused) m.el.pause();
       }
     }
@@ -394,7 +433,7 @@ function drawFrame(
     for (const c of clips) {
       if (c.trackId !== t.id) continue;
       const m = media.get(c.id);
-      if (!m) continue;
+      if (!m || !m.el) continue; // image clips have no <video> / no audio
       const a = assets[c.assetId];
       if (!a) continue;
       const speed = c.speed ?? 1;
@@ -438,7 +477,7 @@ function drawFrame(
     for (const c of clips) {
       if (c.trackId !== t.id) continue;
       const m = media.get(c.id);
-      if (!m) continue;
+      if (!m || !m.el) continue; // image clips have no audio
       const a = assets[c.assetId];
       if (!a) continue;
       const speed = c.speed ?? 1;

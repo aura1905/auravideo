@@ -6,7 +6,27 @@ export async function loadMediaFile(file: File): Promise<MediaAsset> {
   const url = URL.createObjectURL(file);
   const isVideo = file.type.startsWith('video/');
   const isAudio = file.type.startsWith('audio/');
-  if (!isVideo && !isAudio) throw new Error(`지원하지 않는 파일: ${file.name}`);
+  const isImage = file.type.startsWith('image/');
+  if (!isVideo && !isAudio && !isImage) throw new Error(`지원하지 않는 파일: ${file.name}`);
+
+  if (isImage) {
+    const meta = await probeImage(url);
+    return {
+      id: uid(),
+      name: file.name,
+      file,
+      url,
+      // Generous nominal duration — the clip's outPoint defines visible
+      // duration on the timeline. Source media is a still image that loops.
+      duration: 600,
+      width: meta.width,
+      height: meta.height,
+      hasVideo: true, // composited like a video clip
+      hasAudio: false,
+      isImage: true,
+      thumbnail: url, // the image itself doubles as its thumbnail
+    };
+  }
 
   const meta = await probeMedia(url, isVideo);
   const thumbnail = isVideo ? await captureThumbnail(url, Math.min(0.5, meta.duration / 2)) : undefined;
@@ -20,9 +40,18 @@ export async function loadMediaFile(file: File): Promise<MediaAsset> {
     width: meta.width,
     height: meta.height,
     hasVideo: isVideo,
-    hasAudio: true, // assume; refined later if probe fails
+    hasAudio: true,
     thumbnail,
   };
+}
+
+function probeImage(url: string): Promise<{ width: number; height: number }> {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => resolve({ width: img.naturalWidth || 0, height: img.naturalHeight || 0 });
+    img.onerror = () => reject(new Error('이미지 로딩 실패'));
+    img.src = url;
+  });
 }
 
 /** Generate evenly spaced thumbnails across a video so long clips can show
