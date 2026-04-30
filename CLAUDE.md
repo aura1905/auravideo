@@ -121,6 +121,22 @@ Each `MediaAsset` may carry a `waveform: number[]` (packed `[min, max]` pairs) p
 
 The `Waveform` SVG component in `Timeline.tsx` slices the peaks for the clip's `[inPoint, outPoint]` range and emits one vertical line per output column. `preserveAspectRatio="none"` makes it stretch to the clip's pixel width without re-rendering when zoom changes.
 
+## Scene detection
+
+`src/utils/sceneDetect.ts` runs FFmpeg's `scdet` filter on a clip's source range and parses log lines like `lavfi.scd.time=2.500000` to collect timestamps. Threshold (0–100) controls sensitivity; the dialog defaults to 15. The `SceneDetectDialog` lets the user pick "마커로 표시" (adds yellow-green markers on the ruler) or "클립 자동 분할" (splits the clip at each detected point — splits in ascending order, re-fetching state each iteration since `splitClipAt` creates new ids for the right half).
+
+The shared FFmpeg singleton lives in `src/utils/ffmpegCore.ts` so scene detection and export share the same instance and don't pay the load cost twice.
+
+## Audio ducking
+
+`Track.autoDuckLevel` (0..1, default 1 = no duck). When set < 1, this track's effective volume is multiplied by `autoDuckLevel` whenever any *other* track has audio audible at the current time. The track-header slider (orange-tinted, only shown for audio tracks) controls it.
+
+**Preview**: `hasOtherActiveAudio(tracks, clips, assets, excludeTrackId, t)` scans all other tracks for clips overlapping `t` (audible = not muted, asset has audio). Each frame, if true, multiply the ducked clip's vol by `duckLevel`.
+
+**Export**: For each ducked audio clip, we pre-compute the *merged* timeline intervals during which any other track is audible. Those intervals are translated to the clip's local time (`adelay` shifts the clip onto the timeline AFTER the volume filter, so inside the volume filter `t` is the clip's local time = 0..clipDur). We emit `volume=eval=frame:volume='base*(if(gt(between(t,a,b)+between(t,c,d)+...,0),duck,1))'` so the duck activates within each interval. If no other track is audible in the clip's range, the expression simplifies to a plain `volume=base` constant.
+
+There's no smooth attack/release — ducking is binary on/off at interval boundaries. Adding ramps would require either keyframed `volume` or a `sidechaincompress` rebuild; left for a future round.
+
 ## Whisper auto-subtitles
 
 `src/utils/whisper.ts` wraps `@xenova/transformers` (lazy-loaded via dynamic import — kept out of the main bundle so users who never run transcription don't pay the ~830 KB cost). The flow:

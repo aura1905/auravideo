@@ -3,6 +3,7 @@ import { useEditor, newClipId, projectDuration, snapTime, clipDisplayDur } from 
 import type { Clip, Track } from '../types';
 import { formatTime } from '../utils/media';
 import { WhisperDialog } from './WhisperDialog';
+import { SceneDetectDialog } from './SceneDetectDialog';
 
 const TRACK_HEADER_W = 150;
 const RULER_H = 28;
@@ -29,6 +30,7 @@ export function Timeline() {
   const setTrackVolume = useEditor((s) => s.setTrackVolume);
   const setTrackHeight = useEditor((s) => s.setTrackHeight);
   const toggleTrackLock = useEditor((s) => s.toggleTrackLock);
+  const setTrackDuckLevel = useEditor((s) => s.setTrackDuckLevel);
   const trackLocked = useEditor((s) => s.trackLocked);
   const markers = useEditor((s) => s.markers);
   const clipGroupId = useEditor((s) => s.clipGroupId);
@@ -36,6 +38,7 @@ export function Timeline() {
   const subtitleSelection = useEditor((s) => s.subtitleSelection);
   const [whisperOpen, setWhisperOpen] = useState(false);
   const onOpenWhisper = () => setWhisperOpen(true);
+  const [sceneOpen, setSceneOpen] = useState(false);
   const addSubtitle = useEditor((s) => s.addSubtitle);
   const updateSubtitle = useEditor((s) => s.updateSubtitle);
   const removeSubtitle = useEditor((s) => s.removeSubtitle);
@@ -279,6 +282,10 @@ export function Timeline() {
           ✂ 그룹 해제
         </button>
         <span className="toolbar-sep" />
+        <button onClick={() => setSceneOpen(true)} title="비디오 클립의 장면 변화 자동 감지">
+          🔍 장면 감지
+        </button>
+        <span className="toolbar-sep" />
         <button onClick={() => addTrack('video')} title="비디오 트랙 추가">+ V</button>
         <button onClick={() => addTrack('audio')} title="오디오 트랙 추가">+ A</button>
         <span className="toolbar-sep" />
@@ -368,6 +375,7 @@ export function Timeline() {
                 onVolume={(v) => setTrackVolume(track.id, v)}
                 onHeight={(h) => setTrackHeight(track.id, h)}
                 onToggleLock={() => toggleTrackLock(track.id)}
+                onDuck={(d) => setTrackDuckLevel(track.id, d)}
                 onDropAsset={(assetId, atSec) => {
                   const a = assets[assetId];
                   if (!a) return;
@@ -428,6 +436,7 @@ export function Timeline() {
         <span>길이: {formatTime(duration)}</span>
       </div>
       {whisperOpen && <WhisperDialog onClose={() => setWhisperOpen(false)} />}
+      {sceneOpen && <SceneDetectDialog onClose={() => setSceneOpen(false)} />}
     </div>
   );
 }
@@ -497,6 +506,7 @@ function TrackRow({
   onVolume,
   onHeight,
   onToggleLock,
+  onDuck,
   onDropAsset,
 }: {
   track: Track;
@@ -511,6 +521,7 @@ function TrackRow({
   onVolume: (v: number) => void;
   onHeight: (h: number) => void;
   onToggleLock: () => void;
+  onDuck: (d: number) => void;
   onDropAsset: (assetId: string, atSec: number) => void;
 }) {
   const [over, setOver] = useState(false);
@@ -565,6 +576,18 @@ function TrackRow({
           onChange={(e) => onVolume(parseFloat(e.target.value))}
           title={`트랙 볼륨: ${Math.round((track.volume ?? 1) * 100)}%`}
         />
+        {track.kind === 'audio' && (
+          <input
+            type="range"
+            className={`track-duck ${(track.autoDuckLevel ?? 1) < 1 ? 'on' : ''}`}
+            min={0}
+            max={1}
+            step={0.01}
+            value={track.autoDuckLevel ?? 1}
+            onChange={(e) => onDuck(parseFloat(e.target.value))}
+            title={`다른 오디오 재생 시 이 트랙 볼륨: ${Math.round((track.autoDuckLevel ?? 1) * 100)}% (1=ducking 안 함)`}
+          />
+        )}
       </div>
       <div
         className={`track-area ${over ? 'over' : ''}`}

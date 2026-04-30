@@ -264,6 +264,35 @@ export function Preview() {
   );
 }
 
+/** Check whether *any other track* besides `excludeTrackId` has an audible
+ * clip active at time `t`. Used to drive auto-ducking. A clip counts as
+ * audible if (a) it overlaps the time, (b) the clip itself isn't muted, and
+ * (c) the asset has audio. Track-level mute also disqualifies. */
+function hasOtherActiveAudio(
+  tracks: import('../types').Track[],
+  clips: Clip[],
+  assets: Record<string, import('../types').MediaAsset>,
+  excludeTrackId: string,
+  t: number
+): boolean {
+  for (const tr of tracks) {
+    if (tr.id === excludeTrackId) continue;
+    if (tr.muted) continue;
+    for (const c of clips) {
+      if (c.trackId !== tr.id) continue;
+      if (c.muted) continue;
+      const a = assets[c.assetId];
+      if (!a || !a.hasAudio) continue;
+      const speed = c.speed ?? 1;
+      const dur = (c.outPoint - c.inPoint) / Math.max(0.01, speed);
+      const tailCap = Math.max(0, (a.duration - c.outPoint) / Math.max(0.01, speed));
+      const tail = Math.min(c.audioTail ?? 0, tailCap);
+      if (t >= c.start && t < c.start + dur + tail) return true;
+    }
+  }
+  return false;
+}
+
 function drawSubtitles(
   ctx: CanvasRenderingContext2D,
   W: number,
@@ -430,6 +459,7 @@ function drawFrame(
   // For MVP we only emit audio from active clips, using HTMLMediaElement volume
   const audioTracks = tracks.filter((t) => t.kind === 'audio');
   for (const t of audioTracks) {
+    const duckLevel = t.autoDuckLevel ?? 1;
     for (const c of clips) {
       if (c.trackId !== t.id) continue;
       const m = media.get(c.id);
@@ -448,7 +478,8 @@ function drawFrame(
           const rate = Math.max(0.0625, Math.min(16, speed));
           if (m.el.playbackRate !== rate) m.el.playbackRate = rate;
           if (Math.abs(m.el.currentTime - localTime) > 0.2) m.el.currentTime = localTime;
-          let vol = c.volume * (t.volume ?? 1) * masterVolume;
+          const ducker = duckLevel < 1 && hasOtherActiveAudio(tracks, clips, assets, t.id, head);
+          let vol = c.volume * (t.volume ?? 1) * masterVolume * (ducker ? duckLevel : 1);
           if (c.fadeIn > 0 && head - c.start < c.fadeIn) vol *= (head - c.start) / c.fadeIn;
           // Combined fade-out: covers both fadeOut (within visible region)
           // and audioTail (post-visible) as ONE continuous ramp from full
@@ -474,6 +505,7 @@ function drawFrame(
   // Also apply audio volume from active VIDEO clips (their <video> elements
   // also produce audio); rate already set in the visual loop above.
   for (const t of videoTracks) {
+    const duckLevel = t.autoDuckLevel ?? 1;
     for (const c of clips) {
       if (c.trackId !== t.id) continue;
       const m = media.get(c.id);
@@ -487,7 +519,8 @@ function drawFrame(
       const tail = Math.min(c.audioTail ?? 0, tailCap);
       const audioEnd = visualEnd + tail;
       if (head >= c.start && head < audioEnd && isPlaying) {
-        let vol = c.volume * (t.volume ?? 1) * masterVolume;
+        const ducker = duckLevel < 1 && hasOtherActiveAudio(tracks, clips, assets, t.id, head);
+        let vol = c.volume * (t.volume ?? 1) * masterVolume * (ducker ? duckLevel : 1);
         if (c.fadeIn > 0 && head - c.start < c.fadeIn) vol *= (head - c.start) / c.fadeIn;
         const fadeStart = visualEnd - c.fadeOut;
         const fadeRange = c.fadeOut + tail;

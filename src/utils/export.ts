@@ -1,39 +1,9 @@
-import { FFmpeg } from '@ffmpeg/ffmpeg';
-import { fetchFile, toBlobURL } from '@ffmpeg/util';
+import { fetchFile } from '@ffmpeg/util';
 import type { Clip, MediaAsset, Subtitle, Track, ProjectSettings } from '../types';
 import { paintSubtitle } from './drawSubtitle';
-
-// ffmpeg-core ESM files are copied into public/ffmpeg-core by a Vite plugin
-// (see vite.config.ts). Multi-threaded build: needs the worker file too, plus
-// SharedArrayBuffer (provided by COOP/COEP headers / coi-serviceworker).
-const CORE_JS_URL = '/ffmpeg-core/ffmpeg-core.js';
-const CORE_WASM_URL = '/ffmpeg-core/ffmpeg-core.wasm';
-const CORE_WORKER_URL = '/ffmpeg-core/ffmpeg-core.worker.js';
+import { getFFmpeg } from './ffmpegCore';
 
 export type ProgressCb = (info: { phase: string; progress: number; log?: string }) => void;
-
-let ffmpegSingleton: FFmpeg | null = null;
-
-async function getFFmpeg(onLog?: (m: string) => void): Promise<FFmpeg> {
-  if (ffmpegSingleton) return ffmpegSingleton;
-  const ff = new FFmpeg();
-  ff.on('log', ({ message }) => {
-    onLog?.(message);
-  });
-  // Load core from local bundle. toBlobURL is required because the worker
-  // that runs ffmpeg-core needs same-origin blob URLs to importScripts the JS.
-  // For the multi-threaded core we also pass the worker script URL.
-  if (!self.crossOriginIsolated) {
-    onLog?.('warning: not crossOriginIsolated — multi-threaded ffmpeg requires SharedArrayBuffer');
-  }
-  await ff.load({
-    coreURL: await toBlobURL(CORE_JS_URL, 'text/javascript'),
-    wasmURL: await toBlobURL(CORE_WASM_URL, 'application/wasm'),
-    workerURL: await toBlobURL(CORE_WORKER_URL, 'text/javascript'),
-  });
-  ffmpegSingleton = ff;
-  return ff;
-}
 
 interface BuildArgs {
   clips: Clip[];
@@ -159,14 +129,62 @@ function buildCommand(
   }
 
   // collect audio: from audio tracks AND from video tracks (each video clip carries its source audio)
-  const audioClips: { clip: Clip; trackMuted: boolean; trackVolume: number }[] = [];
+  const audioClips: {
+    clip: Clip;
+    trackMuted: boolean;
+    trackVolume: number;
+    trackId: string;
+    duckLevel: number;
+  }[] = [];
   for (const t of [...videoTracks, ...audioTracks]) {
     for (const c of clips) {
       if (c.trackId !== t.id) continue;
       const a = assets[c.assetId];
       if (!a) continue;
-      audioClips.push({ clip: c, trackMuted: t.muted, trackVolume: t.volume ?? 1 });
+      audioClips.push({
+        clip: c,
+        trackMuted: t.muted,
+        trackVolume: t.volume ?? 1,
+        trackId: t.id,
+        duckLevel: t.autoDuckLevel ?? 1,
+      });
     }
+  }
+
+  // Pre-compute time windows during which "audio from any other track" is
+  // active. For each ducked track we'll merge its peers' audible intervals.
+  const audibleIntervalsByTrack: Record<string, { start: number; end: number }[]> = {};
+  for (const t of [...videoTracks, ...audioTracks]) {
+    const arr: { start: number; end: number }[] = [];
+    for (const c of clips) {
+      if (c.trackId !== t.id) continue;
+      if (c.muted || t.muted) continue;
+      const a = assets[c.assetId];
+      if (!a || !a.hasAudio) continue;
+      const speed = c.speed ?? 1;
+      const dispDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed);
+      const tailCap = Math.max(0, (a.duration - c.outPoint) / Math.max(0.01, speed));
+      const tail = Math.min(c.audioTail ?? 0, tailCap);
+      arr.push({ start: c.start, end: c.start + dispDur + tail });
+    }
+    audibleIntervalsByTrack[t.id] = arr;
+  }
+  function mergedDuckerIntervals(excludeTrackId: string): { start: number; end: number }[] {
+    const merged: { start: number; end: number }[] = [];
+    const all: { start: number; end: number }[] = [];
+    for (const [tid, arr] of Object.entries(audibleIntervalsByTrack)) {
+      if (tid === excludeTrackId) continue;
+      all.push(...arr);
+    }
+    all.sort((a, b) => a.start - b.start);
+    for (const r of all) {
+      if (merged.length && r.start <= merged[merged.length - 1].end + 0.01) {
+        merged[merged.length - 1].end = Math.max(merged[merged.length - 1].end, r.end);
+      } else {
+        merged.push({ ...r });
+      }
+    }
+    return merged;
   }
 
   const ensureInput = (assetId: string) => {
@@ -332,8 +350,33 @@ function buildCommand(
       }
       filters.push(`atempo=${remaining.toFixed(4)}`);
     }
-    const effectiveVol = c.volume * (entry.trackVolume ?? 1) * (masterVolume ?? 1);
-    filters.push(`volume=${effectiveVol.toFixed(3)}`);
+    const baseVol = c.volume * (entry.trackVolume ?? 1) * (masterVolume ?? 1);
+    const duck = entry.duckLevel ?? 1;
+    if (duck < 1 - 1e-3) {
+      // Build a time-varying volume expression. Default = baseVol; during
+      // intervals where another track is audible, multiply by duck.
+      // The clip is delayed onto the timeline by `adelay`, so internally
+      // its time `t` runs from 0..duration. We need to map timeline t back
+      // to the clip's local frame: `localT = t + c.start` only after the
+      // adelay. Since we apply `volume` BEFORE `adelay`, t inside this
+      // chain equals the local clip time (0..clipDur). Convert each
+      // timeline-interval [tlStart, tlEnd] into a local interval
+      // [tlStart - c.start, tlEnd - c.start].
+      const localIntervals = mergedDuckerIntervals(entry.trackId)
+        .map((r) => ({ start: r.start - c.start, end: r.end - c.start }))
+        .filter((r) => r.end > 0 && r.start < displayDur)
+        .map((r) => ({ start: Math.max(0, r.start), end: Math.min(displayDur, r.end) }));
+      // Build expression: volume = base * (in_any_interval ? duck : 1)
+      const cond = localIntervals
+        .map((r) => `between(t,${r.start.toFixed(3)},${r.end.toFixed(3)})`)
+        .join('+');
+      const expr = localIntervals.length === 0
+        ? `${baseVol.toFixed(3)}`
+        : `${baseVol.toFixed(3)}*(if(gt(${cond},0),${duck.toFixed(3)},1))`;
+      filters.push(`volume=eval=frame:volume='${expr}'`);
+    } else {
+      filters.push(`volume=${baseVol.toFixed(3)}`);
+    }
     if (fi > 0) filters.push(`afade=t=in:st=0:d=${fi.toFixed(3)}`);
     // Combined fade-out spanning both fadeOut (within visible) and the
     // L-cut tail (post-visible), so there's no step at the visual cut.
@@ -394,7 +437,13 @@ export async function exportProject(
   onProgress: ProgressCb
 ): Promise<Blob> {
   onProgress({ phase: 'FFmpeg 로드 중…', progress: 0 });
-  const ff = await getFFmpeg((m) => onProgress({ phase: 'rendering', progress: -1, log: m }));
+  const ff = await getFFmpeg();
+  const onLog = ({ message }: { message: string }) => onProgress({ phase: 'rendering', progress: -1, log: message });
+  ff.on('log', onLog);
+  try {
+    if (!self.crossOriginIsolated) {
+      onProgress({ phase: 'rendering', progress: -1, log: 'warning: not crossOriginIsolated — MT FFmpeg needs SAB' });
+    }
 
   // Pre-render subtitles (range-translation respected) to PNG bytes and write
   // them to the FFmpeg FS so buildCommand can reference them as inputs.
@@ -470,4 +519,7 @@ export async function exportProject(
   copy.set(bytes);
   const blob = new Blob([copy], { type: 'video/mp4' });
   return blob;
+  } finally {
+    ff.off('log', onLog);
+  }
 }

@@ -106,6 +106,11 @@ export interface Track {
   muted: boolean;
   hidden: boolean;
   volume: number; // 0..2 (1 = original)
+  // Auto-ducking level. When < 1, this track's effective volume is multiplied
+  // by `autoDuckLevel` whenever any other track has audio playing at the
+  // current time (typical use: a BGM track auto-quiets while narration
+  // is active). 1 = no ducking (default).
+  autoDuckLevel: number;
 }
 
 export interface ProjectSettings {

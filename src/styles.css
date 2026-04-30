@@ -344,6 +344,13 @@ input[type=number], input[type=text], select {
   accent-color: var(--accent);
   margin: 0;
 }
+.track-duck {
+  width: 100%;
+  accent-color: var(--audio);
+  margin: 0;
+  filter: hue-rotate(20deg);
+}
+.track-duck.on { accent-color: #ff8a50; }
 .track-resize {
   position: absolute;
   left: 0;

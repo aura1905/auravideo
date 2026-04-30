@@ -35,6 +35,7 @@ interface EditorState {
   setTrackVolume: (id: string, vol: number) => void;
   setTrackHeight: (id: string, height: number) => void;
   toggleTrackLock: (id: string) => void;
+  setTrackDuckLevel: (id: string, level: number) => void;
 
   addClip: (clip: Clip) => void;
   updateClip: (id: string, patch: Partial<Clip>) => void;
@@ -71,12 +72,12 @@ interface EditorState {
 const uid = () => Math.random().toString(36).slice(2, 10);
 
 const defaultTracks: Track[] = [
-  { id: 'v1', kind: 'video', name: 'V1', height: 64, muted: false, hidden: false, volume: 1 },
-  { id: 'v2', kind: 'video', name: 'V2', height: 64, muted: false, hidden: false, volume: 1 },
-  { id: 'v3', kind: 'video', name: 'V3', height: 64, muted: false, hidden: false, volume: 1 },
-  { id: 'a1', kind: 'audio', name: 'A1', height: 56, muted: false, hidden: false, volume: 1 },
-  { id: 'a2', kind: 'audio', name: 'A2', height: 56, muted: false, hidden: false, volume: 1 },
-  { id: 'a3', kind: 'audio', name: 'A3', height: 56, muted: false, hidden: false, volume: 1 },
+  { id: 'v1', kind: 'video', name: 'V1', height: 64, muted: false, hidden: false, volume: 1, autoDuckLevel: 1 },
+  { id: 'v2', kind: 'video', name: 'V2', height: 64, muted: false, hidden: false, volume: 1, autoDuckLevel: 1 },
+  { id: 'v3', kind: 'video', name: 'V3', height: 64, muted: false, hidden: false, volume: 1, autoDuckLevel: 1 },
+  { id: 'a1', kind: 'audio', name: 'A1', height: 56, muted: false, hidden: false, volume: 1, autoDuckLevel: 1 },
+  { id: 'a2', kind: 'audio', name: 'A2', height: 56, muted: false, hidden: false, volume: 1, autoDuckLevel: 1 },
+  { id: 'a3', kind: 'audio', name: 'A3', height: 56, muted: false, hidden: false, volume: 1, autoDuckLevel: 1 },
 ];
 
 // Debounce state used by the temporal handleSet hook below. Shared with
@@ -122,7 +123,10 @@ export const useEditor = create<EditorState>()(
     const sameKind = get().tracks.filter((t) => t.kind === kind);
     const name = `${kind === 'video' ? 'V' : 'A'}${sameKind.length + 1}`;
     set((s) => ({
-      tracks: [...s.tracks, { id, kind, name, height: kind === 'video' ? 64 : 56, muted: false, hidden: false, volume: 1 }],
+      tracks: [
+        ...s.tracks,
+        { id, kind, name, height: kind === 'video' ? 64 : 56, muted: false, hidden: false, volume: 1, autoDuckLevel: 1 },
+      ],
     }));
     return id;
   },
@@ -150,6 +154,12 @@ export const useEditor = create<EditorState>()(
     })),
   toggleTrackLock: (id) =>
     set((s) => ({ trackLocked: { ...s.trackLocked, [id]: !s.trackLocked[id] } })),
+  setTrackDuckLevel: (id, level) =>
+    set((s) => ({
+      tracks: s.tracks.map((t) =>
+        t.id === id ? { ...t, autoDuckLevel: Math.max(0, Math.min(1, level)) } : t
+      ),
+    })),
 
   addClip: (clip) => set((s) => ({ clips: { ...s.clips, [clip.id]: clip } })),
   updateClip: (id, patch) =>
@@ -196,7 +206,7 @@ export const useEditor = create<EditorState>()(
     let audioTrack = s.tracks.find((t) => t.kind === 'audio');
     if (!audioTrack) {
       const id = uid();
-      const newTrack: Track = { id, kind: 'audio', name: 'A1', height: 56, muted: false, hidden: false, volume: 1 };
+      const newTrack: Track = { id, kind: 'audio', name: 'A1', height: 56, muted: false, hidden: false, volume: 1, autoDuckLevel: 1 };
       set((st) => ({ tracks: [...st.tracks, newTrack] }));
       audioTrack = newTrack;
     }
