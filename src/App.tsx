@@ -5,8 +5,9 @@ import { Preview } from './components/Preview';
 import { PropertiesPanel } from './components/PropertiesPanel';
 import { ExportDialog } from './components/ExportDialog';
 import { ProjectsDialog } from './components/ProjectsDialog';
-import { useEditor } from './state/editorStore';
+import { useEditor, useTemporal, undo, redo } from './state/editorStore';
 import { useAutosave, tryRestoreLast } from './utils/autosave';
+import { useGlobalShortcuts } from './utils/shortcuts';
 
 export function App() {
   const [exportOpen, setExportOpen] = useState(false);
@@ -15,6 +16,8 @@ export function App() {
   const [restored, setRestored] = useState(false);
   const settings = useEditor((s) => s.settings);
   const setSettings = useEditor((s) => s.setSettings);
+  const canUndo = useTemporal((t) => t.pastStates.length > 0);
+  const canRedo = useTemporal((t) => t.futureStates.length > 0);
 
   // Restore last session once on mount, then enable autosave.
   useEffect(() => {
@@ -23,6 +26,7 @@ export function App() {
       .finally(() => setRestored(true));
   }, []);
   useAutosave(restored);
+  useGlobalShortcuts();
 
   // Warn before tab close if there is content
   useEffect(() => {
@@ -109,6 +113,8 @@ export function App() {
             </select>
           </label>
         </div>
+        <button onClick={undo} disabled={!canUndo} title="실행 취소 (Ctrl+Z)">↶ 되돌리기</button>
+        <button onClick={redo} disabled={!canRedo} title="다시 실행 (Ctrl+Y / Ctrl+Shift+Z)">↷ 다시</button>
         <button onClick={() => setSaveOpen(true)} title="프로젝트 저장">💾 저장</button>
         <button onClick={() => setOpenOpen(true)} title="프로젝트 열기">📂 열기</button>
         <button className="primary" onClick={() => setExportOpen(true)}>

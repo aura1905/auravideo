@@ -1,4 +1,5 @@
-import { create } from 'zustand';
+import { create, useStore } from 'zustand';
+import { temporal, type TemporalState } from 'zundo';
 import type { Clip, MediaAsset, ProjectSettings, Track } from '../types';
 
 interface EditorState {
@@ -52,7 +53,9 @@ const defaultTracks: Track[] = [
   { id: 'a3', kind: 'audio', name: 'A3', height: 56, muted: false, hidden: false },
 ];
 
-export const useEditor = create<EditorState>((set, get) => ({
+export const useEditor = create<EditorState>()(
+  temporal(
+    (set, get) => ({
   assets: {},
   tracks: defaultTracks,
   clips: {},
@@ -148,7 +151,46 @@ export const useEditor = create<EditorState>((set, get) => ({
   setSettings: (p) => set((s) => ({ settings: { ...s.settings, ...p } })),
   setSnapEnabled: (b) => set({ snapEnabled: b }),
   setSnapInterval: (n) => set({ snapInterval: Math.max(0.01, n) }),
-}));
+    }),
+    {
+      // Only track edit-meaningful state. UI state (playhead, isPlaying,
+      // selection, zoom, snap toggles) is excluded so undo doesn't bounce
+      // around when scrubbing.
+      partialize: (state) => ({
+        tracks: state.tracks,
+        clips: state.clips,
+        settings: state.settings,
+        assets: state.assets,
+      }),
+      // Coalesce rapid changes (drags, scrubbing-while-trimming) into one
+      // undo step.
+      handleSet: (handleSet) => {
+        let timer: number | undefined;
+        return (state) => {
+          if (timer) window.clearTimeout(timer);
+          timer = window.setTimeout(() => handleSet(state), 200);
+        };
+      },
+      limit: 100,
+    }
+  )
+);
+
+// Hook for components that need to react to undo/redo availability.
+type Tracked = Pick<EditorState, 'tracks' | 'clips' | 'settings' | 'assets'>;
+export function useTemporal<T>(selector: (s: TemporalState<Tracked>) => T) {
+  return useStore(useEditor.temporal as any, selector as (state: unknown) => T);
+}
+
+export function undo() {
+  (useEditor.temporal.getState() as TemporalState<Tracked>).undo();
+}
+export function redo() {
+  (useEditor.temporal.getState() as TemporalState<Tracked>).redo();
+}
+export function clearHistory() {
+  (useEditor.temporal.getState() as TemporalState<Tracked>).clear();
+}
 
 export function snapTime(t: number): number {
   const s = useEditor.getState();

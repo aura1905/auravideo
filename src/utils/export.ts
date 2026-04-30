@@ -35,6 +35,8 @@ interface BuildArgs {
   tracks: Track[];
   settings: ProjectSettings;
   duration: number;
+  rangeStart?: number; // optional in-point in timeline seconds
+  rangeEnd?: number;   // optional out-point in timeline seconds
 }
 
 interface BuiltCommand {
@@ -47,10 +49,38 @@ function sanitize(name: string): string {
   return name.replace(/[^a-zA-Z0-9._-]/g, '_');
 }
 
-function buildCommand({ clips, assets, tracks, settings, duration }: BuildArgs): BuiltCommand {
+function buildCommand({ clips, assets, tracks, settings, duration, rangeStart, rangeEnd }: BuildArgs): BuiltCommand {
   const W = settings.width;
   const H = settings.height;
   const FPS = settings.fps;
+
+  const rs = Math.max(0, rangeStart ?? 0);
+  const re = Math.max(rs + 0.05, rangeEnd ?? duration);
+  const outDur = re - rs;
+
+  // Translate clips to a 0-based timeline starting at rs, clipping to [rs, re].
+  if (rs > 0 || re < duration) {
+    const transformed: Clip[] = [];
+    for (const c of clips) {
+      const clipDur = c.outPoint - c.inPoint;
+      const cEnd = c.start + clipDur;
+      if (cEnd <= rs) continue; // before range
+      if (c.start >= re) continue; // after range
+      const trimLeft = Math.max(0, rs - c.start);
+      const trimRight = Math.max(0, cEnd - re);
+      transformed.push({
+        ...c,
+        start: Math.max(0, c.start - rs),
+        inPoint: c.inPoint + trimLeft,
+        outPoint: c.outPoint - trimRight,
+        // proportionally clip fades to the new clip duration
+        fadeIn: Math.min(c.fadeIn, (c.outPoint - trimRight) - (c.inPoint + trimLeft)),
+        fadeOut: Math.min(c.fadeOut, (c.outPoint - trimRight) - (c.inPoint + trimLeft)),
+      });
+    }
+    clips = transformed;
+    duration = outDur;
+  }
 
   // Map of assetId -> ffmpeg input index, plus list of input files
   const inputIndex: Record<string, number> = {};

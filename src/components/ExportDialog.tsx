@@ -1,6 +1,9 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useEditor, projectDuration } from '../state/editorStore';
 import { exportProject } from '../utils/export';
+import { formatTime } from '../utils/media';
+
+type RangeMode = 'full' | 'auto' | 'custom';
 
 export function ExportDialog({ onClose }: { onClose: () => void }) {
   const [progress, setProgress] = useState(0);
@@ -9,6 +12,32 @@ export function ExportDialog({ onClose }: { onClose: () => void }) {
   const [doneUrl, setDoneUrl] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [logs, setLogs] = useState<string[]>([]);
+
+  const projDur = useMemo(() => projectDuration(useEditor.getState()), []);
+  // Auto = trim leading/trailing empty space
+  const autoBounds = useMemo(() => {
+    const state = useEditor.getState();
+    let earliest = Infinity;
+    let latest = 0;
+    for (const c of Object.values(state.clips)) {
+      const end = c.start + (c.outPoint - c.inPoint);
+      if (c.start < earliest) earliest = c.start;
+      if (end > latest) latest = end;
+    }
+    if (!isFinite(earliest)) earliest = 0;
+    return { start: earliest, end: latest };
+  }, []);
+
+  const [mode, setMode] = useState<RangeMode>('auto');
+  const [customStart, setCustomStart] = useState(0);
+  const [customEnd, setCustomEnd] = useState(projDur);
+
+  const range = (() => {
+    if (mode === 'full') return { start: 0, end: projDur };
+    if (mode === 'auto') return autoBounds;
+    return { start: customStart, end: customEnd };
+  })();
+  const rangeDur = Math.max(0.05, range.end - range.start);
 
   const start = async () => {
     setRunning(true);
@@ -24,6 +53,8 @@ export function ExportDialog({ onClose }: { onClose: () => void }) {
           tracks: state.tracks,
           settings: state.settings,
           duration: dur,
+          rangeStart: range.start,
+          rangeEnd: range.end,
         },
         (info) => {
           setPhase(info.phase);
@@ -47,7 +78,67 @@ export function ExportDialog({ onClose }: { onClose: () => void }) {
         <div className="modal-body">
           {!running && !doneUrl && (
             <>
-              <p>현재 타임라인을 MP4로 렌더링합니다. 큰 영상은 시간이 오래 걸릴 수 있습니다.</p>
+              <div className="range-modes">
+                <label>
+                  <input
+                    type="radio"
+                    name="rangeMode"
+                    checked={mode === 'auto'}
+                    onChange={() => setMode('auto')}
+                  />
+                  자동 트림 (첫 클립 ~ 마지막 클립)
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="rangeMode"
+                    checked={mode === 'full'}
+                    onChange={() => setMode('full')}
+                  />
+                  타임라인 전체 (0 ~ 끝)
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="rangeMode"
+                    checked={mode === 'custom'}
+                    onChange={() => setMode('custom')}
+                  />
+                  사용자 지정
+                </label>
+                {mode === 'custom' && (
+                  <div className="range-inputs">
+                    <label>
+                      시작 (초)
+                      <input
+                        type="number"
+                        step="0.1"
+                        min={0}
+                        max={projDur}
+                        value={customStart.toFixed(2)}
+                        onChange={(e) => setCustomStart(Math.max(0, parseFloat(e.target.value) || 0))}
+                      />
+                    </label>
+                    <label>
+                      끝 (초)
+                      <input
+                        type="number"
+                        step="0.1"
+                        min={0}
+                        max={projDur}
+                        value={customEnd.toFixed(2)}
+                        onChange={(e) =>
+                          setCustomEnd(Math.min(projDur, Math.max(customStart + 0.1, parseFloat(e.target.value) || 0)))
+                        }
+                      />
+                    </label>
+                  </div>
+                )}
+              </div>
+              <p className="range-summary">
+                범위: <strong>{formatTime(range.start)}</strong> ~ <strong>{formatTime(range.end)}</strong>{' '}
+                (<strong>{formatTime(rangeDur)}</strong>)
+              </p>
               <button className="primary" onClick={start}>렌더링 시작</button>
             </>
           )}

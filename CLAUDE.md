@@ -80,6 +80,36 @@ We use the **single-threaded** `@ffmpeg/core` (not `core-mt`) so SAB is technica
 - Clip mute (`clip.muted`) silences audio while keeping the video visible — this is exposed both as the on-clip 🔊/🔇 button and the properties panel checkbox.
 - Track-level mute is `track.muted` (the M button on the track header). Both `clip.muted` and `track.muted` are honoured in preview audio routing and in export's `amix` selection.
 - Resolution must be even-numbered for x264; the topbar inputs round to the next even pixel automatically.
+- **z-order**: top video track in the UI is drawn front-most on the canvas. The topmost video track gets a red "앞" badge, the bottom one a "뒤" badge. Per-clip frame caches in `mediaMapRef` ensure a higher track stays visible even while its source video is mid-seek.
+
+## Keyboard shortcuts
+
+`src/utils/shortcuts.ts` registers a global handler. Skipped while focus is in `<input>` / `<textarea>` / `<select>` / contentEditable.
+
+- **Space** play/pause, **K** pause, **L**/**J** shuttle forward/backward (each press doubles up to 16×, capped)
+- **Home/End** jump to start/end
+- **←/→** step one frame, with **Shift** = 1 s
+- **S** razor-cut selected clips at playhead
+- **Ctrl+Z** undo, **Ctrl+Y** / **Ctrl+Shift+Z** redo
+- **Del / Backspace** delete selection
+
+## Undo / Redo
+
+Provided by `zundo`'s `temporal` middleware on the Zustand store. `partialize` keeps only `tracks`, `clips`, `settings`, `assets` in history (UI state — playhead, selection, zoom, snap config — is excluded so scrubbing doesn't pollute history). A 200 ms `handleSet` debounce coalesces drag-edits into single undo steps. Limit 100 entries.
+
+`src/state/editorStore.ts` exposes `undo()`, `redo()`, `clearHistory()`, and `useTemporal(selector)`. `clearHistory()` is called after `loadProject` / `importProjectZip` so Ctrl+Z doesn't undo the load itself.
+
+## Export ranges
+
+`exportProject` accepts optional `rangeStart` / `rangeEnd` (timeline seconds). When set, `buildCommand` pre-translates clips to a 0-based timeline starting at `rangeStart` and clipped at `rangeEnd` before building the filter graph. The export dialog has three modes: **자동 트림** (first clip → last clip, default), **타임라인 전체** (0 → end), **사용자 지정** (manual seconds).
+
+## Project bundles
+
+`src/utils/project.ts::exportProjectZip` packs the serialized state JSON + every asset blob into a single `.auravideo.zip`. `importProjectZip` reverses it. Available from the Save (📦 zip 내보내기) and Open (📦 zip 불러오기) dialogs. JSZip is the dependency.
+
+## Crossfade
+
+The "⇌ 크로스페이드" toolbar button needs exactly 2 selected clips on the same track. If they overlap, it sets `fadeOut` on the left clip and `fadeIn` on the right clip equal to the overlap duration. If they don't overlap, the right clip is pulled back by 1 s (or whatever inPoint headroom is available) before applying the fades. Note: canvas source-over compositing of both fades produces a slightly darker mid-point than a true linear crossfade — proper `xfade` would require restructuring the export filter graph.
 
 ## Gotchas
 

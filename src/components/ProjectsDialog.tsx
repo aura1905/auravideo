@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { listProjects, deleteProject, type ProjectMeta } from '../utils/db';
-import { saveProject, loadProject } from '../utils/project';
+import { saveProject, loadProject, exportProjectZip, importProjectZip } from '../utils/project';
 import { setLastProject, AUTOSAVE_PROJECT_NAME } from '../utils/autosave';
 
 type Mode = 'save' | 'open';
@@ -10,6 +10,8 @@ export function ProjectsDialog({ mode, onClose }: { mode: Mode; onClose: () => v
   const [name, setName] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [zipProgress, setZipProgress] = useState<number | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const refresh = async () => {
     const list = await listProjects();
@@ -61,6 +63,42 @@ export function ProjectsDialog({ mode, onClose }: { mode: Mode; onClose: () => v
     await refresh();
   };
 
+  const onExportZip = async () => {
+    setBusy(true);
+    setError(null);
+    setZipProgress(0);
+    try {
+      const proposed = name.trim() || 'auravideo-project';
+      const blob = await exportProjectZip(proposed, (p) => setZipProgress(p));
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${proposed}.auravideo.zip`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 30_000);
+    } catch (e: any) {
+      setError(e?.message ?? String(e));
+    } finally {
+      setBusy(false);
+      setZipProgress(null);
+    }
+  };
+
+  const onImportZip = async (file: File) => {
+    setBusy(true);
+    setError(null);
+    try {
+      await importProjectZip(file);
+      onClose();
+    } catch (e: any) {
+      setError(e?.message ?? String(e));
+    } finally {
+      setBusy(false);
+    }
+  };
+
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
@@ -108,6 +146,31 @@ export function ProjectsDialog({ mode, onClose }: { mode: Mode; onClose: () => v
           {error && <pre className="error">{error}</pre>}
         </div>
         <div className="modal-actions">
+          {mode === 'save' && (
+            <button onClick={onExportZip} disabled={busy} title="현재 프로젝트를 .zip 파일로 내보내기 (PC 간 이동/백업)">
+              📦 zip 내보내기
+              {zipProgress !== null && ` (${Math.round(zipProgress * 100)}%)`}
+            </button>
+          )}
+          {mode === 'open' && (
+            <>
+              <button onClick={() => fileInputRef.current?.click()} disabled={busy}>
+                📦 zip 불러오기
+              </button>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept=".zip,.auravideo.zip,application/zip"
+                style={{ display: 'none' }}
+                onChange={(e) => {
+                  const f = e.target.files?.[0];
+                  e.target.value = '';
+                  if (f) onImportZip(f);
+                }}
+              />
+            </>
+          )}
+          <span style={{ flex: 1 }} />
           <button onClick={onClose}>닫기</button>
         </div>
       </div>

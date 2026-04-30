@@ -1,4 +1,5 @@
-import { useEditor } from '../state/editorStore';
+import JSZip from 'jszip';
+import { useEditor, clearHistory } from '../state/editorStore';
 import type { Clip, MediaAsset, Track, ProjectSettings } from '../types';
 import { putProject, getProject, getBlob, type StoredProject } from './db';
 
@@ -116,5 +117,75 @@ export async function loadProject(id: string): Promise<boolean> {
     playhead: 0,
     isPlaying: false,
   });
+  // Reset undo history so Ctrl+Z doesn't undo the load itself.
+  clearHistory();
   return true;
+}
+
+/** Bundle the current project (state JSON + all media blobs) into a single
+ * `.auravideo.zip` file the user can download for backup or transfer. */
+export async function exportProjectZip(name: string, onProgress?: (p: number) => void): Promise<Blob> {
+  const { state, assetBlobs } = serializeState();
+  const zip = new JSZip();
+  zip.file('project.json', JSON.stringify(state, null, 2));
+  const mediaDir = zip.folder('media')!;
+  for (const a of state.assets) {
+    const blob = assetBlobs.get(a.id);
+    if (blob) mediaDir.file(`${a.id}-${a.name}`, blob);
+  }
+  return zip.generateAsync({ type: 'blob', compression: 'STORE' }, (meta) => {
+    onProgress?.(meta.percent / 100);
+  });
+}
+
+/** Restore from a `.auravideo.zip` file produced by exportProjectZip. */
+export async function importProjectZip(file: File): Promise<void> {
+  const zip = await JSZip.loadAsync(file);
+  const json = await zip.file('project.json')?.async('string');
+  if (!json) throw new Error('project.json이 zip에 없습니다');
+  const state = JSON.parse(json) as SerializedState;
+
+  const assets: Record<string, MediaAsset> = {};
+  for (const meta of state.assets) {
+    // Filenames in /media are `${id}-${name}`. We can match on the prefix.
+    const prefix = `media/${meta.id}-`;
+    const entry = Object.values(zip.files).find((f) => f.name.startsWith(prefix));
+    if (!entry) continue;
+    const blob = await entry.async('blob');
+    const file = new File([blob], meta.name, { type: meta.fileType || blob.type });
+    const url = URL.createObjectURL(blob);
+    assets[meta.id] = {
+      id: meta.id,
+      name: meta.name,
+      file,
+      url,
+      duration: meta.duration,
+      width: meta.width,
+      height: meta.height,
+      hasVideo: meta.hasVideo,
+      hasAudio: meta.hasAudio,
+      thumbnail: meta.thumbnail,
+    };
+  }
+
+  // revoke prior object URLs
+  const prev = useEditor.getState().assets;
+  for (const a of Object.values(prev)) {
+    try {
+      URL.revokeObjectURL(a.url);
+    } catch {}
+  }
+  useEditor.setState({
+    assets,
+    tracks: state.tracks,
+    clips: Object.fromEntries(state.clips.map((c) => [c.id, c])),
+    settings: state.settings,
+    pixelsPerSecond: state.pixelsPerSecond ?? 80,
+    snapEnabled: state.snapEnabled ?? true,
+    snapInterval: state.snapInterval ?? 0.5,
+    selection: [],
+    playhead: 0,
+    isPlaying: false,
+  });
+  clearHistory();
 }

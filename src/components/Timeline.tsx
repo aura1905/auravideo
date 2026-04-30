@@ -96,6 +96,43 @@ export function Timeline() {
     window.addEventListener('mouseup', onUp);
   };
 
+  const applyCrossfade = () => {
+    const st = useEditor.getState();
+    if (st.selection.length !== 2) return;
+    const a = st.clips[st.selection[0]];
+    const b = st.clips[st.selection[1]];
+    if (!a || !b) return;
+    if (a.trackId !== b.trackId) {
+      alert('같은 트랙의 두 클립을 선택해야 합니다.');
+      return;
+    }
+    const [left, right] = a.start <= b.start ? [a, b] : [b, a];
+    const leftEnd = left.start + (left.outPoint - left.inPoint);
+    const overlap = leftEnd - right.start;
+    let fade: number;
+    if (overlap > 0.05) {
+      fade = overlap;
+    } else {
+      // No overlap — pull right clip back by 1 s (or available headroom).
+      const desired = 1.0;
+      const rightHeadroom = right.inPoint;
+      const leftHeadroom = (left.outPoint - left.inPoint) - 0.1;
+      fade = Math.min(desired, rightHeadroom + Math.max(0, -overlap), leftHeadroom);
+      if (fade < 0.1) {
+        alert('인접 클립 사이에 크로스페이드를 적용할 여유가 없습니다.');
+        return;
+      }
+      // Move the right clip back so it overlaps `fade` seconds with left's end.
+      st.updateClip(right.id, { start: leftEnd - fade });
+    }
+    // Cap fade to half of each clip duration to keep things sane.
+    const leftDur = left.outPoint - left.inPoint;
+    const rightDur = right.outPoint - right.inPoint;
+    fade = Math.min(fade, leftDur / 2, rightDur / 2);
+    st.updateClip(left.id, { fadeOut: fade });
+    st.updateClip(right.id, { fadeIn: fade });
+  };
+
   const startPlayheadDrag = (e: React.MouseEvent) => {
     e.stopPropagation();
     e.preventDefault();
@@ -122,6 +159,13 @@ export function Timeline() {
         </button>
         <button onClick={deleteSelection} disabled={selection.length === 0} title="선택 삭제 (Del)">
           🗑 삭제
+        </button>
+        <button
+          onClick={applyCrossfade}
+          disabled={selection.length !== 2}
+          title="같은 트랙의 두 클립 사이에 크로스페이드 적용 (겹침이 있으면 그 길이, 없으면 기본 1초로 끌어붙임)"
+        >
+          ⇌ 크로스페이드
         </button>
         <span className="toolbar-sep" />
         <button onClick={() => addTrack('video')} title="비디오 트랙 추가">+ V</button>

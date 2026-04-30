@@ -538,7 +538,7 @@ input[type=number], input[type=text], select {
 }
 .modal-actions {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
   gap: 8px;
   padding: 10px 16px;
   border-top: 1px solid var(--border);
@@ -559,6 +559,12 @@ input[type=number], input[type=text], select {
   border-radius: 4px;
   white-space: pre-wrap;
 }
+.range-modes { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+.range-modes label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+.range-inputs { display: flex; gap: 12px; padding-left: 22px; }
+.range-inputs label { flex-direction: column; align-items: flex-start; gap: 2px; color: var(--muted); font-size: 12px; }
+.range-summary { color: var(--muted); font-size: 12px; padding: 8px 0; }
+
 .download-btn {
   display: inline-block;
   margin-top: 10px;
