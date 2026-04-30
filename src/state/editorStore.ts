@@ -1,6 +1,6 @@
 import { create, useStore } from 'zustand';
 import { temporal, type TemporalState } from 'zundo';
-import type { Clip, MediaAsset, Marker, ProjectSettings, Track } from '../types';
+import type { Clip, MediaAsset, Marker, ProjectSettings, Subtitle, Track } from '../types';
 
 interface EditorState {
   assets: Record<string, MediaAsset>;
@@ -11,6 +11,8 @@ interface EditorState {
   clipGroups: Record<string, string[]>; // groupId -> [clipId, ...]
   clipGroupId: Record<string, string>; // clipId -> groupId
   markers: Marker[];
+  subtitles: Record<string, Subtitle>;
+  subtitleSelection: string[];
   // playback
   playhead: number; // seconds
   isPlaying: boolean;
@@ -59,6 +61,11 @@ interface EditorState {
   addMarker: (m: Omit<Marker, 'id'>) => void;
   updateMarker: (id: string, patch: Partial<Marker>) => void;
   removeMarker: (id: string) => void;
+  addSubtitle: (s: Partial<Subtitle> & { start: number }) => string;
+  updateSubtitle: (id: string, patch: Partial<Subtitle>) => void;
+  removeSubtitle: (id: string) => void;
+  setSubtitleSelection: (ids: string[]) => void;
+  toggleSubtitleSelection: (id: string, additive: boolean) => void;
 }
 
 const uid = () => Math.random().toString(36).slice(2, 10);
@@ -88,6 +95,8 @@ export const useEditor = create<EditorState>()(
   clipGroups: {},
   clipGroupId: {},
   markers: [],
+  subtitles: {},
+  subtitleSelection: [],
   playhead: 0,
   isPlaying: false,
   pixelsPerSecond: 80,
@@ -205,13 +214,13 @@ export const useEditor = create<EditorState>()(
   setPlaying: (b) => set({ isPlaying: b }),
   setZoom: (pps) => set({ pixelsPerSecond: Math.max(10, Math.min(400, pps)) }),
 
-  setSelection: (ids) => set({ selection: ids }),
+  setSelection: (ids) => set({ selection: ids, subtitleSelection: [] }),
   toggleSelection: (id, additive) =>
     set((s) => {
-      if (!additive) return { selection: [id] };
+      if (!additive) return { selection: [id], subtitleSelection: [] };
       return s.selection.includes(id)
         ? { selection: s.selection.filter((x) => x !== id) }
-        : { selection: [...s.selection, id] };
+        : { selection: [...s.selection, id], subtitleSelection: [] };
     }),
 
   setSettings: (p) => set((s) => ({ settings: { ...s.settings, ...p } })),
@@ -292,6 +301,48 @@ export const useEditor = create<EditorState>()(
       markers: s.markers.map((m) => (m.id === id ? { ...m, ...patch } : m)).sort((a, b) => a.time - b.time),
     })),
   removeMarker: (id) => set((s) => ({ markers: s.markers.filter((m) => m.id !== id) })),
+  addSubtitle: (s) => {
+    const id = uid();
+    const settings = get().settings;
+    const sub: Subtitle = {
+      id,
+      text: s.text ?? '자막',
+      start: Math.max(0, s.start),
+      duration: s.duration ?? 3,
+      fontSize: s.fontSize ?? Math.max(24, Math.round(settings.height / 18)),
+      color: s.color ?? '#ffffff',
+      x: s.x ?? 0,
+      y: s.y ?? Math.round(settings.height * 0.35),
+      align: s.align ?? 'center',
+      fadeIn: s.fadeIn ?? 0,
+      fadeOut: s.fadeOut ?? 0,
+      bold: s.bold ?? false,
+      italic: s.italic ?? false,
+      outline: s.outline ?? 2,
+    };
+    set((st) => ({ subtitles: { ...st.subtitles, [id]: sub } }));
+    return id;
+  },
+  updateSubtitle: (id, patch) =>
+    set((st) => {
+      const cur = st.subtitles[id];
+      if (!cur) return st;
+      return { subtitles: { ...st.subtitles, [id]: { ...cur, ...patch } } };
+    }),
+  removeSubtitle: (id) =>
+    set((st) => {
+      const { [id]: _, ...rest } = st.subtitles;
+      return { subtitles: rest, subtitleSelection: st.subtitleSelection.filter((x) => x !== id) };
+    }),
+  setSubtitleSelection: (ids) => set({ subtitleSelection: ids, selection: [] }),
+  toggleSubtitleSelection: (id, additive) =>
+    set((s) => {
+      // selecting a subtitle clears clip selection (mutually exclusive panels)
+      if (!additive) return { subtitleSelection: [id], selection: [] };
+      return s.subtitleSelection.includes(id)
+        ? { subtitleSelection: s.subtitleSelection.filter((x) => x !== id) }
+        : { subtitleSelection: [...s.subtitleSelection, id], selection: [] };
+    }),
     }),
     {
       // Only track edit-meaningful state. UI state (playhead, isPlaying,
@@ -306,6 +357,7 @@ export const useEditor = create<EditorState>()(
         clipGroupId: state.clipGroupId,
         trackLocked: state.trackLocked,
         markers: state.markers,
+        subtitles: state.subtitles,
       }),
       // Coalesce rapid changes (drags, scrubbing-while-trimming) into one
       // undo step. The FIRST past-state in a burst is what we eventually push,
@@ -328,7 +380,7 @@ export const useEditor = create<EditorState>()(
 );
 
 // Hook for components that need to react to undo/redo availability.
-type Tracked = Pick<EditorState, 'tracks' | 'clips' | 'settings' | 'assets' | 'clipGroups' | 'clipGroupId' | 'trackLocked' | 'markers'>;
+type Tracked = Pick<EditorState, 'tracks' | 'clips' | 'settings' | 'assets' | 'clipGroups' | 'clipGroupId' | 'trackLocked' | 'markers' | 'subtitles'>;
 export function useTemporal<T>(selector: (s: TemporalState<Tracked>) => T) {
   return useStore(useEditor.temporal as any, selector as (state: unknown) => T);
 }

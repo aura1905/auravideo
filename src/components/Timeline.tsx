@@ -31,6 +31,12 @@ export function Timeline() {
   const trackLocked = useEditor((s) => s.trackLocked);
   const markers = useEditor((s) => s.markers);
   const clipGroupId = useEditor((s) => s.clipGroupId);
+  const subtitles = useEditor((s) => s.subtitles);
+  const subtitleSelection = useEditor((s) => s.subtitleSelection);
+  const addSubtitle = useEditor((s) => s.addSubtitle);
+  const updateSubtitle = useEditor((s) => s.updateSubtitle);
+  const removeSubtitle = useEditor((s) => s.removeSubtitle);
+  const toggleSubtitleSelection = useEditor((s) => s.toggleSubtitleSelection);
   const snapEnabled = useEditor((s) => s.snapEnabled);
   const snapInterval = useEditor((s) => s.snapInterval);
   const setSnapEnabled = useEditor((s) => s.setSnapEnabled);
@@ -91,9 +97,11 @@ export function Timeline() {
 
   const deleteSelection = () => {
     const st = useEditor.getState();
+    if (st.subtitleSelection.length > 0) {
+      for (const id of st.subtitleSelection) st.removeSubtitle(id);
+      return;
+    }
     if (st.rippleEnabled) {
-      // Ripple-delete each in DESCENDING start order so each removal's gap
-      // closes correctly without shifting the next selection target's start.
       const ordered = [...selection]
         .map((id) => st.clips[id])
         .filter(Boolean)
@@ -308,6 +316,18 @@ export function Timeline() {
               const m = markers.find((x) => x.id === id);
               if (m) setPlayhead(m.time);
             }}
+          />
+          <SubtitleTrack
+            width={totalWidth}
+            pps={pixelsPerSecond}
+            subtitles={subtitles}
+            selection={subtitleSelection}
+            onAdd={(t) => {
+              const id = addSubtitle({ start: t });
+              useEditor.getState().setSubtitleSelection([id]);
+            }}
+            onSelect={(id, additive) => toggleSubtitleSelection(id, additive)}
+            onUpdate={(id, p) => updateSubtitle(id, p)}
           />
           <div className="tracks" onMouseDown={startMarquee}>
             {tracks.map((track) => {
@@ -754,6 +774,129 @@ function groupColor(id: string): string {
   let h = 0;
   for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) >>> 0;
   return `hsl(${h % 360}, 70%, 60%)`;
+}
+
+function SubtitleTrack({
+  width,
+  pps,
+  subtitles,
+  selection,
+  onAdd,
+  onSelect,
+  onUpdate,
+}: {
+  width: number;
+  pps: number;
+  subtitles: Record<string, import('../types').Subtitle>;
+  selection: string[];
+  onAdd: (timelineSec: number) => void;
+  onSelect: (id: string, additive: boolean) => void;
+  onUpdate: (id: string, patch: Partial<import('../types').Subtitle>) => void;
+}) {
+  const SUB_TRACK_HEIGHT = 36;
+  return (
+    <div className="track-row subtitle-track" style={{ height: SUB_TRACK_HEIGHT }} data-track-id="__subtitles__">
+      <div className="track-header" style={{ width: TRACK_HEADER_W }}>
+        <div className="track-header-row">
+          <span className="track-name subtitle">T1 자막</span>
+        </div>
+        <div className="track-buttons">
+          <button
+            onClick={() => onAdd(useEditor.getState().playhead)}
+            title="플레이헤드에 자막 추가"
+          >
+            + 자막
+          </button>
+        </div>
+      </div>
+      <div
+        className="track-area subtitle-area"
+        style={{ width, height: SUB_TRACK_HEIGHT }}
+        onMouseDown={(e) => {
+          // Click empty space to add at that time. (Click on a subtitle is
+          // intercepted by its own handler with stopPropagation.)
+          if (!(e.target as HTMLElement).classList.contains('subtitle-area')) return;
+          if (e.button !== 0) return;
+          const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
+          const t = (e.clientX - rect.left) / pps;
+          onAdd(Math.max(0, t));
+        }}
+      >
+        {Object.values(subtitles).map((s) => (
+          <SubtitleBlock
+            key={s.id}
+            sub={s}
+            pps={pps}
+            selected={selection.includes(s.id)}
+            onSelect={(additive) => onSelect(s.id, additive)}
+            onUpdate={(p) => onUpdate(s.id, p)}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function SubtitleBlock({
+  sub,
+  pps,
+  selected,
+  onSelect,
+  onUpdate,
+}: {
+  sub: import('../types').Subtitle;
+  pps: number;
+  selected: boolean;
+  onSelect: (additive: boolean) => void;
+  onUpdate: (p: Partial<import('../types').Subtitle>) => void;
+}) {
+  const left = sub.start * pps;
+  const width = Math.max(20, sub.duration * pps);
+  const dragRef = useRef<{ mode: 'move' | 'left' | 'right'; startX: number; sub: import('../types').Subtitle } | null>(null);
+
+  const onMouseDown = (e: React.MouseEvent, mode: 'move' | 'left' | 'right') => {
+    e.stopPropagation();
+    onSelect(e.shiftKey);
+    dragRef.current = { mode, startX: e.clientX, sub };
+    const onMove = (ev: MouseEvent) => {
+      const d = dragRef.current;
+      if (!d) return;
+      const dx = (ev.clientX - d.startX) / pps;
+      const noSnap = ev.altKey;
+      const snap = (t: number) => (noSnap ? t : snapTime(t, { pps }));
+      if (d.mode === 'move') {
+        onUpdate({ start: Math.max(0, snap(d.sub.start + dx)) });
+      } else if (d.mode === 'left') {
+        const newStart = snap(Math.max(0, d.sub.start + dx));
+        const consumed = newStart - d.sub.start;
+        const newDur = Math.max(0.1, d.sub.duration - consumed);
+        onUpdate({ start: newStart, duration: newDur });
+      } else {
+        const newEnd = snap(Math.max(d.sub.start + 0.1, d.sub.start + d.sub.duration + dx));
+        onUpdate({ duration: Math.max(0.1, newEnd - d.sub.start) });
+      }
+    };
+    const onUp = () => {
+      dragRef.current = null;
+      window.removeEventListener('mousemove', onMove);
+      window.removeEventListener('mouseup', onUp);
+    };
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('mouseup', onUp);
+  };
+
+  return (
+    <div
+      className={`subtitle-block ${selected ? 'selected' : ''}`}
+      style={{ left, width }}
+      title={sub.text}
+      onMouseDown={(e) => onMouseDown(e, 'move')}
+    >
+      <div className="clip-handle left" onMouseDown={(e) => onMouseDown(e, 'left')} />
+      <span className="subtitle-text">📝 {sub.text || '(빈 자막)'}</span>
+      <div className="clip-handle right" onMouseDown={(e) => onMouseDown(e, 'right')} />
+    </div>
+  );
 }
 
 function ThumbStrip({

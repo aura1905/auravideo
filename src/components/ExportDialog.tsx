@@ -54,6 +54,7 @@ export function ExportDialog({ onClose }: { onClose: () => void }) {
           settings: state.settings,
           duration: dur,
           masterVolume: state.masterVolume,
+          subtitles: Object.values(state.subtitles),
           rangeStart: range.start,
           rangeEnd: range.end,
         },

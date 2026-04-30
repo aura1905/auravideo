@@ -1,6 +1,6 @@
 import JSZip from 'jszip';
 import { useEditor, clearHistory } from '../state/editorStore';
-import type { Clip, Marker, MediaAsset, Track, ProjectSettings } from '../types';
+import type { Clip, Marker, MediaAsset, Subtitle, Track, ProjectSettings } from '../types';
 import { putProject, getProject, getBlob, type StoredProject } from './db';
 
 export interface SerializedAsset {
@@ -31,6 +31,7 @@ export interface SerializedState {
   clipGroupId?: Record<string, string>;
   trackLocked?: Record<string, boolean>;
   markers?: Marker[];
+  subtitles?: Subtitle[];
 }
 
 const uid = () => Math.random().toString(36).slice(2, 10);
@@ -68,6 +69,7 @@ export function serializeState(): { state: SerializedState; assetBlobs: Map<stri
     clipGroupId: s.clipGroupId,
     trackLocked: s.trackLocked,
     markers: s.markers,
+    subtitles: Object.values(s.subtitles),
   };
   return { state, assetBlobs: blobs };
 }
@@ -132,7 +134,9 @@ export async function loadProject(id: string): Promise<boolean> {
     clipGroupId: state.clipGroupId ?? {},
     trackLocked: state.trackLocked ?? {},
     markers: state.markers ?? [],
+    subtitles: Object.fromEntries((state.subtitles ?? []).map((s) => [s.id, s])),
     selection: [],
+    subtitleSelection: [],
     playhead: 0,
     isPlaying: false,
   });
@@ -208,7 +212,9 @@ export async function importProjectZip(file: File): Promise<void> {
     clipGroupId: state.clipGroupId ?? {},
     trackLocked: state.trackLocked ?? {},
     markers: state.markers ?? [],
+    subtitles: Object.fromEntries((state.subtitles ?? []).map((s) => [s.id, s])),
     selection: [],
+    subtitleSelection: [],
     playhead: 0,
     isPlaying: false,
   });

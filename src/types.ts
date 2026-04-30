@@ -67,6 +67,27 @@ export interface Marker {
   color: string;
 }
 
+/** Text overlay (subtitle/title) — independent from clips, lives on a single
+ * dedicated subtitle track that always renders on top of all video tracks. */
+export interface Subtitle {
+  id: string;
+  text: string;
+  start: number;       // timeline seconds
+  duration: number;    // timeline seconds
+  fontSize: number;    // px (relative to project canvas height — scales in preview)
+  color: string;       // CSS color
+  x: number;           // px offset from canvas center
+  y: number;           // px offset from canvas center
+  align: 'left' | 'center' | 'right';
+  fadeIn: number;
+  fadeOut: number;
+  bold: boolean;
+  italic: boolean;
+  // Optional black outline thickness for legibility against any background.
+  // 0 = no outline.
+  outline: number;
+}
+
 export interface Track {
   id: string;
   kind: TrackKind;

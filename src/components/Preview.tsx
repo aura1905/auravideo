@@ -140,6 +140,7 @@ export function Preview() {
         state.isPlaying,
         state.masterVolume
       );
+      drawSubtitles(ctx, canvas.width, canvas.height, Object.values(state.subtitles), head);
 
       rafRef.current = requestAnimationFrame(tick);
     };
@@ -223,6 +224,47 @@ export function Preview() {
       </div>
     </div>
   );
+}
+
+function drawSubtitles(
+  ctx: CanvasRenderingContext2D,
+  W: number,
+  H: number,
+  subs: import('../types').Subtitle[],
+  head: number
+) {
+  for (const s of subs) {
+    if (head < s.start || head >= s.start + s.duration) continue;
+    let alpha = 1;
+    if (s.fadeIn > 0 && head - s.start < s.fadeIn) alpha *= (head - s.start) / s.fadeIn;
+    if (s.fadeOut > 0 && s.start + s.duration - head < s.fadeOut) {
+      alpha *= (s.start + s.duration - head) / s.fadeOut;
+    }
+    if (alpha <= 0) continue;
+    ctx.save();
+    ctx.globalAlpha = Math.max(0, Math.min(1, alpha));
+    const weight = s.bold ? 'bold' : 'normal';
+    const style = s.italic ? 'italic' : 'normal';
+    ctx.font = `${style} ${weight} ${s.fontSize}px sans-serif`;
+    ctx.textBaseline = 'middle';
+    ctx.textAlign = s.align;
+    const cx = W / 2 + s.x;
+    const cy = H / 2 + s.y;
+    // Multi-line support: split on \n and stack vertically.
+    const lines = s.text.split(/\r?\n/);
+    const lineHeight = s.fontSize * 1.2;
+    const totalH = lineHeight * lines.length;
+    const topY = cy - totalH / 2 + lineHeight / 2;
+    if (s.outline > 0) {
+      ctx.strokeStyle = '#000';
+      ctx.lineWidth = s.outline * 2;
+      ctx.lineJoin = 'round';
+      lines.forEach((line, i) => ctx.strokeText(line, cx, topY + i * lineHeight));
+    }
+    ctx.fillStyle = s.color;
+    lines.forEach((line, i) => ctx.fillText(line, cx, topY + i * lineHeight));
+    ctx.restore();
+  }
 }
 
 function drawFrame(

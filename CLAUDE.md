@@ -121,6 +121,16 @@ Each `MediaAsset` may carry a `waveform: number[]` (packed `[min, max]` pairs) p
 
 The `Waveform` SVG component in `Timeline.tsx` slices the peaks for the clip's `[inPoint, outPoint]` range and emits one vertical line per output column. `preserveAspectRatio="none"` makes it stretch to the clip's pixel width without re-rendering when zoom changes.
 
+## Subtitles / text overlays
+
+`Subtitle` is a top-level entity in `state.subtitles: Record<string, Subtitle>` — independent from clips, rendered on a single dedicated "T1 자막" track that always appears above video tracks. `state.subtitleSelection` is mutually exclusive with `state.selection` (clips); selecting a subtitle clears the clip selection and vice-versa, so the properties panel can pick the right editor based on which is non-empty.
+
+**Preview**: `drawSubtitles()` runs after `drawFrame` so subtitles always sit on top of the composited video. It uses canvas `fillText` (with optional `strokeText` for the outline) and the browser's system font — supports any character the browser can render (Korean, emoji, etc.) without bundling a font file.
+
+**Export**: For each subtitle that survives range translation, the export pre-renders a transparent PNG (full canvas size, text already positioned inside) using a browser `<canvas>`, writes it to FFmpeg FS, and adds it as an `-i` input. The filter chain `loop=loop=-1:size=1:start=0,setpts=PTS-STARTPTS,format=rgba,fade=t=in,fade=t=out,trim=duration=...,tpad=start_duration=...:color=black@0` turns the static image into a fading stream positioned at the right time, then `overlay=eof_action=pass:shortest=0` chains it onto the running canvas. This deliberately avoids `drawtext` so we don't have to bundle a font that supports all needed glyph sets.
+
+The `inputCounter` in `buildCommand` is decoupled from `fileMap.length` so subtitle inputs (whose bytes are pre-written by `exportProject`) don't double-count against asset inputs (which `exportProject` writes via `fetchFile`). Cleanup deletes both.
+
 ## Visual transform (PIP, rotation, opacity)
 
 `Clip` carries `transformX`/`transformY` (px from canvas center), `transformScale` (1 = fit-to-canvas), `transformRotation` (degrees), `transformOpacity` (0..1). Apply via the **변환** collapsible section in the properties panel; reset button restores defaults.

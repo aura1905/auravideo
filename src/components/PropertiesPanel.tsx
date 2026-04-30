@@ -1,13 +1,26 @@
 import { useEditor } from '../state/editorStore';
-import type { Clip } from '../types';
+import type { Clip, Subtitle } from '../types';
 
 export function PropertiesPanel() {
   const selection = useEditor((s) => s.selection);
+  const subtitleSelection = useEditor((s) => s.subtitleSelection);
+  const subtitles = useEditor((s) => s.subtitles);
+  const updateSubtitle = useEditor((s) => s.updateSubtitle);
   const clips = useEditor((s) => s.clips);
   const assets = useEditor((s) => s.assets);
   const tracks = useEditor((s) => s.tracks);
   const updateClip = useEditor((s) => s.updateClip);
   const detachAudio = useEditor((s) => s.detachAudio);
+
+  if (subtitleSelection.length > 0) {
+    return (
+      <SubtitleProps
+        selection={subtitleSelection}
+        subtitles={subtitles}
+        onUpdate={(id, p) => updateSubtitle(id, p)}
+      />
+    );
+  }
 
   if (selection.length === 0) {
     return (
@@ -253,6 +266,123 @@ export function PropertiesPanel() {
           </button>
         );
       })()}
+    </div>
+  );
+}
+
+function SubtitleProps({
+  selection,
+  subtitles,
+  onUpdate,
+}: {
+  selection: string[];
+  subtitles: Record<string, Subtitle>;
+  onUpdate: (id: string, p: Partial<Subtitle>) => void;
+}) {
+  const first = subtitles[selection[0]];
+  if (!first) return null;
+  const apply = (p: Partial<Subtitle>) => {
+    for (const id of selection) onUpdate(id, p);
+  };
+  const maxFade = first.duration / 2;
+  return (
+    <div className="props">
+      <div className="props-title">자막 ({selection.length}개 선택)</div>
+      <Field label="텍스트">
+        <textarea
+          rows={3}
+          value={first.text}
+          onChange={(e) => apply({ text: e.target.value })}
+          style={{ width: '100%' }}
+        />
+      </Field>
+      <Field label="시작 (초)">
+        <input
+          type="number"
+          step={0.05}
+          value={first.start.toFixed(2)}
+          onChange={(e) => apply({ start: Math.max(0, parseFloat(e.target.value) || 0) })}
+        />
+      </Field>
+      <Field label="길이 (초)">
+        <input
+          type="number"
+          step={0.05}
+          min={0.1}
+          value={first.duration.toFixed(2)}
+          onChange={(e) => apply({ duration: Math.max(0.1, parseFloat(e.target.value) || 0.1) })}
+        />
+      </Field>
+      <SliderInput
+        label="폰트 크기 (px)"
+        value={first.fontSize}
+        min={8}
+        max={400}
+        step={1}
+        decimals={0}
+        onChange={(v) => apply({ fontSize: v })}
+      />
+      <Field label="색상">
+        <input type="color" value={first.color} onChange={(e) => apply({ color: e.target.value })} />
+      </Field>
+      <SliderInput
+        label="X 오프셋 (px)"
+        value={first.x}
+        min={-2000}
+        max={2000}
+        step={1}
+        decimals={0}
+        onChange={(v) => apply({ x: v })}
+      />
+      <SliderInput
+        label="Y 오프셋 (px)"
+        value={first.y}
+        min={-2000}
+        max={2000}
+        step={1}
+        decimals={0}
+        onChange={(v) => apply({ y: v })}
+      />
+      <Field label="정렬">
+        <select value={first.align} onChange={(e) => apply({ align: e.target.value as Subtitle['align'] })}>
+          <option value="left">왼쪽</option>
+          <option value="center">가운데</option>
+          <option value="right">오른쪽</option>
+        </select>
+      </Field>
+      <SliderInput
+        label="페이드 인 (초)"
+        value={Math.min(first.fadeIn, maxFade)}
+        min={0}
+        max={maxFade}
+        step={0.05}
+        decimals={2}
+        onChange={(v) => apply({ fadeIn: v })}
+      />
+      <SliderInput
+        label="페이드 아웃 (초)"
+        value={Math.min(first.fadeOut, maxFade)}
+        min={0}
+        max={maxFade}
+        step={0.05}
+        decimals={2}
+        onChange={(v) => apply({ fadeOut: v })}
+      />
+      <SliderInput
+        label="외곽선 두께 (px)"
+        value={first.outline}
+        min={0}
+        max={10}
+        step={1}
+        decimals={0}
+        onChange={(v) => apply({ outline: v })}
+      />
+      <Field label="굵게">
+        <input type="checkbox" checked={first.bold} onChange={(e) => apply({ bold: e.target.checked })} />
+      </Field>
+      <Field label="기울임">
+        <input type="checkbox" checked={first.italic} onChange={(e) => apply({ italic: e.target.checked })} />
+      </Field>
     </div>
   );
 }

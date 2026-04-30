@@ -1,6 +1,6 @@
 import { FFmpeg } from '@ffmpeg/ffmpeg';
 import { fetchFile, toBlobURL } from '@ffmpeg/util';
-import type { Clip, MediaAsset, Track, ProjectSettings } from '../types';
+import type { Clip, MediaAsset, Subtitle, Track, ProjectSettings } from '../types';
 
 // ffmpeg-core ESM files are copied into public/ffmpeg-core by a Vite plugin
 // (see vite.config.ts). Multi-threaded build: needs the worker file too, plus
@@ -41,6 +41,7 @@ interface BuildArgs {
   settings: ProjectSettings;
   duration: number;
   masterVolume: number;
+  subtitles: Subtitle[];
   rangeStart?: number;
   rangeEnd?: number;
 }
@@ -55,7 +56,54 @@ function sanitize(name: string): string {
   return name.replace(/[^a-zA-Z0-9._-]/g, '_');
 }
 
-function buildCommand({ clips, assets, tracks, settings, duration, masterVolume, rangeStart, rangeEnd }: BuildArgs): BuiltCommand {
+/** Render a subtitle to a transparent PNG sized to fit the canvas. The result
+ * is meant to be overlaid at (0, 0) on the canvas — the text positioning is
+ * baked into the PNG. Returns the bytes ready for FFmpeg.writeFile. */
+async function renderSubtitleToPng(s: Subtitle, W: number, H: number): Promise<Uint8Array | null> {
+  const c = document.createElement('canvas');
+  c.width = W;
+  c.height = H;
+  const ctx = c.getContext('2d');
+  if (!ctx) return null;
+  const weight = s.bold ? 'bold' : 'normal';
+  const style = s.italic ? 'italic' : 'normal';
+  ctx.font = `${style} ${weight} ${s.fontSize}px sans-serif`;
+  ctx.textBaseline = 'middle';
+  ctx.textAlign = s.align;
+  const cx = W / 2 + s.x;
+  const cy = H / 2 + s.y;
+  const lines = s.text.split(/\r?\n/);
+  const lineHeight = s.fontSize * 1.2;
+  const totalH = lineHeight * lines.length;
+  const topY = cy - totalH / 2 + lineHeight / 2;
+  if (s.outline > 0) {
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth = s.outline * 2;
+    ctx.lineJoin = 'round';
+    lines.forEach((line, i) => ctx.strokeText(line, cx, topY + i * lineHeight));
+  }
+  ctx.fillStyle = s.color;
+  lines.forEach((line, i) => ctx.fillText(line, cx, topY + i * lineHeight));
+  // Encode to PNG
+  const blob: Blob | null = await new Promise((resolve) => c.toBlob((b) => resolve(b), 'image/png'));
+  if (!blob) return null;
+  const ab = await blob.arrayBuffer();
+  return new Uint8Array(ab);
+}
+
+interface SubtitleAsset {
+  fsName: string;
+  bytes: Uint8Array;
+  start: number;
+  duration: number;
+  fadeIn: number;
+  fadeOut: number;
+}
+
+function buildCommand(
+  { clips, assets, tracks, settings, duration, masterVolume, subtitles, rangeStart, rangeEnd }: BuildArgs,
+  subtitleAssets: SubtitleAsset[] = []
+): BuiltCommand {
   const W = settings.width;
   const H = settings.height;
   const FPS = settings.fps;
@@ -64,9 +112,7 @@ function buildCommand({ clips, assets, tracks, settings, duration, masterVolume,
   const re = Math.max(rs + 0.05, rangeEnd ?? duration);
   const outDur = re - rs;
 
-  // Translate clips to a 0-based timeline starting at rs, clipping to [rs, re].
-  // All time values here are TIMELINE seconds; trims must be converted to
-  // source-media seconds when adjusting inPoint/outPoint for a sped-up clip.
+  // Translate clips and subtitles to a 0-based timeline starting at rs.
   if (rs > 0 || re < duration) {
     const transformed: Clip[] = [];
     for (const c of clips) {
@@ -88,6 +134,23 @@ function buildCommand({ clips, assets, tracks, settings, duration, masterVolume,
       });
     }
     clips = transformed;
+    const transSubs: Subtitle[] = [];
+    for (const s of subtitles) {
+      const sEnd = s.start + s.duration;
+      if (sEnd <= rs) continue;
+      if (s.start >= re) continue;
+      const trimL = Math.max(0, rs - s.start);
+      const trimR = Math.max(0, sEnd - re);
+      const newDur = s.duration - trimL - trimR;
+      transSubs.push({
+        ...s,
+        start: Math.max(0, s.start - rs),
+        duration: newDur,
+        fadeIn: Math.min(s.fadeIn, newDur / 2),
+        fadeOut: Math.min(s.fadeOut, newDur / 2),
+      });
+    }
+    subtitles = transSubs;
     duration = outDur;
   }
 
@@ -95,6 +158,7 @@ function buildCommand({ clips, assets, tracks, settings, duration, masterVolume,
   const inputIndex: Record<string, number> = {};
   const fileMap: { fsName: string; file: File }[] = [];
   const inputArgs: string[] = [];
+  let inputCounter = 0;
 
   // Top-down: V1 is top in UI; we want last drawn = on top, so we draw from bottom-most video track upward.
   // But our overlays will chain in order; later overlays draw ON TOP. So iterate from BOTTOM video track to TOP.
@@ -126,7 +190,7 @@ function buildCommand({ clips, assets, tracks, settings, duration, masterVolume,
   const ensureInput = (assetId: string) => {
     if (assetId in inputIndex) return inputIndex[assetId];
     const a = assets[assetId];
-    const idx = fileMap.length;
+    const idx = inputCounter++;
     inputIndex[assetId] = idx;
     const fsName = `in${idx}_${sanitize(a.name)}`;
     fileMap.push({ fsName, file: a.file });
@@ -204,8 +268,47 @@ function buildCommand({ clips, assets, tracks, settings, duration, masterVolume,
     lastVideoLabel = outLabel;
   });
 
-  // After all overlays, ensure final has yuv420p for x264
-  filterParts.push(`[${lastVideoLabel}]format=yuv420p[vout]`);
+  // Subtitle overlays — chained AFTER all video clips so subtitles always
+  // render on top. Each subtitle was pre-rendered to a PNG (full canvas size,
+  // text positioned inside) by the caller; we add it as an input and use a
+  // loop+format+fade filter so the static image becomes a fading stream.
+  // Subtitle PNGs are written to FFmpeg FS by exportProject before this
+  // function returns args; we just register them as inputs here so the
+  // -i ordering matches the index we pin in subAssetByIdx.
+  const subAssetByIdx = new Map<number, SubtitleAsset>();
+  for (const sa of subtitleAssets) {
+    const inputIdx = inputCounter++;
+    inputArgs.push('-i', sa.fsName);
+    subAssetByIdx.set(inputIdx, sa);
+  }
+
+  let lastWithSubs = lastVideoLabel;
+  let subCounter = 0;
+  for (const [inputIdx, sa] of subAssetByIdx) {
+    const subDur = sa.duration;
+    const filters: string[] = [
+      `loop=loop=-1:size=1:start=0`,
+      `setpts=PTS-STARTPTS`,
+      `format=rgba`,
+    ];
+    if (sa.fadeIn > 0.001) {
+      filters.push(`fade=t=in:st=0:d=${sa.fadeIn.toFixed(3)}:alpha=1`);
+    }
+    if (sa.fadeOut > 0.001) {
+      filters.push(`fade=t=out:st=${(subDur - sa.fadeOut).toFixed(3)}:d=${sa.fadeOut.toFixed(3)}:alpha=1`);
+    }
+    filters.push(`trim=duration=${subDur.toFixed(3)}`);
+    filters.push(`tpad=start_duration=${sa.start.toFixed(3)}:start_mode=add:color=black@0`);
+    const subLabel = `s${subCounter}`;
+    filterParts.push(`[${inputIdx}:v]${filters.join(',')}[${subLabel}]`);
+    const next = `vs${subCounter}`;
+    filterParts.push(`[${lastWithSubs}][${subLabel}]overlay=eof_action=pass:shortest=0[${next}]`);
+    lastWithSubs = next;
+    subCounter++;
+  }
+
+  // After all overlays (clips + subtitles), ensure final has yuv420p for x264
+  filterParts.push(`[${lastWithSubs}]format=yuv420p[vout]`);
 
   // Audio
   const audioLabels: string[] = [];
@@ -306,7 +409,43 @@ export async function exportProject(
   onProgress({ phase: 'FFmpeg 로드 중…', progress: 0 });
   const ff = await getFFmpeg((m) => onProgress({ phase: 'rendering', progress: -1, log: m }));
 
-  const built = buildCommand(args);
+  // Pre-render subtitles (range-translation respected) to PNG bytes and write
+  // them to the FFmpeg FS so buildCommand can reference them as inputs.
+  // Note: the range-translation in buildCommand also clips fadeIn/fadeOut, but
+  // the PNG content itself only depends on visual fields (text/font/color/x/y),
+  // so we can render once at the source values.
+  const subtitleAssets: SubtitleAsset[] = [];
+  if (args.subtitles && args.subtitles.length > 0) {
+    onProgress({ phase: '자막 렌더링 중…', progress: 0.02 });
+    const W = args.settings.width;
+    const H = args.settings.height;
+    const rs = Math.max(0, args.rangeStart ?? 0);
+    const re = Math.max(rs + 0.05, args.rangeEnd ?? args.duration);
+    let k = 0;
+    for (const s of args.subtitles) {
+      const sEnd = s.start + s.duration;
+      if (sEnd <= rs || s.start >= re) continue;
+      const trimL = Math.max(0, rs - s.start);
+      const trimR = Math.max(0, sEnd - re);
+      const newStart = Math.max(0, s.start - rs);
+      const newDur = s.duration - trimL - trimR;
+      const png = await renderSubtitleToPng(s, W, H);
+      if (!png) continue;
+      const fsName = `sub${k}.png`;
+      await ff.writeFile(fsName, png);
+      subtitleAssets.push({
+        fsName,
+        bytes: png,
+        start: newStart,
+        duration: newDur,
+        fadeIn: Math.min(s.fadeIn, newDur / 2),
+        fadeOut: Math.min(s.fadeOut, newDur / 2),
+      });
+      k++;
+    }
+  }
+
+  const built = buildCommand(args, subtitleAssets);
   onProgress({ phase: '입력 파일 쓰는 중…', progress: 0.05 });
   for (let i = 0; i < built.fileMap.length; i++) {
     const { fsName, file } = built.fileMap[i];
@@ -334,6 +473,7 @@ export async function exportProject(
   try {
     await ff.deleteFile(built.outName);
     for (const { fsName } of built.fileMap) await ff.deleteFile(fsName);
+    for (const sa of subtitleAssets) await ff.deleteFile(sa.fsName);
   } catch {}
 
   onProgress({ phase: '완료', progress: 1 });

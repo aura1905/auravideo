@@ -29,7 +29,8 @@ export function useAutosave(enabled: boolean) {
         state.clipGroups === prev.clipGroups &&
         state.clipGroupId === prev.clipGroupId &&
         state.trackLocked === prev.trackLocked &&
-        state.markers === prev.markers
+        state.markers === prev.markers &&
+        state.subtitles === prev.subtitles
       ) {
         return;
       }

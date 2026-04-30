@@ -374,6 +374,34 @@ input[type=number], input[type=text], select {
 }
 .track-name.video { background: rgba(79, 140, 255, 0.2); color: #b8cdff; }
 .track-name.audio { background: rgba(44, 128, 96, 0.2); color: #a6e2c5; }
+.track-name.subtitle { background: rgba(247, 201, 72, 0.2); color: #f7c948; }
+.track-row.subtitle-track .track-area { background: rgba(247, 201, 72, 0.04); }
+.subtitle-block {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  border-radius: 4px;
+  background: rgba(247, 201, 72, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: #1a1a1a;
+  font-size: 11px;
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+  cursor: grab;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.subtitle-block.selected {
+  outline: 2px solid var(--accent);
+  outline-offset: -1px;
+  box-shadow: 0 0 0 2px rgba(79, 140, 255, 0.3);
+}
+.subtitle-block .subtitle-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  pointer-events: none;
+}
 .z-badge {
   font-size: 10px;
   padding: 1px 4px;
