@@ -53,6 +53,11 @@ const defaultTracks: Track[] = [
   { id: 'a3', kind: 'audio', name: 'A3', height: 56, muted: false, hidden: false },
 ];
 
+// Debounce state used by the temporal handleSet hook below. Shared with
+// clearHistory() so project loads can cancel a pending burst push.
+let pendingPushTimer: number | undefined;
+let pendingPushState: any = null;
+
 export const useEditor = create<EditorState>()(
   temporal(
     (set, get) => ({
@@ -163,13 +168,19 @@ export const useEditor = create<EditorState>()(
         assets: state.assets,
       }),
       // Coalesce rapid changes (drags, scrubbing-while-trimming) into one
-      // undo step.
-      handleSet: (handleSet) => {
-        let timer: number | undefined;
-        return (state) => {
-          if (timer) window.clearTimeout(timer);
-          timer = window.setTimeout(() => handleSet(state), 200);
-        };
+      // undo step. The FIRST past-state in a burst is what we eventually push,
+      // so undo restores the state from before the drag started, not just
+      // before the very last micro-update.
+      handleSet: (handleSet) => (state) => {
+        if (pendingPushTimer === undefined) {
+          pendingPushState = state;
+        }
+        if (pendingPushTimer !== undefined) window.clearTimeout(pendingPushTimer);
+        pendingPushTimer = window.setTimeout(() => {
+          handleSet(pendingPushState);
+          pendingPushTimer = undefined;
+          pendingPushState = null;
+        }, 200);
       },
       limit: 100,
     }
@@ -189,6 +200,12 @@ export function redo() {
   (useEditor.temporal.getState() as TemporalState<Tracked>).redo();
 }
 export function clearHistory() {
+  // Cancel any pending burst push so it doesn't repopulate history right after.
+  if (pendingPushTimer !== undefined) {
+    window.clearTimeout(pendingPushTimer);
+    pendingPushTimer = undefined;
+    pendingPushState = null;
+  }
   (useEditor.temporal.getState() as TemporalState<Tracked>).clear();
 }
 

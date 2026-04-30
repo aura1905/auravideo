@@ -107,28 +107,24 @@ export function Timeline() {
       return;
     }
     const [left, right] = a.start <= b.start ? [a, b] : [b, a];
-    const leftEnd = left.start + (left.outPoint - left.inPoint);
-    const overlap = leftEnd - right.start;
-    let fade: number;
-    if (overlap > 0.05) {
-      fade = overlap;
-    } else {
-      // No overlap — pull right clip back by 1 s (or available headroom).
-      const desired = 1.0;
-      const rightHeadroom = right.inPoint;
-      const leftHeadroom = (left.outPoint - left.inPoint) - 0.1;
-      fade = Math.min(desired, rightHeadroom + Math.max(0, -overlap), leftHeadroom);
-      if (fade < 0.1) {
-        alert('인접 클립 사이에 크로스페이드를 적용할 여유가 없습니다.');
-        return;
-      }
-      // Move the right clip back so it overlaps `fade` seconds with left's end.
-      st.updateClip(right.id, { start: leftEnd - fade });
-    }
-    // Cap fade to half of each clip duration to keep things sane.
     const leftDur = left.outPoint - left.inPoint;
     const rightDur = right.outPoint - right.inPoint;
-    fade = Math.min(fade, leftDur / 2, rightDur / 2);
+    const leftEnd = left.start + leftDur;
+    const overlap = leftEnd - right.start;
+    // Cap any fade at half of each clip's duration to keep things sane.
+    const maxFade = Math.min(leftDur / 2, rightDur / 2);
+    if (maxFade < 0.1) {
+      alert('클립이 너무 짧아 크로스페이드를 적용할 수 없습니다.');
+      return;
+    }
+    let fade: number;
+    if (overlap > 0.05) {
+      fade = Math.min(overlap, maxFade);
+    } else {
+      fade = Math.min(1.0, maxFade);
+      // Pull the right clip back so it overlaps `fade` seconds with left's end.
+      st.updateClip(right.id, { start: leftEnd - fade });
+    }
     st.updateClip(left.id, { fadeOut: fade });
     st.updateClip(right.id, { fadeIn: fade });
   };
