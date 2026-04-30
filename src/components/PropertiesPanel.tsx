@@ -64,46 +64,44 @@ export function PropertiesPanel() {
           }}
         />
       </Field>
-      <Field label={`페이드 인: ${first.fadeIn.toFixed(2)}s`}>
-        <input
-          type="range"
-          min={0}
-          max={maxFade}
-          step={0.05}
-          value={Math.min(first.fadeIn, maxFade)}
-          onChange={(e) => apply({ fadeIn: parseFloat(e.target.value) })}
-        />
-      </Field>
-      <Field label={`페이드 아웃: ${first.fadeOut.toFixed(2)}s`}>
-        <input
-          type="range"
-          min={0}
-          max={maxFade}
-          step={0.05}
-          value={Math.min(first.fadeOut, maxFade)}
-          onChange={(e) => apply({ fadeOut: parseFloat(e.target.value) })}
-        />
-      </Field>
-      <Field label={`속도: ${((first.speed ?? 1) * 100).toFixed(0)}%`}>
-        <input
-          type="range"
-          min={0.25}
-          max={4}
-          step={0.05}
-          value={first.speed ?? 1}
-          onChange={(e) => apply({ speed: parseFloat(e.target.value) })}
-        />
-      </Field>
-      <Field label={`볼륨: ${(first.volume * 100).toFixed(0)}%`}>
-        <input
-          type="range"
-          min={0}
-          max={2}
-          step={0.01}
-          value={first.volume}
-          onChange={(e) => apply({ volume: parseFloat(e.target.value) })}
-        />
-      </Field>
+      <SliderInput
+        label="페이드 인 (초)"
+        value={Math.min(first.fadeIn, maxFade)}
+        min={0}
+        max={maxFade}
+        step={0.05}
+        decimals={2}
+        onChange={(v) => apply({ fadeIn: v })}
+      />
+      <SliderInput
+        label="페이드 아웃 (초)"
+        value={Math.min(first.fadeOut, maxFade)}
+        min={0}
+        max={maxFade}
+        step={0.05}
+        decimals={2}
+        onChange={(v) => apply({ fadeOut: v })}
+      />
+      <SliderInput
+        label="속도 (%)"
+        value={(first.speed ?? 1) * 100}
+        min={25}
+        max={400}
+        step={1}
+        decimals={0}
+        suffix="%"
+        onChange={(v) => apply({ speed: v / 100 })}
+      />
+      <SliderInput
+        label="볼륨 (%)"
+        value={first.volume * 100}
+        min={0}
+        max={200}
+        step={1}
+        decimals={0}
+        suffix="%"
+        onChange={(v) => apply({ volume: v / 100 })}
+      />
       <Field label="음소거">
         <input
           type="checkbox"
@@ -135,5 +133,54 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
       <span>{label}</span>
       {children}
     </label>
+  );
+}
+
+function SliderInput({
+  label,
+  value,
+  min,
+  max,
+  step,
+  decimals = 2,
+  suffix,
+  onChange,
+}: {
+  label: string;
+  value: number;
+  min: number;
+  max: number;
+  step: number;
+  decimals?: number;
+  suffix?: string;
+  onChange: (v: number) => void;
+}) {
+  return (
+    <div className="props-field slider-input">
+      <span>{label}</span>
+      <div className="slider-row">
+        <input
+          type="range"
+          min={min}
+          max={max}
+          step={step}
+          value={value}
+          onChange={(e) => onChange(parseFloat(e.target.value))}
+        />
+        <input
+          type="number"
+          min={min}
+          max={max}
+          step={step}
+          value={value.toFixed(decimals)}
+          onChange={(e) => {
+            const raw = parseFloat(e.target.value);
+            if (!isFinite(raw)) return;
+            onChange(Math.max(min, Math.min(max, raw)));
+          }}
+        />
+        {suffix && <span className="slider-suffix">{suffix}</span>}
+      </div>
+    </div>
   );
 }

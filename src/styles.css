@@ -519,6 +519,20 @@ input[type=number], input[type=text], select {
   color: var(--muted);
 }
 .props-field input[type=range] { accent-color: var(--accent); }
+.props-field.slider-input .slider-row {
+  display: grid;
+  grid-template-columns: 1fr 64px auto;
+  gap: 6px;
+  align-items: center;
+}
+.props-field.slider-input input[type=number] {
+  width: 100%;
+  text-align: right;
+}
+.props-field.slider-input .slider-suffix {
+  color: var(--muted);
+  font-size: 11px;
+}
 
 /* Modal */
 .modal-backdrop {
