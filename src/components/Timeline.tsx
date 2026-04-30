@@ -29,6 +29,8 @@ export function Timeline() {
   const setTrackHeight = useEditor((s) => s.setTrackHeight);
   const toggleTrackLock = useEditor((s) => s.toggleTrackLock);
   const trackLocked = useEditor((s) => s.trackLocked);
+  const markers = useEditor((s) => s.markers);
+  const clipGroupId = useEditor((s) => s.clipGroupId);
   const snapEnabled = useEditor((s) => s.snapEnabled);
   const snapInterval = useEditor((s) => s.snapInterval);
   const setSnapEnabled = useEditor((s) => s.setSnapEnabled);
@@ -109,7 +111,7 @@ export function Timeline() {
     const rect = el.getBoundingClientRect();
     const x = clientX - rect.left;
     const t = Math.max(0, x / pixelsPerSecond);
-    return alt ? t : snapTime(t);
+    return alt ? t : snapTime(t, { excludePlayhead: true, pps: pixelsPerSecond });
   };
 
   const startScrub = (e: React.MouseEvent) => {
@@ -301,9 +303,9 @@ export function Timeline() {
             width={totalWidth}
             pps={pixelsPerSecond}
             onMouseDown={startScrub}
-            markers={useEditor.getState().markers}
+            markers={markers}
             onMarkerClick={(id) => {
-              const m = useEditor.getState().markers.find((x) => x.id === id);
+              const m = markers.find((x) => x.id === id);
               if (m) setPlayhead(m.time);
             }}
           />
@@ -365,7 +367,7 @@ export function Timeline() {
                       pps={pixelsPerSecond}
                       selected={selection.includes(c.id)}
                       locked={!!trackLocked[track.id]}
-                      groupId={useEditor.getState().clipGroupId[c.id]}
+                      groupId={clipGroupId[c.id]}
                       onSelect={(additive) => toggleSelection(c.id, additive)}
                       onUpdate={(p) => updateClip(c.id, p)}
                     />
@@ -481,7 +483,12 @@ function TrackRow({
     window.addEventListener('mouseup', onUp);
   };
   return (
-    <div className={`track-row ${locked ? 'locked' : ''}`} style={{ height: track.height }}>
+    <div
+      className={`track-row ${locked ? 'locked' : ''}`}
+      style={{ height: track.height }}
+      data-track-id={track.id}
+      data-track-kind={track.kind}
+    >
       <div
         className="track-header"
         style={{ width: TRACK_HEADER_W }}
@@ -604,6 +611,25 @@ function ClipView({
           }
         } else {
           onUpdate({ start: snapped });
+        }
+        // Vertical: detect a track under the cursor and switch the dragged
+        // clip onto it. Only the dragged clip moves between tracks — grouped
+        // siblings stay where they are so V+A links don't break.
+        const rows = document.querySelectorAll<HTMLElement>('.track-row');
+        for (const row of Array.from(rows)) {
+          const r = row.getBoundingClientRect();
+          if (ev.clientY < r.top || ev.clientY > r.bottom) continue;
+          const tid = row.dataset.trackId;
+          const tkind = row.dataset.trackKind as 'video' | 'audio' | undefined;
+          if (!tid || !tkind) break;
+          if (row.classList.contains('locked')) break;
+          // Already on this track — nothing to do.
+          const cur = useEditor.getState().clips[d.clip.id];
+          if (!cur || tid === cur.trackId) break;
+          // Audio-only assets can only live on audio tracks.
+          if (asset && !asset.hasVideo && tkind === 'video') break;
+          useEditor.getState().updateClip(d.clip.id, { trackId: tid });
+          break;
         }
       } else if (d.mode === 'left') {
         // (no group sync on trim — only on move)

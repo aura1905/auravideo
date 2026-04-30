@@ -357,12 +357,14 @@ export function clipDisplayDur(c: Clip): number {
   return (c.outPoint - c.inPoint) / Math.max(0.01, speed);
 }
 
-export function snapTime(t: number, opts?: { excludeClipIds?: string[]; pps?: number }): number {
+export function snapTime(
+  t: number,
+  opts?: { excludeClipIds?: string[]; pps?: number; excludePlayhead?: boolean }
+): number {
   const s = useEditor.getState();
   if (!s.snapEnabled) return t;
   let best = t;
   let bestDist = Infinity;
-  // Grid snap candidate.
   if (s.snapInterval > 0) {
     const grid = Math.round(t / s.snapInterval) * s.snapInterval;
     const d = Math.abs(grid - t);
@@ -371,17 +373,13 @@ export function snapTime(t: number, opts?: { excludeClipIds?: string[]; pps?: nu
       bestDist = d;
     }
   }
-  // Clip-edge candidates: every other clip's start and end.
   const exclude = new Set(opts?.excludeClipIds ?? []);
-  // Tolerance: within 8 px equivalent at the current zoom — tight enough to
-  // not fight grid snap when the user is far from any clip.
   const pps = opts?.pps ?? s.pixelsPerSecond;
   const edgeTol = 8 / Math.max(1, pps);
   for (const c of Object.values(s.clips)) {
     if (exclude.has(c.id)) continue;
     const dur = clipDisplayDur(c);
-    const candidates = [c.start, c.start + dur];
-    for (const cand of candidates) {
+    for (const cand of [c.start, c.start + dur]) {
       const d = Math.abs(cand - t);
       if (d < bestDist && d <= edgeTol) {
         best = cand;
@@ -389,13 +387,10 @@ export function snapTime(t: number, opts?: { excludeClipIds?: string[]; pps?: nu
       }
     }
   }
-  // Playhead is also a useful snap target.
-  {
-    const cand = s.playhead;
-    const d = Math.abs(cand - t);
-    if (d < bestDist && d <= edgeTol) {
-      best = cand;
-    }
+  // Playhead is a snap target except when the playhead itself is being moved.
+  if (!opts?.excludePlayhead) {
+    const d = Math.abs(s.playhead - t);
+    if (d < bestDist && d <= edgeTol) best = s.playhead;
   }
   return best;
 }

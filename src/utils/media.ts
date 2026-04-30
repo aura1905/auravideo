@@ -38,7 +38,6 @@ export async function generateThumbnailStrip(
   const v = document.createElement('video');
   v.preload = 'auto';
   v.muted = true;
-  v.crossOrigin = 'anonymous';
   v.src = url;
   await new Promise<void>((resolve, reject) => {
     v.onloadeddata = () => resolve();
@@ -157,8 +156,7 @@ function captureThumbnail(url: string, atSec: number): Promise<string | undefine
     const v = document.createElement('video');
     v.preload = 'auto';
     v.muted = true;
-    v.crossOrigin = 'anonymous';
-    v.src = url;
+      v.src = url;
     const cleanup = () => {
       v.removeAttribute('src');
       v.load();
