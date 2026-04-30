@@ -330,8 +330,15 @@ export function Timeline() {
             onAdd={(t) => {
               const id = addSubtitle({ start: t });
               useEditor.getState().setSubtitleSelection([id]);
+              // Park the playhead inside the new subtitle so it's visible
+              // on the canvas the moment it's created.
+              setPlayhead(t + 0.05);
             }}
-            onSelect={(id, additive) => toggleSubtitleSelection(id, additive)}
+            onSelect={(id, additive) => {
+              toggleSubtitleSelection(id, additive);
+              const sub = useEditor.getState().subtitles[id];
+              if (sub) setPlayhead(sub.start + 0.05);
+            }}
             onUpdate={(id, p) => updateSubtitle(id, p)}
           />
           <div className="tracks" onMouseDown={startMarquee}>
