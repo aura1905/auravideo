@@ -121,6 +121,16 @@ Each `MediaAsset` may carry a `waveform: number[]` (packed `[min, max]` pairs) p
 
 The `Waveform` SVG component in `Timeline.tsx` slices the peaks for the clip's `[inPoint, outPoint]` range and emits one vertical line per output column. `preserveAspectRatio="none"` makes it stretch to the clip's pixel width without re-rendering when zoom changes.
 
+## Audio tail (L-cut)
+
+`Clip.audioTail` (seconds) extends a clip's audio playback past its visual end so background sound rings out smoothly across the next visual cut. Implementation principle: visual logic uses `visualEnd = start + displayDur` unchanged; **audio** logic uses `audioEnd = visualEnd + min(audioTail, tailCap)` where `tailCap = (asset.duration - outPoint) / speed` is what's actually available in the source media.
+
+The fade-out is **combined** with `clip.fadeOut` into a single continuous ramp from `visualEnd - fadeOut` to `audioEnd`. Both Preview (`drawFrame`) and Export emit the unified curve so there's no discontinuity at the visual cut. In the export filter graph the audio's `atrim` end is `outPoint + tail*speed` and a single `afade=t=out` covers `fadeOut + tail` seconds total.
+
+In Preview, the `<video>` element is kept playing during the tail period (visual loop won't pause it until past `audioEnd`) but no new frames are drawn to the canvas.
+
+The tail is shown on the timeline as a translucent green gradient extending past the clip's right edge — rendered as a sibling of `.clip` in the track-area so it can overflow the clip's `overflow: hidden`.
+
 ## Volume & mute
 
 There are four levels that all multiply together for both preview and export:

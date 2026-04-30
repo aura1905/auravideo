@@ -41,6 +41,11 @@ export interface Clip {
   speed: number;
   // Optional user-assigned color label (CSS color), for visual organization.
   color?: string;
+  // L-cut tail: audio plays for `audioTail` extra timeline-seconds past the
+  // visual end with an automatic fade-out, so background sound rings out
+  // naturally over the next visual cut. Source media must have material to
+  // cover the tail (clamped at asset duration). Default 0 = no tail.
+  audioTail: number;
 }
 
 export interface Marker {

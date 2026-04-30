@@ -83,6 +83,15 @@ export function PropertiesPanel() {
         onChange={(v) => apply({ fadeOut: v })}
       />
       <SliderInput
+        label="오디오 여운 (L-cut, 초)"
+        value={first.audioTail ?? 0}
+        min={0}
+        max={5}
+        step={0.05}
+        decimals={2}
+        onChange={(v) => apply({ audioTail: v })}
+      />
+      <SliderInput
         label="속도 (%)"
         value={(first.speed ?? 1) * 100}
         min={25}

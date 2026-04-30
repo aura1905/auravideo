@@ -250,13 +250,18 @@ function drawFrame(
       if (c.trackId !== t.id) continue;
       const speed = c.speed ?? 1;
       const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed);
-      const end = c.start + displayDur;
+      const visualEnd = c.start + displayDur;
+      const tail = c.audioTail ?? 0;
+      const a0 = assets[c.assetId];
+      const tailCap = a0 ? Math.max(0, (a0.duration - c.outPoint) / Math.max(0.01, speed)) : 0;
+      const effectiveTail = Math.min(tail, tailCap);
+      const audioEnd = visualEnd + effectiveTail;
       const m = media.get(c.id);
       if (!m) continue;
       const a = assets[c.assetId];
       if (!a || !a.hasVideo) continue;
 
-      if (head >= c.start && head < end) {
+      if (head >= c.start && head < visualEnd) {
         // Map timeline position to source-media time taking speed into account.
         const localTime = c.inPoint + (head - c.start) * speed;
         try {
@@ -280,13 +285,13 @@ function drawFrame(
             }
           }
         } catch {}
-        // alpha (fade)
+        // alpha (fade) — visual fade uses visualEnd, not audioEnd.
         let alpha = 1;
         if (c.fadeIn > 0 && head - c.start < c.fadeIn) {
           alpha *= (head - c.start) / c.fadeIn;
         }
-        if (c.fadeOut > 0 && end - head < c.fadeOut) {
-          alpha *= (end - head) / c.fadeOut;
+        if (c.fadeOut > 0 && visualEnd - head < c.fadeOut) {
+          alpha *= (visualEnd - head) / c.fadeOut;
         }
         ctx.globalAlpha = Math.max(0, Math.min(1, alpha));
         // Refresh the per-clip cache from the live video whenever a fresh
@@ -317,6 +322,16 @@ function drawFrame(
           } catch {}
         }
         ctx.globalAlpha = 1;
+      } else if (head >= visualEnd && head < audioEnd && isPlaying) {
+        // Visual region ended but audio tail is still playing — keep the
+        // <video> element rolling so its audio output continues. Don't draw
+        // anything new (lower tracks may be drawn in their own iterations).
+        try {
+          if (m.el.paused) {
+            m.el.muted = true;
+            m.el.play().catch(() => {});
+          }
+        } catch {}
       } else {
         if (!m.el.paused) m.el.pause();
       }
@@ -335,8 +350,11 @@ function drawFrame(
       if (!a) continue;
       const speed = c.speed ?? 1;
       const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed);
-      const end = c.start + displayDur;
-      if (head >= c.start && head < end) {
+      const visualEnd = c.start + displayDur;
+      const tailCap = Math.max(0, (a.duration - c.outPoint) / Math.max(0.01, speed));
+      const tail = Math.min(c.audioTail ?? 0, tailCap);
+      const audioEnd = visualEnd + tail;
+      if (head >= c.start && head < audioEnd) {
         const localTime = c.inPoint + (head - c.start) * speed;
         if (isPlaying) {
           const rate = Math.max(0.0625, Math.min(16, speed));
@@ -344,7 +362,14 @@ function drawFrame(
           if (Math.abs(m.el.currentTime - localTime) > 0.2) m.el.currentTime = localTime;
           let vol = c.volume * (t.volume ?? 1) * masterVolume;
           if (c.fadeIn > 0 && head - c.start < c.fadeIn) vol *= (head - c.start) / c.fadeIn;
-          if (c.fadeOut > 0 && end - head < c.fadeOut) vol *= (end - head) / c.fadeOut;
+          // Combined fade-out: covers both fadeOut (within visible region)
+          // and audioTail (post-visible) as ONE continuous ramp from full
+          // to silence so there's no audible step at the cut.
+          const fadeStart = visualEnd - c.fadeOut;
+          const fadeRange = c.fadeOut + tail;
+          if (fadeRange > 0.001 && head >= fadeStart && head < audioEnd) {
+            vol *= Math.max(0, (audioEnd - head) / fadeRange);
+          }
           if (t.muted || c.muted) vol = 0;
           m.el.volume = Math.max(0, Math.min(1, vol));
           m.el.muted = vol === 0;
@@ -365,13 +390,22 @@ function drawFrame(
       if (c.trackId !== t.id) continue;
       const m = media.get(c.id);
       if (!m) continue;
+      const a = assets[c.assetId];
+      if (!a) continue;
       const speed = c.speed ?? 1;
       const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed);
-      const end = c.start + displayDur;
-      if (head >= c.start && head < end && isPlaying) {
+      const visualEnd = c.start + displayDur;
+      const tailCap = Math.max(0, (a.duration - c.outPoint) / Math.max(0.01, speed));
+      const tail = Math.min(c.audioTail ?? 0, tailCap);
+      const audioEnd = visualEnd + tail;
+      if (head >= c.start && head < audioEnd && isPlaying) {
         let vol = c.volume * (t.volume ?? 1) * masterVolume;
         if (c.fadeIn > 0 && head - c.start < c.fadeIn) vol *= (head - c.start) / c.fadeIn;
-        if (c.fadeOut > 0 && end - head < c.fadeOut) vol *= (end - head) / c.fadeOut;
+        const fadeStart = visualEnd - c.fadeOut;
+        const fadeRange = c.fadeOut + tail;
+        if (fadeRange > 0.001 && head >= fadeStart && head < audioEnd) {
+          vol *= Math.max(0, (audioEnd - head) / fadeRange);
+        }
         if (t.muted || c.muted) vol = 0;
         m.el.volume = Math.max(0, Math.min(1, vol));
         m.el.muted = vol === 0;

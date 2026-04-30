@@ -352,6 +352,7 @@ export function Timeline() {
                     volume: 1,
                     muted: false,
                     speed: 1,
+                    audioTail: 0,
                   };
                   addClip(clip);
                   setSelection([clip.id]);
@@ -661,7 +662,8 @@ function ClipView({
     window.addEventListener('mouseup', onUp);
   };
 
-  return (
+  const tailWidth = (clip.audioTail ?? 0) * pps;
+  const clipBox = (
     <div
       className={`clip ${selected ? 'selected' : ''} ${asset?.hasVideo ? 'video' : 'audio'} ${clip.muted ? 'muted' : ''} ${groupId ? 'grouped' : ''} ${clip.color ? 'has-color' : ''}`}
       data-clip-id={clip.id}
@@ -723,6 +725,19 @@ function ClipView({
       <div className="clip-handle right" onMouseDown={(e) => onMouseDown(e, 'right')} />
     </div>
   );
+  if (tailWidth > 0) {
+    return (
+      <>
+        {clipBox}
+        <div
+          className="audio-tail"
+          style={{ left: left + width, width: tailWidth }}
+          title={`오디오 여운 ${(clip.audioTail ?? 0).toFixed(2)}s`}
+        />
+      </>
+    );
+  }
+  return clipBox;
 }
 
 function groupColor(id: string): string {

@@ -81,6 +81,7 @@ export function MediaLibrary() {
       volume: 1,
       muted: false,
       speed: 1,
+      audioTail: 0,
     };
     addClip(clip);
   };

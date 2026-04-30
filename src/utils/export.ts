@@ -185,17 +185,20 @@ function buildCommand({ clips, assets, tracks, settings, duration, masterVolume,
     if (c.muted || entry.trackMuted) return;
     const idx = ensureInput(c.assetId);
     const speed = c.speed ?? 1;
-    const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed); // timeline-seconds
-    const fi = Math.min(c.fadeIn, displayDur / 2);
+    const displayDur = (c.outPoint - c.inPoint) / Math.max(0.01, speed);
+    // L-cut audio tail: extend the source-trim past outPoint so audio rings
+    // out for `audioTail` extra timeline-seconds, with auto fade-out.
+    const tailCap = Math.max(0, (a.duration - c.outPoint) / Math.max(0.01, speed));
+    const tail = Math.min(c.audioTail ?? 0, tailCap);
+    const audioOutPointSrc = c.outPoint + tail * speed;
+    const totalAudioDur = displayDur + tail;
+    const fi = Math.min(c.fadeIn, totalAudioDur / 2);
     const fo = Math.min(c.fadeOut, displayDur / 2);
     const startMs = Math.round(c.start * 1000);
     const filters: string[] = [
-      `atrim=start=${c.inPoint.toFixed(3)}:end=${c.outPoint.toFixed(3)}`,
+      `atrim=start=${c.inPoint.toFixed(3)}:end=${audioOutPointSrc.toFixed(3)}`,
       `asetpts=PTS-STARTPTS`,
     ];
-    // atempo accepts factors in [0.5, 2.0] in a single instance. Chain it
-    // multiple times to handle factors outside that range (e.g. 4× = 2*2,
-    // 0.25× = 0.5*0.5).
     if (Math.abs(speed - 1) > 1e-3) {
       let remaining = speed;
       while (remaining > 2.0) {
@@ -211,7 +214,13 @@ function buildCommand({ clips, assets, tracks, settings, duration, masterVolume,
     const effectiveVol = c.volume * (entry.trackVolume ?? 1) * (masterVolume ?? 1);
     filters.push(`volume=${effectiveVol.toFixed(3)}`);
     if (fi > 0) filters.push(`afade=t=in:st=0:d=${fi.toFixed(3)}`);
-    if (fo > 0) filters.push(`afade=t=out:st=${(displayDur - fo).toFixed(3)}:d=${fo.toFixed(3)}`);
+    // Combined fade-out spanning both fadeOut (within visible) and the
+    // L-cut tail (post-visible), so there's no step at the visual cut.
+    const totalFadeOut = fo + tail;
+    if (totalFadeOut > 0.001) {
+      const fadeStart = displayDur - fo;
+      filters.push(`afade=t=out:st=${fadeStart.toFixed(3)}:d=${totalFadeOut.toFixed(3)}`);
+    }
     if (startMs > 0) filters.push(`adelay=${startMs}|${startMs}`);
     const label = `a${i}`;
     filterParts.push(`[${idx}:a]${filters.join(',')}[${label}]`);

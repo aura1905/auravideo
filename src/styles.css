@@ -492,6 +492,24 @@ input[type=number], input[type=text], select {
   background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.7));
 }
 
+/* L-cut audio tail: a translucent extension past the clip's right edge
+ * showing how far the audio rings out past the visual cut. Sibling of
+ * .clip in the track-area so it can overflow the clip's bounds. */
+.audio-tail {
+  position: absolute;
+  top: 30%;
+  bottom: 30%;
+  background: linear-gradient(
+    90deg,
+    rgba(122, 224, 154, 0.55),
+    rgba(122, 224, 154, 0)
+  );
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  pointer-events: none;
+  z-index: 1;
+}
+
 .clip-mute {
   position: absolute;
   top: 3px;
