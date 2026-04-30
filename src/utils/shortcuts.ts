@@ -123,6 +123,25 @@ export function useGlobalShortcuts() {
           s.setPlayhead(Math.min(projectDuration(s), s.playhead + step));
           break;
         }
+        case '=':
+        case '+': {
+          e.preventDefault();
+          const s = useEditor.getState();
+          s.setZoom(s.pixelsPerSecond * 1.25);
+          break;
+        }
+        case '-':
+        case '_': {
+          e.preventDefault();
+          const s = useEditor.getState();
+          s.setZoom(s.pixelsPerSecond / 1.25);
+          break;
+        }
+        case '0': {
+          e.preventDefault();
+          useEditor.getState().setZoom(80);
+          break;
+        }
       }
     };
     window.addEventListener('keydown', onKey);

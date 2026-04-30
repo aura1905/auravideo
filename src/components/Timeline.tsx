@@ -33,13 +33,26 @@ export function Timeline() {
   const duration = useMemo(() => projectDuration(useEditor.getState()), [clips]);
   const totalWidth = Math.max(800, (duration + 5) * pixelsPerSecond);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const timelineRootRef = useRef<HTMLDivElement>(null);
 
-  const onWheelZoom = (e: React.WheelEvent) => {
-    if (!(e.ctrlKey || e.metaKey)) return;
-    e.preventDefault();
-    const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
-    setZoom(pixelsPerSecond * factor);
-  };
+  // React's onWheel handler is registered passively by default (modern Chrome),
+  // so preventDefault() inside it is a no-op and Ctrl+Wheel falls through to
+  // the browser's page zoom. Attach a native non-passive listener so we can
+  // actually swallow the event when zooming the timeline.
+  useEffect(() => {
+    const el = timelineRootRef.current;
+    if (!el) return;
+    const handler = (e: WheelEvent) => {
+      if (!(e.ctrlKey || e.metaKey)) return;
+      e.preventDefault();
+      e.stopPropagation();
+      const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
+      const cur = useEditor.getState().pixelsPerSecond;
+      useEditor.getState().setZoom(cur * factor);
+    };
+    el.addEventListener('wheel', handler, { passive: false });
+    return () => el.removeEventListener('wheel', handler);
+  }, []);
 
   // delete selection with keyboard
   useEffect(() => {
@@ -144,7 +157,7 @@ export function Timeline() {
   };
 
   return (
-    <div className="timeline" onWheel={onWheelZoom}>
+    <div className="timeline" ref={timelineRootRef}>
       <div className="timeline-toolbar">
         <button
           onClick={razorAtPlayhead}
@@ -196,7 +209,7 @@ export function Timeline() {
           value={pixelsPerSecond}
           onChange={(e) => setZoom(parseInt(e.target.value, 10))}
         />
-        <span className="hint">Ctrl+휠 줌 · Del 삭제 · S 자르기 · Alt: 스냅 해제</span>
+        <span className="hint">Ctrl+휠/+/- 줌 · 0 줌 리셋 · Del 삭제 · S 자르기 · Alt 스냅 해제</span>
       </div>
       <div className="timeline-body" ref={scrollRef}>
         <div className="timeline-grid" style={{ width: TRACK_HEADER_W + totalWidth }}>
