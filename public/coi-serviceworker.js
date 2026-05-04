@@ -19,6 +19,10 @@ if (typeof window === 'undefined') {
   self.addEventListener('fetch', (event) => {
     const r = event.request;
     if (r.cache === 'only-if-cached' && r.mode !== 'same-origin') return;
+    // Don't touch blob: / data: URLs — they aren't network resources and
+    // intercepting them breaks @ffmpeg/core-mt pthread sub-workers which
+    // spawn through blob URLs created by the main ffmpeg worker.
+    if (r.url.startsWith('blob:') || r.url.startsWith('data:')) return;
     const request =
       coepCredentialless && r.mode === 'no-cors' ? new Request(r, { credentials: 'omit' }) : r;
     event.respondWith(
