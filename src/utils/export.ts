@@ -106,8 +106,13 @@ function buildCommand(
     duration = outDur;
   }
 
-  // Map of assetId -> ffmpeg input index, plus list of input files
+  // Map of assetId -> ffmpeg input index, plus list of input files.
+  // We also dedupe by file CONTENT (name + size + lastModified) so that if
+  // the user uploaded the same file multiple times, we don't load 14 copies
+  // and run 14 decoders in parallel — they all share one ffmpeg input and
+  // FFmpeg's implicit split handles multiple concurrent reads.
   const inputIndex: Record<string, number> = {};
+  const fileFingerprintIndex: Record<string, number> = {};
   const fileMap: { fsName: string; file: File }[] = [];
   const inputArgs: string[] = [];
   let inputCounter = 0;
@@ -190,8 +195,18 @@ function buildCommand(
   const ensureInput = (assetId: string) => {
     if (assetId in inputIndex) return inputIndex[assetId];
     const a = assets[assetId];
+    // Dedupe identical files (same name + size + lastModified) across
+    // separately-uploaded assets so we don't run N decoders for what is
+    // effectively the same source.
+    const fp = `${a.file.name}|${a.file.size}|${a.file.lastModified}|${a.isImage ? 'img' : 'av'}`;
+    if (fp in fileFingerprintIndex) {
+      const idx = fileFingerprintIndex[fp];
+      inputIndex[assetId] = idx;
+      return idx;
+    }
     const idx = inputCounter++;
     inputIndex[assetId] = idx;
+    fileFingerprintIndex[fp] = idx;
     const fsName = `in${idx}_${sanitize(a.name)}`;
     fileMap.push({ fsName, file: a.file });
     // Image inputs need -loop 1 + -framerate so FFmpeg treats them as a
