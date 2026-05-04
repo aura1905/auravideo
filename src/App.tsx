@@ -5,7 +5,7 @@ import { Preview } from './components/Preview';
 import { PropertiesPanel } from './components/PropertiesPanel';
 import { ExportDialog } from './components/ExportDialog';
 import { ProjectsDialog } from './components/ProjectsDialog';
-import { useEditor, useTemporal, undo, redo } from './state/editorStore';
+import { useEditor, useTemporal, undo, redo, clearHistory } from './state/editorStore';
 import { useAutosave, tryRestoreLast } from './utils/autosave';
 import { useGlobalShortcuts } from './utils/shortcuts';
 
@@ -127,6 +127,18 @@ export function App() {
         </div>
         <button onClick={undo} disabled={!canUndo} title="실행 취소 (Ctrl+Z)">↶ 되돌리기</button>
         <button onClick={redo} disabled={!canRedo} title="다시 실행 (Ctrl+Y / Ctrl+Shift+Z)">↷ 다시</button>
+        <button
+          onClick={() => {
+            const s = useEditor.getState();
+            const hasContent = Object.keys(s.assets).length > 0 || Object.keys(s.clips).length > 0;
+            if (hasContent && !confirm('현재 프로젝트의 모든 클립·자막·미디어를 비우고 새로 시작할까요? (저장한 프로젝트는 영향 없음)')) return;
+            useEditor.getState().resetProject();
+            clearHistory();
+          }}
+          title="모든 클립/미디어 비우고 빈 프로젝트로 시작 (저장된 프로젝트는 보존됨)"
+        >
+          🆕 새 프로젝트
+        </button>
         <button onClick={() => setSaveOpen(true)} title="프로젝트 저장">💾 저장</button>
         <button onClick={() => setOpenOpen(true)} title="프로젝트 열기">📂 열기</button>
         {installPrompt && (

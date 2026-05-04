@@ -67,6 +67,7 @@ interface EditorState {
   removeSubtitle: (id: string) => void;
   setSubtitleSelection: (ids: string[]) => void;
   toggleSubtitleSelection: (id: string, additive: boolean) => void;
+  resetProject: () => void;
 }
 
 const uid = () => Math.random().toString(36).slice(2, 10);
@@ -358,6 +359,29 @@ export const useEditor = create<EditorState>()(
         ? { subtitleSelection: s.subtitleSelection.filter((x) => x !== id) }
         : { subtitleSelection: [...s.subtitleSelection, id], selection: [] };
     }),
+  resetProject: () => {
+    // Wipe project content but keep user preferences (snap, zoom, ripple,
+    // master volume). Revoke all asset object URLs so they don't leak.
+    const s = get();
+    for (const a of Object.values(s.assets)) {
+      try { URL.revokeObjectURL(a.url); } catch {}
+    }
+    set({
+      assets: {},
+      tracks: defaultTracks.map((t) => ({ ...t })),
+      clips: {},
+      subtitles: {},
+      markers: [],
+      clipGroups: {},
+      clipGroupId: {},
+      trackLocked: {},
+      selection: [],
+      subtitleSelection: [],
+      playhead: 0,
+      isPlaying: false,
+      settings: { width: 1920, height: 1080, fps: 30, duration: 60 },
+    });
+  },
     }),
     {
       // Only track edit-meaningful state. UI state (playhead, isPlaying,
