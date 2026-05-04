@@ -32,7 +32,37 @@ export function Timeline() {
   const toggleTrackLock = useEditor((s) => s.toggleTrackLock);
   const setTrackDuckLevel = useEditor((s) => s.setTrackDuckLevel);
   const toggleTrackWaveform = useEditor((s) => s.toggleTrackWaveform);
+  const moveTrack = useEditor((s) => s.moveTrack);
   const trackLocked = useEditor((s) => s.trackLocked);
+
+  const startTrackReorder = (e: React.MouseEvent, trackId: string) => {
+    e.preventDefault();
+    e.stopPropagation();
+    document.body.classList.add('reordering-track');
+    const onMove = (ev: MouseEvent) => {
+      const rows = document.querySelectorAll<HTMLElement>('.track-row[data-track-id]');
+      for (const row of Array.from(rows)) {
+        const tid = row.dataset.trackId;
+        if (!tid || tid === '__subtitles__') continue;
+        const r = row.getBoundingClientRect();
+        if (ev.clientY < r.top || ev.clientY > r.bottom) continue;
+        const tracks = useEditor.getState().tracks;
+        const targetIdx = tracks.findIndex((t) => t.id === tid);
+        const curIdx = tracks.findIndex((t) => t.id === trackId);
+        if (targetIdx >= 0 && curIdx >= 0 && targetIdx !== curIdx) {
+          moveTrack(trackId, targetIdx);
+        }
+        break;
+      }
+    };
+    const onUp = () => {
+      document.body.classList.remove('reordering-track');
+      window.removeEventListener('mousemove', onMove);
+      window.removeEventListener('mouseup', onUp);
+    };
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('mouseup', onUp);
+  };
   const markers = useEditor((s) => s.markers);
   const clipGroupId = useEditor((s) => s.clipGroupId);
   const subtitles = useEditor((s) => s.subtitles);
@@ -378,6 +408,7 @@ export function Timeline() {
                 onToggleLock={() => toggleTrackLock(track.id)}
                 onDuck={(d) => setTrackDuckLevel(track.id, d)}
                 onToggleWaveform={() => toggleTrackWaveform(track.id)}
+                onReorderStart={(e) => startTrackReorder(e, track.id)}
                 onDropAsset={(assetId, atSec) => {
                   const a = assets[assetId];
                   if (!a) return;
@@ -511,6 +542,7 @@ function TrackRow({
   onToggleLock,
   onDuck,
   onToggleWaveform,
+  onReorderStart,
   onDropAsset,
 }: {
   track: Track;
@@ -527,6 +559,7 @@ function TrackRow({
   onToggleLock: () => void;
   onDuck: (d: number) => void;
   onToggleWaveform: () => void;
+  onReorderStart: (e: React.MouseEvent) => void;
   onDropAsset: (assetId: string, atSec: number) => void;
 }) {
   const [over, setOver] = useState(false);
@@ -560,6 +593,13 @@ function TrackRow({
         }
       >
         <div className="track-header-row">
+          <span
+            className="track-grip"
+            title="드래그해서 트랙 위치 이동"
+            onMouseDown={onReorderStart}
+          >
+            ⋮⋮
+          </span>
           <span className={`track-name ${track.kind}`}>{track.name}</span>
           {zLabel && <span className={`z-badge ${zLabel === '앞' ? 'front' : 'back'}`}>{zLabel}</span>}
         </div>

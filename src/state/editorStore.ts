@@ -37,6 +37,7 @@ interface EditorState {
   toggleTrackLock: (id: string) => void;
   setTrackDuckLevel: (id: string, level: number) => void;
   toggleTrackWaveform: (id: string) => void;
+  moveTrack: (id: string, toIndex: number) => void;
 
   addClip: (clip: Clip) => void;
   updateClip: (id: string, patch: Partial<Clip>) => void;
@@ -168,6 +169,17 @@ export const useEditor = create<EditorState>()(
         t.id === id ? { ...t, waveformVisible: t.waveformVisible === false ? true : false } : t
       ),
     })),
+  moveTrack: (id, toIndex) =>
+    set((s) => {
+      const fromIdx = s.tracks.findIndex((t) => t.id === id);
+      if (fromIdx === -1) return s;
+      const clamped = Math.max(0, Math.min(s.tracks.length - 1, toIndex));
+      if (fromIdx === clamped) return s;
+      const tracks = [...s.tracks];
+      const [moved] = tracks.splice(fromIdx, 1);
+      tracks.splice(clamped, 0, moved);
+      return { tracks };
+    }),
 
   addClip: (clip) => set((s) => ({ clips: { ...s.clips, [clip.id]: clip } })),
   updateClip: (id, patch) =>

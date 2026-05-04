@@ -339,6 +339,18 @@ input[type=number], input[type=text], select {
   align-items: center;
   gap: 4px;
 }
+.track-grip {
+  cursor: grab;
+  color: var(--muted);
+  font-size: 12px;
+  padding: 0 2px;
+  user-select: none;
+  letter-spacing: -2px;
+}
+.track-grip:hover { color: var(--text); }
+.track-grip:active { cursor: grabbing; }
+body.reordering-track { cursor: grabbing !important; }
+body.reordering-track * { cursor: grabbing !important; }
 .track-vol {
   width: 100%;
   accent-color: var(--accent);
