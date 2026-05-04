@@ -4,9 +4,15 @@ import { toBlobURL } from '@ffmpeg/util';
 // ffmpeg-core ESM files are copied into public/ffmpeg-core by a Vite plugin
 // (see vite.config.ts). Multi-threaded build: needs SharedArrayBuffer
 // (provided by COOP/COEP headers / coi-serviceworker).
-const CORE_JS_URL = '/ffmpeg-core/ffmpeg-core.js';
-const CORE_WASM_URL = '/ffmpeg-core/ffmpeg-core.wasm';
-const CORE_WORKER_URL = '/ffmpeg-core/ffmpeg-core.worker.js';
+//
+// We MUST prepend `import.meta.env.BASE_URL` so this works under GitHub
+// Pages where the app lives under "/auravideo/" — a hard-coded "/ffmpeg-core/"
+// would 404 there and fall back to the SPA HTML, producing
+// "SyntaxError: Unexpected token '<'" when the worker tries to import it.
+const BASE = import.meta.env.BASE_URL;
+const CORE_JS_URL = `${BASE}ffmpeg-core/ffmpeg-core.js`;
+const CORE_WASM_URL = `${BASE}ffmpeg-core/ffmpeg-core.wasm`;
+const CORE_WORKER_URL = `${BASE}ffmpeg-core/ffmpeg-core.worker.js`;
 
 let singleton: FFmpeg | null = null;
 let loading: Promise<FFmpeg> | null = null;
