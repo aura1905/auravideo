@@ -4,18 +4,22 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 // Copy ffmpeg-core ESM files into public/ffmpeg-core/ so they can be served
-// at /ffmpeg-core/ffmpeg-core.js. We use the multi-threaded core for ~2-4x
-// faster export — it requires SharedArrayBuffer (already provided by the
-// COOP/COEP headers in dev and the coi-serviceworker in production).
+// at /ffmpeg-core/ffmpeg-core.js. We use the SINGLE-THREAD core because the
+// MT core's pthread sub-workers spawn through blob: URLs which conflict with
+// the coi-serviceworker fetch interception and produce hangs mid-export with
+// `net::ERR_FILE_NOT_FOUND` on internal blobs. Slower but reliable.
 function copyFfmpegCore() {
   return {
     name: 'copy-ffmpeg-core',
     buildStart() {
-      const src = path.resolve('node_modules/@ffmpeg/core-mt/dist/esm');
+      const src = path.resolve('node_modules/@ffmpeg/core/dist/esm');
       const dst = path.resolve('public/ffmpeg-core');
       try {
         fs.mkdirSync(dst, { recursive: true });
-        const files = ['ffmpeg-core.js', 'ffmpeg-core.wasm', 'ffmpeg-core.worker.js'];
+        // Remove any leftover MT worker file from a previous build.
+        const stale = path.join(dst, 'ffmpeg-core.worker.js');
+        if (fs.existsSync(stale)) fs.rmSync(stale);
+        const files = ['ffmpeg-core.js', 'ffmpeg-core.wasm'];
         for (const f of files) {
           const from = path.join(src, f);
           const to = path.join(dst, f);
