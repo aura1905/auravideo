@@ -36,6 +36,7 @@ interface EditorState {
   setTrackHeight: (id: string, height: number) => void;
   toggleTrackLock: (id: string) => void;
   setTrackDuckLevel: (id: string, level: number) => void;
+  toggleTrackWaveform: (id: string) => void;
 
   addClip: (clip: Clip) => void;
   updateClip: (id: string, patch: Partial<Clip>) => void;
@@ -159,6 +160,12 @@ export const useEditor = create<EditorState>()(
     set((s) => ({
       tracks: s.tracks.map((t) =>
         t.id === id ? { ...t, autoDuckLevel: Math.max(0, Math.min(1, level)) } : t
+      ),
+    })),
+  toggleTrackWaveform: (id) =>
+    set((s) => ({
+      tracks: s.tracks.map((t) =>
+        t.id === id ? { ...t, waveformVisible: t.waveformVisible === false ? true : false } : t
       ),
     })),
 

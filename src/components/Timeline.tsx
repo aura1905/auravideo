@@ -31,6 +31,7 @@ export function Timeline() {
   const setTrackHeight = useEditor((s) => s.setTrackHeight);
   const toggleTrackLock = useEditor((s) => s.toggleTrackLock);
   const setTrackDuckLevel = useEditor((s) => s.setTrackDuckLevel);
+  const toggleTrackWaveform = useEditor((s) => s.toggleTrackWaveform);
   const trackLocked = useEditor((s) => s.trackLocked);
   const markers = useEditor((s) => s.markers);
   const clipGroupId = useEditor((s) => s.clipGroupId);
@@ -376,6 +377,7 @@ export function Timeline() {
                 onHeight={(h) => setTrackHeight(track.id, h)}
                 onToggleLock={() => toggleTrackLock(track.id)}
                 onDuck={(d) => setTrackDuckLevel(track.id, d)}
+                onToggleWaveform={() => toggleTrackWaveform(track.id)}
                 onDropAsset={(assetId, atSec) => {
                   const a = assets[assetId];
                   if (!a) return;
@@ -419,6 +421,7 @@ export function Timeline() {
                       pps={pixelsPerSecond}
                       selected={selection.includes(c.id)}
                       locked={!!trackLocked[track.id]}
+                      showWaveform={track.waveformVisible !== false}
                       groupId={clipGroupId[c.id]}
                       onSelect={(additive) => toggleSelection(c.id, additive)}
                       onUpdate={(p) => updateClip(c.id, p)}
@@ -507,6 +510,7 @@ function TrackRow({
   onHeight,
   onToggleLock,
   onDuck,
+  onToggleWaveform,
   onDropAsset,
 }: {
   track: Track;
@@ -522,6 +526,7 @@ function TrackRow({
   onHeight: (h: number) => void;
   onToggleLock: () => void;
   onDuck: (d: number) => void;
+  onToggleWaveform: () => void;
   onDropAsset: (assetId: string, atSec: number) => void;
 }) {
   const [over, setOver] = useState(false);
@@ -564,6 +569,13 @@ function TrackRow({
             <button onClick={onHide} className={track.hidden ? 'on' : ''} title="숨김">H</button>
           )}
           <button onClick={onToggleLock} className={locked ? 'on' : ''} title="잠금">🔒</button>
+          <button
+            onClick={onToggleWaveform}
+            className={track.waveformVisible === false ? '' : 'on'}
+            title="파형 표시 켜기/끄기"
+          >
+            〰
+          </button>
           <button onClick={onRemove} title="트랙 삭제">×</button>
         </div>
         <input
@@ -624,6 +636,7 @@ function ClipView({
   pps,
   selected,
   locked,
+  showWaveform,
   groupId,
   onSelect,
   onUpdate,
@@ -633,6 +646,7 @@ function ClipView({
   pps: number;
   selected: boolean;
   locked: boolean;
+  showWaveform: boolean;
   groupId?: string;
   onSelect: (additive: boolean) => void;
   onUpdate: (p: Partial<Clip>) => void;
@@ -758,7 +772,7 @@ function ClipView({
             <div className="clip-thumb" style={{ backgroundImage: `url(${asset.thumbnail})` }} />
           )
         )}
-        {asset?.waveform && asset.waveformPeaksPerSecond && (
+        {showWaveform && asset?.waveform && asset.waveformPeaksPerSecond && (
           <Waveform
             peaks={asset.waveform}
             pps={asset.waveformPeaksPerSecond}

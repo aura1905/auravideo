@@ -111,6 +111,9 @@ export interface Track {
   // current time (typical use: a BGM track auto-quiets while narration
   // is active). 1 = no ducking (default).
   autoDuckLevel: number;
+  // Whether to render audio waveforms on this track's clips. Default true.
+  // Useful to declutter video tracks or hide waveforms on a noisy track.
+  waveformVisible?: boolean;
 }
 
 export interface ProjectSettings {
