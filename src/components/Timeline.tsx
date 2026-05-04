@@ -269,63 +269,68 @@ export function Timeline() {
     <div className="timeline" ref={timelineRootRef}>
       <div className="timeline-toolbar">
         <button
+          className="icon-btn"
           onClick={razorAtPlayhead}
           disabled={selection.length === 0}
-          title="선택한 클립을 플레이헤드에서 자르기 (S)"
+          title="자르기 — 선택한 클립을 플레이헤드에서 분할 (S)"
         >
-          ✂ 자르기
+          ✂
         </button>
         <button
+          className="icon-btn"
           onClick={deleteSelection}
           disabled={selection.length === 0 && subtitleSelection.length === 0}
-          title="선택 삭제 (Del)"
+          title="삭제 — 선택 항목 삭제 (Del)"
         >
-          🗑 삭제
+          🗑
         </button>
         <button
-          className={rippleEnabled ? 'on' : ''}
+          className={`icon-btn ${rippleEnabled ? 'on' : ''}`}
           onClick={() => setRippleEnabled(!rippleEnabled)}
-          title="Ripple 모드: 클립 삭제 시 같은 트랙 뒤 클립을 자동으로 앞당김"
+          title="Ripple 모드 — 클립 삭제 시 같은 트랙 뒤 클립을 자동으로 앞당김"
         >
-          ⏩ Ripple
+          ⏩
         </button>
         <button
+          className="icon-btn"
           onClick={applyCrossfade}
           disabled={selection.length !== 2}
-          title="같은 트랙의 두 클립 사이에 크로스페이드 적용 (겹침이 있으면 그 길이, 없으면 기본 1초로 끌어붙임)"
+          title="크로스페이드 — 같은 트랙의 두 클립 사이 (겹침이 있으면 그 길이, 없으면 기본 1초로 끌어붙임)"
         >
-          ⇌ 크로스페이드
+          ⇌
         </button>
         <button
+          className="icon-btn"
           onClick={() => useEditor.getState().groupClips(selection)}
           disabled={selection.length < 2}
-          title="선택된 클립들을 묶기 (한 클립 이동 시 함께 움직임)"
+          title="그룹 — 선택된 클립들을 묶기 (한 클립 이동 시 함께 움직임)"
         >
-          🔗 그룹
+          🔗
         </button>
         <button
+          className="icon-btn"
           onClick={() => {
             for (const id of selection) useEditor.getState().ungroupClip(id);
           }}
           disabled={selection.length === 0}
-          title="선택된 클립들의 그룹 해제"
+          title="그룹 해제 — 선택된 클립들의 그룹 해제"
         >
-          ✂ 그룹 해제
+          ⊗
         </button>
         <span className="toolbar-sep" />
-        <button onClick={() => setSceneOpen(true)} title="비디오 클립의 장면 변화 자동 감지">
-          🔍 장면 감지
+        <button className="icon-btn" onClick={() => setSceneOpen(true)} title="장면 감지 — 비디오 클립의 장면 변화 자동 감지">
+          🔍
         </button>
         <span className="toolbar-sep" />
-        <button onClick={() => addTrack('video')} title="비디오 트랙 추가">+ V</button>
-        <button onClick={() => addTrack('audio')} title="오디오 트랙 추가">+ A</button>
+        <button className="icon-btn" onClick={() => addTrack('video')} title="비디오 트랙 추가">+ V</button>
+        <button className="icon-btn" onClick={() => addTrack('audio')} title="오디오 트랙 추가">+ A</button>
         <span className="toolbar-sep" />
         <button
-          className={snapEnabled ? 'on' : ''}
+          className={`icon-btn ${snapEnabled ? 'on' : ''}`}
           onClick={() => setSnapEnabled(!snapEnabled)}
           title="스냅 켜기/끄기 (Alt 누르면 일시 해제)"
         >
-          🧲 스냅
+          🧲
         </button>
         <select
           value={snapInterval}

@@ -125,9 +125,10 @@ export function App() {
             </select>
           </label>
         </div>
-        <button onClick={undo} disabled={!canUndo} title="실행 취소 (Ctrl+Z)">↶ 되돌리기</button>
-        <button onClick={redo} disabled={!canRedo} title="다시 실행 (Ctrl+Y / Ctrl+Shift+Z)">↷ 다시</button>
+        <button className="icon-btn" onClick={undo} disabled={!canUndo} title="되돌리기 (Ctrl+Z)">↶</button>
+        <button className="icon-btn" onClick={redo} disabled={!canRedo} title="다시 실행 (Ctrl+Y / Ctrl+Shift+Z)">↷</button>
         <button
+          className="icon-btn"
           onClick={() => {
             const s = useEditor.getState();
             const hasContent = Object.keys(s.assets).length > 0 || Object.keys(s.clips).length > 0;
@@ -135,14 +136,15 @@ export function App() {
             useEditor.getState().resetProject();
             clearHistory();
           }}
-          title="모든 클립/미디어 비우고 빈 프로젝트로 시작 (저장된 프로젝트는 보존됨)"
+          title="새 프로젝트 — 모든 클립/미디어 비우고 빈 프로젝트로 시작 (저장된 프로젝트는 보존됨)"
         >
-          🆕 새 프로젝트
+          🆕
         </button>
-        <button onClick={() => setSaveOpen(true)} title="프로젝트 저장">💾 저장</button>
-        <button onClick={() => setOpenOpen(true)} title="프로젝트 열기">📂 열기</button>
+        <button className="icon-btn" onClick={() => setSaveOpen(true)} title="프로젝트 저장">💾</button>
+        <button className="icon-btn" onClick={() => setOpenOpen(true)} title="프로젝트 열기">📂</button>
         {installPrompt && (
           <button
+            className="icon-btn"
             onClick={async () => {
               try {
                 installPrompt.prompt();
@@ -151,9 +153,9 @@ export function App() {
                 setInstallPrompt(null);
               }
             }}
-            title="브라우저 앱처럼 설치 (오프라인에서도 동작)"
+            title="앱 설치 — 브라우저 앱처럼 설치 (오프라인에서도 동작)"
           >
-            ⬇ 앱 설치
+            ⬇
           </button>
         )}
         <button className="primary" onClick={() => setExportOpen(true)}>
