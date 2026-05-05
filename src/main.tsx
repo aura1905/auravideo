@@ -3,22 +3,32 @@ import ReactDOM from 'react-dom/client';
 import { App } from './App';
 import './styles.css';
 
-// Register the COOP/COEP service worker so static hosts (GitHub Pages, etc.)
-// that can't set those headers still get cross-origin isolation. Skipped in
-// dev because the Vite dev server already sets the headers.
-if ('serviceWorker' in navigator && !window.crossOriginIsolated) {
-  const swUrl = `${import.meta.env.BASE_URL}coi-serviceworker.js`;
-  navigator.serviceWorker.register(swUrl).then(
-    (reg) => {
-      // Reload once so the page is controlled by the SW and becomes isolated.
-      const reloadKey = 'coiReloaded';
-      if (reg.active && !navigator.serviceWorker.controller && !sessionStorage.getItem(reloadKey)) {
+// We previously registered a service worker (coi-serviceworker) to add
+// COOP/COEP headers for SharedArrayBuffer support, needed by the multi-
+// threaded ffmpeg-core. We've since switched to single-threaded ffmpeg-core
+// which doesn't need SAB, and the SW was actively breaking exports for
+// users whose browsers cached older versions of it.
+//
+// Strategy: forcibly unregister ANY service worker registered for this
+// origin on every page load. Combined with the self-unregistering
+// coi-serviceworker.js (defensive: in case the browser still tries to
+// fetch it), this guarantees a SW-free environment within one reload.
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(async (regs) => {
+    if (regs.length === 0) return;
+    for (const reg of regs) {
+      try { await reg.unregister(); } catch {}
+    }
+    // If we were controlled by an old SW, reload to escape its grip
+    // so the page runs without any SW interception.
+    if (navigator.serviceWorker.controller) {
+      const reloadKey = 'swCleanedV2';
+      if (!sessionStorage.getItem(reloadKey)) {
         sessionStorage.setItem(reloadKey, '1');
         location.reload();
       }
-    },
-    (err) => console.warn('coi-serviceworker register failed:', err)
-  );
+    }
+  }).catch(() => {});
 }
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

@@ -67,7 +67,16 @@ export function ExportDialog({ onClose }: { onClose: () => void }) {
       const url = URL.createObjectURL(blob);
       setDoneUrl(url);
     } catch (e: any) {
-      setError(e?.message ?? String(e));
+      // Build a richer message: errno + recent ffmpeg log lines often pinpoint
+      // the actual problem (FS error, codec failure, out-of-memory, etc).
+      const parts: string[] = [];
+      const msg = e?.message ?? String(e);
+      parts.push(msg);
+      if (typeof e?.errno === 'number') parts.push(`errno=${e.errno}`);
+      if (e?.code) parts.push(`code=${e.code}`);
+      const tailLogs = logs.slice(-12);
+      if (tailLogs.length) parts.push('--- ffmpeg log (tail) ---', ...tailLogs);
+      setError(parts.join('\n'));
     } finally {
       setRunning(false);
     }
