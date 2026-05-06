@@ -509,14 +509,18 @@ export async function exportProject(
   let built;
   try {
     built = buildCommand(args, subtitleAssets);
-    console.log('[exp] buildCommand ok, fileMap=', built.fileMap.length, 'inputArgs=', built.args.slice(0, 30));
+    console.log('[exp] buildCommand ok, fileMap=', built.fileMap.length);
   } catch (e: any) {
     console.error('[exp] buildCommand FAILED', e, e?.stack);
     throw e;
   }
+  console.log('[exp] before phase set 입력 파일 쓰는 중');
   onProgress({ phase: '입력 파일 쓰는 중…', progress: 0.05 });
+  console.log('[exp] entering writeFile loop, count=', built.fileMap.length);
   for (let i = 0; i < built.fileMap.length; i++) {
+    console.log('[exp] iter', i, 'start');
     const { fsName, file } = built.fileMap[i];
+    console.log('[exp] iter', i, 'fsName=', fsName, 'file?', !!file, 'size=', file?.size, 'type=', file?.type, 'name=', file?.name);
     onProgress({
       phase: `입력 ${i + 1}/${built.fileMap.length} 읽는 중 (${(file.size / 1024 / 1024).toFixed(1)}MB)`,
       progress: 0.05 + (i / built.fileMap.length) * 0.1,
