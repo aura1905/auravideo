@@ -550,6 +550,7 @@ export async function exportProject(
     });
   }
 
+  console.log('[exp] writeFile loop done, all files written');
   // Track ffmpeg progress
   const onProg = ({ progress }: { progress: number }) => {
     onProgress({ phase: '인코딩 중…', progress: 0.15 + Math.max(0, Math.min(1, progress)) * 0.8 });
@@ -557,7 +558,14 @@ export async function exportProject(
   ff.on('progress', onProg);
 
   onProgress({ phase: '렌더링 시작', progress: 0.15, log: 'ffmpeg ' + built.args.join(' ') });
-  await ff.exec(built.args);
+  console.log('[exp] calling ff.exec with', built.args.length, 'args, first 30:', built.args.slice(0, 30));
+  try {
+    await ff.exec(built.args);
+    console.log('[exp] ff.exec returned ok');
+  } catch (e: any) {
+    console.error('[exp] ff.exec FAILED', e, e?.stack);
+    throw new Error(`ff.exec 실패: ${e?.message ?? e}`);
+  }
   ff.off('progress', onProg);
 
   onProgress({ phase: '결과 읽는 중…', progress: 0.97 });
