@@ -133,7 +133,11 @@ function buildCommand(
     videoClipsOrdered.push(...tClips);
   }
 
-  // collect audio: from audio tracks AND from video tracks (each video clip carries its source audio)
+  // collect audio: from audio tracks AND from video tracks (each video clip
+  // carries its source audio). Critically: skip assets without an audio
+  // stream (images, video files muxed without audio) — referencing `[idx:a]`
+  // for them produces "Stream specifier ':a' matches no streams" and aborts
+  // the entire filter graph in FFmpeg.wasm.
   const audioClips: {
     clip: Clip;
     trackMuted: boolean;
@@ -145,7 +149,7 @@ function buildCommand(
     for (const c of clips) {
       if (c.trackId !== t.id) continue;
       const a = assets[c.assetId];
-      if (!a) continue;
+      if (!a || !a.hasAudio || a.isImage) continue;
       audioClips.push({
         clip: c,
         trackMuted: t.muted,
