@@ -500,8 +500,29 @@ export async function exportProject(
   onProgress({ phase: '입력 파일 쓰는 중…', progress: 0.05 });
   for (let i = 0; i < built.fileMap.length; i++) {
     const { fsName, file } = built.fileMap[i];
-    const data = await fetchFile(file);
-    await ff.writeFile(fsName, data);
+    onProgress({
+      phase: `입력 ${i + 1}/${built.fileMap.length} 읽는 중 (${(file.size / 1024 / 1024).toFixed(1)}MB)`,
+      progress: 0.05 + (i / built.fileMap.length) * 0.1,
+      log: `[debug] reading ${fsName}: file.size=${file.size} type=${file.type}`,
+    });
+    let data: Uint8Array;
+    try {
+      data = await fetchFile(file);
+    } catch (e: any) {
+      onProgress({ phase: 'fetchFile 실패', progress: -1, log: `[debug] fetchFile threw: ${e?.message ?? e}` });
+      throw new Error(`입력 ${i + 1} 읽기 실패: ${e?.message ?? e}`);
+    }
+    onProgress({
+      phase: `입력 ${i + 1}/${built.fileMap.length} 쓰는 중 (${(data.byteLength / 1024 / 1024).toFixed(1)}MB)`,
+      progress: 0.05 + (i / built.fileMap.length) * 0.1,
+      log: `[debug] writing ${fsName}: bytes=${data.byteLength}`,
+    });
+    try {
+      await ff.writeFile(fsName, data);
+    } catch (e: any) {
+      onProgress({ phase: 'writeFile 실패', progress: -1, log: `[debug] writeFile threw at ${fsName} (${data.byteLength}B): ${e?.message ?? e}` });
+      throw new Error(`입력 ${i + 1} (${fsName}, ${(data.byteLength/1024/1024).toFixed(1)}MB) 쓰기 실패: ${e?.message ?? e}`);
+    }
     onProgress({
       phase: `입력 ${i + 1}/${built.fileMap.length} 준비됨`,
       progress: 0.05 + (i / built.fileMap.length) * 0.1,
