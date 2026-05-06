@@ -558,18 +558,39 @@ export async function exportProject(
   ff.on('progress', onProg);
 
   onProgress({ phase: '렌더링 시작', progress: 0.15, log: 'ffmpeg ' + built.args.join(' ') });
-  console.log('[exp] calling ff.exec with', built.args.length, 'args, first 30:', built.args.slice(0, 30));
+  console.log('[exp] calling ff.exec with', built.args.length, 'args');
+  // Capture all FFmpeg log output for diagnosing exec failure.
+  const ffmpegStderr: string[] = [];
+  const captureLog = ({ message }: { message: string }) => {
+    ffmpegStderr.push(message);
+  };
+  ff.on('log', captureLog);
+  let ret: number;
   try {
-    await ff.exec(built.args);
-    console.log('[exp] ff.exec returned ok');
+    ret = await ff.exec(built.args);
+    console.log('[exp] ff.exec returned ret=', ret);
   } catch (e: any) {
-    console.error('[exp] ff.exec FAILED', e, e?.stack);
-    throw new Error(`ff.exec 실패: ${e?.message ?? e}`);
+    console.error('[exp] ff.exec threw', e, e?.stack);
+    ff.off('log', captureLog);
+    throw new Error(`ff.exec threw: ${e?.message ?? e}\n\n${ffmpegStderr.slice(-30).join('\n')}`);
+  }
+  ff.off('log', captureLog);
+  if (ret !== 0) {
+    console.error('[exp] ff.exec non-zero ret', ret, 'stderr tail:', ffmpegStderr.slice(-15));
+    throw new Error(`FFmpeg 종료 코드 ${ret}\n\n${ffmpegStderr.slice(-25).join('\n')}`);
   }
   ff.off('progress', onProg);
 
+  console.log('[exp] reading output', built.outName);
   onProgress({ phase: '결과 읽는 중…', progress: 0.97 });
-  const data = await ff.readFile(built.outName);
+  let data: Uint8Array;
+  try {
+    data = (await ff.readFile(built.outName)) as Uint8Array;
+    console.log('[exp] readFile ok, size=', data.byteLength);
+  } catch (e: any) {
+    console.error('[exp] readFile FAILED', e);
+    throw new Error(`출력 파일 읽기 실패: ${e?.message ?? e}\n\n${ffmpegStderr.slice(-25).join('\n')}`);
+  }
   // cleanup
   try {
     await ff.deleteFile(built.outName);
