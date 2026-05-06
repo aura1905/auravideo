@@ -452,13 +452,22 @@ export async function exportProject(
   onProgress: ProgressCb
 ): Promise<Blob> {
   onProgress({ phase: 'FFmpeg 로드 중…', progress: 0 });
-  const ff = await getFFmpeg();
+  console.log('[exp] entering exportProject');
+  let ff;
+  try {
+    ff = await getFFmpeg();
+    console.log('[exp] getFFmpeg returned ok');
+  } catch (e: any) {
+    console.error('[exp] getFFmpeg FAILED', e, e?.stack);
+    throw new Error(`FFmpeg 로드 실패: ${e?.message ?? e}`);
+  }
   const onLog = ({ message }: { message: string }) => onProgress({ phase: 'rendering', progress: -1, log: message });
   ff.on('log', onLog);
   try {
     if (!self.crossOriginIsolated) {
       onProgress({ phase: 'rendering', progress: -1, log: 'warning: not crossOriginIsolated — MT FFmpeg needs SAB' });
     }
+    console.log('[exp] crossOriginIsolated check passed');
 
   // Pre-render subtitles (range-translation respected) to PNG bytes and write
   // them to the FFmpeg FS so buildCommand can reference them as inputs.
@@ -496,7 +505,15 @@ export async function exportProject(
     }
   }
 
-  const built = buildCommand(args, subtitleAssets);
+  console.log('[exp] before buildCommand: subAssets=', subtitleAssets.length);
+  let built;
+  try {
+    built = buildCommand(args, subtitleAssets);
+    console.log('[exp] buildCommand ok, fileMap=', built.fileMap.length, 'inputArgs=', built.args.slice(0, 30));
+  } catch (e: any) {
+    console.error('[exp] buildCommand FAILED', e, e?.stack);
+    throw e;
+  }
   onProgress({ phase: '입력 파일 쓰는 중…', progress: 0.05 });
   for (let i = 0; i < built.fileMap.length; i++) {
     const { fsName, file } = built.fileMap[i];
