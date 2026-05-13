@@ -164,7 +164,7 @@ export function ExportDialog({ onClose }: { onClose: () => void }) {
             <>
               <p>완료되었습니다.</p>
               <video src={doneUrl} controls style={{ width: '100%', maxHeight: 360 }} />
-              <a className="download-btn" href={doneUrl} download="auravideo-export.mp4">
+              <a className="download-btn" href={doneUrl} download="nabivideo-export.mp4">
                 다운로드
               </a>
             </>
