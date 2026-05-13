@@ -79,6 +79,7 @@ We use the **single-threaded** `@ffmpeg/core` (not `core-mt`) so SAB is technica
 - Volume range is `0..2` (200%). The properties panel slider is bound to that range.
 - Clip mute (`clip.muted`) silences audio while keeping the video visible — this is exposed both as the on-clip 🔊/🔇 button and the properties panel checkbox.
 - Track-level mute is `track.muted` (the M button on the track header). Both `clip.muted` and `track.muted` are honoured in preview audio routing and in export's `amix` selection.
+- **Track solo** (`track.solo`, the S button next to M). Rule: if ANY track in the project has `solo=true`, only soloed tracks are audible; non-soloed tracks are silenced regardless of their own `muted` state. Implemented via `isTrackSoloAudible(track, tracks)` in `editorStore.ts` and applied in both `Preview.tsx` (audio-track and video-track audio paths, plus `hasOtherActiveAudio` so a silenced peer doesn't trigger ducking) and `export.ts` (audio-clip collection AND the ducker-interval merge).
 - Resolution must be even-numbered for x264; the topbar inputs round to the next even pixel automatically.
 - **z-order**: top video track in the UI is drawn front-most on the canvas. The topmost video track gets a red "앞" badge, the bottom one a "뒤" badge. Per-clip frame caches in `mediaMapRef` ensure a higher track stays visible even while its source video is mid-seek.
 
@@ -91,7 +92,10 @@ We use the **single-threaded** `@ffmpeg/core` (not `core-mt`) so SAB is technica
 - **←/→** step one frame, with **Shift** = 1 s
 - **S** razor-cut selected clips at playhead
 - **Ctrl+Z** undo, **Ctrl+Y** / **Ctrl+Shift+Z** redo
+- **Ctrl+C** / **Ctrl+V** copy / paste clips; **Ctrl+D** duplicate-in-place
 - **Del / Backspace** delete selection
+
+`Ctrl+C` snapshots the current selection into a module-level clipboard in `shortcuts.ts` (a copy of each `Clip`, with the leftmost `start` remembered as origin). `Ctrl+V` instantiates new clips with fresh ids at the playhead, preserving inter-clip offsets so a multi-clip paste reproduces their relative layout. `Ctrl+D` skips the buffer and starts each duplicate right after its source on the same track. When the page has a text selection (`window.getSelection().toString()` non-empty), `Ctrl+C` falls through to the browser so users can still copy plain text.
 
 ## Undo / Redo
 
@@ -167,11 +171,24 @@ The `inputCounter` in `buildCommand` is decoupled from `fileMap.length` so subti
 
 ## Visual transform (PIP, rotation, opacity)
 
-`Clip` carries `transformX`/`transformY` (px from canvas center), `transformScale` (1 = fit-to-canvas), `transformRotation` (degrees), `transformOpacity` (0..1). Apply via the **변환** collapsible section in the properties panel; reset button restores defaults.
+`Clip` carries `transformX`/`transformY` (px from canvas center), `transformScale` (1 = fit-to-canvas), `transformRotation` (degrees), `transformOpacity` (0..1). Apply via the **변환** collapsible section in the properties panel; reset button restores defaults. Also directly manipulable on the preview canvas — see `CanvasOverlay`.
 
 **Preview**: in `drawFrame` the cached frame is drawn at `(W - dw)/2 + transformX, (H - dh)/2 + transformY` where `dw = vw * baseScale * userScale`. Rotation uses `ctx.translate + rotate + drawImage(-dw/2,-dh/2,...)` around the clip center. Color correction is applied via `ctx.filter = brightness() contrast() saturate()` before the draw and reset to `'none'` after.
 
 **Export**: the per-clip filter chain is `trim → setpts → scale=W*userScale:H*userScale:force_original_aspect_ratio=decrease` (no longer pads to canvas — that's how PIP works), then optional `eq=brightness=:contrast=:saturation=:gamma=`, then `format=yuva420p`, optional `rotate=rad:c=black@0:ow=...:oh=...` with bounding-box expressions, optional `colorchannelmixer=aa=opacity` for static opacity, then fades, then `tpad`. Final `overlay` uses expressions `x=(main_w-overlay_w)/2+TX` so the rotated bounding box is centered correctly.
+
+## Direct manipulation on preview canvas
+
+`src/components/CanvasOverlay.tsx` renders a floating bounding box over the selected clip's rendered position on the preview canvas, with 4 corner scale handles + a top rotation handle. It's mounted as a child of `.preview-stage` next to the canvas. Position is recomputed every RAF tick by reading `canvasRef.current.getBoundingClientRect()` and translating the clip's project-pixel transform (`(W - dw)/2 + transformX`, etc. — same math as `drawFrame`) into viewport-px via the `cssWidth / settings.width` scale factor. The wrapper uses `position: fixed` so it doesn't need a positioned ancestor.
+
+The overlay is only shown when (a) exactly ONE clip is selected, (b) that clip is on a visible video track, (c) its asset is a video/image with `hasVideo=true`, and (d) the playhead is within the clip's display range — otherwise it hides. Pointer interactions:
+
+- **Drag inside (`data-role="move"`)** → updates `transformX/Y` by the screen-px delta divided by the project-px scale; works even when the clip is rotated because we translate the clip's center in project space, not screen space.
+- **Drag a corner (`data-role="corner"`)** → uniform `transformScale` = `startScale * (currentDistFromCenter / initialDistFromCenter)`, clamped to `[0.05, 20]`.
+- **Drag the top handle (`data-role="rotate"`)** → `transformRotation += angleDelta` where the angles are computed from the box's center in viewport coords. Holding Shift snaps the result to 15° increments.
+- **Double-click the body** → reset all four transform fields to defaults.
+
+The wrapper has `pointer-events: none` and each handle child sets `pointer-events: auto`, so clicks outside the box pass through to the canvas (and clicks inside the box hit the body / corner / rotate handles directly via `data-role`).
 
 ## Color correction
 
