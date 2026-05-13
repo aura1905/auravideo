@@ -43,6 +43,10 @@ export interface TalkingHeadOptions {
   /** Minimum gap (in *source-media* seconds) between Whisper chunks to count
    * as a silence worth cutting. Smaller = more aggressive cuts. */
   minSilenceSec: number;
+  /** Maximum gap to cut. Gaps LONGER than this are preserved (treated as
+   * intentional pauses, dramatic effects, B-roll cuts, etc.). Set to a very
+   * large number to cut all gaps regardless. Default 4s. */
+  maxSilenceSec: number;
   /** Padding (in source seconds) added before each kept range so words don't
    * start mid-syllable. Default 0.15. */
   leadPadSec: number;
@@ -52,14 +56,23 @@ export interface TalkingHeadOptions {
    * coords AFTER the silence removal). */
   generateSubtitles: boolean;
   /** Crossfade between every two kept fragments (timeline seconds). 0 = hard
-   * cut. Implemented by overlapping fragments and setting fadeIn/fadeOut. */
+   * cut. Implemented by overlapping fragments and setting fadeIn/fadeOut.
+   *
+   * Note: same-track crossfades show a slight darkening at the midpoint
+   * because the canvas compositor alpha-blends both fragments against the
+   * black canvas. Hard cut (0) is the safer default for talking-head. */
   crossfadeSec: number;
 }
 
 export const TALKING_HEAD_DEFAULTS: TalkingHeadOptions = {
   language: 'korean',
-  model: 'Xenova/whisper-tiny',
-  minSilenceSec: 0.6,
+  // whisper-tiny is too inaccurate for Korean talking-head; base is a better
+  // baseline. User can drop to tiny for speed if they have clean audio.
+  model: 'Xenova/whisper-base',
+  // Conservative defaults: cut short pauses (breaths, ums) but preserve
+  // longer dramatic gaps that the speaker probably left on purpose.
+  minSilenceSec: 0.8,
+  maxSilenceSec: 4.0,
   leadPadSec: 0.15,
   tailPadSec: 0.2,
   generateSubtitles: true,
@@ -126,13 +139,19 @@ export async function runTalkingHeadCleanup(
     throw new Error('Whisper가 인식한 음성 구간이 클립 범위 내에 없습니다.');
   }
 
-  // 3. Merge overlapping / near-overlapping kept ranges. "Near" = gap below
-  //    minSilenceSec — those gaps are too short to be worth cutting.
+  // 3. Merge kept ranges. A gap between two adjacent ranges is CUT only if
+  //    it falls in [minSilenceSec, maxSilenceSec]. Gaps shorter than
+  //    minSilenceSec are too short to be worth cutting (and would just
+  //    splice mid-word). Gaps longer than maxSilenceSec are treated as
+  //    INTENTIONAL pauses (dramatic effects, b-roll moments, etc.) and
+  //    also merged through — preserved as-is in the output.
   padded.sort((a, b) => a.start - b.start);
   const merged: { start: number; end: number; chunkIndexes: number[] }[] = [];
   for (const r of padded) {
     const last = merged[merged.length - 1];
-    if (last && r.start - last.end < opts.minSilenceSec) {
+    const gap = last ? r.start - last.end : Infinity;
+    const shouldMerge = last && (gap < opts.minSilenceSec || gap > opts.maxSilenceSec);
+    if (shouldMerge) {
       last.end = Math.max(last.end, r.end);
       last.chunkIndexes.push(r.chunkIndex);
     } else {

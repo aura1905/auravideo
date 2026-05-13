@@ -40,14 +40,26 @@ export function Preview() {
   // Compute project duration
   const duration = useMemo(() => projectDuration(useEditor.getState()), [clips]);
 
-  // Maintain hidden video elements per clip
+  // Maintain hidden <video>/<img> elements — ONE PER ASSET, shared across
+  // all clips that reference it. This is critical for the talking-head
+  // workflow where N fragments are cut from the same source: with one
+  // element per clip the browser would spin up N decoder pipelines and
+  // each fragment boundary would trigger an independent seek from time 0.
+  // Sharing gives a single continuously-loaded stream that only needs
+  // small forward seeks at cut points — much smoother playback.
+  //
+  // Trade-off: only one clip from a given asset can be "the active one"
+  // at a given frame. Talking-head's sequential fragments never overlap,
+  // so this is fine. The edge case (same source used twice via PIP, both
+  // visible at the same time but at different source positions) is rare
+  // and would need a separate element per occurrence — not handled.
   useEffect(() => {
     const container = hiddenContainerRef.current;
     if (!container) return;
     const map = mediaMapRef.current;
 
-    const removeEntry = (id: string) => {
-      const st = map.get(id);
+    const removeEntry = (assetId: string) => {
+      const st = map.get(assetId);
       if (!st) return;
       try {
         if (st.el) {
@@ -58,30 +70,35 @@ export function Preview() {
         }
         if (st.imgEl) st.imgEl.remove();
       } catch {}
-      map.delete(id);
+      map.delete(assetId);
     };
 
-    // remove media for clips no longer present, or whose asset URL changed
-    // (e.g. after autosave-restore / project open creates fresh object URLs).
-    for (const id of Array.from(map.keys())) {
-      const c = clips[id];
-      if (!c) {
-        removeEntry(id);
+    // Which assets are actually referenced by at least one clip?
+    const needed = new Set<string>();
+    for (const c of Object.values(clips)) {
+      if (assets[c.assetId]) needed.add(c.assetId);
+    }
+
+    // Remove entries for assets no longer needed OR whose URL changed
+    // (e.g. after project re-load makes fresh object URLs).
+    for (const aid of Array.from(map.keys())) {
+      if (!needed.has(aid)) {
+        removeEntry(aid);
         continue;
       }
-      const a = assets[c.assetId];
+      const a = assets[aid];
       const expectedSrc = a?.url ?? '';
-      const m = map.get(id)!;
+      const m = map.get(aid)!;
       const currentSrc = m.el?.currentSrc || m.el?.src || m.imgEl?.src || '';
       if (!a || currentSrc !== expectedSrc) {
-        removeEntry(id);
+        removeEntry(aid);
       }
     }
 
-    // add media for new clips
-    for (const c of Object.values(clips)) {
-      if (map.has(c.id)) continue;
-      const a = assets[c.assetId];
+    // Add entries for needed assets that don't yet have an element.
+    for (const aid of needed) {
+      if (map.has(aid)) continue;
+      const a = assets[aid];
       if (!a) continue;
       const cache = document.createElement('canvas');
       cache.width = a.width || 320;
@@ -94,13 +111,8 @@ export function Preview() {
         img.src = a.url;
         container.appendChild(img);
         const state: ClipMediaState = {
-          kind: 'image',
-          el: null,
-          imgEl: img,
-          ready: false,
-          cache,
-          cacheCtx,
-          cacheValid: false,
+          kind: 'image', el: null, imgEl: img, ready: false,
+          cache, cacheCtx, cacheValid: false,
         };
         img.onload = () => {
           state.ready = true;
@@ -113,7 +125,7 @@ export function Preview() {
             } catch {}
           }
         };
-        map.set(c.id, state);
+        map.set(aid, state);
         continue;
       }
       const v = document.createElement('video');
@@ -128,20 +140,15 @@ export function Preview() {
       v.height = a.height || 180;
       container.appendChild(v);
       const state: ClipMediaState = {
-        kind: 'video',
-        el: v,
-        imgEl: null,
-        ready: false,
-        cache,
-        cacheCtx,
-        cacheValid: false,
+        kind: 'video', el: v, imgEl: null, ready: false,
+        cache, cacheCtx, cacheValid: false,
       };
       v.onloadeddata = () => {
         state.ready = true;
         if (v.videoWidth) cache.width = v.videoWidth;
         if (v.videoHeight) cache.height = v.videoHeight;
       };
-      map.set(c.id, state);
+      map.set(aid, state);
     }
   }, [clips, assets]);
 
@@ -333,6 +340,13 @@ function drawFrame(
   ctx.fillStyle = '#000';
   ctx.fillRect(0, 0, W, H);
 
+  // Track which assets had at least one clip actively playing/scrubbing
+  // this frame. After the main loops we use this to pause unused shared
+  // <video> elements (needed because the shared model has one element
+  // serving N clips — we can't naively pause per-clip iteration as that
+  // would clobber an active clip's playback).
+  const activeAssetThisFrame = new Set<string>();
+
   // Draw video tracks bottom→up so V1 (top in UI) is on top
   // tracks order: top first; we want V1 on top — so we draw from last video track up to first
   const videoTracks = tracks.filter((t) => t.kind === 'video' && !t.hidden);
@@ -349,12 +363,13 @@ function drawFrame(
       const tailCap = a0 ? Math.max(0, (a0.duration - c.outPoint) / Math.max(0.01, speed)) : 0;
       const effectiveTail = Math.min(tail, tailCap);
       const audioEnd = visualEnd + effectiveTail;
-      const m = media.get(c.id);
+      const m = media.get(c.assetId);
       if (!m) continue;
       const a = assets[c.assetId];
       if (!a || !a.hasVideo) continue;
 
       if (head >= c.start && head < visualEnd) {
+        activeAssetThisFrame.add(c.assetId);
         // Image clips skip all the video sync — their cache is populated once
         // at load time and never changes.
         if (m.el) {
@@ -446,15 +461,17 @@ function drawFrame(
         // Visual region ended but audio tail is still playing — keep the
         // <video> element rolling so its audio output continues. Don't draw
         // anything new (lower tracks may be drawn in their own iterations).
+        activeAssetThisFrame.add(c.assetId);
         try {
           if (m.el.paused) {
             m.el.muted = true;
             m.el.play().catch(() => {});
           }
         } catch {}
-      } else if (m.el) {
-        if (!m.el.paused) m.el.pause();
       }
+      // NOTE: don't pause `m.el` here when this clip is inactive — another
+      // clip sharing the same asset might be the active one. The bulk pause
+      // pass at the end of drawFrame handles assets with no active clip.
     }
   }
 
@@ -465,7 +482,7 @@ function drawFrame(
     const duckLevel = t.autoDuckLevel ?? 1;
     for (const c of clips) {
       if (c.trackId !== t.id) continue;
-      const m = media.get(c.id);
+      const m = media.get(c.assetId);
       if (!m || !m.el) continue; // image clips have no <video> / no audio
       const a = assets[c.assetId];
       if (!a) continue;
@@ -476,6 +493,7 @@ function drawFrame(
       const tail = Math.min(c.audioTail ?? 0, tailCap);
       const audioEnd = visualEnd + tail;
       if (head >= c.start && head < audioEnd) {
+        activeAssetThisFrame.add(c.assetId);
         const localTime = c.inPoint + (head - c.start) * speed;
         if (isPlaying) {
           const rate = Math.max(0.0625, Math.min(16, speed));
@@ -497,11 +515,10 @@ function drawFrame(
           m.el.volume = Math.max(0, Math.min(1, vol));
           m.el.muted = vol === 0;
           if (m.el.paused) m.el.play().catch(() => {});
-        } else {
-          if (!m.el.paused) m.el.pause();
         }
-      } else {
-        if (!m.el.paused) m.el.pause();
+        // If !isPlaying we leave it alone — bulk-pause pass at the end
+        // handles assets with no active clip; if another clip is active
+        // on this asset it'll have already set the right state.
       }
     }
   }
@@ -512,7 +529,7 @@ function drawFrame(
     const duckLevel = t.autoDuckLevel ?? 1;
     for (const c of clips) {
       if (c.trackId !== t.id) continue;
-      const m = media.get(c.id);
+      const m = media.get(c.assetId);
       if (!m || !m.el) continue; // image clips have no audio
       const a = assets[c.assetId];
       if (!a) continue;
@@ -536,6 +553,19 @@ function drawFrame(
         m.el.volume = Math.max(0, Math.min(1, vol));
         m.el.muted = vol === 0;
       }
+    }
+  }
+
+  // End-of-frame pass: pause every shared <video> element whose asset
+  // had no active clip this frame. With per-clip elements we could
+  // naively pause-on-inactive in the inner loops, but in the shared
+  // model an "inactive" clip iteration could clobber a peer clip's
+  // playback for the same source — so the pause decision is deferred.
+  for (const [aid, st] of media.entries()) {
+    if (!st.el) continue; // image — nothing to pause
+    if (activeAssetThisFrame.has(aid)) continue;
+    if (!st.el.paused) {
+      try { st.el.pause(); } catch {}
     }
   }
 }

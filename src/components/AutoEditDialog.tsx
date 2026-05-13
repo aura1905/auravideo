@@ -243,18 +243,34 @@ export function AutoEditDialog({ onClose }: { onClose: () => void }) {
                   </select>
                 </label>
               </div>
-              <label>
-                자를 무음 길이 (초): {thOpts.minSilenceSec.toFixed(2)}
-                <input
-                  type="range"
-                  min={0.2}
-                  max={3}
-                  step={0.05}
-                  value={thOpts.minSilenceSec}
-                  onChange={(e) => setThOpts({ ...thOpts, minSilenceSec: parseFloat(e.target.value) })}
-                  disabled={running}
-                />
-              </label>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+                <label>
+                  자를 무음: 최소 {thOpts.minSilenceSec.toFixed(2)}초
+                  <input
+                    type="range"
+                    min={0.2}
+                    max={3}
+                    step={0.05}
+                    value={thOpts.minSilenceSec}
+                    onChange={(e) => setThOpts({ ...thOpts, minSilenceSec: parseFloat(e.target.value) })}
+                    disabled={running}
+                    title="이보다 짧은 무음은 그대로 남겨둠 (= 단어 사이 짧은 호흡 보존)"
+                  />
+                </label>
+                <label>
+                  자를 무음: 최대 {thOpts.maxSilenceSec.toFixed(1)}초
+                  <input
+                    type="range"
+                    min={1}
+                    max={15}
+                    step={0.5}
+                    value={thOpts.maxSilenceSec}
+                    onChange={(e) => setThOpts({ ...thOpts, maxSilenceSec: parseFloat(e.target.value) })}
+                    disabled={running}
+                    title="이보다 긴 무음은 의도된 침묵으로 보고 그대로 남겨둠"
+                  />
+                </label>
+              </div>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
                 <label>
                   앞 여유 (초): {thOpts.leadPadSec.toFixed(2)}
