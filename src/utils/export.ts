@@ -145,7 +145,10 @@ function buildCommand(
     trackId: string;
     duckLevel: number;
   }[] = [];
+  // Solo: if ANY track has solo=true, only soloed tracks contribute audio.
+  const anySolo = tracks.some((t) => t.solo);
   for (const t of [...videoTracks, ...audioTracks]) {
+    if (anySolo && !t.solo) continue;
     for (const c of clips) {
       if (c.trackId !== t.id) continue;
       const a = assets[c.assetId];
@@ -165,9 +168,13 @@ function buildCommand(
   const audibleIntervalsByTrack: Record<string, { start: number; end: number }[]> = {};
   for (const t of [...videoTracks, ...audioTracks]) {
     const arr: { start: number; end: number }[] = [];
+    // A non-solo-audible track doesn't generate audio, so it can't be the
+    // source of "another track is talking" for ducking purposes either.
+    const trackSilencedBySolo = anySolo && !t.solo;
     for (const c of clips) {
       if (c.trackId !== t.id) continue;
       if (c.muted || t.muted) continue;
+      if (trackSilencedBySolo) continue;
       const a = assets[c.assetId];
       if (!a || !a.hasAudio) continue;
       const speed = c.speed ?? 1;

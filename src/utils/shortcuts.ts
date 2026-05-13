@@ -1,5 +1,12 @@
 import { useEffect } from 'react';
-import { useEditor, undo, redo, projectDuration } from '../state/editorStore';
+import { useEditor, undo, redo, projectDuration, newClipId, clipDisplayDur } from '../state/editorStore';
+import type { Clip } from '../types';
+
+// Module-level clipboard. Holds deep-cloned Clip snapshots so subsequent
+// edits to the source clips don't mutate the buffer. Tracks the leftmost
+// `start` so paste can offset every clip to land at the playhead.
+let clipboardClips: Clip[] = [];
+let clipboardOriginStart = 0;
 
 // J/K/L shuttle: K = pause, J = -1x (rewind), L = +1x (forward, next press doubles)
 let shuttleSpeed = 0;
@@ -58,6 +65,25 @@ export function useGlobalShortcuts() {
           stopShuttle();
           useEditor.getState().setPlaying(false);
           redo();
+          return;
+        }
+        if (k === 'c') {
+          // Don't hijack the browser copy when the user has actual text selected
+          // (e.g. selecting subtitle text in an input — already filtered above —
+          // or selecting plain text in the page). copyClips uses store selection.
+          const sel = window.getSelection?.();
+          if (sel && sel.toString().length > 0) return;
+          if (copyClips()) e.preventDefault();
+          return;
+        }
+        if (k === 'v') {
+          if (pasteClips()) e.preventDefault();
+          return;
+        }
+        if (k === 'd') {
+          // Duplicate-in-place: copy + paste at the original positions, slightly
+          // offset so the new clips don't perfectly overlap their source.
+          if (duplicateClips()) e.preventDefault();
           return;
         }
         return; // let other ctrl combos pass through
@@ -156,4 +182,66 @@ export function useGlobalShortcuts() {
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, []);
+}
+
+/** Snapshot the currently selected clips into the module clipboard.
+ * Returns true if anything was copied (so the caller can `preventDefault`). */
+function copyClips(): boolean {
+  const s = useEditor.getState();
+  if (s.selection.length === 0) return false;
+  const picked: Clip[] = [];
+  let minStart = Infinity;
+  for (const id of s.selection) {
+    const c = s.clips[id];
+    if (!c) continue;
+    picked.push({ ...c });
+    if (c.start < minStart) minStart = c.start;
+  }
+  if (picked.length === 0) return false;
+  clipboardClips = picked;
+  clipboardOriginStart = isFinite(minStart) ? minStart : 0;
+  return true;
+}
+
+/** Paste clipboard clips at the playhead. Each clip preserves its relative
+ * offset from the leftmost clip at copy time. New ids are minted. The pasted
+ * clips become the new selection so the user can immediately move/delete them. */
+function pasteClips(): boolean {
+  if (clipboardClips.length === 0) return false;
+  const s = useEditor.getState();
+  const playhead = s.playhead;
+  const newIds: string[] = [];
+  for (const src of clipboardClips) {
+    const id = newClipId();
+    const clip: Clip = {
+      ...src,
+      id,
+      start: playhead + (src.start - clipboardOriginStart),
+    };
+    s.addClip(clip);
+    newIds.push(id);
+  }
+  s.setSelection(newIds);
+  return true;
+}
+
+/** Duplicate selection in-place. Each new clip starts right after its source
+ * (source's end + 0.01s) so they're visible as separate blocks. Useful for
+ * repeating a B-roll insert. */
+function duplicateClips(): boolean {
+  const s = useEditor.getState();
+  if (s.selection.length === 0) return false;
+  const newIds: string[] = [];
+  for (const id of s.selection) {
+    const src = s.clips[id];
+    if (!src) continue;
+    const nid = newClipId();
+    const dur = clipDisplayDur(src);
+    const clip: Clip = { ...src, id: nid, start: src.start + dur + 0.01 };
+    s.addClip(clip);
+    newIds.push(nid);
+  }
+  if (newIds.length === 0) return false;
+  s.setSelection(newIds);
+  return true;
 }

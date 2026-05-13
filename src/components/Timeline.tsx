@@ -26,6 +26,7 @@ export function Timeline() {
   const addTrack = useEditor((s) => s.addTrack);
   const removeTrack = useEditor((s) => s.removeTrack);
   const toggleMute = useEditor((s) => s.toggleTrackMute);
+  const toggleSolo = useEditor((s) => s.toggleTrackSolo);
   const toggleHidden = useEditor((s) => s.toggleTrackHidden);
   const setTrackVolume = useEditor((s) => s.setTrackVolume);
   const setTrackHeight = useEditor((s) => s.setTrackHeight);
@@ -406,6 +407,7 @@ export function Timeline() {
                 pps={pixelsPerSecond}
                 locked={!!trackLocked[track.id]}
                 onMute={() => toggleMute(track.id)}
+                onSolo={() => toggleSolo(track.id)}
                 onHide={() => toggleHidden(track.id)}
                 onRemove={() => removeTrack(track.id)}
                 onVolume={(v) => setTrackVolume(track.id, v)}
@@ -540,6 +542,7 @@ function TrackRow({
   locked,
   children,
   onMute,
+  onSolo,
   onHide,
   onRemove,
   onVolume,
@@ -557,6 +560,7 @@ function TrackRow({
   locked: boolean;
   children: React.ReactNode;
   onMute: () => void;
+  onSolo: () => void;
   onHide: () => void;
   onRemove: () => void;
   onVolume: (v: number) => void;
@@ -609,7 +613,14 @@ function TrackRow({
           {zLabel && <span className={`z-badge ${zLabel === '앞' ? 'front' : 'back'}`}>{zLabel}</span>}
         </div>
         <div className="track-buttons">
-          <button onClick={onMute} className={track.muted ? 'on' : ''} title="음소거">M</button>
+          <button onClick={onMute} className={track.muted ? 'on' : ''} title="음소거 (Mute)">M</button>
+          <button
+            onClick={onSolo}
+            className={`solo-btn ${track.solo ? 'on' : ''}`}
+            title="솔로 — 솔로된 트랙만 들립니다 (다른 트랙은 일시 음소거)"
+          >
+            S
+          </button>
           {track.kind === 'video' && (
             <button onClick={onHide} className={track.hidden ? 'on' : ''} title="숨김">H</button>
           )}

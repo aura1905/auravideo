@@ -209,6 +209,62 @@ input[type=number], input[type=text], select {
   border-radius: 4px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
 }
+/* Direct-manipulation overlay over the preview canvas.
+ * `position: fixed` + viewport coords set by JS (canvas getBoundingClientRect).
+ * The wrapper itself has pointer-events:none so it doesn't block clicks
+ * outside the box; only the handle children (move/corner/rotate) capture. */
+.canvas-overlay-box {
+  position: fixed;
+  pointer-events: none;
+  z-index: 50;
+  box-sizing: border-box;
+  outline: 2px solid rgba(79, 140, 255, 0.85);
+  transform-origin: center center;
+}
+.canvas-overlay-box .overlay-body {
+  position: absolute;
+  inset: 0;
+  cursor: move;
+  pointer-events: auto;
+}
+.canvas-overlay-box .overlay-corner {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #4f8cff;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  pointer-events: auto;
+  z-index: 1;
+}
+.canvas-overlay-box .overlay-corner.tl { top: -7px; left: -7px; cursor: nwse-resize; }
+.canvas-overlay-box .overlay-corner.tr { top: -7px; right: -7px; cursor: nesw-resize; }
+.canvas-overlay-box .overlay-corner.bl { bottom: -7px; left: -7px; cursor: nesw-resize; }
+.canvas-overlay-box .overlay-corner.br { bottom: -7px; right: -7px; cursor: nwse-resize; }
+.canvas-overlay-box .overlay-rotate {
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  margin-left: -7px;
+  background: #4ee07a;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  pointer-events: auto;
+  cursor: grab;
+  z-index: 1;
+}
+.canvas-overlay-box .overlay-rotate::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 14px;
+  width: 2px;
+  height: 18px;
+  margin-left: -1px;
+  background: rgba(79, 140, 255, 0.85);
+}
 .preview-controls {
   display: flex;
   align-items: center;
@@ -456,6 +512,11 @@ body.reordering-track * { cursor: grabbing !important; }
   height: 22px;
   padding: 0;
   font-size: 11px;
+}
+.track-buttons .solo-btn.on {
+  background: #f7c948;
+  color: #1a1a1a;
+  border-color: #f7c948;
 }
 .track-area {
   position: relative;

@@ -114,6 +114,11 @@ export interface Track {
   // Whether to render audio waveforms on this track's clips. Default true.
   // Useful to declutter video tracks or hide waveforms on a noisy track.
   waveformVisible?: boolean;
+  // Solo flag. When ANY track has solo=true, only soloed tracks produce
+  // audio in preview + export — non-soloed tracks are silenced regardless
+  // of their own `muted` state. When no track is soloed, this flag has no
+  // effect and normal mute rules apply.
+  solo?: boolean;
 }
 
 export interface ProjectSettings {

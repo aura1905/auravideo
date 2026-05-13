@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react';
-import { useEditor, projectDuration } from '../state/editorStore';
+import { useEditor, projectDuration, isTrackSoloAudible } from '../state/editorStore';
+import { CanvasOverlay } from './CanvasOverlay';
 import type { Clip } from '../types';
 import { formatTime } from '../utils/media';
 import { paintSubtitle } from '../utils/drawSubtitle';
@@ -207,6 +208,7 @@ export function Preview() {
           height={settings.height}
           style={{ aspectRatio: `${settings.width} / ${settings.height}` }}
         />
+        <CanvasOverlay canvasRef={canvasRef} />
         <div ref={hiddenContainerRef} aria-hidden="true" />
       </div>
       <div className="preview-controls">
@@ -278,6 +280,7 @@ function hasOtherActiveAudio(
   for (const tr of tracks) {
     if (tr.id === excludeTrackId) continue;
     if (tr.muted) continue;
+    if (!isTrackSoloAudible(tr, tracks)) continue;
     for (const c of clips) {
       if (c.trackId !== tr.id) continue;
       if (c.muted) continue;
@@ -490,6 +493,7 @@ function drawFrame(
             vol *= Math.max(0, (audioEnd - head) / fadeRange);
           }
           if (t.muted || c.muted) vol = 0;
+          if (!isTrackSoloAudible(t, tracks)) vol = 0;
           m.el.volume = Math.max(0, Math.min(1, vol));
           m.el.muted = vol === 0;
           if (m.el.paused) m.el.play().catch(() => {});
@@ -528,6 +532,7 @@ function drawFrame(
           vol *= Math.max(0, (audioEnd - head) / fadeRange);
         }
         if (t.muted || c.muted) vol = 0;
+        if (!isTrackSoloAudible(t, tracks)) vol = 0;
         m.el.volume = Math.max(0, Math.min(1, vol));
         m.el.muted = vol === 0;
       }

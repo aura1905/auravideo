@@ -31,6 +31,7 @@ interface EditorState {
   addTrack: (kind: Track['kind']) => string;
   removeTrack: (id: string) => void;
   toggleTrackMute: (id: string) => void;
+  toggleTrackSolo: (id: string) => void;
   toggleTrackHidden: (id: string) => void;
   setTrackVolume: (id: string, vol: number) => void;
   setTrackHeight: (id: string, height: number) => void;
@@ -143,6 +144,8 @@ export const useEditor = create<EditorState>()(
     }),
   toggleTrackMute: (id) =>
     set((s) => ({ tracks: s.tracks.map((t) => (t.id === id ? { ...t, muted: !t.muted } : t)) })),
+  toggleTrackSolo: (id) =>
+    set((s) => ({ tracks: s.tracks.map((t) => (t.id === id ? { ...t, solo: !t.solo } : t)) })),
   toggleTrackHidden: (id) =>
     set((s) => ({ tracks: s.tracks.map((t) => (t.id === id ? { ...t, hidden: !t.hidden } : t)) })),
   setTrackVolume: (id, vol) =>
@@ -515,3 +518,14 @@ export function projectDuration(state: EditorState): number {
 }
 
 export const newClipId = uid;
+
+/** Whether `track` should produce audio given the current solo configuration.
+ * Rule: if ANY track in `tracks` has solo=true, then only soloed tracks are
+ * audible (non-soloed are silenced regardless of their own muted state).
+ * If NO track is soloed, normal mute rules apply — caller should still check
+ * `track.muted` separately. */
+export function isTrackSoloAudible(track: Track, tracks: Track[]): boolean {
+  const anySolo = tracks.some((t) => t.solo);
+  if (!anySolo) return true;
+  return !!track.solo;
+}
