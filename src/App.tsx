@@ -5,6 +5,7 @@ import { Preview } from './components/Preview';
 import { PropertiesPanel } from './components/PropertiesPanel';
 import { ExportDialog } from './components/ExportDialog';
 import { ProjectsDialog } from './components/ProjectsDialog';
+import { AutoEditDialog } from './components/AutoEditDialog';
 import { useEditor, useTemporal, undo, redo, clearHistory } from './state/editorStore';
 import { useAutosave, tryRestoreLast } from './utils/autosave';
 import { useGlobalShortcuts } from './utils/shortcuts';
@@ -13,6 +14,7 @@ export function App() {
   const [exportOpen, setExportOpen] = useState(false);
   const [saveOpen, setSaveOpen] = useState(false);
   const [openOpen, setOpenOpen] = useState(false);
+  const [autoEditOpen, setAutoEditOpen] = useState(false);
   const [restored, setRestored] = useState(false);
   const [installPrompt, setInstallPrompt] = useState<any>(null);
   const settings = useEditor((s) => s.settings);
@@ -158,6 +160,13 @@ export function App() {
             ⬇
           </button>
         )}
+        <button
+          className="icon-btn"
+          onClick={() => setAutoEditOpen(true)}
+          title="자동 편집 — 토킹헤드 무음 정리 / 슬라이드쇼 등 템플릿 기반 자동 편집"
+        >
+          ✨
+        </button>
         <button className="primary" onClick={() => setExportOpen(true)}>
           내보내기
         </button>
@@ -177,6 +186,7 @@ export function App() {
       {exportOpen && <ExportDialog onClose={() => setExportOpen(false)} />}
       {saveOpen && <ProjectsDialog mode="save" onClose={() => setSaveOpen(false)} />}
       {openOpen && <ProjectsDialog mode="open" onClose={() => setOpenOpen(false)} />}
+      {autoEditOpen && <AutoEditDialog onClose={() => setAutoEditOpen(false)} />}
     </div>
   );
 }
