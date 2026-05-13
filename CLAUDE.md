@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-**NabiVideo** — browser-based multi-track video editor. Vite + React 18 + TypeScript, Zustand for state, FFmpeg.wasm for export, IndexedDB for project storage. Deployed at https://aura1905.github.io/nabivideo/ (repo `aura1905/nabivideo`). Repo was renamed from `auravideo` on 2026-05-13; the `DB_NAME = 'auravideo'` in `src/utils/db.ts` is intentionally NOT renamed so users keep their saved projects, and the `.auravideo.zip` project bundle extension is preserved for backwards compat.
+**NabiVideo** (UI brand) — browser-based multi-track video editor. Vite + React 18 + TypeScript, Zustand for state, FFmpeg.wasm for export, IndexedDB for project storage. Deployed at https://aura1905.github.io/auravideo/ (repo `aura1905/auravideo`). The repo + URL keep the old `auravideo` name; only the user-facing brand is "NabiVideo".
 
 ## Commands
 
@@ -17,7 +17,7 @@ npx tsc --noEmit -p tsconfig.json   # type check only
 
 There is no test runner and no linter configured.
 
-Push to `main` triggers `.github/workflows/deploy.yml` which builds with `VITE_BASE=/${{ github.event.repository.name }}/` (resolves to `/nabivideo/`) and deploys `dist/` to GitHub Pages.
+Push to `main` triggers `.github/workflows/deploy.yml` which builds with `VITE_BASE=/auravideo/` and deploys `dist/` to GitHub Pages.
 
 ## Architecture
 
@@ -56,7 +56,7 @@ Each unique asset becomes one ffmpeg `-i` input even if used by multiple clips (
 
 ### Cross-origin isolation
 
-The dev server sets `Cross-Origin-Opener-Policy: same-origin` and `Cross-Origin-Embedder-Policy: require-corp` via Vite config. GitHub Pages can't set custom headers, so `public/coi-serviceworker.js` (a vendored `coi-serviceworker`) provides the equivalent in production. `src/main.tsx` registers it conditionally — only when `!window.crossOriginIsolated` and not in dev — and forces a single reload so the page becomes SW-controlled. The base path uses `import.meta.env.BASE_URL` so the SW URL is correct under `/nabivideo/`.
+The dev server sets `Cross-Origin-Opener-Policy: same-origin` and `Cross-Origin-Embedder-Policy: require-corp` via Vite config. GitHub Pages can't set custom headers, so `public/coi-serviceworker.js` (a vendored `coi-serviceworker`) provides the equivalent in production. `src/main.tsx` registers it conditionally — only when `!window.crossOriginIsolated` and not in dev — and forces a single reload so the page becomes SW-controlled. The base path uses `import.meta.env.BASE_URL` so the SW URL is correct under `/auravideo/`.
 
 We use the **single-threaded** `@ffmpeg/core` (not `core-mt`) so SAB is technically optional, but the SW is kept as a safety net.
 
@@ -70,7 +70,7 @@ We use the **single-threaded** `@ffmpeg/core` (not `core-mt`) so SAB is technica
 
 ### Vite base path
 
-`vite.config.ts` sets `base` only for `command === 'build'`: defaults to `/nabivideo/`, overridable via `VITE_BASE`. Local dev always uses `/`. The CI workflow sets `VITE_BASE=/${{ github.event.repository.name }}/` so renaming the repo doesn't break the build.
+`vite.config.ts` sets `base` only for `command === 'build'`: defaults to `/auravideo/`, overridable via `VITE_BASE`. Local dev always uses `/`. The CI workflow sets `VITE_BASE=/${{ github.event.repository.name }}/` so renaming the repo doesn't break the build.
 
 ## UI conventions
 

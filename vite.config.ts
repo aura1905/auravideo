@@ -38,7 +38,7 @@ function copyFfmpegCore() {
 export default defineConfig(({ command }) => ({
   // Local dev → "/", production build → "/<repo-name>/" (override with VITE_BASE).
   // The GitHub Action sets VITE_BASE to "/${repo}/" automatically.
-  base: command === 'build' ? (process.env.VITE_BASE || '/nabivideo/') : '/',
+  base: command === 'build' ? (process.env.VITE_BASE || '/auravideo/') : '/',
   plugins: [react(), copyFfmpegCore()],
   server: {
     headers: {

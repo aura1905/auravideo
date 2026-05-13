@@ -7,7 +7,7 @@ import { toBlobURL } from '@ffmpeg/util';
 // coi-serviceworker and produce mid-export hangs with ENOENT on blob URLs.
 //
 // Prepend `import.meta.env.BASE_URL` so this works under GitHub Pages where
-// the app lives under "/nabivideo/" — a hard-coded "/ffmpeg-core/" would 404
+// the app lives under "/auravideo/" — a hard-coded "/ffmpeg-core/" would 404
 // there and fall back to the SPA HTML, producing
 // "SyntaxError: Unexpected token '<'" when the worker tries to import it.
 const BASE = import.meta.env.BASE_URL;
