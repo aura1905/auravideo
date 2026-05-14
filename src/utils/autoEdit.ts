@@ -62,6 +62,11 @@ export interface TalkingHeadOptions {
    * because the canvas compositor alpha-blends both fragments against the
    * black canvas. Hard cut (0) is the safer default for talking-head. */
   crossfadeSec: number;
+  /** Request per-word Whisper timestamps and use them for silence detection.
+   * Slightly slower transcribe but yields much cleaner cuts (won't slice
+   * mid-word) — silences are detected at word boundaries, not segment
+   * boundaries. Subtitles are still chunk-level. Default true. */
+  useWordLevel: boolean;
 }
 
 export const TALKING_HEAD_DEFAULTS: TalkingHeadOptions = {
@@ -77,6 +82,7 @@ export const TALKING_HEAD_DEFAULTS: TalkingHeadOptions = {
   tailPadSec: 0.2,
   generateSubtitles: true,
   crossfadeSec: 0,
+  useWordLevel: true,
 };
 
 export interface TalkingHeadResult {
@@ -114,25 +120,44 @@ export async function runTalkingHeadCleanup(
   const chunks = await transcribe(audio, {
     model: opts.model,
     language: opts.language === 'auto' ? undefined : opts.language,
+    wordTimestamps: opts.useWordLevel,
     onProgress: (p) => onProgress?.({ phase: p.phase, progress: p.progress }),
   });
   onProgress?.({ phase: `Whisper: ${chunks.length}개 세그먼트`, progress: -1 });
 
-  // 2. Clamp chunks to the clip's source-media window [inPoint, outPoint],
-  //    drop chunks that fall entirely outside, and add lead/tail padding.
+  // 2. Build a list of "padded ranges" — one per unit of speech that should
+  //    be KEPT. When word-level timestamps are available, each WORD becomes
+  //    a range so silence detection happens at word boundaries (no mid-word
+  //    slices). Otherwise we fall back to one range per chunk.
+  //    Each range carries its parent chunkIndex so the subtitle emitter
+  //    later can dedupe and produce one subtitle per chunk that survives.
   const inP = clip.inPoint;
   const outP = clip.outPoint;
   const padded: { start: number; end: number; chunkIndex: number }[] = [];
   const usableChunks: TranscriptionChunk[] = [];
-  chunks.forEach((c, i) => {
-    let a = c.start - opts.leadPadSec;
-    let b = c.end + opts.tailPadSec;
-    if (b <= inP || a >= outP) return;
-    a = Math.max(inP, a);
-    b = Math.min(outP, b);
-    if (b - a < 0.05) return;
-    padded.push({ start: a, end: b, chunkIndex: usableChunks.length });
+  chunks.forEach((c) => {
+    if (c.end <= inP || c.start >= outP) return;
+    const ci = usableChunks.length;
     usableChunks.push(c);
+    if (opts.useWordLevel && c.words && c.words.length > 0) {
+      for (const w of c.words) {
+        let a = w.start - opts.leadPadSec;
+        let b = w.end + opts.tailPadSec;
+        if (b <= inP || a >= outP) continue;
+        a = Math.max(inP, a);
+        b = Math.min(outP, b);
+        if (b - a < 0.05) continue;
+        padded.push({ start: a, end: b, chunkIndex: ci });
+      }
+    } else {
+      let a = c.start - opts.leadPadSec;
+      let b = c.end + opts.tailPadSec;
+      if (b <= inP || a >= outP) return;
+      a = Math.max(inP, a);
+      b = Math.min(outP, b);
+      if (b - a < 0.05) return;
+      padded.push({ start: a, end: b, chunkIndex: ci });
+    }
   });
 
   if (padded.length === 0) {
@@ -187,8 +212,13 @@ export async function runTalkingHeadCleanup(
     newClips.push(newClip);
 
     // Map subtitle chunks for THIS fragment back to timeline coords.
+    // Dedupe chunkIndexes — under word-level mode multiple word-entries
+    // from the same chunk will land in the same merged range.
     if (opts.generateSubtitles) {
+      const seen = new Set<number>();
       for (const ci of m.chunkIndexes) {
+        if (seen.has(ci)) continue;
+        seen.add(ci);
         const ch = usableChunks[ci];
         const startInFragment = Math.max(0, ch.start - m.start);
         const endInFragment = Math.min(sourceDur, ch.end - m.start);

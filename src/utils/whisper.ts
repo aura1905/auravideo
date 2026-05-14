@@ -5,11 +5,22 @@
  * users who never run transcription. The HuggingFace model files are cached
  * by the browser after the first run. */
 
+export interface TranscriptionWord {
+  /** Start time in seconds, relative to the audio that was fed in. */
+  start: number;
+  end: number;
+  text: string;
+}
+
 export interface TranscriptionChunk {
   /** Start time in seconds, relative to the audio that was fed in. */
   start: number;
   end: number;
   text: string;
+  /** Per-word timestamps. Present only when transcribe() is called with
+   * `wordTimestamps: true`. Each word's `text` may include leading/trailing
+   * spaces — exactly as Whisper emits it. */
+  words?: TranscriptionWord[];
 }
 
 export type WhisperModel = 'Xenova/whisper-tiny' | 'Xenova/whisper-base' | 'Xenova/whisper-small';
@@ -57,10 +68,14 @@ export async function transcribe(
   options: {
     model: WhisperModel;
     language?: string; // 'korean', 'english', etc. omit for auto-detect
+    /** Request per-word timestamps in addition to per-segment ones. Slightly
+     * slower but produces much cleaner silence cuts (we won't slice
+     * mid-word) and lets us split long subtitle chunks at natural pauses. */
+    wordTimestamps?: boolean;
     onProgress?: (p: TranscribeProgress) => void;
   }
 ): Promise<TranscriptionChunk[]> {
-  const { model, language, onProgress } = options;
+  const { model, language, wordTimestamps, onProgress } = options;
   // Lazy-load transformers.js so the main bundle stays small.
   onProgress?.({ phase: 'Whisper 모델 로드 중…', progress: 0 });
   const tj: any = await import('@xenova/transformers');
@@ -86,7 +101,8 @@ export async function transcribe(
 
   onProgress?.({ phase: '음성 인식 중…', progress: -1 });
   const result = await cachedTranscriber(audio, {
-    return_timestamps: true,
+    // `'word'` requests per-word timestamps; `true` is segment-only.
+    return_timestamps: wordTimestamps ? 'word' : true,
     chunk_length_s: 30,
     stride_length_s: 5,
     language,
@@ -94,6 +110,42 @@ export async function transcribe(
   });
 
   const chunks: TranscriptionChunk[] = [];
+  if (wordTimestamps && Array.isArray(result?.chunks)) {
+    // Word mode returns one entry per WORD in result.chunks; group them
+    // into sentence-like segments so the rest of the pipeline can keep
+    // using chunk-level granularity for subtitles, while still having
+    // word timestamps available via `.words` for fine-grained cuts.
+    const words: TranscriptionWord[] = [];
+    for (const w of result.chunks) {
+      const start = Array.isArray(w.timestamp) ? w.timestamp[0] ?? 0 : 0;
+      const endRaw = Array.isArray(w.timestamp) ? w.timestamp[1] : null;
+      const end = endRaw ?? start + 0.2;
+      const text = (w.text ?? '').trim();
+      if (text) words.push({ start, end, text });
+    }
+    // Group words into chunks by inter-word gap > 0.5s OR by a soft cap
+    // on word count (~14 words ~= a comfortable subtitle line).
+    let bucket: TranscriptionWord[] = [];
+    const flush = () => {
+      if (bucket.length === 0) return;
+      const start = bucket[0].start;
+      const end = bucket[bucket.length - 1].end;
+      const text = bucket.map((w) => w.text).join(' ').replace(/\s+/g, ' ').trim();
+      chunks.push({ start, end, text, words: bucket });
+      bucket = [];
+    };
+    for (let i = 0; i < words.length; i++) {
+      const w = words[i];
+      if (bucket.length === 0) { bucket.push(w); continue; }
+      const prev = bucket[bucket.length - 1];
+      const gap = w.start - prev.end;
+      if (gap > 0.5 || bucket.length >= 14) { flush(); }
+      bucket.push(w);
+    }
+    flush();
+    return chunks;
+  }
+
   if (Array.isArray(result?.chunks)) {
     for (const c of result.chunks) {
       const start = Array.isArray(c.timestamp) ? c.timestamp[0] ?? 0 : 0;

@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { useEditor, newClipId } from '../state/editorStore';
 import { loadMediaFile, generateWaveform, generateThumbnailStrip, formatTime } from '../utils/media';
+import { canBrowserPlayVideo, transcodeToH264 } from '../utils/transcode';
 import type { MediaAsset, Clip } from '../types';
 
 export function MediaLibrary() {
@@ -12,6 +13,7 @@ export function MediaLibrary() {
   const addClip = useEditor((s) => s.addClip);
   const inputRef = useRef<HTMLInputElement>(null);
   const [busy, setBusy] = useState(false);
+  const [busyMsg, setBusyMsg] = useState<string>('');
   const [dragOver, setDragOver] = useState(false);
 
   const updateAssetSilent = (id: string, patch: Partial<MediaAsset>) => {
@@ -32,10 +34,32 @@ export function MediaLibrary() {
     try {
       for (const f of Array.from(files)) {
         try {
-          const a = await loadMediaFile(f);
+          // Pre-import: if a video file can't be decoded by the browser
+          // (HEVC on Windows Chrome without the codec extension etc.),
+          // transcode it to H.264 via FFmpeg.wasm before treating it as
+          // an asset. Otherwise the canvas would silently show black frames.
+          let workingFile = f;
+          if (f.type.startsWith('video/')) {
+            setBusyMsg(`${f.name}: 코덱 확인 중…`);
+            const playable = await canBrowserPlayVideo(f);
+            if (!playable) {
+              try {
+                workingFile = await transcodeToH264(f, ({ phase, progress }) => {
+                  const pct = progress >= 0 ? ` ${Math.round(progress * 100)}%` : '';
+                  setBusyMsg(`${f.name}: ${phase}${pct}`);
+                });
+              } catch (e: any) {
+                console.error('transcode failed', e);
+                alert(`${f.name} 자동 변환 실패: ${e?.message ?? e}\n다른 도구로 H.264로 변환해 다시 올려주세요.`);
+                continue;
+              }
+            }
+          }
+          setBusyMsg(`${workingFile.name}: 로딩 중…`);
+          const a = await loadMediaFile(workingFile);
           addAsset(a);
           // Generate waveform asynchronously so the UI isn't blocked.
-          generateWaveform(f, 100)
+          generateWaveform(workingFile, 100)
             .then((r) => {
               if (!r) return;
               updateAssetSilent(a.id, { waveform: r.peaks, waveformPeaksPerSecond: r.peaksPerSecond });
@@ -55,6 +79,7 @@ export function MediaLibrary() {
       }
     } finally {
       setBusy(false);
+      setBusyMsg('');
     }
   };
 
@@ -117,8 +142,8 @@ export function MediaLibrary() {
     >
       <div className="ml-header">
         <span>미디어</span>
-        <button onClick={() => inputRef.current?.click()} disabled={busy}>
-          {busy ? '불러오는 중…' : '파일 추가'}
+        <button onClick={() => inputRef.current?.click()} disabled={busy} title={busy ? busyMsg : undefined}>
+          {busy ? (busyMsg || '불러오는 중…') : '파일 추가'}
         </button>
         <input
           ref={inputRef}

@@ -13,6 +13,11 @@ import { toBlobURL } from '@ffmpeg/util';
 const BASE = import.meta.env.BASE_URL;
 const CORE_JS_URL = `${BASE}ffmpeg-core/ffmpeg-core.js`;
 const CORE_WASM_URL = `${BASE}ffmpeg-core/ffmpeg-core.wasm`;
+// Pre-bundled @ffmpeg/ffmpeg worker.js, written by the copyFfmpegCore Vite
+// plugin. Bypasses Vite's dev-mode worker transform which would otherwise
+// inject `__vite__injectQuery` + `/@vite/client` imports that crash inside
+// a Web Worker context. See vite.config.ts for the bundling step.
+const WORKER_JS_URL = `${BASE}ffmpeg-core/ffmpeg-worker.js`;
 
 let singleton: FFmpeg | null = null;
 let loading: Promise<FFmpeg> | null = null;
@@ -26,11 +31,19 @@ export async function getFFmpeg(): Promise<FFmpeg> {
   if (loading) return loading;
   loading = (async () => {
     const ff = new FFmpeg();
-    // Single-thread core has no workerURL.
-    await ff.load({
-      coreURL: await toBlobURL(CORE_JS_URL, 'text/javascript'),
-      wasmURL: await toBlobURL(CORE_WASM_URL, 'application/wasm'),
-    });
+    const [coreURL, wasmURL] = await Promise.all([
+      toBlobURL(CORE_JS_URL, 'text/javascript'),
+      toBlobURL(CORE_WASM_URL, 'application/wasm'),
+    ]);
+    // `classWorkerURL` (option to ff.load) tells @ffmpeg/ffmpeg to instantiate
+    // its main Worker from THIS URL instead of `new URL('./worker.js',
+    // import.meta.url)`. In dev mode the latter routes through Vite's worker
+    // transform which crashes inside a Web Worker context. The URL we pass
+    // points to the pre-bundled standalone worker in public/ffmpeg-core/.
+    // Resolved as absolute against the current origin to avoid Vite's URL
+    // rewriting tricks.
+    const classWorkerURL = new URL(WORKER_JS_URL, window.location.origin).toString();
+    await ff.load({ classWorkerURL, coreURL, wasmURL });
     singleton = ff;
     loading = null;
     return ff;
