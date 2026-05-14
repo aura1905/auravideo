@@ -71,9 +71,10 @@ export interface TalkingHeadOptions {
 
 export const TALKING_HEAD_DEFAULTS: TalkingHeadOptions = {
   language: 'korean',
-  // whisper-tiny is too inaccurate for Korean talking-head; base is a better
-  // baseline. User can drop to tiny for speed if they have clean audio.
-  model: 'Xenova/whisper-base',
+  // Whisper-small is the sweet spot for Korean — `tiny` and `base` both
+  // make consistent errors on Korean phonemes (함흥냉면→할당냉면, 빠진→빗들해진).
+  // `small` is a 500MB one-time download but cached by the browser after.
+  model: 'Xenova/whisper-small',
   // Conservative defaults: cut short pauses (breaths, ums) but preserve
   // longer dramatic gaps that the speaker probably left on purpose.
   minSilenceSec: 0.8,

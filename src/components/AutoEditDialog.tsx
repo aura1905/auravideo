@@ -52,9 +52,9 @@ const LANGUAGES = [
 ];
 
 const MODELS: { value: WhisperModel; label: string }[] = [
-  { value: 'Xenova/whisper-tiny', label: 'tiny (40MB · 빠름)' },
+  { value: 'Xenova/whisper-tiny', label: 'tiny (40MB · 빠름, 영어 OK / 한국어 부정확)' },
   { value: 'Xenova/whisper-base', label: 'base (150MB · 균형)' },
-  { value: 'Xenova/whisper-small', label: 'small (500MB · 정확)' },
+  { value: 'Xenova/whisper-small', label: 'small (500MB · 한국어 권장)' },
 ];
 
 export function AutoEditDialog({ onClose }: { onClose: () => void }) {
