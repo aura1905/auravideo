@@ -49,6 +49,54 @@ button.icon-btn {
   align-items: center;
   justify-content: center;
 }
+button.auto-edit-cta {
+  background: linear-gradient(135deg, #f7c948 0%, #ff8a50 100%);
+  border-color: transparent;
+  color: #1a1320;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 6px 14px;
+  height: 30px;
+  box-shadow: 0 0 12px rgba(247, 201, 72, 0.35);
+  letter-spacing: 0.02em;
+}
+button.auto-edit-cta:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 0 16px rgba(247, 201, 72, 0.55);
+}
+button.cta-large {
+  font-size: 14px;
+  padding: 10px 20px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.preset-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+button.preset-chip {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 14px;
+  background: #0c0e14;
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+button.preset-chip:hover { background: #1a1d28; border-color: var(--accent); }
+button.preset-chip.active {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: white;
+  border-color: transparent;
+  font-weight: 600;
+}
+.eta-hint {
+  font-size: 12px;
+  color: var(--muted);
+  margin-right: auto;
+  align-self: center;
+}
 input[type=number], input[type=text], select {
   background: #0c0e14;
   color: var(--text);

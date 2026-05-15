@@ -161,11 +161,11 @@ export function App() {
           </button>
         )}
         <button
-          className="icon-btn"
+          className="auto-edit-cta"
           onClick={() => setAutoEditOpen(true)}
-          title="자동 편집 — 토킹헤드 무음 정리 / 슬라이드쇼 등 템플릿 기반 자동 편집"
+          title="자동 편집 — 토킹헤드 무음 정리 / 하이라이트 / 슬라이드쇼 / 비트컷 템플릿"
         >
-          ✨
+          ✨ 자동 편집
         </button>
         <button className="primary" onClick={() => setExportOpen(true)}>
           내보내기

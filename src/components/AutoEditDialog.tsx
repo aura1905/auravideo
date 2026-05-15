@@ -24,7 +24,7 @@ const TEMPLATES: { value: Template; label: string; subtitle: string }[] = [
   {
     value: 'talking-head',
     label: '🎙 토킹헤드 정리',
-    subtitle: 'Whisper로 무음 구간 자동 제거 + 자막 생성. 강의 / 인터뷰 / 브이로그 정리용.',
+    subtitle: 'Whisper로 무음·필러("음/어/uh") 자동 제거 + 자막 생성. 강의 / 인터뷰 / 브이로그 정리용.',
   },
   {
     value: 'slideshow',
@@ -34,7 +34,7 @@ const TEMPLATES: { value: Template; label: string; subtitle: string }[] = [
   {
     value: 'highlight',
     label: '⭐ 하이라이트 릴',
-    subtitle: '여러 영상의 소리가 큰 (= 흥미로운) 구간을 자동 추출해 짧은 리얼로 조립. 게임/스포츠 클립용.',
+    subtitle: '오디오 라우드니스 피크(가장 큰 소리 = 가장 흥미로운 순간)를 자동 추출해 짧은 릴로 조립. 게임 / 스포츠 / 리액션 영상용.',
   },
   {
     value: 'beat-cut',
@@ -42,6 +42,100 @@ const TEMPLATES: { value: Template; label: string; subtitle: string }[] = [
     subtitle: 'BGM의 비트를 감지해 영상 컷을 박자에 맞춤. 뮤직비디오 스타일.',
   },
 ];
+
+/** One-click presets — set template + option patch. Active until the user
+ * manually tweaks any field. Per-feedback request: novice users want
+ * "click this, then run". */
+type PresetTemplate = Template;
+interface Preset {
+  id: string;
+  label: string;
+  desc: string;
+  template: PresetTemplate;
+  thPatch?: Partial<typeof TALKING_HEAD_DEFAULTS>;
+  hlPatch?: Partial<typeof HIGHLIGHT_DEFAULTS>;
+}
+
+const PRESETS: Preset[] = [
+  {
+    id: 'shorts',
+    label: '🎬 유튜브 쇼츠',
+    desc: '짧고 빠른 컷, 자막 ON, 필러 제거',
+    template: 'talking-head',
+    thPatch: {
+      minSilenceSec: 0.4,
+      maxSilenceSec: 8,
+      leadPadSec: 0.05,
+      tailPadSec: 0.1,
+      crossfadeSec: 0,
+      endingTailSec: 0.4,
+      generateSubtitles: true,
+      removeFillerWords: true,
+    },
+  },
+  {
+    id: 'lecture',
+    label: '📚 강의 정리',
+    desc: '보수적 컷, 호흡 보존, 자막 ON',
+    template: 'talking-head',
+    thPatch: {
+      minSilenceSec: 1.2,
+      maxSilenceSec: 6,
+      leadPadSec: 0.2,
+      tailPadSec: 0.3,
+      crossfadeSec: 0.1,
+      endingTailSec: 1.0,
+      generateSubtitles: true,
+      removeFillerWords: true,
+    },
+  },
+  {
+    id: 'vlog',
+    label: '🎥 브이로그',
+    desc: '자연스러운 대화 컷',
+    template: 'talking-head',
+    thPatch: {
+      minSilenceSec: 0.7,
+      maxSilenceSec: 4,
+      leadPadSec: 0.15,
+      tailPadSec: 0.2,
+      crossfadeSec: 0.05,
+      endingTailSec: 0.8,
+      generateSubtitles: true,
+      removeFillerWords: true,
+    },
+  },
+  {
+    id: 'quick-highlight',
+    label: '⭐ 빠른 하이라이트',
+    desc: '20초 짧은 릴, 자막 없음',
+    template: 'highlight',
+    hlPatch: {
+      targetDurationSec: 20,
+      segmentSec: 2,
+      crossfadeSec: 0.2,
+      scoreFloor: 0.5,
+      generateSubtitles: false,
+    },
+  },
+];
+
+/** Rough ETA estimate. Values come from in-browser benchmarks on a mid-range
+ * laptop — they're conservative and meant to set expectations, not promise
+ * precision. The first run also pays a model-download cost (40MB tiny /
+ * 150MB base / 500MB small) that the browser caches afterward. */
+function whisperEtaFactor(model: WhisperModel): number {
+  if (model === 'Xenova/whisper-tiny') return 0.5;
+  if (model === 'Xenova/whisper-base') return 0.7;
+  return 1.2; // small
+}
+
+function formatEta(seconds: number): string {
+  if (seconds < 30) return `약 ${Math.max(5, Math.ceil(seconds / 5) * 5)}초`;
+  if (seconds < 60) return `약 ${Math.ceil(seconds / 10) * 10}초`;
+  const m = Math.ceil(seconds / 30) / 2;
+  return m % 1 === 0 ? `약 ${m.toFixed(0)}분` : `약 ${m.toFixed(1)}분`;
+}
 
 const LANGUAGES = [
   { value: 'auto', label: '자동 감지' },
@@ -106,11 +200,48 @@ export function AutoEditDialog({ onClose }: { onClose: () => void }) {
     bgmAssetId: audioEligible[0]?.id ?? '',
   }));
 
+  // Active preset chip — purely visual. Clicking applies the patch and
+  // highlights the chip; we don't try to clear it on subsequent manual edits
+  // (chip stays as a memo of "you started here").
+  const [activePreset, setActivePreset] = useState<string | null>(null);
+  const applyPreset = (p: Preset) => {
+    setTemplate(p.template);
+    if (p.thPatch) setThOpts((prev) => ({ ...prev, ...p.thPatch }));
+    if (p.hlPatch) setHlOpts((prev) => ({ ...prev, ...p.hlPatch }));
+    setActivePreset(p.id);
+  };
+
   // Shared run state
   const [running, setRunning] = useState(false);
   const [progress, setProgress] = useState(0);
   const [phase, setPhase] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
+
+  // ETA estimate — recomputed from current selection + options. We only emit
+  // it for the templates where it actually varies meaningfully; slideshow and
+  // beat-cut finish in seconds so we keep them silent.
+  const eta = useMemo(() => {
+    if (template === 'talking-head') {
+      const c = clips[clipId];
+      if (!c) return null;
+      const srcDur = c.outPoint - c.inPoint;
+      const inferSec = srcDur * whisperEtaFactor(thOpts.model);
+      return { primary: formatEta(inferSec), note: '첫 실행 시 Whisper 모델 다운로드(40MB~500MB) 별도' };
+    }
+    if (template === 'highlight') {
+      let totalSrc = 0;
+      highlightAssets.forEach((id) => {
+        const a = assets[id];
+        if (a) totalSrc += a.duration;
+      });
+      const analyzeSec = totalSrc * 0.25;
+      const whisperSec = hlOpts.generateSubtitles ? totalSrc * 0.3 * whisperEtaFactor(hlOpts.model) : 0;
+      const total = analyzeSec + whisperSec;
+      if (total < 5) return null;
+      return { primary: formatEta(total), note: hlOpts.generateSubtitles ? '자막 생성 포함' : '오디오 분석만' };
+    }
+    return null;
+  }, [template, clipId, clips, thOpts.model, highlightAssets, assets, hlOpts.generateSubtitles, hlOpts.model]);
   const [doneTH, setDoneTH] = useState<TalkingHeadResult | null>(null);
   const [doneSS, setDoneSS] = useState<SlideshowResult | null>(null);
   const [doneHL, setDoneHL] = useState<HighlightResult | null>(null);
@@ -160,6 +291,23 @@ export function AutoEditDialog({ onClose }: { onClose: () => void }) {
       <div className="modal" onClick={(e) => e.stopPropagation()} style={{ minWidth: 480, maxWidth: 640 }}>
         <div className="modal-title">✨ 자동 편집</div>
         <div className="modal-body">
+          <div style={{ fontSize: 12, color: 'var(--muted)', marginBottom: 6 }}>
+            ⚡ 빠른 시작 (클릭 한 번에 추천 설정 적용)
+          </div>
+          <div className="preset-row">
+            {PRESETS.map((p) => (
+              <button
+                key={p.id}
+                type="button"
+                className={`preset-chip ${activePreset === p.id ? 'active' : ''}`}
+                onClick={() => applyPreset(p)}
+                disabled={running}
+                title={p.desc}
+              >
+                {p.label}
+              </button>
+            ))}
+          </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 14 }}>
             {TEMPLATES.map((t) => (
               <label
@@ -297,6 +445,19 @@ export function AutoEditDialog({ onClose }: { onClose: () => void }) {
                   />
                 </label>
               </div>
+              <label>
+                마지막 여운 (초): {thOpts.endingTailSec.toFixed(2)}
+                <input
+                  type="range"
+                  min={0}
+                  max={2}
+                  step={0.05}
+                  value={thOpts.endingTailSec}
+                  onChange={(e) => setThOpts({ ...thOpts, endingTailSec: parseFloat(e.target.value) })}
+                  disabled={running}
+                  title="마지막 단어가 끝난 뒤 호흡 공간 + 부드러운 페이드아웃. 너무 짧으면 끝이 칼처럼 끊김, 너무 길면 늘어짐."
+                />
+              </label>
               <label>
                 조각 사이 크로스페이드 (초): {thOpts.crossfadeSec.toFixed(2)}
                 <input
@@ -721,11 +882,16 @@ export function AutoEditDialog({ onClose }: { onClose: () => void }) {
           )}
         </div>
         <div className="modal-actions">
+          {eta && !running && !(doneTH || doneSS || doneHL || doneBC) && (
+            <span className="eta-hint" title={eta.note}>
+              ⏱ 예상 처리: <b>{eta.primary}</b>
+            </span>
+          )}
           <button onClick={onClose} disabled={running}>
             {doneTH || doneSS || doneHL || doneBC ? '닫기' : '취소'}
           </button>
-          <button className="primary" onClick={start} disabled={running}>
-            {running ? '실행 중…' : '실행'}
+          <button className="primary cta-large" onClick={start} disabled={running}>
+            {running ? '실행 중…' : '🚀 자동 편집 시작하기'}
           </button>
         </div>
       </div>

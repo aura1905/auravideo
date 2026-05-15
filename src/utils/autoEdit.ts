@@ -23,6 +23,7 @@ import {
   type WhisperModel,
   type TranscribeProgress,
   type TranscriptionChunk,
+  type TranscriptionWord,
 } from './whisper';
 import {
   analyzeLoudness,
@@ -71,17 +72,27 @@ export interface TalkingHeadOptions {
    * cut together with the surrounding silence. Requires `useWordLevel`.
    * Default true. */
   removeFillerWords: boolean;
+  /** Lingering breath after the FINAL kept word in the clip (source seconds).
+   * The general `tailPadSec` is fine between phrases but feels abrupt at the
+   * very end — this extends only the last fragment's outPoint so the result
+   * doesn't end mid-breath. Also drives an auto fade-out on the last clip
+   * (half of this value, capped at 0.5s) so the cut decays smoothly.
+   * Capped by whatever source-media headroom is available past the last
+   * spoken word — won't invent frames that aren't there. Default 0.6. */
+  endingTailSec: number;
 }
 
-/** Per-language filler-word lists. Kept conservative — only short
- * interjections that are almost never actual content. Words like 그/막
- * (Korean) and like/you-know (English) are NOT included because they have
- * legitimate uses; users who want aggressive trimming can post-edit. */
+/** Per-language filler-word lists. Kept conservative — we previously
+ * included single-syllable Korean phonemes 어/에/아/으 but those false-
+ * positive constantly: Whisper often mis-tokenizes the tail of a stretched
+ * word ("출바알", "고고") as a standalone syllable and that ate real
+ * endings. Now only forms that are almost-never-real-words: 음, doubled
+ * syllables, and unambiguous interjections. */
 const FILLER_WORDS: Record<string, string[]> = {
-  korean: ['음', '어', '으', '에', '아', '음음', '어어', '으음', '에에', '아아', '으으'],
-  english: ['uh', 'um', 'uhh', 'umm', 'uhm', 'er', 'erm', 'ah', 'ahh', 'mm', 'hmm'],
-  japanese: ['えー', 'えーと', 'あの', 'あのー', 'うーん', 'えっと'],
-  chinese: ['呃', '嗯', '啊', '哦'],
+  korean: ['음', '음음', '으음', '어어', '아아', '에에', '으으'],
+  english: ['uh', 'um', 'uhh', 'umm', 'uhm', 'er', 'erm', 'ahh', 'mm', 'hmm'],
+  japanese: ['えー', 'えーと', 'うーん', 'えっと'],
+  chinese: ['呃', '嗯'],
 };
 
 function normalizeWord(text: string): string {
@@ -122,6 +133,7 @@ export const TALKING_HEAD_DEFAULTS: TalkingHeadOptions = {
   crossfadeSec: 0,
   useWordLevel: true,
   removeFillerWords: true,
+  endingTailSec: 0.6,
 };
 
 export interface TalkingHeadResult {
@@ -172,7 +184,28 @@ export async function runTalkingHeadCleanup(
   //    later can dedupe and produce one subtitle per chunk that survives.
   const inP = clip.inPoint;
   const outP = clip.outPoint;
-  const padded: { start: number; end: number; chunkIndex: number }[] = [];
+  // Pre-pass: find the chronologically LAST word that falls inside the clip
+  // range. Used to protect the natural ending — even if that word matches
+  // the filler list (e.g. Whisper mis-tokenized "출바알" as a trailing "아"),
+  // we keep it, otherwise the speaker's final phrase gets eaten.
+  let lastWordRef: TranscriptionWord | null = null;
+  if (opts.useWordLevel && opts.removeFillerWords) {
+    for (const c of chunks) {
+      if (c.end <= inP || c.start >= outP) continue;
+      if (!c.words) continue;
+      for (const w of c.words) {
+        if (w.end <= inP || w.start >= outP) continue;
+        if (!lastWordRef || w.end > lastWordRef.end) lastWordRef = w;
+      }
+    }
+  }
+
+  // Each padded entry optionally carries the source word it came from (word-
+  // level mode only). We need this later: if a chunk's words straddle a cut,
+  // each merged fragment gets its OWN subtitle built from JUST those words —
+  // otherwise the same chunk text leaks into multiple fragments and ends up
+  // displayed over audio that doesn't match.
+  const padded: { start: number; end: number; chunkIndex: number; word?: TranscriptionWord }[] = [];
   const usableChunks: TranscriptionChunk[] = [];
   chunks.forEach((c) => {
     if (c.end <= inP || c.start >= outP) return;
@@ -180,14 +213,16 @@ export async function runTalkingHeadCleanup(
     usableChunks.push(c);
     if (opts.useWordLevel && c.words && c.words.length > 0) {
       for (const w of c.words) {
-        if (opts.removeFillerWords && isFillerWord(w.text, opts.language)) continue;
+        // Filler skip — but NEVER skip the chronologically last word, so
+        // the ending of the speech is always preserved.
+        if (opts.removeFillerWords && w !== lastWordRef && isFillerWord(w.text, opts.language)) continue;
         let a = w.start - opts.leadPadSec;
         let b = w.end + opts.tailPadSec;
         if (b <= inP || a >= outP) continue;
         a = Math.max(inP, a);
         b = Math.min(outP, b);
         if (b - a < 0.05) continue;
-        padded.push({ start: a, end: b, chunkIndex: ci });
+        padded.push({ start: a, end: b, chunkIndex: ci, word: w });
       }
     } else {
       let a = c.start - opts.leadPadSec;
@@ -211,7 +246,22 @@ export async function runTalkingHeadCleanup(
   //    INTENTIONAL pauses (dramatic effects, b-roll moments, etc.) and
   //    also merged through — preserved as-is in the output.
   padded.sort((a, b) => a.start - b.start);
-  const merged: { start: number; end: number; chunkIndexes: number[] }[] = [];
+  type MergedRange = {
+    start: number;
+    end: number;
+    chunkIndexes: number[];
+    // Per-chunk list of WORDS from that chunk that landed in this fragment.
+    // Used to rebuild subtitle text + timing so it matches what's actually
+    // heard in this specific fragment.
+    wordsByChunk: Map<number, TranscriptionWord[]>;
+  };
+  const merged: MergedRange[] = [];
+  const pushWord = (m: MergedRange, ci: number, w: TranscriptionWord | undefined) => {
+    if (!w) return;
+    const arr = m.wordsByChunk.get(ci);
+    if (arr) arr.push(w);
+    else m.wordsByChunk.set(ci, [w]);
+  };
   for (const r of padded) {
     const last = merged[merged.length - 1];
     const gap = last ? r.start - last.end : Infinity;
@@ -219,15 +269,37 @@ export async function runTalkingHeadCleanup(
     if (shouldMerge) {
       last.end = Math.max(last.end, r.end);
       last.chunkIndexes.push(r.chunkIndex);
+      pushWord(last, r.chunkIndex, r.word);
     } else {
-      merged.push({ start: r.start, end: r.end, chunkIndexes: [r.chunkIndex] });
+      const m: MergedRange = {
+        start: r.start,
+        end: r.end,
+        chunkIndexes: [r.chunkIndex],
+        wordsByChunk: new Map(),
+      };
+      pushWord(m, r.chunkIndex, r.word);
+      merged.push(m);
     }
+  }
+
+  // 3b. Extend the LAST merged fragment so the ending doesn't feel chopped
+  //     mid-breath. m.end currently sits at lastWord.end + tailPadSec — we
+  //     push it out to lastWord.end + endingTailSec, capped by the clip's
+  //     actual outPoint (no inventing source we don't have).
+  if (merged.length > 0 && opts.endingTailSec > opts.tailPadSec) {
+    const lastM = merged[merged.length - 1];
+    const extra = opts.endingTailSec - opts.tailPadSec;
+    lastM.end = Math.min(outP, lastM.end + extra);
   }
 
   // 4. Compute timeline layout for each kept fragment. With crossfadeSec > 0,
   //    each fragment after the first overlaps the previous by that amount.
   const speed = clip.speed ?? 1;
   const xfade = Math.max(0, opts.crossfadeSec);
+  // Auto fade-out on the last clip — half of the ending tail, capped at 0.5s.
+  // Only kicks in if it would be longer than the user's existing fadeOut so
+  // we never SHORTEN an intentional fade.
+  const autoEndingFade = Math.min(0.5, opts.endingTailSec * 0.5);
   let cursorTimeline = clip.start;
   const newClips: Clip[] = [];
   const subtitlesToAdd: { text: string; start: number; duration: number }[] = [];
@@ -238,7 +310,10 @@ export async function runTalkingHeadCleanup(
     const isFirst = idx === 0;
     const isLast = idx === merged.length - 1;
     const fadeIn = isFirst ? clip.fadeIn : xfade;
-    const fadeOut = isLast ? clip.fadeOut : xfade;
+    let fadeOut = isLast ? clip.fadeOut : xfade;
+    if (isLast && autoEndingFade > 0) {
+      fadeOut = Math.max(fadeOut, autoEndingFade);
+    }
     const newClip: Clip = {
       ...clip,
       id: newClipId(),
@@ -251,31 +326,35 @@ export async function runTalkingHeadCleanup(
     };
     newClips.push(newClip);
 
-    // Map subtitle chunks for THIS fragment back to timeline coords.
-    // Dedupe chunkIndexes — under word-level mode multiple word-entries
-    // from the same chunk will land in the same merged range.
+    // Emit one subtitle per (chunk × fragment) pair. Word-level mode uses the
+    // ACTUAL words that landed in this fragment (so a chunk split across two
+    // fragments gets two distinct partial subtitles); segment-level falls
+    // back to the whole-chunk text/timing.
     if (opts.generateSubtitles) {
       const seen = new Set<number>();
       for (const ci of m.chunkIndexes) {
         if (seen.has(ci)) continue;
         seen.add(ci);
         const ch = usableChunks[ci];
-        const startInFragment = Math.max(0, ch.start - m.start);
-        const endInFragment = Math.min(sourceDur, ch.end - m.start);
+        let text: string;
+        let subSrcStart: number;
+        let subSrcEnd: number;
+        const fragWords = m.wordsByChunk.get(ci);
+        if (opts.useWordLevel && fragWords && fragWords.length > 0) {
+          text = fragWords.map((w) => w.text).join(' ').replace(/\s+/g, ' ').trim();
+          subSrcStart = fragWords[0].start;
+          subSrcEnd = fragWords[fragWords.length - 1].end;
+        } else {
+          text = ch.text;
+          subSrcStart = ch.start;
+          subSrcEnd = ch.end;
+        }
+        if (!text) continue;
+        const startInFragment = Math.max(0, subSrcStart - m.start);
+        const endInFragment = Math.min(sourceDur, subSrcEnd - m.start);
         if (endInFragment <= startInFragment) continue;
         const subStartTL = newClip.start + startInFragment / speed;
         const subDurTL = (endInFragment - startInFragment) / speed;
-        // When fillers are removed from audio, also strip them from the
-        // subtitle text so it stays in sync with what's heard.
-        let text = ch.text;
-        if (opts.useWordLevel && opts.removeFillerWords && ch.words && ch.words.length > 0) {
-          const filtered = ch.words.filter((w) => !isFillerWord(w.text, opts.language));
-          if (filtered.length > 0) {
-            text = filtered.map((w) => w.text).join(' ').replace(/\s+/g, ' ').trim();
-          } else {
-            continue; // whole chunk was fillers → skip subtitle entirely
-          }
-        }
         subtitlesToAdd.push({ text, start: subStartTL, duration: subDurTL });
       }
     }

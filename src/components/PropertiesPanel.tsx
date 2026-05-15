@@ -12,6 +12,8 @@ export function PropertiesPanel() {
   const tracks = useEditor((s) => s.tracks);
   const updateClip = useEditor((s) => s.updateClip);
   const detachAudio = useEditor((s) => s.detachAudio);
+  const settings = useEditor((s) => s.settings);
+  const setSettings = useEditor((s) => s.setSettings);
 
   if (subtitleSelection.length > 0) {
     return (
@@ -42,10 +44,30 @@ export function PropertiesPanel() {
     for (const id of selection) updateClip(id, patch);
   };
 
+  // "Fit project resolution to this clip's source media" — only meaningful for
+  // clips whose asset carries native dimensions (video/image). x264 needs even
+  // pixels so we round up to the next even number.
+  const assetW = asset?.width;
+  const assetH = asset?.height;
+  const fitW = assetW ? (assetW % 2 ? assetW + 1 : assetW) : 0;
+  const fitH = assetH ? (assetH % 2 ? assetH + 1 : assetH) : 0;
+  const fitMatches = fitW > 0 && settings.width === fitW && settings.height === fitH;
+
   return (
     <div className="props">
       <div className="props-title">속성 ({selection.length}개 선택)</div>
       <div className="props-asset">{asset?.name ?? '?'}</div>
+      {fitW > 0 && fitH > 0 && (
+        <button
+          type="button"
+          onClick={() => setSettings({ width: fitW, height: fitH })}
+          disabled={fitMatches}
+          title="이 클립 원본 해상도로 프로젝트 해상도를 맞춥니다. 다른 클립들의 위치/크기(transformX/Y)는 그대로 유지됩니다."
+          style={{ marginBottom: 8, fontSize: 12, width: '100%' }}
+        >
+          📐 {fitW}×{fitH}로 프로젝트 맞춤{fitMatches ? ' (현재 해상도)' : ''}
+        </button>
+      )}
       <Field label="시작 (초)">
         <input
           type="number"
