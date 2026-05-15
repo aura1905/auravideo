@@ -376,6 +376,19 @@ function buildCommand(
       }
       filters.push(`atempo=${remaining.toFixed(4)}`);
     }
+    // Audio mastering: denoise → loudnorm → (existing volume/fade chain). Both
+    // are opt-in per clip. arnndn references a model file that
+    // exportProject() pre-writes to the FFmpeg FS as "rnnoise.rnnn" if any
+    // clip needs it.
+    if (c.denoise) {
+      filters.push(`arnndn=m=rnnoise.rnnn`);
+    }
+    if (c.normalizeLoudness) {
+      // Single-pass: cheaper than two-pass measure+apply, accuracy is
+      // acceptable for export. linear=true keeps the source dynamics intact
+      // when measured loudness is already within range of the target.
+      filters.push(`loudnorm=I=-14:TP=-1.5:LRA=11:linear=true`);
+    }
     const baseVol = c.volume * (entry.trackVolume ?? 1) * (masterVolume ?? 1);
     const duck = entry.duckLevel ?? 1;
     if (duck < 1 - 1e-3) {
@@ -479,6 +492,24 @@ export async function exportProject(
       onProgress({ phase: 'rendering', progress: -1, log: 'warning: not crossOriginIsolated — MT FFmpeg needs SAB' });
     }
     console.log('[exp] crossOriginIsolated check passed');
+
+  // If ANY clip opts into denoise, pre-fetch the RNN noise-suppression model
+  // and write it to the FFmpeg FS as "rnnoise.rnnn". buildCommand references
+  // it by that fixed name in the `arnndn=m=rnnoise.rnnn` filter call. The
+  // model is BSD/public-domain (~290 KB ASCII), bundled in public/arnndn/.
+  const needsRnnoise = args.clips.some((c) => c.denoise);
+  if (needsRnnoise) {
+    onProgress({ phase: '잡음 제거 모델 로드 중…', progress: 0.02 });
+    const modelUrl = `${import.meta.env.BASE_URL ?? '/'}arnndn/rnnoise.rnnn`;
+    try {
+      const resp = await fetch(modelUrl);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const bytes = new Uint8Array(await resp.arrayBuffer());
+      await ff.writeFile('rnnoise.rnnn', bytes);
+    } catch (e: any) {
+      throw new Error(`잡음 제거 모델 로드 실패 (${modelUrl}): ${e?.message ?? e}`);
+    }
+  }
 
   // Pre-render subtitles (range-translation respected) to PNG bytes and write
   // them to the FFmpeg FS so buildCommand can reference them as inputs.
@@ -607,6 +638,7 @@ export async function exportProject(
     await ff.deleteFile(built.outName);
     for (const { fsName } of built.fileMap) await ff.deleteFile(fsName);
     for (const sa of subtitleAssets) await ff.deleteFile(sa.fsName);
+    if (needsRnnoise) await ff.deleteFile('rnnoise.rnnn');
   } catch {}
 
   onProgress({ phase: '완료', progress: 1 });

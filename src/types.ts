@@ -60,6 +60,14 @@ export interface Clip {
   contrast: number;    // 0..2, default 1 (multiplicative around 0.5)
   saturation: number;  // 0..3, default 1
   gamma: number;       // 0.1..10, default 1
+  // Audio mastering, applied only at export (preview leaves audio raw):
+  // - normalizeLoudness: FFmpeg `loudnorm=I=-14:TP=-1.5:LRA=11`, single-pass.
+  //   Sits BEFORE the clip's volume multiplier so user-set volume still scales.
+  // - denoise: FFmpeg `arnndn=m=…rnnn` using a bundled BSD-licensed RNN model.
+  //   Sits BEFORE loudnorm so noise is removed before the level is targeted.
+  // Both default off (undefined = off).
+  normalizeLoudness?: boolean;
+  denoise?: boolean;
 }
 
 export interface Marker {

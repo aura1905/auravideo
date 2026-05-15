@@ -67,6 +67,43 @@ export interface TalkingHeadOptions {
    * mid-word) — silences are detected at word boundaries, not segment
    * boundaries. Subtitles are still chunk-level. Default true. */
   useWordLevel: boolean;
+  /** Strip filler words (음/어/uh/um/…) from the kept ranges so they get
+   * cut together with the surrounding silence. Requires `useWordLevel`.
+   * Default true. */
+  removeFillerWords: boolean;
+}
+
+/** Per-language filler-word lists. Kept conservative — only short
+ * interjections that are almost never actual content. Words like 그/막
+ * (Korean) and like/you-know (English) are NOT included because they have
+ * legitimate uses; users who want aggressive trimming can post-edit. */
+const FILLER_WORDS: Record<string, string[]> = {
+  korean: ['음', '어', '으', '에', '아', '음음', '어어', '으음', '에에', '아아', '으으'],
+  english: ['uh', 'um', 'uhh', 'umm', 'uhm', 'er', 'erm', 'ah', 'ahh', 'mm', 'hmm'],
+  japanese: ['えー', 'えーと', 'あの', 'あのー', 'うーん', 'えっと'],
+  chinese: ['呃', '嗯', '啊', '哦'],
+};
+
+function normalizeWord(text: string): string {
+  // Strip punctuation, whitespace, lowercase. Whisper word entries
+  // commonly come like " 음," or "Uh.." — normalize before matching.
+  return text
+    .trim()
+    .toLowerCase()
+    .replace(/[.,!?…\s"'()\[\]。，！？]+/g, '');
+}
+
+function isFillerWord(text: string, language: string): boolean {
+  const norm = normalizeWord(text);
+  if (!norm) return false;
+  const lists =
+    language === 'auto' || !FILLER_WORDS[language]
+      ? Object.values(FILLER_WORDS)
+      : [FILLER_WORDS[language]];
+  for (const list of lists) {
+    if (list.includes(norm)) return true;
+  }
+  return false;
 }
 
 export const TALKING_HEAD_DEFAULTS: TalkingHeadOptions = {
@@ -84,6 +121,7 @@ export const TALKING_HEAD_DEFAULTS: TalkingHeadOptions = {
   generateSubtitles: true,
   crossfadeSec: 0,
   useWordLevel: true,
+  removeFillerWords: true,
 };
 
 export interface TalkingHeadResult {
@@ -142,6 +180,7 @@ export async function runTalkingHeadCleanup(
     usableChunks.push(c);
     if (opts.useWordLevel && c.words && c.words.length > 0) {
       for (const w of c.words) {
+        if (opts.removeFillerWords && isFillerWord(w.text, opts.language)) continue;
         let a = w.start - opts.leadPadSec;
         let b = w.end + opts.tailPadSec;
         if (b <= inP || a >= outP) continue;
@@ -226,7 +265,18 @@ export async function runTalkingHeadCleanup(
         if (endInFragment <= startInFragment) continue;
         const subStartTL = newClip.start + startInFragment / speed;
         const subDurTL = (endInFragment - startInFragment) / speed;
-        subtitlesToAdd.push({ text: ch.text, start: subStartTL, duration: subDurTL });
+        // When fillers are removed from audio, also strip them from the
+        // subtitle text so it stays in sync with what's heard.
+        let text = ch.text;
+        if (opts.useWordLevel && opts.removeFillerWords && ch.words && ch.words.length > 0) {
+          const filtered = ch.words.filter((w) => !isFillerWord(w.text, opts.language));
+          if (filtered.length > 0) {
+            text = filtered.map((w) => w.text).join(' ').replace(/\s+/g, ' ').trim();
+          } else {
+            continue; // whole chunk was fillers → skip subtitle entirely
+          }
+        }
+        subtitlesToAdd.push({ text, start: subStartTL, duration: subDurTL });
       }
     }
 

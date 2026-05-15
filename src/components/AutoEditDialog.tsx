@@ -318,6 +318,16 @@ export function AutoEditDialog({ onClose }: { onClose: () => void }) {
                 />
                 자막도 함께 생성
               </label>
+              <label style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <input
+                  type="checkbox"
+                  checked={thOpts.removeFillerWords}
+                  onChange={(e) => setThOpts({ ...thOpts, removeFillerWords: e.target.checked })}
+                  disabled={running}
+                  title="word-level Whisper에서 음/어/uh/um 등 필러를 무음과 함께 잘라냄"
+                />
+                필러워드 자동 제거 (음 · 어 · uh · um · …)
+              </label>
             </div>
           )}
 

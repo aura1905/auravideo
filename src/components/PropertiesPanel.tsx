@@ -132,6 +132,30 @@ export function PropertiesPanel() {
           onChange={(e) => apply({ muted: e.target.checked })}
         />
       </Field>
+      <Field label="라우드니스 정규화">
+        <label style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12 }}>
+          <input
+            type="checkbox"
+            checked={first.normalizeLoudness ?? false}
+            onChange={(e) => apply({ normalizeLoudness: e.target.checked })}
+          />
+          <span title="내보내기 시 FFmpeg loudnorm 적용 (-14 LUFS, YouTube/팟캐스트 표준). 미리보기에는 반영되지 않습니다.">
+            -14 LUFS (내보내기만)
+          </span>
+        </label>
+      </Field>
+      <Field label="잡음 제거">
+        <label style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12 }}>
+          <input
+            type="checkbox"
+            checked={first.denoise ?? false}
+            onChange={(e) => apply({ denoise: e.target.checked })}
+          />
+          <span title="내보내기 시 FFmpeg arnndn (RNN 기반) 적용. 정상 상태 잡음 (팬/에어컨/마이크 노이즈)에 효과적. 미리보기에는 반영되지 않습니다.">
+            AI 노이즈 리덕션 (내보내기만)
+          </span>
+        </label>
+      </Field>
       <Field label="컬러 라벨">
         <div className="color-row">
           {[undefined, '#ff5470', '#f7c948', '#7ad07a', '#4fb6ff', '#a674ff', '#ff8a50'].map((c, i) => (
