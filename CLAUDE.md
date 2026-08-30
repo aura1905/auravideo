@@ -188,7 +188,15 @@ The `inputCounter` in `buildCommand` is decoupled from `fileMap.length` so subti
 - Glow = `split` → `curves=all='0/0 0.55/0 1/1'` (crush darks to isolate highlights) → `gblur` → `blend=all_mode=screen` back over the original. It sits *before* `eq`, so colour correction shapes the bloom too. `gblur` is a CPU filter and is genuinely expensive at 1080p — it, not the encoder, is the bottleneck on a glow-heavy timeline.
 - Blend layers take a **separate chain from the normal overlay path**. `blend` ignores alpha for the RGB math and needs both inputs at full canvas size, so the layer is padded / faded / time-extended with the mode's **neutral colour** from `BLEND_NEUTRAL` (black for screen-type, white for multiply-type, mid-grey for overlay/soft-light) instead of transparent black — anything else tints the area outside the clip. Opacity goes through `blend=all_opacity=` rather than `colorchannelmixer=aa=`, which has no effect on blend math.
 
-Verified natively (glow + screen-blend layer + NVENC, real MP4 out, non-black frames). **The wasm path for these two features has not been verified end-to-end** — FFmpeg.wasm is stricter than the native binary, so confirm with a real browser export before trusting it there.
+### `blend` must run in RGB — do not remove `format=gbrp`
+
+`blend` applies its mode's formula to **every plane it is handed**. Given YUV, it runs the screen/multiply/etc. maths on the U and V *chroma* planes as if they were luma, which for screen-type modes drives both toward 255 and casts the entire frame magenta.
+
+Measured: SMPTE bars screened against pure black — which must be an exact no-op — came back at `YAVG=111.7` against the source's `95.9`, visibly all-magenta. With `format=gbrp` on both inputs the same graph returns `95.9`, byte-for-byte the source.
+
+So both blend sites convert to planar RGB first, and the layer path converts the running canvas back to `yuv420p` afterwards so overlays and subtitle PNGs downstream are unaffected. The preview never had this bug: canvas `globalCompositeOperation` already composites in RGB — which is exactly why preview and export disagreed until this was found.
+
+Verified end-to-end: an agent-driven edit (glow + screen-blended PIP + Korean subtitle) exported through native NVENC now matches its preview frame for frame. **The wasm path for blend/glow is still unverified** — FFmpeg.wasm is stricter than the native binary, so confirm with a real browser export before trusting it there.
 
 ## Direct manipulation on preview canvas
 
@@ -267,6 +275,17 @@ Rules to preserve:
 - **Never `useEditor((s) => s.playhead)` in a component that renders the timeline or the clip tree.** `Timeline` and `Preview` both deliberately do not. Read `useEditor.getState().playhead` inside handlers instead — the store is still the source of truth and stays exact, because `setPlayhead` writes to the store *and* publishes to the bus.
 - Things that must move at 60 fps subscribe to the bus and poke the DOM directly: `Playhead` (writes `style.transform`), `PlayheadReadout`, `SeekBar`, `PlayheadTime`.
 - `Waveform`, `ThumbStrip` and `ClipView` are `React.memo`ed. `ClipView` derives its select/update callbacks from `useEditor.getState()` internally rather than taking them as props — passing arrow functions from `Timeline` would create new references every render and defeat the memo.
+
+## Agent control bridge
+
+The editor is drivable by an external process — a script or an AI agent — so edits can be made and verified without a human at the mouse. Every command is forwarded to the frontend and applied through the **ordinary store actions**, so there is no second editing implementation that could drift from the UI's.
+
+- **Off by default.** The Rust side (`src-tauri/src/bridge.rs`) opens nothing unless the app is launched with `NABIVIDEO_AGENT=1`. It then binds a loopback-only HTTP server on a random port and writes `{port, token}` to `<temp>/nabivideo/agent.json`. Every request must carry `X-Agent-Token`.
+- **Frontend** (`src/utils/agentBridge.ts`) listens for `agent://request`, dispatches, and answers via the `agent_reply` command.
+- Commands: `ping`, `state`, `project.reset`, `media.import`, `clip.add|update|split|remove`, `subtitle.add|update`, `playhead.set`, `screenshot`, `export`.
+- `screenshot` seeks, waits `settleMs` for the decoder, and writes the preview canvas to a PNG — this is how an agent *sees* its edit, and it is what caught the blend colourspace bug by disagreeing with the export.
+
+**Send request bodies as UTF-8 from a real HTTP client, not by interpolating text into a shell command.** Korean subtitle text passed through Git Bash into `curl -d` arrived mangled and the bridge rejected it as an unreadable body; the same payload posted from Python worked. `scripts/` has no client — write one where you need it.
 
 ## Desktop build (Tauri) — `src-tauri/`
 

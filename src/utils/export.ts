@@ -306,7 +306,14 @@ export function buildCommand(
       const p = `g${i}`;
       // sigma scales with the clip's rendered size so the look holds at any resolution
       const sigma = Math.max(1, (glowR * targetH) / H).toFixed(2);
-      filterParts.push(`[${idx}:v]${head.join(',')}[${p}]`);
+      // `format=gbrp` is REQUIRED, not cosmetic. `blend` applies its formula to
+      // every plane it is given; on YUV that means the screen formula is run on
+      // the U and V chroma planes too, which pushes both toward 255 and casts
+      // the whole picture magenta. Verified: SMPTE bars screened with pure
+      // black — which must be a no-op — came back magenta with YAVG 111.7
+      // instead of the source's 95.9. In planar RGB the same graph returns
+      // 95.9, exactly matching the source.
+      filterParts.push(`[${idx}:v]${head.join(',')},format=gbrp[${p}]`);
       filterParts.push(`[${p}]split[${p}a][${p}b]`);
       filterParts.push(`[${p}b]curves=all='0/0 0.55/0 1/1',gblur=sigma=${sigma}[${p}g]`);
       filterParts.push(
@@ -371,12 +378,21 @@ export function buildCommand(
       if (tail > 0.001) {
         filters.push(`tpad=stop_duration=${tail.toFixed(3)}:stop_mode=add:color=${neutral}`);
       }
-      filters.push('format=yuva420p');
+      // Blend in planar RGB. `blend` runs its formula on every plane it is
+      // handed, so in YUV the mode's maths would also be applied to the U and V
+      // chroma planes — for screen-type modes that drives both toward 255 and
+      // casts the whole frame magenta. (Measured: bars screened with black,
+      // which must be a no-op, went from YAVG 95.9 to 111.7 in YUV and stayed
+      // at 95.9 in gbrp.) The running canvas is converted back afterwards so
+      // the rest of the graph — overlays, subtitle PNGs — is unaffected.
+      filters.push('format=gbrp');
       filterParts.push(`${chainIn}${filters.join(',')}[${label}]`);
+      const rgbBase = `${label}rgb`;
+      filterParts.push(`[${lastVideoLabel}]format=gbrp[${rgbBase}]`);
       // all_opacity mixes the blended result back toward the base, which is
       // what the clip's opacity slider means for a blend layer.
       filterParts.push(
-        `[${lastVideoLabel}][${label}]blend=all_mode=${blend}:all_opacity=${op.toFixed(3)}:shortest=0[${outLabel}]`
+        `[${rgbBase}][${label}]blend=all_mode=${blend}:all_opacity=${op.toFixed(3)}:shortest=0,format=yuv420p[${outLabel}]`
       );
     }
     lastVideoLabel = outLabel;

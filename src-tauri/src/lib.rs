@@ -1,3 +1,4 @@
+mod bridge;
 mod ffmpeg;
 mod files;
 
@@ -20,7 +21,12 @@ pub fn run() {
             files::write_temp_file,
             files::remove_temp_file,
             files::file_size,
+            bridge::agent_reply,
         ])
+        .setup(|app| {
+            bridge::start(app.handle());
+            Ok(())
+        })
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }

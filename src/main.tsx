@@ -31,6 +31,10 @@ if ('serviceWorker' in navigator) {
   }).catch(() => {});
 }
 
+// Agent control bridge - no-op unless running in the desktop shell, and the
+// socket itself is only opened when launched with NABIVIDEO_AGENT=1.
+import('./utils/agentBridge').then((m) => m.installAgentBridge()).catch(() => {});
+
 // Desktop plumbing self-test — only present when built with VITE_SELFTEST=1.
 if (import.meta.env.VITE_SELFTEST === '1') {
   import('./utils/selftest').then((m) => m.runSelfTest()).catch((e) => console.error(e));
