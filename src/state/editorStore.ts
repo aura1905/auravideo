@@ -1,6 +1,6 @@
 import { create, useStore } from 'zustand';
 import { temporal, type TemporalState } from 'zundo';
-import type { Clip, MediaAsset, Marker, ProjectSettings, Subtitle, Track } from '../types';
+import type { BeatGrid, Clip, MediaAsset, Marker, ProjectSettings, Subtitle, Track } from '../types';
 import { playheadBus } from './playheadBus';
 
 interface EditorState {
@@ -12,6 +12,8 @@ interface EditorState {
   clipGroups: Record<string, string[]>; // groupId -> [clipId, ...]
   clipGroupId: Record<string, string>; // clipId -> groupId
   markers: Marker[];
+  /** Musical grid imported from the librosa analysis, or null. */
+  beatGrid: BeatGrid | null;
   subtitles: Record<string, Subtitle>;
   subtitleSelection: string[];
   // playback
@@ -63,6 +65,7 @@ interface EditorState {
   groupClips: (clipIds: string[]) => void;
   ungroupClip: (clipId: string) => void;
   setClipColor: (clipId: string, color?: string) => void;
+  setBeatGrid: (g: BeatGrid | null) => void;
   addMarker: (m: Omit<Marker, 'id'>) => void;
   updateMarker: (id: string, patch: Partial<Marker>) => void;
   removeMarker: (id: string) => void;
@@ -101,6 +104,7 @@ export const useEditor = create<EditorState>()(
   clipGroups: {},
   clipGroupId: {},
   markers: [],
+  beatGrid: null,
   subtitles: {},
   subtitleSelection: [],
   playhead: 0,
@@ -334,6 +338,7 @@ export const useEditor = create<EditorState>()(
       if (!c) return s;
       return { clips: { ...s.clips, [clipId]: { ...c, color } } };
     }),
+  setBeatGrid: (g) => set({ beatGrid: g }),
   addMarker: (m) =>
     set((s) => ({ markers: [...s.markers, { ...m, id: uid() }].sort((a, b) => a.time - b.time) })),
   updateMarker: (id, patch) =>
@@ -425,6 +430,7 @@ export const useEditor = create<EditorState>()(
         clipGroupId: state.clipGroupId,
         trackLocked: state.trackLocked,
         markers: state.markers,
+        beatGrid: state.beatGrid,
         subtitles: state.subtitles,
       }),
       // Coalesce rapid changes (drags, scrubbing-while-trimming) into one
@@ -464,7 +470,7 @@ useEditor.subscribe((s) => {
 });
 
 // Hook for components that need to react to undo/redo availability.
-type Tracked = Pick<EditorState, 'tracks' | 'clips' | 'settings' | 'assets' | 'clipGroups' | 'clipGroupId' | 'trackLocked' | 'markers' | 'subtitles'>;
+type Tracked = Pick<EditorState, 'tracks' | 'clips' | 'settings' | 'assets' | 'clipGroups' | 'clipGroupId' | 'trackLocked' | 'markers' | 'beatGrid' | 'subtitles'>;
 export function useTemporal<T>(selector: (s: TemporalState<Tracked>) => T) {
   return useStore(useEditor.temporal as any, selector as (state: unknown) => T);
 }
@@ -521,6 +527,27 @@ export function snapTime(
         best = cand;
         bestDist = d;
       }
+    }
+  }
+  // Musical grid. For a music-show backdrop the beat is the thing edits must
+  // land on, so downbeats and section boundaries get a WIDER tolerance than
+  // ordinary clip edges — landing a cut a frame off the bar is the mistake
+  // this is here to prevent. Ordinary beats keep the normal tolerance.
+  const bg = s.beatGrid;
+  if (bg) {
+    const off = bg.offset ?? 0;
+    const consider = (cand: number, tol: number) => {
+      const d = Math.abs(cand - t);
+      if (d < bestDist && d <= tol) {
+        best = cand;
+        bestDist = d;
+      }
+    };
+    for (const b of bg.beats) consider(b + off, edgeTol);
+    for (const b of bg.downbeats) consider(b + off, edgeTol * 2);
+    for (const seg of bg.segments) {
+      consider(seg.start + off, edgeTol * 2);
+      consider(seg.end + off, edgeTol * 2);
     }
   }
   // Playhead is a snap target except when the playhead itself is being moved.

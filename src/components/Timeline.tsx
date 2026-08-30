@@ -71,6 +71,7 @@ export function Timeline() {
     window.addEventListener('mouseup', onUp);
   };
   const markers = useEditor((s) => s.markers);
+  const beatGrid = useEditor((s) => s.beatGrid);
   const clipGroupId = useEditor((s) => s.clipGroupId);
   const subtitles = useEditor((s) => s.subtitles);
   const subtitleSelection = useEditor((s) => s.subtitleSelection);
@@ -374,6 +375,7 @@ export function Timeline() {
               const m = markers.find((x) => x.id === id);
               if (m) setPlayhead(m.time);
             }}
+            beatGrid={beatGrid}
           />
           <SubtitleTrack
             width={totalWidth}
@@ -492,22 +494,52 @@ function Ruler({
   onMouseDown,
   markers,
   onMarkerClick,
+  beatGrid,
 }: {
   width: number;
   pps: number;
   onMouseDown: (e: React.MouseEvent) => void;
   markers: import('../types').Marker[];
   onMarkerClick: (id: string) => void;
+  beatGrid: import('../types').BeatGrid | null;
 }) {
   const targetPx = 80;
   const candidates = [0.1, 0.25, 0.5, 1, 2, 5, 10, 30, 60, 120, 300];
   const interval = candidates.find((v) => v * pps >= targetPx) ?? 60;
   const ticks: number[] = [];
   for (let t = 0; t * pps < width; t += interval) ticks.push(t);
+
+  // Beat grid. Plain beats are drawn only when they are far enough apart to
+  // read — at a zoomed-out view 375 of them would be a solid smear — but
+  // downbeats and section boundaries are always drawn, because those are what
+  // a cut actually needs to land on.
+  const off = beatGrid?.offset ?? 0;
+  const beatPx = beatGrid ? (60 / Math.max(1, beatGrid.bpm)) * pps : 0;
+  const showBeats = !!beatGrid && beatPx >= 6;
+  const beats = showBeats ? beatGrid!.beats : [];
+  const downbeats = beatGrid?.downbeats ?? [];
+  const segments = beatGrid?.segments ?? [];
+
   return (
     <div className="ruler-row" style={{ height: RULER_H }}>
       <div className="ruler-corner" style={{ width: TRACK_HEADER_W }} />
       <div className="ruler" style={{ width, height: RULER_H }} onMouseDown={onMouseDown}>
+        {segments.map((sg) => (
+          <div
+            key={`sg${sg.index}`}
+            className={`beat-seg energy-${sg.energyLevel ?? 'mid'}`}
+            style={{ left: (sg.start + off) * pps, width: Math.max(1, (sg.end - sg.start) * pps) }}
+            title={`${sg.index}. ${sg.label ?? ''} ${formatTime(sg.start + off)} ~ ${formatTime(sg.end + off)}`}
+          >
+            <span>{sg.label ?? sg.index}</span>
+          </div>
+        ))}
+        {beats.map((b, i) => (
+          <div key={`b${i}`} className="beat-tick" style={{ left: (b + off) * pps }} />
+        ))}
+        {downbeats.map((b, i) => (
+          <div key={`d${i}`} className="beat-tick downbeat" style={{ left: (b + off) * pps }} />
+        ))}
         {ticks.map((t) => (
           <div key={t} className="tick" style={{ left: t * pps }}>
             <span>{formatTime(t).replace(/\.\d+$/, '')}</span>

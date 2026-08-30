@@ -995,3 +995,34 @@ body.reordering-track * { cursor: grabbing !important; }
   font-size: 11px;
   opacity: 0.65;
 }
+
+/* Beat grid on the ruler — for music-show backdrops, cuts land on beats */
+.beat-tick {
+  position: absolute;
+  top: 18px;
+  bottom: 0;
+  width: 1px;
+  background: rgba(120, 200, 255, 0.30);
+  pointer-events: none;
+}
+.beat-tick.downbeat {
+  top: 12px;
+  width: 1px;
+  background: rgba(120, 200, 255, 0.75);
+}
+.beat-seg {
+  position: absolute;
+  top: 0;
+  height: 11px;
+  border-left: 1px solid rgba(160, 220, 255, 0.85);
+  background: rgba(90, 150, 220, 0.18);
+  overflow: hidden;
+  pointer-events: none;
+  font-size: 9px;
+  line-height: 11px;
+  color: rgba(220, 240, 255, 0.9);
+  padding-left: 3px;
+  white-space: nowrap;
+}
+.beat-seg.energy-high { background: rgba(240, 140, 90, 0.26); }
+.beat-seg.energy-low  { background: rgba(90, 150, 220, 0.10); }

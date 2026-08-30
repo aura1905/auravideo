@@ -81,6 +81,13 @@ export function App() {
               <option value="1080x1920">1080×1920 (세로)</option>
               <option value="720x1280">720×1280 (세로)</option>
               <option value="1080x1080">1080×1080 (정사각)</option>
+              <optgroup label="LED 월 (음악방송 백드롭)">
+                <option value="3840x1080">3840×1080 (32:9)</option>
+                <option value="2560x720">2560×720 (32:9)</option>
+                <option value="2048x576">2048×576 (32:9)</option>
+                <option value="5120x1472">5120×1472</option>
+                <option value="1024x576">1024×576 (16:9 경량)</option>
+              </optgroup>
               <option value="custom">사용자 지정…</option>
             </select>
           </label>
@@ -119,9 +126,11 @@ export function App() {
             FPS
             <select
               value={settings.fps}
-              onChange={(e) => setSettings({ fps: parseInt(e.target.value, 10) })}
+              onChange={(e) => setSettings({ fps: parseFloat(e.target.value) })}
             >
               <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="29.97">29.97</option>
               <option value="30">30</option>
               <option value="60">60</option>
             </select>

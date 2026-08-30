@@ -99,6 +99,9 @@ export function ExportDialog({ onClose }: { onClose: () => void }) {
   }, []);
 
   const [mode, setMode] = useState<RangeMode>('auto');
+  // Seamless loop: a standby LED wall plays the backdrop forever, so the join
+  // back to the start must not pop. 0 = off.
+  const [loopBlend, setLoopBlend] = useState(0);
   const [customStart, setCustomStart] = useState(0);
   const [customEnd, setCustomEnd] = useState(projDur);
 
@@ -132,6 +135,7 @@ export function ExportDialog({ onClose }: { onClose: () => void }) {
       const state = useEditor.getState();
       const dur = projectDuration(state);
       const buildArgs = {
+        loopBlend,
         clips: Object.values(state.clips),
         assets: state.assets,
         tracks: state.tracks,
@@ -239,6 +243,25 @@ export function ExportDialog({ onClose }: { onClose: () => void }) {
                 범위: <strong>{formatTime(range.start)}</strong> ~ <strong>{formatTime(range.end)}</strong>{' '}
                 (<strong>{formatTime(rangeDur)}</strong>)
               </p>
+              <div className="encoder-pick">
+                <label>
+                  심리스 루프
+                  <input
+                    type="number"
+                    min={0}
+                    max={5}
+                    step={0.1}
+                    value={loopBlend}
+                    onChange={(e) => setLoopBlend(Math.max(0, parseFloat(e.target.value) || 0))}
+                    title="끝을 처음에 겹쳐 디졸브해 무한 반복해도 튀지 않게 만듭니다. 결과물은 이 길이만큼 짧아집니다."
+                  />
+                  <span>초</span>
+                </label>
+                <p className="hint">
+                  0이면 사용 안 함. 값을 주면 끝 구간을 앞 구간에 디졸브해 이어붙여, 반복 재생 시 이음매가 보이지 않습니다
+                  (결과 길이 = {formatTime(Math.max(0, rangeDur - loopBlend))}).
+                </p>
+              </div>
               {native && (
                 <div className="encoder-pick">
                   <label>

@@ -10,7 +10,7 @@
  * the bridge (which requires NABIVIDEO_AGENT=1).
  */
 import { useEditor, newClipId, projectDuration, clipDisplayDur } from '../state/editorStore';
-import type { Clip, Subtitle } from '../types';
+import type { BeatGrid, Clip, Subtitle } from '../types';
 import { loadMediaFile, generateWaveform } from './media';
 import { canBrowserPlayVideo, transcodeToH264 } from './transcode';
 import { isNative, readFileAsFile, tempRoot } from './native';
@@ -221,6 +221,76 @@ const handlers: Record<string, (a: Args) => Promise<any> | any> = {
     return { ok: true };
   },
 
+  /**
+   * Load the musical grid produced by `led_stage/scripts/analyze_music.py`.
+   * Accepts that file's JSON shape directly so no conversion step is needed.
+   */
+  'beatgrid.load': (a: Args) => {
+    const j = a.analysis ?? a;
+    const grid: BeatGrid = {
+      bpm: Number(j.bpm) || 120,
+      barSeconds: Number(j.bar_seconds ?? j.barSeconds) || 240 / (Number(j.bpm) || 120),
+      beats: (j.beat_grid ?? j.beats ?? []).map(Number),
+      downbeats: (j.downbeats ?? []).map(Number),
+      segments: (j.segments ?? []).map((sg: any, i: number) => ({
+        index: Number(sg.index ?? i + 1),
+        start: Number(sg.start) || 0,
+        end: Number(sg.end) || 0,
+        label: sg.label ?? sg.name,
+        energyLevel: sg.energy_level ?? sg.energyLevel,
+      })),
+      offset: Number(a.offset ?? 0),
+    };
+    useEditor.getState().setBeatGrid(grid);
+    return {
+      bpm: grid.bpm,
+      beats: grid.beats.length,
+      downbeats: grid.downbeats.length,
+      segments: grid.segments.length,
+    };
+  },
+
+  'beatgrid.clear': () => {
+    useEditor.getState().setBeatGrid(null);
+    return { ok: true };
+  },
+
+  /**
+   * Cut a clip on the musical grid. `every` counts downbeats (bars) by
+   * default, or beats when `unit` is "beat" — the two things a music-show
+   * backdrop actually cuts on.
+   */
+  'clip.cutOnBeats': (a: Args) => {
+    const s = useEditor.getState();
+    const grid = s.beatGrid;
+    if (!grid) throw new Error('비트 그리드가 없습니다 (beatgrid.load 먼저)');
+    const src = a.unit === 'beat' ? grid.beats : grid.downbeats;
+    const every = Math.max(1, Math.round(a.every ?? 1));
+    const off = grid.offset ?? 0;
+    const clip = s.clips[a.id];
+    if (!clip) throw new Error(`알 수 없는 clipId: ${a.id}`);
+    const from = clip.start;
+    const to = clip.start + clipDisplayDur(clip);
+    // Collect the cut points first: splitting renews ids as it goes, so the
+    // list has to be computed against the clip as it is now.
+    const points = src
+      .map((t: number) => t + off)
+      .filter((t: number, i: number) => i % every === 0 && t > from + 0.05 && t < to - 0.05)
+      .sort((x: number, y: number) => x - y);
+    let cur = a.id;
+    const made: string[] = [];
+    for (const t of points) {
+      const before = new Set(Object.keys(useEditor.getState().clips));
+      useEditor.getState().splitClipAt(cur, t);
+      const after = Object.keys(useEditor.getState().clips);
+      const fresh = after.filter((id) => !before.has(id));
+      if (fresh.length === 0) break;
+      made.push(...fresh);
+      cur = fresh[fresh.length - 1]; // keep cutting the right-hand remainder
+    }
+    return { cuts: points.length, newClipIds: made };
+  },
+
   'playhead.set': (a: Args) => {
     useEditor.getState().setPlayhead(a.t ?? 0);
     return { ok: true, playhead: useEditor.getState().playhead };
@@ -257,6 +327,7 @@ const handlers: Record<string, (a: Args) => Promise<any> | any> = {
         subtitles: Object.values(s.subtitles),
         rangeStart: a.rangeStart ?? 0,
         rangeEnd: a.rangeEnd ?? dur,
+        loopBlend: a.loopBlend,
       },
       () => {},
       { outPath: a.outPath, encoder: a.encoder, jobId: `agent-${Date.now()}` }

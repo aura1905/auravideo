@@ -48,6 +48,56 @@ export const BLEND_LABELS: Record<BlendMode, string> = {
   darken: '어둡게',
 };
 
+/**
+ * How a clip fills a canvas whose aspect ratio differs from the source.
+ *
+ * This exists for LED walls: broadcast backdrops are commonly 32:9
+ * (3840x1080, 2048x576, 2560x720) while generated or shot source is 16:9, so
+ * "just scale it" is never the whole answer.
+ *
+ * - `fit`     letterbox/pillarbox, preserving aspect (the historical default)
+ * - `cover`   scale to fill, cropping the overflow — keeps geometry honest
+ * - `stretch` scale each axis independently, distorting to fill
+ * - `mirror`  fit, then fill the sides with a mirrored copy of the edges
+ * - `blur`    fit, then fill the sides with a blurred, scaled-up copy
+ */
+export type FillMode = 'fit' | 'cover' | 'stretch' | 'mirror' | 'blur';
+
+export const FILL_LABELS: Record<FillMode, string> = {
+  fit: '맞춤 (여백)',
+  cover: '채우기 (잘림)',
+  stretch: '늘리기 (왜곡)',
+  mirror: '거울 확장',
+  blur: '블러 확장',
+};
+
+/** One musical section from the librosa analysis. */
+export interface BeatSegment {
+  index: number;
+  start: number;
+  end: number;
+  label?: string;
+  energyLevel?: string;
+}
+
+/**
+ * Musical grid for the project, imported from the librosa analysis JSON that
+ * `led_stage/scripts/analyze_music.py` produces. Cuts in a music-show backdrop
+ * have to land on beats, so the editor needs to know where they are.
+ */
+export interface BeatGrid {
+  bpm: number;
+  barSeconds: number;
+  /** Every beat, in seconds. */
+  beats: number[];
+  /** Bar starts (every 4th beat in 4/4). */
+  downbeats: number[];
+  segments: BeatSegment[];
+  /** Offset applied to every time above, so the grid can be nudged to match a
+   *  clip that doesn't start at 0. */
+  offset: number;
+}
+
 export interface MediaAsset {
   id: string;
   name: string;
@@ -115,6 +165,9 @@ export interface Clip {
   // 0 = off (default).
   glow?: number;        // 0..1 intensity
   glowRadius?: number;  // blur radius in canvas px, default 24
+  // How to reconcile the source's aspect ratio with the canvas. Undefined =
+  // 'fit', which is the behaviour every existing project already has.
+  fillMode?: FillMode;
   // Color correction (FFmpeg eq filter compatible)
   brightness: number;  // -1..1, default 0 (additive)
   contrast: number;    // 0..2, default 1 (multiplicative around 0.5)

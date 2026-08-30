@@ -1,5 +1,5 @@
 import { fetchFile } from '@ffmpeg/util';
-import type { Clip, MediaAsset, Subtitle, Track, ProjectSettings } from '../types';
+import type { Clip, FillMode, MediaAsset, Subtitle, Track, ProjectSettings } from '../types';
 import { BLEND_NEUTRAL } from '../types';
 import { paintSubtitle } from './drawSubtitle';
 import { getFFmpeg } from './ffmpegCore';
@@ -19,6 +19,13 @@ export interface BuildArgs {
   /** ffmpeg video encoder name. Only the desktop build can use anything other
    *  than `libx264` — FFmpeg.wasm has no hardware encoders. */
   encoder?: string;
+  /**
+   * Seconds of tail-into-head crossfade for a seamless loop. A backdrop on a
+   * standby LED wall plays forever, so the join back to the start must not
+   * pop. The output is shortened by exactly this much — see the graph below.
+   * 0 / undefined = ordinary, non-looping output.
+   */
+  loopBlend?: number;
   /** Absolute output path. Desktop writes the file straight to the location the
    *  user picked; the browser build leaves this unset and reads `output.mp4`
    *  back out of the in-memory FS. */
@@ -53,6 +60,67 @@ function encoderArgs(encoder: string): string[] {
   return ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20'];
 }
 
+/**
+ * Scale a source into a target box under the chosen fill mode.
+ *
+ * LED backdrops are usually 32:9 while generated or shot source is 16:9, so
+ * this is where most of the visual decision for a wall is actually made.
+ *
+ * `fit` / `cover` / `stretch` are a single scale (plus a crop), so they stay a
+ * linear chain. `mirror` and `blur` need a background *and* a foreground, so
+ * they are emitted as their own graph segment: the background covers the whole
+ * box (flipped, or blurred) and the undistorted image is overlaid on top. That
+ * keeps the subject's geometry honest, which `stretch` does not.
+ */
+function fillIsLinear(mode: FillMode): boolean {
+  return mode !== 'mirror' && mode !== 'blur';
+}
+
+function linearFill(mode: FillMode, w: number, h: number): string[] {
+  switch (mode) {
+    case 'stretch':
+      return [`scale=${w}:${h}`];
+    case 'cover':
+      // Scale until the box is covered, then trim the overflow.
+      return [`scale=${w}:${h}:force_original_aspect_ratio=increase`, `crop=${w}:${h}`];
+    case 'fit':
+    default:
+      return [`scale=${w}:${h}:force_original_aspect_ratio=decrease`];
+  }
+}
+
+/**
+ * Emit the graph for `mirror` / `blur`. `inLabel` is a bracketed label, `pre`
+ * are the filters that must run first (trim/setpts). Returns the new input
+ * label for the rest of the clip's chain.
+ */
+function emitBackgroundFill(
+  parts: string[],
+  inLabel: string,
+  pre: string[],
+  mode: FillMode,
+  w: number,
+  h: number,
+  key: string
+): string {
+  const chain = pre.length ? `${pre.join(',')},` : '';
+  parts.push(`${inLabel}${chain}split[${key}fg][${key}bg]`);
+  // Background always covers the full box; only its treatment differs.
+  const bgTreat =
+    mode === 'mirror'
+      ? 'hflip'
+      : // Blur radius scales with the canvas so the look holds at any wall size.
+        `gblur=sigma=${Math.max(8, Math.round(h / 12))}`;
+  parts.push(
+    `[${key}bg]scale=${w}:${h}:force_original_aspect_ratio=increase,crop=${w}:${h},${bgTreat}[${key}bgo]`
+  );
+  parts.push(`[${key}fg]scale=${w}:${h}:force_original_aspect_ratio=decrease[${key}fgo]`);
+  parts.push(
+    `[${key}bgo][${key}fgo]overlay=x=(main_w-overlay_w)/2:y=(main_h-overlay_h)/2:eof_action=pass:shortest=0[${key}fill]`
+  );
+  return `[${key}fill]`;
+}
+
 function sanitize(name: string): string {
   return name.replace(/[^a-zA-Z0-9._-]/g, '_');
 }
@@ -83,7 +151,7 @@ export interface SubtitleAsset {
 }
 
 export function buildCommand(
-  { clips, assets, tracks, settings, duration, masterVolume, subtitles, rangeStart, rangeEnd, encoder, outPath }: BuildArgs,
+  { clips, assets, tracks, settings, duration, masterVolume, subtitles, rangeStart, rangeEnd, encoder, outPath, loopBlend }: BuildArgs,
   subtitleAssets: SubtitleAsset[] = []
 ): BuiltCommand {
   const W = settings.width;
@@ -291,17 +359,27 @@ export function buildCommand(
     const targetW = Math.max(2, Math.round(W * userScale));
     const targetH = Math.max(2, Math.round(H * userScale));
     // Head of the chain — everything that must happen before the glow split.
-    const head: string[] = [
+    const fillMode: FillMode = c.fillMode ?? 'fit';
+    const pre: string[] = [
       `trim=start=${c.inPoint.toFixed(3)}:end=${c.outPoint.toFixed(3)}`,
       speed !== 1 ? `setpts=(PTS-STARTPTS)/${speed.toFixed(4)}` : `setpts=PTS-STARTPTS`,
-      `scale=${targetW}:${targetH}:force_original_aspect_ratio=decrease`,
     ];
+    // `srcLabel` is what the rest of this clip's chain reads from. Background
+    // fill modes consume the raw input and hand back a new label.
+    let srcLabel = `[${idx}:v]`;
+    let head: string[];
+    if (fillIsLinear(fillMode)) {
+      head = [...pre, ...linearFill(fillMode, targetW, targetH)];
+    } else {
+      srcLabel = emitBackgroundFill(filterParts, srcLabel, pre, fillMode, targetW, targetH, `f${i}`);
+      head = [];
+    }
     // Glow / bloom: split the trimmed+scaled source, crush the darks with a
     // soft-knee curve so only highlights survive, blur that, and screen it back
     // over the original. Sits before `eq` so grading also shapes the bloom.
     const glow = Math.max(0, Math.min(1, c.glow ?? 0));
     const glowR = Math.max(1, c.glowRadius ?? 24);
-    let chainIn = `[${idx}:v]`;
+    let chainIn = srcLabel;
     if (glow > 0.001) {
       const p = `g${i}`;
       // sigma scales with the clip's rendered size so the look holds at any resolution
@@ -313,7 +391,8 @@ export function buildCommand(
       // black — which must be a no-op — came back magenta with YAVG 111.7
       // instead of the source's 95.9. In planar RGB the same graph returns
       // 95.9, exactly matching the source.
-      filterParts.push(`[${idx}:v]${head.join(',')},format=gbrp[${p}]`);
+      const glowHead = head.length ? `${head.join(',')},` : '';
+      filterParts.push(`${srcLabel}${glowHead}format=gbrp[${p}]`);
       filterParts.push(`[${p}]split[${p}a][${p}b]`);
       filterParts.push(`[${p}b]curves=all='0/0 0.55/0 1/1',gblur=sigma=${sigma}[${p}g]`);
       filterParts.push(
@@ -322,6 +401,10 @@ export function buildCommand(
       chainIn = `[${p}o]`;
     }
     const filters: string[] = glow > 0.001 ? [] : [...head];
+    // A background-fill chain already produced a full-size frame; if there is
+    // nothing else to do, `null` the chain out with a copy so the graph stays
+    // syntactically valid.
+    if (filters.length === 0 && glow <= 0.001) filters.push('null');
     // Color correction via FFmpeg's eq filter — only emit when non-default
     // to keep the graph short for the common case.
     if (br !== 0 || co !== 1 || sa !== 1 || ga !== 1) {
@@ -438,7 +521,35 @@ export function buildCommand(
   }
 
   // After all overlays (clips + subtitles), ensure final has yuv420p for x264
-  filterParts.push(`[${lastWithSubs}]format=yuv420p[vout]`);
+  // Seamless loop.
+  //
+  //   out[0..L)    = crossfade from source[D-L..D] into source[0..L]
+  //   out[L..D-L)  = source[L..D-L]
+  //
+  // so the output is D-L long and its last frame flows into its first: at the
+  // wrap, out[0] is exactly source[D-L], which is where the tail left off.
+  const loopL = Math.max(0, loopBlend ?? 0);
+  const canLoop = loopL > 0.05 && duration > loopL * 2 + 0.1;
+  if (canLoop) {
+    const D = duration;
+    filterParts.push(`[${lastWithSubs}]format=yuv420p,split=3[lph][lpm][lpt]`);
+    filterParts.push(`[lph]trim=start=0:end=${loopL.toFixed(3)},setpts=PTS-STARTPTS[lphh]`);
+    filterParts.push(
+      `[lpt]trim=start=${(D - loopL).toFixed(3)}:end=${D.toFixed(3)},setpts=PTS-STARTPTS[lptt]`
+    );
+    // xfade goes FROM the tail INTO the head, which is what makes the wrap
+    // continuous rather than merely soft.
+    filterParts.push(
+      `[lptt][lphh]xfade=transition=fade:duration=${loopL.toFixed(3)}:offset=0[lpx]`
+    );
+    filterParts.push(
+      `[lpm]trim=start=${loopL.toFixed(3)}:end=${(D - loopL).toFixed(3)},setpts=PTS-STARTPTS[lpmm]`
+    );
+    filterParts.push(`[lpx][lpmm]concat=n=2:v=1:a=0[vout]`);
+    duration = D - loopL;
+  } else {
+    filterParts.push(`[${lastWithSubs}]format=yuv420p[vout]`);
+  }
 
   // Audio
   const audioLabels: string[] = [];

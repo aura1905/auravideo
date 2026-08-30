@@ -1,6 +1,6 @@
 import { useEditor } from '../state/editorStore';
-import type { BlendMode, Clip, Subtitle } from '../types';
-import { BLEND_LABELS } from '../types';
+import type { BlendMode, Clip, FillMode, Subtitle } from '../types';
+import { BLEND_LABELS, FILL_LABELS } from '../types';
 import { FONT_PRESETS } from '../utils/drawSubtitle';
 
 export function PropertiesPanel() {
@@ -255,6 +255,26 @@ export function PropertiesPanel() {
         >
           변환 리셋
         </button>
+      </details>
+      <details className="props-section">
+        <summary>화면 채우기</summary>
+        <div className="props-row">
+          <label>채우기 방식</label>
+          <select
+            value={first.fillMode ?? 'fit'}
+            onChange={(e) => apply({ fillMode: e.target.value as FillMode })}
+            title="소재와 캔버스의 화면비가 다를 때 처리 방법. 16:9 소재를 32:9 LED 월에 올릴 때 쓰는 설정입니다."
+          >
+            {(Object.keys(FILL_LABELS) as FillMode[]).map((m) => (
+              <option key={m} value={m}>
+                {FILL_LABELS[m]}
+              </option>
+            ))}
+          </select>
+        </div>
+        <p className="hint">
+          거울/블러 확장은 원본 비율을 유지한 채 남는 좌우를 채웁니다 — 늘리기와 달리 피사체가 왜곡되지 않습니다.
+        </p>
       </details>
       <details className="props-section">
         <summary>합성</summary>

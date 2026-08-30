@@ -276,6 +276,45 @@ Rules to preserve:
 - Things that must move at 60 fps subscribe to the bus and poke the DOM directly: `Playhead` (writes `style.transform`), `PlayheadReadout`, `SeekBar`, `PlayheadTime`.
 - `Waveform`, `ThumbStrip` and `ClipView` are `React.memo`ed. `ClipView` derives its select/update callbacks from `useEditor.getState()` internally rather than taking them as props — passing arrow functions from `Timeline` would create new references every render and defeat the memo.
 
+## LED wall / music-show backdrop
+
+This project's primary use is generating and cutting LED backdrops for music broadcasts. Three things follow from that, and they drive several design choices:
+
+### Canvas and fill modes
+
+Broadcast LED walls are commonly **32:9** (3840×1080, 2560×720, 2048×576) while generated or shot source is 16:9, so "scale it" is never the whole answer. `Clip.fillMode` (`FillMode` in `types.ts`, default `fit` = previous behaviour):
+
+| mode | what it does |
+|---|---|
+| `fit` | letterbox/pillarbox, aspect preserved |
+| `cover` | scale to fill, crop the overflow — geometry stays honest |
+| `stretch` | scale axes independently; fills, but distorts |
+| `mirror` | fit, then fill the sides with a flipped covering copy |
+| `blur` | fit, then fill the sides with a blurred covering copy |
+
+`fit`/`cover`/`stretch` are a linear filter chain. **`mirror` and `blur` are not** — they need a background *and* a foreground, so `emitBackgroundFill` in `export.ts` emits its own graph segment (split → covering background → overlay the fitted image) and hands back a new input label, the same pattern the glow chain uses. The preview mirrors all five in `drawFrame`.
+
+The resolution dropdown has an "LED 월" optgroup, and FPS offers 29.97 because `led_stage/scripts/build_nabi_project.py` builds its projects at 30000/1001.
+
+### Beat grid
+
+`state.beatGrid` holds the musical grid — bpm, bar length, every beat, the downbeats, and the analysed sections. It is imported straight from the JSON that `led_stage/scripts/analyze_music.py` (librosa) writes, with no conversion step.
+
+- The ruler draws section bands (tinted by `energyLevel`), downbeats, and — only when they are more than 6 px apart — individual beats.
+- **`snapTime` treats downbeats and section boundaries with double the normal tolerance.** On a music-show backdrop, a cut landing a frame off the bar is the mistake worth engineering against; ordinary beats keep the standard tolerance.
+- `clip.cutOnBeats` slices a clip on the grid (`every` counts bars, or beats with `unit: "beat"`). The phase is anchored to the song start, not to the clip, so `every: 2` means every second bar *of the song*.
+
+### Seamless loop
+
+A standby wall plays its backdrop forever, so the wrap must not pop. `BuildArgs.loopBlend` (seconds) restructures the tail of the graph:
+
+```
+out[0..L)   = crossfade from source[D-L..D] into source[0..L]
+out[L..D-L) = source[L..D-L]
+```
+
+The output is exactly `L` shorter, and its last frame is adjacent in source time to its first — so looping is continuous rather than merely soft. Verified by measuring first-vs-last-frame PSNR on the same timeline: **1.56 dB without the loop blend, 45.10 dB with it**.
+
 ## Agent control bridge
 
 The editor is drivable by an external process — a script or an AI agent — so edits can be made and verified without a human at the mouse. Every command is forwarded to the frontend and applied through the **ordinary store actions**, so there is no second editing implementation that could drift from the UI's.

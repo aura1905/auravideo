@@ -421,11 +421,27 @@ function drawFrame(
           const baseScale = Math.min(W / vw, H / vh);
           // User transform multiplies the fit-to-canvas scale.
           const userScale = c.transformScale ?? 1;
-          const totalScale = baseScale * userScale;
-          const dw = vw * totalScale;
-          const dh = vh * totalScale;
+          // Fill mode decides how a source whose aspect differs from the
+          // canvas is reconciled — the 16:9-into-32:9 question every LED wall
+          // asks. `mirror`/`blur` paint a covering background first and then
+          // the fitted image on top, matching the export's graph.
+          const fillMode = c.fillMode ?? 'fit';
+          const coverScale = Math.max(W / vw, H / vh);
+          let sx = baseScale;
+          let sy = baseScale;
+          if (fillMode === 'stretch') {
+            sx = W / vw;
+            sy = H / vh;
+          } else if (fillMode === 'cover') {
+            sx = coverScale;
+            sy = coverScale;
+          }
+          const dw = vw * sx * userScale;
+          const dh = vh * sy * userScale;
           const dx = (W - dw) / 2 + (c.transformX ?? 0);
           const dy = (H - dh) / 2 + (c.transformY ?? 0);
+          const totalScale = baseScale * userScale;
+          void totalScale;
           ctx.globalAlpha = Math.max(0, Math.min(1, alpha * (c.transformOpacity ?? 1)));
           // Color correction via canvas filter — fast, GPU-accelerated where
           // available. Map our fields to the closest CSS filter primitives.
@@ -440,6 +456,28 @@ function drawFrame(
           const blend = c.blendMode ?? 'normal';
           if (blend !== 'normal') {
             ctx.globalCompositeOperation = BLEND_CANVAS[blend] ?? 'source-over';
+          }
+          if (fillMode === 'mirror' || fillMode === 'blur') {
+            const bw = vw * coverScale * userScale;
+            const bh = vh * coverScale * userScale;
+            const bx = (W - bw) / 2 + (c.transformX ?? 0);
+            const by = (H - bh) / 2 + (c.transformY ?? 0);
+            ctx.save();
+            if (fillMode === 'blur') {
+              ctx.filter = `${filterStr} blur(${Math.max(8, Math.round(H / 12))}px)`;
+              try {
+                ctx.drawImage(m.cache, bx, by, bw, bh);
+              } catch {}
+            } else {
+              // Mirror: flip horizontally about the background's centre.
+              ctx.translate(bx + bw / 2, by + bh / 2);
+              ctx.scale(-1, 1);
+              try {
+                ctx.drawImage(m.cache, -bw / 2, -bh / 2, bw, bh);
+              } catch {}
+            }
+            ctx.restore();
+            ctx.filter = filterStr;
           }
           const rot = c.transformRotation ?? 0;
           if (rot !== 0) {
