@@ -41,6 +41,19 @@ export async function ffmpegInfo(): Promise<FfmpegInfo> {
   return invoke<FfmpegInfo>('ffmpeg_info');
 }
 
+export interface MediaProbe {
+  has_video: boolean;
+  has_audio: boolean;
+  width: number;
+  height: number;
+  duration: number;
+}
+
+/** Authoritative stream info from ffprobe. Only available on the desktop. */
+export async function probeMediaNative(path: string): Promise<MediaProbe> {
+  return invoke<MediaProbe>('media_probe', { path });
+}
+
 export async function ffmpegCancel(jobId: string): Promise<boolean> {
   return invoke<boolean>('ffmpeg_cancel', { jobId });
 }
@@ -153,7 +166,7 @@ const MIME_BY_EXT: Record<string, string> = {
 export async function readFileAsFile(path: string): Promise<File & { __nativePath: string }> {
   const { readFile } = await import('@tauri-apps/plugin-fs');
   const bytes = await readFile(path);
-  const name = path.split(/[\/]/).pop() || 'media';
+  const name = path.split(/[\\/]/).pop() || 'media';
   const ext = name.split('.').pop()?.toLowerCase() ?? '';
   const type = MIME_BY_EXT[ext] ?? '';
   const copy = new Uint8Array(bytes);

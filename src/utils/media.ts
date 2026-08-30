@@ -1,3 +1,4 @@
+import { isNative, probeMediaNative } from './native';
 import type { MediaAsset } from '../types';
 
 const uid = () => Math.random().toString(36).slice(2, 10);
@@ -31,6 +32,23 @@ export async function loadMediaFile(file: File): Promise<MediaAsset> {
   const meta = await probeMedia(url, isVideo);
   const thumbnail = isVideo ? await captureThumbnail(url, Math.min(0.5, meta.duration / 2)) : undefined;
 
+  // The browser cannot tell whether a file actually carries an audio stream, so
+  // the web build has to assume it does. That assumption is wrong for silent
+  // video — image-to-video generators produce exactly that — and the export
+  // then emits `[n:a]` for a stream that isn't there, which aborts the entire
+  // ffmpeg run ("Stream specifier ':a' matches no streams"). On the desktop we
+  // can ask ffprobe instead of guessing.
+  let hasAudio = true;
+  const nativePath = (file as File & { __nativePath?: string }).__nativePath;
+  if (nativePath && isNative()) {
+    try {
+      const probe = await probeMediaNative(nativePath);
+      hasAudio = probe.has_audio;
+    } catch (e) {
+      console.warn('[media] ffprobe failed, assuming audio present', e);
+    }
+  }
+
   return {
     id: uid(),
     name: file.name,
@@ -40,7 +58,7 @@ export async function loadMediaFile(file: File): Promise<MediaAsset> {
     width: meta.width,
     height: meta.height,
     hasVideo: isVideo,
-    hasAudio: true,
+    hasAudio,
     thumbnail,
   };
 }

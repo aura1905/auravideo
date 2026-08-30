@@ -209,3 +209,72 @@ pub fn ffmpeg_cancel(job_id: String) -> Result<bool, String> {
         None => Ok(false),
     }
 }
+
+#[derive(Clone, Serialize)]
+pub struct MediaProbe {
+    pub has_video: bool,
+    pub has_audio: bool,
+    pub width: u32,
+    pub height: u32,
+    pub duration: f64,
+}
+
+/// Authoritative stream info via ffprobe.
+///
+/// The browser cannot reliably tell whether a file has an audio stream — the
+/// web build assumes it does. That assumption breaks export for silent video
+/// (image-to-video generators produce exactly this): the filter graph emits
+/// `[n:a]` for a stream that does not exist and ffmpeg aborts the whole run
+/// with "Stream specifier ':a' matches no streams". On the desktop we can just
+/// ask.
+#[tauri::command]
+pub fn media_probe(path: String) -> Result<MediaProbe, String> {
+    let (probe, _) = resolve("ffprobe")?;
+    let out = base_command(&probe)
+        .args([
+            "-v", "error",
+            "-show_entries", "stream=codec_type,width,height",
+            "-show_entries", "format=duration",
+            "-of", "json",
+            &path,
+        ])
+        .stdout(Stdio::piped())
+        .stderr(Stdio::piped())
+        .output()
+        .map_err(|e| format!("ffprobe 실행 실패: {e}"))?;
+    if !out.status.success() {
+        return Err(format!(
+            "ffprobe 실패 ({path}): {}",
+            String::from_utf8_lossy(&out.stderr).trim()
+        ));
+    }
+    let v: serde_json::Value =
+        serde_json::from_slice(&out.stdout).map_err(|e| format!("ffprobe 출력 파싱 실패: {e}"))?;
+
+    let mut has_video = false;
+    let mut has_audio = false;
+    let (mut width, mut height) = (0u32, 0u32);
+    if let Some(streams) = v.get("streams").and_then(|s| s.as_array()) {
+        for s in streams {
+            match s.get("codec_type").and_then(|c| c.as_str()) {
+                Some("video") => {
+                    has_video = true;
+                    if width == 0 {
+                        width = s.get("width").and_then(|x| x.as_u64()).unwrap_or(0) as u32;
+                        height = s.get("height").and_then(|x| x.as_u64()).unwrap_or(0) as u32;
+                    }
+                }
+                Some("audio") => has_audio = true,
+                _ => {}
+            }
+        }
+    }
+    let duration = v
+        .get("format")
+        .and_then(|f| f.get("duration"))
+        .and_then(|d| d.as_str())
+        .and_then(|d| d.parse::<f64>().ok())
+        .unwrap_or(0.0);
+
+    Ok(MediaProbe { has_video, has_audio, width, height, duration })
+}

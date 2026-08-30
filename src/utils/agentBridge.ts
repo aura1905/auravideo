@@ -101,6 +101,18 @@ const handlers: Record<string, (a: Args) => Promise<any> | any> = {
     return { ok: true };
   },
 
+  /** Set canvas size / fps. Width and height are rounded up to even numbers
+   *  because x264 rejects odd dimensions. */
+  'settings.set': (a: Args) => {
+    const patch: Args = {};
+    if (typeof a.width === 'number') patch.width = Math.ceil(a.width / 2) * 2;
+    if (typeof a.height === 'number') patch.height = Math.ceil(a.height / 2) * 2;
+    if (typeof a.fps === 'number') patch.fps = a.fps;
+    if (typeof a.duration === 'number') patch.duration = a.duration;
+    useEditor.getState().setSettings(patch);
+    return { settings: useEditor.getState().settings };
+  },
+
   /** Import media by absolute path, the same way the desktop file picker does. */
   'media.import': async (a: Args) => {
     const paths: string[] = a.paths ?? [];

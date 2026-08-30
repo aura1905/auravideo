@@ -17,6 +17,7 @@ pub fn run() {
             ffmpeg::ffmpeg_info,
             ffmpeg::ffmpeg_run,
             ffmpeg::ffmpeg_cancel,
+            ffmpeg::media_probe,
             files::temp_root,
             files::write_temp_file,
             files::remove_temp_file,
