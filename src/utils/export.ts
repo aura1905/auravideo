@@ -6,6 +6,9 @@ import { getFFmpeg } from './ffmpegCore';
 
 export type ProgressCb = (info: { phase: string; progress: number; log?: string }) => void;
 
+/** Render quality tier. `delivery` is for the master that actually ships. */
+export type ExportQuality = 'draft' | 'standard' | 'delivery';
+
 export interface BuildArgs {
   clips: Clip[];
   assets: Record<string, MediaAsset>;
@@ -26,6 +29,8 @@ export interface BuildArgs {
    * 0 / undefined = ordinary, non-looping output.
    */
   loopBlend?: number;
+  /** Quality tier; defaults to `standard`. */
+  quality?: ExportQuality;
   /** Absolute output path. Desktop writes the file straight to the location the
    *  user picked; the browser build leaves this unset and reads `output.mp4`
    *  back out of the in-memory FS. */
@@ -43,22 +48,69 @@ export interface BuiltCommand {
  * families each spell "constant quality" differently and reject each other's
  * flags, so they can't share one code path.
  */
-function encoderArgs(encoder: string): string[] {
+function encoderArgs(encoder: string, quality: ExportQuality = 'standard'): string[] {
+  // One quality number per family. They do not share syntax, and each family's
+  // scale differs, so the mapping is explicit rather than computed.
+  const q = quality === 'delivery' ? 0 : quality === 'draft' ? 2 : 1;
+  const pick = <T,>(delivery: T, standard: T, draft: T) => [delivery, standard, draft][q];
+
   if (encoder.endsWith('_nvenc')) {
-    // p5 = balanced NVENC preset; cq with b:v 0 is NVENC's CRF equivalent.
-    return ['-c:v', encoder, '-preset', 'p5', '-rc', 'vbr', '-cq', '21', '-b:v', '0'];
+    // NVENC's `cq` with `b:v 0` is its CRF equivalent. p5 is balanced; p7 is
+    // the slowest/highest-quality preset and is what delivery should use —
+    // a broadcast master is rendered once and looked at on a very large wall.
+    return [
+      '-c:v', encoder,
+      // NVENC defaults to Main; broadcast 8-bit 4:2:0 HD masters are High.
+      ...(encoder.startsWith('h264') ? ['-profile:v', 'high'] : []),
+      '-preset', pick('p7', 'p5', 'p4'),
+      '-rc', 'vbr',
+      '-cq', pick('15', '21', '26'),
+      '-b:v', '0',
+      // Give VBR real headroom; without a maxrate NVENC can starve high-motion
+      // frames even at a low cq.
+      '-maxrate', pick('120M', '60M', '25M'),
+      '-bufsize', pick('240M', '120M', '50M'),
+    ];
   }
   if (encoder.endsWith('_qsv')) {
-    return ['-c:v', encoder, '-preset', 'veryfast', '-global_quality', '21'];
+    return ['-c:v', encoder, '-preset', pick('veryslow', 'veryfast', 'veryfast'),
+            '-global_quality', pick('16', '21', '26')];
   }
   if (encoder.endsWith('_amf')) {
-    return ['-c:v', encoder, '-quality', 'balanced', '-rc', 'cqp', '-qp_i', '22', '-qp_p', '24'];
+    return ['-c:v', encoder, '-quality', pick('quality', 'balanced', 'speed'), '-rc', 'cqp',
+            '-qp_i', pick('16', '22', '27'), '-qp_p', pick('18', '24', '29')];
   }
   if (encoder.endsWith('_videotoolbox')) {
-    return ['-c:v', encoder, '-q:v', '55'];
+    return ['-c:v', encoder, '-q:v', pick('75', '55', '40')];
   }
-  return ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20'];
+  return ['-c:v', 'libx264', '-profile:v', 'high',
+          '-preset', pick('slow', 'veryfast', 'veryfast'),
+          '-crf', pick('16', '20', '25')];
 }
+
+/**
+ * Colour metadata. Untagged output is a real delivery problem: the file says
+ * nothing about how to interpret its values, so whoever receives it guesses —
+ * and a wall that guesses wrong shifts colour. Everything in this pipeline is
+ * ordinary HD Rec.709 limited-range, so say so explicitly.
+ */
+const COLOR_TAG_ARGS = [
+  '-colorspace', 'bt709',
+  '-color_primaries', 'bt709',
+  '-color_trc', 'bt709',
+  '-color_range', 'tv',
+];
+
+/**
+ * The output options above are NOT enough on their own. Measured with this
+ * ffmpeg: `-color_primaries`/`-color_trc` given only as output options do not
+ * reach the H.264 VUI — the file comes back with `color_space=bt709` but
+ * `color_primaries=unknown` and `color_transfer=unknown`, on libx264 as well as
+ * NVENC, with or without `-movflags +write_colr`. Stamping the frames with
+ * `setparams` is what actually carries all three through.
+ */
+const SETPARAMS_BT709 =
+  'setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709:range=tv';
 
 /**
  * Scale a source into a target box under the chosen fill mode.
@@ -151,7 +203,7 @@ export interface SubtitleAsset {
 }
 
 export function buildCommand(
-  { clips, assets, tracks, settings, duration, masterVolume, subtitles, rangeStart, rangeEnd, encoder, outPath, loopBlend }: BuildArgs,
+  { clips, assets, tracks, settings, duration, masterVolume, subtitles, rangeStart, rangeEnd, encoder, outPath, loopBlend, quality }: BuildArgs,
   subtitleAssets: SubtitleAsset[] = []
 ): BuiltCommand {
   const W = settings.width;
@@ -521,35 +573,15 @@ export function buildCommand(
   }
 
   // After all overlays (clips + subtitles), ensure final has yuv420p for x264
-  // Seamless loop.
-  //
-  //   out[0..L)    = crossfade from source[D-L..D] into source[0..L]
-  //   out[L..D-L)  = source[L..D-L]
-  //
-  // so the output is D-L long and its last frame flows into its first: at the
-  // wrap, out[0] is exactly source[D-L], which is where the tail left off.
-  const loopL = Math.max(0, loopBlend ?? 0);
-  const canLoop = loopL > 0.05 && duration > loopL * 2 + 0.1;
-  if (canLoop) {
-    const D = duration;
-    filterParts.push(`[${lastWithSubs}]format=yuv420p,split=3[lph][lpm][lpt]`);
-    filterParts.push(`[lph]trim=start=0:end=${loopL.toFixed(3)},setpts=PTS-STARTPTS[lphh]`);
-    filterParts.push(
-      `[lpt]trim=start=${(D - loopL).toFixed(3)}:end=${D.toFixed(3)},setpts=PTS-STARTPTS[lptt]`
-    );
-    // xfade goes FROM the tail INTO the head, which is what makes the wrap
-    // continuous rather than merely soft.
-    filterParts.push(
-      `[lptt][lphh]xfade=transition=fade:duration=${loopL.toFixed(3)}:offset=0[lpx]`
-    );
-    filterParts.push(
-      `[lpm]trim=start=${loopL.toFixed(3)}:end=${(D - loopL).toFixed(3)},setpts=PTS-STARTPTS[lpmm]`
-    );
-    filterParts.push(`[lpx][lpmm]concat=n=2:v=1:a=0[vout]`);
-    duration = D - loopL;
-  } else {
-    filterParts.push(`[${lastWithSubs}]format=yuv420p[vout]`);
-  }
+  // NOTE: the seamless loop is NOT built into this graph. It used to be, with
+  // `split=3` feeding an xfade of head+tail and a concat with the middle — and
+  // it worked at small sizes and then died with "Cannot allocate memory" on a
+  // real 3840x1080 master. A split whose branches are consumed at different
+  // times makes ffmpeg buffer the late branch, which here was ~28 s of raw
+  // 4K-wide frames (~5 GB). The loop is now a second pass over the rendered
+  // file, where each segment is an independent seek and nothing is buffered —
+  // see `applyLoopBlend` in `exportNative.ts`.
+  filterParts.push(`[${lastWithSubs}]format=yuv420p,${SETPARAMS_BT709}[vout]`);
 
   // Audio
   const audioLabels: string[] = [];
@@ -668,7 +700,12 @@ export function buildCommand(
   if (hasAudio) {
     args.push('-map', '[aout]');
   }
-  args.push(...encoderArgs(encoder ?? 'libx264'), '-pix_fmt', 'yuv420p', '-r', String(FPS));
+  args.push(
+    ...encoderArgs(encoder ?? 'libx264', quality ?? 'standard'),
+    '-pix_fmt', 'yuv420p',
+    ...COLOR_TAG_ARGS,
+    '-r', String(FPS)
+  );
   if (hasAudio) {
     args.push('-c:a', 'aac', '-b:a', '192k');
   }

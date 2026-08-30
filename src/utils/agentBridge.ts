@@ -324,6 +324,7 @@ const handlers: Record<string, (a: Args) => Promise<any> | any> = {
         rangeStart: a.rangeStart ?? 0,
         rangeEnd: a.rangeEnd ?? dur,
         loopBlend: a.loopBlend,
+        quality: a.quality,
       },
       () => {},
       { outPath: a.outPath, encoder: a.encoder, jobId: `agent-${Date.now()}` }

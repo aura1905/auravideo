@@ -28,6 +28,67 @@ function parseTime(line: string): number | null {
   return Number(m[1]) * 3600 + Number(m[2]) * 60 + Number(m[3]);
 }
 
+
+/**
+ * Seamless loop, as a second pass over the rendered file.
+ *
+ *   out[0..L)   = crossfade from master[D-L..D] into master[0..L]
+ *   out[L..D-L) = master[L..D-L]
+ *
+ * so the result is exactly `L` shorter and its last frame is adjacent in source
+ * time to its first — the wrap is continuous, not merely soft.
+ *
+ * Each segment is a SEPARATE INPUT seeking into the same file. Doing it inside
+ * one graph with `split=3` is the obvious formulation and it does not survive
+ * contact with a real master: the branch consumed last gets buffered, which at
+ * 3840x1080 meant ~28 s of raw frames (~5 GB) and a "Cannot allocate memory"
+ * abort. Independent seeks buffer nothing.
+ */
+async function applyLoopBlend(
+  masterPath: string,
+  outPath: string,
+  duration: number,
+  blend: number,
+  encoder: string | undefined,
+  quality: string | undefined,
+  cwd: string,
+  jobId: string,
+  onLine: (l: string) => void
+): Promise<void> {
+  const L = blend;
+  const D = duration;
+  const mid = Math.max(0.04, D - 2 * L);
+  const enc =
+    encoder && encoder !== 'libx264'
+      ? ['-c:v', encoder, ...(encoder.startsWith('h264') ? ['-profile:v', 'high'] : []),
+         '-preset', quality === 'delivery' ? 'p7' : 'p5', '-rc', 'vbr',
+         '-cq', quality === 'delivery' ? '15' : '21', '-b:v', '0',
+         '-maxrate', quality === 'delivery' ? '120M' : '60M',
+         '-bufsize', quality === 'delivery' ? '240M' : '120M']
+      : ['-c:v', 'libx264', '-profile:v', 'high', '-preset',
+         quality === 'delivery' ? 'slow' : 'veryfast',
+         '-crf', quality === 'delivery' ? '16' : '20'];
+
+  const args = [
+    // 0 = head, 1 = tail, 2 = middle. `-ss` before `-i` seeks on input.
+    '-ss', '0', '-t', L.toFixed(3), '-i', masterPath,
+    '-ss', (D - L).toFixed(3), '-t', L.toFixed(3), '-i', masterPath,
+    '-ss', L.toFixed(3), '-t', mid.toFixed(3), '-i', masterPath,
+    '-filter_complex',
+    `[1:v]setpts=PTS-STARTPTS[t];[0:v]setpts=PTS-STARTPTS[h];` +
+      `[t][h]xfade=transition=fade:duration=${L.toFixed(3)}:offset=0[x];` +
+      `[2:v]setpts=PTS-STARTPTS[m];` +
+      `[x][m]concat=n=2:v=1:a=0,format=yuv420p,` +
+      `setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709:range=tv[vout]`,
+    '-map', '[vout]',
+    ...enc,
+    '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-color_range', 'tv',
+    '-an', '-y', outPath,
+  ];
+  const ret = await ffmpegRun(jobId, args, cwd, onLine);
+  if (ret !== 0) throw new Error(`루프 처리 실패 (FFmpeg 종료 코드 ${ret})`);
+}
+
 export interface NativeExportResult {
   path: string;
   bytes: number;
@@ -86,8 +147,18 @@ export async function exportProjectNative(
     }
   }
 
+  // With a loop blend the graph renders to a temporary master and the wrap is
+  // applied as a second pass (see applyLoopBlend).
+  const loopBlend = Math.max(0, args.loopBlend ?? 0);
+  const totalDur = (args.rangeEnd ?? args.duration) - (args.rangeStart ?? 0);
+  const wantsLoop = loopBlend > 0.05 && totalDur > loopBlend * 2 + 0.1;
+  const sep = scratch.includes('\\') ? '\\' : '/';
+  const masterPath = wantsLoop
+    ? `${scratch}${sep}loopsrc-${opts.jobId}.mp4`
+    : opts.outPath;
+
   const built = buildCommand(
-    { ...args, encoder: opts.encoder, outPath: opts.outPath },
+    { ...args, encoder: opts.encoder, outPath: masterPath, loopBlend: undefined },
     subtitleAssets
   );
 
@@ -139,6 +210,23 @@ export async function exportProjectNative(
 
   if (ret !== 0) {
     throw new Error(`FFmpeg 종료 코드 ${ret}\n\n${logs.slice(-25).join('\n')}`);
+  }
+
+  if (wantsLoop) {
+    onProgress({ phase: '심리스 루프 처리 중…', progress: 0.94 });
+    try {
+      await applyLoopBlend(
+        masterPath, opts.outPath, totalDur, loopBlend,
+        opts.encoder, (args as any).quality, scratch,
+        `${opts.jobId}-loop`, (l) => logs.push(l)
+      );
+    } finally {
+      try {
+        await removeTempFile(masterPath);
+      } catch {
+        /* leftover master is harmless */
+      }
+    }
   }
 
   onProgress({ phase: '결과 확인 중…', progress: 0.99 });
