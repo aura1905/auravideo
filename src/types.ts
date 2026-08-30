@@ -1,5 +1,53 @@
 export type TrackKind = 'video' | 'audio';
 
+/** Layer blend modes. Names are the FFmpeg `blend=all_mode=` names; the canvas
+ * preview maps them onto the matching `globalCompositeOperation`. */
+export type BlendMode =
+  | 'normal'
+  | 'screen'
+  | 'addition'
+  | 'multiply'
+  | 'overlay'
+  | 'softlight'
+  | 'lighten'
+  | 'darken';
+
+/** Canvas `globalCompositeOperation` for each blend mode. */
+export const BLEND_CANVAS: Record<BlendMode, GlobalCompositeOperation> = {
+  normal: 'source-over',
+  screen: 'screen',
+  addition: 'lighter',
+  multiply: 'multiply',
+  overlay: 'overlay',
+  softlight: 'soft-light',
+  lighten: 'lighten',
+  darken: 'darken',
+};
+
+/** The colour that leaves the layers below untouched for each mode. Used to
+ * pad / fade / extend a blend layer so the area outside the clip is inert. */
+export const BLEND_NEUTRAL: Record<BlendMode, string> = {
+  normal: 'black@0',
+  screen: 'black',
+  addition: 'black',
+  lighten: 'black',
+  multiply: 'white',
+  darken: 'white',
+  overlay: 'gray',
+  softlight: 'gray',
+};
+
+export const BLEND_LABELS: Record<BlendMode, string> = {
+  normal: '표준',
+  screen: '스크린',
+  addition: '더하기',
+  multiply: '곱하기',
+  overlay: '오버레이',
+  softlight: '소프트라이트',
+  lighten: '밝게',
+  darken: '어둡게',
+};
+
 export interface MediaAsset {
   id: string;
   name: string;
@@ -55,6 +103,18 @@ export interface Clip {
   transformScale: number;   // 1 = fit-to-canvas (current default), <1 shrinks
   transformRotation: number; // degrees, default 0
   transformOpacity: number; // 0..1, default 1
+  // Layer blend mode. 'normal' = alpha-over (default, previous behavior).
+  // The others composite this clip against everything below it, which is how
+  // a grading / glow / texture layer is stacked on top of a base plate.
+  // Preview maps these to canvas `globalCompositeOperation`; export maps them
+  // to FFmpeg `blend=all_mode=…`. Undefined = 'normal'.
+  blendMode?: BlendMode;
+  // Glow / bloom. The clip's bright areas are isolated, blurred, and screened
+  // back over itself — the look every LED wall content has. Applied to the
+  // SOURCE, before colour correction, so grading affects the glow too.
+  // 0 = off (default).
+  glow?: number;        // 0..1 intensity
+  glowRadius?: number;  // blur radius in canvas px, default 24
   // Color correction (FFmpeg eq filter compatible)
   brightness: number;  // -1..1, default 0 (additive)
   contrast: number;    // 0..2, default 1 (multiplicative around 0.5)

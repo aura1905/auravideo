@@ -31,6 +31,11 @@ if ('serviceWorker' in navigator) {
   }).catch(() => {});
 }
 
+// Desktop plumbing self-test — only present when built with VITE_SELFTEST=1.
+if (import.meta.env.VITE_SELFTEST === '1') {
+  import('./utils/selftest').then((m) => m.runSelfTest()).catch((e) => console.error(e));
+}
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />

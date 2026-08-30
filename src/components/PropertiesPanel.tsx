@@ -1,5 +1,6 @@
 import { useEditor } from '../state/editorStore';
-import type { Clip, Subtitle } from '../types';
+import type { BlendMode, Clip, Subtitle } from '../types';
+import { BLEND_LABELS } from '../types';
 import { FONT_PRESETS } from '../utils/drawSubtitle';
 
 export function PropertiesPanel() {
@@ -253,6 +254,45 @@ export function PropertiesPanel() {
           }
         >
           변환 리셋
+        </button>
+      </details>
+      <details className="props-section">
+        <summary>합성</summary>
+        <div className="props-row">
+          <label>블렌드 모드</label>
+          <select
+            value={first.blendMode ?? 'normal'}
+            onChange={(e) => apply({ blendMode: e.target.value as BlendMode })}
+            title="아래 레이어와 어떻게 합성할지. 스크린/더하기는 빛을 더하는 레이어(글로우·플레어), 곱하기는 어둡게 누르는 레이어에 씁니다."
+          >
+            {(Object.keys(BLEND_LABELS) as BlendMode[]).map((m) => (
+              <option key={m} value={m}>
+                {BLEND_LABELS[m]}
+              </option>
+            ))}
+          </select>
+        </div>
+        <SliderInput
+          label="글로우"
+          value={first.glow ?? 0}
+          min={0}
+          max={1}
+          step={0.01}
+          decimals={2}
+          onChange={(v) => apply({ glow: v })}
+        />
+        <SliderInput
+          label="글로우 반경 (px)"
+          value={first.glowRadius ?? 24}
+          min={2}
+          max={120}
+          step={1}
+          decimals={0}
+          suffix="px"
+          onChange={(v) => apply({ glowRadius: v })}
+        />
+        <button onClick={() => apply({ blendMode: 'normal', glow: 0, glowRadius: 24 })}>
+          합성 리셋
         </button>
       </details>
       <details className="props-section">

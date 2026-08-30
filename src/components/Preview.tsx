@@ -1,7 +1,9 @@
 import { useEffect, useMemo, useRef } from 'react';
 import { useEditor, projectDuration, isTrackSoloAudible } from '../state/editorStore';
+import { playheadBus } from '../state/playheadBus';
 import { CanvasOverlay } from './CanvasOverlay';
 import type { Clip } from '../types';
+import { BLEND_CANVAS } from '../types';
 import { formatTime } from '../utils/media';
 import { paintSubtitle } from '../utils/drawSubtitle';
 
@@ -24,7 +26,9 @@ export function Preview() {
   const tracks = useEditor((s) => s.tracks);
   const assets = useEditor((s) => s.assets);
   const settings = useEditor((s) => s.settings);
-  const playhead = useEditor((s) => s.playhead);
+  // `playhead` is intentionally not subscribed — see `playheadBus`. The canvas
+  // is painted from the RAF loop and the seek bar / time readout update
+  // themselves imperatively, so playback does not re-render this component.
   const isPlaying = useEditor((s) => s.isPlaying);
   const masterVolume = useEditor((s) => s.masterVolume);
   const setPlayhead = useEditor((s) => s.setPlayhead);
@@ -238,17 +242,9 @@ export function Preview() {
         >
           ⏭
         </button>
-        <input
-          type="range"
-          min={0}
-          max={Math.max(0.1, duration)}
-          step={0.01}
-          value={Math.min(playhead, duration)}
-          onChange={(e) => setPlayhead(parseFloat(e.target.value))}
-          style={{ flex: 1 }}
-        />
+        <SeekBar duration={duration} onSeek={setPlayhead} />
         <span className="time">
-          {formatTime(playhead)} / {formatTime(duration)}
+          <PlayheadTime /> / {formatTime(duration)}
         </span>
         <span className="master-vol" title="마스터 볼륨 (전체 출력에 적용)">
           <button
@@ -440,6 +436,11 @@ function drawFrame(
           const cssBrightness = 1 + br;
           const filterStr = `brightness(${cssBrightness.toFixed(3)}) contrast(${co.toFixed(3)}) saturate(${sa.toFixed(3)})`;
           ctx.filter = filterStr;
+          // Layer blend mode. 'normal' keeps the previous source-over path.
+          const blend = c.blendMode ?? 'normal';
+          if (blend !== 'normal') {
+            ctx.globalCompositeOperation = BLEND_CANVAS[blend] ?? 'source-over';
+          }
           const rot = c.transformRotation ?? 0;
           if (rot !== 0) {
             ctx.save();
@@ -454,7 +455,31 @@ function drawFrame(
               ctx.drawImage(m.cache, dx, dy, dw, dh);
             } catch {}
           }
+          // Glow / bloom pass: redraw the same frame blurred and crushed to
+          // highlights, added on top with 'lighter'. Cheap approximation of the
+          // export's curves+gblur+screen chain — close enough to judge by eye.
+          const glow = Math.max(0, Math.min(1, c.glow ?? 0));
+          if (glow > 0.001) {
+            const gr = Math.max(1, c.glowRadius ?? 24) * (H ? dh / (vh * baseScale) : 1);
+            ctx.globalCompositeOperation = 'lighter';
+            ctx.globalAlpha = Math.max(0, Math.min(1, alpha * (c.transformOpacity ?? 1) * glow));
+            ctx.filter = `${filterStr} blur(${gr.toFixed(1)}px) brightness(1.35) contrast(2.4)`;
+            if (rot !== 0) {
+              ctx.save();
+              ctx.translate(dx + dw / 2, dy + dh / 2);
+              ctx.rotate((rot * Math.PI) / 180);
+              try {
+                ctx.drawImage(m.cache, -dw / 2, -dh / 2, dw, dh);
+              } catch {}
+              ctx.restore();
+            } else {
+              try {
+                ctx.drawImage(m.cache, dx, dy, dw, dh);
+              } catch {}
+            }
+          }
           ctx.filter = 'none';
+          ctx.globalCompositeOperation = 'source-over';
         }
         ctx.globalAlpha = 1;
       } else if (head >= visualEnd && head < audioEnd && isPlaying && m.el) {
@@ -568,4 +593,65 @@ function drawFrame(
       try { st.el.pause(); } catch {}
     }
   }
+}
+
+/**
+ * Scrub bar driven by `playheadBus` rather than React state, so dragging the
+ * playhead or playing back does not re-render `Preview`. It stays a valid
+ * uncontrolled input: the DOM value is written on each bus tick, except while
+ * the user is actively dragging the thumb (otherwise our writes would fight
+ * their pointer).
+ */
+function SeekBar({ duration, onSeek }: { duration: number; onSeek: (t: number) => void }) {
+  const ref = useRef<HTMLInputElement | null>(null);
+  const draggingRef = useRef(false);
+  const durRef = useRef(duration);
+  durRef.current = duration;
+
+  useEffect(
+    () =>
+      playheadBus.subscribe((t) => {
+        const el = ref.current;
+        if (!el || draggingRef.current) return;
+        const v = Math.min(t, durRef.current);
+        // Writing an identical value still triggers style recalc in some
+        // engines — skip when unchanged at slider precision.
+        const next = v.toFixed(2);
+        if (el.value !== next) el.value = next;
+      }),
+    []
+  );
+
+  return (
+    <input
+      ref={ref}
+      type="range"
+      min={0}
+      max={Math.max(0.1, duration)}
+      step={0.01}
+      defaultValue={Math.min(playheadBus.get(), duration)}
+      onPointerDown={() => {
+        draggingRef.current = true;
+      }}
+      onPointerUp={() => {
+        draggingRef.current = false;
+      }}
+      onChange={(e) => onSeek(parseFloat(e.target.value))}
+      style={{ flex: 1 }}
+    />
+  );
+}
+
+/** Current-time text, likewise updated without a React render. */
+function PlayheadTime() {
+  const ref = useRef<HTMLSpanElement | null>(null);
+  useEffect(
+    () =>
+      playheadBus.subscribe((t) => {
+        const el = ref.current;
+        if (el) el.textContent = formatTime(t);
+      }),
+    []
+  );
+  return <span ref={ref} />;
 }

@@ -1,11 +1,12 @@
 import { fetchFile } from '@ffmpeg/util';
 import type { Clip, MediaAsset, Subtitle, Track, ProjectSettings } from '../types';
+import { BLEND_NEUTRAL } from '../types';
 import { paintSubtitle } from './drawSubtitle';
 import { getFFmpeg } from './ffmpegCore';
 
 export type ProgressCb = (info: { phase: string; progress: number; log?: string }) => void;
 
-interface BuildArgs {
+export interface BuildArgs {
   clips: Clip[];
   assets: Record<string, MediaAsset>;
   tracks: Track[];
@@ -15,12 +16,41 @@ interface BuildArgs {
   subtitles: Subtitle[];
   rangeStart?: number;
   rangeEnd?: number;
+  /** ffmpeg video encoder name. Only the desktop build can use anything other
+   *  than `libx264` — FFmpeg.wasm has no hardware encoders. */
+  encoder?: string;
+  /** Absolute output path. Desktop writes the file straight to the location the
+   *  user picked; the browser build leaves this unset and reads `output.mp4`
+   *  back out of the in-memory FS. */
+  outPath?: string;
 }
 
-interface BuiltCommand {
+export interface BuiltCommand {
   args: string[];
   fileMap: { fsName: string; file: File }[];
   outName: string;
+}
+
+/**
+ * Rate-control flags per encoder family. Software x264 uses CRF; the hardware
+ * families each spell "constant quality" differently and reject each other's
+ * flags, so they can't share one code path.
+ */
+function encoderArgs(encoder: string): string[] {
+  if (encoder.endsWith('_nvenc')) {
+    // p5 = balanced NVENC preset; cq with b:v 0 is NVENC's CRF equivalent.
+    return ['-c:v', encoder, '-preset', 'p5', '-rc', 'vbr', '-cq', '21', '-b:v', '0'];
+  }
+  if (encoder.endsWith('_qsv')) {
+    return ['-c:v', encoder, '-preset', 'veryfast', '-global_quality', '21'];
+  }
+  if (encoder.endsWith('_amf')) {
+    return ['-c:v', encoder, '-quality', 'balanced', '-rc', 'cqp', '-qp_i', '22', '-qp_p', '24'];
+  }
+  if (encoder.endsWith('_videotoolbox')) {
+    return ['-c:v', encoder, '-q:v', '55'];
+  }
+  return ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20'];
 }
 
 function sanitize(name: string): string {
@@ -30,7 +60,7 @@ function sanitize(name: string): string {
 /** Render a subtitle to a transparent PNG sized to fit the canvas. The result
  * is meant to be overlaid at (0, 0) on the canvas — the text positioning is
  * baked into the PNG. Returns the bytes ready for FFmpeg.writeFile. */
-async function renderSubtitleToPng(s: Subtitle, W: number, H: number): Promise<Uint8Array | null> {
+export async function renderSubtitleToPng(s: Subtitle, W: number, H: number): Promise<Uint8Array | null> {
   const c = document.createElement('canvas');
   c.width = W;
   c.height = H;
@@ -43,7 +73,7 @@ async function renderSubtitleToPng(s: Subtitle, W: number, H: number): Promise<U
   return new Uint8Array(ab);
 }
 
-interface SubtitleAsset {
+export interface SubtitleAsset {
   fsName: string;
   bytes: Uint8Array;
   start: number;
@@ -52,8 +82,8 @@ interface SubtitleAsset {
   fadeOut: number;
 }
 
-function buildCommand(
-  { clips, assets, tracks, settings, duration, masterVolume, subtitles, rangeStart, rangeEnd }: BuildArgs,
+export function buildCommand(
+  { clips, assets, tracks, settings, duration, masterVolume, subtitles, rangeStart, rangeEnd, encoder, outPath }: BuildArgs,
   subtitleAssets: SubtitleAsset[] = []
 ): BuiltCommand {
   const W = settings.width;
@@ -260,11 +290,31 @@ function buildCommand(
     // scales become true PIP (the overlay is the actual rendered size).
     const targetW = Math.max(2, Math.round(W * userScale));
     const targetH = Math.max(2, Math.round(H * userScale));
-    const filters: string[] = [
+    // Head of the chain — everything that must happen before the glow split.
+    const head: string[] = [
       `trim=start=${c.inPoint.toFixed(3)}:end=${c.outPoint.toFixed(3)}`,
       speed !== 1 ? `setpts=(PTS-STARTPTS)/${speed.toFixed(4)}` : `setpts=PTS-STARTPTS`,
       `scale=${targetW}:${targetH}:force_original_aspect_ratio=decrease`,
     ];
+    // Glow / bloom: split the trimmed+scaled source, crush the darks with a
+    // soft-knee curve so only highlights survive, blur that, and screen it back
+    // over the original. Sits before `eq` so grading also shapes the bloom.
+    const glow = Math.max(0, Math.min(1, c.glow ?? 0));
+    const glowR = Math.max(1, c.glowRadius ?? 24);
+    let chainIn = `[${idx}:v]`;
+    if (glow > 0.001) {
+      const p = `g${i}`;
+      // sigma scales with the clip's rendered size so the look holds at any resolution
+      const sigma = Math.max(1, (glowR * targetH) / H).toFixed(2);
+      filterParts.push(`[${idx}:v]${head.join(',')}[${p}]`);
+      filterParts.push(`[${p}]split[${p}a][${p}b]`);
+      filterParts.push(`[${p}b]curves=all='0/0 0.55/0 1/1',gblur=sigma=${sigma}[${p}g]`);
+      filterParts.push(
+        `[${p}a][${p}g]blend=all_mode=screen:all_opacity=${glow.toFixed(3)}:shortest=0[${p}o]`
+      );
+      chainIn = `[${p}o]`;
+    }
+    const filters: string[] = glow > 0.001 ? [] : [...head];
     // Color correction via FFmpeg's eq filter — only emit when non-default
     // to keep the graph short for the common case.
     if (br !== 0 || co !== 1 || sa !== 1 || ga !== 1) {
@@ -278,24 +328,57 @@ function buildCommand(
         `rotate=${rad.toFixed(5)}:c=black@0:ow=abs(iw*cos(${rad.toFixed(5)}))+abs(ih*sin(${rad.toFixed(5)})):oh=abs(iw*sin(${rad.toFixed(5)}))+abs(ih*cos(${rad.toFixed(5)}))`
       );
     }
-    if (op < 1 - 1e-3) {
-      // Multiply the alpha channel.
+    if (op < 1 - 1e-3 && (c.blendMode ?? 'normal') === 'normal') {
+      // Multiply the alpha channel. Blend layers handle opacity via
+      // `blend=all_opacity` instead — alpha has no effect on the blend math.
       filters.push(`colorchannelmixer=aa=${op.toFixed(3)}`);
     }
-    if (fi > 0) filters.push(`fade=t=in:st=0:d=${fi.toFixed(3)}:alpha=1`);
-    if (fo > 0) filters.push(`fade=t=out:st=${(displayDur - fo).toFixed(3)}:d=${fo.toFixed(3)}:alpha=1`);
-    if (c.start > 0) {
-      filters.push(`tpad=start_duration=${c.start.toFixed(3)}:start_mode=add:color=black@0`);
-    }
+    const blend = c.blendMode ?? 'normal';
     const label = `v${i}`;
-    filterParts.push(`[${idx}:v]${filters.join(',')}[${label}]`);
-
     const outLabel = `vo${i}`;
-    // overlay_w / overlay_h are the (possibly rotated) overlay dimensions.
-    // main_w / main_h are the canvas dimensions. Center + user offset.
-    filterParts.push(
-      `[${lastVideoLabel}][${label}]overlay=x='(main_w-overlay_w)/2+(${tx})':y='(main_h-overlay_h)/2+(${ty})':eof_action=pass:shortest=0[${outLabel}]`
-    );
+
+    if (blend === 'normal') {
+      // --- alpha-over path (unchanged) ---
+      if (fi > 0) filters.push(`fade=t=in:st=0:d=${fi.toFixed(3)}:alpha=1`);
+      if (fo > 0) filters.push(`fade=t=out:st=${(displayDur - fo).toFixed(3)}:d=${fo.toFixed(3)}:alpha=1`);
+      if (c.start > 0) {
+        filters.push(`tpad=start_duration=${c.start.toFixed(3)}:start_mode=add:color=black@0`);
+      }
+      filterParts.push(`${chainIn}${filters.join(',')}[${label}]`);
+      // overlay_w / overlay_h are the (possibly rotated) overlay dimensions.
+      // main_w / main_h are the canvas dimensions. Center + user offset.
+      filterParts.push(
+        `[${lastVideoLabel}][${label}]overlay=x='(main_w-overlay_w)/2+(${tx})':y='(main_h-overlay_h)/2+(${ty})':eof_action=pass:shortest=0[${outLabel}]`
+      );
+    } else {
+      // --- blend path ---
+      // `blend` needs both inputs at the full canvas size for the whole
+      // project duration, and it ignores alpha for the RGB math. So instead of
+      // padding with transparent black we pad / fade / extend with the mode's
+      // NEUTRAL colour — the value that leaves the layers below untouched
+      // (black for screen-type modes, white for multiply-type, mid grey for
+      // overlay/soft-light). Anything else would tint the area outside the clip.
+      const neutral = BLEND_NEUTRAL[blend] ?? 'black';
+      if (fi > 0) filters.push(`fade=t=in:st=0:d=${fi.toFixed(3)}:color=${neutral}`);
+      if (fo > 0) filters.push(`fade=t=out:st=${(displayDur - fo).toFixed(3)}:d=${fo.toFixed(3)}:color=${neutral}`);
+      filters.push(
+        `pad=${W}:${H}:(ow-iw)/2+(${tx}):(oh-ih)/2+(${ty}):color=${neutral}`
+      );
+      if (c.start > 0) {
+        filters.push(`tpad=start_duration=${c.start.toFixed(3)}:start_mode=add:color=${neutral}`);
+      }
+      const tail = duration - (c.start + displayDur);
+      if (tail > 0.001) {
+        filters.push(`tpad=stop_duration=${tail.toFixed(3)}:stop_mode=add:color=${neutral}`);
+      }
+      filters.push('format=yuva420p');
+      filterParts.push(`${chainIn}${filters.join(',')}[${label}]`);
+      // all_opacity mixes the blended result back toward the base, which is
+      // what the clip's opacity slider means for a blend layer.
+      filterParts.push(
+        `[${lastVideoLabel}][${label}]blend=all_mode=${blend}:all_opacity=${op.toFixed(3)}:shortest=0[${outLabel}]`
+      );
+    }
     lastVideoLabel = outLabel;
   });
 
@@ -444,7 +527,9 @@ function buildCommand(
   }
 
   const filterComplex = filterParts.join(';');
-  const outName = 'output.mp4';
+  // Desktop writes straight to the user's chosen file; the browser build keeps
+  // the fixed in-memory name it then reads back.
+  const outName = outPath ?? 'output.mp4';
 
   const args = [
     ...inputArgs,
@@ -456,13 +541,7 @@ function buildCommand(
   if (hasAudio) {
     args.push('-map', '[aout]');
   }
-  args.push(
-    '-c:v', 'libx264',
-    '-preset', 'veryfast',
-    '-crf', '20',
-    '-pix_fmt', 'yuv420p',
-    '-r', String(FPS)
-  );
+  args.push(...encoderArgs(encoder ?? 'libx264'), '-pix_fmt', 'yuv420p', '-r', String(FPS));
   if (hasAudio) {
     args.push('-c:a', 'aac', '-b:a', '192k');
   }

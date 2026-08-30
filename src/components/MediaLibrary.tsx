@@ -3,6 +3,7 @@ import { useEditor, newClipId } from '../state/editorStore';
 import { loadMediaFile, generateWaveform, generateThumbnailStrip, formatTime } from '../utils/media';
 import { canBrowserPlayVideo, transcodeToH264 } from '../utils/transcode';
 import type { MediaAsset, Clip } from '../types';
+import { isNative, openMediaDialog, readFileAsFile } from '../utils/native';
 
 export function MediaLibrary() {
   const assets = useEditor((s) => s.assets);
@@ -29,6 +30,42 @@ export function MediaLibrary() {
     }
   };
 
+  /**
+   * On the desktop build go through the native picker: it returns absolute
+   * paths, which get stamped onto the `File` so the export can hand ffmpeg the
+   * original media instead of a copy. In the browser there is no such thing as
+   * a file path, so fall back to the hidden `<input type=file>`.
+   */
+  const addFiles = async () => {
+    if (!isNative()) {
+      inputRef.current?.click();
+      return;
+    }
+    let paths: string[] = [];
+    try {
+      paths = await openMediaDialog();
+    } catch (e: any) {
+      alert(`파일 선택 실패: ${e?.message ?? e}`);
+      return;
+    }
+    if (paths.length === 0) return;
+    setBusy(true);
+    const files: File[] = [];
+    try {
+      for (const p of paths) {
+        setBusyMsg(`${p.split(/[\\/]/).pop()}: 읽는 중…`);
+        files.push(await readFileAsFile(p));
+      }
+    } catch (e: any) {
+      setBusy(false);
+      setBusyMsg('');
+      alert(`파일 읽기 실패: ${e?.message ?? e}`);
+      return;
+    }
+    // handleFiles manages busy state itself from here on.
+    await handleFiles(files);
+  };
+
   const handleFiles = async (files: FileList | File[]) => {
     setBusy(true);
     try {
@@ -48,6 +85,17 @@ export function MediaLibrary() {
                   const pct = progress >= 0 ? ` ${Math.round(progress * 100)}%` : '';
                   setBusyMsg(`${f.name}: ${phase}${pct}`);
                 });
+                // The transcode exists only so the *preview* has something the
+                // webview can decode. Carry the original path across so the
+                // export still renders from the untouched source — native
+                // ffmpeg reads HEVC/ProRes/etc. perfectly well.
+                const origPath = (f as File & { __nativePath?: string }).__nativePath;
+                if (origPath) {
+                  Object.defineProperty(workingFile, '__nativePath', {
+                    value: origPath,
+                    enumerable: false,
+                  });
+                }
               } catch (e: any) {
                 console.error('transcode failed', e);
                 alert(`${f.name} 자동 변환 실패: ${e?.message ?? e}\n다른 도구로 H.264로 변환해 다시 올려주세요.`);
@@ -142,7 +190,7 @@ export function MediaLibrary() {
     >
       <div className="ml-header">
         <span>미디어</span>
-        <button onClick={() => inputRef.current?.click()} disabled={busy} title={busy ? busyMsg : undefined}>
+        <button onClick={addFiles} disabled={busy} title={busy ? busyMsg : undefined}>
           {busy ? (busyMsg || '불러오는 중…') : '파일 추가'}
         </button>
         <input

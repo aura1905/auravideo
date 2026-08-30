@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useEditor, newClipId, projectDuration, snapTime, clipDisplayDur } from '../state/editorStore';
+import { playheadBus } from '../state/playheadBus';
 import type { Clip, Track } from '../types';
 import { formatTime } from '../utils/media';
 import { WhisperDialog } from './WhisperDialog';
@@ -13,7 +14,12 @@ export function Timeline() {
   const clips = useEditor((s) => s.clips);
   const assets = useEditor((s) => s.assets);
   const pixelsPerSecond = useEditor((s) => s.pixelsPerSecond);
-  const playhead = useEditor((s) => s.playhead);
+  // NOTE: `playhead` is deliberately NOT subscribed here. It changes 60x/second
+  // during playback and this component renders every track, clip, waveform,
+  // subtitle and marker — subscribing rebuilt that whole tree every frame.
+  // The moving parts read `playheadBus` imperatively instead (see `Playhead`
+  // and `PlayheadReadout` below); handlers still use `getState().playhead`,
+  // which stays exact.
   const selection = useEditor((s) => s.selection);
   const setPlayhead = useEditor((s) => s.setPlayhead);
   const setZoom = useEditor((s) => s.setZoom);
@@ -461,19 +467,17 @@ export function Timeline() {
                       locked={!!trackLocked[track.id]}
                       showWaveform={track.waveformVisible !== false}
                       groupId={clipGroupId[c.id]}
-                      onSelect={(additive) => toggleSelection(c.id, additive)}
-                      onUpdate={(p) => updateClip(c.id, p)}
                     />
                   ))}
               </TrackRow>
               );
             })}
           </div>
-          <Playhead time={playhead} pps={pixelsPerSecond} onMouseDown={startPlayheadDrag} />
+          <Playhead pps={pixelsPerSecond} onMouseDown={startPlayheadDrag} />
         </div>
       </div>
       <div className="timeline-footer">
-        <span>플레이헤드: {formatTime(playhead)}</span>
+        <span>플레이헤드: <PlayheadReadout /></span>
         <span>길이: {formatTime(duration)}</span>
       </div>
       {whisperOpen && <WhisperDialog onClose={() => setWhisperOpen(false)} />}
@@ -686,7 +690,14 @@ function TrackRow({
   );
 }
 
-function ClipView({
+/**
+ * `memo`ised: a timeline with N clips previously re-rendered all N (and rebuilt
+ * every waveform path) whenever any single clip changed — i.e. on every
+ * mousemove of a drag. The select/update callbacks are derived from the store
+ * inside the component rather than passed down, so every prop here is a
+ * primitive or a reference that only changes when this clip actually changes.
+ */
+const ClipView = memo(function ClipView({
   clip,
   asset,
   pps,
@@ -694,8 +705,6 @@ function ClipView({
   locked,
   showWaveform,
   groupId,
-  onSelect,
-  onUpdate,
 }: {
   clip: Clip;
   asset: import('../types').MediaAsset | undefined;
@@ -704,9 +713,16 @@ function ClipView({
   locked: boolean;
   showWaveform: boolean;
   groupId?: string;
-  onSelect: (additive: boolean) => void;
-  onUpdate: (p: Partial<Clip>) => void;
 }) {
+  const clipId = clip.id;
+  const onSelect = useCallback(
+    (additive: boolean) => useEditor.getState().toggleSelection(clipId, additive),
+    [clipId]
+  );
+  const onUpdate = useCallback(
+    (p: Partial<Clip>) => useEditor.getState().updateClip(clipId, p),
+    [clipId]
+  );
   const speed = clip.speed ?? 1;
   const displayDur = clipDisplayDur(clip);
   const left = clip.start * pps;
@@ -875,7 +891,7 @@ function ClipView({
     );
   }
   return clipBox;
-}
+});
 
 function groupColor(id: string): string {
   // Map a group id to a deterministic pleasant hue.
@@ -1012,7 +1028,9 @@ function SubtitleBlock({
   );
 }
 
-function ThumbStrip({
+/** `memo`ised for the same reason as `Waveform` — it slices and re-picks frames
+ *  on every render and its props are all primitives / a stable array. */
+const ThumbStrip = memo(function ThumbStrip({
   frames,
   step,
   inPoint,
@@ -1048,9 +1066,19 @@ function ThumbStrip({
       ))}
     </div>
   );
-}
+});
 
-function Waveform({
+/**
+ * Waveform is `memo`ised and its SVG path is `useMemo`ised.
+ *
+ * Building the path walks the whole peak range (peaks are stored at 100/sec,
+ * so a 10-minute source is 120k numbers) and produces a multi-kilobyte `d`
+ * string. Before memoisation this ran for *every clip* on *every* Timeline
+ * render — 60x/second during playback, and on every mousemove while dragging
+ * a clip. All props here are primitives or a stable array reference, so the
+ * default shallow comparison is enough.
+ */
+const Waveform = memo(function Waveform({
   peaks,
   pps,
   inPoint,
@@ -1065,6 +1093,32 @@ function Waveform({
   width: number;
   video: boolean;
 }) {
+  const path = useMemo(() => buildWaveformPath(peaks, pps, inPoint, outPoint, width), [
+    peaks,
+    pps,
+    inPoint,
+    outPoint,
+    width,
+  ]);
+  return (
+    <svg
+      className={`clip-waveform ${video ? 'video' : 'audio'}`}
+      preserveAspectRatio="none"
+      viewBox="0 0 100 40"
+      aria-hidden="true"
+    >
+      <path d={path} stroke="currentColor" strokeWidth={0.5} fill="none" />
+    </svg>
+  );
+});
+
+function buildWaveformPath(
+  peaks: number[],
+  pps: number,
+  inPoint: number,
+  outPoint: number,
+  width: number
+): string {
   // Sample the peaks within [inPoint, outPoint] mapped to [0, width].
   const startIdx = Math.max(0, Math.floor(inPoint * pps));
   const endIdx = Math.min(peaks.length / 2, Math.ceil(outPoint * pps));
@@ -1091,29 +1145,34 @@ function Waveform({
     const y2 = mid + mx * mid * 0.95;
     path += `M${x.toFixed(2)} ${y1.toFixed(2)}L${x.toFixed(2)} ${y2.toFixed(2)}`;
   }
-  return (
-    <svg
-      className={`clip-waveform ${video ? 'video' : 'audio'}`}
-      preserveAspectRatio="none"
-      viewBox={`0 0 100 ${H}`}
-      aria-hidden="true"
-    >
-      <path d={path} stroke="currentColor" strokeWidth={0.5} fill="none" />
-    </svg>
-  );
+  return path;
 }
 
-function Playhead({
-  time,
-  pps,
-  onMouseDown,
-}: {
-  time: number;
-  pps: number;
-  onMouseDown: (e: React.MouseEvent) => void;
-}) {
+/**
+ * The moving playhead. Position is written straight to `style.transform` from
+ * a `playheadBus` subscription — no React state, so advancing the playhead at
+ * 60 fps costs one style write instead of a full timeline re-render.
+ *
+ * `left` stays at the fixed track-header offset and the time offset rides on
+ * `translateX`, which the compositor can handle without a layout pass.
+ */
+function Playhead({ pps, onMouseDown }: { pps: number; onMouseDown: (e: React.MouseEvent) => void }) {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const ppsRef = useRef(pps);
+  ppsRef.current = pps;
+
+  useEffect(() => {
+    const paint = (t: number) => {
+      const el = ref.current;
+      if (el) el.style.transform = `translateX(${t * ppsRef.current}px)`;
+    };
+    // Repaint immediately on zoom change as well as on every bus tick.
+    paint(playheadBus.get());
+    return playheadBus.subscribe(paint);
+  }, [pps]);
+
   return (
-    <div className="playhead" style={{ left: TRACK_HEADER_W + time * pps }}>
+    <div ref={ref} className="playhead" style={{ left: TRACK_HEADER_W }}>
       <div
         className="playhead-cap"
         onMouseDown={onMouseDown}
@@ -1123,4 +1182,18 @@ function Playhead({
       <div className="playhead-hit" onMouseDown={onMouseDown} />
     </div>
   );
+}
+
+/** Footer time readout, likewise driven imperatively. */
+function PlayheadReadout() {
+  const ref = useRef<HTMLSpanElement | null>(null);
+  useEffect(
+    () =>
+      playheadBus.subscribe((t) => {
+        const el = ref.current;
+        if (el) el.textContent = formatTime(t);
+      }),
+    []
+  );
+  return <span ref={ref} />;
 }

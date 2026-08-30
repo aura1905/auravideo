@@ -1,6 +1,7 @@
 import { create, useStore } from 'zustand';
 import { temporal, type TemporalState } from 'zundo';
 import type { Clip, MediaAsset, Marker, ProjectSettings, Subtitle, Track } from '../types';
+import { playheadBus } from './playheadBus';
 
 interface EditorState {
   assets: Record<string, MediaAsset>;
@@ -243,7 +244,13 @@ export const useEditor = create<EditorState>()(
     get().groupClips([clipId, newClipId]);
   },
 
-  setPlayhead: (t) => set({ playhead: Math.max(0, t) }),
+  setPlayhead: (t) => {
+    const v = Math.max(0, t);
+    // Mirror into the imperative transport so the timeline playhead / time
+    // readouts move for seeks and shortcuts too, not just for RAF playback.
+    playheadBus.set(v);
+    set({ playhead: v });
+  },
   setPlaying: (b) => set({ isPlaying: b }),
   setZoom: (pps) => set({ pixelsPerSecond: Math.max(10, Math.min(400, pps)) }),
 
@@ -439,6 +446,22 @@ export const useEditor = create<EditorState>()(
     }
   )
 );
+
+/**
+ * Safety net for the playhead bus.
+ *
+ * `setPlayhead` publishes to `playheadBus` itself, but a few code paths write
+ * `playhead` straight through `setState` — notably `loadProject` /
+ * `importProjectZip`, which reset it to 0 as part of one big state swap.
+ * Without this mirror the timeline playhead and the time readouts (which no
+ * longer re-render from the store) would keep painting the pre-load position.
+ *
+ * This is cheap: `playheadBus.set` returns immediately when the value is
+ * unchanged, which is the case for every store write that isn't a seek.
+ */
+useEditor.subscribe((s) => {
+  playheadBus.set(s.playhead);
+});
 
 // Hook for components that need to react to undo/redo availability.
 type Tracked = Pick<EditorState, 'tracks' | 'clips' | 'settings' | 'assets' | 'clipGroups' | 'clipGroupId' | 'trackLocked' | 'markers' | 'subtitles'>;

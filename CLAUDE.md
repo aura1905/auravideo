@@ -29,7 +29,7 @@ A `Clip` has both a **timeline position** (`start`) and an **in/out into the sou
 
 ### Preview rendering — `src/components/Preview.tsx`
 
-The preview is a canvas composited every RAF tick from hidden `<video>` elements (one per clip on the timeline, kept in `mediaMapRef`). Drawing order is `videoTracks` reversed so V1 stays on top. Per-clip alpha fade-in/out is applied via `ctx.globalAlpha` before `drawImage`. Audio routes directly through each video element's `volume`/`muted` (no Web Audio API).
+The preview is a canvas composited every RAF tick from hidden `<video>`/`<img>` elements — **one per _asset_**, shared by every clip referencing it, kept in `mediaMapRef` keyed by `assetId`. Sharing matters for the talking-head workflow, where dozens of fragments come from one source: one element means a single decode pipeline and small forward seeks at cuts instead of N decoders each seeking from zero. The trade-off is that only one clip from a given asset can be the active one in a frame (two simultaneous PIPs of the same source at different times are not handled). Drawing order is `videoTracks` reversed so V1 stays on top. Per-clip alpha fade-in/out is applied via `ctx.globalAlpha` before `drawImage`. Audio routes directly through each video element's `volume`/`muted` (no Web Audio API).
 
 **The media-map effect must recreate a `<video>` when an asset's URL changes**, not only when a clip is added/removed. After a project load (autosave restore or open dialog) clip IDs are reused but `URL.createObjectURL(...)` produces fresh URLs — old video elements end up holding revoked URLs and the canvas goes black. The effect compares `el.currentSrc` against `asset.url` and tears down stale entries.
 
@@ -177,6 +177,19 @@ The `inputCounter` in `buildCommand` is decoupled from `fileMap.length` so subti
 
 **Export**: the per-clip filter chain is `trim → setpts → scale=W*userScale:H*userScale:force_original_aspect_ratio=decrease` (no longer pads to canvas — that's how PIP works), then optional `eq=brightness=:contrast=:saturation=:gamma=`, then `format=yuva420p`, optional `rotate=rad:c=black@0:ow=...:oh=...` with bounding-box expressions, optional `colorchannelmixer=aa=opacity` for static opacity, then fades, then `tpad`. Final `overlay` uses expressions `x=(main_w-overlay_w)/2+TX` so the rotated bounding box is centered correctly.
 
+## Blend modes & glow
+
+`Clip.blendMode` (`normal` | `screen` | `addition` | `multiply` | `overlay` | `softlight` | `lighten` | `darken`, default `normal`) plus `Clip.glow` (0..1) and `Clip.glowRadius` (px). Exposed in the **합성** section of the properties panel. The three lookup tables live in `src/types.ts`.
+
+**Preview** maps the mode to `ctx.globalCompositeOperation` via `BLEND_CANVAS`, and approximates glow by redrawing the cached frame blurred + crushed with `globalCompositeOperation='lighter'`.
+
+**Export**:
+
+- Glow = `split` → `curves=all='0/0 0.55/0 1/1'` (crush darks to isolate highlights) → `gblur` → `blend=all_mode=screen` back over the original. It sits *before* `eq`, so colour correction shapes the bloom too. `gblur` is a CPU filter and is genuinely expensive at 1080p — it, not the encoder, is the bottleneck on a glow-heavy timeline.
+- Blend layers take a **separate chain from the normal overlay path**. `blend` ignores alpha for the RGB math and needs both inputs at full canvas size, so the layer is padded / faded / time-extended with the mode's **neutral colour** from `BLEND_NEUTRAL` (black for screen-type, white for multiply-type, mid-grey for overlay/soft-light) instead of transparent black — anything else tints the area outside the clip. Opacity goes through `blend=all_opacity=` rather than `colorchannelmixer=aa=`, which has no effect on blend math.
+
+Verified natively (glow + screen-blend layer + NVENC, real MP4 out, non-black frames). **The wasm path for these two features has not been verified end-to-end** — FFmpeg.wasm is stricter than the native binary, so confirm with a real browser export before trusting it there.
+
 ## Direct manipulation on preview canvas
 
 `src/components/CanvasOverlay.tsx` renders a floating bounding box over the selected clip's rendered position on the preview canvas, with 4 corner scale handles + a top rotation handle. It's mounted as a child of `.preview-stage` next to the canvas. Position is recomputed every RAF tick by reading `canvasRef.current.getBoundingClientRect()` and translating the clip's project-pixel transform (`(W - dw)/2 + transformX`, etc. — same math as `drawFrame`) into viewport-px via the `cssWidth / settings.width` scale factor. The wrapper uses `position: fixed` so it doesn't need a positioned ancestor.
@@ -233,9 +246,47 @@ When dragging a clip in 'move' mode, the drag captures `memberStarts` for every 
 
 `state.markers: Marker[]` (id, time, text, color). Press **M** to add at the playhead. Right-click a marker on the ruler to delete; click/scrub seeks to it. Markers are tracked by the temporal middleware so undo/redo also covers them.
 
-## Multi-threaded FFmpeg
+## FFmpeg core: single-threaded, no service worker
 
-We ship `@ffmpeg/core-mt` (not the single-thread `@ffmpeg/core`). It needs SharedArrayBuffer, which requires `crossOriginIsolated` — provided by the COOP/COEP headers in dev (Vite config) and `coi-serviceworker.js` in production. The Vite `copyFfmpegCore` plugin now also copies `ffmpeg-core.worker.js` from `node_modules/@ffmpeg/core-mt/dist/esm/` to `public/ffmpeg-core/`, and `export.ts` passes its URL through `toBlobURL` as `workerURL` in `ff.load()`.
+We ship the **single-threaded** `@ffmpeg/core`. An earlier round used `@ffmpeg/core-mt` + `coi-serviceworker` for SharedArrayBuffer, but the SW caused more export breakage than the threading was worth. Current state:
+
+- `vite.config.ts`'s `copyFfmpegCore` copies `node_modules/@ffmpeg/core/dist/esm/{ffmpeg-core.js,ffmpeg-core.wasm}` plus `@ffmpeg/ffmpeg/dist/esm/worker.js` (as `ffmpeg-worker.js`) into `public/ffmpeg-core/`, and actively deletes a stale `ffmpeg-core.worker.js` if one is left over from the core-mt era.
+- `src/main.tsx` **unregisters every service worker** on load and reloads once if one was controlling the page, so no cached SW can intercept requests.
+- No `workerURL` is passed to `ff.load()` — only `classWorkerURL`, `coreURL`, `wasmURL`.
+
+Do not reintroduce core-mt without also re-adding cross-origin isolation; and if you do, verify an actual export produces a real MP4 first.
+
+## Playback performance — the playhead bus
+
+`src/state/playheadBus.ts` is a tiny module-level pub/sub that carries the playhead value at 60 fps **outside** the Zustand store.
+
+The problem it solves: the RAF loop advances the playhead every frame, and `Timeline` used to subscribe to `state.playhead`. Timeline renders every track, clip, waveform, subtitle and marker, so the entire tree was rebuilt 60 times a second — and `Waveform` rebuilt its SVG path (a scan over peaks stored at 100/sec) on each of those renders. Cost grew with clip count, which is why the editor got slower the more you cut.
+
+Rules to preserve:
+
+- **Never `useEditor((s) => s.playhead)` in a component that renders the timeline or the clip tree.** `Timeline` and `Preview` both deliberately do not. Read `useEditor.getState().playhead` inside handlers instead — the store is still the source of truth and stays exact, because `setPlayhead` writes to the store *and* publishes to the bus.
+- Things that must move at 60 fps subscribe to the bus and poke the DOM directly: `Playhead` (writes `style.transform`), `PlayheadReadout`, `SeekBar`, `PlayheadTime`.
+- `Waveform`, `ThumbStrip` and `ClipView` are `React.memo`ed. `ClipView` derives its select/update callbacks from `useEditor.getState()` internally rather than taking them as props — passing arrow functions from `Timeline` would create new references every render and defeat the memo.
+
+## Desktop build (Tauri) — `src-tauri/`
+
+The same React app ships as both the web build (GitHub Pages, unchanged) and a native desktop app. The desktop build exists because the browser imposes hard limits that no optimisation removes: the wasm32 heap ceiling (~2 GB usable), no hardware encoders, and no ability to decode professional codecs.
+
+- `npm run tauri:dev` / `npm run tauri:build`. The desktop frontend build is `npm run build:tauri` (`scripts/build-tauri.mjs`), which is just `npm run build` with `VITE_BASE=/` — the app is served from its own root, not the Pages sub-path.
+- Rust commands live in `src-tauri/src/ffmpeg.rs` and `src-tauri/src/files.rs`; `src/utils/native.ts` is the typed frontend bridge. `isNative()` gates everything, and all Tauri imports are dynamic so the web bundle never pulls them in.
+- **ffmpeg is not bundled** — it is resolved at runtime from `NABIVIDEO_FFMPEG`, then a binary next to the executable, then `PATH`. `ffmpeg_info` reports the resolved path, version, and which hardware encoders the build exposes, so the export dialog only offers encoders that actually exist.
+
+### Native export — `src/utils/exportNative.ts`
+
+**The filter graph is not reimplemented.** `buildCommand` in `export.ts` already returns a plain `string[]`, and those args are passed to the native binary verbatim, so both backends render identically. Only three things differ:
+
+1. **Inputs.** Assets added through the desktop picker carry an absolute path on the `File` as a non-enumerable `__nativePath`, and the export rewrites the input arg to that path — nothing is copied, which is what lets the desktop build work on footage larger than memory. Blob-only assets (project restored from IndexedDB, imported `.zip`) fall back to being written into the scratch dir.
+2. **Output.** The user picks the destination up front and ffmpeg writes there directly; a multi-GB render never passes through a `Blob`.
+3. **Encoder.** `encoderArgs()` in `export.ts` maps an encoder name to its rate-control flags — the families do not share syntax (x264 `-crf`, NVENC `-cq` + `-b:v 0`, QSV `-global_quality`, AMF `-qp_i`/`-qp_p`).
+
+**Relative names inside filter strings** (`rnnoise.rnnn`, `sub0.png`) are NOT rewritten to absolute paths — on Windows the drive colon collides with ffmpeg's filter argument separator. Instead `ffmpeg_run` takes a `cwd` and runs from the scratch dir where those files are written under exactly those names.
+
+When the preview needs a transcoded proxy (HEVC etc.), `__nativePath` is carried across to the proxy `File` so the **export still renders from the untouched original** — native ffmpeg reads what the webview cannot.
 
 ## Snap
 
