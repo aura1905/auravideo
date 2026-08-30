@@ -4,6 +4,8 @@ import { loadMediaFile, generateWaveform, generateThumbnailStrip, formatTime } f
 import { ensurePreviewable } from '../utils/proxy';
 import type { MediaAsset, Clip } from '../types';
 import { isNative, openMediaDialog, readFileAsFile } from '../utils/native';
+import { createGeneratorAsset } from '../utils/generators';
+import type { GeneratorSpec } from '../types';
 
 export function MediaLibrary() {
   const assets = useEditor((s) => s.assets);
@@ -159,6 +161,28 @@ export function MediaLibrary() {
     e.dataTransfer.effectAllowed = 'copy';
   };
 
+  /**
+   * Painted layers — a solid wash, a ramp, a centre mask. These are the pieces
+   * a music-show backdrop is built from besides the footage itself: the beat
+   * accent that gets screened on top, and the mask that keeps the middle of
+   * the wall dark where the members stand. They become ordinary PNG assets, so
+   * everything downstream (preview, export, project zip) treats them as images.
+   */
+  const addGenerator = async (spec: GeneratorSpec, name: string) => {
+    const st = useEditor.getState();
+    setBusy(true);
+    setBusyMsg('레이어 생성 중…');
+    try {
+      const a = await createGeneratorAsset(spec, st.settings.width, st.settings.height, name);
+      addAsset(a);
+    } catch (e) {
+      alert(`레이어를 만들지 못했습니다: ${(e as Error).message}`);
+    } finally {
+      setBusy(false);
+      setBusyMsg('');
+    }
+  };
+
   return (
     <div
       className={`media-library ${dragOver ? 'drag-over' : ''}`}
@@ -190,6 +214,32 @@ export function MediaLibrary() {
           }}
         />
       </div>
+      <div className="ml-generators">
+        <span className="ml-gen-label">생성 레이어</span>
+        <button
+          disabled={busy}
+          title="흰 단색 — 비트 액센트용. 스크린 블렌드 + 펄스와 함께 쓰세요."
+          onClick={() => addGenerator({ type: 'solid', color: '#ffffff' }, '흰색 단색')}
+        >⬜ 단색</button>
+        <button
+          disabled={busy}
+          title="가로 그라데이션 — 구간 그레이딩 워시용"
+          onClick={() =>
+            addGenerator({ type: 'linear', color: '#3a6fd8', color2: '#d84a8a', angle: 0, opacity: 0.6 }, '그라데이션')
+          }
+        >🌈 그라데이션</button>
+        <button
+          disabled={busy}
+          title="중앙 마스크 — 멤버가 서는 가운데를 어둡게 눌러 둡니다"
+          onClick={() =>
+            addGenerator(
+              { type: 'radial', color: '#000000', innerRadius: 0, outerRadius: 0.62, opacity: 0.55 },
+              '중앙 마스크'
+            )
+          }
+        >⚫ 중앙 마스크</button>
+      </div>
+
       <div className="ml-list">
         {Object.values(assets).length === 0 && (
           <div className="ml-empty">파일을 드래그하거나 "파일 추가"로 불러오세요</div>

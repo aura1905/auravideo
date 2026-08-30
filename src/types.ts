@@ -98,6 +98,79 @@ export interface BeatGrid {
   offset: number;
 }
 
+/**
+ * A layer painted by the editor instead of loaded from disk: a solid colour,
+ * a linear gradient, or a radial falloff. These exist because a music-show
+ * backdrop is assembled from *plates plus light* — a beat flash, a section
+ * grading wash, a mask that keeps the centre of the wall dark so the members
+ * stand out. All three are one solid rectangle away, and requiring the user
+ * (or an agent) to go make a PNG in another program to get them is the thing
+ * that stopped the timeline from being buildable by script.
+ *
+ * A generator asset is materialised as a real PNG `File` at creation time, so
+ * every existing path — preview cache, export input, project zip, autosave —
+ * handles it as an ordinary image with no special-casing. `spec` is kept so
+ * the layer can be repainted when its colours or the canvas size change.
+ */
+export type GeneratorType = 'solid' | 'linear' | 'radial';
+
+export interface GeneratorSpec {
+  type: GeneratorType;
+  /** Primary colour, `#rgb`/`#rrggbb`. For `radial` this is the centre. */
+  color: string;
+  /** Linear: the far end of the ramp. Radial: the outer edge (default transparent). */
+  color2?: string;
+  /** Linear only: ramp direction in degrees. 0 = left→right, 90 = top→bottom. */
+  angle?: number;
+  /** Radial only: fraction of the half-diagonal that stays fully `color`. */
+  innerRadius?: number;
+  /** Radial only: fraction of the half-diagonal where the falloff ends. */
+  outerRadius?: number;
+  /** Radial only: swap the stops, giving a vignette (clear centre, tinted edges). */
+  invert?: boolean;
+  /** Uniform alpha multiplier baked into the PNG, 0..1 (default 1). */
+  opacity?: number;
+}
+
+export const GENERATOR_LABELS: Record<GeneratorType, string> = {
+  solid: '단색',
+  linear: '그라데이션',
+  radial: '방사형 / 마스크',
+};
+
+/**
+ * Periodic opacity envelope — the beat accent.
+ *
+ * A backdrop is synced to music on two different time scales, and they need
+ * different tools. Structure (sections, 8-bar phrases) is expressed by CUTS;
+ * rhythm (beats, downbeats) must NOT be, because a wall that re-cuts every
+ * 0.5 s reads as an advert, not as stage lighting. Rhythm is expressed by
+ * *modulating* a layer that stays on screen — which is what this is.
+ *
+ * `E(t) = min + (max-min) · max(0, 1 - ((t - phase) mod period) / decay)`
+ *
+ * One period, one attack-decay ramp. `period` comes straight from the beat
+ * grid (a beat, or `barSeconds` for downbeat accents) and `phase` is an
+ * absolute timeline second, so the envelope is anchored to the SONG, not to
+ * the clip — trimming or moving the clip does not slide the accents off the
+ * beat.
+ *
+ * Preview multiplies it into `globalAlpha`; export builds the same curve as a
+ * tiny greyscale source and merges it into the layer. See `utils/generators.ts`.
+ */
+export interface PulseEnvelope {
+  /** Seconds between pulses. */
+  period: number;
+  /** Timeline seconds of one pulse peak; the grid extends from here. */
+  phase: number;
+  /** Seconds to fall from `max` to `min`. Clamped to `period`. */
+  decay: number;
+  /** Opacity multiplier between pulses, 0..1. */
+  min: number;
+  /** Opacity multiplier at the peak, 0..1. */
+  max: number;
+}
+
 export interface MediaAsset {
   id: string;
   name: string;
@@ -120,6 +193,9 @@ export interface MediaAsset {
   // Generated lazily after the asset is added to the library.
   waveform?: number[];
   waveformPeaksPerSecond?: number;
+  /** Set when this asset was painted by the editor rather than imported.
+   *  The PNG in `file` is the render of this spec at `width`x`height`. */
+  generator?: GeneratorSpec;
 }
 
 export interface Clip {
@@ -181,6 +257,10 @@ export interface Clip {
   // Both default off (undefined = off).
   normalizeLoudness?: boolean;
   denoise?: boolean;
+  // Beat accent. Multiplies `transformOpacity` with a periodic ramp anchored
+  // to absolute timeline time, so accents stay on the song's grid no matter
+  // how the clip is trimmed or moved. Undefined = steady (previous behaviour).
+  pulse?: PulseEnvelope;
 }
 
 export interface Marker {

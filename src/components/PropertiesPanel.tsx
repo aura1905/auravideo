@@ -1,6 +1,7 @@
 import { useEditor } from '../state/editorStore';
 import type { BlendMode, Clip, FillMode, Subtitle } from '../types';
 import { BLEND_LABELS, FILL_LABELS } from '../types';
+import { PULSE_DEFAULTS } from '../utils/generators';
 import { FONT_PRESETS } from '../utils/drawSubtitle';
 
 export function PropertiesPanel() {
@@ -15,6 +16,7 @@ export function PropertiesPanel() {
   const detachAudio = useEditor((s) => s.detachAudio);
   const settings = useEditor((s) => s.settings);
   const setSettings = useEditor((s) => s.setSettings);
+  const beatGrid = useEditor((s) => s.beatGrid);
 
   if (subtitleSelection.length > 0) {
     return (
@@ -314,6 +316,110 @@ export function PropertiesPanel() {
         <button onClick={() => apply({ blendMode: 'normal', glow: 0, glowRadius: 24 })}>
           합성 리셋
         </button>
+      </details>
+      <details className="props-section" open={!!first.pulse}>
+        <summary>비트 펄스</summary>
+        <div className="props-hint">
+          투명도를 주기적으로 흔들어 박자를 표현합니다. 컷을 나누지 않고 빛만 움직이는
+          방식이라, LED 배경처럼 화면이 자주 바뀌면 안 되는 곳에 씁니다. 흰 단색 레이어 +
+          스크린 블렌드가 기본 조합입니다.
+        </div>
+        <div className="props-row">
+          <label>사용</label>
+          <input
+            type="checkbox"
+            checked={!!first.pulse}
+            onChange={(e) =>
+              apply({
+                pulse: e.target.checked
+                  ? { ...PULSE_DEFAULTS, phase: first.start }
+                  : undefined,
+              })
+            }
+          />
+          {beatGrid && (
+            <>
+              <button
+                title="박자마다 한 번 — 잔잔한 그레인"
+                onClick={() =>
+                  apply({
+                    pulse: {
+                      ...(first.pulse ?? PULSE_DEFAULTS),
+                      period: beatGrid.barSeconds / 4,
+                      phase: (beatGrid.downbeats[0] ?? 0) + (beatGrid.offset ?? 0),
+                    },
+                  })
+                }
+              >
+                ♪ 비트
+              </button>
+              <button
+                title="마디마다 한 번 — 관객이 실제로 읽는 악센트"
+                onClick={() =>
+                  apply({
+                    pulse: {
+                      ...(first.pulse ?? PULSE_DEFAULTS),
+                      period: beatGrid.barSeconds,
+                      phase: (beatGrid.downbeats[0] ?? 0) + (beatGrid.offset ?? 0),
+                    },
+                  })
+                }
+              >
+                ♩ 마디
+              </button>
+            </>
+          )}
+        </div>
+        {first.pulse && (
+          <>
+            <SliderInput
+              label="주기 (초)"
+              value={first.pulse.period}
+              min={0.05}
+              max={4}
+              step={0.01}
+              decimals={3}
+              onChange={(v) => apply({ pulse: { ...first.pulse!, period: v } })}
+            />
+            <SliderInput
+              label="감쇠 (초)"
+              value={first.pulse.decay}
+              min={0.02}
+              max={2}
+              step={0.01}
+              decimals={2}
+              onChange={(v) => apply({ pulse: { ...first.pulse!, decay: v } })}
+            />
+            <SliderInput
+              label="최대"
+              value={first.pulse.max}
+              min={0}
+              max={1}
+              step={0.01}
+              decimals={2}
+              onChange={(v) => apply({ pulse: { ...first.pulse!, max: v } })}
+            />
+            <SliderInput
+              label="최소"
+              value={first.pulse.min}
+              min={0}
+              max={1}
+              step={0.01}
+              decimals={2}
+              onChange={(v) => apply({ pulse: { ...first.pulse!, min: v } })}
+            />
+            <div className="props-row">
+              <label>기준 시각</label>
+              <span className="props-value">{first.pulse.phase.toFixed(3)}초</span>
+              <button
+                title="펄스는 타임라인 절대 시간에 고정됩니다 — 클립을 옮겨도 박자에서 밀리지 않게."
+                onClick={() => apply({ pulse: { ...first.pulse!, phase: first.start } })}
+              >
+                클립 시작에 맞춤
+              </button>
+            </div>
+          </>
+        )}
       </details>
       <details className="props-section">
         <summary>색 보정</summary>

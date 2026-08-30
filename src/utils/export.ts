@@ -4,6 +4,7 @@ import { BLEND_NEUTRAL } from '../types';
 import { paintSubtitle } from './drawSubtitle';
 import { getFFmpeg } from './ffmpegCore';
 
+import { pulseGeqExpr, pulseIsActive } from './generators';
 export type ProgressCb = (info: { phase: string; progress: number; log?: string }) => void;
 
 /** Render quality tier. `delivery` is for the master that actually ships. */
@@ -171,6 +172,36 @@ function emitBackgroundFill(
     `[${key}bgo][${key}fgo]overlay=x=(main_w-overlay_w)/2:y=(main_h-overlay_h)/2:eof_action=pass:shortest=0[${key}fill]`
   );
   return `[${key}fill]`;
+}
+
+/**
+ * Emit a greyscale source carrying a `PulseEnvelope` over time.
+ *
+ * The curve is evaluated by `geq` on a 32x32 canvas and then blown up with a
+ * nearest-neighbour scale: the expression is per-pixel, so computing it at
+ * full canvas size would cost 4 million evaluations a frame to produce one
+ * value. `T` inside the source is its own clock, and the callers below apply
+ * the pulse only after `tpad` has placed the layer on the timeline, so that
+ * clock equals project time and the phase needs no correction.
+ *
+ * Returns the label of a `gray` stream `duration` seconds long.
+ */
+function emitPulseEnvelope(
+  parts: string[],
+  key: string,
+  expr: string,
+  fps: number,
+  duration: number,
+  w: number,
+  h: number,
+  invert: boolean
+): string {
+  const value = invert ? `1-(${expr})` : `(${expr})`;
+  parts.push(
+    `color=c=black:s=32x32:r=${fps}:d=${duration.toFixed(3)},format=gray,` +
+      `geq=lum='255*(${value})',scale=${w}:${h}:flags=neighbor[${key}]`
+  );
+  return key;
 }
 
 function sanitize(name: string): string {
@@ -476,6 +507,7 @@ export function buildCommand(
       filters.push(`colorchannelmixer=aa=${op.toFixed(3)}`);
     }
     const blend = c.blendMode ?? 'normal';
+    const pulse = pulseIsActive(c.pulse) ? c.pulse : undefined;
     const label = `v${i}`;
     const outLabel = `vo${i}`;
 
@@ -486,7 +518,29 @@ export function buildCommand(
       if (c.start > 0) {
         filters.push(`tpad=start_duration=${c.start.toFixed(3)}:start_mode=add:color=black@0`);
       }
-      filterParts.push(`${chainIn}${filters.join(',')}[${label}]`);
+      if (!pulse) {
+        filterParts.push(`${chainIn}${filters.join(',')}[${label}]`);
+      } else {
+        // Beat accent: multiply the layer's existing alpha by the envelope.
+        // It is applied AFTER tpad, so the envelope's own clock is already
+        // project time — and the transparent padding stays transparent,
+        // because anything times zero is zero.
+        //
+        // The alpha plane is extracted, multiplied, and merged back rather
+        // than replaced, so a rotated or fitted layer keeps the transparent
+        // border `overlay` needs. The envelope is sized to the layer with
+        // scale2ref because the rendered size depends on fill mode, user
+        // scale and rotation — recomputing it here would be a second copy of
+        // that geometry, and copies drift.
+        const raw = `${label}r`;
+        filterParts.push(`${chainIn}${filters.join(',')}[${raw}]`);
+        emitPulseEnvelope(filterParts, `${label}e`, pulseGeqExpr(pulse, 0), FPS, duration, 32, 32, false);
+        filterParts.push(`[${raw}]split[${label}c][${label}k]`);
+        filterParts.push(`[${label}k]alphaextract[${label}a]`);
+        filterParts.push(`[${label}e][${label}a]scale2ref=w=iw:h=ih:flags=neighbor[${label}es][${label}a2]`);
+        filterParts.push(`[${label}a2][${label}es]blend=all_mode=multiply:shortest=1[${label}a3]`);
+        filterParts.push(`[${label}c][${label}a3]alphamerge[${label}]`);
+      }
       // overlay_w / overlay_h are the (possibly rotated) overlay dimensions.
       // main_w / main_h are the canvas dimensions. Center + user offset.
       filterParts.push(
@@ -521,13 +575,49 @@ export function buildCommand(
       // at 95.9 in gbrp.) The running canvas is converted back afterwards so
       // the rest of the graph — overlays, subtitle PNGs — is unaffected.
       filters.push('format=gbrp');
+      let layerLabel = label;
       filterParts.push(`${chainIn}${filters.join(',')}[${label}]`);
+      if (pulse) {
+        // A blend layer has no usable alpha — `blend` reads RGB only — so the
+        // accent has to move the layer toward the mode's NEUTRAL colour
+        // instead of toward transparent. Same target as the padding above,
+        // for the same reason: neutral is the value that leaves the layers
+        // below untouched, so a pulse at its floor is a true no-op.
+        //
+        //   want:  L' = N + E·(L - N)
+        //   black neutral  → L' = E·L                  = multiply by E
+        //   white neutral  → L' = 1-(1-L)·E            = screen with (1-E)
+        //   grey neutral   → no shortcut; evaluate the lerp per pixel
+        //
+        // The first two are ordinary blend modes and cost nothing extra; only
+        // overlay / soft-light fall back to the per-pixel expression.
+        const expr = pulseGeqExpr(pulse, 0);
+        const pulsed = `${label}p`;
+        const neutral0 = BLEND_NEUTRAL[blend] ?? 'black';
+        if (neutral0 === 'black') {
+          emitPulseEnvelope(filterParts, `${label}e`, expr, FPS, duration, W, H, false);
+          filterParts.push(`[${label}e]format=gbrp[${label}eg]`);
+          filterParts.push(`[${label}][${label}eg]blend=all_mode=multiply:shortest=1[${pulsed}]`);
+        } else if (neutral0 === 'white') {
+          emitPulseEnvelope(filterParts, `${label}e`, expr, FPS, duration, W, H, true);
+          filterParts.push(`[${label}e]format=gbrp[${label}eg]`);
+          filterParts.push(`[${label}][${label}eg]blend=all_mode=screen:shortest=1[${pulsed}]`);
+        } else {
+          filterParts.push(
+            `color=c=${neutral0}:s=${W}x${H}:r=${FPS}:d=${duration.toFixed(3)},format=gbrp[${label}n]`
+          );
+          filterParts.push(
+            `[${label}][${label}n]blend=all_expr='B+(${expr})*(A-B)':shortest=1[${pulsed}]`
+          );
+        }
+        layerLabel = pulsed;
+      }
       const rgbBase = `${label}rgb`;
       filterParts.push(`[${lastVideoLabel}]format=gbrp[${rgbBase}]`);
       // all_opacity mixes the blended result back toward the base, which is
       // what the clip's opacity slider means for a blend layer.
       filterParts.push(
-        `[${rgbBase}][${label}]blend=all_mode=${blend}:all_opacity=${op.toFixed(3)}:shortest=0,format=yuv420p[${outLabel}]`
+        `[${rgbBase}][${layerLabel}]blend=all_mode=${blend}:all_opacity=${op.toFixed(3)}:shortest=0,format=yuv420p[${outLabel}]`
       );
     }
     lastVideoLabel = outLabel;

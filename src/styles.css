@@ -1026,3 +1026,38 @@ body.reordering-track * { cursor: grabbing !important; }
 }
 .beat-seg.energy-high { background: rgba(240, 140, 90, 0.26); }
 .beat-seg.energy-low  { background: rgba(90, 150, 220, 0.10); }
+
+/* Painted "generator" layers: solid / gradient / centre mask. Sits directly
+   under the media library header because these are asset-creating actions,
+   the same as "파일 추가" next to it. */
+.ml-generators {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px 6px;
+  border-bottom: 1px solid var(--border, #2a2a32);
+  flex-wrap: wrap;
+}
+.ml-gen-label {
+  font-size: 11px;
+  opacity: 0.6;
+  margin-right: 2px;
+}
+.ml-generators button {
+  font-size: 11px;
+  padding: 2px 6px;
+}
+
+/* Explanatory line inside a properties section — used where a control needs a
+   sentence of context (the beat pulse, whose whole point is non-obvious). */
+.props-hint {
+  font-size: 11px;
+  line-height: 1.5;
+  opacity: 0.6;
+  padding: 2px 0 6px;
+}
+.props-value {
+  font-size: 11px;
+  opacity: 0.8;
+  min-width: 56px;
+}

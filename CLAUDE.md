@@ -377,7 +377,8 @@ The editor is drivable by an external process — a script or an AI agent — so
 
 - **Off by default.** The Rust side (`src-tauri/src/bridge.rs`) opens nothing unless the app is launched with `NABIVIDEO_AGENT=1`. It then binds a loopback-only HTTP server on a random port and writes `{port, token}` to `<temp>/nabivideo/agent.json`. Every request must carry `X-Agent-Token`.
 - **Frontend** (`src/utils/agentBridge.ts`) listens for `agent://request`, dispatches, and answers via the `agent_reply` command.
-- Commands (the `handlers` map in `agentBridge.ts` is the authority): `ping`, `state`, `project.reset`, `settings.set`, `media.import`, `clip.add|update|split|remove`, `clip.cutOnBeats`, `subtitle.add|update`, `beatgrid.load`, `beatgrid.clear`, `playhead.set`, `screenshot`, `export`.
+- Commands (the `handlers` map in `agentBridge.ts` is the authority): `ping`, `state`, `project.reset`, `settings.set`, `media.import`, `generator.add`, `clip.add|update|split|remove`, `clip.cutOnBeats`, `subtitle.add|update`, `beatgrid.load`, `beatgrid.clear`, `music.assemble`, `playhead.set`, `screenshot`, `export`.
+- `clip.add` and `clip.update` also take the look fields directly (`blendMode`, `fillMode`, `glow`, `transform*`, colour correction, `pulse`), so placing a pulsing screen-blended accent layer is one call rather than an add plus a patch.
 - `screenshot` seeks, waits `settleMs` for the decoder, and writes the preview canvas to a PNG — this is how an agent *sees* its edit, and it is what caught the blend colourspace bug by disagreeing with the export.
 
 ### Driving it
@@ -437,6 +438,126 @@ When the preview needs a transcoded proxy (HEVC etc.), `__nativePath` is carried
 - `splitClipAt` converts the click's timeline offset into a media offset before splitting.
 - `Preview.drawFrame` sets `m.el.playbackRate = speed` and computes `localTime = inPoint + (head - start) * speed`.
 - `export.ts` emits `setpts=(PTS-STARTPTS)/speed` for video and chains `atempo` (each instance limited to `[0.5, 2.0]`) for audio. Range translation also multiplies the timeline trim by `speed` when adjusting `inPoint`/`outPoint`.
+
+## Generated layers — `src/utils/generators.ts`
+
+A music-show backdrop is *plates plus light*: the AI footage, and then a beat
+flash, a section grading wash, and a mask that keeps the middle of the wall
+dark because that is where the members stand. The last three are one rectangle
+each, and having to leave the app to make a PNG for them is what stopped a
+timeline from being buildable by script.
+
+`GeneratorSpec` is `solid` | `linear` | `radial` (radial takes `invert` for a
+vignette). `createGeneratorAsset(spec, w, h)` paints it and returns an ordinary
+`MediaAsset` — **the layer is materialised as a real PNG `File` at creation
+time**, so preview caching, export inputs, the project zip and autosave need no
+knowledge of generators at all; they see an image. `asset.generator` keeps the
+spec so the layer can be repainted (`repaintGeneratorAsset`) when its colours or
+the canvas size change.
+
+Radii are fractions of the half-diagonal, so a mask authored on a 16:9 canvas
+behaves the same when the project is 32:9.
+
+Created from the 생성 레이어 row in the media library, or over the bridge with
+`generator.add`.
+
+## Beat pulse — `Clip.pulse`
+
+The second half of the same job, and the reason cuts are not the answer:
+
+> Structure (sections, 8-bar phrases) is expressed with **cuts**.
+> Rhythm (beats, downbeats) is expressed with **light**, never with cuts.
+
+A wall that re-cuts every half second reads as an advert; LED is closer to a
+lighting instrument than to a screen. So `PulseEnvelope` modulates a layer that
+stays on screen:
+
+```
+E(t) = min + (max-min) · max(0, 1 - ((t - phase) mod period) / decay)
+```
+
+`phase` is an **absolute timeline second**, not a clip offset — trimming or
+moving the clip does not slide the accents off the beat. `period` comes from
+the beat grid (`barSeconds/4` for beats, `barSeconds` for downbeats).
+
+`pulseAt` (preview: a number per frame) and `pulseGeqExpr` (export: one FFmpeg
+expression) live side by side in `generators.ts` precisely because this is
+where preview and export drift apart if they are written twice. Measured
+agreement: max 1/255, i.e. 8-bit rounding.
+
+**Export.** The envelope is evaluated by `geq` on a **32x32** source and then
+blown up with `flags=neighbor` — the expression is per-pixel, so at canvas size
+it would cost 4 M evaluations a frame to produce one number. The pulse is
+applied *after* `tpad`, so the source's `T` is already project time.
+
+- **Alpha path** (`blendMode: normal`): `split → alphaextract → blend=multiply
+  with the envelope → alphamerge`. The alpha is multiplied, not replaced, so a
+  rotated or fitted layer keeps the transparent border `overlay` needs. The
+  envelope is sized with `scale2ref` against the layer rather than recomputing
+  the rendered size — that geometry already exists once, and copies drift.
+- **Blend path**: `blend` reads RGB only, so the accent moves the layer toward
+  the mode's **neutral colour** (same target as the padding). `L' = N + E·(L-N)`
+  reduces to `blend=multiply` with the envelope for black-neutral modes
+  (screen/addition/lighten), `blend=screen` with the *inverted* envelope for
+  white-neutral ones (multiply/darken), and only overlay / soft-light need the
+  per-pixel `blend=all_expr`.
+
+Verified against native ffmpeg 8.1: between pulses the output is **identical to
+the untouched base** (YAVG 126 → 126 on the blend path, 16 → 16 on the alpha
+path), and a 25%-area white layer at peak gives exactly the predicted 70.75. A
+pulse at its floor is a true no-op, which is the property the whole design
+rests on.
+
+**Fades and pulses are not interchangeable.** The export clamps `fadeIn/fadeOut`
+to half the clip and the preview does not, so a full-length fade is the one
+shape where the two renderers disagree. A single decay (a transition flash) is
+therefore written as a pulse whose `period` equals the clip length, never as
+`fadeOut = duration`.
+
+## Music backdrop assembly — `src/utils/musicBackdrop.ts`
+
+`assembleMusicBackdrop(opts)` turns a beat grid plus a list of plates into a
+finished timeline. It is a **rule engine, not a guesser** — every decision is a
+number in `BackdropOptions`. Which plate belongs to which section stays with the
+caller: that judgement is the one thing automation has repeatedly got wrong here.
+
+Layer stack (top track = front):
+
+| track | contents |
+|---|---|
+| V1 | centre mask — radial, keeps the middle of the wall dark |
+| V2 | accents — beat pulse, downbeat pulse, transition flashes |
+| V3 | plates — the footage, looped to fill each section |
+| A1 | BGM |
+
+- **Sections** come from the analysis' own segments (`cutUnit: 'section'`) or
+  from every Nth downbeat (`'phrase'`, default 8 bars). Phrase boundaries are
+  anchored to the song, not to the first section.
+- **Transitions** are chosen by what the energy does across the boundary: a
+  lift → **hard cut** (the cut is the accent) plus a flash; a drop → 2-bar
+  dissolve; flat → 1 bar. Crossfades are **centred on the boundary**, so the
+  midpoint of the dissolve lands on the downbeat.
+- **Looping.** A plate shorter than its section is repeated in **equal** chunks,
+  not "full chunks plus a remainder" — a stub at the end of a section is shorter
+  than the dissolve that has to cross it. Solving for a whole number of equal
+  chunks makes the last one end exactly on the boundary: no overshoot past a
+  hard cut, always enough material for the fade.
+- **A crossfade is an overlap AND a pair of fades, and they must be the same
+  number.** The overlap is planned from the rules, but a fade is capped at half
+  a clip, and clip length depends on the overlap — so the two are solved as a
+  fixed point (shrink, re-plan, repeat; four passes).
+- **Accent levels are deliberately low** (0.12 beat / 0.28 bar at full energy)
+  and scale with each section's energy. 80% of the wall is hidden behind set,
+  beams and dancers; a pulse that reads well on a monitor is far too strong on
+  stage.
+
+Verified on a synthetic 120 BPM / 3-section song: sections tile 0→48 s with no
+gaps, the hard cut lands exactly on 16.000, and the dissolve's overlap (2.34 s)
+equals its fade length with its midpoint exactly on 32.000.
+
+Driven over the bridge with `music.assemble`, which takes the same options
+(deep-merged over `BACKDROP_DEFAULTS`) and returns the section table it decided
+on, so an agent can inspect the edit without a screenshot.
 
 ## Auto-edit templates — `src/utils/autoEdit.ts`
 

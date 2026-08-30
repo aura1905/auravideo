@@ -6,6 +6,7 @@ import type { Clip } from '../types';
 import { BLEND_CANVAS } from '../types';
 import { formatTime } from '../utils/media';
 import { paintSubtitle } from '../utils/drawSubtitle';
+import { pulseAt, pulseIsActive } from '../utils/generators';
 
 interface ClipMediaState {
   kind: 'video' | 'image';
@@ -399,6 +400,11 @@ function drawFrame(
         if (c.fadeOut > 0 && visualEnd - head < c.fadeOut) {
           alpha *= (visualEnd - head) / c.fadeOut;
         }
+        // Beat accent. Anchored to absolute timeline time (see PulseEnvelope),
+        // so it is evaluated at `head`, not at the clip-local offset. Folding
+        // it into `alpha` here means the glow pass below picks it up too — a
+        // pulsing layer's bloom pulses with it.
+        if (pulseIsActive(c.pulse)) alpha *= pulseAt(c.pulse, head);
         ctx.globalAlpha = Math.max(0, Math.min(1, alpha));
         // Refresh the per-clip cache from the live video whenever a fresh
         // frame is available. (Image clips: skip — their cache was populated

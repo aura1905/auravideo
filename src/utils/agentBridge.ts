@@ -10,13 +10,56 @@
  * the bridge (which requires NABIVIDEO_AGENT=1).
  */
 import { useEditor, newClipId, projectDuration, clipDisplayDur } from '../state/editorStore';
-import type { BeatGrid, Clip, Subtitle } from '../types';
+import type { BeatGrid, BlendMode, Clip, FillMode, GeneratorSpec, PulseEnvelope, Subtitle } from '../types';
 import { loadMediaFile, generateWaveform } from './media';
+import { createGeneratorAsset } from './generators';
+import { assembleMusicBackdrop, BACKDROP_DEFAULTS, type BackdropOptions } from './musicBackdrop';
 import { ensurePreviewable } from './proxy';
 import { isNative, readFileAsFile, tempRoot } from './native';
 import { exportProjectNative } from './exportNative';
 
 type Args = Record<string, any>;
+
+/**
+ * The optional look fields, pulled off a command's args in one place.
+ *
+ * `clip.add` and `clip.update` both accept them, so an agent can place a
+ * pulsing screen-blended accent layer in a single call instead of an add
+ * followed by a patch. Anything absent is left alone rather than reset —
+ * these are patches, not full states.
+ */
+function visualPatch(a: Args): Partial<Clip> {
+  const p: Partial<Clip> = {};
+  const num = (k: keyof Clip, v: any) => {
+    if (typeof v === 'number' && Number.isFinite(v)) (p as any)[k] = v;
+  };
+  num('transformX', a.transformX);
+  num('transformY', a.transformY);
+  num('transformScale', a.transformScale);
+  num('transformRotation', a.transformRotation);
+  num('transformOpacity', a.transformOpacity);
+  num('brightness', a.brightness);
+  num('contrast', a.contrast);
+  num('saturation', a.saturation);
+  num('gamma', a.gamma);
+  num('glow', a.glow);
+  num('glowRadius', a.glowRadius);
+  if (typeof a.blendMode === 'string') p.blendMode = a.blendMode as BlendMode;
+  if (typeof a.fillMode === 'string') p.fillMode = a.fillMode as FillMode;
+  if (typeof a.color === 'string') p.color = a.color;
+  if (a.pulse === null) p.pulse = undefined;
+  else if (a.pulse && typeof a.pulse === 'object') {
+    const q = a.pulse as Partial<PulseEnvelope>;
+    p.pulse = {
+      period: Number(q.period ?? 0.5),
+      phase: Number(q.phase ?? 0),
+      decay: Number(q.decay ?? 0.18),
+      min: Number(q.min ?? 0),
+      max: Number(q.max ?? 1),
+    };
+  }
+  return p;
+}
 
 function summary() {
   const s = useEditor.getState();
@@ -183,14 +226,46 @@ const handlers: Record<string, (a: Args) => Promise<any> | any> = {
       contrast: 1,
       saturation: 1,
       gamma: 1,
+      ...visualPatch(a),
     };
     useEditor.getState().addClip(clip);
     return { id: clip.id };
   },
 
   'clip.update': (a: Args) => {
-    useEditor.getState().updateClip(a.id, a.patch ?? {});
+    useEditor.getState().updateClip(a.id, { ...visualPatch(a), ...(a.patch ?? {}) });
     return { ok: true, clip: useEditor.getState().clips[a.id] ?? null };
+  },
+
+  /**
+   * Paint a generated layer (solid / gradient / radial) and add it to the
+   * library. Defaults to the project canvas size, which is what a full-bleed
+   * wash or a centre mask wants; pass width/height for anything else.
+   *
+   * This is the piece that lets a timeline be built entirely by script: beat
+   * flashes, section grading washes and the mask that keeps the middle of the
+   * wall dark are all one of these plus a blend mode.
+   */
+  'generator.add': async (a: Args) => {
+    const s = useEditor.getState();
+    const spec: GeneratorSpec = {
+      type: (a.type as GeneratorSpec['type']) ?? 'solid',
+      color: a.color ?? '#ffffff',
+      color2: a.color2,
+      angle: a.angle,
+      innerRadius: a.innerRadius,
+      outerRadius: a.outerRadius,
+      invert: a.invert,
+      opacity: a.opacity,
+    };
+    const asset = await createGeneratorAsset(
+      spec,
+      a.width ?? s.settings.width,
+      a.height ?? s.settings.height,
+      a.name
+    );
+    useEditor.getState().addAsset(asset);
+    return { id: asset.id, name: asset.name, width: asset.width, height: asset.height };
   },
 
   'clip.split': (a: Args) => {
@@ -285,6 +360,31 @@ const handlers: Record<string, (a: Args) => Promise<any> | any> = {
       cur = fresh[fresh.length - 1]; // keep cutting the right-hand remainder
     }
     return { cuts: points.length, newClipIds: made };
+  },
+
+  /**
+   * Build a whole music-synced backdrop in one call: plates cut onto the
+   * section grid, beat/downbeat accent layers, transition flashes and the
+   * centre mask. Every rule is an option — see `musicBackdrop.ts` — and the
+   * defaults are the LED-wall ones, so the minimum call is just the plate
+   * list.
+   *
+   * Requires a beat grid (`beatgrid.load`) and returns the section table it
+   * decided on, so the caller can inspect the edit without a screenshot.
+   */
+  'music.assemble': async (a: Args) => {
+    const d = BACKDROP_DEFAULTS;
+    const opts: BackdropOptions = {
+      ...d,
+      ...a,
+      transitionBars: { ...d.transitionBars, ...(a.transitionBars ?? {}) },
+      flash: { ...d.flash, ...(a.flash ?? {}) },
+      accent: { ...d.accent, ...(a.accent ?? {}) },
+      centerMask: { ...d.centerMask, ...(a.centerMask ?? {}) },
+      plateAssetIds: a.plateAssetIds ?? [],
+    };
+    const res = await assembleMusicBackdrop(opts);
+    return res;
   },
 
   'playhead.set': (a: Args) => {
