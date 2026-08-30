@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { useEditor, newClipId } from '../state/editorStore';
 import { loadMediaFile, generateWaveform, generateThumbnailStrip, formatTime } from '../utils/media';
-import { canBrowserPlayVideo, transcodeToH264 } from '../utils/transcode';
+import { ensurePreviewable } from '../utils/proxy';
 import type { MediaAsset, Clip } from '../types';
 import { isNative, openMediaDialog, readFileAsFile } from '../utils/native';
 
@@ -71,36 +71,21 @@ export function MediaLibrary() {
     try {
       for (const f of Array.from(files)) {
         try {
-          // Pre-import: if a video file can't be decoded by the browser
-          // (HEVC on Windows Chrome without the codec extension etc.),
-          // transcode it to H.264 via FFmpeg.wasm before treating it as
-          // an asset. Otherwise the canvas would silently show black frames.
+          // Pre-import: sources the webview can't decode (HEVC, ProRes, ...)
+          // get a preview proxy. `ensurePreviewable` picks a format that keeps
+          // transparency when the source has any, so a cut-out overlay looks
+          // the same on screen as it does in the render, and carries
+          // `__nativePath` across so the export still uses the original.
           let workingFile = f;
           if (f.type.startsWith('video/')) {
             setBusyMsg(`${f.name}: 코덱 확인 중…`);
-            const playable = await canBrowserPlayVideo(f);
-            if (!playable) {
-              try {
-                workingFile = await transcodeToH264(f, ({ phase, progress }) => {
-                  const pct = progress >= 0 ? ` ${Math.round(progress * 100)}%` : '';
-                  setBusyMsg(`${f.name}: ${phase}${pct}`);
-                });
-                // The transcode exists only so the *preview* has something the
-                // webview can decode. Carry the original path across so the
-                // export still renders from the untouched source — native
-                // ffmpeg reads HEVC/ProRes/etc. perfectly well.
-                const origPath = (f as File & { __nativePath?: string }).__nativePath;
-                if (origPath) {
-                  Object.defineProperty(workingFile, '__nativePath', {
-                    value: origPath,
-                    enumerable: false,
-                  });
-                }
-              } catch (e: any) {
-                console.error('transcode failed', e);
-                alert(`${f.name} 자동 변환 실패: ${e?.message ?? e}\n다른 도구로 H.264로 변환해 다시 올려주세요.`);
-                continue;
-              }
+            try {
+              const r = await ensurePreviewable(f, (msg) => setBusyMsg(`${f.name}: ${msg}`));
+              workingFile = r.file;
+            } catch (e: any) {
+              console.error('proxy failed', e);
+              alert(`${f.name} 자동 변환 실패: ${e?.message ?? e}\n다른 도구로 H.264로 변환해 다시 올려주세요.`);
+              continue;
             }
           }
           setBusyMsg(`${workingFile.name}: 로딩 중…`);

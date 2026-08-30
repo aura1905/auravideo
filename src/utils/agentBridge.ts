@@ -12,7 +12,7 @@
 import { useEditor, newClipId, projectDuration, clipDisplayDur } from '../state/editorStore';
 import type { BeatGrid, Clip, Subtitle } from '../types';
 import { loadMediaFile, generateWaveform } from './media';
-import { canBrowserPlayVideo, transcodeToH264 } from './transcode';
+import { ensurePreviewable } from './proxy';
 import { isNative, readFileAsFile, tempRoot } from './native';
 import { exportProjectNative } from './exportNative';
 
@@ -119,13 +119,9 @@ const handlers: Record<string, (a: Args) => Promise<any> | any> = {
     const out: any[] = [];
     for (const p of paths) {
       const original = await readFileAsFile(p);
-      let working: File = original;
-      if (original.type.startsWith('video/') && !(await canBrowserPlayVideo(original))) {
-        // The preview needs something the webview can decode; the export still
-        // uses the original through __nativePath, carried over here.
-        working = await transcodeToH264(original, () => {});
-        Object.defineProperty(working, '__nativePath', { value: p, enumerable: false });
-      }
+      // ensurePreviewable keeps transparency intact — an RMBG'd element must
+      // not lose its alpha on the way to the preview.
+      const { file: working } = await ensurePreviewable(original);
       const asset = await loadMediaFile(working);
       useEditor.getState().addAsset(asset);
       const wf = await generateWaveform(working, 100).catch(() => null);

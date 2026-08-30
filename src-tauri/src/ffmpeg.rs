@@ -214,6 +214,10 @@ pub fn ffmpeg_cancel(job_id: String) -> Result<bool, String> {
 pub struct MediaProbe {
     pub has_video: bool,
     pub has_audio: bool,
+    /// True when the video stream carries an alpha channel. Decides whether the
+    /// preview proxy must be an alpha-preserving format.
+    pub has_alpha: bool,
+    pub pix_fmt: String,
     pub width: u32,
     pub height: u32,
     pub duration: f64,
@@ -233,7 +237,7 @@ pub fn media_probe(path: String) -> Result<MediaProbe, String> {
     let out = base_command(&probe)
         .args([
             "-v", "error",
-            "-show_entries", "stream=codec_type,width,height",
+            "-show_entries", "stream=codec_type,width,height,pix_fmt",
             "-show_entries", "format=duration",
             "-of", "json",
             &path,
@@ -253,6 +257,8 @@ pub fn media_probe(path: String) -> Result<MediaProbe, String> {
 
     let mut has_video = false;
     let mut has_audio = false;
+    let mut has_alpha = false;
+    let mut pix_fmt = String::new();
     let (mut width, mut height) = (0u32, 0u32);
     if let Some(streams) = v.get("streams").and_then(|s| s.as_array()) {
         for s in streams {
@@ -262,6 +268,21 @@ pub fn media_probe(path: String) -> Result<MediaProbe, String> {
                     if width == 0 {
                         width = s.get("width").and_then(|x| x.as_u64()).unwrap_or(0) as u32;
                         height = s.get("height").and_then(|x| x.as_u64()).unwrap_or(0) as u32;
+                        pix_fmt = s
+                            .get("pix_fmt")
+                            .and_then(|x| x.as_str())
+                            .unwrap_or("")
+                            .to_string();
+                        // ffmpeg spells alpha several ways: yuva*, rgba/argb/
+                        // bgra/abgr, ya8/ya16, gbrap.
+                        let pf = pix_fmt.as_str();
+                        has_alpha = pf.starts_with("yuva")
+                            || pf.starts_with("ya")
+                            || pf.starts_with("gbrap")
+                            || pf.contains("rgba")
+                            || pf.contains("argb")
+                            || pf.contains("bgra")
+                            || pf.contains("abgr");
                     }
                 }
                 Some("audio") => has_audio = true,
@@ -276,5 +297,5 @@ pub fn media_probe(path: String) -> Result<MediaProbe, String> {
         .and_then(|d| d.parse::<f64>().ok())
         .unwrap_or(0.0);
 
-    Ok(MediaProbe { has_video, has_audio, width, height, duration })
+    Ok(MediaProbe { has_video, has_audio, has_alpha, pix_fmt, width, height, duration })
 }

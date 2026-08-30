@@ -54,11 +54,11 @@ Each unique asset becomes one ffmpeg `-i` input even if used by multiple clips (
 
 `src/utils/export.ts` references the files at hardcoded paths `/ffmpeg-core/ffmpeg-core.js` and `/ffmpeg-core/ffmpeg-core.wasm`, then runs them through `toBlobURL` (same-origin blob URLs are required because the worker `import()`s them). **The path `/ffmpeg/` does not work** — some Vite middleware intercepts it and returns the SPA fallback HTML; we use `/ffmpeg-core/` instead.
 
-### Cross-origin isolation
+### Cross-origin isolation — no longer used
 
-The dev server sets `Cross-Origin-Opener-Policy: same-origin` and `Cross-Origin-Embedder-Policy: require-corp` via Vite config. GitHub Pages can't set custom headers, so `public/coi-serviceworker.js` (a vendored `coi-serviceworker`) provides the equivalent in production. `src/main.tsx` registers it conditionally — only when `!window.crossOriginIsolated` and not in dev — and forces a single reload so the page becomes SW-controlled. The base path uses `import.meta.env.BASE_URL` so the SW URL is correct under `/auravideo/`.
+The dev server still sets `Cross-Origin-Opener-Policy: same-origin` and `Cross-Origin-Embedder-Policy: require-corp` via Vite config, but **nothing depends on cross-origin isolation any more**: we ship the single-threaded `@ffmpeg/core`, which needs no SharedArrayBuffer.
 
-We use the **single-threaded** `@ffmpeg/core` (not `core-mt`) so SAB is technically optional, but the SW is kept as a safety net.
+`public/coi-serviceworker.js` is no longer the vendored coi-serviceworker — it has been replaced by a stub that unregisters itself on activate. `src/main.tsx` unregisters **every** service worker on the origin at load. See "FFmpeg core: single-threaded, no service worker" below for why.
 
 ### Persistence — IndexedDB
 
@@ -217,7 +217,9 @@ The wrapper has `pointer-events: none` and each handle child sets `pointer-event
 
 ## PWA install
 
-`public/manifest.webmanifest` + `public/icon.svg` provide install eligibility. The existing `coi-serviceworker.js` satisfies the service-worker requirement. The topbar conditionally shows an "⬇ 앱 설치" button when the browser fires `beforeinstallprompt`; on click we call `prompt()` and dismiss the button regardless of the user's choice.
+`public/manifest.webmanifest` + `public/icon.svg` are in place, and the topbar shows an "⬇ 앱 설치" button when the browser fires `beforeinstallprompt`; on click we call `prompt()` and dismiss the button regardless of the user's choice.
+
+**This is very likely dead in production.** Install eligibility needs a controlling service worker with a fetch handler, and `src/main.tsx` now unregisters every SW on load (single-threaded ffmpeg made the SW unnecessary and it was breaking exports). So `beforeinstallprompt` probably never fires and the button never appears. Not verified in a browser — if PWA install is wanted back, it needs its **own** minimal SW, not the coi stub.
 
 ## Audio tail (L-cut)
 
@@ -298,7 +300,7 @@ The resolution dropdown has an "LED 월" optgroup, and FPS offers 29.97 because 
 
 ### Beat grid
 
-`state.beatGrid` holds the musical grid — bpm, bar length, every beat, the downbeats, and the analysed sections. It is imported straight from the JSON that `led_stage/scripts/analyze_music.py` (librosa) writes, with no conversion step.
+`state.beatGrid` holds the musical grid — bpm, bar length, every beat, the downbeats, and the analysed sections. It is imported straight from the JSON that `led_stage/scripts/analyze_music.py` (librosa) writes, with no conversion step. **`led_stage` is a separate repo** (locally `C:\Git\led_stage`), not part of this one — the paths in this document that start with `led_stage/` refer to it. Load the JSON through the bridge's `beatgrid.load`.
 
 - The ruler draws section bands (tinted by `energyLevel`), downbeats, and — only when they are more than 6 px apart — individual beats.
 - **`snapTime` treats downbeats and section boundaries with double the normal tolerance.** On a music-show backdrop, a cut landing a frame off the bar is the mistake worth engineering against; ordinary beats keep the standard tolerance.
@@ -315,13 +317,32 @@ out[L..D-L) = source[L..D-L]
 
 The output is exactly `L` shorter, and its last frame is adjacent in source time to its first — so looping is continuous rather than merely soft. Verified by measuring first-vs-last-frame PSNR on the same timeline: **1.56 dB without the loop blend, 45.10 dB with it**.
 
+## Preview proxies and alpha — `src/utils/proxy.ts`
+
+A proxy feeds the **preview only**; the export always renders from the original via `__nativePath`. So a proxy may be as lossy as it likes, with one exception it must never get wrong: **transparency**.
+
+Cut-out overlay elements — an RMBG'd dancer, falling petals, a logo sting — arrive as ProRes 4444 or QuickTime RLE, which the webview cannot decode. Transcoding those to H.264 silently discarded the alpha, so the preview showed the element on a black rectangle while the export composited it correctly. A preview that disagrees with the render is worse than no preview.
+
+Measured, so it isn't re-litigated later:
+
+| format | ffmpeg (export) | webview (preview) |
+|---|---|---|
+| ProRes 4444 / QuickTime RLE | ✅ | ❌ |
+| VP9 alpha WebM | ❌ | ✅ |
+
+The two are exactly complementary, hence: **keep the original for export, build a `yuva420p` WebM proxy for preview.** `media_probe` reports `has_alpha` from ffprobe's `pix_fmt` so the choice isn't guesswork.
+
+**The alpha proxy is encoded at `-crf 20 -deadline good -cpu-used 2`, deliberately.** A first attempt at `crf 32 -deadline realtime` preserved the alpha but quantised the alpha *plane* hard, giving cut-outs visible hard rims and blocking — i.e. it misrepresented the one thing it exists to show. Don't trade this back for import speed.
+
+Desktop proxies run through native ffmpeg (`transcodeProxyNative`), not the wasm encoder, which was the slowest step in the import path.
+
 ## Agent control bridge
 
 The editor is drivable by an external process — a script or an AI agent — so edits can be made and verified without a human at the mouse. Every command is forwarded to the frontend and applied through the **ordinary store actions**, so there is no second editing implementation that could drift from the UI's.
 
 - **Off by default.** The Rust side (`src-tauri/src/bridge.rs`) opens nothing unless the app is launched with `NABIVIDEO_AGENT=1`. It then binds a loopback-only HTTP server on a random port and writes `{port, token}` to `<temp>/nabivideo/agent.json`. Every request must carry `X-Agent-Token`.
 - **Frontend** (`src/utils/agentBridge.ts`) listens for `agent://request`, dispatches, and answers via the `agent_reply` command.
-- Commands: `ping`, `state`, `project.reset`, `media.import`, `clip.add|update|split|remove`, `subtitle.add|update`, `playhead.set`, `screenshot`, `export`.
+- Commands (the `handlers` map in `agentBridge.ts` is the authority): `ping`, `state`, `project.reset`, `settings.set`, `media.import`, `clip.add|update|split|remove`, `clip.cutOnBeats`, `subtitle.add|update`, `beatgrid.load`, `beatgrid.clear`, `playhead.set`, `screenshot`, `export`.
 - `screenshot` seeks, waits `settleMs` for the decoder, and writes the preview canvas to a PNG — this is how an agent *sees* its edit, and it is what caught the blend colourspace bug by disagreeing with the export.
 
 **Send request bodies as UTF-8 from a real HTTP client, not by interpolating text into a shell command.** Korean subtitle text passed through Git Bash into `curl -d` arrived mangled and the bridge rejected it as an unreadable body; the same payload posted from Python worked. `scripts/` has no client — write one where you need it.
@@ -365,3 +386,5 @@ When the preview needs a transcoded proxy (HEVC etc.), `__nativePath` is carried
 - `public/ffmpeg-core/` is **auto-generated**; do not commit. The Vite plugin re-copies on next start.
 - `package-lock.json` **is** committed and required by CI (`npm ci`).
 - `.claude/` (Claude Code per-user settings) is gitignored.
+- `@ffmpeg/core-mt` is still in `package.json` but has **zero references in the source** — a leftover of the abandoned multi-threaded attempt. Don't take its presence as a sign core-mt is in use.
+- `public/ffmpeg/` is an empty leftover directory (the path that doesn't work; see the FFmpeg core section). The real files live in `public/ffmpeg-core/`.

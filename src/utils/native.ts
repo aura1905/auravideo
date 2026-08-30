@@ -44,6 +44,9 @@ export async function ffmpegInfo(): Promise<FfmpegInfo> {
 export interface MediaProbe {
   has_video: boolean;
   has_audio: boolean;
+  /** True when the video stream carries an alpha channel. */
+  has_alpha: boolean;
+  pix_fmt: string;
   width: number;
   height: number;
   duration: number;
@@ -171,6 +174,69 @@ export async function readFileAsFile(path: string): Promise<File & { __nativePat
   const type = MIME_BY_EXT[ext] ?? '';
   const copy = new Uint8Array(bytes);
   const file = new File([copy], name, { type }) as File & { __nativePath: string };
-  Object.defineProperty(file, '__nativePath', { value: path, enumerable: false });
+  // configurable/writable so a proxy built from this file can re-point the
+  // property at the ORIGINAL source (the proxy is preview-only).
+  Object.defineProperty(file, '__nativePath', {
+    value: path,
+    enumerable: false,
+    configurable: true,
+    writable: true,
+  });
   return file;
+}
+
+/**
+ * Build a preview proxy with native ffmpeg.
+ *
+ * Two reasons this exists rather than the wasm transcode in `transcode.ts`:
+ *
+ * 1. Speed — the wasm encoder is the slowest thing in the import path, and on
+ *    the desktop there is a real ffmpeg (with NVENC) right there.
+ * 2. **Alpha.** The webview cannot decode ProRes 4444 / QuickTime RLE, so an
+ *    overlay element with transparency has to be proxied — and an H.264 proxy
+ *    silently drops the alpha, which made the preview show cut-out elements
+ *    sitting on a black rectangle while the export composited them correctly.
+ *    Chromium *can* decode VP9 alpha in WebM (verified), and ffmpeg can encode
+ *    it, so alpha sources get a `yuva420p` WebM proxy and keep their
+ *    transparency on screen.
+ *
+ * The export is unaffected either way: it renders from `__nativePath`, i.e. the
+ * untouched original.
+ */
+export async function transcodeProxyNative(
+  srcPath: string,
+  hasAlpha: boolean,
+  onLine: (line: string) => void = () => {}
+): Promise<string> {
+  const dir = await tempRoot();
+  const sep = dir.includes('\\') ? '\\' : '/';
+  const leaf = (srcPath.split(/[\\/]/).pop() || 'proxy').replace(/\.[^.]+$/, '');
+  const stamp = Date.now().toString(36);
+  const out = hasAlpha
+    ? `${dir}${sep}${leaf}_proxy_${stamp}.webm`
+    : `${dir}${sep}${leaf}_proxy_${stamp}.mp4`;
+
+  const args = hasAlpha
+    ? [
+        '-i', srcPath,
+        // libvpx-vp9 is the only widely-playable alpha video the webview takes.
+        // `-auto-alt-ref 0` is required — alt-ref frames and alpha don't mix.
+        '-c:v', 'libvpx-vp9', '-pix_fmt', 'yuva420p', '-auto-alt-ref', '0',
+        // Quality matters more here than it does for an opaque proxy. The alpha
+        // plane carries the cut-out's edge, and quantising it hard produces
+        // exactly the hard rims and blocking that make a soft matte look wrong
+        // on screen — the thing the proxy exists to represent faithfully.
+        '-b:v', '0', '-crf', '20', '-deadline', 'good', '-cpu-used', '2',
+        '-row-mt', '1',
+        '-an', '-y', out,
+      ]
+    : [
+        '-i', srcPath,
+        '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '23', '-pix_fmt', 'yuv420p',
+        '-c:a', 'aac', '-b:a', '160k', '-y', out,
+      ];
+
+  const ret = await ffmpegRun(`proxy-${stamp}`, args, dir, onLine);
+  if (ret !== 0) throw new Error(`프록시 변환 실패 (ffmpeg 종료 코드 ${ret})`);
+  return out;
 }
