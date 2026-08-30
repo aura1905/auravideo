@@ -404,7 +404,15 @@ def call(cmd, args=None):
 
 Pass file paths with **forward slashes** — backslashes have to be escaped through JSON and it is a needless source of breakage; Windows accepts `/` fine.
 
-**Send request bodies as UTF-8 from a real HTTP client, not by interpolating text into a shell command.** Korean subtitle text passed through Git Bash into `curl -d` arrived mangled and the bridge rejected it as an unreadable body; the same payload posted from Python worked. `scripts/` has no client — write one where you need it.
+**Two instances at once.** The handshake path is `NABIVIDEO_AGENT_FILE` when set, otherwise `<temp>/nabivideo/agent.json`. Without the override the second app to start silently overwrites the first one's file and the next client to read it drives the wrong window — which is what happens the moment two agents work on this repo at the same time. Pass a private path per instance:
+
+```
+NABIVIDEO_AGENT=1 NABIVIDEO_AGENT_FILE=C:/tmp/agent2.json src-tauri/target/release/nabivideo.exe
+```
+
+`scripts/agent_client.py` is the client (`python scripts/agent_client.py <cmd> '<json>' [--file PATH]`). It exists because request bodies must be UTF-8 and shell `curl -d` mangles Korean.
+
+**Send request bodies as UTF-8 from a real HTTP client, not by interpolating text into a shell command.** Korean subtitle text passed through Git Bash into `curl -d` arrived mangled and the bridge rejected it as an unreadable body; the same payload posted from Python worked. The client is `scripts/agent_client.py`.
 
 ## Desktop build (Tauri) — `src-tauri/`
 

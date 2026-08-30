@@ -91,12 +91,22 @@ pub fn start(app: &AppHandle) {
         format!("{n:x}{:x}", std::process::id())
     };
 
-    if let Ok(dir) = app.path().temp_dir() {
-        let dir = dir.join("nabivideo");
-        let _ = std::fs::create_dir_all(&dir);
+    // Where the handshake goes. `NABIVIDEO_AGENT_FILE` overrides the default
+    // so two app instances can be driven at once — without it the second one
+    // to start silently steals the first one's file, and whoever reads it next
+    // ends up talking to the wrong window. That happens whenever two agents
+    // work on this repo at the same time.
+    let handshake_path = match std::env::var("NABIVIDEO_AGENT_FILE") {
+        Ok(p) if !p.trim().is_empty() => Some(std::path::PathBuf::from(p)),
+        _ => app.path().temp_dir().ok().map(|d| d.join("nabivideo").join("agent.json")),
+    };
+    if let Some(path) = handshake_path {
+        if let Some(dir) = path.parent() {
+            let _ = std::fs::create_dir_all(dir);
+        }
         let hs = Handshake { port, token: token.clone() };
         if let Ok(bytes) = serde_json::to_vec_pretty(&hs) {
-            let _ = std::fs::write(dir.join("agent.json"), bytes);
+            let _ = std::fs::write(&path, bytes);
         }
     }
     log::info!("agent bridge listening on 127.0.0.1:{port}");
