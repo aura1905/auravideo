@@ -309,6 +309,7 @@ const handlers: Record<string, (a: Args) => Promise<any> | any> = {
         end: Number(sg.end) || 0,
         label: sg.label ?? sg.name,
         energyLevel: sg.energy_level ?? sg.energyLevel,
+        energy: typeof (sg.energy ?? sg.rms) === 'number' ? Number(sg.energy ?? sg.rms) : undefined,
       })),
       offset: Number(a.offset ?? 0),
     };

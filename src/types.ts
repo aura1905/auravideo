@@ -78,6 +78,11 @@ export interface BeatSegment {
   end: number;
   label?: string;
   energyLevel?: string;
+  /** Normalised 0..1 RMS energy from the analysis. Prefer this over
+   *  `energyLevel`: on real material the coarse label is nearly constant
+   *  (10 of 11 sections came back `mid` on the first song), while the number
+   *  still separates a breakdown from a hook. */
+  energy?: number;
 }
 
 /**

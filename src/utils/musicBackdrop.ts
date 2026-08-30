@@ -123,10 +123,22 @@ export interface BackdropResult {
   bpm: number;
 }
 
-/** Energy as a 0..1 number. The analysis writes a coarse label; anything
- *  unrecognised is treated as mid so a missing field never distorts the cut
- *  pattern. */
-function energyOf(level?: string): number {
+/**
+ * Energy as a 0..1 number.
+ *
+ * The numeric field wins when present. The analysis' coarse label is close to
+ * useless on real material — the first song came back with 10 of its 11
+ * sections marked `mid`, which would flatten every transition rule to the same
+ * branch — while the raw number still separates a breakdown from a hook.
+ */
+function energyOf(sg: { energy?: number; energyLevel?: string }): number {
+  if (typeof sg.energy === 'number' && Number.isFinite(sg.energy)) {
+    return Math.max(0, Math.min(1, sg.energy));
+  }
+  return energyOfLabel(sg.energyLevel);
+}
+
+function energyOfLabel(level?: string): number {
   switch ((level ?? '').toLowerCase()) {
     case 'low':
     case 'quiet':
@@ -167,7 +179,7 @@ function buildSections(grid: BeatGrid, opts: BackdropOptions): BackdropSectionIn
         start: sg.start + off,
         end: sg.end + off,
         bars: grid.barSeconds > 0 ? (sg.end - sg.start) / grid.barSeconds : 0,
-        energy: energyOf(sg.energyLevel),
+        energy: energyOf(sg),
         plateAssetId: null,
         transitionIn: 'none',
       });
@@ -196,7 +208,7 @@ function buildSections(grid: BeatGrid, opts: BackdropOptions): BackdropSectionIn
       for (const s of out) {
         const mid = s.start - off + (s.end - s.start) / 2;
         const sg = grid.segments.find((g) => mid >= g.start && mid < g.end);
-        if (sg) s.energy = energyOf(sg.energyLevel);
+        if (sg) s.energy = energyOf(sg);
       }
     }
   }
@@ -266,6 +278,21 @@ export async function assembleMusicBackdrop(
 
   const sections = buildSections(grid, opts);
   if (sections.length === 0) throw new Error('비트 그리드에서 구간을 만들 수 없습니다.');
+
+  // Absolute energy thresholds do not survive contact with real audio: a song
+  // captured off a broadcast sits in a narrow band (measured: 0.156–0.494
+  // across a whole track) because compression and crowd noise flatten the
+  // dynamics. So rank the sections against EACH OTHER — the rules then mean
+  // "louder than this song's average", which is what a cut pattern should
+  // follow. If the song really is flat, everything lands mid and the rules
+  // degrade to uniform crossfades rather than firing at random.
+  {
+    const es = sections.map((s) => s.energy);
+    const lo = Math.min(...es);
+    const hi = Math.max(...es);
+    const span = hi - lo;
+    for (const s of sections) s.energy = span > 0.05 ? (s.energy - lo) / span : 0.5;
+  }
 
   const beatPeriod = beatPeriodOf(grid);
   const barSeconds = grid.barSeconds > 0 ? grid.barSeconds : beatPeriod * 4;
