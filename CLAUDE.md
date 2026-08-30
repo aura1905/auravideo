@@ -4,20 +4,44 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-**NabiVideo** (UI brand) — browser-based multi-track video editor. Vite + React 18 + TypeScript, Zustand for state, FFmpeg.wasm for export, IndexedDB for project storage. Deployed at https://aura1905.github.io/auravideo/ (repo `aura1905/auravideo`). The repo + URL keep the old `auravideo` name; only the user-facing brand is "NabiVideo".
+**NabiVideo** (UI brand) — multi-track video editor, Vite + React 18 + TypeScript + Zustand. One codebase, **two targets**:
+
+- **Desktop (Tauri)** — the primary target. Real ffmpeg with hardware encoders, no wasm memory ceiling, professional codecs, files referenced by path instead of copied. See "Desktop build".
+- **Web (GitHub Pages)** — kept working and unchanged, for light editing from any machine. FFmpeg.wasm, IndexedDB, https://aura1905.github.io/auravideo/ (repo `aura1905/auravideo` — repo and URL keep the old name, only the brand is "NabiVideo").
+
+**What it is actually used for:** LED backdrop video for Korean music broadcasts (Music Bank–style). That is not a side use case — it drives the 32:9 canvas work, the fill modes, the beat grid, the seamless loop, and the emphasis on compositing. Read "LED wall / music-show backdrop" before designing anything visual.
+
+The sibling project `C:\Git\led_stage` is where the *content* comes from; see "Where the footage comes from" below.
 
 ## Commands
 
 ```bash
-npm run dev           # http://127.0.0.1:5173/
-npm run build         # tsc -b && vite build → dist/
-npm run preview       # serve dist/
+npm run dev           # web dev server, http://127.0.0.1:5173/
+npm run build         # tsc -b && vite build → dist/   (web, base=/auravideo/)
+npm run build:tauri   # same build with VITE_BASE=/    (desktop frontend)
+npm run tauri:dev     # desktop app against the dev server
+npm run tauri:build   # desktop release + NSIS installer
 npx tsc --noEmit -p tsconfig.json   # type check only
 ```
 
-There is no test runner and no linter configured.
+There is no test runner and no linter configured. **Type check and build are the only automated gates** — run both before claiming anything works, and for runtime behaviour produce an actual artifact (see "Verification").
 
-Push to `main` triggers `.github/workflows/deploy.yml` which builds with `VITE_BASE=/auravideo/` and deploys `dist/` to GitHub Pages.
+Faster desktop iteration while developing:
+
+```bash
+npx @tauri-apps/cli build --debug --no-bundle   # ~30-60 s vs ~5 min for release
+```
+
+Push to `main` triggers `.github/workflows/deploy.yml`, which builds with `VITE_BASE=/auravideo/` and deploys `dist/` to GitHub Pages. **The desktop app is not part of CI** — it is built locally.
+
+## Verification — what counts as "it works"
+
+This codebase has burned a lot of time on fixes that were announced from code-reading and turned out to be wrong. The rules that came out of that:
+
+- A runtime claim needs an **artifact**: a real MP4 with a non-zero size and `ret === 0`, a frame extracted and looked at, or a measured number.
+- **Native ffmpeg ≠ FFmpeg.wasm.** A graph that runs natively can still abort in wasm (it is stricter about missing streams and specifiers). Never use one as proof of the other.
+- **Preview ≠ export.** They are separate implementations of the same intent, and two real bugs (blend in YUV, alpha lost in the proxy) were found *only* by capturing a preview frame and an exported frame of the same timeline and comparing them. The agent bridge's `screenshot` command exists for this.
+- Prefer a measurement to an opinion: "first-vs-last-frame PSNR went 1.56 → 45.1 dB" settles a question that "looks seamless to me" does not.
 
 ## Architecture
 
@@ -278,6 +302,17 @@ Rules to preserve:
 - Things that must move at 60 fps subscribe to the bus and poke the DOM directly: `Playhead` (writes `style.transform`), `PlayheadReadout`, `SeekBar`, `PlayheadTime`.
 - `Waveform`, `ThumbStrip` and `ClipView` are `React.memo`ed. `ClipView` derives its select/update callbacks from `useEditor.getState()` internally rather than taking them as props — passing arrow functions from `Timeline` would create new references every render and defeat the memo.
 
+## Where the footage comes from — `C:\Git\led_stage` + ComfyUI
+
+NabiVideo does not generate content; the sibling project does, and the two are designed to meet. Knowing this shape saves re-discovering it:
+
+- **ComfyUI** runs locally at `http://127.0.0.1:8188` (no auth). `POST /prompt` with a graph, poll `GET /history/<id>`, read `outputs`. `GET /queue` shows what is running — **check it before submitting, the GPU is usually busy with the user's own batch, and queueing behind them stalls their work.**
+- **Video generation** is MiniMax H3 image-to-video (`MiniMaxH3ImageToVideo` + `MiniMaxH3SigmaShift`, `res_multistep`, ~25 steps). `led_stage/scripts/make30_16x9.py::vid_wf()` is the proven graph — copy it rather than inventing one. Clips are generated as a *chain*: each one's last frame is the next one's first frame, so **they butt-join; a crossfade would double-expose the seam**.
+- Output lands in `C:\Git\ComfyUI\outputideo\<tag>_00001_.mp4`, 24 fps, **no audio stream** (this is why `hasAudio` detection had to become real — see below).
+- **Background removal** for overlay elements: `RMBG` (RMBG-2.0 / BEN2 / INSPYRENET) and `BiRefNetRMBG` — use the **matting** models (`BiRefNet-matting`, `BiRefNet-HR-matting`) for soft edges like hair or petals. `BriaTransparentVideoBackground` does whole clips. Save alpha via `VHS_VideoCombine` with `video/ProRes` or `video/8bit-png`; `SaveWEBM` and plain `SaveVideo` will not carry it.
+- **Music analysis** is `led_stage/scripts/analyze_music.py` (librosa) → `<name>_analysis.json` with `bpm`, `bar_seconds`, `beat_grid`, `downbeats`, and `segments` (each with `energy_level`). `beatgrid.load` consumes that JSON **shape-for-shape, with no conversion step** — keep it that way.
+- `led_stage/scripts/build_nabi_project.py` already writes `.auravideo.zip` projects at 3840×1080 @ 30000/1001. If you add fields to the project format, that script is a downstream consumer.
+
 ## LED wall / music-show backdrop
 
 This project's primary use is generating and cutting LED backdrops for music broadcasts. Three things follow from that, and they drive several design choices:
@@ -345,6 +380,29 @@ The editor is drivable by an external process — a script or an AI agent — so
 - Commands (the `handlers` map in `agentBridge.ts` is the authority): `ping`, `state`, `project.reset`, `settings.set`, `media.import`, `clip.add|update|split|remove`, `clip.cutOnBeats`, `subtitle.add|update`, `beatgrid.load`, `beatgrid.clear`, `playhead.set`, `screenshot`, `export`.
 - `screenshot` seeks, waits `settleMs` for the decoder, and writes the preview canvas to a PNG — this is how an agent *sees* its edit, and it is what caught the blend colourspace bug by disagreeing with the export.
 
+### Driving it
+
+```powershell
+$env:NABIVIDEO_AGENT = "1"
+Start-Process C:\Gituravideo\src-tauri	arget\debug
+abivideo.exe
+# then read port + token from %TEMP%
+abivideogent.json
+```
+
+```python
+import json, urllib.request
+hs = json.load(open(r"C:/Users/<user>/AppData/Local/Temp/nabivideo/agent.json"))
+def call(cmd, args=None):
+    body = json.dumps({"cmd": cmd, "args": args or {}}).encode("utf-8")
+    req = urllib.request.Request(f"http://127.0.0.1:{hs['port']}/", data=body,
+        headers={"X-Agent-Token": hs["token"], "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=3600) as r:
+        return json.loads(r.read().decode("utf-8"))
+```
+
+Pass file paths with **forward slashes** — backslashes have to be escaped through JSON and it is a needless source of breakage; Windows accepts `/` fine.
+
 **Send request bodies as UTF-8 from a real HTTP client, not by interpolating text into a shell command.** Korean subtitle text passed through Git Bash into `curl -d` arrived mangled and the bridge rejected it as an unreadable body; the same payload posted from Python worked. `scripts/` has no client — write one where you need it.
 
 ## Desktop build (Tauri) — `src-tauri/`
@@ -379,6 +437,99 @@ When the preview needs a transcoded proxy (HEVC etc.), `__nativePath` is carried
 - `splitClipAt` converts the click's timeline offset into a media offset before splitting.
 - `Preview.drawFrame` sets `m.el.playbackRate = speed` and computes `localTime = inPoint + (head - start) * speed`.
 - `export.ts` emits `setpts=(PTS-STARTPTS)/speed` for video and chains `atempo` (each instance limited to `[0.5, 2.0]`) for audio. Range translation also multiplies the timeline trim by `speed` when adjusting `inPoint`/`outPoint`.
+
+## Auto-edit templates — `src/utils/autoEdit.ts`
+
+Local-only automatic editing (no LLM). Each template is a **plain async function** — not a hook — that reads editor state + an options object, computes a timeline patch, and applies it through the ordinary `useEditor` actions. There is no separate state shape for auto-edit. Progress is reported via an optional `onProgress({phase, progress})` (`progress: -1` = indeterminate, e.g. while a Whisper model downloads); errors are thrown and surfaced by the dialog. `AutoEditDialog.tsx` (opened from the toolbar) is the only caller.
+
+| function | what it builds | inputs |
+|---|---|---|
+| `runTalkingHeadCleanup` | Whisper-driven silence + filler removal, splits one clip into fragments, optional per-chunk subtitles | one clip with audio |
+| `runSlideshow` | images/videos placed sequentially with crossfades | asset ids |
+| `runHighlightReel` | picks loudness peaks (`analyzeLoudness`) and concatenates them into a short reel | asset ids |
+| `runBeatCut` | detects BGM tempo (`detectBeats`) and cycles videos through cuts on every Nth beat | video asset ids + one BGM asset |
+
+Each has an exported `*_DEFAULTS` constant; the dialog spreads it and patches fields.
+
+### Talking-head — the defaults encode hard-won lessons
+
+- **`model: 'Xenova/whisper-small'`** for Korean. `tiny`/`base` make consistent Korean phoneme errors (함흥냉면→할당냉면). `small` is a ~500 MB one-time download, cached by the browser afterwards.
+- **`maxSilenceSec: 4`** — gaps *longer* than this are kept, on the theory that a long pause was intentional (dramatic beat, B-roll hole). Only short gaps get cut.
+- **`useWordLevel: true`** — silences are detected at Whisper word boundaries, not segment boundaries, so cuts never land mid-word. `removeFillerWords` requires it.
+- **`FILLER_WORDS` is deliberately conservative.** Single-syllable Korean phonemes (어/에/아/으) were removed from the list: Whisper often mis-tokenizes the tail of a stretched word ("출바알") as a standalone syllable, and including them ate real word endings. Only 음, doubled syllables, and unambiguous interjections remain.
+- **`endingTailSec: 0.6`** extends only the *last* fragment's `outPoint` so the video doesn't end mid-breath, and drives an auto fade-out of half that value (capped 0.5 s). Capped by the source headroom past the last spoken word — it never invents frames.
+- **`crossfadeSec: 0` (hard cut) is the safe default.** Same-track crossfades darken at the midpoint because the canvas compositor alpha-blends both fragments against black (same limitation as the Crossfade section above).
+- Subtitles are generated **after** the silence removal, mapped onto the resulting fragment layout — regenerating them per fragment is why a partial re-run must rebuild the whole subtitle set.
+
+### Presets
+
+`PRESETS` in `AutoEditDialog.tsx` are one-click "template + option patch" chips (유튜브 쇼츠 / 강의 정리 / 브이로그 / 빠른 하이라이트 …). The chip stays highlighted until the user edits any field by hand. They exist because novice users asked for "click this, then run" — when adding a template, add a preset for it too.
+
+## Audio analysis — `src/utils/audioAnalysis.ts`
+
+Two primitives, both used only by the auto-editor:
+
+- **`analyzeLoudness`** — decodes the file, RMS energy over fixed windows, smooths, returns ranked segments whose energy peaks above a local baseline. Drives the highlight reel (loudest ≈ most interesting).
+- **`detectBeats`** — per-frame energy + positive derivative, adaptive-threshold peak picking with a minimum-gap rule, BPM estimated from inter-beat intervals. Drives the beat-cut template.
+
+Both decode the **entire** file through `AudioContext.decodeAudioData` (`decodeMono` mixes channels down). Fine for 5–10 min sources; long-form material would need a streaming decode, which is not implemented.
+
+**There are two independent beat sources — don't conflate them:**
+
+| | `detectBeats` (this file) | `state.beatGrid` (LED wall) |
+|---|---|---|
+| origin | in-browser onset detection | JSON from `led_stage`'s librosa script, via bridge `beatgrid.load` |
+| output | bare beat times + BPM, consumed once by `runBeatCut` | persistent musical grid: bars, downbeats, sections |
+| used by | auto-edit beat-cut template | ruler drawing, `snapTime`, `clip.cutOnBeats` |
+
+`runBeatCut` does **not** read `state.beatGrid`, and the LED-wall grid features do **not** call `detectBeats`.
+
+## Audio mastering (loudnorm / denoise)
+
+Two per-clip booleans on `Clip`, both **export-only — preview leaves audio raw**, so a user who A/Bs them in the preview will hear nothing change (the tooltips in `PropertiesPanel.tsx` say so):
+
+- `denoise` → `arnndn=m=rnnoise.rnnn` (RNN-based, good on steady fan/aircon/mic noise).
+- `normalizeLoudness` → `loudnorm=I=-14:TP=-1.5:LRA=11:linear=true` (single-pass, YouTube/podcast target).
+
+Order in the chain is **denoise → loudnorm → volume/fades**, so noise is gone before the level is measured and the user's volume multiplier still scales the normalized result.
+
+The model file is `public/arnndn/rnnoise.rnnn` (BSD/public-domain, ~290 KB ASCII, committed). Both backends write it out under exactly that bare name before running — `exportProject` into the FFmpeg.wasm FS (deleted again on cleanup), `exportNative` into the scratch dir it sets as ffmpeg's `cwd` — because a relative name is the only form that survives a filter string on Windows.
+
+## Import transcode — `src/utils/transcode.ts`
+
+Phones (iOS especially) record HEVC/H.265, and Chrome on Windows will parse the container but refuse to decode it, showing a silent black frame. On import, `canBrowserPlayVideo(file)` loads metadata into a hidden `<video>` and treats `videoWidth === 0` (or an `error` event, or a 5 s timeout) as "cannot decode"; `transcodeToH264` then re-encodes via FFmpeg.wasm and the result is used as the asset.
+
+In the desktop build the original's `__nativePath` is carried onto the proxy `File`, so **export still renders from the untouched original** while the preview uses the H.264 proxy — see the native export section.
+
+`transcode.ts` is now called only from `src/utils/proxy.ts`, which owns the import-time decision (playable as-is / H.264 proxy / alpha-preserving WebM proxy) — see "Preview proxies and alpha" above. Add new proxy policy there, not here.
+
+## Desktop plumbing self-test — `src/utils/selftest.ts`
+
+The filter graph can be checked from a shell, but the JS↔Rust seam (command names, argument casing, event payload shape, fs permissions, working directory) can only be exercised inside the real app. `runSelfTest` runs the whole native export path end-to-end on a generated clip and writes step-by-step results to `<temp>/nabivideo/selftest.json`, so a desktop build can be verified without driving the GUI.
+
+Gated at build time behind `VITE_SELFTEST=1` (`src/main.tsx`) — it is never present in a normal build.
+
+## State of play (2026-08-30)
+
+Shipped this round, all verified on real generated footage:
+
+1. **Playback performance** — the editor got slower the more you cut, because the RAF loop wrote the playhead to the store 60×/s and `Timeline` subscribed to it. Fixed with `playheadBus` + memoisation.
+2. **Desktop build (Tauri)** — native ffmpeg export with hardware encoders, path-referenced inputs, direct-to-file output.
+3. **Agent control bridge** — the editor is drivable head-lessly and can screenshot its own preview.
+4. **`blend` in YUV** — was casting every blend/glow magenta. Now forced through `format=gbrp`.
+5. **`hasAudio` was hardcoded true** — every silent clip (i.e. all generated footage) failed to export.
+6. **LED features** — 32:9 presets, five fill modes, beat grid + beat-locked cuts, seamless loop.
+7. **Alpha preview proxies** — cut-out overlays now look the same on screen as they render.
+
+Known gaps / next steps, roughly in order:
+
+- **ComfyUI client inside the app.** Generation still happens by hand in `led_stage`. The intended end state is a `generate.insert`-style command: prompt + a bar number → generate → RMBG → alpha encode → import → place on that downbeat.
+- **The wasm path for `blendMode` / `glow` has never been verified end-to-end.** Native is confirmed; the browser is not. Do not assume.
+- **Chroma key** — for green-screen stock, as an alternative to alpha sources.
+- **Built-in overlay generators** (petals / snow / embers / bokeh) so elements don't have to be sourced externally.
+- **Keyframe animation** — nothing moves over time yet; a logo cannot pulse and a petal layer cannot drift on its own.
+- **Web build's `hasAudio`** is still assumed `true`; only the desktop probes it. A silent clip will still break a browser export.
+- Everything from this round is committed locally but **not pushed**.
 
 ## Gotchas
 
