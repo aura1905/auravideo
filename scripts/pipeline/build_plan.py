@@ -130,9 +130,10 @@ def main():
     # kenburns.py also renders a drifting version of the blueprint still; without it the
     # label section and the spec-sheet background are two frozen blocks in every episode.
     still_file = 'still_bg.png'
-    _mv = 'still_bg' + ('_mvv.mp4' if VERT else '_mv.mp4')
-    if os.path.exists(os.path.join(wd, _mv)):
-        still_file = _mv
+    for _mv in (['still_bg_mvv.mp4', 'still_bg_mv.mp4'] if VERT else ['still_bg_mv.mp4']):
+        if os.path.exists(os.path.join(wd, _mv)):
+            still_file = _mv
+            break
 
     still_start = round(sting_at + INTRO_LEN, 3) if sting_on else 0.0
     still_end = still_start + sum(x['dur'] + GAP for x in segs[still_from:still_to])
@@ -155,10 +156,13 @@ def main():
         vis = s_.get('vis') or {}
         if vis.get('type') != 'image':
             continue
-        cand = os.path.splitext(vis['file'])[0] + mv_suffix
-        if os.path.exists(os.path.join(wd, cand)):
-            vis['type'] = 'video'; vis['file'] = cand; vis['in'] = 0
-            swapped += 1
+        stem = os.path.splitext(vis['file'])[0]
+        # a 9:16 episode prefers its own card clips but shares the screenshot ones
+        for cand in ([stem + mv_suffix, stem + '_mv.mp4'] if VERT else [stem + '_mv.mp4']):
+            if os.path.exists(os.path.join(wd, cand)):
+                vis['type'] = 'video'; vis['file'] = cand; vis['in'] = 0
+                swapped += 1
+                break
     if swapped:
         print(f'  {swapped} stills replaced with their moving version ({mv_suffix})')
 

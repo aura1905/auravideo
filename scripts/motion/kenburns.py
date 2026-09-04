@@ -15,6 +15,11 @@ mp4 with a slow push and drift. build_plan then places it as a video clip.
 
 Two different amounts, on purpose:
 
+Every clip keeps its SOURCE resolution -- a 16:9 screenshot stays 16:9 even in a 9:16
+episode, exactly like the image it replaces, so build_plan's blur fill still applies.
+Forcing 1080x1920 stretched them. --vertical therefore only renders the 9:16 evidence
+cards (ev_*_v.png); the screenshots and blueprint are shared with the 16:9 run.
+
   screenshots    1.00 -> 1.24 over 16 s, with a diagonal drift. A narration line uses
                  about six of those seconds, so the visible push is ~9% -- a normal
                  documentary move, not a zoom.
@@ -41,9 +46,11 @@ def probe(path):
     return int(w), int(h)
 
 
-def render(src, dst, w, h, zoom, drift, seconds=LEN, fps=FPS):
+def render(src, dst, zoom, drift, seconds=LEN, fps=FPS):
     """Slow push from 1.0 to 1+zoom, with `drift` = (dx, dy) in fractions of the
     over-scan, so successive stills do not all move the same way."""
+    w, h = probe(src)
+    w -= w % 2; h -= h % 2
     n = int(seconds * fps)
     dx, dy = drift
     # upscale 2x before zoompan, then back down: kills the integer-origin judder
@@ -67,10 +74,9 @@ def main():
     ap.add_argument('--seconds', type=float, default=LEN)
     ap.add_argument('--force', action='store_true')
     a = ap.parse_args()
-    w, h = (1080, 1920) if a.vertical else (1920, 1080)
-    suffix = '_mv.mp4' if not a.vertical else '_mvv.mp4'
+    suffix = '_mvv.mp4' if a.vertical else '_mv.mp4'
 
-    stills = sorted(glob.glob(os.path.join(a.workdir, 'ss*.jpg')))
+    stills = [] if a.vertical else sorted(glob.glob(os.path.join(a.workdir, 'ss*.jpg')))
     cards = sorted(p for p in glob.glob(os.path.join(a.workdir, 'ev_*.png'))
                    if not p.endswith(('_v.png',)) or a.vertical)
     if a.vertical:
@@ -86,23 +92,23 @@ def main():
     # under the spec sheet at the end -- measured as two frozen blocks, 20-35 s and
     # 233-242 s. Gentle and centred: the labels are drawn over it at fixed positions.
     bg = os.path.join(a.workdir, 'still_bg.png')
-    if os.path.exists(bg):
+    if os.path.exists(bg) and not a.vertical:
         dst = bg.rsplit('.', 1)[0] + suffix
         if a.force or not os.path.exists(dst):
-            render(bg, dst, w, h, CARD_ZOOM, (0.0, 0.0), max(a.seconds, 20.0))
+            render(bg, dst, CARD_ZOOM, (0.0, 0.0), max(a.seconds, 20.0))
         made.append(dst)
         print('  bg   ', os.path.basename(dst))
 
     for i, src in enumerate(stills):
         dst = src.rsplit('.', 1)[0] + suffix
         if a.force or not os.path.exists(dst):
-            render(src, dst, w, h, SS_ZOOM, drifts[i % 4], a.seconds)
+            render(src, dst, SS_ZOOM, drifts[i % 4], a.seconds)
         made.append(dst)
         print('  still', os.path.basename(dst))
     for i, src in enumerate(cards):
         dst = src.rsplit('.', 1)[0] + suffix
         if a.force or not os.path.exists(dst):
-            render(src, dst, w, h, CARD_ZOOM, (0.0, 0.0), a.seconds)
+            render(src, dst, CARD_ZOOM, (0.0, 0.0), a.seconds)
         made.append(dst)
         print('  card ', os.path.basename(dst))
     print(f'{len(made)} moving clips in {a.workdir}')
