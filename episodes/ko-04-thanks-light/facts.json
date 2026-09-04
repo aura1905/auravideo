@@ -1,0 +1,39 @@
+{
+ "demo_appid": 3276550,
+ "full_appid": 2544740,
+ "name": "THANKS, LIGHT.",
+ "developers": [
+  "Lightersgames"
+ ],
+ "publishers": [
+  "Game Source Entertainment"
+ ],
+ "release": "14 Oct, 2026",
+ "coming_soon": true,
+ "genres": [
+  "Adventure",
+  "Indie",
+  "Strategy"
+ ],
+ "languages": "English, Korean, Japanese, Simplified Chinese, Traditional Chinese, French, Italian, German, Spanish - Spain, Danish, Ukrainian, Russian, Indonesian, Turkish, Greek, Polish, Thai, Swedish, Finnish, Dutch, Portuguese - Brazil",
+ "website": "https://www.lightersgames.com/",
+ "short": "A first-person puzzler where light reshapes physics and geometry — a glitch-laced mystery for the people who still keep a portal gun, a camera, and a perspective shift in their library.",
+ "about": " Wishlist!             About the Game   Flat in shadow. Tall in light.    Shine to raise. Absorb to flatten.   A first-person puzzler for the people who still keep a portal gun, a camera, and a perspective shift bookmarked in their library.                          Shine light to give shadow weight.   A flat square unfolds into a staircase. A fragile outline turns into a towering pillar. Light grants mass, collision, gravity — and once it's solid, you climb it, push it, drop it.             Absorb light to switch Physics off.   A rolling ball lies still. A wall becomes a doorway. Mass vanishes — and what blocked you now lets you through.             The mechanic keeps growing.   Mirrors duplicate. Lenses resize. Merging fuses two forms into a new one.    Three chapters deep. Five mechanics that learn to talk to each other.  The deeper you go, the more the rules combine.  Built to escalate — never just adding, always recombining.    3 chapters · 6+ hours · 60+ Stages.             A world that watches you solve it.   An unnamed Administrator built this place to be flawless. A marble museum gives way to an office that repeats one hallway too many times, and finally to a black-and-white space where memory leaks through the walls. The architecture is your second puzzle — read it carefully.    Watch out for the beings hiding in the shadows... ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10 64-bit(version 1909 or later)    Processor:  Intel Core i5-9400 / AMD Ryzen 5 3500X    Memory:  8 GB RAM    Graphics:  NVIDIA GeForce GTX 1660(6GB) / AMD Radeon RX 590 (8GB VRAM)    DirectX:  Version 11    Storage:  8 GB available space    Sound Card:  DirectX Compatible Sound Card    Additional Notes:  SSD recommended. Targets 1080p 30fps on Medium settings  ",
+ "movies": [
+  {
+   "id": 257356805,
+   "name": "《THANKS, LIGHT.》 Official 60s Trailer"
+  },
+  {
+   "id": 257204593,
+   "name": "Trailer"
+  }
+ ],
+ "screenshots": 18,
+ "reviews": {
+  "total": 75,
+  "positive": 70,
+  "desc": "Very Positive"
+ }
+}

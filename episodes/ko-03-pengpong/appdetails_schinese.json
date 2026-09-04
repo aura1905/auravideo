@@ -1,0 +1,347 @@
+{
+ "type": "game",
+ "name": "PengPong 弹企鹅",
+ "steam_appid": 2766910,
+ "required_age": 0,
+ "is_free": false,
+ "controller_support": "full",
+ "detailed_description": "<p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/6cb457961f1638a1ea918f4ead690727.poster.avif?t=1787648640\" width=608 height=340 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/6cb457961f1638a1ea918f4ead690727.webm?t=1787648640\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/6cb457961f1638a1ea918f4ead690727.mp4?t=1787648640\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><strong>《弹企鹅 PengPong》</strong> 是一款弹幕射击 Roguelike 游戏。在这里，你想活命就得反弹各种武器和道具（管它是什么，弹就对了）。请记住：万物皆可弹，而且你得弹得漂亮。</p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" ><strong>游戏特色：</strong></h2><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/f249029c201a05149406fe2c86112e65.poster.avif?t=1787648640\" width=608 height=340 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/f249029c201a05149406fe2c86112e65.webm?t=1787648640\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/f249029c201a05149406fe2c86112e65.mp4?t=1787648640\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong>生存挑战：</strong> 利用不同角色与武器的奇妙组合，在重重包围中活到最后。</p></li><li><p class=\"bb_paragraph\" >弹射才是硬道理：关键不在于直接打击，而在于利用物理反弹。冰球、手枪（拿来扔的那种！）、耳机（没错，耳机也弹！），甚至是河豚……去弹射这堆奇葩玩意儿吧！找准角度，让它们再飞一会儿。</p></li><li><p class=\"bb_paragraph\" ><strong>命运的回旋木马：</strong> 每一波结束后都要面临抉择：是签下残酷的契约，还是去赌场梭哈，或者是老老实实逛逛商店？</p></li></ul><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/ea2953c6ebf0ea3f5aebbfb079864fda.poster.avif?t=1787648640\" width=608 height=340 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/ea2953c6ebf0ea3f5aebbfb079864fda.webm?t=1787648640\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/ea2953c6ebf0ea3f5aebbfb079864fda.mp4?t=1787648640\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong>无限可能性：</strong> 超多道具，为你带来无穷的组合潜力与不可控的变数。</p></li><li><p class=\"bb_paragraph\" ><strong>争霸排行榜：</strong> 用你的最高分在全球玩家面前证明，谁才是真正的反弹大师。</p></li><li><p class=\"bb_paragraph\" ><strong>既可爱又诡异：</strong> 沉浸在充满质感的复古动画世界观中，感受那份“可爱又迷人”的诡异氛围。</p></li></ul><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/c597ac912aeb3b82ae1dde013febb1ee.poster.avif?t=1787648640\" width=800 height=300 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/c597ac912aeb3b82ae1dde013febb1ee.webm?t=1787648640\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/c597ac912aeb3b82ae1dde013febb1ee.mp4?t=1787648640\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >去赌场里大赚一笔吧！运气好的话，游戏难度可能会直线下降。但千万别误会！<strong>《弹企鹅 PengPong》</strong> 可不是什么赌博模拟器，它是一款以可爱企鹅为主角的弹幕射击 Roguelike 游戏。<i>大概吧。</i></p>",
+ "about_the_game": "<p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/6cb457961f1638a1ea918f4ead690727.poster.avif?t=1787648640\" width=608 height=340 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/6cb457961f1638a1ea918f4ead690727.webm?t=1787648640\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/6cb457961f1638a1ea918f4ead690727.mp4?t=1787648640\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><strong>《弹企鹅 PengPong》</strong> 是一款弹幕射击 Roguelike 游戏。在这里，你想活命就得反弹各种武器和道具（管它是什么，弹就对了）。请记住：万物皆可弹，而且你得弹得漂亮。</p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" ><strong>游戏特色：</strong></h2><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/f249029c201a05149406fe2c86112e65.poster.avif?t=1787648640\" width=608 height=340 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/f249029c201a05149406fe2c86112e65.webm?t=1787648640\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/f249029c201a05149406fe2c86112e65.mp4?t=1787648640\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong>生存挑战：</strong> 利用不同角色与武器的奇妙组合，在重重包围中活到最后。</p></li><li><p class=\"bb_paragraph\" >弹射才是硬道理：关键不在于直接打击，而在于利用物理反弹。冰球、手枪（拿来扔的那种！）、耳机（没错，耳机也弹！），甚至是河豚……去弹射这堆奇葩玩意儿吧！找准角度，让它们再飞一会儿。</p></li><li><p class=\"bb_paragraph\" ><strong>命运的回旋木马：</strong> 每一波结束后都要面临抉择：是签下残酷的契约，还是去赌场梭哈，或者是老老实实逛逛商店？</p></li></ul><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/ea2953c6ebf0ea3f5aebbfb079864fda.poster.avif?t=1787648640\" width=608 height=340 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/ea2953c6ebf0ea3f5aebbfb079864fda.webm?t=1787648640\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/ea2953c6ebf0ea3f5aebbfb079864fda.mp4?t=1787648640\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong>无限可能性：</strong> 超多道具，为你带来无穷的组合潜力与不可控的变数。</p></li><li><p class=\"bb_paragraph\" ><strong>争霸排行榜：</strong> 用你的最高分在全球玩家面前证明，谁才是真正的反弹大师。</p></li><li><p class=\"bb_paragraph\" ><strong>既可爱又诡异：</strong> 沉浸在充满质感的复古动画世界观中，感受那份“可爱又迷人”的诡异氛围。</p></li></ul><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/c597ac912aeb3b82ae1dde013febb1ee.poster.avif?t=1787648640\" width=800 height=300 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/c597ac912aeb3b82ae1dde013febb1ee.webm?t=1787648640\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/extras/c597ac912aeb3b82ae1dde013febb1ee.mp4?t=1787648640\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >去赌场里大赚一笔吧！运气好的话，游戏难度可能会直线下降。但千万别误会！<strong>《弹企鹅 PengPong》</strong> 可不是什么赌博模拟器，它是一款以可爱企鹅为主角的弹幕射击 Roguelike 游戏。<i>大概吧。</i></p>",
+ "short_description": "《弹企鹅 PengPong》 是一款弹幕射击 Roguelike 游戏。只不过，我们又往里加了点物理弹射的佐料以及需要一点运气点缀的……变数。",
+ "supported_languages": "英语, 韩语, 日语, 简体中文, 繁体中文, 法语, 德语, 西班牙语 - 西班牙",
+ "reviews": "“Adds a creative twist to the survivor shooter formula — feels fresh and addictive.”<br>G.Round<br><br>“By combining Cuphead-like visual flair with survivor-shooter progression and a unique ricochet-based combat feel, PengPong delivers a fresh sense of impact within a familiar genre space.”<br>Game*Spark<br><br>“Layering classic roguelite action with bold hockey-stick combat, vintage-cartoon presentation, and playful slot-style pacing, PengPong carves out a personality that feels immediately distinctive.”<br>AUTOMATON JP<br>",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/529bc7b12f50c43d8923967a5045b15ac9d30491/header_schinese.jpg?t=1787648640",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/a8fa33142ac00f4505edfb4ff1a17e4bb3bf2d50/capsule_231x87_schinese.jpg?t=1787648640",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/a8fa33142ac00f4505edfb4ff1a17e4bb3bf2d50/capsule_184x69_schinese.jpg?t=1787648640",
+ "website": null,
+ "pc_requirements": {
+  "minimum": "<strong>最低配置:</strong><br><ul class=\"bb_ul\"><li>需要 64 位处理器和操作系统<br></li><li><strong>操作系统 *:</strong> Windows 7+<br></li><li><strong>处理器:</strong> Core i3 and up<br></li><li><strong>内存:</strong> 3 GB RAM<br></li><li><strong>显卡:</strong> 256mb video memory<br></li><li><strong>附注事项:</strong> 64 bit required</li></ul>",
+  "recommended": "<strong>推荐配置:</strong><br><ul class=\"bb_ul\"><li>需要 64 位处理器和操作系统</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>最低配置:</strong><br><ul class=\"bb_ul\"><li>需要 Apple 处理器<br></li><li><strong>操作系统:</strong> Ventura 13.0.1<br></li><li><strong>处理器:</strong> Apple silicon<br></li><li><strong>内存:</strong> 1536 MB RAM<br></li><li><strong>显卡:</strong> Apple silicon</li></ul>",
+  "recommended": "<strong>推荐配置:</strong><br><ul class=\"bb_ul\"><li>需要 Apple 处理器</li></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>最低配置:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>推荐配置:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "developers": [
+  "SANDY FLOOR"
+ ],
+ "publishers": [
+  "SANDY FLOOR",
+  " Gamirror Games"
+ ],
+ "demos": [
+  {
+   "appid": 3636220,
+   "description": ""
+  }
+ ],
+ "price_overview": {
+  "currency": "KRW",
+  "initial": 1450000,
+  "final": 1450000,
+  "discount_percent": 0,
+  "initial_formatted": "",
+  "final_formatted": "₩ 14,500"
+ },
+ "packages": [
+  989197
+ ],
+ "package_groups": [
+  {
+   "name": "default",
+   "title": "购买 PengPong 弹企鹅",
+   "description": "",
+   "selection_text": "选择一个购买选项",
+   "save_text": "",
+   "display_type": 0,
+   "is_recurring_subscription": "false",
+   "subs": [
+    {
+     "packageid": 989197,
+     "percent_savings_text": " ",
+     "percent_savings": 0,
+     "option_text": "PengPong 弹企鹅 - ₩ 14,500",
+     "option_description": "",
+     "can_get_free_license": "0",
+     "is_free_license": false,
+     "price_in_cents_with_discount": 1450000
+    }
+   ]
+  }
+ ],
+ "platforms": {
+  "windows": true,
+  "mac": true,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "单人"
+  },
+  {
+   "id": 22,
+   "description": "Steam 成就"
+  },
+  {
+   "id": 28,
+   "description": "完全支持控制器"
+  },
+  {
+   "id": 67,
+   "description": "视角舒适度"
+  },
+  {
+   "id": 68,
+   "description": "自定义音量控制"
+  },
+  {
+   "id": 78,
+   "description": "可调整难度"
+  },
+  {
+   "id": 55,
+   "description": "DUALSHOCK 控制器支持"
+  },
+  {
+   "id": 57,
+   "description": "DualSense 控制器支持"
+  },
+  {
+   "id": 79,
+   "description": "随时保存"
+  },
+  {
+   "id": 59,
+   "description": "Steam 输入 API 支持"
+  },
+  {
+   "id": 23,
+   "description": "Steam 云"
+  },
+  {
+   "id": 15,
+   "description": "统计数据"
+  },
+  {
+   "id": 25,
+   "description": "Steam 排行榜"
+  },
+  {
+   "id": 62,
+   "description": "家庭共享"
+  }
+ ],
+ "genres": [
+  {
+   "id": "1",
+   "description": "动作"
+  },
+  {
+   "id": "4",
+   "description": "休闲"
+  },
+  {
+   "id": "23",
+   "description": "独立"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/a1d111090f0d3ac9506ab8acf1f53a060f3c6e95/ss_a1d111090f0d3ac9506ab8acf1f53a060f3c6e95.600x338.jpg?t=1787648640",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/a1d111090f0d3ac9506ab8acf1f53a060f3c6e95/ss_a1d111090f0d3ac9506ab8acf1f53a060f3c6e95.1920x1080.jpg?t=1787648640"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/35cd67d81addec1b0d68ba04df843f2e6e0c8a55/ss_35cd67d81addec1b0d68ba04df843f2e6e0c8a55.600x338.jpg?t=1787648640",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/35cd67d81addec1b0d68ba04df843f2e6e0c8a55/ss_35cd67d81addec1b0d68ba04df843f2e6e0c8a55.1920x1080.jpg?t=1787648640"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/5d4a8f74d61e5ef3447e37ed68f37f141acfc7d7/ss_5d4a8f74d61e5ef3447e37ed68f37f141acfc7d7.600x338.jpg?t=1787648640",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/5d4a8f74d61e5ef3447e37ed68f37f141acfc7d7/ss_5d4a8f74d61e5ef3447e37ed68f37f141acfc7d7.1920x1080.jpg?t=1787648640"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/9eaa269e8e28f17caed1060d750fd381fccad67d/ss_9eaa269e8e28f17caed1060d750fd381fccad67d.600x338.jpg?t=1787648640",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/9eaa269e8e28f17caed1060d750fd381fccad67d/ss_9eaa269e8e28f17caed1060d750fd381fccad67d.1920x1080.jpg?t=1787648640"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/4d4da38b760e2d40cdb468581caf2de4615c9162/ss_4d4da38b760e2d40cdb468581caf2de4615c9162.600x338.jpg?t=1787648640",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/4d4da38b760e2d40cdb468581caf2de4615c9162/ss_4d4da38b760e2d40cdb468581caf2de4615c9162.1920x1080.jpg?t=1787648640"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/b730e069f958c596436b815e08db7bfadde1088c/ss_b730e069f958c596436b815e08db7bfadde1088c.600x338.jpg?t=1787648640",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/b730e069f958c596436b815e08db7bfadde1088c/ss_b730e069f958c596436b815e08db7bfadde1088c.1920x1080.jpg?t=1787648640"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/9bde8de8fe7b257194ce754c8323b2be9124fe25/ss_9bde8de8fe7b257194ce754c8323b2be9124fe25.600x338.jpg?t=1787648640",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/9bde8de8fe7b257194ce754c8323b2be9124fe25/ss_9bde8de8fe7b257194ce754c8323b2be9124fe25.1920x1080.jpg?t=1787648640"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/24dbbde3ba33a04378bdae11d9354d451b23ca6d/ss_24dbbde3ba33a04378bdae11d9354d451b23ca6d.600x338.jpg?t=1787648640",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/24dbbde3ba33a04378bdae11d9354d451b23ca6d/ss_24dbbde3ba33a04378bdae11d9354d451b23ca6d.1920x1080.jpg?t=1787648640"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/f5af463651deabaa671667281d93150c7b051f3a/ss_f5af463651deabaa671667281d93150c7b051f3a.600x338.jpg?t=1787648640",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/f5af463651deabaa671667281d93150c7b051f3a/ss_f5af463651deabaa671667281d93150c7b051f3a.1920x1080.jpg?t=1787648640"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257407913,
+   "name": "发售宣传片",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257407913/b471c6c6225ed8d2c35ab7617208bdb67809b2ca/movie_600x337.jpg?t=1787648639",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/2766910/1873474217/546a7b01ff85dfa442113d5a04a806b5a414b486/1787644549/dash_av1.mpd?t=1787648639",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/2766910/1873474217/546a7b01ff85dfa442113d5a04a806b5a414b486/1787644549/dash_h264.mpd?t=1787648639",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/2766910/1873474217/546a7b01ff85dfa442113d5a04a806b5a414b486/1787644549/hls_264_master.m3u8?t=1787648639",
+   "highlight": true
+  },
+  {
+   "id": 257254417,
+   "name": "Demo Play - CN",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257254417/42c49bf3a10b21ddb468868cbf1521d7f8bf2b3d/movie_600x337.jpg?t=1766475326",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/2766910/1596787715/1935a58f99d4fee7edc1ec55f81876b0dacfc314/1766471893/dash_av1.mpd?t=1766475326",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/2766910/1596787715/1935a58f99d4fee7edc1ec55f81876b0dacfc314/1766471893/dash_h264.mpd?t=1766475326",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/2766910/1596787715/1935a58f99d4fee7edc1ec55f81876b0dacfc314/1766471893/hls_264_master.m3u8?t=1766475326",
+   "highlight": true
+  }
+ ],
+ "recommendations": {
+  "total": 214
+ },
+ "achievements": {
+  "total": 99,
+  "highlighted": [
+   {
+    "icon": "9eec92cc948d3ce643e98d270c1279405d4fba1a.jpg",
+    "localized_name": "申请进货",
+    "archived": 0,
+    "hidden": 0,
+    "name": "申请进货",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2766910/9eec92cc948d3ce643e98d270c1279405d4fba1a.jpg"
+   },
+   {
+    "icon": "ac337dc288000607dacc42a78a4afcde9ef5e515.jpg",
+    "localized_name": "没有相中的",
+    "archived": 0,
+    "hidden": 0,
+    "name": "没有相中的",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2766910/ac337dc288000607dacc42a78a4afcde9ef5e515.jpg"
+   },
+   {
+    "icon": "b8ea1d86c7122d5a63f375448be92a98277c4e1d.jpg",
+    "localized_name": "五五开",
+    "archived": 0,
+    "hidden": 0,
+    "name": "五五开",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2766910/b8ea1d86c7122d5a63f375448be92a98277c4e1d.jpg"
+   },
+   {
+    "icon": "272b0656e5f0e774fdcb51c0db730ca18bd75baf.jpg",
+    "localized_name": "前往未知之屋",
+    "archived": 0,
+    "hidden": 0,
+    "name": "前往未知之屋",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2766910/272b0656e5f0e774fdcb51c0db730ca18bd75baf.jpg"
+   },
+   {
+    "icon": "c3c2e8954cd7712ad11ee17ee9100f06c5cab99d.jpg",
+    "localized_name": "期待已久的时刻",
+    "archived": 0,
+    "hidden": 0,
+    "name": "期待已久的时刻",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2766910/c3c2e8954cd7712ad11ee17ee9100f06c5cab99d.jpg"
+   },
+   {
+    "icon": "d34ee80196e2e1c215eaa2b933f70fd758581814.jpg",
+    "localized_name": "大奖老虎机",
+    "archived": 0,
+    "hidden": 0,
+    "name": "大奖老虎机",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2766910/d34ee80196e2e1c215eaa2b933f70fd758581814.jpg"
+   },
+   {
+    "icon": "18de30d88d00f819b9450e6218e3d0724860284c.jpg",
+    "localized_name": "连半衰期都没有",
+    "archived": 0,
+    "hidden": 0,
+    "name": "连半衰期都没有",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2766910/18de30d88d00f819b9450e6218e3d0724860284c.jpg"
+   },
+   {
+    "icon": "5783f1cfdd82db0ceaffbe5798205ff80e3aa483.jpg",
+    "localized_name": "祝你交易愉快",
+    "archived": 0,
+    "hidden": 0,
+    "name": "祝你交易愉快",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2766910/5783f1cfdd82db0ceaffbe5798205ff80e3aa483.jpg"
+   },
+   {
+    "icon": "1950629b17b1785c008877cf3ceab168552ef92d.jpg",
+    "localized_name": "征服者·Ⅰ",
+    "archived": 0,
+    "hidden": 0,
+    "name": "征服者·Ⅰ",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2766910/1950629b17b1785c008877cf3ceab168552ef92d.jpg"
+   },
+   {
+    "icon": "8fa64ffa0874a2bb72c548b0ba71f1e6e6f0eed9.jpg",
+    "localized_name": "征服者·Ⅱ",
+    "archived": 0,
+    "hidden": 0,
+    "name": "征服者·Ⅱ",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2766910/8fa64ffa0874a2bb72c548b0ba71f1e6e6f0eed9.jpg"
+   }
+  ]
+ },
+ "release_date": {
+  "coming_soon": false,
+  "date": "2026 年 8 月 20 日"
+ },
+ "support_info": {
+  "url": "https://discord.gg/2RpdUwgeUH",
+  "email": "help@sandyfloor.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/2766910?t=1787648640",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2766910/fdfdbed0c53c597db021e10789ba8d009c6dba76/page_bg_raw.jpg?t=1787648640",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "kgrb": {
+   "rating": "12"
+  },
+  "dejus": {
+   "rating": "l",
+   "descriptors": "Violência fantasiosa"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "12",
+   "required_age": "12",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Gewalt\nSchimpfwörte"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Simulasi dan/atau kegiatan judi\nPenggunaan bahasa\nKekerasan"
+  }
+ }
+}

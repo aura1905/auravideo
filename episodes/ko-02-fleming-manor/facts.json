@@ -1,0 +1,34 @@
+{
+ "demo_appid": 4137650,
+ "full_appid": 3758950,
+ "name": "Death at Fleming Manor",
+ "developers": [
+  "SUPERTHUMb"
+ ],
+ "publishers": [
+  "SUPERTHUMb"
+ ],
+ "release": "3 Nov, 2026",
+ "coming_soon": true,
+ "genres": [
+  "Adventure",
+  "Indie"
+ ],
+ "languages": "English, Japanese, Simplified Chinese, Traditional Chinese, Korean",
+ "website": "https://www.superthumb.net/flemingmanor",
+ "short": "&quot;Your job is to write the death certificate.&quot; In 1959, a mysterious death awaits inside a grand British manor. Investigate eerie scenes and complete forensic documents, including death certificates and emergency reports. Stylish 1960s detective comic art. Perfect for fans of vintage whodunits.",
+ "about": "   If you unraveled Return of the Obra Dinn and The Case of the Golden Idol to the very end...     It is time to pick up your pen.    Your job is to write the death certificate.              England, 1959   A series of unexplained deaths has occurred at Fleming Manor, a country estate outside London.  As the investigator assigned to the cases, you will examine each scene, study the condition of the body, question the people involved, and review the available evidence. You must identify the victim, determine the cause of death, and decide whether the death was accidental, self-inflicted, or the result of murder.                 When you believe you understand what happened, record your conclusions in a death certificate or emergency report. Choosing a suspect is not enough. Missing or incorrect information may lead to the wrong conclusion.             Investigation at Fleming Manor    Death at Fleming Manor  is a forensic mystery adventure built around observation, deduction, and official documentation.  The game takes place in a British country manor in the late 1950s. Its hand-drawn visual style is inspired by European crime and mystery comics of the 1960s, while the soundtrack draws from classic detective dramas.  If you enjoy  Agatha Christie  mysteries, methodical investigations, and story-driven games where small details matter,  Death at Fleming Manor  may be for you.                Key Features       Complete the Official Records   Examine each body, review the evidence, and record your conclusions in death certificates and emergency reports.       A Mystery Set in a 1950s British Manor   Investigate a series of deaths at an isolated country estate, where the residents may not be telling you everything.       Hand-Drawn Ligne Claire Artwork   Explore scenes illustrated by hand in a style inspired by European mystery comics from the 1960s.       Draw Your Own Conclusions   The game will not confirm your suspicions for you. To close a case, you must identify what happened and support every part of your report with evidence.     About This Demo     This demo contains the Prologue, which serves as the tutorial, and Chapter 1 of the full game. It introduces the beginning of the story and the main investigation and document-writing systems.      Later chapters and some features are not included in the demo. Certain puzzles and solutions may also differ from those in the full version.    We will actively review feedback from the demo and use it to improve the full version of the game. All translations are reviewed by native speakers to ensure accuracy and natural wording.    All graphics in this game were created by human artists. No generative AI was used.  We also have a YouTube channel where we upload introduction videos for our layered Clip Studio Paint files, as well as detailed videos showing the work process.  YouTube: @SUPERTHUMbGameArt ",
+ "min_req": " Minimum:     OS *:  Windows 7 or better    Processor:  Intel i5 3.0 GHz or better    Memory:  8 GB RAM    Graphics:  Intel HD Graphics 530    Storage:  2 GB available space  ",
+ "movies": [
+  {
+   "id": 257142896,
+   "name": "Death at Fleming Manor"
+  }
+ ],
+ "screenshots": 10,
+ "reviews": {
+  "total": 147,
+  "positive": 123,
+  "desc": "Very Positive"
+ }
+}

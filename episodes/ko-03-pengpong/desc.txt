@@ -1,0 +1,39 @@
+펭퐁 — 정식 출시된 게임 파일 안에, 유니티를 AI 에이전트한테 맡길 때 쓰는 연결 모듈이 그대로 들어 있었습니다.
+도구를 만드는 시간은 다음 게임에서 돌아옵니다. 대신 이번 게임의 콘텐츠에서 빠져나옵니다.
+
+▶ 무료 데모: https://store.steampowered.com/app/3636220/
+▶ 본편: https://store.steampowered.com/app/2766910/
+
+── 이렇게 만들었습니다 ──
+엔진      : 유니티 / 모노
+팀        : 한국, 샌디 플로어
+자체 모듈 : 여덟 개
+게임 코드 : Assembly-CSharp 5 KB
+함정      : 스테이지 세 개
+판정      : 찍먹 추천
+
+── 쓰인 도구들 ──
+FMOD (오디오 미들웨어) : https://www.fmod.com/
+DOTween                : http://dotween.demigiant.com/
+Febucci Text Animator  : https://www.febucci.com/text-animator-unity/
+GameAnalytics          : https://gameanalytics.com/
+Steamworks.NET         : https://steamworks.github.io/
+MCP for Unity          : https://github.com/CoplayDev/unity-mcp
+펭퐁 스팀 페이지       : https://store.steampowered.com/app/2766910/
+
+── 챕터 ──
+0:00 빌드에서 나온 것
+0:15 펭퐁이 어떤 게임인가
+0:46 파일 목록 뜯어보기
+2:55 플레이어들이 하는 말
+3:19 스펙 시트와 판정
+
+이 영상의 제작 분석은 전부 공개된 정보만 보고 쓴 것입니다. 스팀 상점 페이지, 개발사의
+공개 발언, 최근 리뷰, 그리고 스팀이 공개하는 데모 depot 파일 목록(파일 이름과 크기만
+봤고 해체·디컴파일·재배포는 하지 않았습니다). 개발사의 공식 설명이 아니라 바깥에서 읽은
+것이고, 추정은 추정이라고 밝혔습니다. 틀린 부분은 댓글로 알려주시면 정정해 고정하겠습니다.
+게임 영상과 이미지의 권리는 SANDY FLOOR에 있습니다.
+
+게임 개발 20년 넘게 한 사람이 만듭니다.
+
+#인디게임 #게임개발 #스팀데모

@@ -20,3 +20,10 @@ tsconfig.tsbuildinfo
 # Python bytecode from scripts/
 __pycache__/
 *.pyc
+
+# Frame sequences the layer renderers drop next to the working directory when
+# run from the repo root (sc_header/, sc_row_0/, sc_stamp/, ...). They are
+# rebuilt from scripts/motion/render_spec_layers*.py.
+/sc_header/
+/sc_row_*/
+/sc_stamp/

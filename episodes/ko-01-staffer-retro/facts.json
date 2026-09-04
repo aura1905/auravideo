@@ -1,0 +1,35 @@
+{
+ "demo_appid": 4125500,
+ "full_appid": 3837350,
+ "name": "Staffer Retro : A Supernatural Mystery Quest",
+ "developers": [
+  "Team Tetrapod"
+ ],
+ "publishers": [
+  "Team Tetrapod",
+  "GamePia Co., Ltd."
+ ],
+ "release": "22 Jul, 2026",
+ "coming_soon": false,
+ "genres": [
+  "Adventure",
+  "Indie"
+ ],
+ "languages": "English, Korean, Japanese*, Simplified Chinese, Traditional Chinese, French, German*languages with full audio support",
+ "website": "https://www.tetrapod.company/",
+ "short": "Staffer Retro is a mystery adventure game where you uncover past incidents related to ‘Mana’, the source of supernatural powers. Gather information through dialogue and exploration, and piece together clues found in documents to guide the choices of Verita Retro, the protagonist.",
+ "about": "   An island town where supernatural powers exist... Dive into the truth of the past, all obscured by the monotony of daily life.    [Staffer Retro] is a detective adventure that explores past events related to supernatural powers.          Synopsis  A world where supernatural abilities exist. Plus, tools with mysterious powers, 'STAFF.'  For Verita, an ordinary girl who resides in a second-hand store, Shop Retro, these things sound like stories from a far-off world. That is, until she's suddenly buried under a considerable debt.  You’ll be joining Verita on her journey, by Help her resolve the story’s contradictions and mysteries, and decide how she should act. Hidden stories behind the scenes and various tricks you might have missed if you weren’t paying close attention are waiting for you.       Delve into how these supernatural powers have shaped the past!            Choose your actions!  Use conversation or exploration to gather information and new documents, then reach your own conclusion as you reason through what you've found. The results of your own choices and logic can lead you toward a different ending.         Use logic to combine documents  Make use of the document-centric system that has defined the Staffer series! Combine information about these supernatural happenings recorded on all sorts of documents in order to discover a brand-new truth.  Over 40 unique kinds of documents holding over 100 different clues and The rules behind these supernatural powers, and all these suspicious records... are waiting you!         Recall the truth of the incident ─ Re:Story system  Sort through six types of documents in order to find the clues to the story playing out. Once you fill them all out, the truth hidden within might just make itself known.         Reveal the truth behind the story ─ Retro system  Behind the seemingly peaceful daily routine, a vicious truth lies in wait... At the end of each mystery, the 'dark side' exists to be uncovered. Turn the conclusion on its head in order to discover a new ending.         Voice acting for the main story features over 20 characters  The story, consisting of 6 episodes (Acts) and 11 endings, features over 20 characters voiced by a talented cast of 17 or more Japanese voice actors. Solve the mystery with voice recordings equivalent to two full seasons of a Japanese anime series!            Animations that breathe life into Characters &amp; Cutscene  Enjoy high-quality illustrations brought to life with Spine animation!  All characters, including extra characters, have been animated. And also applied a variety of facial expressions to the characters to create a more realistic presentation.    *All content in this game may be freely streamed. *No generative AI was used at any stage of this game's development.   ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10 64bit    Processor:  Intel I3 2.0Ghz +    Memory:  6 GB RAM    Graphics:  DirectX 11 capable GPU    DirectX:  Version 11    Storage:  7 GB available space  ",
+ "movies": [
+  {
+   "id": 257164286,
+   "name": "Staffer Retro Trailer / English"
+  }
+ ],
+ "screenshots": 13,
+ "reviews": {
+  "total": 272,
+  "positive": 258,
+  "desc": "Very Positive"
+ }
+}

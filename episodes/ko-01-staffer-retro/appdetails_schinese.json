@@ -1,0 +1,365 @@
+{
+ "type": "game",
+ "name": "Staffer Retro - 异能追忆",
+ "steam_appid": 3837350,
+ "required_age": 0,
+ "is_free": false,
+ "controller_support": "full",
+ "detailed_description": "<h2 class=\"bb_tag\" >《Staffer Retro - 异能追忆》是一款推理冒险游戏，探索与超能力相关的往事吧。</h2><p class=\"bb_paragraph\" >法力现象（即异能）是该系列的核心，贯穿故事始终。</p><p class=\"bb_paragraph\" >与薇莉塔一同踏上旅程，追寻法力的过往。</p><p class=\"bb_paragraph\" >玩家的推理将决定每一章的结局。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras/964a30bd9ea358ddec762f02b71cabf7.avif?t=1788402813\" width=800 height=269 /></span></p><p class=\"bb_paragraph\" >跟随流程找到超能力相关的文档，以及留有痕迹的地图。</p><p class=\"bb_paragraph\" >整理文档信息，逐步揭开尘封于过往的真相。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras/64e7af7e3409e640588d7c816ec529b5.avif?t=1788402813\" width=1280 height=720 /></span></p><h2 class=\"bb_tag\" >【选择行动】</h2><p class=\"bb_paragraph\" >通过对话或探索来收集信息与文档，再逐步推理，得出只属于你自己的结论。</p><p class=\"bb_paragraph\" >根据你的选择和推理结果，故事将迎来不同的结局。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras/c910c35f377a9a5d2b9f32f9b282be7a.avif?t=1788402813\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras_big/c910c35f377a9a5d2b9f32f9b282be7a.webp?t=1788402813 width=1560 height=878 /></span></p><h2 class=\"bb_tag\" >【组合文档进行推理】</h2><p class=\"bb_paragraph\" >本作也采用了异能系列特有的系统——基于文档进行推理！在大量记载着超能力相关信息的文档中组合线索，逐步揭开新的真相。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras/8b346d9f5b0e30cb260cdf6a475e4520.avif?t=1788402813\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras_big/8b346d9f5b0e30cb260cdf6a475e4520.webp?t=1788402813 width=1560 height=878 /></span></p><h2 class=\"bb_tag\" >【Re:Story】</h2><p class=\"bb_paragraph\" >从6种不同类型的文档中找出散落的线索。梳理完成后，幕后的真相或许就会浮现。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras/83225c66ce4446425ac4d24b8a731f19.avif?t=1788402813\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras_big/83225c66ce4446425ac4d24b8a731f19.webp?t=1788402813 width=1560 height=878 /></span></p><h2 class=\"bb_tag\" >【Retro系统】</h2><p class=\"bb_paragraph\" >&quot;在平静日常的另一面，隐藏着残酷的真相……</p><p class=\"bb_paragraph\" >每个谜团也是如此，同样存在着“另一面”。</p><p class=\"bb_paragraph\" >颠覆现有的结论，发现全新的结局。&quot;</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras/3b6d49fa01a94d81d2741fb0866e8d5a.avif?t=1788402813\" width=800 height=450 /></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >*本游戏的所有内容均可自由直播。</p><p class=\"bb_paragraph\" >*本游戏的制作过程中完全未使用生成式AI。</p>",
+ "about_the_game": "<h2 class=\"bb_tag\" >《Staffer Retro - 异能追忆》是一款推理冒险游戏，探索与超能力相关的往事吧。</h2><p class=\"bb_paragraph\" >法力现象（即异能）是该系列的核心，贯穿故事始终。</p><p class=\"bb_paragraph\" >与薇莉塔一同踏上旅程，追寻法力的过往。</p><p class=\"bb_paragraph\" >玩家的推理将决定每一章的结局。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras/964a30bd9ea358ddec762f02b71cabf7.avif?t=1788402813\" width=800 height=269 /></span></p><p class=\"bb_paragraph\" >跟随流程找到超能力相关的文档，以及留有痕迹的地图。</p><p class=\"bb_paragraph\" >整理文档信息，逐步揭开尘封于过往的真相。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras/64e7af7e3409e640588d7c816ec529b5.avif?t=1788402813\" width=1280 height=720 /></span></p><h2 class=\"bb_tag\" >【选择行动】</h2><p class=\"bb_paragraph\" >通过对话或探索来收集信息与文档，再逐步推理，得出只属于你自己的结论。</p><p class=\"bb_paragraph\" >根据你的选择和推理结果，故事将迎来不同的结局。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras/c910c35f377a9a5d2b9f32f9b282be7a.avif?t=1788402813\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras_big/c910c35f377a9a5d2b9f32f9b282be7a.webp?t=1788402813 width=1560 height=878 /></span></p><h2 class=\"bb_tag\" >【组合文档进行推理】</h2><p class=\"bb_paragraph\" >本作也采用了异能系列特有的系统——基于文档进行推理！在大量记载着超能力相关信息的文档中组合线索，逐步揭开新的真相。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras/8b346d9f5b0e30cb260cdf6a475e4520.avif?t=1788402813\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras_big/8b346d9f5b0e30cb260cdf6a475e4520.webp?t=1788402813 width=1560 height=878 /></span></p><h2 class=\"bb_tag\" >【Re:Story】</h2><p class=\"bb_paragraph\" >从6种不同类型的文档中找出散落的线索。梳理完成后，幕后的真相或许就会浮现。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras/83225c66ce4446425ac4d24b8a731f19.avif?t=1788402813\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras_big/83225c66ce4446425ac4d24b8a731f19.webp?t=1788402813 width=1560 height=878 /></span></p><h2 class=\"bb_tag\" >【Retro系统】</h2><p class=\"bb_paragraph\" >&quot;在平静日常的另一面，隐藏着残酷的真相……</p><p class=\"bb_paragraph\" >每个谜团也是如此，同样存在着“另一面”。</p><p class=\"bb_paragraph\" >颠覆现有的结论，发现全新的结局。&quot;</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/extras/3b6d49fa01a94d81d2741fb0866e8d5a.avif?t=1788402813\" width=800 height=450 /></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >*本游戏的所有内容均可自由直播。</p><p class=\"bb_paragraph\" >*本游戏的制作过程中完全未使用生成式AI。</p>",
+ "short_description": "《Staffer Retro - 异能追忆》是一款推理冒险游戏，你将揭开法力的过往，追溯超能力的起源。通过对话和探索收集信息，从档案中找出线索拼凑真相，一步步引导主角薇莉塔·雷切尔做出选择。你的推理将决定故事走向！",
+ "supported_languages": "英语, 韩语, 日语<strong>*</strong>, 简体中文, 繁体中文, 法语, 德语<br><strong>*</strong>具有完全音频支持的语言",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/c25c6ce250036bf411ae3a0d1015652ce115d8b6/header_schinese.jpg?t=1788402813",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/deca05b94f893d88276264e7b8ff69ee87a4bbd5/capsule_231x87_schinese.jpg?t=1788402813",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/deca05b94f893d88276264e7b8ff69ee87a4bbd5/capsule_184x69_schinese.jpg?t=1788402813",
+ "website": "https://www.tetrapod.company/",
+ "pc_requirements": {
+  "minimum": "<strong>最低配置:</strong><br><ul class=\"bb_ul\"><li>需要 64 位处理器和操作系统<br></li><li><strong>操作系统:</strong> Windows 10 64bit<br></li><li><strong>处理器:</strong> Intel I3 2.0Ghz +<br></li><li><strong>内存:</strong> 6 GB RAM<br></li><li><strong>显卡:</strong> DirectX 11 capable GPU<br></li><li><strong>DirectX 版本:</strong> 11<br></li><li><strong>存储空间:</strong> 需要 7 GB 可用空间</li></ul>",
+  "recommended": "<strong>推荐配置:</strong><br><ul class=\"bb_ul\"><li>需要 64 位处理器和操作系统<br></li><li><strong>操作系统:</strong> Windows 10 64bit<br></li><li><strong>处理器:</strong> better than Intel i5 8400 or AMD ryzen 5 2600<br></li><li><strong>内存:</strong> 8 GB RAM<br></li><li><strong>显卡:</strong> Better than GTX 1050<br></li><li><strong>DirectX 版本:</strong> 11<br></li><li><strong>存储空间:</strong> 需要 8 GB 可用空间</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>最低配置:</strong><br><ul class=\"bb_ul\"><li><strong>操作系统:</strong> macOS 11.0 +<br></li><li><strong>处理器:</strong> Apple Silicon or Intel Processor<br></li><li><strong>内存:</strong> 6 GB RAM<br></li><li><strong>存储空间:</strong> 需要 7 GB 可用空间</li></ul>",
+  "recommended": "<strong>推荐配置:</strong><br><ul class=\"bb_ul\"><li><strong>操作系统:</strong> macOS 14.0 +<br></li><li><strong>处理器:</strong> Apple Silicon or Intel Processor<br></li><li><strong>内存:</strong> 8 GB RAM<br></li><li><strong>存储空间:</strong> 需要 8 GB 可用空间</li></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>最低配置:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>推荐配置:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "legal_notice": "© Team Tetrapod. All rights reserved. Published by GamePia Co., Ltd.",
+ "developers": [
+  "Team Tetrapod"
+ ],
+ "publishers": [
+  "Team Tetrapod",
+  "GamePia Co., Ltd."
+ ],
+ "demos": [
+  {
+   "appid": 4125500,
+   "description": ""
+  }
+ ],
+ "price_overview": {
+  "currency": "KRW",
+  "initial": 3200000,
+  "final": 3200000,
+  "discount_percent": 0,
+  "initial_formatted": "",
+  "final_formatted": "₩ 32,000"
+ },
+ "packages": [
+  1349371
+ ],
+ "package_groups": [
+  {
+   "name": "default",
+   "title": "购买 Staffer Retro - 异能追忆",
+   "description": "",
+   "selection_text": "选择一个购买选项",
+   "save_text": "",
+   "display_type": 0,
+   "is_recurring_subscription": "false",
+   "subs": [
+    {
+     "packageid": 1349371,
+     "percent_savings_text": " ",
+     "percent_savings": 0,
+     "option_text": "Staffer Retro : A Supernatural Mystery Quest - ₩ 32,000",
+     "option_description": "",
+     "can_get_free_license": "0",
+     "is_free_license": false,
+     "price_in_cents_with_discount": 3200000
+    }
+   ]
+  }
+ ],
+ "platforms": {
+  "windows": true,
+  "mac": true,
+  "linux": false
+ },
+ "metacritic": {
+  "score": 79,
+  "url": "https://www.metacritic.com/game/pc/staffer-retro-a-supernatural-mystery-quest?ftag=MCD-06-10aaa1f"
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "单人"
+  },
+  {
+   "id": 22,
+   "description": "Steam 成就"
+  },
+  {
+   "id": 28,
+   "description": "完全支持控制器"
+  },
+  {
+   "id": 68,
+   "description": "自定义音量控制"
+  },
+  {
+   "id": 76,
+   "description": "可以仅用鼠标"
+  },
+  {
+   "id": 80,
+   "description": "#category_playable_at_your_own_pace"
+  },
+  {
+   "id": 74,
+   "description": "无需应对快速反应事件"
+  },
+  {
+   "id": 55,
+   "description": "DUALSHOCK 控制器支持"
+  },
+  {
+   "id": 56,
+   "description": "DUALSHOCK 控制器支持"
+  },
+  {
+   "id": 57,
+   "description": "DualSense 控制器支持"
+  },
+  {
+   "id": 58,
+   "description": "DualSense 控制器支持"
+  },
+  {
+   "id": 79,
+   "description": "随时保存"
+  },
+  {
+   "id": 23,
+   "description": "Steam 云"
+  },
+  {
+   "id": 62,
+   "description": "家庭共享"
+  }
+ ],
+ "genres": [
+  {
+   "id": "25",
+   "description": "冒险"
+  },
+  {
+   "id": "23",
+   "description": "独立"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/2f07d542738e9861414cece179af0b74239d6a5f/ss_2f07d542738e9861414cece179af0b74239d6a5f.600x338.jpg?t=1788402813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/2f07d542738e9861414cece179af0b74239d6a5f/ss_2f07d542738e9861414cece179af0b74239d6a5f.1920x1080.jpg?t=1788402813"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/307a31f8bcb7d741030bacf118e211e5bda1a4b1/ss_307a31f8bcb7d741030bacf118e211e5bda1a4b1.600x338.jpg?t=1788402813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/307a31f8bcb7d741030bacf118e211e5bda1a4b1/ss_307a31f8bcb7d741030bacf118e211e5bda1a4b1.1920x1080.jpg?t=1788402813"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/8139fc8372c035592f4b7d23bc882b40f773d690/ss_8139fc8372c035592f4b7d23bc882b40f773d690.600x338.jpg?t=1788402813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/8139fc8372c035592f4b7d23bc882b40f773d690/ss_8139fc8372c035592f4b7d23bc882b40f773d690.1920x1080.jpg?t=1788402813"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/fdbc39aafca5cd102be85c348203f0bcfe90bd8b/ss_fdbc39aafca5cd102be85c348203f0bcfe90bd8b.600x338.jpg?t=1788402813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/fdbc39aafca5cd102be85c348203f0bcfe90bd8b/ss_fdbc39aafca5cd102be85c348203f0bcfe90bd8b.1920x1080.jpg?t=1788402813"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/c9eec31c93e55b3d907752315c5002358bc67899/ss_c9eec31c93e55b3d907752315c5002358bc67899.600x338.jpg?t=1788402813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/c9eec31c93e55b3d907752315c5002358bc67899/ss_c9eec31c93e55b3d907752315c5002358bc67899.1920x1080.jpg?t=1788402813"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/4d3032bdf084e4190b0bea9183f580e20d38495b/ss_4d3032bdf084e4190b0bea9183f580e20d38495b.600x338.jpg?t=1788402813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/4d3032bdf084e4190b0bea9183f580e20d38495b/ss_4d3032bdf084e4190b0bea9183f580e20d38495b.1920x1080.jpg?t=1788402813"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/a8b6961761512410e20aff51a65dd2fcb59b3ca8/ss_a8b6961761512410e20aff51a65dd2fcb59b3ca8.600x338.jpg?t=1788402813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/a8b6961761512410e20aff51a65dd2fcb59b3ca8/ss_a8b6961761512410e20aff51a65dd2fcb59b3ca8.1920x1080.jpg?t=1788402813"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/638a7356813c3ae4886f2bea5094445bf3a2daf6/ss_638a7356813c3ae4886f2bea5094445bf3a2daf6.600x338.jpg?t=1788402813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/638a7356813c3ae4886f2bea5094445bf3a2daf6/ss_638a7356813c3ae4886f2bea5094445bf3a2daf6.1920x1080.jpg?t=1788402813"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/b017f3fcdc5dd2ba50f003d802b2d2938d44b880/ss_b017f3fcdc5dd2ba50f003d802b2d2938d44b880.600x338.jpg?t=1788402813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/b017f3fcdc5dd2ba50f003d802b2d2938d44b880/ss_b017f3fcdc5dd2ba50f003d802b2d2938d44b880.1920x1080.jpg?t=1788402813"
+  },
+  {
+   "id": 9,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/6bce68c861635aaafe3900a623886dc02a2e19c1/ss_6bce68c861635aaafe3900a623886dc02a2e19c1.600x338.jpg?t=1788402813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/6bce68c861635aaafe3900a623886dc02a2e19c1/ss_6bce68c861635aaafe3900a623886dc02a2e19c1.1920x1080.jpg?t=1788402813"
+  },
+  {
+   "id": 10,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/cbf469853e727a5291b2719f3a6dc007da4ff54b/ss_cbf469853e727a5291b2719f3a6dc007da4ff54b.600x338.jpg?t=1788402813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/cbf469853e727a5291b2719f3a6dc007da4ff54b/ss_cbf469853e727a5291b2719f3a6dc007da4ff54b.1920x1080.jpg?t=1788402813"
+  },
+  {
+   "id": 11,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/6434c3a1470be3c1c716311370323f5723cb915c/ss_6434c3a1470be3c1c716311370323f5723cb915c.600x338.jpg?t=1788402813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/6434c3a1470be3c1c716311370323f5723cb915c/ss_6434c3a1470be3c1c716311370323f5723cb915c.1920x1080.jpg?t=1788402813"
+  },
+  {
+   "id": 12,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/feaea1b9b0b1d696ecef522e91eaaede1c0269f4/ss_feaea1b9b0b1d696ecef522e91eaaede1c0269f4.600x338.jpg?t=1788402813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837350/feaea1b9b0b1d696ecef522e91eaaede1c0269f4/ss_feaea1b9b0b1d696ecef522e91eaaede1c0269f4.1920x1080.jpg?t=1788402813"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257168865,
+   "name": "Staffer Retro - 异能追忆介绍视频《简体中文》",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257168865/0378a7ae6f897b1a41e91cdcc00a77d6d6cb9834/movie_600x337.jpg?t=1784626326",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/3837350/114016254/0eb023d9b49439e3601e06c866383e71452b42ad/1784443815/dash_av1.mpd?t=1784626326",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/3837350/114016254/0eb023d9b49439e3601e06c866383e71452b42ad/1784443815/dash_h264.mpd?t=1784626326",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/3837350/114016254/0eb023d9b49439e3601e06c866383e71452b42ad/1784443815/hls_264_master.m3u8?t=1784626326",
+   "highlight": true
+  }
+ ],
+ "recommendations": {
+  "total": 875
+ },
+ "achievements": {
+  "total": 15,
+  "highlighted": [
+   {
+    "icon": "8c1d955de9583e4e20aff84fa5feacd5bc533e46.jpg",
+    "localized_name": "目的地",
+    "archived": 0,
+    "hidden": 0,
+    "name": "目的地",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3837350/8c1d955de9583e4e20aff84fa5feacd5bc533e46.jpg"
+   },
+   {
+    "icon": "878ca3fcee4f912b417d47e8ed26b485828b8d3e.jpg",
+    "localized_name": "停滞",
+    "archived": 0,
+    "hidden": 0,
+    "name": "停滞",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3837350/878ca3fcee4f912b417d47e8ed26b485828b8d3e.jpg"
+   },
+   {
+    "icon": "916a89b76841d9ff6a0d78af5531ab5c750cc7ae.jpg",
+    "localized_name": "烙印",
+    "archived": 0,
+    "hidden": 0,
+    "name": "烙印",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3837350/916a89b76841d9ff6a0d78af5531ab5c750cc7ae.jpg"
+   },
+   {
+    "icon": "a9761d88d2f8176b7bedce98d6e166cf76d28d42.jpg",
+    "localized_name": "归家",
+    "archived": 0,
+    "hidden": 0,
+    "name": "归家",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3837350/a9761d88d2f8176b7bedce98d6e166cf76d28d42.jpg"
+   },
+   {
+    "icon": "cfd894e654c0f5cc964f370355611fd01c8f6494.jpg",
+    "localized_name": "月光",
+    "archived": 0,
+    "hidden": 0,
+    "name": "月光",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3837350/cfd894e654c0f5cc964f370355611fd01c8f6494.jpg"
+   },
+   {
+    "icon": "688ce4603b8c6d1254d61cc4ffd202166c24b93f.jpg",
+    "localized_name": "新的开始",
+    "archived": 0,
+    "hidden": 1,
+    "name": "新的开始",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3837350/688ce4603b8c6d1254d61cc4ffd202166c24b93f.jpg"
+   },
+   {
+    "icon": "11b7e77b2c896aeba5a047c6ac26c79933661ab9.jpg",
+    "localized_name": "出发地",
+    "archived": 0,
+    "hidden": 1,
+    "name": "出发地",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3837350/11b7e77b2c896aeba5a047c6ac26c79933661ab9.jpg"
+   },
+   {
+    "icon": "69cbd77a71ad52c0ffdf5084ec46b50aba98970b.jpg",
+    "localized_name": "模范纳税人",
+    "archived": 0,
+    "hidden": 1,
+    "name": "模范纳税人",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3837350/69cbd77a71ad52c0ffdf5084ec46b50aba98970b.jpg"
+   },
+   {
+    "icon": "ee0e6391765729fc70f7ccc7aa59cd3900394a34.jpg",
+    "localized_name": "世间的空气",
+    "archived": 0,
+    "hidden": 1,
+    "name": "世间的空气",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3837350/ee0e6391765729fc70f7ccc7aa59cd3900394a34.jpg"
+   },
+   {
+    "icon": "a582732d43b2894b0020b86b930e7a9d89f8b815.jpg",
+    "localized_name": "世间要有杖",
+    "archived": 0,
+    "hidden": 1,
+    "name": "世间要有杖",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/3837350/a582732d43b2894b0020b86b930e7a9d89f8b815.jpg"
+   }
+  ]
+ },
+ "release_date": {
+  "coming_soon": false,
+  "date": "2026 年 7 月 22 日"
+ },
+ "support_info": {
+  "url": "https://www.tetrapod.company/",
+  "email": "sales@tetrapod.company"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/3837350?t=1788402813",
+ "background_raw": "https://store.akamai.steamstatic.com/images/storepagebackground/app/3837350?t=1788402813",
+ "content_descriptors": {
+  "ids": [
+   2,
+   5
+  ],
+  "notes": "Staffer Retro - 异能追忆是一款悬疑推理冒险游戏。作为故事的一部分，部分场景包含对犯罪、死亡、身体伤害和尸体等内容的非直观提及。"
+ },
+ "ratings": {
+  "kgrb": {
+   "rating": "15"
+  },
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "14",
+   "required_age": "14",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Violência\nLinguagem imprópria\nAtos criminosos"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "16",
+   "required_age": "16",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Drastische Gewalt\nAlkohol / Tabak\nSchimpfwörte"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Kekerasan\nHoror\nRokok dan/atau rokok elektronik, minuman beralkohol, narkotika, psikotropika, dan/atau zat adiktif lainnya"
+  }
+ }
+}

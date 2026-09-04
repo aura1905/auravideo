@@ -1,0 +1,131 @@
+{
+ "title_ko": "펭퐁",
+ "title_en": "PengPong",
+ "demo_appid": 3636220,
+ "full_appid": 2766910,
+ "developer": "SANDY FLOOR",
+ "workdir": "episodes/ko-03-pengpong",
+ "script_timed": "episodes/ko-03-pengpong/script_timed.json",
+ "intro_bg": {
+  "file": "trailer_main.mp4",
+  "in": 63.4,
+  "out": 67.0,
+  "scale": 1.15
+ },
+ "labels": [
+  "2.68 GiB",
+  "282 files",
+  "자체 모듈 8개",
+  "Assembly-CSharp 5 KB"
+ ],
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 2,
+ "specs": [
+  [
+   "엔진",
+   "유니티 / 모노"
+  ],
+  [
+   "팀",
+   "한국, 샌디 플로어"
+  ],
+  [
+   "자체 모듈",
+   "여덟 개"
+  ],
+  [
+   "게임 코드",
+   "Assembly-CSharp 5 KB"
+  ],
+  [
+   "함정",
+   "스테이지 세 개"
+  ]
+ ],
+ "verdict": "찍먹 추천",
+ "bgm": {
+  "file": "trailer_main.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "thumbnail": {
+  "bg": "ss01.jpg",
+  "line1": "펭퐁(PengPong)",
+  "line2": "빌드에 AI 도구가 딸려 나왔다",
+  "tag": "유니티 빌드 분해",
+  "focus": "center"
+ },
+ "youtube": {
+  "title": "[데모 찍먹] 출시 빌드에 AI 도구가 딸려 나왔습니다 | 펭퐁(PengPong)",
+  "tags": "펭퐁,PengPong,샌디플로어,SANDY FLOOR,스팀 데모,인디게임,뱀서라이크,로그라이크,유니티,1인 개발,게임 개발,게임 분석,게임 뜯어보기,한국 인디게임,컵헤드,데모 찍먹",
+  "privacy": "private",
+  "lang": "ko",
+  "channel": "aimc"
+ },
+ "chapters": {
+  "hook": "빌드에서 나온 것",
+  "intro": "펭퐁이 어떤 게임인가",
+  "made": "파일 목록 뜯어보기",
+  "review": "플레이어들이 하는 말",
+  "score": "스펙 시트와 판정"
+ },
+ "stack": [
+  [
+   "FMOD (오디오 미들웨어)",
+   "https://www.fmod.com/"
+  ],
+  [
+   "DOTween",
+   "http://dotween.demigiant.com/"
+  ],
+  [
+   "Febucci Text Animator",
+   "https://www.febucci.com/text-animator-unity/"
+  ],
+  [
+   "GameAnalytics",
+   "https://gameanalytics.com/"
+  ],
+  [
+   "Steamworks.NET",
+   "https://steamworks.github.io/"
+  ],
+  [
+   "MCP for Unity",
+   "https://github.com/CoplayDev/unity-mcp"
+  ],
+  [
+   "펭퐁 스팀 페이지",
+   "https://store.steampowered.com/app/2766910/"
+  ]
+ ],
+ "ledger": {
+  "team": "한국 인디 (인원 미공개)",
+  "engine": "Unity",
+  "pipeline": "**Mono 백엔드**, Addressables",
+  "backend": "Mono",
+  "build": "2.68 GiB (Win64 데모)",
+  "files": 282,
+  "third_party": "**8종 이상**",
+  "in_house": "Sandy* 모듈 8개, COre.dll 2.37 MiB",
+  "approach": "사내 프레임워크 + 유료 에셋 조합",
+  "reception": "데모 86.6% / 134, 본편 84.9% / 258",
+  "ko_reviews": "데모 30개(22%), 본편 35개(14%)",
+  "packages": [
+   "FMOD",
+   "DOTween",
+   "Febucci TextAnimator",
+   "AraTrail",
+   "Coffee.UIParticle",
+   "NavMeshPlus",
+   "GameAnalytics",
+   "Steamworks.NET",
+   "Mono.Data.Sqlite",
+   "Newtonsoft.Json",
+   "MCPForUnity"
+  ],
+  "ai_disclosure": "스팀 페이지에 생성형 AI 공시 없음. 빌드에 MCPForUnity 포함(용도는 추정)"
+ },
+ "score_line_id": "32"
+}
