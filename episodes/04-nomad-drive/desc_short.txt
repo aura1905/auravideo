@@ -1,0 +1,8 @@
+Nomad Drive's demo gets accused of being a crypto miner. It isn't — it's HDRP with nothing capping the frame rate.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4568400/
+▶ Full teardown: <LONGFORM_URL>
+
+Read off the demo's public depot manifest — file names and sizes only.
+
+#shorts #indiedev #gamedev

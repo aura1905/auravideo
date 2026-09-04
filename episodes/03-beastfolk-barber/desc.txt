@@ -1,0 +1,36 @@
+수인들의 도시에서 미용실을 운영하는 대만 내러티브 게임, 비스트포크 바버(Beastfolk Barber / 異獸髮廊) 데모를 뜯어봅니다.
+아직 출시 전, 한국어도 없는데 데모 리뷰 923개 중 99%가 긍정입니다.
+
+▶ 데모(무료): https://store.steampowered.com/app/4920000/
+▶ 본편: https://store.steampowered.com/app/4093320/
+
+■ 데모 찍먹 점수
+아이디어 9 · 완성도 8 · 아트 9 · 접근성 5 · 기술적 흥미 6 → 평균 7.4 「찍먹 각」
+
+■ 이거 어떻게 만듦?
+- 엔진: Unity 하나. 함께 잡히는 것도 Mono, SteamworksNET, Burst뿐 (SteamDB 기술 항목)
+- 지난 편 세피리아의 URP·FMOD·Mirror와 비교하면 의도적으로 단출한 구성
+- 최소 사양: GeForce MX330, 1080p 30프레임 명시. 기술이 아니라 그림과 글에 힘을 실은 선택
+- 개발: 대만 Safe Flight Games (신생 팀)
+- 인큐베이팅: GameWorks Ventures
+- 공동 개발 + 퍼블리싱: SIGONO — OPUS 시리즈를 만든 대만 스튜디오
+  (OPUS: Echo of Starsong 스팀 긍정률 97%, 메타크리틱 90점)
+- 가제 'Project Salon'으로 시작 → 2026 Summer Game Fest 'Wholesome Direct'에서 정식 공개 → 8월 데모 출시
+
+■ 커피톡과 다른 점
+손님의 머리를 잘못 자르면 그 손님은 다시 오지 않고, 들려주려던 이야기도 거기서 끊깁니다.
+'들어주기'에 대가가 붙은 구조입니다.
+
+■ 챕터
+0:00 인트로
+0:25 미용사 프레디와 조수 니라
+0:35 커피톡과 다른 점
+0:55 게임 속 SNS
+1:01 이거 어떻게 만듦? (Unity 하나 · 대만 인디의 사수 구조)
+2:12 리뷰 반응
+2:32 점수와 한 줄 평
+
+#데모찍먹 #인디게임 #대만인디 #비스트포크바버 #BeastfolkBarber #異獸髮廊 #SIGONO #OPUS #커피톡 #내러티브게임
+
+* 제작 방식 설명은 스팀·SteamDB 공개 정보와 공개 기사(巴哈姆特, 4Gamers, indienova 등)를 근거로 정리한 것입니다.
+* 영상 속 게임 화면·트레일러의 저작권은 Safe Flight Games / SIGONO INC.에 있습니다.

@@ -1,0 +1,187 @@
+{
+ "type": "game",
+ "name": "Beastfolk Barber",
+ "steam_appid": 4093320,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  4920000
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" >Beastfolk Barber is a narrative game where every haircut is a conversation. You play as Freddie, a barber running a small shop for beastfolk of all shapes and sizes. With every cut and chat, learn what your customers like, what they need, and who they want to be. </p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/c28fcc85974f6a9185c409278e8f78f4.poster.avif?t=1786504915\" width=1170 height=438 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/c28fcc85974f6a9185c409278e8f78f4.webm?t=1786504915\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/c28fcc85974f6a9185c409278e8f78f4.mp4?t=1786504915\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >One day, a demon appears in your mirror with an offer. Give her the perfect haircut, and she'll undo a past regret. But first, you'll need to keep serving customers, gather resources, and find a way to cut a demon's hair. Along the way, you'll come face to face with what you've been trying to avoid.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/3dcc212a3d2e08df7b18d34bc945ec64.poster.avif?t=1786504915\" width=1170 height=438 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/3dcc212a3d2e08df7b18d34bc945ec64.webm?t=1786504915\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/3dcc212a3d2e08df7b18d34bc945ec64.mp4?t=1786504915\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" ><strong>Features</strong></h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong><i>The Mysterious Mirror</i></strong></p></li></ul><p class=\"bb_paragraph\" >Created by Freddie's late friend, this mirror can show customers their new hairstyle before you make the first cut. But previews are limited, so watch their reactions and make every choice count.</p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><i><strong>Haircuts and Conversations</strong></i></p></li></ul><p class=\"bb_paragraph\" >Every customer brings a different challenge to the barber's chair. Listen, observe, and find the look they're really after. As you cut their hair, customers open up about everyday worries unique to their species. And every haircut brings you closer to who they really are.</p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><i><strong>Life Around the Barbershop</strong></i></p></li></ul><p class=\"bb_paragraph\" >When the day ends, review customer feedback and scroll through the city's social feed. Local news, festivals, and the latest from your customers may all come in handy the next time someone sits in your chair. As the story unfolds, a citywide celebration will bring every familiar face back to your little shop.</p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong><i>Keep Them Coming Back</i></strong></p></li></ul><p class=\"bb_paragraph\" >How well you handle each haircut affects your customers' stories and the chances you'll see them again. Get it wrong, and that visit could be their last. But if they're happy with the result, their story at the mirror will continue.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/c3f7c41b9e560fd6fd15dc0fc73efcd8.poster.avif?t=1786504915\" width=1170 height=438 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/c3f7c41b9e560fd6fd15dc0fc73efcd8.webm?t=1786504915\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/c3f7c41b9e560fd6fd15dc0fc73efcd8.mp4?t=1786504915\" type=\"video/mp4\"></video></span></p>",
+ "about_the_game": "<p class=\"bb_paragraph\" >Beastfolk Barber is a narrative game where every haircut is a conversation. You play as Freddie, a barber running a small shop for beastfolk of all shapes and sizes. With every cut and chat, learn what your customers like, what they need, and who they want to be. </p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/c28fcc85974f6a9185c409278e8f78f4.poster.avif?t=1786504915\" width=1170 height=438 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/c28fcc85974f6a9185c409278e8f78f4.webm?t=1786504915\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/c28fcc85974f6a9185c409278e8f78f4.mp4?t=1786504915\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >One day, a demon appears in your mirror with an offer. Give her the perfect haircut, and she'll undo a past regret. But first, you'll need to keep serving customers, gather resources, and find a way to cut a demon's hair. Along the way, you'll come face to face with what you've been trying to avoid.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/3dcc212a3d2e08df7b18d34bc945ec64.poster.avif?t=1786504915\" width=1170 height=438 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/3dcc212a3d2e08df7b18d34bc945ec64.webm?t=1786504915\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/3dcc212a3d2e08df7b18d34bc945ec64.mp4?t=1786504915\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" ><strong>Features</strong></h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong><i>The Mysterious Mirror</i></strong></p></li></ul><p class=\"bb_paragraph\" >Created by Freddie's late friend, this mirror can show customers their new hairstyle before you make the first cut. But previews are limited, so watch their reactions and make every choice count.</p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><i><strong>Haircuts and Conversations</strong></i></p></li></ul><p class=\"bb_paragraph\" >Every customer brings a different challenge to the barber's chair. Listen, observe, and find the look they're really after. As you cut their hair, customers open up about everyday worries unique to their species. And every haircut brings you closer to who they really are.</p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><i><strong>Life Around the Barbershop</strong></i></p></li></ul><p class=\"bb_paragraph\" >When the day ends, review customer feedback and scroll through the city's social feed. Local news, festivals, and the latest from your customers may all come in handy the next time someone sits in your chair. As the story unfolds, a citywide celebration will bring every familiar face back to your little shop.</p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong><i>Keep Them Coming Back</i></strong></p></li></ul><p class=\"bb_paragraph\" >How well you handle each haircut affects your customers' stories and the chances you'll see them again. Get it wrong, and that visit could be their last. But if they're happy with the result, their story at the mirror will continue.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/c3f7c41b9e560fd6fd15dc0fc73efcd8.poster.avif?t=1786504915\" width=1170 height=438 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/c3f7c41b9e560fd6fd15dc0fc73efcd8.webm?t=1786504915\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/extras/c3f7c41b9e560fd6fd15dc0fc73efcd8.mp4?t=1786504915\" type=\"video/mp4\"></video></span></p>",
+ "short_description": "You're a barber in a city full of beastfolk. Chat with your customers, style their look, help them see something new in the mirror... and in themselves.",
+ "supported_languages": "English, Japanese, Simplified Chinese, Traditional Chinese",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/39f95c217821ce7ebb1699231ddad935cae2e155/header.jpg?t=1786504915",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/838be607d633780cff319b4f0a83bca50051f0e5/capsule_231x87.jpg?t=1786504915",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/838be607d633780cff319b4f0a83bca50051f0e5/capsule_184x69.jpg?t=1786504915",
+ "website": null,
+ "pc_requirements": {
+  "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 11 64-bit<br></li><li><strong>Processor:</strong> Intel Core i5-1135G7 @ 2.40 GHz<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce MX330（2 GB VRAM）<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 4 GB available space<br></li><li><strong>Additional Notes:</strong> Runs at 30 FPS at 1920 × 1080 resolution.</li></ul>",
+  "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> macOS Monterey<br></li><li><strong>Processor:</strong> 2.7 GHz Dual-Core Intel Core i5<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> Intel Iris Graphics 6100 <br></li><li><strong>Storage:</strong> 4 GB available space<br></li><li><strong>Additional Notes:</strong> Runs at 30 FPS at 1920 × 1080 resolution.</li></ul>",
+  "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "developers": [
+  "Safe Flight Games",
+  "GameWorks Ventures"
+ ],
+ "publishers": [
+  "SIGONO INC."
+ ],
+ "demos": [
+  {
+   "appid": 4920000,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": true,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "Single-player"
+  },
+  {
+   "id": 80,
+   "description": "#category_playable_at_your_own_pace"
+  },
+  {
+   "id": 74,
+   "description": "Playable without Timed Input"
+  },
+  {
+   "id": 62,
+   "description": "Family Sharing"
+  }
+ ],
+ "genres": [
+  {
+   "id": "25",
+   "description": "Adventure"
+  },
+  {
+   "id": "4",
+   "description": "Casual"
+  },
+  {
+   "id": "23",
+   "description": "Indie"
+  },
+  {
+   "id": "28",
+   "description": "Simulation"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/3ca97d43faa133bc7e31a3db3e2eb4b666032414/ss_3ca97d43faa133bc7e31a3db3e2eb4b666032414.600x338.jpg?t=1786504915",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/3ca97d43faa133bc7e31a3db3e2eb4b666032414/ss_3ca97d43faa133bc7e31a3db3e2eb4b666032414.1920x1080.jpg?t=1786504915"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/ad2f0e40bc86b0c600452d6760563e62f4355ea7/ss_ad2f0e40bc86b0c600452d6760563e62f4355ea7.600x338.jpg?t=1786504915",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/ad2f0e40bc86b0c600452d6760563e62f4355ea7/ss_ad2f0e40bc86b0c600452d6760563e62f4355ea7.1920x1080.jpg?t=1786504915"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/dc878439630c247ab7b955cc3f2415ceeb689bc4/ss_dc878439630c247ab7b955cc3f2415ceeb689bc4.600x338.jpg?t=1786504915",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/dc878439630c247ab7b955cc3f2415ceeb689bc4/ss_dc878439630c247ab7b955cc3f2415ceeb689bc4.1920x1080.jpg?t=1786504915"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/3bf7229e069a2082bf460fdbc46f67407d9de1ff/ss_3bf7229e069a2082bf460fdbc46f67407d9de1ff.600x338.jpg?t=1786504915",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/3bf7229e069a2082bf460fdbc46f67407d9de1ff/ss_3bf7229e069a2082bf460fdbc46f67407d9de1ff.1920x1080.jpg?t=1786504915"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/ff37628200525f72a9a79a2c6b5d1ceefee3f867/ss_ff37628200525f72a9a79a2c6b5d1ceefee3f867.600x338.jpg?t=1786504915",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/ff37628200525f72a9a79a2c6b5d1ceefee3f867/ss_ff37628200525f72a9a79a2c6b5d1ceefee3f867.1920x1080.jpg?t=1786504915"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/7b35284e06fe91e65089a5524ed4ed1bd0ab94e0/ss_7b35284e06fe91e65089a5524ed4ed1bd0ab94e0.600x338.jpg?t=1786504915",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/7b35284e06fe91e65089a5524ed4ed1bd0ab94e0/ss_7b35284e06fe91e65089a5524ed4ed1bd0ab94e0.1920x1080.jpg?t=1786504915"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/2a6f98b9d676ea3d86fa686484f422e5f6d40d68/ss_2a6f98b9d676ea3d86fa686484f422e5f6d40d68.600x338.jpg?t=1786504915",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/2a6f98b9d676ea3d86fa686484f422e5f6d40d68/ss_2a6f98b9d676ea3d86fa686484f422e5f6d40d68.1920x1080.jpg?t=1786504915"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/d8be9e5fc451a7458547a2bc06ea2379cf173e2a/ss_d8be9e5fc451a7458547a2bc06ea2379cf173e2a.600x338.jpg?t=1786504915",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093320/d8be9e5fc451a7458547a2bc06ea2379cf173e2a/ss_d8be9e5fc451a7458547a2bc06ea2379cf173e2a.1920x1080.jpg?t=1786504915"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257392866,
+   "name": "Steam Demo Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257392866/eceb823ebef3b4f7e9f3cf86a30ebdc29c8e9231/movie_600x337.jpg?t=1786036398",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/4093320/1076440540/c9ab36c44c5ce6b2ac92e255d26d8b225b6e4745/1786008734/dash_av1.mpd?t=1786036398",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/4093320/1076440540/c9ab36c44c5ce6b2ac92e255d26d8b225b6e4745/1786008734/dash_h264.mpd?t=1786036398",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/4093320/1076440540/c9ab36c44c5ce6b2ac92e255d26d8b225b6e4745/1786008734/hls_264_master.m3u8?t=1786036398",
+   "highlight": true
+  },
+  {
+   "id": 257350134,
+   "name": "Official Reveal Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257350134/19416ed3deb32d3e07ad954dba5b9f301728ac0a/movie_600x337.jpg?t=1780763353",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/4093320/1283453462/588c8e6406abf791d37d06d44f078b90cf064a49/1780561221/dash_av1.mpd?t=1780763353",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/4093320/1283453462/588c8e6406abf791d37d06d44f078b90cf064a49/1780561221/dash_h264.mpd?t=1780763353",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/4093320/1283453462/588c8e6406abf791d37d06d44f078b90cf064a49/1780561221/hls_264_master.m3u8?t=1780763353",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "To be announced"
+ },
+ "support_info": {
+  "url": "support@sigono.com",
+  "email": ""
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/4093320?t=1786504915",
+ "background_raw": "https://store.akamai.steamstatic.com/images/storepagebackground/app/4093320?t=1786504915",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "l",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "0",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "3",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  }
+ }
+}

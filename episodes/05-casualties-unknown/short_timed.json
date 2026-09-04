@@ -1,0 +1,93 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "Somebody played this free demo for two hundred and seventy five hours.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "dur": 3.918,
+  "wav": "episodes/05-casualties-unknown/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Half the people who reviewed it had already put in ten. It's five hundred megabytes, and one person in Poland made all of it.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 33
+  },
+  "dur": 6.975,
+  "wav": "episodes/05-casualties-unknown/tts_short/s2.wav"
+ },
+ {
+  "id": "s3",
+  "sec": "made",
+  "text": "So I read the file list Steam publishes for it. The entire game is one file, eight hundred and fifty eight kilobytes.",
+  "vis": {
+   "type": "image",
+   "file": "ev_code_v.png"
+  },
+  "dur": 6.896,
+  "wav": "episodes/05-casualties-unknown/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "made",
+  "text": "The Unity runtime next to it is thirty megabytes. The engine is thirty five times bigger than the game.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 45
+  },
+  "dur": 5.904,
+  "wav": "episodes/05-casualties-unknown/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Two scenes in the whole build. Everything else is generated.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "dur": 3.37,
+  "wav": "episodes/05-casualties-unknown/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "And the third party package list is one entry. Discord rich presence. That's it.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack_v.png"
+  },
+  "dur": 4.702,
+  "wav": "episodes/05-casualties-unknown/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Ninety six percent positive, six thousand eight hundred reviews. No AI, no team, no asset store.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "dur": 6.661,
+  "wav": "episodes/05-casualties-unknown/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "If you're building alone, that's the trade. Systems instead of content. Full teardown on the channel.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 78
+  },
+  "dur": 3.318,
+  "wav": "episodes/05-casualties-unknown/tts_short/s8.wav"
+ }
+]

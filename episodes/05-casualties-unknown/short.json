@@ -1,0 +1,77 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "Somebody played this free demo for two hundred and seventy five hours.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Half the people who reviewed it had already put in ten. It's five hundred megabytes, and one person in Poland made all of it.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 33
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "made",
+  "text": "So I read the file list Steam publishes for it. The entire game is one file, eight hundred and fifty eight kilobytes.",
+  "vis": {
+   "type": "image",
+   "file": "ev_code_v.png"
+  }
+ },
+ {
+  "id": "s4",
+  "sec": "made",
+  "text": "The Unity runtime next to it is thirty megabytes. The engine is thirty five times bigger than the game.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 45
+  }
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Two scenes in the whole build. Everything else is generated.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  }
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "And the third party package list is one entry. Discord rich presence. That's it.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack_v.png"
+  }
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Ninety six percent positive, six thousand eight hundred reviews. No AI, no team, no asset store.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  }
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "If you're building alone, that's the trade. Systems instead of content. Full teardown on the channel.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 78
+  }
+ }
+]

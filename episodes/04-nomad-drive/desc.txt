@@ -1,0 +1,43 @@
+Nomad Drive — players think this demo is a crypto miner. It isn't — and the real reason is in its file list.
+A Unity 6 / HDRP teardown: what a small team licensed, what they built, and the one graphics default that nearly sank their reception.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4568400/
+▶ The full game: https://store.steampowered.com/app/2223980/
+
+── How they made it ──
+Engine    : Unity 6 / HDRP
+Team      : not disclosed
+In Dev    : devlogs since 2024
+Stack     : Mirror + EOS
+The Trick : license the hard parts
+Verdict   : Worth A Dip
+
+── The stack, if you want to use it ──
+NWH Vehicle Physics 2  : https://assetstore.unity.com/packages/tools/physics/nwh-vehicle-physics-2-166252
+MapMagic 2             : https://assetstore.unity.com/packages/tools/terrain/mapmagic-2-165180
+Mirror (networking)    : https://mirror-networking.com/
+Epic Online Services   : https://dev.epicgames.com/en-US/services
+Facepunch.Steamworks   : https://github.com/Facepunch/Facepunch.Steamworks
+Unity Vivox (voice)    : https://unity.com/products/vivox-voice-chat
+Enviro 3 (sky/weather) : https://hendrik-haupt.gitbook.io/enviro-3-documentation/
+Odin Inspector         : https://odininspector.com/
+Rewired (input)        : https://guavaman.com/projects/rewired/
+Final IK               : http://root-motion.com/
+Paint in 3D            : https://carloswilkes.com/
+UniTask                : https://github.com/Cysharp/UniTask
+Quantum Console        : https://github.com/QFSW/QuantumConsole
+
+── Chapters ──
+0:00 "It's a crypto miner"
+0:16 What Nomad Drive is
+0:56 Opening the build
+3:44 What players actually say
+4:10 The spec sheet + verdict
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to Indie Devil.
+
+#indiedev #gamedev #steamdemo

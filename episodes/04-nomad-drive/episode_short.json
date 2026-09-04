@@ -1,0 +1,61 @@
+{
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.95,
+ "score_len": 9.5,
+ "narration_volume": 1.6,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "title_en": "Nomad Drive",
+ "demo_appid": 4568400,
+ "full_appid": 2223980,
+ "developer": "Indie Devil",
+ "workdir": "episodes/04-nomad-drive",
+ "script_timed": "episodes/04-nomad-drive/short_timed.json",
+ "score_line_id": "s6",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity 6 / HDRP"
+  ],
+  [
+   "THE BUG",
+   "no frame cap"
+  ],
+  [
+   "SEEN AS",
+   "a crypto miner"
+  ],
+  [
+   "REALITY",
+   "a heavy renderer"
+  ],
+  [
+   "THE FIX",
+   "one afternoon"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": {
+  "file": "trailer_main.mp4",
+  "volume": 0.07
+ },
+ "youtube": {
+  "title": "Players think this Steam demo is a crypto miner. It isn’t. #shorts",
+  "tags": "shorts,Nomad Drive,steam demo,unity,hdrp,indie dev,gamedev,game teardown,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ }
+}

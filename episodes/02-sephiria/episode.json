@@ -1,0 +1,62 @@
+{
+  "title_ko": "세피리아",
+  "title_orig": "Sephiria",
+  "country": "한국",
+  "demo_appid": 2686970,
+  "full_appid": 2436940,
+  "workdir": "C:/Git/auravideo/episodes/02-sephiria",
+  "script_timed": "C:/Git/auravideo/episodes/02-sephiria/script_timed.json",
+  "intro_bg": {
+    "file": "trailer_main.mp4",
+    "in": 6.4,
+    "out": 9.5,
+    "scale": 1.15
+  },
+  "labels": [
+    "엔진: Unity URP",
+    "팀: 4인",
+    "제작 기간: 4년 8개월",
+    "최고 동접: 34,000"
+  ],
+  "hook_lines": 2,
+  "score_line_id": "26",
+  "scores": [
+    [
+      "아이디어",
+      7
+    ],
+    [
+      "완성도",
+      9
+    ],
+    [
+      "아트",
+      8
+    ],
+    [
+      "접근성",
+      10
+    ],
+    [
+      "기술적 흥미",
+      9
+    ]
+  ],
+  "bgm": {
+    "file": "trailer_main.mp4",
+    "volume": 0.1
+  },
+  "narration_volume": 1.6,
+  "thumbnail": {
+    "bg": "ss08.jpg",
+    "hook": "네 명이 4년 만든 게임",
+    "tag": "한국 인디 · 던그리드 제작진",
+    "focus": "center"
+  },
+  "youtube": {
+    "title": "[데모 찍먹] 던그리드 팀이 4년을 갈아 넣은 한국 인디 | 세피리아(Sephiria)",
+    "tags": "데모찍먹,인디게임,한국인디,세피리아,Sephiria,팀호레이,던그리드,로그라이트,Unity,게임개발",
+    "privacy": "public",
+    "url": "https://youtu.be/KPBBbfE0DC4"
+  }
+}

@@ -1,0 +1,33 @@
+# Episode work folders hold the heavy intermediates: source footage, ProRes alpha
+# layers, PNG frame sequences, TTS audio and the rendered master. All of that is
+# reproducible from the small files we DO track (episode.json, the script, the
+# plan, the fetched Steam facts) plus the scripts in scripts/pipeline + scripts/motion.
+#
+# Ignore everything inside an episode folder, then whitelist the source of truth.
+*/*
+!*/episode.json
+!*/script.json
+!*/script_timed.json
+!*/plan.json
+!*/plan_short.json
+!*/desc.txt
+!*/facts.json
+!*/teardown.md
+# Korean side-by-side of the narration, so the user can review an English episode
+!*/script_ko.md
+# Exact caption track — a real search signal, and tiny
+!*/captions.*.srt
+!*/analysis.md
+!*/analysis_ko.md
+!*/thumb.jpg
+!*/still_bg.png
+!*/README.md
+!*/reviews.json
+# reviews_all.json is the 800-review corpus analyze_reviews.py builds; it is the
+# evidence behind the claims in teardown.md, so it is worth the ~1 MB.
+!*/reviews_all.json
+!*/appdetails_*.json
+!*/short.json
+!*/short_timed.json
+!*/episode_short.json
+!*/desc_short.txt

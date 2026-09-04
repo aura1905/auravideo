@@ -16,3 +16,7 @@ src-tauri/gen/
 
 # tsc -b incremental cache
 tsconfig.tsbuildinfo
+
+# Python bytecode from scripts/
+__pycache__/
+*.pyc

@@ -1,0 +1,157 @@
+{
+ "title_en": "Nomad Drive",
+ "demo_appid": 4568400,
+ "full_appid": 2223980,
+ "developer": "Indie Devil",
+ "workdir": "episodes/04-nomad-drive",
+ "script_timed": "episodes/04-nomad-drive/script_timed.json",
+ "intro_bg": {
+  "file": "trailer_main.mp4",
+  "in": 88.0,
+  "out": 91.6,
+  "scale": 1.25
+ },
+ "labels": [
+  "322 files",
+  "3.71 GB",
+  "794 reviews",
+  "2h 36m median"
+ ],
+ "hook_lines": 2,
+ "score_line_id": "33",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity 6 / HDRP"
+  ],
+  [
+   "TEAM",
+   "not disclosed"
+  ],
+  [
+   "IN DEV",
+   "devlogs since 2024"
+  ],
+  [
+   "STACK",
+   "Mirror + EOS"
+  ],
+  [
+   "THE TRICK",
+   "license the hard parts"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": {
+  "file": "trailer_main.mp4",
+  "volume": 0.08
+ },
+ "narration_volume": 1.6,
+ "thumbnail": {
+  "bg": "ss03.jpg",
+  "line1": "Nomad Drive",
+  "line2": "99% GPU. IN THE MENU.",
+  "tag": "UNITY 6 / HDRP TEARDOWN",
+  "focus": "right"
+ },
+ "youtube": {
+  "title": "Nomad Drive — players think this demo is a crypto miner. Here's what's really in it",
+  "tags": "Nomad Drive,Nomad Drive demo,steam demo,indie dev,gamedev,unity,unity 6,hdrp,mirror networking,epic online services,mapmagic,nwh vehicle physics,solo dev,game teardown,how games are made,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "chapters": {
+  "hook": "\"It's a crypto miner\"",
+  "intro": "What Nomad Drive is",
+  "made": "Opening the build",
+  "review": "What players actually say",
+  "score": "The spec sheet + verdict"
+ },
+ "stack": [
+  [
+   "NWH Vehicle Physics 2",
+   "https://assetstore.unity.com/packages/tools/physics/nwh-vehicle-physics-2-166252"
+  ],
+  [
+   "MapMagic 2",
+   "https://assetstore.unity.com/packages/tools/terrain/mapmagic-2-165180"
+  ],
+  [
+   "Mirror (networking)",
+   "https://mirror-networking.com/"
+  ],
+  [
+   "Epic Online Services",
+   "https://dev.epicgames.com/en-US/services"
+  ],
+  [
+   "Facepunch.Steamworks",
+   "https://github.com/Facepunch/Facepunch.Steamworks"
+  ],
+  [
+   "Unity Vivox (voice)",
+   "https://unity.com/products/vivox-voice-chat"
+  ],
+  [
+   "Enviro 3 (sky/weather)",
+   "https://hendrik-haupt.gitbook.io/enviro-3-documentation/"
+  ],
+  [
+   "Odin Inspector",
+   "https://odininspector.com/"
+  ],
+  [
+   "Rewired (input)",
+   "https://guavaman.com/projects/rewired/"
+  ],
+  [
+   "Final IK",
+   "http://root-motion.com/"
+  ],
+  [
+   "Paint in 3D",
+   "https://carloswilkes.com/"
+  ],
+  [
+   "UniTask",
+   "https://github.com/Cysharp/UniTask"
+  ],
+  [
+   "Quantum Console",
+   "https://github.com/QFSW/QuantumConsole"
+  ]
+ ],
+ "ledger": {
+  "team": "비공개",
+  "engine": "Unity 6",
+  "pipeline": "**HDRP**",
+  "backend": "Mono",
+  "build": "3.71 GiB",
+  "files": 322,
+  "scenes": 4,
+  "third_party": "**20+**",
+  "approach": "어려운 건 전부 삼",
+  "reception": "69.8% / 1k",
+  "packages": [
+   "NWH Vehicle Physics 2",
+   "MapMagic 2",
+   "Mirror",
+   "Epic Online Services",
+   "Odin Inspector",
+   "Rewired",
+   "Final IK",
+   "UniTask",
+   "Enviro 3",
+   "Paint in 3D",
+   "Quantum Console",
+   "MeshBaker",
+   "Facepunch.Steamworks",
+   "Unity Vivox",
+   "ECM2",
+   "PrimeTween",
+   "BroAudio",
+   "ALINE"
+  ],
+  "ai_disclosure": null
+ }
+}

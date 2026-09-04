@@ -1,0 +1,34 @@
+Casualties: Unknown — one developer, 858 KB of code, and a free demo people play for ten hours.
+A Unity 2D teardown: what one person built instead of buying, and what that bought them.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4576510/
+▶ The full game: https://store.steampowered.com/app/4576490/
+
+── How they made it ──
+Engine       : Unity / URP 2D
+Team         : one person
+In Dev       : on itch before Steam
+All The Code : 858 KB, one file
+The Trick    : systems, not content
+Verdict      : Worth A Dip
+
+── The stack, if you want to use it ──
+Unity URP (2D renderer) : https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest
+Discord Rich Presence   : https://github.com/Lachee/discord-rpc-csharp
+Newtonsoft.Json         : https://www.newtonsoft.com/json
+The demo's itch.io page : https://orsonik.itch.io/scav-prototype
+
+── Chapters ──
+0:00 275 hours. Of a demo.
+0:18 What Casualties: Unknown is
+1:02 Opening the build
+3:25 What players actually say
+3:45 The spec sheet + verdict
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to Orsoniks.
+
+#indiedev #gamedev #steamdemo

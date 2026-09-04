@@ -1,0 +1,357 @@
+{
+ "type": "game",
+ "name": "セフィリア",
+ "steam_appid": 2436940,
+ "required_age": 0,
+ "is_free": false,
+ "controller_support": "full",
+ "detailed_description": "<p class=\"bb_paragraph\" >運命の日、ウサギの村を不吉な予兆が襲う。</p><p class=\"bb_paragraph\" >あなたが止められなければ、村の住人たちは悪魔の大群に虐殺されてしまう——。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/f92670d3542f17d2f554383dc0c5cb19.poster.avif?t=1788149163\" width=780 height=300 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/f92670d3542f17d2f554383dc0c5cb19.webm?t=1788149163\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/f92670d3542f17d2f554383dc0c5cb19.mp4?t=1788149163\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >『Sephiria』は、故郷を破滅から救うべく旅立つ勇敢なウサギを描く、運命に抗うアクションローグライト。さまざまな武器を極めて強化し、周回ごとに新たな才能を解放。インベントリを戦略的に配置し、敵の大群を切り抜けて、旅の果てに待ち受ける脅威の正体を暴け。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/49bc5018fd6c6a461dbaeb69371f4733.poster.avif?t=1788149163\" width=780 height=300 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/49bc5018fd6c6a461dbaeb69371f4733.webm?t=1788149163\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/49bc5018fd6c6a461dbaeb69371f4733.mp4?t=1788149163\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >特徴</h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong>戦略的インベントリシステム：</strong>アーティファクトを集めて配置し、さまざまな石版で強化しよう。自分の能力に合わせてインベントリを管理！</p></li><li><p class=\"bb_paragraph\" ><strong>自由な戦闘：</strong>個性豊かな6種の武器を極めよう。武器ごとに50種類以上の固有アップグレードが待つ！</p></li><li><p class=\"bb_paragraph\" ><strong>変化し続ける脅威：</strong>60種類以上の危険な敵、10体以上の固有ボスが立ちはだかる。全6チャプターの旅で、試練はますます過酷に。</p></li><li><p class=\"bb_paragraph\" ><strong>仲間と共闘：</strong>最大4人のオンライン協力プレイで塔を共に探索。アイテムを交換し、倒れた仲間を復活させ、チームで勝利を掴め！</p></li></ul><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/02c7bba34adf5dfe4dfa99b6ca50d99a.poster.avif?t=1788149163\" width=780 height=300 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/02c7bba34adf5dfe4dfa99b6ca50d99a.webm?t=1788149163\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/02c7bba34adf5dfe4dfa99b6ca50d99a.mp4?t=1788149163\" type=\"video/mp4\"></video></span></p>",
+ "about_the_game": "<p class=\"bb_paragraph\" >運命の日、ウサギの村を不吉な予兆が襲う。</p><p class=\"bb_paragraph\" >あなたが止められなければ、村の住人たちは悪魔の大群に虐殺されてしまう——。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/f92670d3542f17d2f554383dc0c5cb19.poster.avif?t=1788149163\" width=780 height=300 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/f92670d3542f17d2f554383dc0c5cb19.webm?t=1788149163\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/f92670d3542f17d2f554383dc0c5cb19.mp4?t=1788149163\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >『Sephiria』は、故郷を破滅から救うべく旅立つ勇敢なウサギを描く、運命に抗うアクションローグライト。さまざまな武器を極めて強化し、周回ごとに新たな才能を解放。インベントリを戦略的に配置し、敵の大群を切り抜けて、旅の果てに待ち受ける脅威の正体を暴け。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/49bc5018fd6c6a461dbaeb69371f4733.poster.avif?t=1788149163\" width=780 height=300 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/49bc5018fd6c6a461dbaeb69371f4733.webm?t=1788149163\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/49bc5018fd6c6a461dbaeb69371f4733.mp4?t=1788149163\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >特徴</h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong>戦略的インベントリシステム：</strong>アーティファクトを集めて配置し、さまざまな石版で強化しよう。自分の能力に合わせてインベントリを管理！</p></li><li><p class=\"bb_paragraph\" ><strong>自由な戦闘：</strong>個性豊かな6種の武器を極めよう。武器ごとに50種類以上の固有アップグレードが待つ！</p></li><li><p class=\"bb_paragraph\" ><strong>変化し続ける脅威：</strong>60種類以上の危険な敵、10体以上の固有ボスが立ちはだかる。全6チャプターの旅で、試練はますます過酷に。</p></li><li><p class=\"bb_paragraph\" ><strong>仲間と共闘：</strong>最大4人のオンライン協力プレイで塔を共に探索。アイテムを交換し、倒れた仲間を復活させ、チームで勝利を掴め！</p></li></ul><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/02c7bba34adf5dfe4dfa99b6ca50d99a.poster.avif?t=1788149163\" width=780 height=300 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/02c7bba34adf5dfe4dfa99b6ca50d99a.webm?t=1788149163\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/extras/02c7bba34adf5dfe4dfa99b6ca50d99a.mp4?t=1788149163\" type=\"video/mp4\"></video></span></p>",
+ "short_description": "『Dungreed』開発陣が贈る、見下ろし型アクションRPGローグライト。塔の奥深くを探索し、アーティファクトを集めて強化。押し寄せる悪魔の大群を退け、危機に瀕したウサギの村を守り抜こう。",
+ "supported_languages": "韓国語, 英語, 日本語, 中国語（簡体字）, スペイン語 - スペイン, ロシア語, ポルトガル語－ブラジル, フランス語, ドイツ語, スウェーデン語, タイ語, ポーランド語, イタリア語, 中国語（繁体字）, トルコ語",
+ "reviews": "“最近はローグライトが数多くあるが、本作は間違いなくその中でも優れた一本だ”<br>9/10 – TheSixthAxis<br><br>“自由なビルド構築と爆発的なシナジーで完成させたアクションローグライクの秀作”<br>8.3/10 – 디스이즈게임<br>",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/cb7dc6f4ed2f0012eb557365966be9b69815f7ae/header.jpg?t=1788149163",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/78eca6a13c2b7660aa2a6676f75d348a12d8d4f4/capsule_231x87.jpg?t=1788149163",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/78eca6a13c2b7660aa2a6676f75d348a12d8d4f4/capsule_184x69.jpg?t=1788149163",
+ "website": "https://teamhoray.com",
+ "pc_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"><li>64 ビットプロセッサとオペレーティングシステムが必要です<br></li><li><strong>OS:</strong> Windows 10 64-bit<br></li><li><strong>プロセッサー:</strong> Ryzen 5 1400 or better<br></li><li><strong>メモリー:</strong> 8 GB RAM<br></li><li><strong>グラフィック:</strong> Geforce GTS 750 or better<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>ストレージ:</strong> 2 GB の空き容量</li></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"><li>64 ビットプロセッサとオペレーティングシステムが必要です<br></li><li><strong>OS:</strong> Windows 10 64-bit<br></li><li><strong>プロセッサー:</strong> Ryzen 5 1700X or better<br></li><li><strong>メモリー:</strong> 8 GB RAM<br></li><li><strong>グラフィック:</strong> Geforce GTX 760 or better<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>ストレージ:</strong> 2 GB の空き容量</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Mac OS X 11.0 (Big Sur)+<br></li><li><strong>プロセッサー:</strong> Apple Silicon (M1)<br></li><li><strong>メモリー:</strong> 4 GB RAM<br></li><li><strong>グラフィック:</strong> 7 core GPU<br></li><li><strong>ストレージ:</strong> 2 GB の空き容量</li></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Mac OS X 11.0 (Big Sur)+<br></li><li><strong>プロセッサー:</strong> Apple Silicon (M1)<br></li><li><strong>メモリー:</strong> 4 GB RAM<br></li><li><strong>グラフィック:</strong> 7 core GPU<br></li><li><strong>ストレージ:</strong> 2 GB の空き容量</li></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "developers": [
+  "TEAM HORAY"
+ ],
+ "publishers": [
+  "TEAM HORAY"
+ ],
+ "demos": [
+  {
+   "appid": 2686970,
+   "description": ""
+  }
+ ],
+ "price_overview": {
+  "currency": "KRW",
+  "initial": 1650000,
+  "final": 1650000,
+  "discount_percent": 0,
+  "initial_formatted": "",
+  "final_formatted": "₩ 16,500"
+ },
+ "packages": [
+  876926
+ ],
+ "package_groups": [
+  {
+   "name": "default",
+   "title": "セフィリアを購入する",
+   "description": "",
+   "selection_text": "支払いオプションを選択",
+   "save_text": "",
+   "display_type": 0,
+   "is_recurring_subscription": "false",
+   "subs": [
+    {
+     "packageid": 876926,
+     "percent_savings_text": " ",
+     "percent_savings": 0,
+     "option_text": "Sephiria - ₩ 16,500",
+     "option_description": "",
+     "can_get_free_license": "0",
+     "is_free_license": false,
+     "price_in_cents_with_discount": 1650000
+    }
+   ]
+  }
+ ],
+ "platforms": {
+  "windows": true,
+  "mac": true,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "シングルプレイヤー"
+  },
+  {
+   "id": 1,
+   "description": "マルチプレイヤー"
+  },
+  {
+   "id": 9,
+   "description": "協力プレイ"
+  },
+  {
+   "id": 38,
+   "description": "オンライン協力プレイ"
+  },
+  {
+   "id": 22,
+   "description": "Steam実績"
+  },
+  {
+   "id": 28,
+   "description": "フルコントローラサポート"
+  },
+  {
+   "id": 55,
+   "description": "DUALSHOCKコントローラーサポート"
+  },
+  {
+   "id": 56,
+   "description": "DUALSHOCKコントローラーサポート"
+  },
+  {
+   "id": 57,
+   "description": "DualSenseコントローラーサポート"
+  },
+  {
+   "id": 58,
+   "description": "DualSenseコントローラーサポート"
+  },
+  {
+   "id": 23,
+   "description": "Steamクラウド"
+  },
+  {
+   "id": 62,
+   "description": "ファミリーシェアリング"
+  }
+ ],
+ "genres": [
+  {
+   "id": "1",
+   "description": "アクション"
+  },
+  {
+   "id": "25",
+   "description": "アドベンチャー"
+  },
+  {
+   "id": "23",
+   "description": "インディー"
+  },
+  {
+   "id": "3",
+   "description": "RPG"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/ss_6dc776bb4cd7565deba0801e6c51389d008c0e74.600x338.jpg?t=1788149163",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/ss_6dc776bb4cd7565deba0801e6c51389d008c0e74.1920x1080.jpg?t=1788149163"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/e32a0ae752605eda419afc5597ae4c0517ba8cb5/ss_e32a0ae752605eda419afc5597ae4c0517ba8cb5.600x338.jpg?t=1788149163",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/e32a0ae752605eda419afc5597ae4c0517ba8cb5/ss_e32a0ae752605eda419afc5597ae4c0517ba8cb5.1920x1080.jpg?t=1788149163"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/b7b9021771f16b098660a444717bd5d60569fa9a/ss_b7b9021771f16b098660a444717bd5d60569fa9a.600x338.jpg?t=1788149163",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/b7b9021771f16b098660a444717bd5d60569fa9a/ss_b7b9021771f16b098660a444717bd5d60569fa9a.1920x1080.jpg?t=1788149163"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/a2039a9cc1a64e4dac460e2793eafc2c2de74fe4/ss_a2039a9cc1a64e4dac460e2793eafc2c2de74fe4.600x338.jpg?t=1788149163",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/a2039a9cc1a64e4dac460e2793eafc2c2de74fe4/ss_a2039a9cc1a64e4dac460e2793eafc2c2de74fe4.1920x1080.jpg?t=1788149163"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/ss_ff782818e49493b5fd0a99a83987d9d415d3af71.600x338.jpg?t=1788149163",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/ss_ff782818e49493b5fd0a99a83987d9d415d3af71.1920x1080.jpg?t=1788149163"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/6d03c4c0e7767a1c3e306b9bba8c0ae78600dd79/ss_6d03c4c0e7767a1c3e306b9bba8c0ae78600dd79.600x338.jpg?t=1788149163",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/6d03c4c0e7767a1c3e306b9bba8c0ae78600dd79/ss_6d03c4c0e7767a1c3e306b9bba8c0ae78600dd79.1920x1080.jpg?t=1788149163"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/ss_e8747cb6d8289e8a2c970acbd9ecfcea23c87d6e.600x338.jpg?t=1788149163",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/ss_e8747cb6d8289e8a2c970acbd9ecfcea23c87d6e.1920x1080.jpg?t=1788149163"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/446d432075e010084749a823d37b1ea6c6deeede/ss_446d432075e010084749a823d37b1ea6c6deeede.600x338.jpg?t=1788149163",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/446d432075e010084749a823d37b1ea6c6deeede/ss_446d432075e010084749a823d37b1ea6c6deeede.1920x1080.jpg?t=1788149163"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/ss_fc08b26b9804e49bd7382907ccd1288d00022cd6.600x338.jpg?t=1788149163",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/ss_fc08b26b9804e49bd7382907ccd1288d00022cd6.1920x1080.jpg?t=1788149163"
+  },
+  {
+   "id": 9,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/ss_bbb08232dec9d53e62ee646dd61a07a0bcc773dc.600x338.jpg?t=1788149163",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/ss_bbb08232dec9d53e62ee646dd61a07a0bcc773dc.1920x1080.jpg?t=1788149163"
+  },
+  {
+   "id": 10,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/e0a64b11ebbf671522871fd29f15e88d6867bbfd/ss_e0a64b11ebbf671522871fd29f15e88d6867bbfd.600x338.jpg?t=1788149163",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/e0a64b11ebbf671522871fd29f15e88d6867bbfd/ss_e0a64b11ebbf671522871fd29f15e88d6867bbfd.1920x1080.jpg?t=1788149163"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257372994,
+   "name": "Sephiria: 1.0 release date trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257372994/239e161e5a40b7e5385fdfe271dd7cc7c31f7966/movie_600x337.jpg?t=1783515614",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/2436940/1818105550/0e1b83dac55fd18ce1f873fb2dccc81fda7e3889/1783515034/dash_av1.mpd?t=1783515614",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/2436940/1818105550/0e1b83dac55fd18ce1f873fb2dccc81fda7e3889/1783515034/dash_h264.mpd?t=1783515614",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/2436940/1818105550/0e1b83dac55fd18ce1f873fb2dccc81fda7e3889/1783515034/hls_264_master.m3u8?t=1783515614",
+   "highlight": true
+  },
+  {
+   "id": 256984356,
+   "name": "Sephiria Demo Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256984356/d9b289e41dd0e25f4642fd69963bcb6985aec8ce/movie_600x337.jpg?t=1742880482",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/2436940/632778/ec9b0e124dcf0c7a23cec48f08d45f72edfbfb05/1750814897/dash_av1.mpd?t=1742880482",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/2436940/632778/ec9b0e124dcf0c7a23cec48f08d45f72edfbfb05/1750814897/dash_h264.mpd?t=1742880482",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/2436940/632778/ec9b0e124dcf0c7a23cec48f08d45f72edfbfb05/1750814897/hls_264_master.m3u8?t=1742880482",
+   "highlight": true
+  }
+ ],
+ "recommendations": {
+  "total": 10832
+ },
+ "achievements": {
+  "total": 27,
+  "highlighted": [
+   {
+    "icon": "ff167add61ebe6b9152c81e1ccea8d8ba97cd72f.jpg",
+    "localized_name": "基地探検",
+    "archived": 0,
+    "hidden": 0,
+    "name": "基地探検",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2436940/ff167add61ebe6b9152c81e1ccea8d8ba97cd72f.jpg"
+   },
+   {
+    "icon": "7bc303be74f026935a52ac814b847c87c0d9a5a0.jpg",
+    "localized_name": "屋根のない塔の空",
+    "archived": 0,
+    "hidden": 0,
+    "name": "屋根のない塔の空",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2436940/7bc303be74f026935a52ac814b847c87c0d9a5a0.jpg"
+   },
+   {
+    "icon": "de217db3782a7d5b90a599978c136d5e01e411c7.jpg",
+    "localized_name": "ストーカーではありません",
+    "archived": 0,
+    "hidden": 0,
+    "name": "ストーカーではありません",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2436940/de217db3782a7d5b90a599978c136d5e01e411c7.jpg"
+   },
+   {
+    "icon": "a732c660f7612ea92b1aa47ddad5358da5a87e34.jpg",
+    "localized_name": "悟りを開いた学者",
+    "archived": 0,
+    "hidden": 0,
+    "name": "悟りを開いた学者",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2436940/a732c660f7612ea92b1aa47ddad5358da5a87e34.jpg"
+   },
+   {
+    "icon": "6fd88afad49fc5b45ff37f0b193860bc13ca079f.jpg",
+    "localized_name": "終わりなき爆弾",
+    "archived": 0,
+    "hidden": 0,
+    "name": "終わりなき爆弾",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2436940/6fd88afad49fc5b45ff37f0b193860bc13ca079f.jpg"
+   },
+   {
+    "icon": "ab559511017b498b91a2412ad9504557d9ea574e.jpg",
+    "localized_name": "狩りの決闘",
+    "archived": 0,
+    "hidden": 0,
+    "name": "狩りの決闘",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2436940/ab559511017b498b91a2412ad9504557d9ea574e.jpg"
+   },
+   {
+    "icon": "264f11c38d795f44d977808d1ef18fc03bef541c.jpg",
+    "localized_name": "クリフォトの契約者",
+    "archived": 0,
+    "hidden": 1,
+    "name": "クリフォトの契約者",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2436940/264f11c38d795f44d977808d1ef18fc03bef541c.jpg"
+   },
+   {
+    "icon": "234a32705ddaf9e28ceca22965bd8324c8b16c42.jpg",
+    "localized_name": "青き存在の住処",
+    "archived": 0,
+    "hidden": 1,
+    "name": "青き存在の住処",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2436940/234a32705ddaf9e28ceca22965bd8324c8b16c42.jpg"
+   },
+   {
+    "icon": "5d907c22e1a3c484b0415c139f2634c002ab34f4.jpg",
+    "localized_name": "旅人",
+    "archived": 0,
+    "hidden": 0,
+    "name": "旅人",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2436940/5d907c22e1a3c484b0415c139f2634c002ab34f4.jpg"
+   },
+   {
+    "icon": "d2105cbf74334f87a86a3f097c769bc44b8dd070.jpg",
+    "localized_name": "チャプターI",
+    "archived": 0,
+    "hidden": 1,
+    "name": "チャプターI",
+    "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/2436940/d2105cbf74334f87a86a3f097c769bc44b8dd070.jpg"
+   }
+  ]
+ },
+ "release_date": {
+  "coming_soon": false,
+  "date": "2026年7月31日"
+ },
+ "support_info": {
+  "url": "https://discord.gg/g7AaeBuyMV",
+  "email": ""
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/2436940?t=1788149163",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/24d309305f8a2dcbdca643ce0f19ba51dabfcb63/page_bg_raw.jpg?t=1788149163",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "kgrb": {
+   "rating": "12",
+   "descriptors": "경미한 수준의 폭력 표현"
+  },
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "14",
+   "required_age": "14",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Violência"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "12",
+   "required_age": "12",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Gewalt"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Interaksi Daring\nKekerasan"
+  }
+ }
+}

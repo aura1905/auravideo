@@ -1,0 +1,332 @@
+[
+ {
+  "id": "01",
+  "sec": "hook",
+  "text": "Two hundred and seventy five hours. That's the longest played review on this game's demo. Not the game. The demo.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "02",
+  "sec": "hook",
+  "text": "Half the people who reviewed it had already put in ten hours. It's free, it's five hundred megabytes, and one person made all of it.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 33
+  }
+ },
+ {
+  "id": "03",
+  "sec": "intro",
+  "text": "Casualties: Unknown is a two-D cave survival game about being dropped down a hole to fetch cargo. Mostly, it's about the ways a body stops working.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  }
+ },
+ {
+  "id": "04",
+  "sec": "intro",
+  "text": "Six thousand eight hundred reviews. Ninety six percent positive. Steam calls that Overwhelmingly Positive, and most finished games never get there.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  }
+ },
+ {
+  "id": "05",
+  "sec": "intro",
+  "text": "The developer is one person in Poland who goes by Orsoniks. Before Steam this lived on itch dot io, where it still sits at four point nine out of five from twelve hundred ratings.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 45
+  }
+ },
+ {
+  "id": "06",
+  "sec": "intro",
+  "text": "And on the store page, in plain text: no generative AI was used.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "07",
+  "sec": "intro",
+  "text": "So how does one person, with no team and no AI, keep people in a free demo for ten hours?",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 6
+  }
+ },
+ {
+  "id": "08",
+  "sec": "made",
+  "text": "Steam publishes a file list for every demo, and you can read it without installing anything. That's where I started.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  }
+ },
+ {
+  "id": "09",
+  "sec": "made",
+  "text": "Five hundred and seventeen megabytes. A hundred and seventy one files. The last demo I took apart was three point seven gigabytes.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 57
+  }
+ },
+ {
+  "id": "10",
+  "sec": "made",
+  "text": "It's Unity, and it's the universal render pipeline in its two-D mode.",
+  "vis": {
+   "type": "image",
+   "file": "ev_engine.png"
+  }
+ },
+ {
+  "id": "11",
+  "sec": "made",
+  "text": "That's the boring choice, and it's why the minimum spec on the store page is a laptop processor and five hundred megabytes of disk.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 48
+  }
+ },
+ {
+  "id": "12",
+  "sec": "made",
+  "text": "Then I opened the managed folder, and this is where I stopped.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "13",
+  "sec": "made",
+  "text": "The entire game — every system, every item, every wound — is one file. Assembly dash C sharp dot D L L. Eight hundred and fifty eight kilobytes.",
+  "vis": {
+   "type": "image",
+   "file": "ev_code.png"
+  }
+ },
+ {
+  "id": "14",
+  "sec": "made",
+  "text": "The Unity runtime sitting next to it, the part Unity wrote, is thirty megabytes. The engine is thirty five times bigger than the game it runs.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 9
+  }
+ },
+ {
+  "id": "15",
+  "sec": "made",
+  "text": "And there are two scenes in the build. Two. One is eighty kilobytes, the other is three hundred and thirty.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  }
+ },
+ {
+  "id": "16",
+  "sec": "made",
+  "text": "So where's the game? None of it is laid out by hand. It's generated, and it runs off data files.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 21
+  }
+ },
+ {
+  "id": "17",
+  "sec": "made",
+  "text": "Next I went looking for the shopping list. The third party packages every Unity project leans on.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  }
+ },
+ {
+  "id": "18",
+  "sec": "made",
+  "text": "There is one. Discord rich presence, so your friends can see which layer you died on.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack.png"
+  }
+ },
+ {
+  "id": "19",
+  "sec": "made",
+  "text": "No audio middleware. No inspector plugin. No character controller. No save framework. The game I took apart last time had more than twenty of those.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 42
+  }
+ },
+ {
+  "id": "20",
+  "sec": "made",
+  "text": "There's a real trade here, and it's worth saying out loud. Packages get you shipped. Writing it yourself gets you something nobody else has.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "21",
+  "sec": "made",
+  "text": "There is one more thing in that file list I did not expect to find.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 63
+  }
+ },
+ {
+  "id": "22",
+  "sec": "made",
+  "text": "A folder called Lang. English, three hundred and forty eight kilobytes of text. Simplified Chinese, three hundred and thirty five.",
+  "vis": {
+   "type": "image",
+   "file": "ev_lang.png"
+  }
+ },
+ {
+  "id": "23",
+  "sec": "made",
+  "text": "The Steam page says this game supports English only. The Chinese is in the build anyway, because the translations are made by the community and the developer just ships them.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "24",
+  "sec": "made",
+  "text": "You can see it land. Of the last eight hundred reviews, four hundred and seventy six are English. A hundred and seventy five are Russian.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 27
+  }
+ },
+ {
+  "id": "25",
+  "sec": "made",
+  "text": "There's also a folder called custom music, with a read me inside. You can drop your own tracks into the game and it will play them.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  }
+ },
+ {
+  "id": "26",
+  "sec": "made",
+  "text": "None of that comes free with Unity. Somebody sat down and decided each one.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 15
+  }
+ },
+ {
+  "id": "27",
+  "sec": "review",
+  "text": "So what do people say about it?",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  }
+ },
+ {
+  "id": "28",
+  "sec": "review",
+  "text": "The praise is about depth and atmosphere. The complaints are almost entirely about the interface, and about losing an eight hour run to a crash.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 51
+  }
+ },
+ {
+  "id": "29",
+  "sec": "review",
+  "text": "And the split is the widest I've measured. People who recommended it had played eleven hours. People who didn't, one.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  }
+ },
+ {
+  "id": "30",
+  "sec": "score",
+  "text": "Here's the whole teardown on one card.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "31",
+  "sec": "score",
+  "text": "Unity two-D. One developer. Years on itch dot io before it ever reached Steam. Almost no third party code at all.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "32",
+  "sec": "score",
+  "text": "And the trick worth stealing: eight hundred and fifty eight kilobytes of systems, instead of gigabytes of content.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "33",
+  "sec": "score",
+  "text": "Worth a dip. It's free, and it will cost you an evening. Or ten.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 36
+  }
+ },
+ {
+  "id": "34",
+  "sec": "score",
+  "text": "If you're one or two people, this is the counter argument to the last episode. That game bought every hard system and shipped in months. This one wrote them and took years.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 18
+  }
+ },
+ {
+  "id": "35",
+  "sec": "score",
+  "text": "Both of those work. Just know which one you're doing. Next time, another demo, another file list. This is Demo Dip.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 78
+  }
+ }
+]

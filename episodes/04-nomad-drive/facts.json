@@ -1,0 +1,36 @@
+{
+ "demo_appid": 4568400,
+ "full_appid": 2223980,
+ "name": "Nomad Drive",
+ "developers": [
+  "Indie Devil"
+ ],
+ "publishers": [
+  "Indie Devil"
+ ],
+ "release": "Q3 2026",
+ "coming_soon": true,
+ "genres": [
+  "Adventure",
+  "Indie",
+  "Simulation",
+  "Early Access"
+ ],
+ "languages": "English*, French, Italian, German, Spanish - Spain, Japanese, Korean, Russian, Simplified Chinese, Turkish, Dutch, Indonesian, Polish, Spanish - Latin America, Thai, Traditional Chinese, Ukrainian, Arabic, Danish, Finnish, Norwegian, Portuguese - Portugal, Swedish*languages with full audio support",
+ "website": "https://indiedevil.com",
+ "short": "Repair your rundown RV and hit the road solo or in 1–4 player co-op through a procedurally generated post-apocalyptic world. Gather resources, customize your RV, and survive as long as you can.",
+ "about": "      Discover a procedurally generated post-apocalyptic world. Each new game offers a different starting point and experience, allowing you to collect resources and survive in abandoned locations and roads.                   Begin your journey with a rundown RV, repairing and upgrading each part. Personalize everything from stoves and refrigerators to toilets and seating areas, creating your own living space.                   Stay alive with activities such as cooking, fishing, repairing, and making coffee. Use your RV's kitchen to cook the food you find, making more nutritious meals.                 Discover Nomad Drive, where every part is fully interactive. Touch, customize, and explore everything from furniture to appliances. Make the RV truly yours!                 Plant the fruit and vegetable seeds you discover in the world of Nomad Drive in pots and grow them by taking care of them. They will reward you with delicious fruits and vegetables.                ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  TBA    Processor:  TBA    Graphics:  TBA  ",
+ "movies": [
+  {
+   "id": 257330808,
+   "name": "Nomad Drive: Official Gameplay Overview Trailer"
+  }
+ ],
+ "screenshots": 15,
+ "reviews": {
+  "total": 1277,
+  "positive": 923,
+  "desc": "Mostly Positive"
+ }
+}

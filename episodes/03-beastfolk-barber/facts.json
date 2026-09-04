@@ -1,0 +1,41 @@
+{
+ "demo_appid": 4920000,
+ "full_appid": 4093320,
+ "name": "Beastfolk Barber",
+ "developers": [
+  "Safe Flight Games",
+  "GameWorks Ventures"
+ ],
+ "publishers": [
+  "SIGONO INC."
+ ],
+ "release": "To be announced",
+ "coming_soon": true,
+ "genres": [
+  "Adventure",
+  "Casual",
+  "Indie",
+  "Simulation"
+ ],
+ "languages": "English, Japanese, Simplified Chinese, Traditional Chinese",
+ "website": null,
+ "short": "You're a barber in a city full of beastfolk. Chat with your customers, style their look, help them see something new in the mirror... and in themselves.",
+ "about": " Beastfolk Barber is a narrative game where every haircut is a conversation. You play as Freddie, a barber running a small shop for beastfolk of all shapes and sizes. With every cut and chat, learn what your customers like, what they need, and who they want to be.           One day, a demon appears in your mirror with an offer. Give her the perfect haircut, and she'll undo a past regret. But first, you'll need to keep serving customers, gather resources, and find a way to cut a demon's hair. Along the way, you'll come face to face with what you've been trying to avoid.           Features       The Mysterious Mirror      Created by Freddie's late friend, this mirror can show customers their new hairstyle before you make the first cut. But previews are limited, so watch their reactions and make every choice count.      Haircuts and Conversations      Every customer brings a different challenge to the barber's chair. Listen, observe, and find the look they're really after. As you cut their hair, customers open up about everyday worries unique to their species. And every haircut brings you closer to who they really are.      Life Around the Barbershop      When the day ends, review customer feedback and scroll through the city's social feed. Local news, festivals, and the latest from your customers may all come in handy the next time someone sits in your chair. As the story unfolds, a citywide celebration will bring every familiar face back to your little shop.      Keep Them Coming Back      How well you handle each haircut affects your customers' stories and the chances you'll see them again. Get it wrong, and that visit could be their last. But if they're happy with the result, their story at the mirror will continue.         ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 11 64-bit    Processor:  Intel Core i5-1135G7 @ 2.40 GHz    Memory:  8 GB RAM    Graphics:  NVIDIA GeForce MX330（2 GB VRAM）    DirectX:  Version 11    Storage:  4 GB available space    Additional Notes:  Runs at 30 FPS at 1920 × 1080 resolution.  ",
+ "movies": [
+  {
+   "id": 257392866,
+   "name": "Steam Demo Trailer"
+  },
+  {
+   "id": 257350134,
+   "name": "Official Reveal Trailer"
+  }
+ ],
+ "screenshots": 8,
+ "reviews": {
+  "total": 923,
+  "positive": 915,
+  "desc": "Overwhelmingly Positive"
+ }
+}

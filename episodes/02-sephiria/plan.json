@@ -1,0 +1,1083 @@
+{
+ "settings": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "v11",
+   "file": "trailer_main.mp4",
+   "start": 0,
+   "in": 6.4,
+   "out": 9.5,
+   "fillMode": "cover",
+   "muted": true,
+   "transformScale": 1.15,
+   "saturation": 1.05,
+   "fadeOut": 0.3
+  },
+  {
+   "track": "v1",
+   "file": "intro_mark.mov",
+   "start": 0,
+   "in": 0,
+   "out": 3.4,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "intro_title.mov",
+   "start": 0,
+   "in": 0,
+   "out": 3.4,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v3",
+   "file": "intro_sub.mov",
+   "start": 0,
+   "in": 0,
+   "out": 3.4,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v11",
+   "file": "still_bg.png",
+   "start": 3.0,
+   "in": 0,
+   "out": 10.791,
+   "fillMode": "cover",
+   "fadeIn": 0.3,
+   "fadeOut": 0.3
+  },
+  {
+   "track": "a1",
+   "file": "tts/01.wav",
+   "start": 3.3,
+   "in": 0,
+   "out": 4.937,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/02.wav",
+   "start": 8.637,
+   "in": 0,
+   "out": 4.754,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/03.wav",
+   "start": 13.791,
+   "in": 0,
+   "out": 5.172,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "trailer_main.mp4",
+   "start": 13.791,
+   "in": 69.0,
+   "out": 74.388,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/04.wav",
+   "start": 19.363,
+   "in": 0,
+   "out": 6.531,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss00.jpg",
+   "start": 19.363,
+   "in": 0,
+   "out": 6.931,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25
+  },
+  {
+   "track": "a1",
+   "file": "tts/05.wav",
+   "start": 26.294,
+   "in": 0,
+   "out": 4.807,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss02.jpg",
+   "start": 26.294,
+   "in": 0,
+   "out": 5.207,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25
+  },
+  {
+   "track": "a1",
+   "file": "tts/06.wav",
+   "start": 31.501,
+   "in": 0,
+   "out": 4.336,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss05.jpg",
+   "start": 31.501,
+   "in": 0,
+   "out": 4.736,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25
+  },
+  {
+   "track": "a1",
+   "file": "tts/07.wav",
+   "start": 36.237,
+   "in": 0,
+   "out": 5.224,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss05.jpg",
+   "start": 36.237,
+   "in": 0,
+   "out": 5.624,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.35
+  },
+  {
+   "track": "a1",
+   "file": "tts/08.wav",
+   "start": 41.861,
+   "in": 0,
+   "out": 4.859,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss09.jpg",
+   "start": 41.861,
+   "in": 0,
+   "out": 5.259,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25
+  },
+  {
+   "track": "a1",
+   "file": "tts/09.wav",
+   "start": 47.12,
+   "in": 0,
+   "out": 4.885,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss09.jpg",
+   "start": 47.12,
+   "in": 0,
+   "out": 5.285,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.4
+  },
+  {
+   "track": "a1",
+   "file": "tts/10.wav",
+   "start": 52.405,
+   "in": 0,
+   "out": 6.139,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "trailer_main.mp4",
+   "start": 52.405,
+   "in": 22.0,
+   "out": 28.539,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/11.wav",
+   "start": 58.944,
+   "in": 0,
+   "out": 5.538,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "trailer_main.mp4",
+   "start": 58.944,
+   "in": 50.5,
+   "out": 56.438,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/12.wav",
+   "start": 64.882,
+   "in": 0,
+   "out": 3.605,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "trailer_main.mp4",
+   "start": 64.882,
+   "in": 56.5,
+   "out": 60.505,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/13.wav",
+   "start": 68.887,
+   "in": 0,
+   "out": 5.407,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss04.jpg",
+   "start": 68.887,
+   "in": 0,
+   "out": 5.807,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.25
+  },
+  {
+   "track": "a1",
+   "file": "tts/14.wav",
+   "start": 74.694,
+   "in": 0,
+   "out": 4.65,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss10.jpg",
+   "start": 74.694,
+   "in": 0,
+   "out": 5.05,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.3
+  },
+  {
+   "track": "a1",
+   "file": "tts/15.wav",
+   "start": 79.744,
+   "in": 0,
+   "out": 4.232,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss05.jpg",
+   "start": 79.744,
+   "in": 0,
+   "out": 4.632,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.2
+  },
+  {
+   "track": "a1",
+   "file": "tts/16.wav",
+   "start": 84.376,
+   "in": 0,
+   "out": 7.993,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "trailer_main.mp4",
+   "start": 84.376,
+   "in": 51.5,
+   "out": 59.893,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/17.wav",
+   "start": 92.769,
+   "in": 0,
+   "out": 5.538,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss08.jpg",
+   "start": 92.769,
+   "in": 0,
+   "out": 5.938,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.25
+  },
+  {
+   "track": "a1",
+   "file": "tts/18.wav",
+   "start": 98.707,
+   "in": 0,
+   "out": 7.915,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "trailer_main.mp4",
+   "start": 98.707,
+   "in": 39.0,
+   "out": 47.315,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/19.wav",
+   "start": 107.022,
+   "in": 0,
+   "out": 8.15,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss02.jpg",
+   "start": 107.022,
+   "in": 0,
+   "out": 8.55,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.3
+  },
+  {
+   "track": "a1",
+   "file": "tts/20.wav",
+   "start": 115.572,
+   "in": 0,
+   "out": 6.06,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss09.jpg",
+   "start": 115.572,
+   "in": 0,
+   "out": 6.46,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.2
+  },
+  {
+   "track": "a1",
+   "file": "tts/21.wav",
+   "start": 122.032,
+   "in": 0,
+   "out": 5.695,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss04.jpg",
+   "start": 122.032,
+   "in": 0,
+   "out": 6.095,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.45
+  },
+  {
+   "track": "a1",
+   "file": "tts/22.wav",
+   "start": 128.127,
+   "in": 0,
+   "out": 6.713,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "trailer_main.mp4",
+   "start": 128.127,
+   "in": 52.5,
+   "out": 59.613,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/23.wav",
+   "start": 135.24,
+   "in": 0,
+   "out": 5.12,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss00.jpg",
+   "start": 135.24,
+   "in": 0,
+   "out": 5.52,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.25
+  },
+  {
+   "track": "a1",
+   "file": "tts/24.wav",
+   "start": 140.76,
+   "in": 0,
+   "out": 5.721,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss05.jpg",
+   "start": 140.76,
+   "in": 0,
+   "out": 6.121,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.3
+  },
+  {
+   "track": "a1",
+   "file": "tts/25.wav",
+   "start": 146.881,
+   "in": 0,
+   "out": 6.426,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss10.jpg",
+   "start": 146.881,
+   "in": 0,
+   "out": 6.826,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25
+  },
+  {
+   "track": "a1",
+   "file": "tts/26.wav",
+   "start": 153.707,
+   "in": 0,
+   "out": 5.825,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/27.wav",
+   "start": 159.932,
+   "in": 0,
+   "out": 5.068,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/28.wav",
+   "start": 165.4,
+   "in": 0,
+   "out": 8.464,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "still_bg.png",
+   "start": 153.507,
+   "in": 0,
+   "out": 14.6,
+   "fillMode": "cover",
+   "fadeIn": 0.3,
+   "fadeOut": 0.3
+  },
+  {
+   "track": "v4",
+   "file": "score_header.mov",
+   "start": 153.707,
+   "in": 0,
+   "out": 14.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v5",
+   "file": "score_row_0.mov",
+   "start": 153.707,
+   "in": 0,
+   "out": 14.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v6",
+   "file": "score_row_1.mov",
+   "start": 153.707,
+   "in": 0,
+   "out": 14.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v7",
+   "file": "score_row_2.mov",
+   "start": 153.707,
+   "in": 0,
+   "out": 14.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v8",
+   "file": "score_row_3.mov",
+   "start": 153.707,
+   "in": 0,
+   "out": 14.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v9",
+   "file": "score_row_4.mov",
+   "start": 153.707,
+   "in": 0,
+   "out": 14.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v10",
+   "file": "score_stamp.mov",
+   "start": 153.707,
+   "in": 0,
+   "out": 14.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v1",
+   "file": "logo_c_rgba.png",
+   "start": 3.6,
+   "in": 0,
+   "out": 171.464,
+   "fillMode": "fit",
+   "transformScale": 0.13,
+   "transformX": 810,
+   "transformY": -425,
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5
+  },
+  {
+   "track": "a2",
+   "file": "trailer_main.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 60.0,
+   "volume": 0.1,
+   "fadeIn": 1.0,
+   "fadeOut": 1.5
+  },
+  {
+   "track": "a2",
+   "file": "trailer_main.mp4",
+   "start": 60.0,
+   "in": 0,
+   "out": 60.0,
+   "volume": 0.1,
+   "fadeIn": 1.0,
+   "fadeOut": 1.5
+  },
+  {
+   "track": "a2",
+   "file": "trailer_main.mp4",
+   "start": 120.0,
+   "in": 0,
+   "out": 55.064,
+   "volume": 0.1,
+   "fadeIn": 1.0,
+   "fadeOut": 1.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_drop.wav",
+   "start": 0.02,
+   "in": 0,
+   "out": 0.282,
+   "volume": 0.55
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 0.35,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/thud.wav",
+   "start": 0.58,
+   "in": 0,
+   "out": 0.415,
+   "volume": 0.6
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/blip_sub.wav",
+   "start": 0.85,
+   "in": 0,
+   "out": 0.48,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/chime_complete.wav",
+   "start": 1.05,
+   "in": 0,
+   "out": 1.105,
+   "volume": 0.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_exit.wav",
+   "start": 2.72,
+   "in": 0,
+   "out": 0.298,
+   "volume": 0.55
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_open.wav",
+   "start": 3.05,
+   "in": 0,
+   "out": 1.793,
+   "volume": 0.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 3.6,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.35
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 4.05,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.35
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 4.5,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.35
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 4.95,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.35
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_drop.wav",
+   "start": 153.807,
+   "in": 0,
+   "out": 0.282,
+   "volume": 0.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 155.107,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 155.907,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 156.057,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 156.857,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 157.007,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 157.807,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 157.957,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 158.757,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 158.907,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 159.707,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/thud.wav",
+   "start": 160.757,
+   "in": 0,
+   "out": 0.415,
+   "volume": 0.9
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/chime_complete.wav",
+   "start": 161.007,
+   "in": 0,
+   "out": 1.105,
+   "volume": 0.6
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_exit.wav",
+   "start": 167.007,
+   "in": 0,
+   "out": 0.298,
+   "volume": 0.5
+  }
+ ],
+ "subs": [
+  {
+   "text": "엔진: Unity URP",
+   "start": 3.6,
+   "duration": 9.991,
+   "x": -560,
+   "y": -230,
+   "fontSize": 40,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.85,
+   "bgPadding": 18,
+   "outline": 0,
+   "color": "#eafffb",
+   "fadeIn": 0.25,
+   "fadeOut": 0.3
+  },
+  {
+   "text": "팀: 4인",
+   "start": 4.05,
+   "duration": 9.541,
+   "x": 560,
+   "y": -230,
+   "fontSize": 40,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.85,
+   "bgPadding": 18,
+   "outline": 0,
+   "color": "#eafffb",
+   "fadeIn": 0.25,
+   "fadeOut": 0.3
+  },
+  {
+   "text": "제작 기간: 4년 8개월",
+   "start": 4.5,
+   "duration": 9.091,
+   "x": -560,
+   "y": 60,
+   "fontSize": 40,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.85,
+   "bgPadding": 18,
+   "outline": 0,
+   "color": "#eafffb",
+   "fadeIn": 0.25,
+   "fadeOut": 0.3
+  },
+  {
+   "text": "최고 동접: 34,000",
+   "start": 4.95,
+   "duration": 8.641,
+   "x": 560,
+   "y": 60,
+   "fontSize": 40,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.85,
+   "bgPadding": 18,
+   "outline": 0,
+   "color": "#eafffb",
+   "fadeIn": 0.25,
+   "fadeOut": 0.3
+  },
+  {
+   "text": "지난 편은 AI가 그림을 전부 그린\n게임이었죠. 이번엔 정반대입니다.",
+   "start": 3.3,
+   "duration": 5.087
+  },
+  {
+   "text": "네 사람이 픽셀을 하나하나 찍어서 사 년\n넘게 만든 한국 게임, 세피리아입니다.",
+   "start": 8.637,
+   "duration": 4.904
+  },
+  {
+   "text": "출시하자마자 스팀 인기 게임 이 위,\n최고 동시 접속 삼만 사천 명을 찍었습니다.",
+   "start": 13.791,
+   "duration": 5.322
+  },
+  {
+   "text": "던그리드를 만든 팀 호레이의 신작이고, 지금 리뷰는\n만 천육백 개, 그중 구십사 퍼센트가 긍정입니다.",
+   "start": 19.363,
+   "duration": 6.681
+  },
+  {
+   "text": "장르는 탑다운 액션 로그라이트. 토끼\n마을을 구하려고 탑을 오르는 구조입니다.",
+   "start": 26.294,
+   "duration": 4.957
+  },
+  {
+   "text": "핵심은 가방 격자에 아티팩트를\n배치해서 빌드를 만드는 시스템입니다.",
+   "start": 31.501,
+   "duration": 4.486
+  },
+  {
+   "text": "지난 편 포켓 수선도 격자 인벤토리였죠.\n그런데 두 게임의 접근이 정반대입니다.",
+   "start": 36.237,
+   "duration": 5.374
+  },
+  {
+   "text": "포켓 수선이 배치 자체를 퍼즐로 만들었다면,\n세피리아는 배치보다 조합을 봅니다.",
+   "start": 41.861,
+   "duration": 5.009
+  },
+  {
+   "text": "석판을 끼워 효과를 옮기고, 아티팩트\n등급을 올리고 내리고, 회전까지 시킵니다.",
+   "start": 47.12,
+   "duration": 5.035
+  },
+  {
+   "text": "무기는 여섯 종류, 무기마다 쉰 개가 넘는\n업그레이드가 붙고, 적은 예순 종류가 넘습니다.",
+   "start": 52.405,
+   "duration": 6.289
+  },
+  {
+   "text": "그리고 전작에 없던 가장 큰 변화. 최대 네 명이\n함께 탑을 오르는 온라인 협동 플레이입니다.",
+   "start": 58.944,
+   "duration": 5.688
+  },
+  {
+   "text": "자, 이 채널의 본론입니다. 이\n게임은 어떻게 만들어졌을까요.",
+   "start": 64.882,
+   "duration": 3.755
+  },
+  {
+   "text": "첫 번째 단서. 스팀 디비의 기술 항목에는\n유니티 엔진, 그리고 유알피가 잡혀 있습니다.",
+   "start": 68.887,
+   "duration": 5.557
+  },
+  {
+   "text": "픽셀 게임에 굳이 유알피를 쓴다는 건,\n조명과 후처리를 제대로 쓰겠다는 뜻입니다.",
+   "start": 74.694,
+   "duration": 4.8
+  },
+  {
+   "text": "그 옆에는 에프모드, 미러, 그리고\n에픽 온라인 서비스가 함께 잡힙니다.",
+   "start": 79.744,
+   "duration": 4.382
+  },
+  {
+   "text": "미러는 유니티용 오픈소스 네트워크 라이브러리, 에픽 온라인\n서비스는 친구 연결을 맡습니다. 협동 플레이의 뼈대죠.",
+   "start": 84.376,
+   "duration": 8.143
+  },
+  {
+   "text": "두 번째 단서는 개발사 인터뷰입니다. 팀 호레이는\n경기도 용인에 있는 네 명짜리 팀입니다.",
+   "start": 92.769,
+   "duration": 5.688
+  },
+  {
+   "text": "던그리드는 원래 팀장 안태현 씨가 군 입대 전에 혼자 만들던\n포트폴리오였고, 거기에 친구들이 합류하면서 팀이 됐습니다.",
+   "start": 98.707,
+   "duration": 8.065
+  },
+  {
+   "text": "그리고 던그리드 다음 작품은, 일이 년을 만들다 접었습니다. 재미있는지\n계속 의심이 들었고, 코드도 손을 못 댈 지경이 됐다고 합니다.",
+   "start": 107.022,
+   "duration": 8.3
+  },
+  {
+   "text": "세피리아도 처음엔 로그라이트가 아니라 전략\n게임이었습니다. 만들어 보고 아니다 싶어 방향을 틀었죠.",
+   "start": 115.572,
+   "duration": 6.21
+  },
+  {
+   "text": "시점도 전작의 횡스크롤에서 탑다운으로 바꿨는데,\n팀장 말로는 탑다운이 더 지옥이었답니다.",
+   "start": 122.032,
+   "duration": 5.845
+  },
+  {
+   "text": "협동 플레이는 원래 미루려던 기능이었습니다. 결국\n이천이십삼 년에 기존 코드를 반년 가까이 다시 짜서 넣었죠.",
+   "start": 128.127,
+   "duration": 6.863
+  },
+  {
+   "text": "그렇게 얼리 액세스로 오백 일, 쉰여덟\n번을 업데이트한 뒤에 정식 출시했습니다.",
+   "start": 135.24,
+   "duration": 5.27
+  },
+  {
+   "text": "리뷰를 보면 칭찬이 한 곳에 몰립니다. 로그라이크\n특유의 불쾌함을 최대한 걷어냈다는 겁니다.",
+   "start": 140.76,
+   "duration": 5.871
+  },
+  {
+   "text": "불만도 있습니다. 특정 무기와 시너지에 밸런스가 쏠린다는\n지적, 그리고 후반부가 늘어진다는 이야기입니다.",
+   "start": 146.881,
+   "duration": 6.576
+  },
+  {
+   "text": "점수 드리겠습니다. 아이디어 7점, 완성도 9점,\n아트 8점, 접근성 10점, 기술적 흥미 9점.",
+   "start": 153.707,
+   "duration": 5.975
+  },
+  {
+   "text": "한 줄 평. 접었던 프로젝트와 다시 짠 코드\n위에, 네 사람이 사 년을 쌓아 올린 정석.",
+   "start": 159.932,
+   "duration": 5.218
+  },
+  {
+   "text": "한국어는 인터페이스와 자막 모두 지원하고, 가격은 만 육천오백 원,\n데모도 있습니다. 다음 편에서 또 다른 동아시아 인디를 뜯어보겠습니다.",
+   "start": 165.4,
+   "duration": 8.614
+  }
+ ],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "FX1"
+  },
+  {
+   "kind": "video",
+   "name": "FX2"
+  },
+  {
+   "kind": "video",
+   "name": "FX3"
+  },
+  {
+   "kind": "video",
+   "name": "FX4"
+  },
+  {
+   "kind": "video",
+   "name": "FX5"
+  },
+  {
+   "kind": "video",
+   "name": "FX6"
+  },
+  {
+   "kind": "video",
+   "name": "FX7"
+  },
+  {
+   "kind": "video",
+   "name": "BG"
+  }
+ ],
+ "total": 175.064
+}

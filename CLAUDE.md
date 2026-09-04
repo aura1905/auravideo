@@ -4,10 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-**NabiVideo** (UI brand) — multi-track video editor, Vite + React 18 + TypeScript + Zustand. One codebase, **two targets**:
+**AuraVideo** (UI brand) — multi-track video editor, Vite + React 18 + TypeScript + Zustand. One codebase, **two targets**:
 
 - **Desktop (Tauri)** — the primary target. Real ffmpeg with hardware encoders, no wasm memory ceiling, professional codecs, files referenced by path instead of copied. See "Desktop build".
-- **Web (GitHub Pages)** — kept working and unchanged, for light editing from any machine. FFmpeg.wasm, IndexedDB, https://aura1905.github.io/auravideo/ (repo `aura1905/auravideo` — repo and URL keep the old name, only the brand is "NabiVideo").
+- **Web (GitHub Pages)** — kept working and unchanged, for light editing from any machine. FFmpeg.wasm, IndexedDB, https://aura1905.github.io/auravideo/ (repo `aura1905/auravideo`).
 
 **What it is actually used for:** LED backdrop video for Korean music broadcasts (Music Bank–style). That is not a side use case — it drives the 32:9 canvas work, the fill modes, the beat grid, the seamless loop, and the emphasis on compositing. Read "LED wall / music-show backdrop" before designing anything visual.
 
@@ -304,7 +304,7 @@ Rules to preserve:
 
 ## Where the footage comes from — `C:\Git\led_stage` + ComfyUI
 
-NabiVideo does not generate content; the sibling project does, and the two are designed to meet. Knowing this shape saves re-discovering it:
+AuraVideo does not generate content; the sibling project does, and the two are designed to meet. Knowing this shape saves re-discovering it:
 
 - **ComfyUI** runs locally at `http://127.0.0.1:8188` (no auth). `POST /prompt` with a graph, poll `GET /history/<id>`, read `outputs`. `GET /queue` shows what is running — **check it before submitting, the GPU is usually busy with the user's own batch, and queueing behind them stalls their work.**
 - **Video generation** is MiniMax H3 image-to-video (`MiniMaxH3ImageToVideo` + `MiniMaxH3SigmaShift`, `res_multistep`, ~25 steps). `led_stage/scripts/make30_16x9.py::vid_wf()` is the proven graph — copy it rather than inventing one. Clips are generated as a *chain*: each one's last frame is the next one's first frame, so **they butt-join; a crossfade would double-expose the seam**.
@@ -375,7 +375,7 @@ Desktop proxies run through native ffmpeg (`transcodeProxyNative`), not the wasm
 
 The editor is drivable by an external process — a script or an AI agent — so edits can be made and verified without a human at the mouse. Every command is forwarded to the frontend and applied through the **ordinary store actions**, so there is no second editing implementation that could drift from the UI's.
 
-- **Off by default.** The Rust side (`src-tauri/src/bridge.rs`) opens nothing unless the app is launched with `NABIVIDEO_AGENT=1`. It then binds a loopback-only HTTP server on a random port and writes `{port, token}` to `<temp>/nabivideo/agent.json`. Every request must carry `X-Agent-Token`.
+- **Off by default.** The Rust side (`src-tauri/src/bridge.rs`) opens nothing unless the app is launched with `AURAVIDEO_AGENT=1`. It then binds a loopback-only HTTP server on a random port and writes `{port, token}` to `<temp>/auravideo/agent.json`. Every request must carry `X-Agent-Token`.
 - **Frontend** (`src/utils/agentBridge.ts`) listens for `agent://request`, dispatches, and answers via the `agent_reply` command.
 - Commands (the `handlers` map in `agentBridge.ts` is the authority): `ping`, `state`, `project.reset`, `settings.set`, `media.import`, `generator.add`, `clip.add|update|split|remove`, `clip.cutOnBeats`, `subtitle.add|update`, `beatgrid.load`, `beatgrid.clear`, `music.assemble`, `playhead.set`, `screenshot`, `export`.
 - `clip.add` and `clip.update` also take the look fields directly (`blendMode`, `fillMode`, `glow`, `transform*`, colour correction, `pulse`), so placing a pulsing screen-blended accent layer is one call rather than an add plus a patch.
@@ -384,16 +384,14 @@ The editor is drivable by an external process — a script or an AI agent — so
 ### Driving it
 
 ```powershell
-$env:NABIVIDEO_AGENT = "1"
-Start-Process C:\Gituravideo\src-tauri	arget\debug
-abivideo.exe
-# then read port + token from %TEMP%
-abivideogent.json
+$env:AURAVIDEO_AGENT = "1"
+Start-Process C:/Git/auravideo/src-tauri/target/debug/auravideo.exe
+# then read port + token from %TEMP%/auravideo/agent.json
 ```
 
 ```python
 import json, urllib.request
-hs = json.load(open(r"C:/Users/<user>/AppData/Local/Temp/nabivideo/agent.json"))
+hs = json.load(open(r"C:/Users/<user>/AppData/Local/Temp/auravideo/agent.json"))
 def call(cmd, args=None):
     body = json.dumps({"cmd": cmd, "args": args or {}}).encode("utf-8")
     req = urllib.request.Request(f"http://127.0.0.1:{hs['port']}/", data=body,
@@ -404,10 +402,10 @@ def call(cmd, args=None):
 
 Pass file paths with **forward slashes** — backslashes have to be escaped through JSON and it is a needless source of breakage; Windows accepts `/` fine.
 
-**Two instances at once.** The handshake path is `NABIVIDEO_AGENT_FILE` when set, otherwise `<temp>/nabivideo/agent.json`. Without the override the second app to start silently overwrites the first one's file and the next client to read it drives the wrong window — which is what happens the moment two agents work on this repo at the same time. Pass a private path per instance:
+**Two instances at once.** The handshake path is `AURAVIDEO_AGENT_FILE` when set, otherwise `<temp>/auravideo/agent.json`. Without the override the second app to start silently overwrites the first one's file and the next client to read it drives the wrong window — which is what happens the moment two agents work on this repo at the same time. Pass a private path per instance:
 
 ```
-NABIVIDEO_AGENT=1 NABIVIDEO_AGENT_FILE=C:/tmp/agent2.json src-tauri/target/release/nabivideo.exe
+AURAVIDEO_AGENT=1 AURAVIDEO_AGENT_FILE=C:/tmp/agent2.json src-tauri/target/release/auravideo.exe
 ```
 
 `scripts/agent_client.py` is the client (`python scripts/agent_client.py <cmd> '<json>' [--file PATH]`). It exists because request bodies must be UTF-8 and shell `curl -d` mangles Korean.
@@ -420,7 +418,7 @@ The same React app ships as both the web build (GitHub Pages, unchanged) and a n
 
 - `npm run tauri:dev` / `npm run tauri:build`. The desktop frontend build is `npm run build:tauri` (`scripts/build-tauri.mjs`), which is just `npm run build` with `VITE_BASE=/` — the app is served from its own root, not the Pages sub-path.
 - Rust commands live in `src-tauri/src/ffmpeg.rs` and `src-tauri/src/files.rs`; `src/utils/native.ts` is the typed frontend bridge. `isNative()` gates everything, and all Tauri imports are dynamic so the web bundle never pulls them in.
-- **ffmpeg is not bundled** — it is resolved at runtime from `NABIVIDEO_FFMPEG`, then a binary next to the executable, then `PATH`. `ffmpeg_info` reports the resolved path, version, and which hardware encoders the build exposes, so the export dialog only offers encoders that actually exist.
+- **ffmpeg is not bundled** — it is resolved at runtime from `AURAVIDEO_FFMPEG`, then a binary next to the executable, then `PATH`. `ffmpeg_info` reports the resolved path, version, and which hardware encoders the build exposes, so the export dialog only offers encoders that actually exist.
 
 ### Native export — `src/utils/exportNative.ts`
 
@@ -429,6 +427,8 @@ The same React app ships as both the web build (GitHub Pages, unchanged) and a n
 1. **Inputs.** Assets added through the desktop picker carry an absolute path on the `File` as a non-enumerable `__nativePath`, and the export rewrites the input arg to that path — nothing is copied, which is what lets the desktop build work on footage larger than memory. Blob-only assets (project restored from IndexedDB, imported `.zip`) fall back to being written into the scratch dir.
 2. **Output.** The user picks the destination up front and ffmpeg writes there directly; a multi-GB render never passes through a `Blob`.
 3. **Encoder.** `encoderArgs()` in `export.ts` maps an encoder name to its rate-control flags — the families do not share syntax (x264 `-crf`, NVENC `-cq` + `-b:v 0`, QSV `-global_quality`, AMF `-qp_i`/`-qp_p`).
+
+**The filter graph goes to ffmpeg as a file, not an argument.** `exportNative` writes it to `graph-<jobId>.txt` in the scratch dir and passes `-filter_complex_script`. A motion-graphics timeline (95 clips + 32 subtitles) blew past the Windows command-line limit and `CreateProcess` failed with "파일 이름이나 확장명이 너무 깁니다 (os error 206)" before ffmpeg started; the script file has no such limit.
 
 **Relative names inside filter strings** (`rnnoise.rnnn`, `sub0.png`) are NOT rewritten to absolute paths — on Windows the drive colon collides with ffmpeg's filter argument separator. Instead `ffmpeg_run` takes a `cwd` and runs from the scratch dir where those files are written under exactly those names.
 
@@ -632,9 +632,47 @@ In the desktop build the original's `__nativePath` is carried onto the proxy `Fi
 
 `transcode.ts` is now called only from `src/utils/proxy.ts`, which owns the import-time decision (playable as-is / H.264 proxy / alpha-preserving WebM proxy) — see "Preview proxies and alpha" above. Add new proxy policy there, not here.
 
+## The Demo Dip pipeline — `docs/PIPELINE.md` + `docs/CHANNEL.md`
+
+The laptop-side purpose of this repo is a zero-touch YouTube series. It is now an
+**English channel, "Demo Dip"** (`UC_yuhFg577gfaCQVO4KXwyg`) — pick a Steam demo that
+people are actually playing, work out how it was built, narrate it, assemble, upload.
+The old Korean 데모 찍먹 branding survives only in episodes 01–03 on the AIMC channel.
+
+- **`docs/CHANNEL.md` decides *what* to make**: two audience layers (gamers who searched
+  the game, and one-to-two-person devs who want the build), the six-part episode shape,
+  the rules that hold curiosity, typography (Anton / Inter / JetBrains Mono — never
+  Malgun Gothic for Latin), thumbnail and description templates, cadence, and metrics.
+- **`docs/PIPELINE.md` decides *how***, step by step with the exact commands:
+  `steam_fetch.py` → **build teardown** (SteamDB depot manifest; `steamcmd` anonymous is
+  refused for demos) → `analyze_reviews.py` → script ★ → `tts_fish.py` → motion layers →
+  `build_plan.py` → bridge assembly → `make_thumbnail.py` / `make_desc.py` →
+  `youtube_upload.py` ★.
+
+The teardown is the differentiator: a demo's public file list names its engine, render
+pipeline, and every third-party package, and that evidence is what connects a technical
+choice to how players reacted. `episodes/04-nomad-drive/teardown.md` is the worked
+example. Never decompile, unpack or redistribute assets — file names and sizes only.
+
+`render_spec_layers.py` replaced `render_score_layers.py` for the English show and
+deliberately emits **the same seven layer names and timings**, so `build_plan.py` and its
+SFX cue table did not change. Uploads are always confirmed with the user first.
+
+## Motion graphics without keyframes — `docs/MOTION.md`
+
+AuraVideo has no keyframes, so anything that moves (the series logo intro, the
+score card) is pre-rendered as **one ProRes 4444 alpha clip per element** by
+`scripts/motion/render_*_layers.py` and placed as separate clips on separate
+tracks, so each element stays individually adjustable in the editor. The
+brand assets live in `assets/brand/`, reusable sound effects in `assets/sfx/`.
+`docs/MOTION.md` records the exact timings, layout and rules the user set
+(bright background, motion on every in/out, thick outline + heavy shadow,
+labels as subtitles not baked into images). Note `track.add` appends tracks
+**behind** the defaults — add overlay tracks first and the background track last.
+
 ## Desktop plumbing self-test — `src/utils/selftest.ts`
 
-The filter graph can be checked from a shell, but the JS↔Rust seam (command names, argument casing, event payload shape, fs permissions, working directory) can only be exercised inside the real app. `runSelfTest` runs the whole native export path end-to-end on a generated clip and writes step-by-step results to `<temp>/nabivideo/selftest.json`, so a desktop build can be verified without driving the GUI.
+The filter graph can be checked from a shell, but the JS↔Rust seam (command names, argument casing, event payload shape, fs permissions, working directory) can only be exercised inside the real app. `runSelfTest` runs the whole native export path end-to-end on a generated clip and writes step-by-step results to `<temp>/auravideo/selftest.json`, so a desktop build can be verified without driving the GUI.
 
 Gated at build time behind `VITE_SELFTEST=1` (`src/main.tsx`) — it is never present in a normal build.
 

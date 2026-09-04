@@ -1,0 +1,636 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "v11",
+   "file": "trailer_demo.mp4",
+   "start": 0,
+   "in": 27.6,
+   "out": 31.0,
+   "fillMode": "blur",
+   "muted": true,
+   "transformScale": 1.45,
+   "saturation": 1.05,
+   "fadeOut": 0.3
+  },
+  {
+   "track": "v1",
+   "file": "v_intro_mark.mov",
+   "start": 0,
+   "in": 0,
+   "out": 3.4,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "v_intro_title.mov",
+   "start": 0,
+   "in": 0,
+   "out": 3.4,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v3",
+   "file": "v_intro_sub.mov",
+   "start": 0,
+   "in": 0,
+   "out": 3.4,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v11",
+   "file": "still_bg.png",
+   "start": 3.0,
+   "in": 0,
+   "out": 6.925,
+   "fillMode": "blur",
+   "fadeIn": 0.3,
+   "fadeOut": 0.3
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/01.wav",
+   "start": 3.3,
+   "in": 0,
+   "out": 3.265,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/02.wav",
+   "start": 6.965,
+   "in": 0,
+   "out": 2.56,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/03.wav",
+   "start": 9.925,
+   "in": 0,
+   "out": 4.885,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss02.jpg",
+   "start": 9.925,
+   "in": 0,
+   "out": 5.285,
+   "fillMode": "blur",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.45
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/04.wav",
+   "start": 15.21,
+   "in": 0,
+   "out": 5.407,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "trailer_demo.mp4",
+   "start": 15.21,
+   "in": 5.5,
+   "out": 11.307,
+   "fillMode": "blur",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.45
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/05.wav",
+   "start": 21.017,
+   "in": 0,
+   "out": 4.571,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss06.jpg",
+   "start": 21.017,
+   "in": 0,
+   "out": 4.971,
+   "fillMode": "blur",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.45
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/06.wav",
+   "start": 25.988,
+   "in": 0,
+   "out": 4.937,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "trailer_demo.mp4",
+   "start": 25.988,
+   "in": 38.0,
+   "out": 43.337,
+   "fillMode": "blur",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.45
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/07.wav",
+   "start": 31.325,
+   "in": 0,
+   "out": 4.65,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss04.jpg",
+   "start": 31.325,
+   "in": 0,
+   "out": 5.05,
+   "fillMode": "blur",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.45
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/08.wav",
+   "start": 36.375,
+   "in": 0,
+   "out": 3.396,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/09.wav",
+   "start": 40.171,
+   "in": 0,
+   "out": 3.187,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "still_bg.png",
+   "start": 36.175,
+   "in": 0,
+   "out": 9.9,
+   "fillMode": "blur",
+   "fadeIn": 0.3,
+   "fadeOut": 0.3
+  },
+  {
+   "track": "v4",
+   "file": "v_score_header.mov",
+   "start": 36.375,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v5",
+   "file": "v_score_row_0.mov",
+   "start": 36.375,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v6",
+   "file": "v_score_row_1.mov",
+   "start": 36.375,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v7",
+   "file": "v_score_row_2.mov",
+   "start": 36.375,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v8",
+   "file": "v_score_row_3.mov",
+   "start": 36.375,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v9",
+   "file": "v_score_row_4.mov",
+   "start": 36.375,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v10",
+   "file": "v_score_stamp.mov",
+   "start": 36.375,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v1",
+   "file": "logo_c_rgba.png",
+   "start": 3.6,
+   "in": 0,
+   "out": 40.958,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "trailer_demo.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 44.558,
+   "volume": 0.1,
+   "fadeIn": 1.0,
+   "fadeOut": 1.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_drop.wav",
+   "start": 0.02,
+   "in": 0,
+   "out": 0.282,
+   "volume": 0.55
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 0.35,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/thud.wav",
+   "start": 0.58,
+   "in": 0,
+   "out": 0.415,
+   "volume": 0.6
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/blip_sub.wav",
+   "start": 0.85,
+   "in": 0,
+   "out": 0.48,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/chime_complete.wav",
+   "start": 1.05,
+   "in": 0,
+   "out": 1.105,
+   "volume": 0.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_exit.wav",
+   "start": 2.72,
+   "in": 0,
+   "out": 0.298,
+   "volume": 0.55
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_open.wav",
+   "start": 3.05,
+   "in": 0,
+   "out": 1.793,
+   "volume": 0.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 3.6,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.35
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 4.05,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.35
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 4.5,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.35
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 4.95,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.35
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_drop.wav",
+   "start": 36.475,
+   "in": 0,
+   "out": 0.282,
+   "volume": 0.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 37.275,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 37.825,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 37.895,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 38.445,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 38.515,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 39.065,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 39.135,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 39.685,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 39.755,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 40.305,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/thud.wav",
+   "start": 40.925,
+   "in": 0,
+   "out": 0.415,
+   "volume": 0.9
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/chime_complete.wav",
+   "start": 41.175,
+   "in": 0,
+   "out": 1.105,
+   "volume": 0.6
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_exit.wav",
+   "start": 44.975,
+   "in": 0,
+   "out": 0.298,
+   "volume": 0.5
+  }
+ ],
+ "subs": [
+  {
+   "text": "대만 인디 데모",
+   "start": 3.6,
+   "duration": 6.125,
+   "x": 0,
+   "y": -640,
+   "fontSize": 46,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.85,
+   "bgPadding": 18,
+   "outline": 0,
+   "color": "#eafffb",
+   "fadeIn": 0.25,
+   "fadeOut": 0.3
+  },
+  {
+   "text": "엔진: Unity",
+   "start": 4.05,
+   "duration": 5.675,
+   "x": 0,
+   "y": -500,
+   "fontSize": 46,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.85,
+   "bgPadding": 18,
+   "outline": 0,
+   "color": "#eafffb",
+   "fadeIn": 0.25,
+   "fadeOut": 0.3
+  },
+  {
+   "text": "퍼블리싱: SIGONO (OPUS)",
+   "start": 4.5,
+   "duration": 5.225,
+   "x": 0,
+   "y": -360,
+   "fontSize": 46,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.85,
+   "bgPadding": 18,
+   "outline": 0,
+   "color": "#eafffb",
+   "fadeIn": 0.25,
+   "fadeOut": 0.3
+  },
+  {
+   "text": "데모 평가: 99%",
+   "start": 4.95,
+   "duration": 4.775,
+   "x": 0,
+   "y": -220,
+   "fontSize": 46,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.85,
+   "bgPadding": 18,
+   "outline": 0,
+   "color": "#eafffb",
+   "fadeIn": 0.25,
+   "fadeOut": 0.3
+  },
+  {
+   "text": "머리를 잘못 자르면, 이\n손님은 다시 오지 않습니다.",
+   "start": 3.3,
+   "duration": 3.415,
+   "fontSize": 56,
+   "y": 490,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "대만 인디 게임, 비스트포크 바버입니다.",
+   "start": 6.965,
+   "duration": 2.71,
+   "fontSize": 56,
+   "y": 490,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "수인들의 도시에서 미용실을 합니다.\n손님 이야기를 듣고, 머리를 잘라 주죠.",
+   "start": 9.925,
+   "duration": 5.035,
+   "fontSize": 56,
+   "y": 490,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "커피톡은 들어주기만 하면 됐죠. 여기선\n실수하면 그 손님의 이야기가 통째로 끊깁니다.",
+   "start": 15.21,
+   "duration": 5.557,
+   "fontSize": 56,
+   "y": 490,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "엔진은 유니티 하나. 기술은 최소로\n줄이고 그림과 글에 전부를 걸었습니다.",
+   "start": 21.017,
+   "duration": 4.721,
+   "fontSize": 56,
+   "y": 490,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "신생 팀이 만들고, 오퍼스를 만든 시고노가\n개발과 유통을 같이 대 줬습니다.",
+   "start": 25.988,
+   "duration": 5.087,
+   "fontSize": 56,
+   "y": 490,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "데모 리뷰 구백스물세 개에 긍정률\n구십구 퍼센트. 한국어만 없습니다.",
+   "start": 31.325,
+   "duration": 4.8,
+   "fontSize": 56,
+   "y": 490,
+   "bgOpacity": 0.62
+  }
+ ],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "FX1"
+  },
+  {
+   "kind": "video",
+   "name": "FX2"
+  },
+  {
+   "kind": "video",
+   "name": "FX3"
+  },
+  {
+   "kind": "video",
+   "name": "FX4"
+  },
+  {
+   "kind": "video",
+   "name": "FX5"
+  },
+  {
+   "kind": "video",
+   "name": "FX6"
+  },
+  {
+   "kind": "video",
+   "name": "FX7"
+  },
+  {
+   "kind": "video",
+   "name": "BG"
+  }
+ ],
+ "total": 44.558
+}

@@ -1,0 +1,143 @@
+# 데모 찍먹 — 영상 한 편 자동 제작 파이프라인
+
+2026-09-03에 첫 편(포켓 수선 / 口袋修仙, https://youtu.be/TmuPJpLNSwI)을 이 순서로 만들었다.
+모든 단계가 스크립트 또는 브리지 명령으로 돌아가며, **사람(또는 Claude)의 판단이 들어가는 곳은 ★로 표시**했다.
+
+```
+① 게임 선정 ★ → ② 자료 수집 → ③ 분석·대본 ★ → ④ 나레이션(TTS) → ⑤ 브랜드·모션 레이어
+→ ⑥ plan.json → ⑦ 데스크톱 앱 조립·export → ⑧ 썸네일 → ⑨ 유튜브 업로드 ★(확인)
+```
+
+작업 폴더는 편마다 하나: **`episodes/NN-slug/`** — 저장소 안에 두고 평평한 구조를 유지한다
+(`plan.json`이 미디어를 파일 이름으로만 참조한다). 무엇을 커밋하고 무엇을 무시하는지는 `episodes/README.md`.
+예제 설정: `scripts/pipeline/episode_example.json`.
+
+## ① 게임 선정 ★
+
+- 소스: 스팀 데모 허브의 **TOP DEMOS** 탭 (`https://store.steampowered.com/demos/?flavor=dailyactiveuserdemo`). 클라이언트 렌더링이라 curl로는 안 나오고 브라우저 자동화로 카드 목록을 읽는다(Show more 반복). 스팀 검색 API에는 데모 인기순이 없다.
+- 후보마다 appdetails로 개발사·지원 언어를 받아 **한·중·일·대만 인디**를 거른다. 국가 판별 단서: 지원 언어(중국어만 등), 개발사명, 커뮤니티 링크(QQ 群), 웹사이트 도메인.
+- 인디 기준: 인디 태그, 개발사=퍼블리셔 또는 소규모, 대형 퍼블리셔 제외.
+- 최종 선택은 판단이다. "어떻게 만들었나"에 이야깃거리가 있는 게임(AI 사용 공시, 특이한 엔진, 1인 개발)이 이 채널에 맞는다.
+
+## ② 자료 수집
+
+```
+python scripts/pipeline/steam_fetch.py --demo <데모 appid> --out episodes/<slug>
+```
+- 스토어 정보(영/중/한/일), 스크린샷 전부, 데모 리뷰 100개, `facts.json`.
+- **SteamDB는 브라우저로**: `Technologies`(엔진), `AI Content Type`, 첫 등록일, 데모 용량, 트레일러 HLS 경로. curl은 403.
+- 트레일러: **HLS 주소는 appdetails에 그대로 들어 있다** — `movies[0].hls_h264` (2026-09-04 확인). SteamDB를 거칠 필요 없다. `ffmpeg -i "<hls_264_master.m3u8>" -c copy trailer_main.mp4`. **fps를 확인할 것** — 60fps 트레일러는 컨택트 시트 눈금이 절반이 된다.
+- 필요하면 bilibili/개발자 블로그 검색으로 제작 뒷이야기 보강.
+
+## ②-B 빌드 분해 (Demo Dip의 차별점)
+
+데모 빌드의 **파일 목록**이 스토어 페이지에 없는 사실을 말해준다. 순서:
+
+1. `steamcmd`로 익명 다운로드를 **먼저 시도**한다:
+   `steamcmd +force_install_dir <dir> +login anonymous +app_license_request <demo앱> +app_update <demo앱> validate +quit`
+   — 데모 대부분은 `No subscription`으로 거부된다(Nomad Drive 확인). 계정 로그인은 하지 않는다.
+2. 거부되면 **SteamDB depot 매니페스트**를 쓴다. 이게 공개돼 있고 사실상 같은 정보다:
+   `steamdb.info/app/<demo앱>/depots/` → depot id → `steamdb.info/depot/<depotid>/`
+   → 표 아래 페이지 크기를 `All`로 바꾸면 전체 파일 목록(이름·확장자·크기)이 나온다.
+   **SteamDB는 페이지 안에서 `fetch()`도 차단한다** — 탭을 직접 이동해야 하고, 추출은 렌더된 DOM에서 한다.
+3. 읽어내는 것: 엔진과 렌더 파이프라인, 스크립팅 백엔드(Mono/IL2CPP), 서드파티 패키지 이름(`*.dll`),
+   자체 어셈블리, 씬 개수와 크기 분포, Addressables 그룹 이름, 오디오 뱅크, 그리고 `*_DoNotShip` 같은 흔적.
+4. 결과는 `episodes/NN-slug/teardown.md`에 **근거(파일명)와 해석을 분리해서** 적는다. 확인 안 된 것은
+   "not verified / do not assert" 절에 따로 모은다(팀 규모, AI 사용 등).
+
+**선**: 파일 목록·크기·메타데이터 분석까지만. 에셋 재배포, 코드 디컴파일, 미공개 콘텐츠 노출은 하지 않는다.
+
+## ②-C 리뷰 코퍼스 분석
+
+```
+python scripts/pipeline/analyze_reviews.py --app <demo앱> --out episodes/<slug> --pages 8
+```
+- 최근 리뷰 최대 800개를 모아 언어 분포, **플레이타임 중간값**(`playtime_at_review`), 주제별 긍/부정 빈도,
+  도움됨 순 상위 부정·긍정 리뷰 원문을 뽑는다.
+- 목적은 **빌드에서 찾은 기술 선택을 실제 반응과 연결**하는 것. Nomad Drive에서는
+  HDRP + 프레임 캡 없음 → "메뉴에서 GPU 99%" → **"크립토 마이너다"라는 상위 부정 리뷰**로 이어졌다.
+  이 연결이 없으면 그냥 파일 목록 나열이 된다.
+
+## ③ 분석·대본 ★
+
+- 구성은 `docs/CHANNEL.md` §2를 따른다. 영어 편 04 기준 38문장 / 4분 51초:
+  훅 2 → 게임 소개 5 → **분해 22** → 리뷰 반응 3 → 스펙 시트·판정 6. 분해에 시간을 몰아준다.
+- 파일 목록을 말하는 문장은 **증거 카드**를 `vis` 이미지로 쓴다(스크린샷보다 훨씬 티어다운답다):
+  `python scripts/motion/render_evidence_card.py OUT.png --title "THE ENGINE" --lines "파일명|해석" ">결론"`
+- 영어 대본은 숫자를 **읽는 대로 풀어 쓴다**("seventy one percent", "June fifteenth"). 숫자 표기를 남기면 TTS가 흔들린다.
+- 대본은 `script.json`: `[{"id":"01","sec":"hook","text":"…","vis":{"type":"image","file":"ss02.jpg","zoom":1.3}}, …]`. `vis.type`은 `image`(스크린샷) 또는 `video`(트레일러, `in` 초). 훅 2문장은 청사진 스틸 위에서 재생되므로 vis가 무시된다.
+- 숫자는 **읽는 그대로** 쓴다: 순위·날짜는 한자어("삼십사 위", "오월 오일"), 개·명·달은 고유어("서른아홉 개", "넉 달").
+- 확정 사실과 추정을 구분해 말한다("추정됩니다"). 개발자에게 항의받을 단정은 피한다.
+- 점수 5항목(아이디어·완성도·아트·접근성·기술적 흥미)과 라벨 4개(엔진·팀·기간·특징)를 `episodes/NN-slug/episode.json`에 적는다.
+
+## ④ 나레이션
+
+```
+python scripts/pipeline/tts_fish.py --script episodes/<slug>/script.json --out episodes/<slug>/tts
+```
+- Fish Audio s2-pro, 영어 채널의 고정 음성은 **"Energetic Male"** (`reference_id 802e3bc2b27e49c2995d23ef70e6ac89`, `tts_fish.py`의 기본값). 한국어 편 01–03은 `--voice 474134178bb549f3b28d6d5d9c811e03`. 기본 음성은 호출마다 목소리가 바뀌므로 절대 쓰지 않는다.
+- 문장별 mp3/wav와 길이가 **`<대본이름>_timed.json`**에 기록된다(`script.json` → `script_timed.json`, `short.json` → `short_timed.json`). 이 길이가 타임라인의 기준이다.
+  **주의**: 예전에는 출력 이름이 `script_timed.json`으로 고정이라, 쇼츠를 나레이션하면 롱폼 타이밍 파일을 조용히 덮어썼다(2026-09-04에 실제로 발생). 지금은 대본 파일명에서 따온다. 덮어썼다면 `tts/*.wav` 길이를 ffprobe로 재서 복원할 수 있다 — 재합성할 필요 없다.
+- 다른 음성을 고르려면 `C:\Git\lordoflord\tools\voice_casting\data\fish_audio_curated.json`(한국어 검증 1,357개)에서 후보를 뽑아 같은 문장으로 샘플을 만든다.
+
+## ⑤ 브랜드·모션 레이어 (docs/MOTION.md 참고)
+
+```
+python scripts/motion/render_intro_layers.py assets/brand/demo_dip_logo_rgba.png     # 편마다 동일, 한 번만
+python scripts/motion/render_spec_layers.py '[["ENGINE","Unity 6 / HDRP"],["TEAM","not disclosed"],["IN DEV","devlogs since 2024"],["STACK","Mirror + EOS"],["THE TRICK","license the hard parts"]]' --verdict "WORTH A DIP"   # 영어 편. 한국어 편은 render_score_layers.py
+for n in mark title sub: ffmpeg -framerate 30 -i lf_$n/f%03d.png -c:v prores_ks -profile:v 4444 -pix_fmt yuva444p10le intro_$n.mov
+for n in header row_0 row_1 row_2 row_3 row_4 stamp: ffmpeg ... sc_$n/f%03d.png ... score_$n.mov
+```
+- 청사진 스틸: gpt-image-2로 **글자 없이** 생성("NO TEXT", 그 게임의 핵심 오브젝트 + 청사진 격자, 좌우 여백). `still_bg.png`.
+- 편 폴더에 `intro_*.mov`, `score_*.mov`, `still_bg.png`, `logo_c_rgba.png`(=assets/brand/demo_dip_badge_rgba.png)를 둔다.
+
+## ⑥ plan.json
+
+```
+python scripts/pipeline/build_plan.py --episode episode.json --out episodes/<slug>/plan.json
+```
+- **콜드 오픈**(훅 문장이 실제 게임 화면 위에서 먼저, 0~15초) → 로고 스팅 3.4초(밝은 컷 + 로고 3레이어 + 효과음) → 청사진 스틸 + 라벨 4개 → 본편(문장별 스크린샷/증거카드/트레일러) → 스펙 시트(7레이어) → 마무리. 워터마크·BGM·효과음 큐는 스팅 위치에 맞춰 자동으로 밀린다.
+- `cold_open_lines`(기본 = `hook_lines`)가 스팅 앞에 놓을 문장 수, `still_lines`(기본 2)가 스틸 위에 놓을 문장 수. **로고를 맨 앞에 두지 않는 이유**는 `docs/CHANNEL.md` §2 — 구독자 0명 채널에서 로고 인트로는 이탈 버튼이다.
+- 트랙: 오버레이 트랙 7개를 먼저 추가하고 배경 트랙을 **마지막**에 추가한다(`track.add`는 뒤에 붙는다).
+
+## ⑦ 조립·export (데스크톱 앱, 브리지)
+
+```
+AURAVIDEO_AGENT=1 AURAVIDEO_AGENT_FILE=C:/tmp/agent.json src-tauri/target/debug/auravideo.exe
+python scripts/motion/bridge_build.py --file C:/tmp/agent.json --workdir episodes/<slug> --out episodes/<slug>/final.mp4 --shots "" --no-export
+python scripts/agent_client.py export '{"outPath":"episodes/<slug>/intro_only.mp4","rangeStart":0,"rangeEnd":6.5}' --file C:/tmp/agent.json
+python scripts/agent_client.py export '{"outPath":"episodes/<slug>/final.mp4","encoder":"libx264","quality":"standard"}' --file C:/tmp/agent.json
+```
+- 인트로·점수 구간만 먼저 range export해서 프레임을 뽑아 본 뒤 전체를 돌린다(1080p 3.5분 ≈ 10분).
+- 검증은 export된 파일에서 한다: `ffprobe` 길이, 프레임 추출, `volumedetect`. **프리뷰 캡처로 알파 클립을 판단하지 말 것**(프리뷰 잔상 버그).
+- `agent_client.py`의 HTTP 대기가 먼저 끝나도 앱 안의 ffmpeg는 계속 돈다. 파일이 `ffprobe`로 열릴 때까지 기다린다.
+
+## ⑧ 썸네일
+
+```
+python scripts/motion/make_thumbnail.py --bg episodes/<slug>/ss00.jpg --out episodes/<slug>/thumb.jpg \
+    --tag "중국 인디 데모 · 1인 개발" --line1 "포켓 수선(口袋修仙)" --line2 "AI로 혼자 4달 만에?" --focus right --title-size 120
+```
+- 규칙(사용자): 헤드라인은 **"한글이름(원어)"**, 점수 도장 없음, 글자 크게, 뱃지 좌하단, 배경은 게임 키아트.
+
+## ⑨ 유튜브 업로드 ★
+
+```
+python scripts/youtube_upload.py upload episodes/<slug>/final.mp4 --title "…" --desc-file desc.txt --tags "…" --privacy public --thumb thumb.jpg
+```
+- 채널은 `--channel`로 고른다: `demodip`(기본, Demo Dip) / `aimc`(구 한국어 편 01–03). 채널마다 토큰이 따로다 — `C:\Git\docs\youtube_token_<채널>.json`. 만료되면 `auth --channel <채널>`을 돌리고 **브라우저 동의 화면에서 그 채널을 골라야** 한다(스크립트가 매번 토큰의 채널 id를 대조해 불일치면 거부).
+- 하루 한도는 **업로드 6편**(할당량 10,000 / 업로드당 1,600).
+- **API로 공개 업로드가 된다**(사용자 확인, 2026-09-04). 예전 메모에 있던 "심사 전에는 비공개로 잠긴다"는 제약은 이 프로젝트에 해당하지 않는다.
+- **예약 공개**: `--publish-at "2026-09-05 08:00"`(KST로 읽어 UTC로 변환) → 비공개로 올라가고 그 시각에 유튜브가 공개로 바꾼다. 응답에 `publishAt`이 안 남으면 스크립트가 경고를 찍으니 그때만 Studio에서 직접 지정한다.
+- 업로드 시각 기준: 한국 시간 **오전 8시 / 오후 8시**(북미 저녁·유럽 저녁). 하루 2편이면 두 편은 반드시 다른 게임으로.
+- 설명은 스크립트로 생성한다: `python scripts/pipeline/make_desc.py --episode <ep.json> --out desc.txt --hook "..." --takeaway "..."`
+  (스팀 링크, 스펙 시트, 챕터, 추정·저작권 고지, 해시태그 3개 — 순서는 `docs/CHANNEL.md` §7 고정).
+  챕터 시각은 `build_plan.py`와 같은 상수(INTRO 3.0 / GAP 0.4)로 다시 계산하므로 두 파일을 같이 고쳐야 한다.
+- **업로드는 매번 사용자 확인 후** 실행한다.
+
+## 아직 손이 가는 곳 (자동화 다음 목표)
+
+1. ① 데모 랭킹 수집을 브라우저 자동화 스크립트로 고정(puppeteer-core, `scripts/pup/` 참고).
+2. ③ 대본 생성을 LLM 호출로 스크립트화(facts.json + 리뷰 → script.json). 지금은 Claude가 세션에서 쓴다.
+3. ⑦ 앱 실행부터 export까지 한 명령으로 묶기(`make_episode.py`).
+4. 프리뷰의 알파 클립 잔상 버그 수정.

@@ -1,0 +1,10 @@
+대만 인디 게임 비스트포크 바버(Beastfolk Barber / 異獸髮廊) 데모.
+수인들의 도시에서 미용실을 운영하는 내러티브 게임인데, 머리를 잘못 자르면 그 손님은 다시 오지 않고 들려주려던 이야기도 끊깁니다.
+
+엔진은 Unity 하나. 신생 팀 Safe Flight Games가 만들고, OPUS 시리즈를 만든 SIGONO가 공동 개발과 퍼블리싱을 맡았습니다.
+데모 리뷰 923개 중 99% 긍정. 한국어는 아직 없습니다.
+
+데모(무료): https://store.steampowered.com/app/4920000/
+전체 영상: https://youtu.be/7poPc-v8cqA
+
+#Shorts #데모찍먹 #인디게임 #대만인디 #BeastfolkBarber #異獸髮廊 #SIGONO #OPUS #커피톡 #스팀데모

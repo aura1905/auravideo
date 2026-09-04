@@ -1,0 +1,359 @@
+[
+ {
+  "id": "01",
+  "sec": "hook",
+  "text": "Two of the most upvoted reviews on this Steam demo say the same thing. It's a crypto miner. Don't install it.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 3
+  }
+ },
+ {
+  "id": "02",
+  "sec": "hook",
+  "text": "It isn't. But I know why they think that, and it's sitting in the game's own file list.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  }
+ },
+ {
+  "id": "03",
+  "sec": "intro",
+  "text": "This is Nomad Drive. You repair a rundown RV and drive it across a procedurally generated wasteland, alone or with up to three friends.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 14
+  }
+ },
+ {
+  "id": "04",
+  "sec": "intro",
+  "text": "The demo went up on June fifteenth. Right now, while I'm recording this, about two thousand people are inside it.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "05",
+  "sec": "intro",
+  "text": "Seven hundred ninety four recent reviews, seventy one percent positive. Steam calls that Mostly Positive.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 26
+  }
+ },
+ {
+  "id": "06",
+  "sec": "intro",
+  "text": "The number that made me pick this one: the median reviewer had two hours and thirty six minutes on it before they wrote anything.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  }
+ },
+ {
+  "id": "07",
+  "sec": "intro",
+  "text": "Two and a half hours, in a free demo. Nobody is bouncing off this. Some of them just think it's mining crypto while they play.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 38
+  }
+ },
+ {
+  "id": "08",
+  "sec": "made",
+  "text": "Those two things have the same cause, and I can show you, because Steam publishes a file list for every demo.",
+  "vis": {
+   "type": "image",
+   "file": "ss08.jpg"
+  }
+ },
+ {
+  "id": "09",
+  "sec": "made",
+  "text": "Three hundred and twenty two entries. Three point seven gigabytes. No unpacking, no decompiling, nothing private. Just names and sizes.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 50
+  }
+ },
+ {
+  "id": "10",
+  "sec": "made",
+  "text": "Start with the engine. The first line is already odd.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "11",
+  "sec": "made",
+  "text": "It's Unity. But it's the High Definition Render Pipeline, and there's a GPU driven runtime in there too, which puts it on Unity six.",
+  "vis": {
+   "type": "image",
+   "file": "ev_engine.png"
+  }
+ },
+ {
+  "id": "12",
+  "sec": "made",
+  "text": "Almost every small team picks the Universal pipeline instead. It's lighter and it runs on anything. HDRP looks better and costs more to run.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 62
+  }
+ },
+ {
+  "id": "13",
+  "sec": "made",
+  "text": "Which brings us back to the crypto miner. There is no miner in that file list. What there is, is a very expensive renderer and, apparently, nothing capping the frame rate.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "14",
+  "sec": "made",
+  "text": "Players reported ninety nine percent GPU load sitting in the menu. On a five thousand series card. Doing nothing.",
+  "vis": {
+   "type": "image",
+   "file": "ss09.jpg"
+  }
+ },
+ {
+  "id": "15",
+  "sec": "made",
+  "text": "That's what an uncapped render loop looks like from outside. Your fans spin up on a menu screen, and you assume something is stealing from you.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 74
+  }
+ },
+ {
+  "id": "16",
+  "sec": "made",
+  "text": "So that's the look. What about the driving, which is the entire point of the game?",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  }
+ },
+ {
+  "id": "17",
+  "sec": "made",
+  "text": "They licensed it. Vehicle Physics two, its wheel controller, and the multiplayer add on that ships with it.",
+  "vis": {
+   "type": "image",
+   "file": "ev_driving.png"
+  }
+ },
+ {
+  "id": "18",
+  "sec": "made",
+  "text": "Which is the right call. Writing a vehicle simulator is a year of your life, easily. Nobody should be doing that twice.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 86
+  }
+ },
+ {
+  "id": "19",
+  "sec": "made",
+  "text": "Same story for the world. The terrain is MapMagic two, a node graph that generates the map at runtime.",
+  "vis": {
+   "type": "image",
+   "file": "ev_world.png"
+  }
+ },
+ {
+  "id": "20",
+  "sec": "made",
+  "text": "That explains a complaint that shows up over and over in the Chinese reviews. It gets repetitive a few hours in.",
+  "vis": {
+   "type": "image",
+   "file": "ss13.jpg"
+  }
+ },
+ {
+  "id": "21",
+  "sec": "made",
+  "text": "And there are only four scenes in the whole build, the biggest one half a megabyte. The gigabytes are all loot and locations, streamed in.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 98
+  }
+ },
+ {
+  "id": "22",
+  "sec": "made",
+  "text": "Then the co-op, which is where a small team usually drowns.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  }
+ },
+ {
+  "id": "23",
+  "sec": "made",
+  "text": "Mirror, which is free and open source, running over the Epic Online Services relay, with Steam lobbies next to it and Vivox for voice.",
+  "vis": {
+   "type": "image",
+   "file": "ev_coop.png"
+  }
+ },
+ {
+  "id": "24",
+  "sec": "made",
+  "text": "Server bill, zero. That shows up in the reviews too. Two players in the same city, five kilometres apart, getting three to four hundred milliseconds.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 110
+  }
+ },
+ {
+  "id": "25",
+  "sec": "made",
+  "text": "That's not a bug in their code. That's what a free global relay does. Your traffic goes wherever the relay happens to be.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  }
+ },
+ {
+  "id": "26",
+  "sec": "made",
+  "text": "So the driving is bought, the world is bought, the netcode is bought. What did they actually build?",
+  "vis": {
+   "type": "image",
+   "file": "ss12.jpg"
+  }
+ },
+ {
+  "id": "27",
+  "sec": "made",
+  "text": "Sixteen assemblies of their own. Dependency injection, save system, localization, input, audio, settings, and the glue over Mirror.",
+  "vis": {
+   "type": "image",
+   "file": "ev_own.png"
+  }
+ },
+ {
+  "id": "28",
+  "sec": "made",
+  "text": "That is a studio framework. Whoever is behind Indie Devil has shipped software before.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 122
+  }
+ },
+ {
+  "id": "29",
+  "sec": "made",
+  "text": "Although they also shipped a folder that Unity itself names Do Not Ship, and left every asset package's sample code in the build.",
+  "vis": {
+   "type": "image",
+   "file": "ev_tells.png"
+  }
+ },
+ {
+  "id": "30",
+  "sec": "review",
+  "text": "That's what shipping fast looks like. In the reviews, driving is what people talk about most, and performance is what they complain about loudest.",
+  "vis": {
+   "type": "image",
+   "file": "ss10.jpg"
+  }
+ },
+ {
+  "id": "31",
+  "sec": "review",
+  "text": "And the split is telling. Positive reviewers had played three hours and eighteen minutes. Negative reviewers, one hour and twelve.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 134
+  }
+ },
+ {
+  "id": "32",
+  "sec": "review",
+  "text": "The word potential shows up in fifty positive reviews and two negative ones. People aren't asking for a finished game. They want it to run.",
+  "vis": {
+   "type": "image",
+   "file": "ss12.jpg"
+  }
+ },
+ {
+  "id": "33",
+  "sec": "score",
+  "text": "Here's the whole teardown on one card.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "34",
+  "sec": "score",
+  "text": "Unity six on HDRP. Team size never disclosed. Public devlogs going back to twenty twenty four. Mirror, Epic Online Services, MapMagic, and Vehicle Physics two.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "35",
+  "sec": "score",
+  "text": "And the trick, if you want one: they licensed every hard system and spent their own time on the glue and the content.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "36",
+  "sec": "score",
+  "text": "Worth a dip. Early access is set for September thirtieth, and the demo is free right now.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 8
+  }
+ },
+ {
+  "id": "37",
+  "sec": "score",
+  "text": "If you're shipping a demo this year, the lesson costs you one afternoon. Cap your frame rate in the menu, or the internet will decide you're a miner.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 30
+  }
+ },
+ {
+  "id": "38",
+  "sec": "score",
+  "text": "Next time, another demo, another file list. This is Demo Dip.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 142
+  }
+ }
+]

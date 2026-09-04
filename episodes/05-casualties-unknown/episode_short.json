@@ -1,0 +1,61 @@
+{
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.95,
+ "score_len": 9.5,
+ "narration_volume": 1.6,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "title_en": "Casualties: Unknown",
+ "demo_appid": 4576510,
+ "full_appid": 4576490,
+ "developer": "Orsoniks",
+ "workdir": "episodes/05-casualties-unknown",
+ "script_timed": "episodes/05-casualties-unknown/short_timed.json",
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity / URP 2D"
+  ],
+  [
+   "TEAM",
+   "one person"
+  ],
+  [
+   "ALL THE CODE",
+   "858 KB"
+  ],
+  [
+   "PACKAGES",
+   "one"
+  ],
+  [
+   "REVIEWS",
+   "96% of 6,800"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": {
+  "file": "trailer_main.mp4",
+  "volume": 0.07
+ },
+ "youtube": {
+  "title": "One dev. 858 KB of code. A free demo people play for 10 hours. #shorts",
+  "tags": "shorts,Casualties Unknown,Orsoniks,steam demo,unity,solo dev,indie dev,gamedev,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ }
+}

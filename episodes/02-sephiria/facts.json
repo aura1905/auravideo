@@ -1,0 +1,40 @@
+{
+ "demo_appid": 2686970,
+ "full_appid": 2436940,
+ "name": "Sephiria",
+ "developers": [
+  "TEAM HORAY"
+ ],
+ "publishers": [
+  "TEAM HORAY"
+ ],
+ "release": "31 Jul, 2026",
+ "coming_soon": false,
+ "genres": [
+  "Action",
+  "Adventure",
+  "Indie",
+  "RPG"
+ ],
+ "languages": "Korean, English, Japanese, Simplified Chinese, Spanish - Spain, Russian, Portuguese - Brazil, French, German, Swedish, Thai, Polish, Italian, Traditional Chinese, Turkish",
+ "website": "https://teamhoray.com",
+ "short": "Save Bunnyville from a doomed fate: a top-down action/RPG roguelite from the makers of Dungreed. Explore the depths of the tower, collect and upgrade artifacts, and defeat hordes of demons to keep your village safe.",
+ "about": " On the Day of Destiny, a terrible omen strikes Bunnyville. The bunny villagers will be slaughtered by a horde of demons… unless you can stop them.              Sephiria is a fate-defying action roguelite following a brave bunny on a quest to save their town from doom. Master and upgrade different weapons, unlock new Talents each run, strategically arrange your inventory, and fight through hordes of enemies to uncover the threat waiting at the journey's end.          Features     Strategic inventory system:  Collect and arrange Artifacts and empower them with the different Tablets. Manage your inventory to suit your abilities!     Custom combat:  Master 6 distinct weapons, each with over 50 unique upgrades to unlock!     Ever-changing threats:  Face more than 60 distinct and dangerous enemies, and over 10 unique bosses. Across a journey spanning 6 chapters, the challenges ahead grow ever greater.     Join forces:  Team up with friends in online co-op for up to 4 players and explore the tower together. Trade items, revive fallen companions, and claim victory as a team!             ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10 64-bit    Processor:  Ryzen 5 1400 or better    Memory:  8 GB RAM    Graphics:  Geforce GTS 750 or better    DirectX:  Version 11    Storage:  2 GB available space  ",
+ "movies": [
+  {
+   "id": 257372994,
+   "name": "Sephiria: 1.0 release date trailer"
+  },
+  {
+   "id": 256984356,
+   "name": "Sephiria Demo Trailer"
+  }
+ ],
+ "screenshots": 11,
+ "reviews": {
+  "total": 11628,
+  "positive": 10954,
+  "desc": "Very Positive"
+ }
+}

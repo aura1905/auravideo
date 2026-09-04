@@ -1,0 +1,63 @@
+{
+  "title_ko": "비스트포크 바버",
+  "title_orig": "Beastfolk Barber / 異獸髮廊",
+  "country": "대만",
+  "demo_appid": 4920000,
+  "full_appid": 4093320,
+  "workdir": "C:/Git/auravideo/episodes/03-beastfolk-barber",
+  "script_timed": "C:/Git/auravideo/episodes/03-beastfolk-barber/script_timed.json",
+  "intro_bg": {
+    "file": "trailer_demo.mp4",
+    "in": 27.6,
+    "out": 31.0,
+    "scale": 1.1
+  },
+  "labels": [
+    "엔진: Unity",
+    "개발: Safe Flight Games",
+    "퍼블리싱: SIGONO (OPUS)",
+    "데모 평가: 99% / 923개"
+  ],
+  "hook_lines": 2,
+  "score_line_id": "26",
+  "scores": [
+    [
+      "아이디어",
+      9
+    ],
+    [
+      "완성도",
+      8
+    ],
+    [
+      "아트",
+      9
+    ],
+    [
+      "접근성",
+      5
+    ],
+    [
+      "기술적 흥미",
+      6
+    ]
+  ],
+  "bgm": {
+    "file": "trailer_demo.mp4",
+    "volume": 0.1
+  },
+  "narration_volume": 1.6,
+  "thumbnail": {
+    "bg": "ss06.jpg",
+    "hook": "머리 잘못 자르면 손님이 안 온다",
+    "tag": "대만 인디 데모 · OPUS 스튜디오 참여",
+    "focus": "center",
+    "title_size": 108
+  },
+  "youtube": {
+    "title": "[데모 찍먹] 머리 잘못 자르면 손님이 영영 안 옵니다 | 비스트포크 바버(Beastfolk Barber)",
+    "tags": "데모찍먹,인디게임,대만인디,비스트포크바버,BeastfolkBarber,異獸髮廊,SIGONO,OPUS,커피톡,내러티브게임,스팀데모",
+    "privacy": "public",
+    "url": "https://youtu.be/7poPc-v8cqA"
+  }
+}

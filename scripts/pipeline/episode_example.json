@@ -1,0 +1,61 @@
+{
+  "title_ko": "포켓 수선",
+  "title_orig": "口袋修仙",
+  "country": "중국",
+  "demo_appid": 4777710,
+  "full_appid": 4707190,
+  "workdir": "episodes/01-pocket-cultivation",
+  "script_timed": "episodes/01-pocket-cultivation/script_timed.json",
+  "intro_bg": {
+    "file": "trailer_main.mp4",
+    "in": 5.6,
+    "out": 9.0,
+    "scale": 1.25
+  },
+  "labels": [
+    "엔진: Electron",
+    "팀: 1인 개발",
+    "제작 기간: 4개월",
+    "AI 아트: 100%"
+  ],
+  "hook_lines": 2,
+  "score_line_id": "25",
+  "scores": [
+    [
+      "아이디어",
+      8
+    ],
+    [
+      "완성도",
+      5
+    ],
+    [
+      "아트",
+      6
+    ],
+    [
+      "접근성",
+      3
+    ],
+    [
+      "기술적 흥미",
+      9
+    ]
+  ],
+  "bgm": {
+    "file": "trailer_main.mp4",
+    "volume": 0.1
+  },
+  "narration_volume": 1.6,
+  "thumbnail": {
+    "bg": "ss00.jpg",
+    "hook": "AI로 혼자 4달 만에?",
+    "tag": "중국 인디 데모 · 1인 개발",
+    "focus": "right"
+  },
+  "youtube": {
+    "title": "[데모 찍먹] 웹 개발자 혼자 AI로 4달 만에 만든 수선 게임? | 포켓 수선(口袋修仙)",
+    "tags": "데모찍먹,인디게임,중국인디,수선게임,口袋修仙,Pocket Cultivation,스팀데모,Electron,AI게임개발",
+    "privacy": "public"
+  }
+}

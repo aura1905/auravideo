@@ -1,0 +1,207 @@
+{
+ "type": "game",
+ "name": "Pocket Cultivation",
+ "steam_appid": 4707190,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  4777710,
+  5106860
+ ],
+ "detailed_description": "<h2 class=\"bb_tag\" >About This Game</h2><p class=\"bb_paragraph\" ><strong>Pocket Cultivation</strong> is a strategy cultivation game centered around <strong>“Storage Bag Building.”</strong> Journey through a vast world of cultivation, collect items that suit your path, and carefully arrange them within the limited slots of your storage bag. Create synergies and resource loops between items to accumulate cultivation, break through bottlenecks, overcome all kinds of strange and powerful enemies, and ultimately pursue the Great Dao.</p><p class=\"bb_paragraph\" >This game is a <strong>solo-developed project created with extensive AI assistance</strong>. A large portion of the game's assets are AI-generated, so we'd like to be upfront about that for fellow cultivators who may have concerns. Thanks to AI, we're able to provide a richer and more diverse gameplay experience. You're welcome to join our official QQ group to discuss how to make <i>Pocket Cultivation</i> even more enjoyable. If you're also interested in exploring AI-powered game development, we'd love to have you join the conversation!</p><h2 class=\"bb_tag\" >Core Features</h2><h2 class=\"bb_tag\" >Storage Bag Building</h2><p class=\"bb_paragraph\" >Build and optimize your inventory layout inside your storage bag. The storage bag serves not only as your combat system but also as a key part of your cultivation process.</p><h2 class=\"bb_tag\" >Adventure Progression</h2><p class=\"bb_paragraph\" >Travel across the world map, moving your character through battles, encounters, and reward choices as you advance on your cultivation journey.</p><h2 class=\"bb_tag\" >Realm Breakthroughs</h2><p class=\"bb_paragraph\" >Progress from a mortal to the Qi Refining stage, Foundation Establishment, and beyond. Upon reaching cultivation bottlenecks, you'll need to fulfill specific requirements and overcome breakthrough challenges.</p><h2 class=\"bb_tag\" >Item Synergies</h2><p class=\"bb_paragraph\" >Cultivation techniques, pills, magical artifacts, spiritual materials, formations, and talismans each serve unique roles. Some powerful items require Spirit Stones to maintain their effects, creating additional strategic considerations.</p><h2 class=\"bb_tag\" >Marketplace Trading</h2><p class=\"bb_paragraph\" >Acquire new items during your travels, or visit the marketplace to exchange Spirit Stones and surplus items for the resources you currently need most.</p><h2 class=\"bb_tag\" >Trade-offs and Optimization</h2><p class=\"bb_paragraph\" >Higher rarity, larger size, or stronger effects are not always the best solution. Available space, resource consumption, and item synergies all influence your combat effectiveness and cultivation efficiency.</p>",
+ "about_the_game": "<h2 class=\"bb_tag\" >About This Game</h2><p class=\"bb_paragraph\" ><strong>Pocket Cultivation</strong> is a strategy cultivation game centered around <strong>“Storage Bag Building.”</strong> Journey through a vast world of cultivation, collect items that suit your path, and carefully arrange them within the limited slots of your storage bag. Create synergies and resource loops between items to accumulate cultivation, break through bottlenecks, overcome all kinds of strange and powerful enemies, and ultimately pursue the Great Dao.</p><p class=\"bb_paragraph\" >This game is a <strong>solo-developed project created with extensive AI assistance</strong>. A large portion of the game's assets are AI-generated, so we'd like to be upfront about that for fellow cultivators who may have concerns. Thanks to AI, we're able to provide a richer and more diverse gameplay experience. You're welcome to join our official QQ group to discuss how to make <i>Pocket Cultivation</i> even more enjoyable. If you're also interested in exploring AI-powered game development, we'd love to have you join the conversation!</p><h2 class=\"bb_tag\" >Core Features</h2><h2 class=\"bb_tag\" >Storage Bag Building</h2><p class=\"bb_paragraph\" >Build and optimize your inventory layout inside your storage bag. The storage bag serves not only as your combat system but also as a key part of your cultivation process.</p><h2 class=\"bb_tag\" >Adventure Progression</h2><p class=\"bb_paragraph\" >Travel across the world map, moving your character through battles, encounters, and reward choices as you advance on your cultivation journey.</p><h2 class=\"bb_tag\" >Realm Breakthroughs</h2><p class=\"bb_paragraph\" >Progress from a mortal to the Qi Refining stage, Foundation Establishment, and beyond. Upon reaching cultivation bottlenecks, you'll need to fulfill specific requirements and overcome breakthrough challenges.</p><h2 class=\"bb_tag\" >Item Synergies</h2><p class=\"bb_paragraph\" >Cultivation techniques, pills, magical artifacts, spiritual materials, formations, and talismans each serve unique roles. Some powerful items require Spirit Stones to maintain their effects, creating additional strategic considerations.</p><h2 class=\"bb_tag\" >Marketplace Trading</h2><p class=\"bb_paragraph\" >Acquire new items during your travels, or visit the marketplace to exchange Spirit Stones and surplus items for the resources you currently need most.</p><h2 class=\"bb_tag\" >Trade-offs and Optimization</h2><p class=\"bb_paragraph\" >Higher rarity, larger size, or stronger effects are not always the best solution. Available space, resource consumption, and item synergies all influence your combat effectiveness and cultivation efficiency.</p>",
+ "short_description": "Pocket Cultivation is a strategy cultivation game centered around “Storage Bag Building.” Journey through a vast world of cultivation, collect items that suit your path, and carefully arrange them within the limited slots of your storage bag.",
+ "supported_languages": "Simplified Chinese",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/84e3a1adf0f3df25674a2717403bfdfc22a836aa/header.jpg?t=1788107331",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/64b272b2156b7590e597aad276ac8fd89d69b22e/capsule_231x87.jpg?t=1788107331",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/64b272b2156b7590e597aad276ac8fd89d69b22e/capsule_184x69.jpg?t=1788107331",
+ "website": null,
+ "pc_requirements": {
+  "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 10 64-bit<br></li><li><strong>Processor:</strong> Intel Core i3-6100 / AMD FX-6300 or equivalent<br></li><li><strong>Memory:</strong> 4096 MB RAM<br></li><li><strong>Graphics:</strong> Intel HD Graphics 530 or equivalent<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 2048 MB available space<br></li><li><strong>Sound Card:</strong> Windows compatible audio device<br></li><li><strong>VR Support:</strong> Not supported</li></ul>",
+  "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 10/11 64-bit<br></li><li><strong>Processor:</strong> Intel Core i5-8400 / AMD Ryzen 5 2600 or better<br></li><li><strong>Memory:</strong> 8192 MB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GTX 750 Ti / AMD Radeon RX 550 / Intel Iris Xe or better<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 4096 MB available space<br></li><li><strong>Sound Card:</strong> Windows compatible audio device<br></li><li><strong>VR Support:</strong> Not supported</li></ul>"
+ },
+ "mac_requirements": [],
+ "linux_requirements": [],
+ "developers": [
+  "Biang Studio"
+ ],
+ "publishers": [
+  "Biang Studio"
+ ],
+ "demos": [
+  {
+   "appid": 4777710,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "Single-player"
+  },
+  {
+   "id": 62,
+   "description": "Family Sharing"
+  }
+ ],
+ "genres": [
+  {
+   "id": "25",
+   "description": "Adventure"
+  },
+  {
+   "id": "4",
+   "description": "Casual"
+  },
+  {
+   "id": "28",
+   "description": "Simulation"
+  },
+  {
+   "id": "2",
+   "description": "Strategy"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/a212736e088e91d9c3cb57c33a35bb67e26342d2/ss_a212736e088e91d9c3cb57c33a35bb67e26342d2.600x338.jpg?t=1788107331",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/a212736e088e91d9c3cb57c33a35bb67e26342d2/ss_a212736e088e91d9c3cb57c33a35bb67e26342d2.1920x1080.jpg?t=1788107331"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/a8e22f59ba8c142a791c5468f9d59d50cabb1ed8/ss_a8e22f59ba8c142a791c5468f9d59d50cabb1ed8.600x338.jpg?t=1788107331",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/a8e22f59ba8c142a791c5468f9d59d50cabb1ed8/ss_a8e22f59ba8c142a791c5468f9d59d50cabb1ed8.1920x1080.jpg?t=1788107331"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/fb322cb6a44aa3d273d72effe405e40693ab11c3/ss_fb322cb6a44aa3d273d72effe405e40693ab11c3.600x338.jpg?t=1788107331",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/fb322cb6a44aa3d273d72effe405e40693ab11c3/ss_fb322cb6a44aa3d273d72effe405e40693ab11c3.1920x1080.jpg?t=1788107331"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/7712c0ba81850bc5eac3dca54c972f14e1fd2a8a/ss_7712c0ba81850bc5eac3dca54c972f14e1fd2a8a.600x338.jpg?t=1788107331",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/7712c0ba81850bc5eac3dca54c972f14e1fd2a8a/ss_7712c0ba81850bc5eac3dca54c972f14e1fd2a8a.1920x1080.jpg?t=1788107331"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/113ba69c86d2edb6ecc1d333b61c358bd763007c/ss_113ba69c86d2edb6ecc1d333b61c358bd763007c.600x338.jpg?t=1788107331",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/113ba69c86d2edb6ecc1d333b61c358bd763007c/ss_113ba69c86d2edb6ecc1d333b61c358bd763007c.1920x1080.jpg?t=1788107331"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/5f9ae115ca60579dba397e9e1060cd71caf6aab7/ss_5f9ae115ca60579dba397e9e1060cd71caf6aab7.600x338.jpg?t=1788107331",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/5f9ae115ca60579dba397e9e1060cd71caf6aab7/ss_5f9ae115ca60579dba397e9e1060cd71caf6aab7.1920x1080.jpg?t=1788107331"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/a6bb383e4be0d0a6e67558a8e2b691a3f846ec9f/ss_a6bb383e4be0d0a6e67558a8e2b691a3f846ec9f.600x338.jpg?t=1788107331",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/a6bb383e4be0d0a6e67558a8e2b691a3f846ec9f/ss_a6bb383e4be0d0a6e67558a8e2b691a3f846ec9f.1920x1080.jpg?t=1788107331"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/a910b882ee21eb83e3662914c4c5eccd3bffb3d1/ss_a910b882ee21eb83e3662914c4c5eccd3bffb3d1.600x338.jpg?t=1788107331",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/a910b882ee21eb83e3662914c4c5eccd3bffb3d1/ss_a910b882ee21eb83e3662914c4c5eccd3bffb3d1.1920x1080.jpg?t=1788107331"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/0729263a1954e708fb9083212d68f7d96a715e20/ss_0729263a1954e708fb9083212d68f7d96a715e20.600x338.jpg?t=1788107331",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/0729263a1954e708fb9083212d68f7d96a715e20/ss_0729263a1954e708fb9083212d68f7d96a715e20.1920x1080.jpg?t=1788107331"
+  },
+  {
+   "id": 9,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/961a0995769596b3f1c1ffe85897440a46b128a9/ss_961a0995769596b3f1c1ffe85897440a46b128a9.600x338.jpg?t=1788107331",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/961a0995769596b3f1c1ffe85897440a46b128a9/ss_961a0995769596b3f1c1ffe85897440a46b128a9.1920x1080.jpg?t=1788107331"
+  },
+  {
+   "id": 10,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/c4940c069ac7a2b307e25b04ca1864130e427db6/ss_c4940c069ac7a2b307e25b04ca1864130e427db6.600x338.jpg?t=1788107331",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/c4940c069ac7a2b307e25b04ca1864130e427db6/ss_c4940c069ac7a2b307e25b04ca1864130e427db6.1920x1080.jpg?t=1788107331"
+  },
+  {
+   "id": 11,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/af8281800bd1e827c505ee2391d1f4db87132cc8/ss_af8281800bd1e827c505ee2391d1f4db87132cc8.600x338.jpg?t=1788107331",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/af8281800bd1e827c505ee2391d1f4db87132cc8/ss_af8281800bd1e827c505ee2391d1f4db87132cc8.1920x1080.jpg?t=1788107331"
+  },
+  {
+   "id": 12,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/a70010fe1cab7d87c8899d04e64043ad4b6e0039/ss_a70010fe1cab7d87c8899d04e64043ad4b6e0039.600x338.jpg?t=1788107331",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/a70010fe1cab7d87c8899d04e64043ad4b6e0039/ss_a70010fe1cab7d87c8899d04e64043ad4b6e0039.1920x1080.jpg?t=1788107331"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257412701,
+   "name": "口袋修仙宣传片",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257412701/fbf9c505195656fe6ab2195f14a771ca7f6aa9fb/movie_600x337.jpg?t=1788096983",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/4707190/1819709910/5fe9e8eef80e98431a674fa69684ed2d2a19bafd/1788091017/dash_av1.mpd?t=1788096983",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/4707190/1819709910/5fe9e8eef80e98431a674fa69684ed2d2a19bafd/1788091017/dash_h264.mpd?t=1788096983",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/4707190/1819709910/5fe9e8eef80e98431a674fa69684ed2d2a19bafd/1788091017/hls_264_master.m3u8?t=1788096983",
+   "highlight": true
+  },
+  {
+   "id": 257411372,
+   "name": "功法突破玩法",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257411372/96535675bbff917ac5a8f985c40388ca6f6e2b11/movie_600x337.jpg?t=1787935381",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/4707190/1958405762/329c0c60be96ee5ebf2ab4627da1da8c16785dfb/1787934804/dash_av1.mpd?t=1787935381",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/4707190/1958405762/329c0c60be96ee5ebf2ab4627da1da8c16785dfb/1787934804/dash_h264.mpd?t=1787935381",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/4707190/1958405762/329c0c60be96ee5ebf2ab4627da1da8c16785dfb/1787934804/hls_264_master.m3u8?t=1787935381",
+   "highlight": true
+  },
+  {
+   "id": 257412465,
+   "name": "狩猎碧梧灵猿",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257412465/a9ca9e74a5dc6f271251eaad390b21f246518f19/movie_600x337.jpg?t=1788052618",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/4707190/1554778706/b2a115c58891e30cfbe0a60529fd9924e026db3c/1788051356/dash_av1.mpd?t=1788052618",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/4707190/1554778706/b2a115c58891e30cfbe0a60529fd9924e026db3c/1788051356/dash_h264.mpd?t=1788052618",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/4707190/1554778706/b2a115c58891e30cfbe0a60529fd9924e026db3c/1788051356/hls_264_master.m3u8?t=1788052618",
+   "highlight": false
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "Coming soon"
+ },
+ "support_info": {
+  "url": "",
+  "email": "xuebingsheng2025@gmail.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/4707190?t=1788107331",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4707190/9b0ced698e976b92acd68496f780538ea182b79a/page_bg_raw.jpg?t=1788107331",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "l",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "0",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "7",
+   "required_age": "7",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Kekerasan"
+  }
+ }
+}

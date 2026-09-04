@@ -1,0 +1,106 @@
+{
+ "title_en": "Casualties: Unknown",
+ "demo_appid": 4576510,
+ "full_appid": 4576490,
+ "developer": "Orsoniks",
+ "workdir": "episodes/05-casualties-unknown",
+ "script_timed": "episodes/05-casualties-unknown/script_timed.json",
+ "intro_bg": {
+  "file": "trailer_main.mp4",
+  "in": 65.4,
+  "out": 69.0,
+  "scale": 1.15
+ },
+ "labels": [
+  "517 MB",
+  "171 files",
+  "2 scenes",
+  "1 developer"
+ ],
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 2,
+ "score_line_id": "30",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity / URP 2D"
+  ],
+  [
+   "TEAM",
+   "one person"
+  ],
+  [
+   "IN DEV",
+   "on itch before Steam"
+  ],
+  [
+   "ALL THE CODE",
+   "858 KB, one file"
+  ],
+  [
+   "THE TRICK",
+   "systems, not content"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": {
+  "file": "trailer_main.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "thumbnail": {
+  "bg": "ss01.jpg",
+  "line1": "Casualties: Unknown",
+  "line2": "858 KB. ONE DEV.",
+  "tag": "UNITY 2D TEARDOWN",
+  "focus": "center"
+ },
+ "youtube": {
+  "title": "Casualties: Unknown — one dev, 858 KB of code, and a free demo people play for 10 hours",
+  "tags": "Casualties Unknown,Casualties Unknown demo,Orsoniks,steam demo,indie dev,gamedev,solo dev,unity,unity 2d,urp,pixel art,survival game,game teardown,how games are made,demo dip,no ai art",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "chapters": {
+  "hook": "275 hours. Of a demo.",
+  "intro": "What Casualties: Unknown is",
+  "made": "Opening the build",
+  "review": "What players actually say",
+  "score": "The spec sheet + verdict"
+ },
+ "stack": [
+  [
+   "Unity URP (2D renderer)",
+   "https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest"
+  ],
+  [
+   "Discord Rich Presence",
+   "https://github.com/Lachee/discord-rpc-csharp"
+  ],
+  [
+   "Newtonsoft.Json",
+   "https://www.newtonsoft.com/json"
+  ],
+  [
+   "The demo's itch.io page",
+   "https://orsonik.itch.io/scav-prototype"
+  ]
+ ],
+ "ledger": {
+  "team": "1인",
+  "engine": "Unity",
+  "pipeline": "**URP 2D**",
+  "backend": "Mono",
+  "build": "517 MiB",
+  "files": 189,
+  "scenes": 2,
+  "third_party": "**1**",
+  "approach": "전부 직접 씀",
+  "reception": "96.2% / 6.8k",
+  "packages": [
+   "DiscordRPC"
+  ],
+  "ai_disclosure": "생성형 AI 사용 안 함 (명시)"
+ }
+}

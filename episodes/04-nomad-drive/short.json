@@ -1,0 +1,10 @@
+[
+ {"id":"s1","sec":"hook","text":"Two of the top reviews on this Steam demo say it's a crypto miner.","vis":{"type":"video","file":"trailer_main.mp4","in":3}},
+ {"id":"s2","sec":"hook","text":"It isn't. But players are seeing ninety nine percent GPU load sitting in the menu, doing nothing.","vis":{"type":"image","file":"ss09.jpg"}},
+ {"id":"s3","sec":"made","text":"Steam publishes the file list for every demo, so I read this one. There's no miner in it.","vis":{"type":"image","file":"ev_engine_v.png"}},
+ {"id":"s4","sec":"made","text":"What's in it is the High Definition Render Pipeline. The heavy one, that almost no small team picks.","vis":{"type":"video","file":"trailer_main.mp4","in":62}},
+ {"id":"s5","sec":"made","text":"Plus, apparently, nothing capping the frame rate. So your fans spin up on a still menu screen.","vis":{"type":"image","file":"ss02.jpg"}},
+ {"id":"s6","sec":"score","text":"That's the whole mystery. A graphics default, and no frame limiter.","vis":{"type":"video","file":"trailer_main.mp4","in":88}},
+ {"id":"s7","sec":"score","text":"If you're shipping a demo, cap your frame rate in the menu. Or the internet decides you're a miner.","vis":{"type":"image","file":"ss12.jpg"}},
+ {"id":"s8","sec":"score","text":"Full teardown on the channel. This is Demo Dip.","vis":{"type":"video","file":"trailer_main.mp4","in":30}}
+]
