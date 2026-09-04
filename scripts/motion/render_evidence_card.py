@@ -83,10 +83,14 @@ def main():
     d.text((120, 160 + shift), a.title, font=f_title, fill=WHITE)
     if a.subtitle:
         d.text((124, 252 + shift), a.subtitle, font=inter(30, 'Medium'), fill=DIM)
+    # The source line sits beside the title, but a long title (or a narrow card) leaves
+    # no room and the two used to overprint each other. Drop it above the rule instead.
     sx = w - 120 - f_src.getlength(a.source)
-    sy = (186 if sx > 700 else 262) + shift   # a narrow card has no room beside the title
-    d.text((max(120, sx), sy), a.source, font=f_src, fill=(110, 140, 165, 255))
     y += shift
+    if sx > 120 + f_title.getlength(a.title) + 40:
+        d.text((sx, 186 + shift), a.source, font=f_src, fill=(110, 140, 165, 255))
+    else:
+        d.text((max(120, sx), y - 36), a.source, font=f_src, fill=(110, 140, 165, 255))
     d.line((120, y, w - 120, y), fill=RULE, width=3)
     y += 30
     for row in rows:

@@ -1,0 +1,259 @@
+{
+ "type": "game",
+ "name": "원정: 어둠 속으로",
+ "steam_appid": 3126410,
+ "required_age": 0,
+ "is_free": false,
+ "controller_support": "full",
+ "dlc": [
+  5041080
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" ><i>고대의 신비로운 폐허 위에 자리한 불길한 땅에서 여정을 시작하세요. 끝없는 영광과 권력, 그리고 헤아릴 수 없는 부에 향한 갈망에 이끌려, 수많은 치명적인 괴물과 맞서 싸우고 저주받은 야망을 좇으며 어둠 속에 감춰진 비밀을 밝혀내세요.</i></p><h2 class=\"bb_tag\" >함께 어둠에 맞서라</h2><p class=\"bb_paragraph\" >최대 4명의 동료와 파티를 꾸리거나, 용기가 있다면 홀로 어둠 속으로 뛰어 드세요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f06584d8352d0cd117b7dfc6427ce86a.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f06584d8352d0cd117b7dfc6427ce86a.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f06584d8352d0cd117b7dfc6427ce86a.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >모든 장비를 자유롭게 제작하고 꾸며라</h2><p class=\"bb_paragraph\" >검과 철퇴, 도끼, 장병기, 창, 활, 석궁까지. 각 부품을 조합해 나만의 무기를 완성하세요. 선택은 당신의 몫입니다. 또한 재질과 색상, 문양을 자유롭게 조합해 모든 장비를 자신만의 전투 방식과 개성에 맞게 꾸며보세요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/710e4f71682f83231a7e6a4f756041eb.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/710e4f71682f83231a7e6a4f756041eb.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/710e4f71682f83231a7e6a4f756041eb.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >죽는 순간, 전리품도 함께 사라진다</h2><p class=\"bb_paragraph\" >죽음은 캐릭터와 그가 지닌 모든 것을 영원히 잃는 것을 의미합니다. 힘겹게 손에 넣은 전리품을 지닌 채 살아 돌아가고 싶다면, 신중하고 빈틈없이 행동하세요. 단, 거점에 보관된 물품은 모두 안전하게 보호됩니다.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/226e46d0017dc1b49d5616a4535f63b9.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/226e46d0017dc1b49d5616a4535f63b9.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/226e46d0017dc1b49d5616a4535f63b9.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >거점을 발전시켜라</h2><p class=\"bb_paragraph\" >심연에서 자원을 가져와 거점을 복구하고 확장하세요. 강화한 시설을 활용해 다음 원정에서 더 많은 부와 태고의 지식을 손에 넣으세요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/fa9e46cc89666cbf5ceb947e40d3d318.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/fa9e46cc89666cbf5ceb947e40d3d318.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/fa9e46cc89666cbf5ceb947e40d3d318.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >잊혀진 던전을 탐험하라</h2><p class=\"bb_paragraph\" >악몽 같은 괴물과 치명적인 함정, 불안정한 구조물, 숨겨진 낭떠러지, 그리고 맹독성 가스. 경고는 이미 끝났습니다.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline crossorigin=\"anonymous\" poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/79f51cd1b277171c703399e3bebe302d.poster.avif?t=1788281007\" width=780 height=250 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/79f51cd1b277171c703399e3bebe302d.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"></video></span></p><h2 class=\"bb_tag\" >금단의 힘을 탐닉하라</h2><p class=\"bb_paragraph\" >신앙을 버리고 천상계를 넘어 어둠의 신들과 금단의 힘을 거래하세요, 하지만 명심하세요. 모든 거래에는 대가가 따릅니다.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f48b85f707e8a4d466ae79fe7fc5de31.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f48b85f707e8a4d466ae79fe7fc5de31.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f48b85f707e8a4d466ae79fe7fc5de31.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p>",
+ "about_the_game": "<p class=\"bb_paragraph\" ><i>고대의 신비로운 폐허 위에 자리한 불길한 땅에서 여정을 시작하세요. 끝없는 영광과 권력, 그리고 헤아릴 수 없는 부에 향한 갈망에 이끌려, 수많은 치명적인 괴물과 맞서 싸우고 저주받은 야망을 좇으며 어둠 속에 감춰진 비밀을 밝혀내세요.</i></p><h2 class=\"bb_tag\" >함께 어둠에 맞서라</h2><p class=\"bb_paragraph\" >최대 4명의 동료와 파티를 꾸리거나, 용기가 있다면 홀로 어둠 속으로 뛰어 드세요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f06584d8352d0cd117b7dfc6427ce86a.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f06584d8352d0cd117b7dfc6427ce86a.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f06584d8352d0cd117b7dfc6427ce86a.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >모든 장비를 자유롭게 제작하고 꾸며라</h2><p class=\"bb_paragraph\" >검과 철퇴, 도끼, 장병기, 창, 활, 석궁까지. 각 부품을 조합해 나만의 무기를 완성하세요. 선택은 당신의 몫입니다. 또한 재질과 색상, 문양을 자유롭게 조합해 모든 장비를 자신만의 전투 방식과 개성에 맞게 꾸며보세요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/710e4f71682f83231a7e6a4f756041eb.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/710e4f71682f83231a7e6a4f756041eb.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/710e4f71682f83231a7e6a4f756041eb.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >죽는 순간, 전리품도 함께 사라진다</h2><p class=\"bb_paragraph\" >죽음은 캐릭터와 그가 지닌 모든 것을 영원히 잃는 것을 의미합니다. 힘겹게 손에 넣은 전리품을 지닌 채 살아 돌아가고 싶다면, 신중하고 빈틈없이 행동하세요. 단, 거점에 보관된 물품은 모두 안전하게 보호됩니다.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/226e46d0017dc1b49d5616a4535f63b9.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/226e46d0017dc1b49d5616a4535f63b9.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/226e46d0017dc1b49d5616a4535f63b9.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >거점을 발전시켜라</h2><p class=\"bb_paragraph\" >심연에서 자원을 가져와 거점을 복구하고 확장하세요. 강화한 시설을 활용해 다음 원정에서 더 많은 부와 태고의 지식을 손에 넣으세요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/fa9e46cc89666cbf5ceb947e40d3d318.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/fa9e46cc89666cbf5ceb947e40d3d318.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/fa9e46cc89666cbf5ceb947e40d3d318.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >잊혀진 던전을 탐험하라</h2><p class=\"bb_paragraph\" >악몽 같은 괴물과 치명적인 함정, 불안정한 구조물, 숨겨진 낭떠러지, 그리고 맹독성 가스. 경고는 이미 끝났습니다.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline crossorigin=\"anonymous\" poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/79f51cd1b277171c703399e3bebe302d.poster.avif?t=1788281007\" width=780 height=250 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/79f51cd1b277171c703399e3bebe302d.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"></video></span></p><h2 class=\"bb_tag\" >금단의 힘을 탐닉하라</h2><p class=\"bb_paragraph\" >신앙을 버리고 천상계를 넘어 어둠의 신들과 금단의 힘을 거래하세요, 하지만 명심하세요. 모든 거래에는 대가가 따릅니다.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f48b85f707e8a4d466ae79fe7fc5de31.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f48b85f707e8a4d466ae79fe7fc5de31.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f48b85f707e8a4d466ae79fe7fc5de31.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p>",
+ "short_description": "Expedition: Into Darkness 는 중세 3인칭 협동 던전 크롤러이자 약탈 게임입니다. 무기를 조립하고, 장비를 커스터마이즈하고, 최대 4명의 다른 동료와 힘을 합쳐 보세요. 폐허에서 살아남거나 소지한 모든 것을 잃으세요.",
+ "supported_languages": "영어<strong>*</strong>, 프랑스어, 이탈리아어, 독일어, 스페인어 - 스페인, 일본어, 한국어, 폴란드어, 포르투갈어 - 브라질, 러시아어, 중국어 간체, 중국어 번체, 튀르키예어<br><strong>*</strong>음성이 지원되는 언어",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/0fa86a784ee2497f85aac109a42fe63f8e9dfc12/header_alt_assets_2_koreana.jpg?t=1788281007",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/f30aa7d363835ba12ebba67b1c7b81d1decd1b68/capsule_231x87_alt_assets_2_koreana.jpg?t=1788281007",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/f30aa7d363835ba12ebba67b1c7b81d1decd1b68/capsule_184x69_alt_assets_2_koreana.jpg?t=1788281007",
+ "website": "https://expedition-the-game.com",
+ "pc_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"><li>64비트 프로세서와 운영 체제가 필요합니다<br></li><li><strong>운영 체제:</strong> Windows 10<br></li><li><strong>프로세서:</strong> AMD Ryzen 5 3600X 6-Core or similar<br></li><li><strong>메모리:</strong> 8 GB RAM<br></li><li><strong>그래픽:</strong> Radeon RX 580 Series or similar<br></li><li><strong>네트워크:</strong> 초고속 인터넷 연결<br></li><li><strong>저장 공간:</strong> 8 GB 사용 가능 공간</li></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"><li>64비트 프로세서와 운영 체제가 필요합니다<br></li><li><strong>운영 체제:</strong> Windows 11<br></li><li><strong>프로세서:</strong> AMD Ryzen 5 3600X 6-Core or similar<br></li><li><strong>메모리:</strong> 16 GB RAM<br></li><li><strong>그래픽:</strong> Radeon RX 580 Series or similar<br></li><li><strong>네트워크:</strong> 초고속 인터넷 연결<br></li><li><strong>저장 공간:</strong> 8 GB 사용 가능 공간</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "developers": [
+  "Antediluvian Interactive"
+ ],
+ "publishers": [
+  "Antediluvian Interactive"
+ ],
+ "demos": [
+  {
+   "appid": 5041080,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "싱글 플레이어"
+  },
+  {
+   "id": 1,
+   "description": "멀티플레이어"
+  },
+  {
+   "id": 9,
+   "description": "협동"
+  },
+  {
+   "id": 38,
+   "description": "온라인 협동"
+  },
+  {
+   "id": 27,
+   "description": "크로스 플랫폼 멀티플레이어"
+  },
+  {
+   "id": 22,
+   "description": "Steam 도전 과제"
+  },
+  {
+   "id": 28,
+   "description": "컨트롤러 완벽 지원"
+  },
+  {
+   "id": 64,
+   "description": "텍스트 크기 조정"
+  },
+  {
+   "id": 67,
+   "description": "카메라 움직임 조정"
+  },
+  {
+   "id": 66,
+   "description": "색상 대체"
+  },
+  {
+   "id": 68,
+   "description": "음량 개별 조절"
+  },
+  {
+   "id": 78,
+   "description": "난이도 조정"
+  },
+  {
+   "id": 74,
+   "description": "퀵타임 이벤트 없이 플레이 가능"
+  },
+  {
+   "id": 55,
+   "description": "DUALSHOCK 컨트롤러 지원"
+  },
+  {
+   "id": 56,
+   "description": "DUALSHOCK 컨트롤러 지원"
+  },
+  {
+   "id": 57,
+   "description": "DualSense 컨트롤러 지원"
+  },
+  {
+   "id": 58,
+   "description": "DualSense 컨트롤러 지원"
+  },
+  {
+   "id": 69,
+   "description": "스테레오 사운드"
+  },
+  {
+   "id": 70,
+   "description": "서라운드 사운드"
+  },
+  {
+   "id": 62,
+   "description": "가족 공유"
+  }
+ ],
+ "genres": [
+  {
+   "id": "1",
+   "description": "액션"
+  },
+  {
+   "id": "25",
+   "description": "어드벤처"
+  },
+  {
+   "id": "3",
+   "description": "RPG"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/5ffc4b722ca1ab4fe93234a586fe264dd9b74de4/ss_5ffc4b722ca1ab4fe93234a586fe264dd9b74de4.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/5ffc4b722ca1ab4fe93234a586fe264dd9b74de4/ss_5ffc4b722ca1ab4fe93234a586fe264dd9b74de4.1920x1080.jpg?t=1788281007"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/d0067633b623cb4afac74727230f0cb98c03d41d/ss_d0067633b623cb4afac74727230f0cb98c03d41d.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/d0067633b623cb4afac74727230f0cb98c03d41d/ss_d0067633b623cb4afac74727230f0cb98c03d41d.1920x1080.jpg?t=1788281007"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/0ea57066111ef2e2e3645a2092a526ad46391141/ss_0ea57066111ef2e2e3645a2092a526ad46391141.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/0ea57066111ef2e2e3645a2092a526ad46391141/ss_0ea57066111ef2e2e3645a2092a526ad46391141.1920x1080.jpg?t=1788281007"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/68cbe97354623c88ccd346a5005ac3889857beac/ss_68cbe97354623c88ccd346a5005ac3889857beac.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/68cbe97354623c88ccd346a5005ac3889857beac/ss_68cbe97354623c88ccd346a5005ac3889857beac.1920x1080.jpg?t=1788281007"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/a3ace95e1a05238273b39e93901d47a65ddb9eb8/ss_a3ace95e1a05238273b39e93901d47a65ddb9eb8.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/a3ace95e1a05238273b39e93901d47a65ddb9eb8/ss_a3ace95e1a05238273b39e93901d47a65ddb9eb8.1920x1080.jpg?t=1788281007"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/27dc348aaa7d062cae09f0ac03385f8fad0c3f76/ss_27dc348aaa7d062cae09f0ac03385f8fad0c3f76.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/27dc348aaa7d062cae09f0ac03385f8fad0c3f76/ss_27dc348aaa7d062cae09f0ac03385f8fad0c3f76.1920x1080.jpg?t=1788281007"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/77e798972541d7dcb2115b5509acc056794d67fe/ss_77e798972541d7dcb2115b5509acc056794d67fe.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/77e798972541d7dcb2115b5509acc056794d67fe/ss_77e798972541d7dcb2115b5509acc056794d67fe.1920x1080.jpg?t=1788281007"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/6d0099edb77ab9319ba46aa894347363671df28d/ss_6d0099edb77ab9319ba46aa894347363671df28d.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/6d0099edb77ab9319ba46aa894347363671df28d/ss_6d0099edb77ab9319ba46aa894347363671df28d.1920x1080.jpg?t=1788281007"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257392990,
+   "name": "Demo Trailer (Global)",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257392990/b0bbbac13ef9e6a597c5eeb257a203d52d0f91bd/movie_600x337.jpg?t=1786022381",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/3126410/835646702/94592d98be01167594c46dbdf54e8381ca70c746/1786021454/dash_av1.mpd?t=1786022381",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/3126410/835646702/94592d98be01167594c46dbdf54e8381ca70c746/1786021454/dash_h264.mpd?t=1786022381",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/3126410/835646702/94592d98be01167594c46dbdf54e8381ca70c746/1786021454/hls_264_master.m3u8?t=1786022381",
+   "highlight": true
+  },
+  {
+   "id": 257181489,
+   "name": "Gameplay Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257181489/b0bbbac13ef9e6a597c5eeb257a203d52d0f91bd/movie_600x337.jpg?t=1786022382",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/3126410/864087138/dcdf1e9adeddc30d1b26938edae21b4488e503b2/1754913534/dash_av1.mpd?t=1786022382",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/3126410/864087138/dcdf1e9adeddc30d1b26938edae21b4488e503b2/1754913534/dash_h264.mpd?t=1786022382",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/3126410/864087138/dcdf1e9adeddc30d1b26938edae21b4488e503b2/1754913534/hls_264_master.m3u8?t=1786022382",
+   "highlight": true
+  },
+  {
+   "id": 257079376,
+   "name": "Cinematic Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257079376/4f45cca4e7dab61da0d288e270373a1ceed0424a/movie_600x337.jpg?t=1780921188",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/3126410/1729202872/147487a685579df748a04d359c5990a1d234aa15/1780919908/dash_av1.mpd?t=1780921188",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/3126410/1729202872/147487a685579df748a04d359c5990a1d234aa15/1780919908/dash_h264.mpd?t=1780921188",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/3126410/1729202872/147487a685579df748a04d359c5990a1d234aa15/1780919908/hls_264_master.m3u8?t=1780921188",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "2026년 4분기"
+ },
+ "support_info": {
+  "url": "",
+  "email": "contact@expedition-the-game.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/3126410?t=1788281007",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/page_bg_raw.jpg?t=1788281007",
+ "content_descriptors": {
+  "ids": [
+   2,
+   5
+  ],
+  "notes": "Blood, gore, violence, dismemberment, and trauma."
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Violência Extrema\nLinguagem imprópria\nMedo"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Drastische Gewalt\nDerbe Sprache"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Interaksi Daring\nKekerasan\nHoror"
+  }
+ }
+}

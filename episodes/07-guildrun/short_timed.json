@@ -1,0 +1,93 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "Nobody quit this Steam demo in under ten minutes. Not one reviewer.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  },
+  "dur": 4.206,
+  "wav": "episodes/07-guildrun/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "The median player had eleven hours in before they wrote anything.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 29
+  },
+  "dur": 3.318,
+  "wav": "episodes/07-guildrun/tts_short/s2.wav"
+ },
+ {
+  "id": "s3",
+  "sec": "made",
+  "text": "So I opened the build. It's Unity, and I L two C P P usually hides what a team used.",
+  "vis": {
+   "type": "image",
+   "file": "ev_engine_v.png"
+  },
+  "dur": 5.773,
+  "wav": "episodes/07-guildrun/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "made",
+  "text": "Except twenty four assembly names leak out in a data file. Here's what they installed.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack_v.png"
+  },
+  "dur": 5.068,
+  "wav": "episodes/07-guildrun/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Sentry for crash reports. S Q Lite for three hundred relics. Zero-allocation LINQ.",
+  "vis": {
+   "type": "image",
+   "file": "ss08.jpg"
+  },
+  "dur": 6.243,
+  "wav": "episodes/07-guildrun/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "That's not a first project's list. That's what you install after something went wrong last time.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 25
+  },
+  "dur": 5.12,
+  "wav": "episodes/07-guildrun/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "And the negative reviewers had played longer than the positive ones. Fifteen hours.",
+  "vis": {
+   "type": "image",
+   "file": "ss09.jpg"
+  },
+  "dur": 4.624,
+  "wav": "episodes/07-guildrun/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "They didn't bounce. They hit the ceiling. Full teardown on the channel.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 34
+  },
+  "dur": 4.101,
+  "wav": "episodes/07-guildrun/tts_short/s8.wav"
+ }
+]

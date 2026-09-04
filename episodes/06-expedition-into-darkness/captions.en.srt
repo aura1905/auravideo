@@ -1,0 +1,173 @@
+1
+00:00:00,000 --> 00:00:05,087
+This demo is sixteen point nine gigabytes.
+That's bigger than most finished games I own.
+
+2
+00:00:05,337 --> 00:00:11,913
+Seven hundred and seventy megabytes of it is a file they forgot to delete.
+And there are three people on this team.
+
+3
+00:00:15,763 --> 00:00:24,063
+Expedition: Into Darkness is a medieval extraction crawler.
+You go down with a torch, you fill your bag, and you try to get back out.
+
+4
+00:00:24,313 --> 00:00:32,561
+Nine hundred and eleven reviews, sixty nine percent positive. Mixed,
+in Steam's words. And about a thousand people are in it right now.
+
+5
+00:00:32,811 --> 00:00:39,518
+The median reviewer had five hours on it. The top ten percent,
+thirty six. One of them, two hundred and thirteen.
+
+6
+00:00:39,768 --> 00:00:44,359
+So people are staying.
+The argument is about everything around the game, not the game.
+
+7
+00:00:44,609 --> 00:00:50,166
+Steam publishes a file list for every demo,
+so let's go through what three people actually shipped.
+
+8
+00:00:50,416 --> 00:01:00,101
+It's Unity, and the code is C sharp — you can tell because the build has a Game Assembly D L L,
+which is what the I L two C P P compiler leaves behind.
+
+9
+00:01:00,351 --> 00:01:07,450
+That's C sharp translated into C plus plus and compiled native.
+You write the easy language and ship the fast one.
+
+10
+00:01:07,700 --> 00:01:12,787
+Audio is F MOD Studio,
+with Google's Resonance Audio next to it for spatial sound.
+
+11
+00:01:13,037 --> 00:01:21,938
+In a game where the thing about to kill you is behind you in the dark,
+that isn't decoration. That's the one middleware I'd argue three people should pay for.
+
+12
+00:01:22,188 --> 00:01:33,048
+There's also a native plugin in there called R F Lib C Native.
+It shows up in other Unity games and I could not work out what it does. If you know, the comments are right there.
+
+13
+00:01:33,298 --> 00:01:36,112
+Now the size,
+because that's the story here.
+
+14
+00:01:36,362 --> 00:01:44,009
+One scene in the whole build. Twenty three kilobytes.
+Everything else streams in from fifteen hundred and fifty five Addressable bundles.
+
+15
+00:01:44,259 --> 00:01:49,869
+Those bundles are fifteen and a half gigabytes.
+The single biggest one is two gigabytes on its own.
+
+16
+00:01:50,119 --> 00:01:58,080
+Some of that is honest. Look at the crafting screen: every weapon is separate parts,
+a shaft and a head, each with its own durability and inertia.
+
+17
+00:01:58,330 --> 00:02:07,414
+That means a mesh and a texture set for every part, not every weapon.
+Armour is the same, piece by piece. Content adds up fast when it's modular.
+
+18
+00:02:07,664 --> 00:02:17,819
+But three people did not hand-model sixteen gigabytes of medieval kit.
+My guess is bought libraries and scanned assets, dropped in at source resolution.
+
+19
+00:02:18,069 --> 00:02:24,776
+And that's usually what a two gigabyte bundle means.
+Not too much art. Art that never got its compression settings looked at.
+
+20
+00:02:25,026 --> 00:02:28,076
+Then there's the file
+that isn't art at all.
+
+21
+00:02:28,326 --> 00:02:34,798
+Game Assembly dot P D B.
+Seven hundred and forty five megabytes of debug symbols, shipped to players.
+
+22
+00:02:35,048 --> 00:02:43,061
+Symbols are how you read a crash report. They belong on your build server,
+not in the download. Nobody has ever needed them to play a game.
+
+23
+00:02:43,311 --> 00:02:48,215
+With the other four,
+that's seven hundred and seventy megabytes of a demo doing nothing.
+
+24
+00:02:48,465 --> 00:02:53,787
+And the store page says you need eight gigabytes of storage.
+The build is sixteen point nine.
+
+25
+00:02:54,037 --> 00:02:59,359
+None of this is incompetence.
+It's what happens when there are three of you and nobody owns the build.
+
+26
+00:02:59,609 --> 00:03:02,711
+Which shows up in the reviews
+exactly where you'd expect.
+
+27
+00:03:02,961 --> 00:03:10,269
+Performance is the loudest complaint by a distance. Blurry,
+poorly optimised, and a volumetric fog you can't turn off.
+
+28
+00:03:10,519 --> 00:03:19,133
+Co-op, meanwhile, gets a hundred and six mentions in positive reviews and eight in negative ones.
+Three people built five player netcode that works.
+
+29
+00:03:19,383 --> 00:03:25,228
+And people who recommended it had played seven and a half hours.
+People who didn't, one.
+
+30
+00:03:25,478 --> 00:03:27,692
+Here's the whole teardown on one card.
+
+31
+00:03:27,942 --> 00:03:40,500
+Unity, I L two C P P, so the code is C sharp. Three people. F MOD and Resonance for audio.
+And seven hundred and seventy megabytes of debug symbols nobody meant to ship.
+
+32
+00:03:40,750 --> 00:03:44,923
+Worth a dip,
+and it's free while the early access date moves around.
+
+33
+00:03:45,173 --> 00:03:52,690
+If you're shipping this year, two checkboxes. Strip your symbols.
+Then open your own store page and check the number you wrote for storage.
+
+34
+00:03:52,940 --> 00:03:59,464
+That's my read of it from the outside. If you made this and I got something wrong,
+say so in the comments and I'll pin the correction.
+
+35
+00:03:59,714 --> 00:04:04,488
+Next time, another demo,
+another file list. This is Demo Dip.

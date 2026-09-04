@@ -1,0 +1,38 @@
+Expedition: Into Darkness — a sixteen-gigabyte demo from three people, and 770 MB they forgot to delete.
+A Unity / IL2CPP teardown: what three developers shipped, what it cost them in build size, and the two checkboxes that would have fixed it.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5041080/
+▶ The full game: https://store.steampowered.com/app/3126410/
+
+── How they made it ──
+Engine   : Unity / IL2CPP
+Language : C#
+Team     : three people
+Audio    : FMOD + Resonance
+The Slip : 770 MB of symbols
+Verdict  : Worth A Dip
+
+── The stack, if you want to use it ──
+FMOD Studio            : https://www.fmod.com/
+Google Resonance Audio : https://resonance-audio.github.io/resonance-audio/
+Unity Addressables     : https://docs.unity3d.com/Packages/com.unity.addressables@latest
+Unity IL2CPP           : https://docs.unity3d.com/Manual/IL2CPP.html
+Steamworks             : https://partner.steamgames.com/
+The demo on Steam      : https://store.steampowered.com/app/5041080/
+
+── Chapters ──
+0:00 16.9 GB for a demo
+0:15 What it is
+0:44 Opening the build
+2:59 What players actually say
+3:25 The spec sheet + verdict
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to Antediluvian Interactive.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

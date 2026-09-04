@@ -1,0 +1,43 @@
+{
+ "demo_appid": 5041080,
+ "full_appid": 3126410,
+ "name": "Expedition: Into Darkness",
+ "developers": [
+  "Antediluvian Interactive"
+ ],
+ "publishers": [
+  "Antediluvian Interactive"
+ ],
+ "release": "Q4 2026",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Adventure",
+  "RPG"
+ ],
+ "languages": "English*, French, Italian, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Traditional Chinese, Turkish*languages with full audio support",
+ "website": "https://expedition-the-game.com",
+ "short": "Brave forbidden dungeons in a quest for knowledge and treasure in this medieval PvE co-op extraction looter. Craft weapons, customise gear and join forces with up to four allies. Survive the ruins together—or lose everything you carry.",
+ "about": "  Begin your journey on foreboding grounds above ancient, mysterious ruins. Driven by an insatiable thirst for glory, power, and untold riches, you will battle innumerable deadly creatures and uncover dark secrets as you pursue your damned ambitions.    BRAVE THE DARKNESS TOGETHER   Form a party with up to four other friends, or, if you're brave enough, enter the darkness alone.           CUSTOMISE ALL GEAR    Assemble weapons from individual components: swords, maces, axes, polearms, spears, bows, or crossbows—the choice is yours. Customise all gear with materials, tints, and liveries to perfectly suit your playstyle and sense of fashion.              DON'T DIE OR YOUR LOOT DIES WITH YOU   Death means losing your character and everything they carry, permanently. If you want to return out alive with your hard-earned loot—be careful and deliberate. Anything stored in your base camp is safe.           UPGRADE YOUR BASE   Return with resources from the depths to repair and upgrade your base of operations—exploit upgrades to assist with your next venture for more riches and antediluvian knowledge.         EXPLORE FORGOTTEN DUNGEONS    Nightmarish creatures, deadly traps, unstable structures, hidden drops, and toxic gasses—you have been warned.          INDULGE IN THE FORBIDDEN   Cast aside piety and reach beyond the Empyrean to make deals with dark gods in exchange for forbidden power, but remember—everything comes at a price.           ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10    Processor:  AMD Ryzen 5 3600X 6-Core or similar    Memory:  8 GB RAM    Graphics:  Radeon RX 580 Series or similar    Network:  Broadband Internet connection    Storage:  8 GB available space  ",
+ "movies": [
+  {
+   "id": 257392990,
+   "name": "Demo Trailer (Global)"
+  },
+  {
+   "id": 257181489,
+   "name": "Gameplay Trailer"
+  },
+  {
+   "id": 257079376,
+   "name": "Cinematic Trailer"
+  }
+ ],
+ "screenshots": 8,
+ "reviews": {
+  "total": 911,
+  "positive": 635,
+  "desc": "Mixed"
+ }
+}

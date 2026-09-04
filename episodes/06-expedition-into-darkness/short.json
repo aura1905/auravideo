@@ -1,0 +1,10 @@
+[
+ {"id":"s1","sec":"hook","text":"This Steam demo is sixteen point nine gigabytes. Three people made it.","vis":{"type":"image","file":"ss02.jpg"}},
+ {"id":"s2","sec":"hook","text":"Seven hundred and seventy megabytes of that download is a file they forgot to delete.","vis":{"type":"video","file":"trailer_main.mp4","in":20}},
+ {"id":"s3","sec":"made","text":"Debug symbols. They're how you read a crash report. They belong on a build server, not on your players' drives.","vis":{"type":"image","file":"ev_pdb_v.png"}},
+ {"id":"s4","sec":"made","text":"The rest is real content, to be fair. One scene, and fifteen hundred streaming bundles behind it.","vis":{"type":"image","file":"ev_size_v.png"}},
+ {"id":"s5","sec":"made","text":"Every weapon is separate parts with their own stats, so the art multiplies fast.","vis":{"type":"image","file":"ss01.jpg"}},
+ {"id":"s6","sec":"made","text":"Though a single two gigabyte bundle usually means textures nobody set the compression on.","vis":{"type":"video","file":"trailer_main.mp4","in":45}},
+ {"id":"s7","sec":"score","text":"And the store page still says you need eight gigabytes of storage.","vis":{"type":"image","file":"ss07.jpg"}},
+ {"id":"s8","sec":"score","text":"If you ship this year, strip your symbols. It's one checkbox. Full teardown on the channel.","vis":{"type":"video","file":"trailer_main.mp4","in":33}}
+]

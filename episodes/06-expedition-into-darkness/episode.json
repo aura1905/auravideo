@@ -1,0 +1,116 @@
+{
+ "title_en": "Expedition: Into Darkness",
+ "demo_appid": 5041080,
+ "full_appid": 3126410,
+ "developer": "Antediluvian Interactive",
+ "workdir": "episodes/06-expedition-into-darkness",
+ "script_timed": "episodes/06-expedition-into-darkness/script_timed.json",
+ "intro_bg": {
+  "file": "trailer_main.mp4",
+  "in": 20.0,
+  "out": 23.6,
+  "scale": 1.1
+ },
+ "labels": [
+  "16.89 GB",
+  "1,604 files",
+  "1 scene",
+  "3 developers"
+ ],
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 2,
+ "score_line_id": "30",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity / IL2CPP"
+  ],
+  [
+   "LANGUAGE",
+   "C#"
+  ],
+  [
+   "TEAM",
+   "three people"
+  ],
+  [
+   "AUDIO",
+   "FMOD + Resonance"
+  ],
+  [
+   "THE SLIP",
+   "770 MB of symbols"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": {
+  "file": "trailer_main.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "thumbnail": {
+  "bg": "ss02.jpg",
+  "line1": "Expedition: Into Darkness",
+  "line2": "16.9 GB. 3 DEVS.",
+  "tag": "UNITY / IL2CPP TEARDOWN",
+  "focus": "center"
+ },
+ "chapters": {
+  "hook": "16.9 GB for a demo",
+  "intro": "What it is",
+  "made": "Opening the build",
+  "review": "What players actually say",
+  "score": "The spec sheet + verdict"
+ },
+ "stack": [
+  [
+   "FMOD Studio",
+   "https://www.fmod.com/"
+  ],
+  [
+   "Google Resonance Audio",
+   "https://resonance-audio.github.io/resonance-audio/"
+  ],
+  [
+   "Unity Addressables",
+   "https://docs.unity3d.com/Packages/com.unity.addressables@latest"
+  ],
+  [
+   "Unity IL2CPP",
+   "https://docs.unity3d.com/Manual/IL2CPP.html"
+  ],
+  [
+   "Steamworks",
+   "https://partner.steamgames.com/"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5041080/"
+  ]
+ ],
+ "ledger": {
+  "team": "3인",
+  "engine": "Unity",
+  "pipeline": "미상(IL2CPP)",
+  "backend": "**IL2CPP**",
+  "build": "16.89 GiB",
+  "files": 1604,
+  "scenes": 1,
+  "third_party": "미상(IL2CPP)",
+  "approach": "콘텐츠로 밀어붙임",
+  "reception": "69.7% / 911",
+  "packages": [
+   "FMOD",
+   "Resonance Audio",
+   "Steamworks"
+  ],
+  "ai_disclosure": null
+ },
+ "youtube": {
+  "title": "Expedition: Into Darkness — a 16.9 GB demo from three people, and 770 MB they forgot to delete",
+  "tags": "Expedition Into Darkness,steam demo,indie dev,gamedev,unity,il2cpp,fmod,addressables,extraction shooter,co-op,game teardown,how games are made,demo dip,small team",
+  "privacy": "private",
+  "lang": "en"
+ }
+}

@@ -1,0 +1,328 @@
+[
+ {
+  "id": "01",
+  "sec": "hook",
+  "text": "Half the people who reviewed this free demo had already played it for eleven hours. Not one of them quit inside ten minutes. Not one.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  }
+ },
+ {
+  "id": "02",
+  "sec": "hook",
+  "text": "And the people leaving negative reviews had played longer than the people leaving positive ones.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 0
+  }
+ },
+ {
+  "id": "03",
+  "sec": "intro",
+  "text": "Guildrun is a PvE autobattler roguelike. You build a team, you bend heroes out of their class, and you watch the fight resolve itself.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  }
+ },
+ {
+  "id": "04",
+  "sec": "intro",
+  "text": "Nearly two thousand reviews, ninety percent positive, and about two and a half thousand people in it as I record this. That's the biggest demo I've taken apart.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "05",
+  "sec": "intro",
+  "text": "It's also the first one where the file list told me the team had done this before.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 13
+  }
+ },
+ {
+  "id": "06",
+  "sec": "made",
+  "text": "Start with the awkward part. This is an I L two C P P build, so all the C sharp is fused into one Game Assembly file.",
+  "vis": {
+   "type": "image",
+   "file": "ev_engine.png"
+  }
+ },
+ {
+  "id": "07",
+  "sec": "made",
+  "text": "In the last teardown that was a dead end. There's no folder of package names to read.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "08",
+  "sec": "made",
+  "text": "Except it isn't quite a dead end. Any assembly that shipped with embedded resources leaves its name behind in a data file, and Steam lists those.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 25
+  }
+ },
+ {
+  "id": "09",
+  "sec": "made",
+  "text": "Twenty four names came out. Here's what a team that has shipped before installs.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack.png"
+  }
+ },
+ {
+  "id": "10",
+  "sec": "made",
+  "text": "Sentry, with six assemblies and a native crash handler behind it. They've shipped a patch every single week since January. That's what makes that survivable.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  }
+ },
+ {
+  "id": "11",
+  "sec": "made",
+  "text": "S Q Lite, because the demo alone has three hundred relics and a hundred items. At some point that stops being a pile of JSON files.",
+  "vis": {
+   "type": "image",
+   "file": "ss08.jpg"
+  }
+ },
+ {
+  "id": "12",
+  "sec": "made",
+  "text": "N Log for structured logging. R three and System Reactive for event streams. Threading Channels for the producer-consumer work.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 29
+  }
+ },
+ {
+  "id": "13",
+  "sec": "made",
+  "text": "And Z Link, which exists for one reason: doing LINQ without allocating. You install that when you've been bitten by garbage collection hitches.",
+  "vis": {
+   "type": "image",
+   "file": "ss09.jpg"
+  }
+ },
+ {
+  "id": "14",
+  "sec": "made",
+  "text": "None of that is exciting. It's the stuff you only know to install because something went wrong on the last project.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  }
+ },
+ {
+  "id": "15",
+  "sec": "made",
+  "text": "Compare the solo demo I took apart two episodes ago. Its entire third party list was one entry: Discord rich presence.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "16",
+  "sec": "made",
+  "text": "Neither is wrong. But if you're about to start your second project, that list up there is a shopping list.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 32
+  }
+ },
+ {
+  "id": "17",
+  "sec": "made",
+  "text": "Audio is F MOD with Resonance, same as the last one. Networking is nanosockets, a thin U D P layer.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  }
+ },
+ {
+  "id": "18",
+  "sec": "made",
+  "text": "Then the number I stared at for a while.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "19",
+  "sec": "made",
+  "text": "The demo is ten and a half gigabytes on disk. The download is one point one seven.",
+  "vis": {
+   "type": "image",
+   "file": "ev_size.png"
+  }
+ },
+ {
+  "id": "20",
+  "sec": "made",
+  "text": "That's an eighty nine percent saving. Which means the files sitting on your drive are barely compressed at all.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 25
+  }
+ },
+ {
+  "id": "21",
+  "sec": "made",
+  "text": "My first thought was that somebody forgot the import settings. My second thought was to read the store page.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  }
+ },
+ {
+  "id": "22",
+  "sec": "made",
+  "text": "Minimum requirements: fifteen gigabytes of storage, and a line that says H D D okay, no S S D required.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  }
+ },
+ {
+  "id": "23",
+  "sec": "made",
+  "text": "Uncompressed assets cost disk and save C P U. On a hard drive with no decompression to do, they load faster. My read is that this is deliberate.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 29
+  }
+ },
+ {
+  "id": "24",
+  "sec": "made",
+  "text": "They spent ten gigabytes of somebody's drive to keep the game playable on old hardware. Tell me in the comments if I've got that backwards.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  }
+ },
+ {
+  "id": "25",
+  "sec": "made",
+  "text": "There are also twenty two scenes in here. The last two games I took apart shipped one each and built everything at runtime. This one is authored in the editor.",
+  "vis": {
+   "type": "image",
+   "file": "ss09.jpg"
+  }
+ },
+ {
+  "id": "26",
+  "sec": "review",
+  "text": "So the engineering is careful. The fight in the reviews is about something else entirely.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "27",
+  "sec": "review",
+  "text": "Performance barely comes up. Ten mentions positive, two negative. Nobody is complaining about the build.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 13
+  }
+ },
+ {
+  "id": "28",
+  "sec": "review",
+  "text": "They're complaining about balance. Certain combinations only, dead heroes, and a random draw that decides your run before you play it.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "29",
+  "sec": "review",
+  "text": "And that's why the negative reviewers had fifteen hours in. You don't find a balance ceiling in an hour. You find it after you've mastered the thing.",
+  "vis": {
+   "type": "image",
+   "file": "ss08.jpg"
+  }
+ },
+ {
+  "id": "30",
+  "sec": "review",
+  "text": "Which is a very different problem from the demos where people quit in the first hour.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 0
+  }
+ },
+ {
+  "id": "31",
+  "sec": "score",
+  "text": "Here's the whole teardown on one card.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  }
+ },
+ {
+  "id": "32",
+  "sec": "score",
+  "text": "Unity, I L two C P P, C sharp. A stack full of things you only reach for the second time around. Ten gigabytes of deliberately uncompressed art.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  }
+ },
+ {
+  "id": "33",
+  "sec": "score",
+  "text": "Worth a dip, and be careful, because eleven hours is the median.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 34
+  }
+ },
+ {
+  "id": "34",
+  "sec": "score",
+  "text": "If you're starting your next project, take the boring half of that list. Crash reporting on day one is the cheapest thing you will ever install.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  }
+ },
+ {
+  "id": "35",
+  "sec": "score",
+  "text": "That's my read from the outside. If you made this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 25
+  }
+ }
+]

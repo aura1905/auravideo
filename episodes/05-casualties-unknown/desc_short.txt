@@ -1,7 +1,7 @@
 One developer, 858 KB of code, two scenes, and one third-party package. A free demo people play for ten hours.
 
 ▶ Steam demo (free): https://store.steampowered.com/app/4576510/
-▶ Full teardown: <LONGFORM_URL>
+▶ Full teardown: https://youtu.be/SLhwg1hXp3c
 
 Read off the demo's public depot manifest — file names and sizes only.
 

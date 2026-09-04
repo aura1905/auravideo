@@ -1,0 +1,61 @@
+{
+ "title_en": "Expedition: Into Darkness",
+ "demo_appid": 5041080,
+ "full_appid": 3126410,
+ "developer": "Antediluvian Interactive",
+ "workdir": "episodes/06-expedition-into-darkness",
+ "bgm": {
+  "file": "trailer_main.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/06-expedition-into-darkness/short_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.95,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "BUILD",
+   "16.89 GiB"
+  ],
+  [
+   "TEAM",
+   "three people"
+  ],
+  [
+   "SCENES",
+   "one"
+  ],
+  [
+   "WASTED",
+   "770 MB of symbols"
+  ],
+  [
+   "STORE SAYS",
+   "8 GB"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "youtube": {
+  "title": "A 16.9 GB Steam demo from three people — and 770 MB they forgot to delete #shorts",
+  "tags": "shorts,Expedition Into Darkness,steam demo,unity,il2cpp,indie dev,gamedev,game teardown,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ }
+}

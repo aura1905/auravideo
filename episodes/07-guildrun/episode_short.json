@@ -1,0 +1,35 @@
+{
+ "title_en": "Guildrun",
+ "demo_appid": 4425970,
+ "full_appid": 3669200,
+ "developer": "Leyline",
+ "workdir": "episodes/07-guildrun",
+ "bgm": { "file": "trailer_main.mp4", "volume": 0.07 },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/07-guildrun/short_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": { "width": 1080, "height": 1920 },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.95,
+ "score_len": 9.5,
+ "labels": ["", "", "", ""],
+ "score_line_id": "s7",
+ "specs": [
+  ["ENGINE", "Unity / IL2CPP"],
+  ["RECOVERED", "24 assemblies"],
+  ["SAFETY NET", "Sentry + SQLite"],
+  ["BUILD", "10.58 GiB"],
+  ["MEDIAN PLAY", "11 hours"]
+ ],
+ "verdict": "WORTH A DIP",
+ "youtube": {
+  "title": "Nobody quit this Steam demo in under 10 minutes — so I opened the build #shorts",
+  "tags": "shorts,Guildrun,steam demo,unity,il2cpp,autobattler,roguelike,indie dev,gamedev,game teardown,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ }
+}

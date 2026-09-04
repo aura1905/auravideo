@@ -1,0 +1,259 @@
+{
+ "type": "game",
+ "name": "遠征：闇の中へ",
+ "steam_appid": 3126410,
+ "required_age": 0,
+ "is_free": false,
+ "controller_support": "full",
+ "dlc": [
+  5041080
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" ><i>古き謎が眠る遺跡を臨む、忌まわしき地より旅は始まる。栄光と力、そして莫大な富への飽くなき渇望。その野心に突き動かされ、凶悪な魔物が潜む闇を切り拓け。呪われた深淵の先で、葬られた真実を暴くのだ。</i></p><h2 class=\"bb_tag\" >共に闇を突き進め</h2><p class=\"bb_paragraph\" >最大4人の仲間とパーティを組むもよし。あるいは、死をも恐れぬ者ならば、たった一人で闇の深淵へ踏み込むがいい。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f06584d8352d0cd117b7dfc6427ce86a.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f06584d8352d0cd117b7dfc6427ce86a.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f06584d8352d0cd117b7dfc6427ce86a.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >装備を極限までカスタマイズせよ</h2><p class=\"bb_paragraph\" >剣、メイス、斧、ポールアーム、槍、弓、クロスボウ。多様な部品を組み合わせ、唯一無二の武器を構築せよ。すべては選択次第だ素材、色調、紋章を組み合わせ、性能と美学を追求せよ。真に自分だけの装備を作り上げるのだ。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/710e4f71682f83231a7e6a4f756041eb.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/710e4f71682f83231a7e6a4f756041eb.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/710e4f71682f83231a7e6a4f756041eb.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >死は、戦利品との決別を意味する</h2><p class=\"bb_paragraph\" >死はキャラクターの消滅を意味する。その身に宿したすべてを、永久に喪失するのだ。苦労して手に入れた戦利品を抱えて生還したいならば、その一歩に慎重を期せ。ベースキャンプに納めた物資だけが、真の安全を保証される。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/226e46d0017dc1b49d5616a4535f63b9.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/226e46d0017dc1b49d5616a4535f63b9.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/226e46d0017dc1b49d5616a4535f63b9.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >拠点を強化し、備えよ</h2><p class=\"bb_paragraph\" >ダンジョンより資源を持ち帰り、拠点を修復・強化せよ。その力を活用し、さらなる富と太古の知識を求めて次の冒険へ身を投じるのだ。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/fa9e46cc89666cbf5ceb947e40d3d318.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/fa9e46cc89666cbf5ceb947e40d3d318.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/fa9e46cc89666cbf5ceb947e40d3d318.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >忘れ去られし地下牢を探索せよ</h2><p class=\"bb_paragraph\" >悪夢の怪物、致命的な罠、崩落する構造物、隠された落とし穴、そして有毒ガス。……忠告はした。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline crossorigin=\"anonymous\" poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/79f51cd1b277171c703399e3bebe302d.poster.avif?t=1788281007\" width=780 height=250 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/79f51cd1b277171c703399e3bebe302d.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"></video></span></p><h2 class=\"bb_tag\" >禁断の力に身を捧げよ</h2><p class=\"bb_paragraph\" >信仰を捨て、天空界を超えて闇の神と契約を結べ。禁断の力は手に入る。だが忘れるな、すべてには対価が伴うことを。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f48b85f707e8a4d466ae79fe7fc5de31.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f48b85f707e8a4d466ae79fe7fc5de31.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f48b85f707e8a4d466ae79fe7fc5de31.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p>",
+ "about_the_game": "<p class=\"bb_paragraph\" ><i>古き謎が眠る遺跡を臨む、忌まわしき地より旅は始まる。栄光と力、そして莫大な富への飽くなき渇望。その野心に突き動かされ、凶悪な魔物が潜む闇を切り拓け。呪われた深淵の先で、葬られた真実を暴くのだ。</i></p><h2 class=\"bb_tag\" >共に闇を突き進め</h2><p class=\"bb_paragraph\" >最大4人の仲間とパーティを組むもよし。あるいは、死をも恐れぬ者ならば、たった一人で闇の深淵へ踏み込むがいい。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f06584d8352d0cd117b7dfc6427ce86a.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f06584d8352d0cd117b7dfc6427ce86a.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f06584d8352d0cd117b7dfc6427ce86a.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >装備を極限までカスタマイズせよ</h2><p class=\"bb_paragraph\" >剣、メイス、斧、ポールアーム、槍、弓、クロスボウ。多様な部品を組み合わせ、唯一無二の武器を構築せよ。すべては選択次第だ素材、色調、紋章を組み合わせ、性能と美学を追求せよ。真に自分だけの装備を作り上げるのだ。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/710e4f71682f83231a7e6a4f756041eb.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/710e4f71682f83231a7e6a4f756041eb.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/710e4f71682f83231a7e6a4f756041eb.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >死は、戦利品との決別を意味する</h2><p class=\"bb_paragraph\" >死はキャラクターの消滅を意味する。その身に宿したすべてを、永久に喪失するのだ。苦労して手に入れた戦利品を抱えて生還したいならば、その一歩に慎重を期せ。ベースキャンプに納めた物資だけが、真の安全を保証される。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/226e46d0017dc1b49d5616a4535f63b9.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/226e46d0017dc1b49d5616a4535f63b9.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/226e46d0017dc1b49d5616a4535f63b9.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >拠点を強化し、備えよ</h2><p class=\"bb_paragraph\" >ダンジョンより資源を持ち帰り、拠点を修復・強化せよ。その力を活用し、さらなる富と太古の知識を求めて次の冒険へ身を投じるのだ。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/fa9e46cc89666cbf5ceb947e40d3d318.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/fa9e46cc89666cbf5ceb947e40d3d318.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/fa9e46cc89666cbf5ceb947e40d3d318.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >忘れ去られし地下牢を探索せよ</h2><p class=\"bb_paragraph\" >悪夢の怪物、致命的な罠、崩落する構造物、隠された落とし穴、そして有毒ガス。……忠告はした。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline crossorigin=\"anonymous\" poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/79f51cd1b277171c703399e3bebe302d.poster.avif?t=1788281007\" width=780 height=250 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/79f51cd1b277171c703399e3bebe302d.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"></video></span></p><h2 class=\"bb_tag\" >禁断の力に身を捧げよ</h2><p class=\"bb_paragraph\" >信仰を捨て、天空界を超えて闇の神と契約を結べ。禁断の力は手に入る。だが忘れるな、すべてには対価が伴うことを。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f48b85f707e8a4d466ae79fe7fc5de31.poster.avif?t=1788281007\" width=1170 height=490 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f48b85f707e8a4d466ae79fe7fc5de31.webm?t=1788281007\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/extras/f48b85f707e8a4d466ae79fe7fc5de31.mp4?t=1788281007\" type=\"video/mp4\"></video></span></p>",
+ "short_description": "中世の協力型エクストラクション・ルーターで、知識と財宝を求めて禁断のダンジョンに挑め。知識と財宝はその先にある。武器を鍛え、装備を調え、最大4人の仲間と力を合わせよ。遺跡から生還せよ。さもなくば、その身に纏うすべてを失うことになる。",
+ "supported_languages": "英語<strong>*</strong>, フランス語, イタリア語, ドイツ語, スペイン語 - スペイン, 日本語, 韓国語, ポーランド語, ポルトガル語－ブラジル, ロシア語, 中国語（簡体字）, 中国語（繁体字）, トルコ語<br><strong>*</strong>フル音声対応言語",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/db33c15e456bfbdbb6b01dbf2c03713fa21947d4/header_alt_assets_2_japanese.jpg?t=1788281007",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/28eafa931bd62949ec4173bc48b93f64123c3f1f/capsule_231x87_alt_assets_2_japanese.jpg?t=1788281007",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/28eafa931bd62949ec4173bc48b93f64123c3f1f/capsule_184x69_alt_assets_2_japanese.jpg?t=1788281007",
+ "website": "https://expedition-the-game.com",
+ "pc_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"><li>64 ビットプロセッサとオペレーティングシステムが必要です<br></li><li><strong>OS:</strong> Windows 10<br></li><li><strong>プロセッサー:</strong> AMD Ryzen 5 3600X 6-Core or similar<br></li><li><strong>メモリー:</strong> 8 GB RAM<br></li><li><strong>グラフィック:</strong> Radeon RX 580 Series or similar<br></li><li><strong>ネットワーク:</strong> ブロードバンドインターネット接続<br></li><li><strong>ストレージ:</strong> 8 GB の空き容量</li></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"><li>64 ビットプロセッサとオペレーティングシステムが必要です<br></li><li><strong>OS:</strong> Windows 11<br></li><li><strong>プロセッサー:</strong> AMD Ryzen 5 3600X 6-Core or similar<br></li><li><strong>メモリー:</strong> 16 GB RAM<br></li><li><strong>グラフィック:</strong> Radeon RX 580 Series or similar<br></li><li><strong>ネットワーク:</strong> ブロードバンドインターネット接続<br></li><li><strong>ストレージ:</strong> 8 GB の空き容量</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "developers": [
+  "Antediluvian Interactive"
+ ],
+ "publishers": [
+  "Antediluvian Interactive"
+ ],
+ "demos": [
+  {
+   "appid": 5041080,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "シングルプレイヤー"
+  },
+  {
+   "id": 1,
+   "description": "マルチプレイヤー"
+  },
+  {
+   "id": 9,
+   "description": "協力プレイ"
+  },
+  {
+   "id": 38,
+   "description": "オンライン協力プレイ"
+  },
+  {
+   "id": 27,
+   "description": "クロスプラットフォームマルチプレイヤー"
+  },
+  {
+   "id": 22,
+   "description": "Steam実績"
+  },
+  {
+   "id": 28,
+   "description": "フルコントローラサポート"
+  },
+  {
+   "id": 64,
+   "description": "テキストサイズの調整"
+  },
+  {
+   "id": 67,
+   "description": "カメラの快適性"
+  },
+  {
+   "id": 66,
+   "description": "色のオプション"
+  },
+  {
+   "id": 68,
+   "description": "カスタム音量調整"
+  },
+  {
+   "id": 78,
+   "description": "難易度の調整"
+  },
+  {
+   "id": 74,
+   "description": "時間制限付き入力なしでプレイ可能"
+  },
+  {
+   "id": 55,
+   "description": "DUALSHOCKコントローラーサポート"
+  },
+  {
+   "id": 56,
+   "description": "DUALSHOCKコントローラーサポート"
+  },
+  {
+   "id": 57,
+   "description": "DualSenseコントローラーサポート"
+  },
+  {
+   "id": 58,
+   "description": "DualSenseコントローラーサポート"
+  },
+  {
+   "id": 69,
+   "description": "ステレオサウンド"
+  },
+  {
+   "id": 70,
+   "description": "サラウンドサウンド"
+  },
+  {
+   "id": 62,
+   "description": "ファミリーシェアリング"
+  }
+ ],
+ "genres": [
+  {
+   "id": "1",
+   "description": "アクション"
+  },
+  {
+   "id": "25",
+   "description": "アドベンチャー"
+  },
+  {
+   "id": "3",
+   "description": "RPG"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/5ffc4b722ca1ab4fe93234a586fe264dd9b74de4/ss_5ffc4b722ca1ab4fe93234a586fe264dd9b74de4.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/5ffc4b722ca1ab4fe93234a586fe264dd9b74de4/ss_5ffc4b722ca1ab4fe93234a586fe264dd9b74de4.1920x1080.jpg?t=1788281007"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/d0067633b623cb4afac74727230f0cb98c03d41d/ss_d0067633b623cb4afac74727230f0cb98c03d41d.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/d0067633b623cb4afac74727230f0cb98c03d41d/ss_d0067633b623cb4afac74727230f0cb98c03d41d.1920x1080.jpg?t=1788281007"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/0ea57066111ef2e2e3645a2092a526ad46391141/ss_0ea57066111ef2e2e3645a2092a526ad46391141.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/0ea57066111ef2e2e3645a2092a526ad46391141/ss_0ea57066111ef2e2e3645a2092a526ad46391141.1920x1080.jpg?t=1788281007"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/68cbe97354623c88ccd346a5005ac3889857beac/ss_68cbe97354623c88ccd346a5005ac3889857beac.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/68cbe97354623c88ccd346a5005ac3889857beac/ss_68cbe97354623c88ccd346a5005ac3889857beac.1920x1080.jpg?t=1788281007"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/a3ace95e1a05238273b39e93901d47a65ddb9eb8/ss_a3ace95e1a05238273b39e93901d47a65ddb9eb8.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/a3ace95e1a05238273b39e93901d47a65ddb9eb8/ss_a3ace95e1a05238273b39e93901d47a65ddb9eb8.1920x1080.jpg?t=1788281007"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/27dc348aaa7d062cae09f0ac03385f8fad0c3f76/ss_27dc348aaa7d062cae09f0ac03385f8fad0c3f76.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/27dc348aaa7d062cae09f0ac03385f8fad0c3f76/ss_27dc348aaa7d062cae09f0ac03385f8fad0c3f76.1920x1080.jpg?t=1788281007"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/77e798972541d7dcb2115b5509acc056794d67fe/ss_77e798972541d7dcb2115b5509acc056794d67fe.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/77e798972541d7dcb2115b5509acc056794d67fe/ss_77e798972541d7dcb2115b5509acc056794d67fe.1920x1080.jpg?t=1788281007"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/6d0099edb77ab9319ba46aa894347363671df28d/ss_6d0099edb77ab9319ba46aa894347363671df28d.600x338.jpg?t=1788281007",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/6d0099edb77ab9319ba46aa894347363671df28d/ss_6d0099edb77ab9319ba46aa894347363671df28d.1920x1080.jpg?t=1788281007"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257392990,
+   "name": "Demo Trailer (Global)",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257392990/b0bbbac13ef9e6a597c5eeb257a203d52d0f91bd/movie_600x337.jpg?t=1786022381",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/3126410/835646702/94592d98be01167594c46dbdf54e8381ca70c746/1786021454/dash_av1.mpd?t=1786022381",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/3126410/835646702/94592d98be01167594c46dbdf54e8381ca70c746/1786021454/dash_h264.mpd?t=1786022381",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/3126410/835646702/94592d98be01167594c46dbdf54e8381ca70c746/1786021454/hls_264_master.m3u8?t=1786022381",
+   "highlight": true
+  },
+  {
+   "id": 257181489,
+   "name": "Gameplay Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257181489/b0bbbac13ef9e6a597c5eeb257a203d52d0f91bd/movie_600x337.jpg?t=1786022382",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/3126410/864087138/dcdf1e9adeddc30d1b26938edae21b4488e503b2/1754913534/dash_av1.mpd?t=1786022382",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/3126410/864087138/dcdf1e9adeddc30d1b26938edae21b4488e503b2/1754913534/dash_h264.mpd?t=1786022382",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/3126410/864087138/dcdf1e9adeddc30d1b26938edae21b4488e503b2/1754913534/hls_264_master.m3u8?t=1786022382",
+   "highlight": true
+  },
+  {
+   "id": 257079376,
+   "name": "Cinematic Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257079376/4f45cca4e7dab61da0d288e270373a1ceed0424a/movie_600x337.jpg?t=1780921188",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/3126410/1729202872/147487a685579df748a04d359c5990a1d234aa15/1780919908/dash_av1.mpd?t=1780921188",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/3126410/1729202872/147487a685579df748a04d359c5990a1d234aa15/1780919908/dash_h264.mpd?t=1780921188",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/3126410/1729202872/147487a685579df748a04d359c5990a1d234aa15/1780919908/hls_264_master.m3u8?t=1780921188",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "2026年第4四半期"
+ },
+ "support_info": {
+  "url": "",
+  "email": "contact@expedition-the-game.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/3126410?t=1788281007",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/page_bg_raw.jpg?t=1788281007",
+ "content_descriptors": {
+  "ids": [
+   2,
+   5
+  ],
+  "notes": "Blood, gore, violence, dismemberment, and trauma."
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Violência Extrema\nLinguagem imprópria\nMedo"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Drastische Gewalt\nDerbe Sprache"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Interaksi Daring\nKekerasan\nHoror"
+  }
+ }
+}

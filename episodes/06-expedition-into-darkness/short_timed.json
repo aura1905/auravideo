@@ -1,0 +1,93 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "This Steam demo is sixteen point nine gigabytes. Three people made it.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "dur": 4.702,
+  "wav": "episodes/06-expedition-into-darkness/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Seven hundred and seventy megabytes of that download is a file they forgot to delete.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 20
+  },
+  "dur": 4.519,
+  "wav": "episodes/06-expedition-into-darkness/tts_short/s2.wav"
+ },
+ {
+  "id": "s3",
+  "sec": "made",
+  "text": "Debug symbols. They're how you read a crash report. They belong on a build server, not on your players' drives.",
+  "vis": {
+   "type": "image",
+   "file": "ev_pdb_v.png"
+  },
+  "dur": 6.713,
+  "wav": "episodes/06-expedition-into-darkness/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "made",
+  "text": "The rest is real content, to be fair. One scene, and fifteen hundred streaming bundles behind it.",
+  "vis": {
+   "type": "image",
+   "file": "ev_size_v.png"
+  },
+  "dur": 5.904,
+  "wav": "episodes/06-expedition-into-darkness/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Every weapon is separate parts with their own stats, so the art multiplies fast.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "dur": 4.702,
+  "wav": "episodes/06-expedition-into-darkness/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "Though a single two gigabyte bundle usually means textures nobody set the compression on.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 45
+  },
+  "dur": 4.859,
+  "wav": "episodes/06-expedition-into-darkness/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "And the store page still says you need eight gigabytes of storage.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  },
+  "dur": 3.683,
+  "wav": "episodes/06-expedition-into-darkness/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "If you ship this year, strip your symbols. It's one checkbox. Full teardown on the channel.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 33
+  },
+  "dur": 5.825,
+  "wav": "episodes/06-expedition-into-darkness/tts_short/s8.wav"
+ }
+]

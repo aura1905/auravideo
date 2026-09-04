@@ -1,0 +1,131 @@
+{
+ "title_en": "Guildrun",
+ "demo_appid": 4425970,
+ "full_appid": 3669200,
+ "developer": "Leyline",
+ "workdir": "episodes/07-guildrun",
+ "script_timed": "episodes/07-guildrun/script_timed.json",
+ "intro_bg": {
+  "file": "trailer_main.mp4",
+  "in": 29.0,
+  "out": 32.6,
+  "scale": 1.1
+ },
+ "labels": [
+  "10.58 GB on disk",
+  "1.17 GB download",
+  "22 scenes",
+  "24 packages"
+ ],
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 2,
+ "score_line_id": "31",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity / IL2CPP"
+  ],
+  [
+   "LANGUAGE",
+   "C#"
+  ],
+  [
+   "THE STACK",
+   "R3, ZLinq, NLog"
+  ],
+  [
+   "SAFETY NET",
+   "Sentry + SQLite"
+  ],
+  [
+   "THE TRADE",
+   "89% uncompressed"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": {
+  "file": "trailer_main.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "thumbnail": {
+  "bg": "ss07.jpg",
+  "line1": "Guildrun",
+  "line2": "11 HOURS. MEDIAN.",
+  "tag": "UNITY / IL2CPP TEARDOWN",
+  "focus": "center"
+ },
+ "chapters": {
+  "hook": "Eleven hours is the median",
+  "intro": "What it is",
+  "made": "Opening the build",
+  "review": "What players actually say",
+  "score": "The spec sheet + verdict"
+ },
+ "stack": [
+  [
+   "R3 (reactive extensions for Unity)",
+   "https://github.com/Cysharp/R3"
+  ],
+  [
+   "ZLinq (zero-allocation LINQ)",
+   "https://github.com/Cysharp/ZLinq"
+  ],
+  [
+   "NLog",
+   "https://nlog-project.org/"
+  ],
+  [
+   "Sentry for Unity",
+   "https://docs.sentry.io/platforms/unity/"
+  ],
+  [
+   "SQLite",
+   "https://www.sqlite.org/"
+  ],
+  [
+   "FMOD Studio",
+   "https://www.fmod.com/"
+  ],
+  [
+   "Unity IL2CPP",
+   "https://docs.unity3d.com/Manual/IL2CPP.html"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/4425970/"
+  ]
+ ],
+ "ledger": {
+  "team": "미상",
+  "engine": "Unity",
+  "pipeline": "미상(IL2CPP)",
+  "backend": "**IL2CPP**",
+  "build": "10.58 GiB",
+  "files": 137,
+  "scenes": 22,
+  "third_party": "어셈블리 24개 복원",
+  "approach": "숙련된 스택 + 주간 패치",
+  "reception": "89.8% / 1,994",
+  "packages": [
+   "Sentry",
+   "SQLite",
+   "NLog",
+   "R3",
+   "ZLinq",
+   "System.Reactive",
+   "FMOD",
+   "Resonance Audio",
+   "nanosockets",
+   "Steamworks"
+  ],
+  "ai_disclosure": null
+ },
+ "youtube": {
+  "title": "Guildrun — nobody quit this demo in under 10 minutes. So I opened the build",
+  "tags": "Guildrun,steam demo,autobattler,roguelike,indie dev,gamedev,unity,il2cpp,sentry,sqlite,r3,zlinq,nlog,game teardown,how games are made,demo dip,pve autobattler,leyline",
+  "privacy": "private",
+  "lang": "en"
+ }
+}
