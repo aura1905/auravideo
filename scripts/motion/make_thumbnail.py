@@ -22,7 +22,7 @@ TEAL = (25, 198, 183, 255); WHITE = (245, 255, 252, 255); NAVY = (8, 20, 48, 255
 ANTON = 'assets/fonts/Anton-Regular.ttf'
 INTER = 'assets/fonts/Inter.ttf'
 CJK = 'C:/Windows/Fonts/malgunbd.ttf'
-BADGE = 'assets/brand/demo_dip_badge_rgba.png'
+BADGE = 'assets/brand/demo_dip_badge_rgba.png'   # --badge overrides (한국어 편은 데모 찍먹 배지)
 
 
 def font_for(txt, size, label=False):
@@ -62,6 +62,7 @@ def main():
     ap.add_argument('--bg', required=True); ap.add_argument('--out', required=True)
     ap.add_argument('--line1', required=True); ap.add_argument('--line2', default='')
     ap.add_argument('--tag', default='')
+    ap.add_argument('--badge', help='series badge PNG; defaults to the English one')
     ap.add_argument('--focus', default='center', choices=['center', 'left', 'right'])
     ap.add_argument('--text-side', default='left', choices=['left', 'right'])
     ap.add_argument('--title-size', type=int, default=150); ap.add_argument('--hook-size', type=int, default=92)
@@ -89,7 +90,7 @@ def main():
     if a.line2:
         l2 = outlined_text(a.line2, fit_size(a.line2, a.hook_size, usable - 180), TEAL, outline=12)  # keep the hook narrower than the title
         bg.alpha_composite(l2, (x0 if x0 is not None else W - l2.width - 40, y))
-    badge = Image.open(BADGE).convert('RGBA'); bs = 190 / badge.height
+    badge = Image.open(a.badge or BADGE).convert('RGBA'); bs = 190 / badge.height
     badge = badge.resize((int(badge.width * bs), 190), Image.LANCZOS)
     bg.alpha_composite(badge, (36, H - badge.height - 30))
     bg.convert('RGB').save(a.out, quality=90)
