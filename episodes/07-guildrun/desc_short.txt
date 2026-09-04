@@ -1,7 +1,7 @@
 Unity, IL2CPP, and 24 assembly names that leaked out anyway: Sentry, SQLite, NLog, R3, ZLinq. Not a first project's dependency list.
 
 ▶ Steam demo (free): https://store.steampowered.com/app/4425970/
-▶ Full teardown: (link once the long-form is live)
+▶ Full teardown: https://youtu.be/nPAj2JVgAOI
 
 Read off the demo's public depot manifest — file names and sizes only.
 
