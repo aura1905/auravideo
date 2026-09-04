@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from './App';
 import './styles.css';
+import { installWebAgent } from './utils/webAgent';
 
 // We previously registered a service worker (coi-serviceworker) to add
 // COOP/COEP headers for SharedArrayBuffer support, needed by the multi-
@@ -32,8 +33,14 @@ if ('serviceWorker' in navigator) {
 }
 
 // Agent control bridge - no-op unless running in the desktop shell, and the
-// socket itself is only opened when launched with NABIVIDEO_AGENT=1.
+// socket itself is only opened when launched with AURAVIDEO_AGENT=1.
 import('./utils/agentBridge').then((m) => m.installAgentBridge()).catch(() => {});
+
+// Dev-only: expose the store + export graph builder on window.__aura so the
+// web build can be driven by browser automation (see utils/webAgent.ts).
+if (import.meta.env.DEV) {
+  installWebAgent();
+}
 
 // Desktop plumbing self-test — only present when built with VITE_SELFTEST=1.
 if (import.meta.env.VITE_SELFTEST === '1') {

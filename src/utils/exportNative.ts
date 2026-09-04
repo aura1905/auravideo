@@ -181,6 +181,20 @@ export async function exportProjectNative(
     }
   }
 
+  // A timeline with many clips (a motion-graphics intro is a dozen layers plus
+  // a sound effect per element) produces a filter graph well past the Windows
+  // command-line limit — CreateProcess fails with "file name too long" (os
+  // error 206) before ffmpeg even starts. So the graph never travels as an
+  // argument: it is written to the scratch dir and passed with
+  // -filter_complex_script, which ffmpeg reads from disk. The relative name
+  // works because ffmpeg runs from the scratch dir (see the rnnoise note).
+  const fcIdx = argv.indexOf('-filter_complex');
+  if (fcIdx >= 0 && fcIdx + 1 < argv.length) {
+    const scriptName = `graph-${opts.jobId}.txt`;
+    scratchFiles.push(await writeTempFile(scriptName, new TextEncoder().encode(argv[fcIdx + 1])));
+    argv.splice(fcIdx, 2, '-filter_complex_script', scriptName);
+  }
+
   onProgress({ phase: '인코딩 중…', progress: 0.06 });
 
   const logs: string[] = [];
