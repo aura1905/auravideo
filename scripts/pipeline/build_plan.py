@@ -127,15 +127,40 @@ def main():
             C.append({'track': tr, 'file': f'{LP}{nm}.mov', 'start': sting_at, 'in': 0, 'out': INTRO_LEN, 'fillMode': 'fit', 'muted': True})
 
     # --- blueprint still + staggered evidence labels, under the lines right after the sting
+    # kenburns.py also renders a drifting version of the blueprint still; without it the
+    # label section and the spec-sheet background are two frozen blocks in every episode.
+    still_file = 'still_bg.png'
+    _mv = 'still_bg' + ('_mvv.mp4' if VERT else '_mv.mp4')
+    if os.path.exists(os.path.join(wd, _mv)):
+        still_file = _mv
+
     still_start = round(sting_at + INTRO_LEN, 3) if sting_on else 0.0
     still_end = still_start + sum(x['dur'] + GAP for x in segs[still_from:still_to])
     if still_n:
-        C.append({'track': BG, 'file': 'still_bg.png', 'start': still_start, 'in': 0, 'out': round(still_end - still_start, 3),
+        C.append({'track': BG, 'file': still_file, 'start': still_start, 'in': 0, 'out': round(still_end - still_start, 3),
                   'fillMode': FILL, 'fadeIn': 0.3, 'fadeOut': 0.3})
         for i, (txt, (x, y)) in enumerate(zip(ep['labels'], LABEL_POS)):
             st = still_start + 0.4 + i * 0.45
             S.append({'text': txt, 'start': round(st, 3), 'duration': round(still_end - st - 0.2, 3), 'x': x, 'y': y, 'fontSize': LABEL_FS,
                       'bgColor': '#0b1a3a', 'bgOpacity': 0.85, 'bgPadding': 18, 'outline': 0, 'color': '#eafffb', 'fadeIn': 0.25, 'fadeOut': 0.3})
+
+    # --- swap every still for its pre-rendered moving version, if one exists
+    # scripts/motion/kenburns.py writes <stem>_mv.mp4 (or _mvv.mp4 for 9:16) next to
+    # each screenshot and evidence card. Measured before this existed: 50-63% of a
+    # long-form and 62-78% of a Short was a frozen picture. Substituting here rather
+    # than rewriting every script keeps the scripts about *what* is on screen.
+    mv_suffix = '_mvv.mp4' if VERT else '_mv.mp4'
+    swapped = 0
+    for s_ in segs:
+        vis = s_.get('vis') or {}
+        if vis.get('type') != 'image':
+            continue
+        cand = os.path.splitext(vis['file'])[0] + mv_suffix
+        if os.path.exists(os.path.join(wd, cand)):
+            vis['type'] = 'video'; vis['file'] = cand; vis['in'] = 0
+            swapped += 1
+    if swapped:
+        print(f'  {swapped} stills replaced with their moving version ({mv_suffix})')
 
     # --- the cold open must MOVE
     # A screenshot is "real game footage" in the sense docs/PIPELINE.md meant, but it is
@@ -198,7 +223,7 @@ def main():
     # --- score scene: blueprint still + 7 layers
     if score_t0 is not None:
         T0 = score_t0
-        C.append({'track': BG, 'file': 'still_bg.png', 'start': round(T0 - 0.2, 3), 'in': 0, 'out': SCORE_LEN + 0.4, 'fillMode': FILL, 'fadeIn': 0.3, 'fadeOut': 0.3})
+        C.append({'track': BG, 'file': still_file, 'start': round(T0 - 0.2, 3), 'in': 0, 'out': SCORE_LEN + 0.4, 'fillMode': FILL, 'fadeIn': 0.3, 'fadeOut': 0.3})
         layers = ['score_header'] + [f'score_row_{i}' for i in range(5)] + ['score_stamp']
         for i, n in enumerate(layers):
             C.append({'track': f'v{4+i}', 'file': f'{LP}{n}.mov', 'start': round(T0, 3), 'in': 0, 'out': SCORE_LEN, 'fillMode': 'fit', 'muted': True})

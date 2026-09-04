@@ -317,7 +317,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 134
+   "in": 66.0
   },
   "dur": 7.785
  },
@@ -390,7 +390,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 142
+   "in": 42.0
   },
   "dur": 4.284
  }

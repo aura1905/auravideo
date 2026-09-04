@@ -4,8 +4,9 @@
   "sec": "hook",
   "text": "Two hundred and seventy five hours. That's the longest played review on this game's demo. Not the game. The demo.",
   "vis": {
-   "type": "image",
-   "file": "ss01.jpg"
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 44.0
   },
   "dur": 7.027
  },
@@ -360,7 +361,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 78
+   "in": 59.0
   },
   "dur": 9.247
  }

@@ -82,6 +82,17 @@ def main():
     # four drift directions, cycled, so consecutive stills never move alike
     drifts = [(0.8, 0.5), (-0.7, -0.6), (0.6, -0.8), (-0.8, 0.7)]
     made = []
+    # the blueprint still sits under the label section right after the logo sting AND
+    # under the spec sheet at the end -- measured as two frozen blocks, 20-35 s and
+    # 233-242 s. Gentle and centred: the labels are drawn over it at fixed positions.
+    bg = os.path.join(a.workdir, 'still_bg.png')
+    if os.path.exists(bg):
+        dst = bg.rsplit('.', 1)[0] + suffix
+        if a.force or not os.path.exists(dst):
+            render(bg, dst, w, h, CARD_ZOOM, (0.0, 0.0), max(a.seconds, 20.0))
+        made.append(dst)
+        print('  bg   ', os.path.basename(dst))
+
     for i, src in enumerate(stills):
         dst = src.rsplit('.', 1)[0] + suffix
         if a.force or not os.path.exists(dst):

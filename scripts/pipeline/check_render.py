@@ -22,9 +22,12 @@ So this measures instead of looking:
 """
 import argparse, glob, json, os, re, subprocess, sys
 
-# Below this, consecutive frames are the same picture. Measured: a true still reads
-# 0.00-0.04; real footage in these episodes reads 1.6-3.6.
-STILL = 0.25
+# Below this, consecutive frames are the same picture. Measured on these masters:
+# a genuinely frozen shot reads 0.002-0.006, a Ken Burns push on a still reads
+# 0.11-0.40, and real footage reads 1.6-3.9. The threshold separates "literally not
+# moving" from "moving slowly", which is the distinction that matters -- a slow push
+# never produces footage-sized frame deltas and should not be asked to.
+STILL = 0.05
 
 
 def ff(args):
