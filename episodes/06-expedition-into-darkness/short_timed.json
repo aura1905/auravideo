@@ -17,7 +17,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 20
+   "in": 17.0
   },
   "dur": 4.519,
   "wav": "episodes/06-expedition-into-darkness/tts_short/s2.wav"
@@ -62,7 +62,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 45
+   "in": 34.0
   },
   "dur": 4.859,
   "wav": "episodes/06-expedition-into-darkness/tts_short/s6.wav"
@@ -85,7 +85,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 33
+   "in": 17.0
   },
   "dur": 5.825,
   "wav": "episodes/06-expedition-into-darkness/tts_short/s8.wav"
