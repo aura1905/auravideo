@@ -1,0 +1,33 @@
+{
+ "demo_appid": 5060640,
+ "full_appid": 4122240,
+ "name": "Veiled Shadows",
+ "developers": [
+  "Party of One Games"
+ ],
+ "publishers": [
+  "Party of One Games"
+ ],
+ "release": "Q1 2027",
+ "coming_soon": true,
+ "genres": [
+  "RPG"
+ ],
+ "languages": "English**languages with full audio support",
+ "website": "https://www.veiledshadows.com",
+ "short": "Live a month in a rural mountain town, build bonds, and hunt a mystery across two worlds. Manage your days, explore dungeons, and fight turn-based battles to recover what's been lost.",
+ "about": "  Thirty days. A quiet mountain town. Something beneath the surface.   You’re a police intern in Hayakawa for one focused month. Mornings are routine: check in, follow up on calls, document scenes, and handle the small tasks that keep a rural place running. When your shift ends, the clock is yours to manage.              Enter Fragments of a long lost world, sealed away and hidden. Enjoy light puzzles, shifting routes, and systems that demand attention. Defeat enemies by exploiting affinities and use them to your advantage in other battles.   Unveil the past   Take on small jobs, stumble into optional moments, and explore the town and its surroundings. Use local facilities like the gym to raise your stats. Spend each day split into 3 parts:  Morning ,  Afternoon  and  Night , each offers different opportunities.             Build friendships, manage a finite month   Get closer to friends, uncover their personal stories, and unlock support skills, passives, and special abilities that can swing tough encounters in your favour. Plan your days carefully. Opportunities close, some doors only open once.          Key features     Calendar-driven JRPG structure over a focused 30-day investigation    Police-intern gameplay: ride-alongs, scene work, and everyday legwork    Limited-window excursions into a hidden, rules-bound world    Strategic turn-based combat with affinities and utilizing monsters    Relationship growth that unlocks stories and advantages in combat    After-work free time for friendships, exploration, side jobs, and stat growth    A grounded mystery about responsibility, memory, and what we choose to uncover       Veiled Shadows  is a solo dev’s passion project and a quiet fan letter to classics that inspired it, with a look that nods to PS2-era and 3DS aesthetics. ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Microsoft® Windows10 (64bit)    Processor:  Intel Core i3-4340 or better    Memory:  8 GB RAM    Graphics:  Graphic board that works with OpenGL 4.4 or higher    Storage:  7 GB available space  ",
+ "movies": [
+  {
+   "id": 257287160,
+   "name": "Veiled Shadows Announcement Teaser"
+  }
+ ],
+ "screenshots": 7,
+ "reviews": {
+  "total": 6,
+  "positive": 6,
+  "desc": "6 user reviews"
+ }
+}

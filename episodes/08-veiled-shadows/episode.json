@@ -1,0 +1,68 @@
+{
+ "title_en": "Veiled Shadows",
+ "demo_appid": 5060640,
+ "full_appid": 4122240,
+ "developer": "Party of One Games",
+ "workdir": "episodes/08-veiled-shadows",
+ "script_timed": "episodes/08-veiled-shadows/script_timed.json",
+ "intro_bg": { "file": "trailer_main.mp4", "in": 14.0, "out": 17.6, "scale": 1.1 },
+ "labels": ["71 files", "1.42 GB build", "one .rbpack = 95%", "1 person, Austria"],
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 2,
+ "score_line_id": "31",
+ "specs": [
+  ["ENGINE", "RPG Dev Bakin"],
+  ["SOLD AS", "no programming"],
+  ["TEAM", "one person"],
+  ["THE PACK", "1.35 GB, one file"],
+  ["IN THE BOX", "a C# compiler"]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": { "file": "trailer_main.mp4", "volume": 0.07 },
+ "narration_volume": 1.6,
+ "thumbnail": {
+  "bg": "ss01.jpg",
+  "line1": "Veiled Shadows",
+  "line2": "MADE WITHOUT CODE",
+  "tag": "RPG DEVELOPER BAKIN TEARDOWN",
+  "focus": "center"
+ },
+ "chapters": {
+  "hook": "Not Unity, for once",
+  "intro": "What it is",
+  "made": "Opening the build",
+  "review": "What six reviewers say",
+  "score": "The spec sheet + verdict"
+ },
+ "stack": [
+  ["RPG Developer Bakin (the engine)", "https://store.steampowered.com/app/1036640/RPG_Developer_Bakin/"],
+  ["SmileBoom, who make it", "https://smileboom.com/en/"],
+  ["VRM (the avatar format)", "https://vrm.dev/en/"],
+  ["VRoid Studio", "https://vroid.com/en/studio"],
+  ["Roslyn, the C# compiler in the build", "https://github.com/dotnet/roslyn"],
+  ["Microsoft Edge WebView2", "https://developer.microsoft.com/microsoft-edge/webview2/"],
+  ["Bullet Physics", "https://pybullet.org/"],
+  ["The demo on Steam", "https://store.steampowered.com/app/5060640/"]
+ ],
+ "ledger": {
+  "team": "1인 (오스트리아)",
+  "engine": "**RPG Developer Bakin**",
+  "pipeline": "OpenGL 4.4 / D3D12",
+  "backend": "C# (Roslyn 동봉)",
+  "build": "1.42 GiB",
+  "files": 65,
+  "scenes": 0,
+  "third_party": "엔진 런타임 통째",
+  "approach": "노코드 툴 + 자작 콘텐츠",
+  "reception": "100% / 6",
+  "packages": ["Roslyn", "WebView2", "VRM", "Bullet Physics", "SharpDX", "YamlDotNet", "Steamworks"],
+  "ai_disclosure": null
+ },
+ "youtube": {
+  "title": "Veiled Shadows — one person made this without writing code. The build ships a C# compiler anyway",
+  "tags": "Veiled Shadows,steam demo,RPG Developer Bakin,bakin,smileboom,no code,nocode gamedev,solo developer,indie dev,gamedev,persona,jrpg,vrm,vroid,game teardown,how games are made,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ }
+}

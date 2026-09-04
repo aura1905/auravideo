@@ -137,6 +137,16 @@ def main():
             S.append({'text': txt, 'start': round(st, 3), 'duration': round(still_end - st - 0.2, 3), 'x': x, 'y': y, 'fontSize': LABEL_FS,
                       'bgColor': '#0b1a3a', 'bgOpacity': 0.85, 'bgPadding': 18, 'outline': 0, 'color': '#eafffb', 'fadeIn': 0.25, 'fadeOut': 0.3})
 
+    # --- the cold open must MOVE
+    # A screenshot is "real game footage" in the sense docs/PIPELINE.md meant, but it is
+    # frozen, and the first seconds are the ones that decide whether anyone stays.
+    # Episodes 05-07 all shipped with 4-8 s of a still as their opening shot before this
+    # check existed; episode 07's was 8.2 s.
+    if segs and (segs[0].get('vis') or {}).get('type') != 'video':
+        print(f"  WARNING line {segs[0]['id']}: the opening shot is "
+              f"{(segs[0].get('vis') or {}).get('file')}, a still. The cold open holds it "
+              f"frozen for {segs[0].get('dur', 0):.1f} s. Use a trailer clip for line 1.")
+
     # --- narration + visuals
     t = 0.0
     score_t0 = None
@@ -162,6 +172,13 @@ def main():
                     pass
             else:
                 i0 = vis['in']; i1 = min(vdur(vis['file']), i0 + span)
+                # A store trailer ends on a static "wishlist now" card. Cutting to it
+                # reads as filler, and three different lines landing on the same card
+                # (episode 06, first pass) looks like nobody watched the export.
+                tail = vdur(vis['file']) - 15
+                if i0 >= tail:
+                    print(f"  WARNING line {s['id']}: {vis['file']} in={i0}s is within 15 s of "
+                          f"the end ({vdur(vis['file']):.0f}s) — probably the end card")
                 c = {'track': BG, 'file': vis['file'], 'start': round(t, 3), 'in': i0, 'out': round(i1, 3), 'fillMode': FILL, 'fadeIn': 0.25, 'fadeOut': 0.25, 'muted': True, 'transformScale': VIS_SCALE}
             C.append(c)
         # In 9:16 the score card fills the frame, so a caption over it would sit
