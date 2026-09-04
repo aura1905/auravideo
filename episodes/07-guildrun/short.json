@@ -4,8 +4,9 @@
   "sec": "hook",
   "text": "Nobody quit this Steam demo in under ten minutes. Not one reviewer.",
   "vis": {
-   "type": "image",
-   "file": "ss07.jpg"
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 25.0
   }
  },
  {

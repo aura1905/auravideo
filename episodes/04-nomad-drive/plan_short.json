@@ -59,11 +59,11 @@
    "start": 10.492,
    "in": 0,
    "out": 6.121,
-   "fillMode": "blur",
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
    "muted": true,
-   "transformScale": 1.95
+   "transformScale": 1.0
   },
   {
    "track": "a1",

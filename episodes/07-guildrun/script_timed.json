@@ -4,8 +4,9 @@
   "sec": "hook",
   "text": "Half the people who reviewed this free demo had already played it for eleven hours. Not one of them quit inside ten minutes. Not one.",
   "vis": {
-   "type": "image",
-   "file": "ss07.jpg"
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 25.0
   },
   "dur": 8.15,
   "wav": "episodes/07-guildrun/tts/01.wav"
@@ -17,7 +18,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 0
+   "in": 13.0
   },
   "dur": 4.389,
   "wav": "episodes/07-guildrun/tts/02.wav"

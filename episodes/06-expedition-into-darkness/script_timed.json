@@ -4,8 +4,9 @@
   "sec": "hook",
   "text": "This demo is sixteen point nine gigabytes. That's bigger than most finished games I own.",
   "vis": {
-   "type": "image",
-   "file": "ss02.jpg"
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 34.0
   },
   "dur": 4.937,
   "wav": "episodes/06-expedition-into-darkness/tts/01.wav"
@@ -205,9 +206,8 @@
   "sec": "made",
   "text": "And that's usually what a two gigabyte bundle means. Not too much art. Art that never got its compression settings looked at.",
   "vis": {
-   "type": "video",
-   "file": "trailer_main.mp4",
-   "in": 34.0
+   "type": "image",
+   "file": "ss00.jpg"
   },
   "dur": 6.557,
   "wav": "episodes/06-expedition-into-darkness/tts/19.wav"

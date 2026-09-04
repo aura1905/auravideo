@@ -4,8 +4,9 @@
   "sec": "hook",
   "text": "This Steam demo is sixteen point nine gigabytes. Three people made it.",
   "vis": {
-   "type": "image",
-   "file": "ss02.jpg"
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 17.0
   },
   "dur": 4.702,
   "wav": "episodes/06-expedition-into-darkness/tts_short/s1.wav"

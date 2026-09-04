@@ -209,6 +209,16 @@ def main():
                     print(f"  WARNING line {s['id']}: {vis['file']} in={i0}s is within 15 s of "
                           f"the end ({vdur(vis['file']):.0f}s) — probably the end card")
                 c = {'track': BG, 'file': vis['file'], 'start': round(t, 3), 'in': i0, 'out': round(i1, 3), 'fillMode': FILL, 'fadeIn': 0.25, 'fadeOut': 0.25, 'muted': True, 'transformScale': VIS_SCALE}
+                # Same rule as the still branch: anything authored at the canvas shape
+                # is shown whole. It matters here because kenburns.py turns evidence
+                # cards into video clips, and without this the 9:16 cards lost their
+                # left and right edges -- the first Short built this way cropped
+                # "UnityPlayer.dll" down to "layer.dll".
+                try:
+                    if abs(aspect(os.path.join(wd, vis['file'])) - CW / CH) < 0.05:
+                        c['fillMode'] = 'fit'; c['transformScale'] = 1.0
+                except Exception:
+                    pass
             C.append(c)
         # In 9:16 the score card fills the frame, so a caption over it would sit
         # on the stamp. The card shows the numbers and the narration says them.
