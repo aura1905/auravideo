@@ -5,9 +5,9 @@
 //! applied through the ordinary Zustand actions, so there is no second
 //! implementation of editing logic that could drift from the UI's.
 //!
-//! Transport is a loopback HTTP server. It is OFF unless `NABIVIDEO_AGENT=1`,
+//! Transport is a loopback HTTP server. It is OFF unless `AURAVIDEO_AGENT=1`,
 //! binds to 127.0.0.1 only, and requires a bearer token that is generated per
-//! run and written to `<temp>/nabivideo/agent.json` — a local file readable by
+//! run and written to `<temp>/auravideo/agent.json` — a local file readable by
 //! the user who launched the app. Without the env var no socket is opened at
 //! all.
 
@@ -61,10 +61,22 @@ fn json_response(status: u16, body: serde_json::Value) -> tiny_http::Response<st
         )
 }
 
-/// Start the bridge if `NABIVIDEO_AGENT=1`. Returns without doing anything
+/// Read an env var, falling back to its pre-rename `NABIVIDEO_*` spelling.
+/// The editor was renamed NabiVideo -> AuraVideo; scripts on the other machine
+/// still export the old names, and silently ignoring them would look like the
+/// bridge is broken.
+fn env_var(name: &str) -> Option<String> {
+    let legacy = name.replace("AURAVIDEO_", "NABIVIDEO_");
+    std::env::var(name)
+        .or_else(|_| std::env::var(&legacy))
+        .ok()
+        .filter(|v| !v.trim().is_empty())
+}
+
+/// Start the bridge if `AURAVIDEO_AGENT=1`. Returns without doing anything
 /// otherwise, so a normal launch never opens a port.
 pub fn start(app: &AppHandle) {
-    if std::env::var("NABIVIDEO_AGENT").unwrap_or_default() != "1" {
+    if env_var("AURAVIDEO_AGENT").unwrap_or_default() != "1" {
         return;
     }
 
@@ -91,14 +103,14 @@ pub fn start(app: &AppHandle) {
         format!("{n:x}{:x}", std::process::id())
     };
 
-    // Where the handshake goes. `NABIVIDEO_AGENT_FILE` overrides the default
+    // Where the handshake goes. `AURAVIDEO_AGENT_FILE` overrides the default
     // so two app instances can be driven at once — without it the second one
     // to start silently steals the first one's file, and whoever reads it next
     // ends up talking to the wrong window. That happens whenever two agents
     // work on this repo at the same time.
-    let handshake_path = match std::env::var("NABIVIDEO_AGENT_FILE") {
-        Ok(p) if !p.trim().is_empty() => Some(std::path::PathBuf::from(p)),
-        _ => app.path().temp_dir().ok().map(|d| d.join("nabivideo").join("agent.json")),
+    let handshake_path = match env_var("AURAVIDEO_AGENT_FILE") {
+        Some(p) => Some(std::path::PathBuf::from(p)),
+        None => app.path().temp_dir().ok().map(|d| d.join("auravideo").join("agent.json")),
     };
     if let Some(path) = handshake_path {
         if let Some(dir) = path.parent() {

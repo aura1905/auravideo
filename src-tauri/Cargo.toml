@@ -1,7 +1,7 @@
 [package]
-name = "nabivideo"
+name = "auravideo"
 version = "0.1.0"
-description = "NabiVideo — desktop video editor"
+description = "AuraVideo — desktop video editor"
 authors = ["aura1905"]
 license = ""
 repository = "https://github.com/aura1905/auravideo"

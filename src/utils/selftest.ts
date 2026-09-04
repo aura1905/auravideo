@@ -5,7 +5,7 @@
  * names, argument casing, event payload shape, fs permissions, working
  * directory) can only be exercised inside the real app. This runs the whole
  * native export path end-to-end on a generated clip and writes the outcome to
- * `<temp>/nabivideo/selftest.json`, so a build can be verified without driving
+ * `<temp>/auravideo/selftest.json`, so a build can be verified without driving
  * the GUI.
  *
  * Gated behind `VITE_SELFTEST=1` at build time — it is never in a normal build.

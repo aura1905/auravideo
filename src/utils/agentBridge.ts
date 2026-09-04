@@ -7,7 +7,7 @@
  * goes back via the `agent_reply` command.
  *
  * Only active in the desktop build, and only when the Rust side actually opened
- * the bridge (which requires NABIVIDEO_AGENT=1).
+ * the bridge (which requires AURAVIDEO_AGENT=1).
  */
 import { useEditor, newClipId, projectDuration, clipDisplayDur } from '../state/editorStore';
 import type { BeatGrid, BlendMode, Clip, FillMode, GeneratorSpec, PulseEnvelope, Subtitle } from '../types';
@@ -386,6 +386,25 @@ const handlers: Record<string, (a: Args) => Promise<any> | any> = {
     };
     const res = await assembleMusicBackdrop(opts);
     return res;
+  },
+
+  /**
+   * Add a video or audio track. Motion-graphics intros are built from several
+   * independently animated layers, and each layer needs its own track — the
+   * three default video tracks run out immediately once a background, a
+   * watermark and two or three logo layers overlap in time.
+   */
+  'track.add': (a: Args) => {
+    const kind = a.kind === 'audio' ? 'audio' : 'video';
+    const before = new Set(useEditor.getState().tracks.map((t) => t.id));
+    useEditor.getState().addTrack(kind);
+    const s = useEditor.getState();
+    const fresh = s.tracks.find((t) => !before.has(t.id));
+    if (!fresh) throw new Error('트랙 추가 실패');
+    if (typeof a.name === 'string') {
+      useEditor.setState({ tracks: s.tracks.map((t) => (t.id === fresh.id ? { ...t, name: a.name } : t)) });
+    }
+    return { id: fresh.id, kind, tracks: useEditor.getState().tracks.map((t) => ({ id: t.id, kind: t.kind, name: t.name })) };
   },
 
   'playhead.set': (a: Args) => {

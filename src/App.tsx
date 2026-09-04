@@ -62,7 +62,7 @@ export function App() {
   return (
     <div className="app">
       <header className="topbar">
-        <div className="brand">NabiVideo</div>
+        <div className="brand">AuraVideo</div>
         <div className="topbar-controls">
           <label>
             해상도

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Minimal client for the NabiVideo agent bridge.
+"""Minimal client for the AuraVideo agent bridge.
 
 The bridge speaks JSON over loopback HTTP with a per-run token. Bodies must be
 UTF-8: Korean subtitle text pushed through a shell's `curl -d` arrives mangled
@@ -11,7 +11,7 @@ a shell one-liner.
     python scripts/agent_client.py generator.add '{"type":"solid","color":"#ffffff"}'
     python scripts/agent_client.py screenshot '{"time":1.5,"path":"C:/tmp/f.png"}'
 
-Use `--file PATH` (or NABIVIDEO_AGENT_FILE) when the app was started with its
+Use `--file PATH` (or AURAVIDEO_AGENT_FILE) when the app was started with its
 own handshake file, which is how two instances stay out of each other's way.
 """
 import argparse
@@ -21,10 +21,16 @@ import sys
 import urllib.error
 import urllib.request
 
-DEFAULT_HANDSHAKE = os.path.join(os.environ.get("TEMP", "/tmp"), "nabivideo", "agent.json")
+_TEMP = os.environ.get("TEMP", "/tmp")
+DEFAULT_HANDSHAKE = os.path.join(_TEMP, "auravideo", "agent.json")
+# Pre-rename spelling (NabiVideo). An app build from before the rename still
+# writes here, so fall back rather than reporting "no handshake".
+LEGACY_HANDSHAKE = os.path.join(_TEMP, "nabivideo", "agent.json")
 
 
 def load_handshake(path: str) -> dict:
+    if path == DEFAULT_HANDSHAKE and not os.path.exists(path) and os.path.exists(LEGACY_HANDSHAKE):
+        path = LEGACY_HANDSHAKE
     with open(path, "r", encoding="utf-8") as fh:
         return json.load(fh)
 
@@ -51,7 +57,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("cmd")
     ap.add_argument("args", nargs="?", default="{}", help="JSON object")
-    ap.add_argument("--file", default=os.environ.get("NABIVIDEO_AGENT_FILE") or DEFAULT_HANDSHAKE)
+    ap.add_argument("--file", default=os.environ.get("AURAVIDEO_AGENT_FILE") or os.environ.get("NABIVIDEO_AGENT_FILE") or DEFAULT_HANDSHAKE)
     ap.add_argument("--timeout", type=float, default=120.0)
     ns = ap.parse_args()
 

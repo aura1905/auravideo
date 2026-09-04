@@ -42,15 +42,19 @@ pub struct FfmpegInfo {
 }
 
 /// Candidate locations for the ffmpeg binary, most specific first:
-/// 1. `NABIVIDEO_FFMPEG` env override,
+/// 1. `AURAVIDEO_FFMPEG` env override,
 /// 2. a binary bundled next to our executable (sidecar),
 /// 3. whatever is on `PATH`.
 fn candidates(name: &str) -> Vec<PathBuf> {
     let mut out = Vec::new();
-    let key = if name == "ffprobe" { "NABIVIDEO_FFPROBE" } else { "NABIVIDEO_FFMPEG" };
-    if let Ok(p) = std::env::var(key) {
-        if !p.trim().is_empty() {
-            out.push(PathBuf::from(p));
+    // Both spellings: the app was renamed NabiVideo -> AuraVideo, and machines
+    // configured before the rename still set the `NABIVIDEO_*` names.
+    let key = if name == "ffprobe" { "AURAVIDEO_FFPROBE" } else { "AURAVIDEO_FFMPEG" };
+    for k in [key.to_string(), key.replace("AURAVIDEO_", "NABIVIDEO_")] {
+        if let Ok(p) = std::env::var(&k) {
+            if !p.trim().is_empty() {
+                out.push(PathBuf::from(p));
+            }
         }
     }
     if let Ok(exe) = std::env::current_exe() {

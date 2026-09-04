@@ -15,7 +15,7 @@ fn root(app: &tauri::AppHandle) -> Result<PathBuf, String> {
         .path()
         .temp_dir()
         .map_err(|e| format!("임시 디렉터리를 찾지 못했습니다: {e}"))?
-        .join("nabivideo");
+        .join("auravideo");
     fs::create_dir_all(&dir).map_err(|e| format!("임시 디렉터리 생성 실패: {e}"))?;
     Ok(dir)
 }

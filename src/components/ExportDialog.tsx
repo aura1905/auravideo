@@ -118,7 +118,7 @@ export function ExportDialog({ onClose }: { onClose: () => void }) {
     let outPath: string | null = null;
     if (native) {
       try {
-        outPath = await saveDialog('nabivideo-export.mp4');
+        outPath = await saveDialog('auravideo-export.mp4');
       } catch (e: any) {
         setError(`저장 위치 선택 실패: ${e?.message ?? e}`);
         return;
@@ -284,7 +284,7 @@ export function ExportDialog({ onClose }: { onClose: () => void }) {
                     <p className="error">
                       FFmpeg를 찾지 못했습니다: {ffError}
                       <br />
-                      ffmpeg를 설치하고 PATH에 추가하거나, NABIVIDEO_FFMPEG 환경변수로 경로를 지정하세요.
+                      ffmpeg를 설치하고 PATH에 추가하거나, AURAVIDEO_FFMPEG 환경변수로 경로를 지정하세요.
                     </p>
                   )}
                 </div>
@@ -319,7 +319,7 @@ export function ExportDialog({ onClose }: { onClose: () => void }) {
             <>
               <p>완료되었습니다.</p>
               <video src={doneUrl} controls style={{ width: '100%', maxHeight: 360 }} />
-              <a className="download-btn" href={doneUrl} download="nabivideo-export.mp4">
+              <a className="download-btn" href={doneUrl} download="auravideo-export.mp4">
                 다운로드
               </a>
             </>

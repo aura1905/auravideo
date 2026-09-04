@@ -1,6 +1,6 @@
 {
-  "name": "NabiVideo",
-  "short_name": "NabiVideo",
+  "name": "AuraVideo",
+  "short_name": "AuraVideo",
   "description": "Browser-based multi-track video editor",
   "start_url": "./",
   "display": "standalone",

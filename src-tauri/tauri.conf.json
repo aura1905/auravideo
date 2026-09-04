@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "NabiVideo",
+  "productName": "AuraVideo",
   "version": "0.1.0",
-  "identifier": "io.github.aura1905.nabivideo",
+  "identifier": "io.github.aura1905.auravideo",
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:5173",
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "NabiVideo",
+        "title": "AuraVideo",
         "width": 1600,
         "height": 950,
         "minWidth": 1100,
