@@ -16,9 +16,8 @@
   "sec": "hook",
   "text": "Seven hundred and seventy megabytes of it is a file they forgot to delete. And there are three people on this team.",
   "vis": {
-   "type": "video",
-   "file": "trailer_main.mp4",
-   "in": 17.0
+   "type": "image",
+   "file": "ss07.jpg"
   },
   "dur": 6.426,
   "wav": "episodes/06-expedition-into-darkness/tts/02.wav"
@@ -274,7 +273,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 34.0
+   "in": 17.0
   },
   "dur": 5.172,
   "wav": "episodes/06-expedition-into-darkness/tts/25.wav"
@@ -352,7 +351,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 35.0
+   "in": 17.0
   },
   "dur": 4.023,
   "wav": "episodes/06-expedition-into-darkness/tts/32.wav"
@@ -373,9 +372,8 @@
   "sec": "score",
   "text": "That's my read of it from the outside. If you made this and I got something wrong, say so in the comments and I'll pin the correction.",
   "vis": {
-   "type": "video",
-   "file": "trailer_main.mp4",
-   "in": 17.0
+   "type": "image",
+   "file": "ss03.jpg"
   },
   "dur": 6.374,
   "wav": "episodes/06-expedition-into-darkness/tts/34.wav"

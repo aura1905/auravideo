@@ -275,6 +275,32 @@ def main():
         f = f'{SFX_DIR}/{n}.wav'
         C.append({'track': 'a3', 'file': f, 'start': round(tt, 3), 'in': 0, 'out': round(dur(f), 3), 'volume': v})
 
+    # --- close gaps on the background track
+    # Nothing else is behind BG, so a gap there renders as black. Every episode had one
+    # after the spec sheet, where the card's backdrop ended before the next line's visual
+    # began: 0.24 s in episode 04, 0.87 s in 06, 2.92 s in 07 and 4.64 s in 05. Extend
+    # the earlier clip over the gap, as far as its source actually has material.
+    bgs = sorted([c for c in C if c['track'] == BG], key=lambda c: c['start'])
+    closed = []
+    for a_, b_ in zip(bgs, bgs[1:]):
+        end = a_['start'] + (a_['out'] - a_['in'])
+        gap = b_['start'] - end
+        if gap <= 0.02:
+            continue
+        try:
+            avail = vdur(a_['file']) - a_['in']
+        except Exception:
+            avail = None
+        want = (a_['out'] - a_['in']) + gap + 0.1
+        if avail is not None and want > avail:
+            want = avail
+        if want > (a_['out'] - a_['in']) + 0.02:
+            a_['out'] = round(a_['in'] + want, 3)
+            closed.append((round(end, 2), round(gap, 2)))
+    if closed:
+        print(f'  closed {len(closed)} background gap(s): '
+              + ', '.join(f'{g}s at {t}s' for t, g in closed))
+
     plan['total'] = round(total, 3)
     json.dump(plan, open(a.out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print(f"plan: {CW}x{CH}, total {plan['total']}s, clips {len(C)}, subs {len(S)}, score at {score_t0}")

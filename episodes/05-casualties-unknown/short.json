@@ -4,8 +4,9 @@
   "sec": "hook",
   "text": "Somebody played this free demo for two hundred and seventy five hours.",
   "vis": {
-   "type": "image",
-   "file": "ss01.jpg"
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 45.0
   }
  },
  {
@@ -71,7 +72,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 78
+   "in": 59.0
   }
  }
 ]
