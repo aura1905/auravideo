@@ -40,9 +40,15 @@ python scripts/pipeline/steam_fetch.py --demo <데모 appid> --out episodes/<slu
    `steamdb.info/app/<demo앱>/depots/` → depot id → `steamdb.info/depot/<depotid>/`
    → 표 아래 페이지 크기를 `All`로 바꾸면 전체 파일 목록(이름·확장자·크기)이 나온다.
    **SteamDB는 페이지 안에서 `fetch()`도 차단한다** — 탭을 직접 이동해야 하고, 추출은 렌더된 DOM에서 한다.
-3. 읽어내는 것: 엔진과 렌더 파이프라인, 스크립팅 백엔드(Mono/IL2CPP), 서드파티 패키지 이름(`*.dll`),
+3. **IL2CPP 빌드에서도 패키지 이름이 새어 나온다.** `GameAssembly.dll` 하나로 뭉쳐도
+   `<게임>_Data/il2cpp_data/Resources/<어셈블리>.dll-resources.dat` 파일명에 원래 관리
+   어셈블리 이름이 남는다(07화 Guildrun에서 24개 확인: `R3`, `ZLinq`, `NLog`, `Sentry.*`,
+   `Mono.Data.Sqlite`, `Coffee.SoftMaskForUGUI` …).
+   **단, 임베디드 리소스를 가진 어셈블리만 남는다** — 없다고 해서 패키지를 안 썼다는 뜻은
+   아니다(06화 Expedition은 BCL 3개뿐이었다). "보이는 것"과 "전부"를 구분해서 말한다.
+4. 읽어내는 것: 엔진과 렌더 파이프라인, 스크립팅 백엔드(Mono/IL2CPP), 서드파티 패키지 이름(`*.dll`),
    자체 어셈블리, 씬 개수와 크기 분포, Addressables 그룹 이름, 오디오 뱅크, 그리고 `*_DoNotShip` 같은 흔적.
-4. 결과는 `episodes/NN-slug/teardown.md`에 **근거(파일명)와 해석을 분리해서** 적는다. 확인 안 된 것은
+5. 결과는 `episodes/NN-slug/teardown.md`에 **근거(파일명)와 해석을 분리해서** 적는다. 확인 안 된 것은
    "not verified / do not assert" 절에 따로 모은다(팀 규모, AI 사용 등).
 
 **선**: 파일 목록·크기·메타데이터 분석까지만. 에셋 재배포, 코드 디컴파일, 미공개 콘텐츠 노출은 하지 않는다.

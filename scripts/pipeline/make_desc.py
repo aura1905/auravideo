@@ -95,6 +95,10 @@ def main():
     L.append('unpacked, decompiled, or redistributed). It is an outside reading, not a statement')
     L.append(f'from the developer. All game footage and images belong to {ep.get("developer", "the developer")}.')
     L.append('')
+    # The one-line credential. It is what separates this from an outsider's guess, so it
+    # rides on every video — but it stays one line, never a biography.
+    L.append("Made by someone who's been building games for over twenty years.")
+    L.append('')
     L.append('#indiedev #gamedev #steamdemo')
 
     open(a.out, 'w', encoding='utf-8', newline='\n').write('\n'.join(L) + '\n')
