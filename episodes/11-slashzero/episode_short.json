@@ -22,14 +22,34 @@
  "tts_dir": "tts_short",
  "visual_scale": 1.5,
  "score_len": 9.5,
- "labels": ["", "", "", ""],
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
  "score_line_id": "s11",
  "specs": [
-  ["ENGINE", "Unreal Engine 5"],
-  ["THE BUILD", "14.22 GB"],
-  ["THE TWIN", "103 videos, twice"],
-  ["IN THE BOX", "2 Chromiums"],
-  ["THE CATCH", "a kernel driver"]
+  [
+   "ENGINE",
+   "Unreal Engine 5"
+  ],
+  [
+   "THE BUILD",
+   "14.22 GB"
+  ],
+  [
+   "THE TWIN",
+   "103 videos, twice"
+  ],
+  [
+   "IN THE BOX",
+   "2 Chromiums"
+  ],
+  [
+   "THE CATCH",
+   "a kernel driver"
+  ]
  ],
  "verdict": "WORTH A DIP",
  "opening_stamp": {
@@ -39,7 +59,7 @@
   "size2": 60
  },
  "youtube": {
-  "title": "A 14 GB Steam demo that ships 103 videos twice, two Chromiums and a kernel driver #shorts",
+  "title": "SlashZero: a 14 GB Steam demo that ships 103 videos twice, and a kernel driver #shorts",
   "tags": "shorts,SlashZero,steam demo,unreal engine 5,streetlamp studio,skystone games,game teardown,demo dip,roguelike,anime game",
   "privacy": "private",
   "lang": "en"

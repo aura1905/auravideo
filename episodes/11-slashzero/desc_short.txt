@@ -2,8 +2,7 @@ SlashZero — This Steam demo is fourteen gigabytes. For a side-scrolling action
 
 ▶ Steam demo (free): https://store.steampowered.com/app/5099550/
 ▶ The full game: https://store.steampowered.com/app/4061170/
-▶ Full teardown: https://youtu.be/PENDING
-▶ Full teardown: https://youtu.be/PENDING
+▶ Full teardown: https://youtu.be/AwKrFFDmwo0
 
 ── How they made it ──
 Engine     : Unreal Engine 5
