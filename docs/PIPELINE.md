@@ -162,6 +162,25 @@ python scripts/pipeline/check_render.py episodes/<slug>/final.mp4 episodes/<slug
   다른 세션이 동시에 렌더하면 27 GB 머신이 스왑에 들어가 export가 멈춘다.
   세션마다 `AURAVIDEO_AGENT_FILE`을 다르게 줘서 앱 인스턴스를 분리한다.
 - `agent_client.py`의 HTTP 대기가 먼저 끝나도 앱 안의 ffmpeg는 계속 돈다. 파일이 `ffprobe`로 열릴 때까지 기다린다.
+### 트레일러는 스팀보다 퍼블리셔 공식 유튜브가 훨씬 낫다 (2026-09-05)
+
+스팀 HLS의 최고 변형은 **1080p / 5.8 Mbps**뿐이고, 60fps 트레일러라면 프레임당 비트가 절반이라
+전투 장면이 뭉개진다. FF Resonance 공식 유튜브에는 같은 트레일러가 **1440p60 10.5 Mbps,
+4K60 23 Mbps**로 올라와 있다(사용자 승인, "유튜브 공식 트레일러 써도 무방해").
+
+```
+python -m yt_dlp -F <url>                                  # 변형 확인
+python -m yt_dlp -f "308+251" --merge-output-format mkv -o yt.mkv <url>   # 1440p60 + opus
+ffmpeg -i yt.mkv -vf "scale=1920:1080:flags=lanczos,fps=30" -crf 15 -preset medium trailer_yt.mp4
+```
+
+1440p를 1080p로 **내려서** 쓰는 게 1080p 소스보다 선명하다. 퍼블리셔 본인의 홍보 자산에만
+쓴다 — 남의 플레이 영상은 쓰지 않는다([[feedback-trailer-first-shorts-paired]]).
+
+**화면을 확대해 화질을 깎지 말 것.** 트레일러에 자막이 구워져 있으면 `episode.json`의
+`sub_mask`로 아래쪽에 어두운 띠를 덮는다. 10화에서 1.18배 확대로 가리려다 픽셀아트가
+뭉개졌고 사용자가 바로 알아챘다.
+
 - **하드웨어 인코더는 도움이 안 된다(측정, 2026-09-05).** 76초 쇼츠를 `h264_amf`로 돌려 4분 14초 —
   `libx264`와 같다. 병목은 인코딩이 아니라 입력 30개를 동시에 디코드·스케일하는 필터 그래프다.
   한 편 20~25분은 이 노트북에서의 정상값이고, 줄이는 방법은 **재렌더를 없애는 것**이다:

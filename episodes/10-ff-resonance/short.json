@@ -5,8 +5,8 @@
   "text": "Four thousand four hundred people are in this Steam demo right now. Two days after it went up.",
   "vis": {
    "type": "video",
-   "file": "trailer_main.mp4",
-   "in": 16.0
+   "file": "trailer_yt.mp4",
+   "in": 22.0
   }
  },
  {
@@ -23,8 +23,8 @@
   "beat": 7.0,
   "vis": {
    "type": "video",
-   "file": "trailer_main.mp4",
-   "in": 24.0
+   "file": "trailer_yt.mp4",
+   "in": 22.0
   }
  },
  {
@@ -33,8 +33,8 @@
   "text": "Here's what it is. FINAL FANTASY RESONANCE, the first HD-2D Final Fantasy, from the Octopath Traveler team and a Tokyo co-developer called LANCARSE. The demo is the whole of chapter one.",
   "vis": {
    "type": "video",
-   "file": "trailer_main.mp4",
-   "in": 19.0
+   "file": "trailer_yt.mp4",
+   "in": 25.0
   }
  },
  {
@@ -78,8 +78,8 @@
   "text": "Reviews are off until launch. Four thousand four hundred playing at once is the only number there is.",
   "vis": {
    "type": "video",
-   "file": "trailer_main.mp4",
-   "in": 22.0
+   "file": "trailer_yt.mp4",
+   "in": 10.0
   }
  },
  {
@@ -88,8 +88,8 @@
   "text": "Worth a dip. A full chapter, free, gone when the game ships. Full teardown on the channel.",
   "vis": {
    "type": "video",
-   "file": "trailer_main.mp4",
-   "in": 25.0
+   "file": "trailer_yt.mp4",
+   "in": 62.0
   }
  }
 ]

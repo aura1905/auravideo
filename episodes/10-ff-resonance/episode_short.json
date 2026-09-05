@@ -5,7 +5,7 @@
  "developer": "Square Enix / LANCARSE",
  "workdir": "episodes/10-ff-resonance",
  "bgm": {
-  "file": "trailer_main.mp4",
+  "file": "trailer_yt.mp4",
   "volume": 0.07
  },
  "narration_volume": 1.6,
@@ -20,7 +20,7 @@
  },
  "layer_prefix": "v_",
  "tts_dir": "tts_short",
- "visual_scale": 1.95,
+ "visual_scale": 1.5,
  "score_len": 9.5,
  "labels": [
   "",

@@ -6,10 +6,10 @@
  "workdir": "episodes/10-ff-resonance",
  "script_timed": "episodes/10-ff-resonance/script_tts_timed.json",
  "intro_bg": {
-  "file": "trailer_main.mp4",
-  "in": 30.0,
-  "out": 33.6,
-  "scale": 1.2
+  "file": "trailer_yt.mp4",
+  "in": 26.0,
+  "out": 29.6,
+  "scale": 1.0
  },
  "labels": [
   "26 files / 5.72 GB",
@@ -45,7 +45,7 @@
  ],
  "verdict": "WORTH A DIP",
  "bgm": {
-  "file": "trailer_main.mp4",
+  "file": "trailer_yt.mp4",
   "volume": 0.07
  },
  "narration_volume": 1.6,
@@ -123,5 +123,5 @@
   "privacy": "private",
   "lang": "en"
  },
- "visual_scale": 1.18
+ "visual_scale": 1.0
 }
