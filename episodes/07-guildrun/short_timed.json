@@ -107,7 +107,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 34.0
+   "in": 0.0
   },
   "dur": 4.389,
   "wav": "episodes/07-guildrun/tts_short/s9.wav"
