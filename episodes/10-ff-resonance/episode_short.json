@@ -20,7 +20,7 @@
  },
  "layer_prefix": "v_",
  "tts_dir": "tts_short",
- "visual_scale": 1.95,
+ "visual_scale": 2.08,
  "score_len": 9.5,
  "labels": [
   "",

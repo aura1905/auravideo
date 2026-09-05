@@ -9,7 +9,7 @@
   "file": "trailer_main.mp4",
   "in": 20.0,
   "out": 23.6,
-  "scale": 1.1
+  "scale": 1.2
  },
  "labels": [
   "26 files / 5.72 GB",
@@ -122,5 +122,6 @@
   "tags": "Final Fantasy Resonance,FF Resonance,steam demo,unreal engine 5,square enix,team asano,lancarse,hd-2d,octopath,onnx,directml,game teardown,how games are made,demo dip,jrpg",
   "privacy": "private",
   "lang": "en"
- }
+ },
+ "visual_scale": 1.18
 }
