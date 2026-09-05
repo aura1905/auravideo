@@ -404,6 +404,36 @@
  ],
  "subs": [
   {
+   "x": 0,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.0,
+   "bgPadding": 0,
+   "outline": 10,
+   "color": "#ffffff",
+   "fadeIn": 0.0,
+   "fadeOut": 0.35,
+   "start": 0.0,
+   "duration": 1.4,
+   "text": "Expedition: Into Darkness",
+   "y": -560,
+   "fontSize": 92
+  },
+  {
+   "x": 0,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.0,
+   "bgPadding": 0,
+   "outline": 10,
+   "color": "#19c6b7",
+   "fadeIn": 0.0,
+   "fadeOut": 0.35,
+   "start": 0.0,
+   "duration": 1.4,
+   "text": "16.9 GB. 3 DEVS.",
+   "y": -420,
+   "fontSize": 70
+  },
+  {
    "text": "This Steam demo is sixteen\npoint nine gigabytes.\nThree people made it.",
    "start": 0.0,
    "duration": 4.121,

@@ -31,3 +31,5 @@
 !*/short_timed.json
 !*/episode_short.json
 !*/desc_short.txt
+# 9:16 thumbnail for the Short (make_thumbnail.py --vertical)
+!*/thumb_short.jpg

@@ -1,4 +1,9 @@
-"""YouTube thumbnail for the Demo Dip series (1280x720, < 2 MB).
+"""YouTube thumbnail for the Demo Dip series (1280x720, < 2 MB; --vertical for 1080x1920).
+
+Shorts: YouTube lets a Short's thumbnail be picked only from a frame (mobile app), and
+whether thumbnails.set takes a custom image on a Short is not documented -- so the
+vertical thumbnail is ALSO baked into the Short's first second by build_plan's
+`opening_stamp`, which makes the first frame read as a thumbnail either way.
 
     python scripts/motion/make_thumbnail.py --bg ss00.jpg --out thumb.jpg         --line1 "Pocket Cultivation" --line2 "1 DEV. 4 MONTHS." --tag "SOLO DEV / AI ART"
 
@@ -66,7 +71,11 @@ def main():
     ap.add_argument('--focus', default='center', choices=['center', 'left', 'right'])
     ap.add_argument('--text-side', default='left', choices=['left', 'right'])
     ap.add_argument('--title-size', type=int, default=150); ap.add_argument('--hook-size', type=int, default=92)
+    ap.add_argument('--vertical', action='store_true', help='1080x1920 for a Short')
     a = ap.parse_args()
+    global W, H
+    if a.vertical:
+        W, H = 1080, 1920
 
     bg = Image.open(a.bg).convert('RGB')
     s = max(W / bg.width, H / bg.height); bg = bg.resize((int(bg.width * s) + 1, int(bg.height * s) + 1), Image.LANCZOS)
@@ -74,17 +83,24 @@ def main():
     bg = bg.crop((ox, (bg.height - H) // 2, ox + W, (bg.height - H) // 2 + H)).convert('RGBA')
     # gentle vignette on the text side only, so the art stays bright
     grad = Image.new('L', (W, H), 0); gd = ImageDraw.Draw(grad)
-    for x in range(W):
-        f = (1 - x / W) if a.text_side == 'left' else x / W
-        gd.line((x, 0, x, H), fill=int(max(0, f - 0.35) / 0.65 * 140))
+    if a.vertical:
+        # darken the band the text sits in (upper-middle), leave the bottom for the art
+        for yy in range(H):
+            f = 1 - abs((yy / H) - 0.36) / 0.36
+            gd.line((0, yy, W, yy), fill=int(max(0, f - 0.15) / 0.85 * 150))
+    else:
+        for x in range(W):
+            f = (1 - x / W) if a.text_side == 'left' else x / W
+            gd.line((x, 0, x, H), fill=int(max(0, f - 0.35) / 0.65 * 140))
     dark = Image.new('RGBA', (W, H), (4, 10, 28, 255)); dark.putalpha(grad); bg.alpha_composite(dark)
 
     x0 = 40 if a.text_side == 'left' else None
-    y = 60
+    # Shorts UI covers the right ~14% and bottom ~16%; start the text block at 22% down
+    y = int(H * 0.22) if a.vertical else 60
     if a.tag:
         t = outlined_text(a.tag, 34, TEAL, outline=6, shadow=(4, 5), label=True)
         bg.alpha_composite(t, (x0 if x0 is not None else W - t.width - 40, y)); y += 78
-    usable = W - 80
+    usable = W - 80 - (int(W * 0.14) if a.vertical else 0)
     l1 = outlined_text(a.line1, fit_size(a.line1, a.title_size, usable), WHITE, outline=14)
     bg.alpha_composite(l1, (x0 if x0 is not None else W - l1.width - 40, y)); y += int(l1.height * 0.86)
     if a.line2:
@@ -92,7 +108,7 @@ def main():
         bg.alpha_composite(l2, (x0 if x0 is not None else W - l2.width - 40, y))
     badge = Image.open(a.badge or BADGE).convert('RGBA'); bs = 190 / badge.height
     badge = badge.resize((int(badge.width * bs), 190), Image.LANCZOS)
-    bg.alpha_composite(badge, (36, H - badge.height - 30))
+    bg.alpha_composite(badge, (36, H - badge.height - (int(H * 0.16) + 30 if a.vertical else 30)))
     bg.convert('RGB').save(a.out, quality=90)
     print('saved', a.out)
 

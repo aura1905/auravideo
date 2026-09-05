@@ -57,5 +57,11 @@
   "tags": "shorts,Expedition Into Darkness,steam demo,unity,il2cpp,indie dev,gamedev,game teardown,demo dip",
   "privacy": "private",
   "lang": "en"
+ },
+ "opening_stamp": {
+  "line1": "Expedition: Into Darkness",
+  "line2": "16.9 GB. 3 DEVS.",
+  "size1": 92,
+  "size2": 70
  }
 }

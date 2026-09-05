@@ -178,6 +178,21 @@ def main():
               f"{(segs[0].get('vis') or {}).get('file')}, a still. The cold open holds it "
               f"frozen for {segs[0].get('dur', 0):.1f} s. Use a trailer clip for line 1.")
 
+    # --- opening stamp (Shorts): the first second reads as a thumbnail
+    # YouTube offers no custom thumbnail for a Short, only a frame pick, so the title is
+    # drawn over the hook footage for the first 1.4 s and fades. Same words as the
+    # vertical thumbnail so the two match.
+    stamp = ep.get('opening_stamp')
+    if stamp:
+        base = {'x': 0, 'bgColor': '#0b1a3a', 'bgOpacity': 0.0, 'bgPadding': 0, 'outline': 10,
+                'color': '#ffffff', 'fadeIn': 0.0, 'fadeOut': 0.35, 'start': 0.0,
+                'duration': float(stamp.get('seconds', 1.4))}
+        S.append({**base, 'text': stamp['line1'], 'y': int(stamp.get('y1', -560)),
+                  'fontSize': int(stamp.get('size1', 108))})
+        if stamp.get('line2'):
+            S.append({**base, 'text': stamp['line2'], 'y': int(stamp.get('y2', -420)),
+                      'fontSize': int(stamp.get('size2', 72)), 'color': '#19c6b7'})
+
     # --- narration + visuals
     t = 0.0
     score_t0 = None

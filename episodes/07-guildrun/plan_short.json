@@ -392,6 +392,36 @@
  ],
  "subs": [
   {
+   "x": 0,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.0,
+   "bgPadding": 0,
+   "outline": 10,
+   "color": "#ffffff",
+   "fadeIn": 0.0,
+   "fadeOut": 0.35,
+   "start": 0.0,
+   "duration": 1.4,
+   "text": "Guildrun",
+   "y": -560,
+   "fontSize": 120
+  },
+  {
+   "x": 0,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.0,
+   "bgPadding": 0,
+   "outline": 10,
+   "color": "#19c6b7",
+   "fadeIn": 0.0,
+   "fadeOut": 0.35,
+   "start": 0.0,
+   "duration": 1.4,
+   "text": "11 HOURS. MEDIAN.",
+   "y": -420,
+   "fontSize": 74
+  },
+  {
    "text": "Nobody quit this Steam\ndemo in under ten minutes.\nNot one reviewer.",
    "start": 0.0,
    "duration": 4.591,
