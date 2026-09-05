@@ -81,6 +81,13 @@ python scripts/pipeline/analyze_reviews.py --app <demo앱> --out episodes/<slug>
 ```
 python scripts/pipeline/tts_fish.py --script episodes/<slug>/script.json --out episodes/<slug>/tts
 ```
+- **자막은 원문, 발음은 사전 (영어도 동일).** `script.json`의 `text`는 자막 표기(IL2CPP, SQLite, FMOD, DLL,
+  .txt, asmdef, MCP). 발음은 사람이 쓰지 않는다 —
+  `python scripts/pipeline/pron_ko.py --script script.json --out script_tts.json --dict scripts/pipeline/pron_en.json`
+  이 `text=발음, sub=원문`인 `script_tts.json`을 만들고, TTS·build_plan·make_srt·make_desc는 그 파일을 쓴다
+  (`episode.json`의 `script_timed`를 `script_tts_timed.json`으로). 04~07화 초기본은 발음을 자막에 직접 써서
+  화면과 자막 트랙에 "I L two C P P"가 나갔다(2026-09-05 수정). 오독 위험 토큰은 사전에 추가한다:
+  PvE→"P v E", LINQ→"link", VRoid→"V-roid", HDRP→"H D R P".
 - Fish Audio s2-pro, 영어 채널의 고정 음성은 **"Energetic Male"** (`reference_id 802e3bc2b27e49c2995d23ef70e6ac89`, `tts_fish.py`의 기본값). 한국어 편 01–03은 `--voice 474134178bb549f3b28d6d5d9c811e03`. 기본 음성은 호출마다 목소리가 바뀌므로 절대 쓰지 않는다.
 - 문장별 mp3/wav와 길이가 **`<대본이름>_timed.json`**에 기록된다(`script.json` → `script_timed.json`, `short.json` → `short_timed.json`). 이 길이가 타임라인의 기준이다.
   **주의**: 예전에는 출력 이름이 `script_timed.json`으로 고정이라, 쇼츠를 나레이션하면 롱폼 타이밍 파일을 조용히 덮어썼다(2026-09-04에 실제로 발생). 지금은 대본 파일명에서 따온다. 덮어썼다면 `tts/*.wav` 길이를 ffprobe로 재서 복원할 수 있다 — 재합성할 필요 없다.
