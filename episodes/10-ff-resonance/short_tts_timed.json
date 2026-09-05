@@ -1,0 +1,124 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "Four thousand four hundred people are in this Steam demo right now. Two days after it went up.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 16.0
+  },
+  "sub": "Four thousand four hundred people are in this Steam demo right now. Two days after it went up.",
+  "dur": 5.172,
+  "wav": "episodes/10-ff-resonance/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Zero reviews. And a machine learning runtime inside the build.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Zero reviews. And a machine learning runtime inside the build.",
+  "dur": 4.101,
+  "wav": "episodes/10-ff-resonance/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 7.0,
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 16.0
+  },
+  "dur": 7.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Here's what it is. FINAL FANTASY RESONANCE, the first H D two D Final Fantasy, from the Octopath Traveler team and a Tokyo co-developer called lan-carse. The demo is the whole of chapter one.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 54.0
+  },
+  "sub": "Here's what it is. FINAL FANTASY RESONANCE, the first HD-2D Final Fantasy, from the Octopath Traveler team and a Tokyo co-developer called LANCARSE. The demo is the whole of chapter one.",
+  "dur": 12.173,
+  "wav": "episodes/10-ff-resonance/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "You summon Visions in battle. Classic Final Fantasy characters. Cloud shows up.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "You summon Visions in battle. Classic Final Fantasy characters. Cloud shows up.",
+  "dur": 5.303,
+  "wav": "episodes/10-ff-resonance/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Now the build. Unreal Engine five, and one four hundred and sixty seven megabyte executable with the whole game linked into it.",
+  "vis": {
+   "type": "image",
+   "file": "ev_engine_v.png"
+  },
+  "sub": "Now the build. Unreal Engine 5, and one four hundred and sixty seven megabyte executable with the whole game linked into it.",
+  "dur": 7.811,
+  "wav": "episodes/10-ff-resonance/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "Around it: onyx Runtime and Direct M L. An ML inference runtime, in a pixel-art R P G. What for, the file list doesn't say.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack_v.png"
+  },
+  "sub": "Around it: ONNX Runtime and DirectML. An ML inference runtime, in a pixel-art RPG. What for, the file list doesn't say.",
+  "dur": 10.423,
+  "wav": "episodes/10-ff-resonance/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "made",
+  "text": "And the DirectX twelve debug layer, shipped to players. A three-person team made the same slip three episodes ago. So does Square Enix.",
+  "vis": {
+   "type": "image",
+   "file": "ev_slip_v.png"
+  },
+  "sub": "And the DirectX 12 debug layer, shipped to players. A three-person team made the same slip three episodes ago. So does Square Enix.",
+  "dur": 8.62,
+  "wav": "episodes/10-ff-resonance/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "Reviews are off until launch. Four thousand four hundred playing at once is the only number there is.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 72.0
+  },
+  "sub": "Reviews are off until launch. Four thousand four hundred playing at once is the only number there is.",
+  "dur": 5.355,
+  "wav": "episodes/10-ff-resonance/tts_short/s8.wav"
+ },
+ {
+  "id": "s9",
+  "sec": "score",
+  "text": "Worth a dip. A full chapter, free, gone when the game ships. Full teardown on the channel.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 20.0
+  },
+  "sub": "Worth a dip. A full chapter, free, gone when the game ships. Full teardown on the channel.",
+  "dur": 5.303,
+  "wav": "episodes/10-ff-resonance/tts_short/s9.wav"
+ }
+]

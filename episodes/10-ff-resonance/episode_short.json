@@ -1,0 +1,67 @@
+{
+ "title_en": "FINAL FANTASY RESONANCE",
+ "demo_appid": 4474710,
+ "full_appid": 3259780,
+ "developer": "Square Enix / LANCARSE",
+ "workdir": "episodes/10-ff-resonance",
+ "bgm": {
+  "file": "trailer_main.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/10-ff-resonance/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.95,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s8",
+ "specs": [
+  [
+   "ENGINE",
+   "Unreal Engine 5"
+  ],
+  [
+   "TEAM",
+   "Asano + LANCARSE"
+  ],
+  [
+   "THE EXE",
+   "467 MB"
+  ],
+  [
+   "IN THE BOX",
+   "ONNX + DirectML"
+  ],
+  [
+   "PLAYING NOW",
+   "4,400"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "FF Resonance",
+  "line2": "4,400 PLAYING. 0 REVIEWS.",
+  "size1": 104,
+  "size2": 66
+ },
+ "youtube": {
+  "title": "4,400 people in the FINAL FANTASY RESONANCE demo, zero reviews, and an ML runtime in the build #shorts",
+  "tags": "shorts,Final Fantasy Resonance,steam demo,unreal engine 5,square enix,hd-2d,octopath,game teardown,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ }
+}

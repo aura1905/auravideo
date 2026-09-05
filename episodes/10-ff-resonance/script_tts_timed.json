@@ -1,0 +1,389 @@
+[
+ {
+  "id": "01",
+  "sec": "hook",
+  "text": "Four thousand four hundred people are playing this demo right now. Two days after it went up. That's more than any demo I've taken apart.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 16.0
+  },
+  "sub": "Four thousand four hundred people are playing this demo right now. Two days after it went up. That's more than any demo I've taken apart.",
+  "dur": 7.027,
+  "wav": "episodes/10-ff-resonance/tts/01.wav"
+ },
+ {
+  "id": "02",
+  "sec": "hook",
+  "text": "It's a pixel-art Final Fantasy, and the build has a machine learning runtime inside it.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 54.0
+  },
+  "sub": "It's a pixel-art Final Fantasy, and the build has a machine learning runtime inside it.",
+  "dur": 4.807,
+  "wav": "episodes/10-ff-resonance/tts/02.wav"
+ },
+ {
+  "id": "03",
+  "sec": "intro",
+  "text": "FINAL FANTASY RESONANCE is the first H D two D Final Fantasy. Pixel characters, a three-D world, and the Octopath Traveler look.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 20.0
+  },
+  "sub": "FINAL FANTASY RESONANCE is the first HD-2D Final Fantasy. Pixel characters, a 3D world, and the Octopath Traveler look.",
+  "dur": 8.62,
+  "wav": "episodes/10-ff-resonance/tts/03.wav"
+ },
+ {
+  "id": "04",
+  "sec": "intro",
+  "text": "Which makes sense, because it's the Octopath team. Team Asano at Square Enix, with a Tokyo studio called lan-carse doing the co-development.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 58.0
+  },
+  "sub": "Which makes sense, because it's the Octopath team. Team Asano at Square Enix, with a Tokyo studio called LANCARSE doing the co-development.",
+  "dur": 8.986,
+  "wav": "episodes/10-ff-resonance/tts/04.wav"
+ },
+ {
+  "id": "05",
+  "sec": "intro",
+  "text": "lan-carse is the studio you've played without knowing it. Shin Megami Tensei Strange Journey, Lost Dimension, The Dio-field Chronicle.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 24.0
+  },
+  "sub": "LANCARSE is the studio you've played without knowing it. Shin Megami Tensei Strange Journey, Lost Dimension, The DioField Chronicle.",
+  "dur": 8.333,
+  "wav": "episodes/10-ff-resonance/tts/05.wav"
+ },
+ {
+  "id": "06",
+  "sec": "intro",
+  "text": "The story is season one of Brave Ex-vee-us, the mobile game, rebuilt. And in battle you summon Visions, which are classic Final Fantasy characters. Cloud shows up.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 59.6
+  },
+  "sub": "The story is season one of Brave Exvius, the mobile game, rebuilt. And in battle you summon Visions, which are classic Final Fantasy characters. Cloud shows up.",
+  "dur": 9.953,
+  "wav": "episodes/10-ff-resonance/tts/06.wav"
+ },
+ {
+  "id": "07",
+  "sec": "intro",
+  "text": "The demo is not a slice. The Japanese title says it outright: the whole of chapter one, ahead of release. The full game lands October twenty second.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 28.0
+  },
+  "sub": "The demo is not a slice. The Japanese title says it outright: the whole of chapter one, ahead of release. The full game lands October twenty second.",
+  "dur": 9.639,
+  "wav": "episodes/10-ff-resonance/tts/07.wav"
+ },
+ {
+  "id": "08",
+  "sec": "intro",
+  "text": "There are no reviews to read. Square Enix switches them off before launch. So this one is the build and the people, which is the part I can actually check.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 61.9
+  },
+  "sub": "There are no reviews to read. Square Enix switches them off before launch. So this one is the build and the people, which is the part I can actually check.",
+  "dur": 7.68,
+  "wav": "episodes/10-ff-resonance/tts/08.wav"
+ },
+ {
+  "id": "09",
+  "sec": "made",
+  "text": "Steam publishes the file list for every demo. This one is twenty six files, five point seven gigabytes.",
+  "vis": {
+   "type": "image",
+   "file": "ev_engine.png"
+  },
+  "sub": "Steam publishes the file list for every demo. This one is twenty six files, five point seven gigabytes.",
+  "dur": 6.531,
+  "wav": "episodes/10-ff-resonance/tts/09.wav"
+ },
+ {
+  "id": "10",
+  "sec": "made",
+  "text": "It's Unreal Engine five. You can tell from two file extensions, you-cas and you-tock. That container format only exists in five.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 32.0
+  },
+  "sub": "It's Unreal Engine 5. You can tell from two file extensions, ucas and utoc. That container format only exists in five.",
+  "dur": 7.68,
+  "wav": "episodes/10-ff-resonance/tts/10.wav"
+ },
+ {
+  "id": "11",
+  "sec": "made",
+  "text": "Almost all of the size is content. One container is four point one gigabytes, the other one point one. That's five gigabytes for one chapter.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 61.4
+  },
+  "sub": "Almost all of the size is content. One container is four point one gigabytes, the other one point one. That's five gigabytes for one chapter.",
+  "dur": 8.15,
+  "wav": "episodes/10-ff-resonance/tts/11.wav"
+ },
+ {
+  "id": "12",
+  "sec": "made",
+  "text": "And the executable is four hundred and sixty seven megabytes. That's not a launcher. That's the whole engine and the whole game, linked into one file.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 36.0
+  },
+  "sub": "And the executable is four hundred and sixty seven megabytes. That's not a launcher. That's the whole engine and the whole game, linked into one file.",
+  "dur": 8.568,
+  "wav": "episodes/10-ff-resonance/tts/12.wav"
+ },
+ {
+  "id": "13",
+  "sec": "made",
+  "text": "Only fourteen D L Ls ship, and every one of them is somebody else's. That's a very different shape from the Unity builds on this channel, where the package list is the story.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 59.6
+  },
+  "sub": "Only fourteen DLLs ship, and every one of them is somebody else's. That's a very different shape from the Unity builds on this channel, where the package list is the story.",
+  "dur": 9.953,
+  "wav": "episodes/10-ff-resonance/tts/13.wav"
+ },
+ {
+  "id": "14",
+  "sec": "made",
+  "text": "So with Unreal, the teardown is what's around the engine. And around this one there are a few surprises.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack.png"
+  },
+  "sub": "So with Unreal, the teardown is what's around the engine. And around this one there are a few surprises.",
+  "dur": 5.904,
+  "wav": "episodes/10-ff-resonance/tts/14.wav"
+ },
+ {
+  "id": "15",
+  "sec": "made",
+  "text": "First. onyx Runtime and Direct M L. Together, thirty one megabytes. That's Unreal's neural network plugin. A machine learning inference runtime, in a pixel-art R P G.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 35.3
+  },
+  "sub": "First. ONNX Runtime and DirectML. Together, thirty one megabytes. That's Unreal's neural network plugin. A machine learning inference runtime, in a pixel-art RPG.",
+  "dur": 12.225,
+  "wav": "episodes/10-ff-resonance/tts/15.wav"
+ },
+ {
+  "id": "16",
+  "sec": "made",
+  "text": "What it's for, I can't see from a file list. It could be upscaling. It could be animation. It could be a plugin dependency nobody trimmed. If you know, the comments are right there.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 59.0
+  },
+  "sub": "What it's for, I can't see from a file list. It could be upscaling. It could be animation. It could be a plugin dependency nobody trimmed. If you know, the comments are right there.",
+  "dur": 10.501,
+  "wav": "episodes/10-ff-resonance/tts/16.wav"
+ },
+ {
+  "id": "17",
+  "sec": "made",
+  "text": "Second. NVIDIA Aftermath, for G P U crash reports, and M S quick, which is the transport under H T T P three. So something in here phones home over quick.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 35.3
+  },
+  "sub": "Second. NVIDIA Aftermath, for GPU crash reports, and MsQuic, which is the transport under HTTP/3. So something in here phones home over QUIC.",
+  "dur": 12.278,
+  "wav": "episodes/10-ff-resonance/tts/17.wav"
+ },
+ {
+  "id": "18",
+  "sec": "made",
+  "text": "Third, the audio. X Audio two and Ogg Vorbis. No wise, no F MOD. A Final Fantasy shipping on the engine's stock audio path is worth noting.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 59.3
+  },
+  "sub": "Third, the audio. XAudio2 and Ogg Vorbis. No Wwise, no FMOD. A Final Fantasy shipping on the engine's stock audio path is worth noting.",
+  "dur": 10.24,
+  "wav": "episodes/10-ff-resonance/tts/18.wav"
+ },
+ {
+  "id": "19",
+  "sec": "made",
+  "text": "And then the slip. D three D twelve S D K layers dot D L L. That's the DirectX twelve debug layer. Five and a half megabytes that exist to help a developer find bugs, shipped to players.",
+  "vis": {
+   "type": "image",
+   "file": "ev_slip.png"
+  },
+  "sub": "And then the slip. d3d12SDKLayers.dll. That's the DirectX 12 debug layer. Five and a half megabytes that exist to help a developer find bugs, shipped to players.",
+  "dur": 12.748,
+  "wav": "episodes/10-ff-resonance/tts/19.wav"
+ },
+ {
+  "id": "20",
+  "sec": "made",
+  "text": "Next to it, a five megabyte debug fallback font, and a three byte staging config file. None of it hurts you. All of it says the shipping config wasn't tightened.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 37.3
+  },
+  "sub": "Next to it, a five megabyte debug fallback font, and a three byte staging config file. None of it hurts you. All of it says the shipping config wasn't tightened.",
+  "dur": 10.24,
+  "wav": "episodes/10-ff-resonance/tts/20.wav"
+ },
+ {
+  "id": "21",
+  "sec": "made",
+  "text": "Three episodes ago a three-person team shipped seven hundred megabytes of debug symbols. Different scale, same mistake. It happens at Square Enix too.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 60.1
+  },
+  "sub": "Three episodes ago a three-person team shipped seven hundred megabytes of debug symbols. Different scale, same mistake. It happens at Square Enix too.",
+  "dur": 9.404,
+  "wav": "episodes/10-ff-resonance/tts/21.wav"
+ },
+ {
+  "id": "22",
+  "sec": "made",
+  "text": "One more date. The manifest says this build was made on July third. Two months before the demo went live. That's the buffer a publisher this size keeps.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 38.1
+  },
+  "sub": "One more date. The manifest says this build was made on July third. Two months before the demo went live. That's the buffer a publisher this size keeps.",
+  "dur": 9.456,
+  "wav": "episodes/10-ff-resonance/tts/22.wav"
+ },
+ {
+  "id": "23",
+  "sec": "review",
+  "text": "Reception, then. There are no reviews, so here's the only number there is.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 65.3
+  },
+  "sub": "Reception, then. There are no reviews, so here's the only number there is.",
+  "dur": 4.284,
+  "wav": "episodes/10-ff-resonance/tts/23.wav"
+ },
+ {
+  "id": "24",
+  "sec": "review",
+  "text": "Four thousand four hundred people in the demo at once, on a Saturday, two days in. The previous record on this channel was Guildrun at two thousand eight hundred.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 38.4
+  },
+  "sub": "Four thousand four hundred people in the demo at once, on a Saturday, two days in. The previous record on this channel was Guildrun at two thousand eight hundred.",
+  "dur": 9.117,
+  "wav": "episodes/10-ff-resonance/tts/24.wav"
+ },
+ {
+  "id": "25",
+  "sec": "review",
+  "text": "A whole chapter for free, from the Octopath team, in a series people already trust. The number isn't surprising. It's still big.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 61.7
+  },
+  "sub": "A whole chapter for free, from the Octopath team, in a series people already trust. The number isn't surprising. It's still big.",
+  "dur": 7.811,
+  "wav": "episodes/10-ff-resonance/tts/25.wav"
+ },
+ {
+  "id": "26",
+  "sec": "score",
+  "text": "Here's the whole teardown on one card.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 72.0
+  },
+  "sub": "Here's the whole teardown on one card.",
+  "dur": 1.959,
+  "wav": "episodes/10-ff-resonance/tts/26.wav"
+ },
+ {
+  "id": "27",
+  "sec": "score",
+  "text": "Unreal five. Team Asano and lan-carse. A four hundred and sixty seven megabyte executable, an ML runtime, and the debug layer left in.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 37.8
+  },
+  "sub": "Unreal 5. Team Asano and LANCARSE. A four hundred and sixty seven megabyte executable, an ML runtime, and the debug layer left in.",
+  "dur": 9.77,
+  "wav": "episodes/10-ff-resonance/tts/27.wav"
+ },
+ {
+  "id": "28",
+  "sec": "score",
+  "text": "Worth a dip. It's a full chapter, it's free, and it goes away when the game ships.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 64.1
+  },
+  "sub": "Worth a dip. It's a full chapter, it's free, and it goes away when the game ships.",
+  "dur": 5.46,
+  "wav": "episodes/10-ff-resonance/tts/28.wav"
+ },
+ {
+  "id": "29",
+  "sec": "score",
+  "text": "If you build in Unreal, the thing to take from this is the shipping config. Open your packaged folder and look for S D K layers. If it's there, so is everyone else's.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 38.0
+  },
+  "sub": "If you build in Unreal, the thing to take from this is the shipping config. Open your packaged folder and look for SDKLayers. If it's there, so is everyone else's.",
+  "dur": 9.587,
+  "wav": "episodes/10-ff-resonance/tts/29.wav"
+ },
+ {
+  "id": "30",
+  "sec": "score",
+  "text": "That's my read from the outside. If you worked on this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 59.5
+  },
+  "sub": "That's my read from the outside. If you worked on this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "dur": 10.083,
+  "wav": "episodes/10-ff-resonance/tts/30.wav"
+ }
+]

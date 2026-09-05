@@ -1,0 +1,126 @@
+{
+ "title_en": "FINAL FANTASY RESONANCE",
+ "demo_appid": 4474710,
+ "full_appid": 3259780,
+ "developer": "Square Enix / LANCARSE",
+ "workdir": "episodes/10-ff-resonance",
+ "script_timed": "episodes/10-ff-resonance/script_tts_timed.json",
+ "intro_bg": {
+  "file": "trailer_main.mp4",
+  "in": 20.0,
+  "out": 23.6,
+  "scale": 1.1
+ },
+ "labels": [
+  "26 files / 5.72 GB",
+  "467 MB executable",
+  "ONNX + DirectML",
+  "4,400 in the demo"
+ ],
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 2,
+ "score_line_id": "26",
+ "specs": [
+  [
+   "ENGINE",
+   "Unreal Engine 5"
+  ],
+  [
+   "TEAM",
+   "Team Asano + LANCARSE"
+  ],
+  [
+   "THE EXE",
+   "467 MB, monolithic"
+  ],
+  [
+   "IN THE BOX",
+   "an ML runtime"
+  ],
+  [
+   "THE SLIP",
+   "D3D12 debug layer"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": {
+  "file": "trailer_main.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "thumbnail": {
+  "bg": "ss08.jpg",
+  "line1": "FF Resonance",
+  "line2": "4,400 PLAYING. 0 REVIEWS.",
+  "tag": "UNREAL 5 TEARDOWN",
+  "focus": "right",
+  "text_side": "left"
+ },
+ "chapters": {
+  "hook": "Four thousand people, two days in",
+  "intro": "What it is, and who made it",
+  "made": "Opening the build",
+  "review": "The only number there is",
+  "score": "The spec sheet + verdict"
+ },
+ "stack": [
+  [
+   "Unreal Engine 5",
+   "https://www.unrealengine.com/"
+  ],
+  [
+   "Unreal NNE (Neural Network Engine)",
+   "https://dev.epicgames.com/documentation/en-us/unreal-engine/neural-network-engine-nne-in-unreal-engine"
+  ],
+  [
+   "ONNX Runtime",
+   "https://onnxruntime.ai/"
+  ],
+  [
+   "DirectML",
+   "https://learn.microsoft.com/windows/ai/directml/"
+  ],
+  [
+   "NVIDIA Nsight Aftermath",
+   "https://developer.nvidia.com/nsight-aftermath"
+  ],
+  [
+   "LANCARSE",
+   "https://www.lancarse.co.jp/company_profile/en.php"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/4474710/"
+  ]
+ ],
+ "ledger": {
+  "team": "Square Enix Team Asano + LANCARSE",
+  "engine": "**Unreal Engine 5**",
+  "pipeline": "IoStore (.ucas/.utoc)",
+  "backend": "C++ (467 MiB exe)",
+  "build": "5.72 GiB",
+  "files": 26,
+  "scenes": 0,
+  "third_party": "DLL 14개 (전부 서드파티)",
+  "approach": "대형 퍼블리셔, 1장 통째 데모",
+  "reception": "리뷰 없음 / 접속 4,400",
+  "packages": [
+   "ONNX Runtime",
+   "DirectML",
+   "NVIDIA Aftermath",
+   "MsQuic",
+   "oneTBB",
+   "XAudio2",
+   "Ogg Vorbis",
+   "Steamworks"
+  ],
+  "ai_disclosure": null
+ },
+ "youtube": {
+  "title": "FINAL FANTASY RESONANCE — 4,400 people in the demo, zero reviews, and an ML runtime in the build",
+  "tags": "Final Fantasy Resonance,FF Resonance,steam demo,unreal engine 5,square enix,team asano,lancarse,hd-2d,octopath,onnx,directml,game teardown,how games are made,demo dip,jrpg",
+  "privacy": "private",
+  "lang": "en"
+ }
+}
