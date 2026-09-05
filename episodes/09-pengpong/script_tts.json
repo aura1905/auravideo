@@ -1,0 +1,417 @@
+[
+ {
+  "id": "01",
+  "sec": "hook",
+  "text": "Ninety five dollars. That is every paid tool in this build, added up.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 0.0
+  },
+  "sub": "Ninety five dollars. That is every paid tool in this build, added up."
+ },
+ {
+  "id": "02",
+  "sec": "hook",
+  "text": "Everything else is free or open source. And one file in there was never supposed to ship at all.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 13.0
+  },
+  "sub": "Everything else is free or open source. And one file in there was never supposed to ship at all."
+ },
+ {
+  "id": "03",
+  "sec": "intro",
+  "text": "PengPong is a survivors-like where a penguin with a hockey stick whacks whatever is in front of it. Guns. Pufferfish. Other penguins.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 24.0
+  },
+  "sub": "PengPong is a survivors-like where a penguin with a hockey stick whacks whatever is in front of it. Guns. Pufferfish. Other penguins."
+ },
+ {
+  "id": "04",
+  "sec": "intro",
+  "text": "It's from a Korean studio called SANDY FLOOR, and the full game came out on August twentieth.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "It's from a Korean studio called SANDY FLOOR, and the full game came out on August twentieth."
+ },
+ {
+  "id": "05",
+  "sec": "intro",
+  "text": "The demo sits at eighty six percent, the full game at eighty five. Nearly all of the praise is for the art.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "The demo sits at eighty six percent, the full game at eighty five. Nearly all of the praise is for the art."
+ },
+ {
+  "id": "06",
+  "sec": "intro",
+  "text": "Nineteen thirties rubber-hose cartoon. Cuphead comes up in review after review. That look normally costs a lot of money.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 45.0
+  },
+  "sub": "Nineteen thirties rubber-hose cartoon. Cuphead comes up in review after review. That look normally costs a lot of money."
+ },
+ {
+  "id": "07",
+  "sec": "intro",
+  "text": "So that was my question. What did this team buy, and what did they build.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "So that was my question. What did this team buy, and what did they build."
+ },
+ {
+  "id": "08",
+  "sec": "made",
+  "text": "Steam publishes the list of files a demo installs. PengPong's is two hundred and eighty two files, two point six eight gigabytes.",
+  "vis": {
+   "type": "image",
+   "file": "ev_engine.png"
+  },
+  "sub": "Steam publishes the list of files a demo installs. PengPong's is two hundred and eighty two files, two point six eight gigabytes."
+ },
+ {
+  "id": "09",
+  "sec": "made",
+  "text": "The first clue is a folder name. Mono Bleeding Edge.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "The first clue is a folder name. MonoBleedingEdge."
+ },
+ {
+  "id": "10",
+  "sec": "made",
+  "text": "Unity builds your code one of two ways. I L two C P P turns the C sharp into native code and fuses it into one block. Mono leaves the D L Ls as they are.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 24.6
+  },
+  "sub": "Unity builds your code one of two ways. IL2CPP turns the C# into native code and fuses it into one block. Mono leaves the DLLs as they are."
+ },
+ {
+  "id": "11",
+  "sec": "made",
+  "text": "PengPong is Mono. So everything this team pulled in is sitting there under its own file name.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "PengPong is Mono. So everything this team pulled in is sitting there under its own file name."
+ },
+ {
+  "id": "12",
+  "sec": "made",
+  "text": "Audio is F MOD. Four sound bank files, twenty nine megabytes.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack.png"
+  },
+  "sub": "Audio is FMOD. Four sound bank files, twenty nine megabytes."
+ },
+ {
+  "id": "13",
+  "sec": "made",
+  "text": "Take this one with you. F MOD is free below two hundred thousand dollars a year in revenue. There is no reason an indie can't use commercial audio middleware.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 48.0
+  },
+  "sub": "Take this one with you. FMOD is free below two hundred thousand dollars a year in revenue. There is no reason an indie can't use commercial audio middleware."
+ },
+ {
+  "id": "14",
+  "sec": "made",
+  "text": "The paid items are exactly two. Text Animator, sixty five dollars. Ara Trails, thirty.",
+  "vis": {
+   "type": "image",
+   "file": "ev_paid.png"
+  },
+  "sub": "The paid items are exactly two. Text Animator, sixty five dollars. Ara Trails, thirty."
+ },
+ {
+  "id": "15",
+  "sec": "made",
+  "text": "dot tween, GameAnalytics, UIParticle, NavMeshPlus. All free, or open source.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  },
+  "sub": "DOTween, GameAnalytics, UIParticle, NavMeshPlus. All free, or open source."
+ },
+ {
+  "id": "16",
+  "sec": "made",
+  "text": "So what did they animate that Cuphead look with. Normally that's Spine, and a personal licence for Spine is three hundred and forty nine dollars.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_demo.mp4",
+   "in": 26.0
+  },
+  "sub": "So what did they animate that Cuphead look with. Normally that's Spine, and a personal licence for Spine is three hundred and forty nine dollars."
+ },
+ {
+  "id": "17",
+  "sec": "made",
+  "text": "There is no Spine in this build. There is Unity's own two-D Animation package, and the IK package next to it.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  },
+  "sub": "There is no Spine in this build. There is Unity's own 2D Animation package, and the IK package next to it."
+ },
+ {
+  "id": "18",
+  "sec": "made",
+  "text": "Same idea. You put bones in a drawing and move the bones. And you get it from the Package Manager for nothing.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 3.0
+  },
+  "sub": "Same idea. You put bones in a drawing and move the bones. And you get it from the Package Manager for nothing."
+ },
+ {
+  "id": "19",
+  "sec": "made",
+  "text": "Now the strangest thing in the list. Assembly C sharp D L L is five kilobytes.",
+  "vis": {
+   "type": "image",
+   "file": "ev_asmdef.png"
+  },
+  "sub": "Now the strangest thing in the list. Assembly-CSharp.dll is five kilobytes."
+ },
+ {
+  "id": "20",
+  "sec": "made",
+  "text": "Unless you tell it otherwise, Unity puts all of your game code in that one file. Five kilobytes means the code has been moved out.",
+  "vis": {
+   "type": "image",
+   "file": "ss08.jpg"
+  },
+  "sub": "Unless you tell it otherwise, Unity puts all of your game code in that one file. Five kilobytes means the code has been moved out."
+ },
+ {
+  "id": "21",
+  "sec": "made",
+  "text": "The mechanism is called an Assembly Definition, A S M def for short. One small file in a folder, and that folder compiles to its own D L L.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 25.7
+  },
+  "sub": "The mechanism is called an Assembly Definition, asmdef for short. One small file in a folder, and that folder compiles to its own DLL."
+ },
+ {
+  "id": "22",
+  "sec": "made",
+  "text": "What you get is compile time. Change one line and only that module rebuilds, not the whole project. The bigger the project, the bigger the difference.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "What you get is compile time. Change one line and only that module rebuilds, not the whole project. The bigger the project, the bigger the difference."
+ },
+ {
+  "id": "23",
+  "sec": "made",
+  "text": "Eight modules came out of this, and every one carries the studio's name. SandyToolkit. SandyAudio. SandyPooling. SandySetting. SandyDependency.",
+  "vis": {
+   "type": "image",
+   "file": "ev_sandy.png"
+  },
+  "sub": "Eight modules came out of this, and every one carries the studio's name. SandyToolkit. SandyAudio. SandyPooling. SandySetting. SandyDependency."
+ },
+ {
+  "id": "24",
+  "sec": "made",
+  "text": "Pooling, audio, settings, dependency injection. The things you rewrite for every game. This team carries them to the next project as folders.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 51.0
+  },
+  "sub": "Pooling, audio, settings, dependency injection. The things you rewrite for every game. This team carries them to the next project as folders."
+ },
+ {
+  "id": "25",
+  "sec": "made",
+  "text": "Saves go through S Q Lite. With over three hundred items, that beats one big JSON file.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Saves go through SQLite. With over three hundred items, that beats one big JSON file."
+ },
+ {
+  "id": "26",
+  "sec": "made",
+  "text": "Content is split into seventeen Addressables bundles, five hundred and twenty nine megabytes. A patch only downloads the bundles that changed.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "Content is split into seventeen Addressables bundles, five hundred and twenty nine megabytes. A patch only downloads the bundles that changed."
+ },
+ {
+  "id": "27",
+  "sec": "made",
+  "text": "There's a Localization package too. Eight languages go through it.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_demo.mp4",
+   "in": 29.0
+  },
+  "sub": "There's a Localization package too. Eight languages go through it."
+ },
+ {
+  "id": "28",
+  "sec": "made",
+  "text": "And then two things that should not be in a release build. The first is Unity Recorder, an editor tool for capturing video. Harmless. Somebody forgot to take it out.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "And then two things that should not be in a release build. The first is Unity Recorder, an editor tool for capturing video. Harmless. Somebody forgot to take it out."
+ },
+ {
+  "id": "29",
+  "sec": "made",
+  "text": "The second is M C P for Unity. That's the open source bridge that lets an AI model drive the Unity editor directly.",
+  "vis": {
+   "type": "image",
+   "file": "ev_mcp.png"
+  },
+  "sub": "The second is MCP for Unity. That's the open source bridge that lets an AI model drive the Unity editor directly."
+ },
+ {
+  "id": "30",
+  "sec": "made",
+  "text": "What I can confirm is that the file is in the shipped build. How much they used it, and for what, only the developer knows.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 4.0
+  },
+  "sub": "What I can confirm is that the file is in the shipped build. How much they used it, and for what, only the developer knows."
+ },
+ {
+  "id": "31",
+  "sec": "made",
+  "text": "My guess is it was wired up for development and went out with everything else. If I'm wrong, say so in the comments and I'll pin the correction.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "My guess is it was wired up for development and went out with everything else. If I'm wrong, say so in the comments and I'll pin the correction."
+ },
+ {
+  "id": "32",
+  "sec": "made",
+  "text": "For scale: of the two point six eight gigabytes, art and sound are two point two. All one hundred and ninety five D L Ls together are ninety one megabytes.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "For scale: of the two point six eight gigabytes, art and sound are two point two. All one hundred and ninety five DLLs together are ninety one megabytes."
+ },
+ {
+  "id": "33",
+  "sec": "review",
+  "text": "Now the reviews of the full game, where the complaints land in one place. It launched with three stages.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 13.5
+  },
+  "sub": "Now the reviews of the full game, where the complaints land in one place. It launched with three stages."
+ },
+ {
+  "id": "34",
+  "sec": "review",
+  "text": "Tools outlive the game they were built for. But the hours that went into them came out of this game's content.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  },
+  "sub": "Tools outlive the game they were built for. But the hours that went into them came out of this game's content."
+ },
+ {
+  "id": "35",
+  "sec": "review",
+  "text": "Eight frameworks and three stages. Those two numbers come from the same team.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  },
+  "sub": "Eight frameworks and three stages. Those two numbers come from the same team."
+ },
+ {
+  "id": "36",
+  "sec": "score",
+  "text": "Here's the whole teardown on one card.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "Here's the whole teardown on one card."
+ },
+ {
+  "id": "37",
+  "sec": "score",
+  "text": "Unity, Mono. Ninety five dollars of paid assets. Unity two-D Animation instead of Spine. Eight in-house modules. Three stages.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "Unity, Mono. Ninety five dollars of paid assets. Unity 2D Animation instead of Spine. Eight in-house modules. Three stages."
+ },
+ {
+  "id": "38",
+  "sec": "score",
+  "text": "Worth a dip. The demo is free, and hitting things with that stick feels as good as it looks.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 30.6
+  },
+  "sub": "Worth a dip. The demo is free, and hitting things with that stick feels as good as it looks."
+ },
+ {
+  "id": "39",
+  "sec": "score",
+  "text": "Three things to take away. F MOD is free for indies. You can do bone animation without paying for Spine. And splitting your code into A S M defs is what makes a big project compile fast.",
+  "vis": {
+   "type": "image",
+   "file": "ss08.jpg"
+  },
+  "sub": "Three things to take away. FMOD is free for indies. You can do bone animation without paying for Spine. And splitting your code into asmdefs is what makes a big project compile fast."
+ },
+ {
+  "id": "40",
+  "sec": "score",
+  "text": "That's my read from the outside. If you made this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 54.0
+  },
+  "sub": "That's my read from the outside. If you made this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip."
+ }
+]

@@ -1,0 +1,133 @@
+{
+ "title_en": "PengPong",
+ "demo_appid": 3636220,
+ "full_appid": 2766910,
+ "developer": "SANDY FLOOR",
+ "workdir": "episodes/09-pengpong",
+ "script_timed": "episodes/09-pengpong/script_tts_timed.json",
+ "intro_bg": {
+  "file": "trailer_main.mp4",
+  "in": 26.0,
+  "out": 29.6,
+  "scale": 1.1
+ },
+ "labels": [
+  "282 files / 2.68 GB",
+  "paid tools: $95",
+  "Assembly-CSharp: 5 KB",
+  "8 in-house modules"
+ ],
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 2,
+ "score_line_id": "36",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity / Mono"
+  ],
+  [
+   "PAID TOOLS",
+   "$95, two of them"
+  ],
+  [
+   "ANIMATION",
+   "Unity 2D, no Spine"
+  ],
+  [
+   "IN-HOUSE",
+   "8 asmdef modules"
+  ],
+  [
+   "IN THE BOX",
+   "MCP for Unity"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": {
+  "file": "trailer_main.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "thumbnail": {
+  "bg": "ss01.jpg",
+  "line1": "PengPong",
+  "line2": "$95 OF PAID TOOLS. TOTAL.",
+  "tag": "UNITY / MONO TEARDOWN",
+  "focus": "center"
+ },
+ "chapters": {
+  "hook": "Ninety-five dollars",
+  "intro": "What it is",
+  "made": "Opening the build",
+  "review": "What players actually say",
+  "score": "The spec sheet + verdict"
+ },
+ "stack": [
+  [
+   "FMOD Studio (free under $200k/yr)",
+   "https://www.fmod.com/licensing"
+  ],
+  [
+   "Unity 2D Animation",
+   "https://docs.unity3d.com/Packages/com.unity.2d.animation@latest"
+  ],
+  [
+   "Assembly Definitions (asmdef)",
+   "https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html"
+  ],
+  [
+   "Unity Addressables",
+   "https://docs.unity3d.com/Packages/com.unity.addressables@latest"
+  ],
+  [
+   "DOTween",
+   "https://dotween.demigiant.com/"
+  ],
+  [
+   "Febucci Text Animator",
+   "https://www.febucci.com/text-animator-unity/"
+  ],
+  [
+   "MCP for Unity",
+   "https://github.com/CoplayDev/unity-mcp"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/3636220/"
+  ]
+ ],
+ "ledger": {
+  "team": "미상 (SANDY FLOOR, 한국)",
+  "engine": "Unity",
+  "pipeline": "Addressables",
+  "backend": "Mono",
+  "build": "2.68 GiB",
+  "files": 282,
+  "scenes": 0,
+  "third_party": "8종 이상",
+  "approach": "사내 프레임워크 + 유료 에셋 $95",
+  "reception": "86.6% / 134",
+  "packages": [
+   "FMOD",
+   "DOTween",
+   "Text Animator",
+   "AraTrail",
+   "UIParticle",
+   "NavMeshPlus",
+   "GameAnalytics",
+   "SQLite",
+   "Addressables",
+   "Localization",
+   "MCP for Unity",
+   "Steamworks"
+  ],
+  "ai_disclosure": null
+ },
+ "youtube": {
+  "title": "PengPong — $95 of paid tools, eight in-house modules, and an AI bridge left in the build",
+  "tags": "PengPong,steam demo,indie dev,gamedev,unity,mono,fmod,asmdef,assembly definition,addressables,spine,2d animation,mcp,unity mcp,ai gamedev,cuphead style,survivors-like,korean indie,game teardown,how games are made,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "demo_appid": 3636220,
+ "full_appid": 2766910,
+ "name": "PengPong",
+ "developers": [
+  "SANDY FLOOR"
+ ],
+ "publishers": [
+  "SANDY FLOOR",
+  " Gamirror Games"
+ ],
+ "release": "20 Aug, 2026",
+ "coming_soon": false,
+ "genres": [
+  "Action",
+  "Casual",
+  "Indie"
+ ],
+ "languages": "English, Korean, Japanese, Simplified Chinese, Traditional Chinese, French, German, Spanish - Spain",
+ "website": null,
+ "short": "PengPong is a bullet-hell roguelike where pinball meets gambling. Bounce your way through chaos and bet it all to survive.",
+ "about": "            PengPong  is a bullet-hell roguelike where your only hope for survival is to bounce weapons, items, and... well, pretty much anything that moves. Remember: if it’s not bouncing, you’re doing it wrong. Bounce hard, bounce well, and don’t stop.     Key Features:                Survive the Chaos:  Master an endless array of character and weapon combinations to be the last penguin standing.     Physics is Your Weapon:  Forget direct hits; momentum and angles are everything. Bounce hockey pucks, guns (yes, you throw them), earphones (this one too), and even pufferfish! If it doesn’t hit them the first time, just keep bouncing it until it does.     High Stakes, High Rewards:  Every wave ends with a choice. Will you sign a brutal contract, go all-in at the gambling den, or play it safe at the shop? The choice is yours.                   Infinite Synergy:  With over  300+ items , every run creates a unique whirlwind of possibilities and chaotic variables.     Rise to the Top:  Compete with players worldwide and prove your skills on the global leaderboard.     Cute but Creepy:  Immerse yourself in a world inspired by vintage animation; where &quot;adorable&quot; meets &quot;disturbing.&quot;                Hit the jackpot in our gambling mini-games and watch the difficulty melt away! But don’t get us wrong, PengPong isn’t a gambling simulator. It’s just a friendly, neighbourhood bullet-hell roguelike starring a very cute penguin, and its even cuter friends.  Mostly.  ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS *:  Windows 7+    Processor:  Core i3 and up    Memory:  3 GB RAM    Graphics:  256mb video memory    Additional Notes:  64 bit required  ",
+ "movies": [
+  {
+   "id": 257407115,
+   "name": "Launch Trailer"
+  },
+  {
+   "id": 257242386,
+   "name": "Demo Play - EN"
+  }
+ ],
+ "screenshots": 9,
+ "reviews": {
+  "total": 134,
+  "positive": 116,
+  "desc": "Very Positive"
+ }
+}
