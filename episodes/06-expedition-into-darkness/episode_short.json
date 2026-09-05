@@ -9,7 +9,7 @@
   "volume": 0.07
  },
  "narration_volume": 1.6,
- "script_timed": "episodes/06-expedition-into-darkness/short_timed.json",
+ "script_timed": "episodes/06-expedition-into-darkness/short_tts_timed.json",
  "hook_lines": 2,
  "cold_open_lines": 2,
  "still_lines": 0,
@@ -61,7 +61,9 @@
  "opening_stamp": {
   "line1": "Expedition: Into Darkness",
   "line2": "16.9 GB. 3 DEVS.",
-  "size1": 92,
-  "size2": 70
+  "size1": 66,
+  "size2": 64,
+  "y1": -560,
+  "y2": -450
  }
 }

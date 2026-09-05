@@ -50,7 +50,7 @@
    "file": "still_bg_mv.mp4",
    "start": 16.939,
    "in": 0,
-   "out": 18.198,
+   "out": 17.544,
    "fillMode": "cover",
    "fadeIn": 0.3,
    "fadeOut": 0.3
@@ -100,13 +100,13 @@
    "file": "tts/03.wav",
    "start": 16.939,
    "in": 0,
-   "out": 8.647,
+   "out": 7.993,
    "volume": 1.6
   },
   {
    "track": "a1",
    "file": "tts/04.wav",
-   "start": 25.986,
+   "start": 25.332,
    "in": 0,
    "out": 8.751,
    "volume": 1.6
@@ -114,7 +114,7 @@
   {
    "track": "a1",
    "file": "tts/05.wav",
-   "start": 35.137,
+   "start": 34.483,
    "in": 0,
    "out": 4.101,
    "volume": 1.6
@@ -122,7 +122,7 @@
   {
    "track": "v11",
    "file": "trailer_main.mp4",
-   "start": 35.137,
+   "start": 34.483,
    "in": 13,
    "out": 17.501,
    "fillMode": "fit",
@@ -134,7 +134,7 @@
   {
    "track": "a1",
    "file": "tts/06.wav",
-   "start": 39.638,
+   "start": 38.984,
    "in": 0,
    "out": 7.68,
    "volume": 1.6
@@ -142,7 +142,7 @@
   {
    "track": "v11",
    "file": "ev_engine_mv.mp4",
-   "start": 39.638,
+   "start": 38.984,
    "in": 0,
    "out": 8.08,
    "fillMode": "fit",
@@ -154,7 +154,7 @@
   {
    "track": "a1",
    "file": "tts/07.wav",
-   "start": 47.718,
+   "start": 47.064,
    "in": 0,
    "out": 5.068,
    "volume": 1.6
@@ -162,7 +162,7 @@
   {
    "track": "v11",
    "file": "ss02_mv.mp4",
-   "start": 47.718,
+   "start": 47.064,
    "in": 0,
    "out": 5.468,
    "fillMode": "fit",
@@ -174,7 +174,7 @@
   {
    "track": "a1",
    "file": "tts/08.wav",
-   "start": 53.186,
+   "start": 52.532,
    "in": 0,
    "out": 8.647,
    "volume": 1.6
@@ -182,7 +182,7 @@
   {
    "track": "v11",
    "file": "trailer_main.mp4",
-   "start": 53.186,
+   "start": 52.532,
    "in": 25,
    "out": 34.047,
    "fillMode": "fit",
@@ -194,7 +194,7 @@
   {
    "track": "a1",
    "file": "tts/09.wav",
-   "start": 62.233,
+   "start": 61.579,
    "in": 0,
    "out": 4.153,
    "volume": 1.6
@@ -202,7 +202,7 @@
   {
    "track": "v11",
    "file": "ev_stack_mv.mp4",
-   "start": 62.233,
+   "start": 61.579,
    "in": 0,
    "out": 4.553,
    "fillMode": "fit",
@@ -214,7 +214,7 @@
   {
    "track": "a1",
    "file": "tts/10.wav",
-   "start": 66.786,
+   "start": 66.132,
    "in": 0,
    "out": 9.221,
    "volume": 1.6
@@ -222,7 +222,7 @@
   {
    "track": "v11",
    "file": "ss06_mv.mp4",
-   "start": 66.786,
+   "start": 66.132,
    "in": 0,
    "out": 9.621,
    "fillMode": "fit",
@@ -234,7 +234,7 @@
   {
    "track": "a1",
    "file": "tts/11.wav",
-   "start": 76.407,
+   "start": 75.753,
    "in": 0,
    "out": 7.68,
    "volume": 1.6
@@ -242,7 +242,7 @@
   {
    "track": "v11",
    "file": "ss08_mv.mp4",
-   "start": 76.407,
+   "start": 75.753,
    "in": 0,
    "out": 8.08,
    "fillMode": "fit",
@@ -254,7 +254,7 @@
   {
    "track": "a1",
    "file": "tts/12.wav",
-   "start": 84.487,
+   "start": 83.833,
    "in": 0,
    "out": 8.647,
    "volume": 1.6
@@ -262,7 +262,7 @@
   {
    "track": "v11",
    "file": "trailer_main.mp4",
-   "start": 84.487,
+   "start": 83.833,
    "in": 29,
    "out": 38.047,
    "fillMode": "fit",
@@ -274,17 +274,17 @@
   {
    "track": "a1",
    "file": "tts/13.wav",
-   "start": 93.534,
+   "start": 92.88,
    "in": 0,
-   "out": 7.811,
+   "out": 7.393,
    "volume": 1.6
   },
   {
    "track": "v11",
    "file": "ss09_mv.mp4",
-   "start": 93.534,
+   "start": 92.88,
    "in": 0,
-   "out": 8.211,
+   "out": 7.793,
    "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
@@ -294,7 +294,7 @@
   {
    "track": "a1",
    "file": "tts/14.wav",
-   "start": 101.745,
+   "start": 100.673,
    "in": 0,
    "out": 6.191,
    "volume": 1.6
@@ -302,7 +302,7 @@
   {
    "track": "v11",
    "file": "ss04_mv.mp4",
-   "start": 101.745,
+   "start": 100.673,
    "in": 0,
    "out": 6.591,
    "fillMode": "fit",
@@ -314,7 +314,7 @@
   {
    "track": "a1",
    "file": "tts/15.wav",
-   "start": 108.336,
+   "start": 107.264,
    "in": 0,
    "out": 8.15,
    "volume": 1.6
@@ -322,7 +322,7 @@
   {
    "track": "v11",
    "file": "ss01_mv.mp4",
-   "start": 108.336,
+   "start": 107.264,
    "in": 0,
    "out": 8.55,
    "fillMode": "fit",
@@ -334,7 +334,7 @@
   {
    "track": "a1",
    "file": "tts/16.wav",
-   "start": 116.886,
+   "start": 115.814,
    "in": 0,
    "out": 6.139,
    "volume": 1.6
@@ -342,7 +342,7 @@
   {
    "track": "v11",
    "file": "trailer_main.mp4",
-   "start": 116.886,
+   "start": 115.814,
    "in": 32,
    "out": 38.539,
    "fillMode": "fit",
@@ -354,7 +354,7 @@
   {
    "track": "a1",
    "file": "tts/17.wav",
-   "start": 123.425,
+   "start": 122.353,
    "in": 0,
    "out": 7.445,
    "volume": 1.6
@@ -362,7 +362,7 @@
   {
    "track": "v11",
    "file": "ss05_mv.mp4",
-   "start": 123.425,
+   "start": 122.353,
    "in": 0,
    "out": 7.845,
    "fillMode": "fit",
@@ -374,7 +374,7 @@
   {
    "track": "a1",
    "file": "tts/18.wav",
-   "start": 131.27,
+   "start": 130.198,
    "in": 0,
    "out": 2.247,
    "volume": 1.6
@@ -382,7 +382,7 @@
   {
    "track": "v11",
    "file": "ss02_mv.mp4",
-   "start": 131.27,
+   "start": 130.198,
    "in": 0,
    "out": 2.647,
    "fillMode": "fit",
@@ -394,7 +394,7 @@
   {
    "track": "a1",
    "file": "tts/19.wav",
-   "start": 133.917,
+   "start": 132.845,
    "in": 0,
    "out": 4.885,
    "volume": 1.6
@@ -402,7 +402,7 @@
   {
    "track": "v11",
    "file": "ev_size_mv.mp4",
-   "start": 133.917,
+   "start": 132.845,
    "in": 0,
    "out": 5.285,
    "fillMode": "fit",
@@ -414,7 +414,7 @@
   {
    "track": "a1",
    "file": "tts/20.wav",
-   "start": 139.202,
+   "start": 138.13,
    "in": 0,
    "out": 5.878,
    "volume": 1.6
@@ -422,7 +422,7 @@
   {
    "track": "v11",
    "file": "trailer_main.mp4",
-   "start": 139.202,
+   "start": 138.13,
    "in": 25,
    "out": 31.278,
    "fillMode": "fit",
@@ -434,7 +434,7 @@
   {
    "track": "a1",
    "file": "tts/21.wav",
-   "start": 145.48,
+   "start": 144.408,
    "in": 0,
    "out": 5.904,
    "volume": 1.6
@@ -442,7 +442,7 @@
   {
    "track": "v11",
    "file": "ss03_mv.mp4",
-   "start": 145.48,
+   "start": 144.408,
    "in": 0,
    "out": 6.304,
    "fillMode": "fit",
@@ -454,7 +454,7 @@
   {
    "track": "a1",
    "file": "tts/22.wav",
-   "start": 151.784,
+   "start": 150.712,
    "in": 0,
    "out": 7.367,
    "volume": 1.6
@@ -462,7 +462,7 @@
   {
    "track": "v11",
    "file": "ss07_mv.mp4",
-   "start": 151.784,
+   "start": 150.712,
    "in": 0,
    "out": 7.767,
    "fillMode": "fit",
@@ -474,7 +474,7 @@
   {
    "track": "a1",
    "file": "tts/23.wav",
-   "start": 159.551,
+   "start": 158.479,
    "in": 0,
    "out": 9.221,
    "volume": 1.6
@@ -482,7 +482,7 @@
   {
    "track": "v11",
    "file": "trailer_main.mp4",
-   "start": 159.551,
+   "start": 158.479,
    "in": 29,
    "out": 38.621,
    "fillMode": "fit",
@@ -494,7 +494,7 @@
   {
    "track": "a1",
    "file": "tts/24.wav",
-   "start": 169.172,
+   "start": 168.1,
    "in": 0,
    "out": 7.027,
    "volume": 1.6
@@ -502,7 +502,7 @@
   {
    "track": "v11",
    "file": "ss06_mv.mp4",
-   "start": 169.172,
+   "start": 168.1,
    "in": 0,
    "out": 7.427,
    "fillMode": "fit",
@@ -514,7 +514,7 @@
   {
    "track": "a1",
    "file": "tts/25.wav",
-   "start": 176.599,
+   "start": 175.527,
    "in": 0,
    "out": 8.516,
    "volume": 1.6
@@ -522,7 +522,7 @@
   {
    "track": "v11",
    "file": "ss09_mv.mp4",
-   "start": 176.599,
+   "start": 175.527,
    "in": 0,
    "out": 8.916,
    "fillMode": "fit",
@@ -534,7 +534,7 @@
   {
    "track": "a1",
    "file": "tts/26.wav",
-   "start": 185.515,
+   "start": 184.443,
    "in": 0,
    "out": 5.042,
    "volume": 1.6
@@ -542,7 +542,7 @@
   {
    "track": "v11",
    "file": "ss00_mv.mp4",
-   "start": 185.515,
+   "start": 184.443,
    "in": 0,
    "out": 5.442,
    "fillMode": "fit",
@@ -554,7 +554,7 @@
   {
    "track": "a1",
    "file": "tts/27.wav",
-   "start": 190.957,
+   "start": 189.885,
    "in": 0,
    "out": 6.06,
    "volume": 1.6
@@ -562,7 +562,7 @@
   {
    "track": "v11",
    "file": "trailer_main.mp4",
-   "start": 190.957,
+   "start": 189.885,
    "in": 13,
    "out": 19.46,
    "fillMode": "fit",
@@ -574,7 +574,7 @@
   {
    "track": "a1",
    "file": "tts/28.wav",
-   "start": 197.417,
+   "start": 196.345,
    "in": 0,
    "out": 7.68,
    "volume": 1.6
@@ -582,7 +582,7 @@
   {
    "track": "v11",
    "file": "ss01_mv.mp4",
-   "start": 197.417,
+   "start": 196.345,
    "in": 0,
    "out": 8.08,
    "fillMode": "fit",
@@ -594,7 +594,7 @@
   {
    "track": "a1",
    "file": "tts/29.wav",
-   "start": 205.497,
+   "start": 204.425,
    "in": 0,
    "out": 7.68,
    "volume": 1.6
@@ -602,7 +602,7 @@
   {
    "track": "v11",
    "file": "ss08_mv.mp4",
-   "start": 205.497,
+   "start": 204.425,
    "in": 0,
    "out": 8.08,
    "fillMode": "fit",
@@ -614,7 +614,7 @@
   {
    "track": "a1",
    "file": "tts/30.wav",
-   "start": 213.577,
+   "start": 212.505,
    "in": 0,
    "out": 3.971,
    "volume": 1.6
@@ -622,7 +622,7 @@
   {
    "track": "v11",
    "file": "trailer_main.mp4",
-   "start": 213.577,
+   "start": 212.505,
    "in": 0,
    "out": 4.371,
    "fillMode": "fit",
@@ -634,7 +634,7 @@
   {
    "track": "a1",
    "file": "tts/31.wav",
-   "start": 217.948,
+   "start": 216.876,
    "in": 0,
    "out": 2.142,
    "volume": 1.6
@@ -642,7 +642,7 @@
   {
    "track": "a1",
    "file": "tts/32.wav",
-   "start": 220.49,
+   "start": 219.418,
    "in": 0,
    "out": 9.874,
    "volume": 1.6
@@ -650,7 +650,7 @@
   {
    "track": "a1",
    "file": "tts/33.wav",
-   "start": 230.764,
+   "start": 229.692,
    "in": 0,
    "out": 4.101,
    "volume": 1.6
@@ -658,7 +658,7 @@
   {
    "track": "a1",
    "file": "tts/34.wav",
-   "start": 235.265,
+   "start": 234.193,
    "in": 0,
    "out": 7.68,
    "volume": 1.6
@@ -666,7 +666,7 @@
   {
    "track": "v11",
    "file": "ss05_mv.mp4",
-   "start": 235.265,
+   "start": 234.193,
    "in": 0,
    "out": 8.08,
    "fillMode": "fit",
@@ -678,7 +678,7 @@
   {
    "track": "a1",
    "file": "tts/35.wav",
-   "start": 243.345,
+   "start": 242.273,
    "in": 0,
    "out": 10.083,
    "volume": 1.6
@@ -686,7 +686,7 @@
   {
    "track": "v11",
    "file": "trailer_main.mp4",
-   "start": 243.345,
+   "start": 242.273,
    "in": 25,
    "out": 35.483,
    "fillMode": "fit",
@@ -698,7 +698,7 @@
   {
    "track": "v11",
    "file": "still_bg_mv.mp4",
-   "start": 217.748,
+   "start": 216.676,
    "in": 0,
    "out": 17.617,
    "fillMode": "cover",
@@ -708,7 +708,7 @@
   {
    "track": "v4",
    "file": "score_header.mov",
-   "start": 217.948,
+   "start": 216.876,
    "in": 0,
    "out": 14.2,
    "fillMode": "fit",
@@ -717,7 +717,7 @@
   {
    "track": "v5",
    "file": "score_row_0.mov",
-   "start": 217.948,
+   "start": 216.876,
    "in": 0,
    "out": 14.2,
    "fillMode": "fit",
@@ -726,7 +726,7 @@
   {
    "track": "v6",
    "file": "score_row_1.mov",
-   "start": 217.948,
+   "start": 216.876,
    "in": 0,
    "out": 14.2,
    "fillMode": "fit",
@@ -735,7 +735,7 @@
   {
    "track": "v7",
    "file": "score_row_2.mov",
-   "start": 217.948,
+   "start": 216.876,
    "in": 0,
    "out": 14.2,
    "fillMode": "fit",
@@ -744,7 +744,7 @@
   {
    "track": "v8",
    "file": "score_row_3.mov",
-   "start": 217.948,
+   "start": 216.876,
    "in": 0,
    "out": 14.2,
    "fillMode": "fit",
@@ -753,7 +753,7 @@
   {
    "track": "v9",
    "file": "score_row_4.mov",
-   "start": 217.948,
+   "start": 216.876,
    "in": 0,
    "out": 14.2,
    "fillMode": "fit",
@@ -762,7 +762,7 @@
   {
    "track": "v10",
    "file": "score_stamp.mov",
-   "start": 217.948,
+   "start": 216.876,
    "in": 0,
    "out": 14.2,
    "fillMode": "fit",
@@ -773,7 +773,7 @@
    "file": "logo_c_rgba.png",
    "start": 17.139,
    "in": 0,
-   "out": 237.489,
+   "out": 236.417,
    "fillMode": "fit",
    "transformOpacity": 0.6,
    "fadeIn": 0.5,
@@ -826,7 +826,7 @@
    "file": "trailer_main.mp4",
    "start": 240.0,
    "in": 0,
-   "out": 14.628,
+   "out": 13.556,
    "volume": 0.07,
    "fadeIn": 1.0,
    "fadeOut": 1.5
@@ -922,7 +922,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_drop.wav",
-   "start": 218.048,
+   "start": 216.976,
    "in": 0,
    "out": 0.282,
    "volume": 0.5
@@ -930,7 +930,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 219.348,
+   "start": 218.276,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -938,7 +938,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 219.898,
+   "start": 218.826,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -946,7 +946,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 220.298,
+   "start": 219.226,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -954,7 +954,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 220.848,
+   "start": 219.776,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -962,7 +962,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 221.248,
+   "start": 220.176,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -970,7 +970,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 221.798,
+   "start": 220.726,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -978,7 +978,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 222.198,
+   "start": 221.126,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -986,7 +986,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 222.748,
+   "start": 221.676,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -994,7 +994,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 223.148,
+   "start": 222.076,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -1002,7 +1002,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 223.698,
+   "start": 222.626,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -1010,7 +1010,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/thud.wav",
-   "start": 224.648,
+   "start": 223.576,
    "in": 0,
    "out": 0.415,
    "volume": 0.9
@@ -1018,7 +1018,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/chime_complete.wav",
-   "start": 224.898,
+   "start": 223.826,
    "in": 0,
    "out": 1.105,
    "volume": 0.6
@@ -1026,7 +1026,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_exit.wav",
-   "start": 231.248,
+   "start": 230.176,
    "in": 0,
    "out": 0.298,
    "volume": 0.5
@@ -1036,7 +1036,7 @@
   {
    "text": "10.58 GB on disk",
    "start": 17.339,
-   "duration": 17.598,
+   "duration": 16.944,
    "x": -560,
    "y": -230,
    "fontSize": 40,
@@ -1051,7 +1051,7 @@
   {
    "text": "1.17 GB download",
    "start": 17.789,
-   "duration": 17.148,
+   "duration": 16.494,
    "x": 560,
    "y": -230,
    "fontSize": 40,
@@ -1066,7 +1066,7 @@
   {
    "text": "22 scenes",
    "start": 18.239,
-   "duration": 16.698,
+   "duration": 16.044,
    "x": -560,
    "y": 60,
    "fontSize": 40,
@@ -1081,7 +1081,7 @@
   {
    "text": "24 packages",
    "start": 18.689,
-   "duration": 16.248,
+   "duration": 15.594,
    "x": 560,
    "y": 60,
    "fontSize": 40,
@@ -1106,166 +1106,166 @@
   {
    "text": "Guildrun is a PvE autobattler roguelike. You build a team, you bend\nheroes out of their class, and you watch the fight resolve itself.",
    "start": 16.939,
-   "duration": 8.797
+   "duration": 8.143
   },
   {
    "text": "Nearly two thousand reviews, ninety percent positive, and about two and a half\nthousand people in it as I record this. That's the biggest demo I've taken apart.",
-   "start": 25.986,
+   "start": 25.332,
    "duration": 8.901
   },
   {
    "text": "It's also the first one where the file list\ntold me the team had done this before.",
-   "start": 35.137,
+   "start": 34.483,
    "duration": 4.251
   },
   {
-   "text": "Start with the awkward part. This is an I L two C P P build,\nso all the C sharp is fused into one Game Assembly file.",
-   "start": 39.638,
+   "text": "Start with the awkward part. This is an IL2CPP build,\nso all the C# is fused into one GameAssembly file.",
+   "start": 38.984,
    "duration": 7.83
   },
   {
    "text": "In the last teardown that was a dead end.\nThere's no folder of package names to read.",
-   "start": 47.718,
+   "start": 47.064,
    "duration": 5.218
   },
   {
    "text": "Except it isn't quite a dead end. Any assembly that shipped with embedded\nresources leaves its name behind in a data file, and Steam lists those.",
-   "start": 53.186,
+   "start": 52.532,
    "duration": 8.797
   },
   {
    "text": "Twenty four names came out. Here's what\na team that has shipped before installs.",
-   "start": 62.233,
+   "start": 61.579,
    "duration": 4.303
   },
   {
    "text": "Sentry, with six assemblies and a native crash handler behind it. They've shipped\na patch every single week since January. That's what makes that survivable.",
-   "start": 66.786,
+   "start": 66.132,
    "duration": 9.371
   },
   {
-   "text": "S Q Lite, because the demo alone has three hundred relics and a\nhundred items. At some point that stops being a pile of JSON files.",
-   "start": 76.407,
+   "text": "SQLite, because the demo alone has three hundred relics and a\nhundred items. At some point that stops being a pile of JSON files.",
+   "start": 75.753,
    "duration": 7.83
   },
   {
-   "text": "N Log for structured logging. R three and System Reactive for\nevent streams. Threading Channels for the producer-consumer work.",
-   "start": 84.487,
+   "text": "NLog for structured logging. R3 and System Reactive for event\nstreams. Threading Channels for the producer-consumer work.",
+   "start": 83.833,
    "duration": 8.797
   },
   {
-   "text": "And Z Link, which exists for one reason: doing LINQ without allocating.\nYou install that when you've been bitten by garbage collection hitches.",
-   "start": 93.534,
-   "duration": 7.961
+   "text": "And ZLinq, which exists for one reason: doing LINQ without allocating.\nYou install that when you've been bitten by garbage collection hitches.",
+   "start": 92.88,
+   "duration": 7.543
   },
   {
    "text": "None of that is exciting. It's the stuff you only know to\ninstall because something went wrong on the last project.",
-   "start": 101.745,
+   "start": 100.673,
    "duration": 6.341
   },
   {
    "text": "Compare the solo demo I took apart two episodes ago. Its\nentire third party list was one entry: Discord rich presence.",
-   "start": 108.336,
+   "start": 107.264,
    "duration": 8.3
   },
   {
    "text": "Neither is wrong. But if you're about to start your\nsecond project, that list up there is a shopping list.",
-   "start": 116.886,
+   "start": 115.814,
    "duration": 6.289
   },
   {
-   "text": "Audio is F MOD with Resonance, same as the last\none. Networking is nanosockets, a thin U D P layer.",
-   "start": 123.425,
+   "text": "Audio is FMOD with Resonance, same as the last\none. Networking is nanosockets, a thin UDP layer.",
+   "start": 122.353,
    "duration": 7.595
   },
   {
    "text": "Then the number I\nstared at for a while.",
-   "start": 131.27,
+   "start": 130.198,
    "duration": 2.397
   },
   {
    "text": "The demo is ten and a half gigabytes on\ndisk. The download is one point one seven.",
-   "start": 133.917,
+   "start": 132.845,
    "duration": 5.035
   },
   {
    "text": "That's an eighty nine percent saving. Which means the\nfiles sitting on your drive are barely compressed at all.",
-   "start": 139.202,
+   "start": 138.13,
    "duration": 6.028
   },
   {
    "text": "My first thought was that somebody forgot the import\nsettings. My second thought was to read the store page.",
-   "start": 145.48,
+   "start": 144.408,
    "duration": 6.054
   },
   {
-   "text": "Minimum requirements: fifteen gigabytes of storage,\nand a line that says H D D okay, no S S D required.",
-   "start": 151.784,
+   "text": "Minimum requirements: fifteen gigabytes of storage,\nand a line that says HDD okay, no SSD required.",
+   "start": 150.712,
    "duration": 7.517
   },
   {
-   "text": "Uncompressed assets cost disk and save C P U. On a hard drive with no\ndecompression to do, they load faster. My read is that this is deliberate.",
-   "start": 159.551,
+   "text": "Uncompressed assets cost disk and save CPU. On a hard drive with no\ndecompression to do, they load faster. My read is that this is deliberate.",
+   "start": 158.479,
    "duration": 9.371
   },
   {
    "text": "They spent ten gigabytes of somebody's drive to keep the game playable\non old hardware. Tell me in the comments if I've got that backwards.",
-   "start": 169.172,
+   "start": 168.1,
    "duration": 7.177
   },
   {
    "text": "There are also twenty two scenes in here. The last two games I took apart shipped\none each and built everything at runtime. This one is authored in the editor.",
-   "start": 176.599,
+   "start": 175.527,
    "duration": 8.666
   },
   {
    "text": "So the engineering is careful. The fight in\nthe reviews is about something else entirely.",
-   "start": 185.515,
+   "start": 184.443,
    "duration": 5.192
   },
   {
    "text": "Performance barely comes up. Ten mentions positive,\ntwo negative. Nobody is complaining about the build.",
-   "start": 190.957,
+   "start": 189.885,
    "duration": 6.21
   },
   {
    "text": "They're complaining about balance. Certain combinations only, dead\nheroes, and a random draw that decides your run before you play it.",
-   "start": 197.417,
+   "start": 196.345,
    "duration": 7.83
   },
   {
    "text": "And that's why the negative reviewers had fifteen hours in. You don't find\na balance ceiling in an hour. You find it after you've mastered the thing.",
-   "start": 205.497,
+   "start": 204.425,
    "duration": 7.83
   },
   {
    "text": "Which is a very different problem from the\ndemos where people quit in the first hour.",
-   "start": 213.577,
+   "start": 212.505,
    "duration": 4.121
   },
   {
    "text": "Here's the whole\nteardown on one card.",
-   "start": 217.948,
+   "start": 216.876,
    "duration": 2.292
   },
   {
-   "text": "Unity, I L two C P P, C sharp. A stack full of things you only reach for\nthe second time around. Ten gigabytes of deliberately uncompressed art.",
-   "start": 220.49,
+   "text": "Unity, IL2CPP, C#. A stack full of things you only reach for the\nsecond time around. Ten gigabytes of deliberately uncompressed art.",
+   "start": 219.418,
    "duration": 10.024
   },
   {
    "text": "Worth a dip, and be careful,\nbecause eleven hours is the median.",
-   "start": 230.764,
+   "start": 229.692,
    "duration": 4.251
   },
   {
    "text": "If you're starting your next project, take the boring half of that list.\nCrash reporting on day one is the cheapest thing you will ever install.",
-   "start": 235.265,
+   "start": 234.193,
    "duration": 7.83
   },
   {
    "text": "That's my read from the outside. If you made this and I got something wrong, say so and\nI'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
-   "start": 243.345,
+   "start": 242.273,
    "duration": 10.233
   }
  ],
@@ -1301,7 +1301,11 @@
   {
    "kind": "video",
    "name": "BG"
+  },
+  {
+   "kind": "audio",
+   "name": "TRL"
   }
  ],
- "total": 254.628
+ "total": 253.556
 }

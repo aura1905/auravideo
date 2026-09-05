@@ -4,7 +4,7 @@
  "full_appid": 3669200,
  "developer": "Leyline",
  "workdir": "episodes/07-guildrun",
- "script_timed": "episodes/07-guildrun/script_timed.json",
+ "script_timed": "episodes/07-guildrun/script_tts_timed.json",
  "intro_bg": {
   "file": "trailer_main.mp4",
   "in": 29.0,

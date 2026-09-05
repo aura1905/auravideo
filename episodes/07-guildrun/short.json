@@ -49,7 +49,7 @@
  {
   "id": "s5",
   "sec": "made",
-  "text": "Now the build. It's Unity, and I L two C P P usually hides what a team used.",
+  "text": "Now the build. It's Unity, and IL2CPP usually hides what a team used.",
   "vis": {
    "type": "image",
    "file": "ev_engine_v.png"
@@ -67,7 +67,7 @@
  {
   "id": "s7",
   "sec": "made",
-  "text": "Sentry for crash reports. S Q Lite for three hundred relics. Zero-allocation LINQ. That's not a first project's list.",
+  "text": "Sentry for crash reports. SQLite for three hundred relics. Zero-allocation LINQ. That's not a first project's list.",
   "vis": {
    "type": "image",
    "file": "ss08.jpg"

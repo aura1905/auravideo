@@ -69,7 +69,7 @@
  {
   "id": "08",
   "sec": "made",
-  "text": "It's Unity, and the code is C sharp — you can tell because the build has a Game Assembly D L L, which is what the I L two C P P compiler leaves behind.",
+  "text": "It's Unity, and the code is C# — you can tell because the build has a GameAssembly.dll, which is what the IL2CPP compiler leaves behind.",
   "vis": {
    "type": "image",
    "file": "ev_engine.png"
@@ -78,7 +78,7 @@
  {
   "id": "09",
   "sec": "made",
-  "text": "That's C sharp translated into C plus plus and compiled native. You write the easy language and ship the fast one.",
+  "text": "That's C# translated into C plus plus and compiled native. You write the easy language and ship the fast one.",
   "vis": {
    "type": "video",
    "file": "trailer_cinematic.mp4",
@@ -88,7 +88,7 @@
  {
   "id": "10",
   "sec": "made",
-  "text": "Audio is F MOD Studio, with Google's Resonance Audio next to it for spatial sound.",
+  "text": "Audio is FMOD Studio, with Google's Resonance Audio next to it for spatial sound.",
   "vis": {
    "type": "image",
    "file": "ev_stack.png"
@@ -106,7 +106,7 @@
  {
   "id": "12",
   "sec": "made",
-  "text": "There's also a native plugin in there called R F Lib C Native. It shows up in other Unity games and I could not work out what it does. If you know, the comments are right there.",
+  "text": "There's also a native plugin in there called RFLib_CNative. It shows up in other Unity games and I could not work out what it does. If you know, the comments are right there.",
   "vis": {
    "type": "video",
    "file": "trailer_cinematic.mp4",
@@ -190,7 +190,7 @@
  {
   "id": "21",
   "sec": "made",
-  "text": "Game Assembly dot P D B. Seven hundred and forty five megabytes of debug symbols, shipped to players.",
+  "text": "GameAssembly.pdb. Seven hundred and forty five megabytes of debug symbols, shipped to players.",
   "vis": {
    "type": "image",
    "file": "ev_pdb.png"
@@ -283,7 +283,7 @@
  {
   "id": "31",
   "sec": "score",
-  "text": "Unity, I L two C P P, so the code is C sharp. Three people. F MOD and Resonance for audio. And seven hundred and seventy megabytes of debug symbols nobody meant to ship.",
+  "text": "Unity, IL2CPP, so the code is C#. Three people. FMOD and Resonance for audio. And seven hundred and seventy megabytes of debug symbols nobody meant to ship.",
   "vis": {
    "type": "image",
    "file": "ss02.jpg"

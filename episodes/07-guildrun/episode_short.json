@@ -9,7 +9,7 @@
   "volume": 0.07
  },
  "narration_volume": 1.6,
- "script_timed": "episodes/07-guildrun/short_timed.json",
+ "script_timed": "episodes/07-guildrun/short_tts_timed.json",
  "hook_lines": 2,
  "cold_open_lines": 2,
  "still_lines": 0,

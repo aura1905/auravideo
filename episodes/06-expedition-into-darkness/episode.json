@@ -4,7 +4,7 @@
  "full_appid": 3126410,
  "developer": "Antediluvian Interactive",
  "workdir": "episodes/06-expedition-into-darkness",
- "script_timed": "episodes/06-expedition-into-darkness/script_timed.json",
+ "script_timed": "episodes/06-expedition-into-darkness/script_tts_timed.json",
  "intro_bg": {
   "file": "trailer_main.mp4",
   "in": 20.0,

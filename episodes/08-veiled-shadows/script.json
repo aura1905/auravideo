@@ -11,7 +11,7 @@
  {
   "id": "02",
   "sec": "hook",
-  "text": "It was made in a tool sold on the promise that you never have to program. There's a C sharp compiler inside the build anyway.",
+  "text": "It was made in a tool sold on the promise that you never have to program. There's a C# compiler inside the build anyway.",
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
@@ -30,7 +30,7 @@
  {
   "id": "04",
   "sec": "intro",
-  "text": "Everyone who has played it reaches for the same word: Persona. One reviewer counted the nods to Persona four.",
+  "text": "Everyone who has played it reaches for the same word: Persona. One reviewer counted the nods to Persona 4.",
   "vis": {
    "type": "image",
    "file": "ss01.jpg"
@@ -67,7 +67,7 @@
  {
   "id": "08",
   "sec": "made",
-  "text": "The engine is R P G Developer Bakin, from a Japanese studio called SmileBoom. Seventy dollars on Steam, and it's sold as programming-free R P G creation.",
+  "text": "The engine is RPG Developer Bakin, from a Japanese studio called SmileBoom. Seventy dollars on Steam, and it's sold as programming-free RPG creation.",
   "vis": {
    "type": "image",
    "file": "ss03.jpg"
@@ -85,7 +85,7 @@
  {
   "id": "10",
   "sec": "made",
-  "text": "What actually runs the game is bakinplayer dot exe, and the engine D L L sitting next to it.",
+  "text": "What actually runs the game is bakinplayer.exe, and the engine DLL sitting next to it.",
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
@@ -104,7 +104,7 @@
  {
   "id": "12",
   "sec": "made",
-  "text": "Data dot rbpack. One point three five gigabytes. Ninety five percent of the download.",
+  "text": "data.rbpack. One point three five gigabytes. Ninety five percent of the download.",
   "vis": {
    "type": "image",
    "file": "ss02.jpg"
@@ -141,7 +141,7 @@
  {
   "id": "16",
   "sec": "made",
-  "text": "First. Microsoft Code Analysis, two D L Ls, ten point seven megabytes. That's Roslyn. That is a C sharp compiler.",
+  "text": "First. Microsoft.CodeAnalysis, two DLLs, ten point seven megabytes. That's Roslyn. That is a C# compiler.",
   "vis": {
    "type": "image",
    "file": "ss03.jpg"
@@ -150,7 +150,7 @@
  {
   "id": "17",
   "sec": "made",
-  "text": "Bakin does offer an optional C sharp scripting feature, and this is what pays for it. Every game made in the tool carries a compiler, whether its author wrote a line of C sharp or not.",
+  "text": "Bakin does offer an optional C# scripting feature, and this is what pays for it. Every game made in the tool carries a compiler, whether its author wrote a line of C# or not.",
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
@@ -160,7 +160,7 @@
  {
   "id": "18",
   "sec": "made",
-  "text": "Second. WebView two, and an Edge browser control. There is a web browser inside this turn-based R P G.",
+  "text": "Second. WebView2, and an Edge browser control. There is a web browser inside this turn-based RPG.",
   "vis": {
    "type": "image",
    "file": "ss01.jpg"
@@ -178,7 +178,7 @@
  {
   "id": "20",
   "sec": "made",
-  "text": "Third, and this is the one worth taking away. V R M Loader.",
+  "text": "Third, and this is the one worth taking away. VRM Loader.",
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
@@ -188,7 +188,7 @@
  {
   "id": "21",
   "sec": "made",
-  "text": "V R M is the avatar format VRoid Studio exports. The format VTubers use.",
+  "text": "VRM is the avatar format VRoid Studio exports. The format VTubers use.",
   "vis": {
    "type": "image",
    "file": "ss06.jpg"
@@ -197,7 +197,7 @@
  {
   "id": "22",
   "sec": "made",
-  "text": "So a solo developer can pull a three-D character out of an avatar maker instead of modelling one from scratch.",
+  "text": "So a solo developer can pull a 3D character out of an avatar maker instead of modelling one from scratch.",
   "vis": {
    "type": "image",
    "file": "ss00.jpg"
@@ -225,7 +225,7 @@
  {
   "id": "25",
   "sec": "made",
-  "text": "And there's a log file in there. Bakinplayer log dot t x t, from the developer's own session, shipped to players.",
+  "text": "And there's a log file in there. bakinplayer_log.txt, from the developer's own session, shipped to players.",
   "vis": {
    "type": "image",
    "file": "ss04.jpg"
@@ -309,7 +309,7 @@
  {
   "id": "34",
   "sec": "score",
-  "text": "If somebody has told you no-code means a low ceiling, this build ships a C sharp compiler. The ceiling is wherever you stop.",
+  "text": "If somebody has told you no-code means a low ceiling, this build ships a C# compiler. The ceiling is wherever you stop.",
   "vis": {
    "type": "image",
    "file": "ss00.jpg"

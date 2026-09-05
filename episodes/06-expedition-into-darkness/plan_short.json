@@ -416,7 +416,7 @@
    "duration": 1.4,
    "text": "Expedition: Into Darkness",
    "y": -560,
-   "fontSize": 92
+   "fontSize": 66
   },
   {
    "x": 0,
@@ -430,8 +430,8 @@
    "start": 0.0,
    "duration": 1.4,
    "text": "16.9 GB. 3 DEVS.",
-   "y": -420,
-   "fontSize": 70
+   "y": -450,
+   "fontSize": 64
   },
   {
    "text": "This Steam demo is sixteen\npoint nine gigabytes.\nThree people made it.",
