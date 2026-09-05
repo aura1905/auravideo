@@ -1,0 +1,8 @@
+Unity on Mono, $95 of paid tools in total, eight in-house modules behind a 5 KB Assembly-CSharp.dll — and an MCP-for-Unity runtime sitting in the release build.
+
+▶ Steam demo (free): https://store.steampowered.com/app/3636220/
+▶ Full teardown: (long-form link)
+
+Read off the demo's public depot manifest — file names and sizes only.
+
+#shorts #indiedev #gamedev
