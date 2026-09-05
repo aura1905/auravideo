@@ -1,0 +1,67 @@
+{
+ "title_en": "PengPong",
+ "demo_appid": 3636220,
+ "full_appid": 2766910,
+ "developer": "SANDY FLOOR",
+ "workdir": "episodes/09-pengpong",
+ "bgm": {
+  "file": "trailer_main.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/09-pengpong/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.95,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s9",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity / Mono"
+  ],
+  [
+   "PAID TOOLS",
+   "$95"
+  ],
+  [
+   "ANIMATION",
+   "Unity 2D, no Spine"
+  ],
+  [
+   "IN-HOUSE",
+   "8 modules"
+  ],
+  [
+   "IN THE BOX",
+   "MCP for Unity"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "PengPong",
+  "line2": "$95 OF PAID TOOLS.",
+  "size1": 120,
+  "size2": 70
+ },
+ "youtube": {
+  "title": "$95 of paid tools, eight in-house modules, and an AI bridge left in the build #shorts",
+  "tags": "shorts,PengPong,steam demo,unity,mono,fmod,asmdef,mcp,ai gamedev,indie dev,gamedev,game teardown,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ }
+}
