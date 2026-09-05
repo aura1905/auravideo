@@ -7,8 +7,8 @@
  "script_timed": "episodes/10-ff-resonance/script_tts_timed.json",
  "intro_bg": {
   "file": "trailer_main.mp4",
-  "in": 20.0,
-  "out": 23.6,
+  "in": 30.0,
+  "out": 33.6,
   "scale": 1.2
  },
  "labels": [

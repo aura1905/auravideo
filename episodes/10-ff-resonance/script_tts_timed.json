@@ -19,7 +19,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 54.0
+   "in": 20.0
   },
   "sub": "It's a pixel-art Final Fantasy, and the build has a machine learning runtime inside it.",
   "dur": 4.807,
@@ -32,7 +32,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 20.0
+   "in": 24.0
   },
   "sub": "FINAL FANTASY RESONANCE is the first HD-2D Final Fantasy. Pixel characters, a 3D world, and the Octopath Traveler look.",
   "dur": 8.62,
@@ -45,7 +45,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 58.0
+   "in": 28.0
   },
   "sub": "Which makes sense, because it's the Octopath team. Team Asano at Square Enix, with a Tokyo studio called LANCARSE doing the co-development.",
   "dur": 8.986,
@@ -58,7 +58,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 24.0
+   "in": 32.0
   },
   "sub": "LANCARSE is the studio you've played without knowing it. Shin Megami Tensei Strange Journey, Lost Dimension, The DioField Chronicle.",
   "dur": 8.333,
@@ -71,7 +71,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 57.6
+   "in": 36.0
   },
   "sub": "The story is season one of Brave Exvius, the mobile game, rebuilt. And in battle you summon Visions, which are classic Final Fantasy characters. Cloud shows up.",
   "dur": 9.953,
@@ -84,7 +84,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 28.0
+   "in": 18.0
   },
   "sub": "The demo is not a slice. The Japanese title says it outright: the whole of chapter one, ahead of release. The full game lands October twenty second.",
   "dur": 9.639,
@@ -97,7 +97,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 59.9
+   "in": 20.0
   },
   "sub": "There are no reviews to read. Square Enix switches them off before launch. So this one is the build and the people, which is the part I can actually check.",
   "dur": 7.68,
@@ -122,7 +122,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 32.0
+   "in": 24.0
   },
   "sub": "It's Unreal Engine 5. You can tell from two file extensions, ucas and utoc. That container format only exists in five.",
   "dur": 7.68,
@@ -135,7 +135,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 59.4
+   "in": 28.5
   },
   "sub": "Almost all of the size is content. One container is four point one gigabytes, the other one point one. That's five gigabytes for one chapter.",
   "dur": 8.15,
@@ -148,7 +148,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 36.0
+   "in": 32.9
   },
   "sub": "And the executable is four hundred and sixty seven megabytes. That's not a launcher. That's the whole engine and the whole game, linked into one file.",
   "dur": 8.568,
@@ -161,7 +161,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 57.6
+   "in": 16.7
   },
   "sub": "Only fourteen DLLs ship, and every one of them is somebody else's. That's a very different shape from the Unity builds on this channel, where the package list is the story.",
   "dur": 9.953,
@@ -186,7 +186,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 35.3
+   "in": 25.2
   },
   "sub": "First. ONNX Runtime and DirectML. Together, thirty one megabytes. That's Unreal's neural network plugin. A machine learning inference runtime, in a pixel-art RPG.",
   "dur": 12.225,
@@ -199,7 +199,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 57.0
+   "in": 25.8
   },
   "sub": "What it's for, I can't see from a file list. It could be upscaling. It could be animation. It could be a plugin dependency nobody trimmed. If you know, the comments are right there.",
   "dur": 10.501,
@@ -212,7 +212,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 35.3
+   "in": 33.3
   },
   "sub": "Second. NVIDIA Aftermath, for GPU crash reports, and MsQuic, which is the transport under HTTP/3. So something in here phones home over QUIC.",
   "dur": 12.278,
@@ -225,7 +225,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 57.3
+   "in": 33.2
   },
   "sub": "Third, the audio. XAudio2 and Ogg Vorbis. No Wwise, no FMOD. A Final Fantasy shipping on the engine's stock audio path is worth noting.",
   "dur": 10.24,
@@ -250,7 +250,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 37.3
+   "in": 37.2
   },
   "sub": "Next to it, a five megabyte debug fallback font, and a three byte staging config file. None of it hurts you. All of it says the shipping config wasn't tightened.",
   "dur": 10.24,
@@ -263,7 +263,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 58.1
+   "in": 17.4
   },
   "sub": "Three episodes ago a three-person team shipped seven hundred megabytes of debug symbols. Different scale, same mistake. It happens at Square Enix too.",
   "dur": 9.404,
@@ -276,7 +276,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 38.1
+   "in": 21.5
   },
   "sub": "One more date. The manifest says this build was made on July third. Two months before the demo went live. That's the buffer a publisher this size keeps.",
   "dur": 9.456,
@@ -289,7 +289,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 63.3
+   "in": 9.1
   },
   "sub": "Reception, then. There are no reviews, so here's the only number there is.",
   "dur": 4.284,
@@ -302,7 +302,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 38.4
+   "in": 28.5
   },
   "sub": "Four thousand four hundred people in the demo at once, on a Saturday, two days in. The previous record on this channel was Guildrun at two thousand eight hundred.",
   "dur": 9.117,
@@ -315,7 +315,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 59.7
+   "in": 28.6
   },
   "sub": "A whole chapter for free, from the Octopath team, in a series people already trust. The number isn't surprising. It's still big.",
   "dur": 7.811,
@@ -328,7 +328,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 72.0
+   "in": 44.7
   },
   "sub": "Here's the whole teardown on one card.",
   "dur": 1.959,
@@ -341,7 +341,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 37.8
+   "in": 20.6
   },
   "sub": "Unreal 5. Team Asano and LANCARSE. A four hundred and sixty seven megabyte executable, an ML runtime, and the debug layer left in.",
   "dur": 9.77,
@@ -354,7 +354,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 62.1
+   "in": 33.5
   },
   "sub": "Worth a dip. It's a full chapter, it's free, and it goes away when the game ships.",
   "dur": 5.46,
@@ -367,7 +367,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 38.0
+   "in": 27.9
   },
   "sub": "If you build in Unreal, the thing to take from this is the shipping config. Open your packaged folder and look for SDKLayers. If it's there, so is everyone else's.",
   "dur": 9.587,
@@ -380,7 +380,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 57.5
+   "in": 33.9
   },
   "sub": "That's my read from the outside. If you worked on this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
   "dur": 10.083,

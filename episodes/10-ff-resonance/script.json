@@ -16,7 +16,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 54.0
+   "in": 20.0
   }
  },
  {
@@ -26,7 +26,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 20.0
+   "in": 24.0
   }
  },
  {
@@ -36,7 +36,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 58.0
+   "in": 28.0
   }
  },
  {
@@ -46,7 +46,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 24.0
+   "in": 32.0
   }
  },
  {
@@ -56,7 +56,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 57.6
+   "in": 36.0
   }
  },
  {
@@ -66,7 +66,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 28.0
+   "in": 18.0
   }
  },
  {
@@ -76,7 +76,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 59.9
+   "in": 20.0
   }
  },
  {
@@ -95,7 +95,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 32.0
+   "in": 24.0
   }
  },
  {
@@ -105,7 +105,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 59.4
+   "in": 28.5
   }
  },
  {
@@ -115,7 +115,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 36.0
+   "in": 32.9
   }
  },
  {
@@ -125,7 +125,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 57.6
+   "in": 16.7
   }
  },
  {
@@ -144,7 +144,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 35.3
+   "in": 25.2
   }
  },
  {
@@ -154,7 +154,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 57.0
+   "in": 25.8
   }
  },
  {
@@ -164,7 +164,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 35.3
+   "in": 33.3
   }
  },
  {
@@ -174,7 +174,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 57.3
+   "in": 33.2
   }
  },
  {
@@ -193,7 +193,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 37.3
+   "in": 37.2
   }
  },
  {
@@ -203,7 +203,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 58.1
+   "in": 17.4
   }
  },
  {
@@ -213,7 +213,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 38.1
+   "in": 21.5
   }
  },
  {
@@ -223,7 +223,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 63.3
+   "in": 9.1
   }
  },
  {
@@ -233,7 +233,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 38.4
+   "in": 28.5
   }
  },
  {
@@ -243,7 +243,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 59.7
+   "in": 28.6
   }
  },
  {
@@ -253,7 +253,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 72.0
+   "in": 44.7
   }
  },
  {
@@ -263,7 +263,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 37.8
+   "in": 20.6
   }
  },
  {
@@ -273,7 +273,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 62.1
+   "in": 33.5
   }
  },
  {
@@ -283,7 +283,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 38.0
+   "in": 27.9
   }
  },
  {
@@ -293,7 +293,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 57.5
+   "in": 33.9
   }
  }
 ]
