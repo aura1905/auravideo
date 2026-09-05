@@ -97,6 +97,26 @@ for n in header row_0 row_1 row_2 row_3 row_4 stamp: ffmpeg ... sc_$n/f%03d.png 
 - 청사진 스틸: gpt-image-2로 **글자 없이** 생성("NO TEXT", 그 게임의 핵심 오브젝트 + 청사진 격자, 좌우 여백). `still_bg.png`.
 - 편 폴더에 `intro_*.mov`, `score_*.mov`, `still_bg.png`, `logo_c_rgba.png`(=assets/brand/demo_dip_badge_rgba.png)를 둔다.
 
+### 스틸에 움직임 굽기 — **필수**
+
+```
+python scripts/motion/kenburns.py episodes/<slug>              # ss*.jpg, ev_*.png, still_bg.png
+python scripts/motion/kenburns.py episodes/<slug> --vertical   # 쇼츠용 ev_*_v.png만 (나머지는 가로와 공유)
+```
+
+AuraVideo에는 키프레임이 없다. 스크린샷·증거카드·청사진을 그대로 놓으면 **1픽셀도 움직이지 않는다.**
+2026-09-05에 측정한 결과 롱폼의 41~64%, 쇼츠의 43~78%가 완전 정지 화면이었다 —
+목소리만 나오는 구간이 러닝타임의 절반이었다는 뜻이다. 트레일러가 45~75초인데
+자막 카드를 빼면 쓸 수 있는 실사가 20~30초뿐이라, 4분을 채우려면 구조적으로 그렇게 된다.
+
+`kenburns.py`가 스틸마다 느린 푸시+드리프트를 미리 구워 `<stem>_mv.mp4`(세로는 `_mvv.mp4`)로 만들고,
+`build_plan.py`가 자동으로 바꿔 낀다. 대본은 "화면에 **무엇**이 나오나"만 말하면 된다.
+
+- 세기는 측정으로 정했다: 스크린샷 1.00→1.24(16초), 증거카드·청사진 1.00→1.10.
+  카드는 글자판이라 크게 밀면 읽던 자리를 놓치고 우상단 출처 줄이 잘린다.
+- **클립은 소스 해상도를 그대로 유지한다.** 캔버스 크기로 강제하면 3:2인 `still_bg.png`가
+  가로로 18.5% 늘어난다(실제로 4·5화 마스터에 들어갔다가 이전 렌더와 프레임 비교로 발견).
+
 ## ⑥ plan.json
 
 ```
@@ -115,7 +135,25 @@ python scripts/agent_client.py export '{"outPath":"episodes/<slug>/intro_only.mp
 python scripts/agent_client.py export '{"outPath":"episodes/<slug>/final.mp4","encoder":"libx264","quality":"standard"}' --file C:/tmp/agent.json
 ```
 - 인트로·점수 구간만 먼저 range export해서 프레임을 뽑아 본 뒤 전체를 돌린다(1080p 3.5분 ≈ 10분).
-- 검증은 export된 파일에서 한다: `ffprobe` 길이, 프레임 추출, `volumedetect`. **프리뷰 캡처로 알파 클립을 판단하지 말 것**(프리뷰 잔상 버그).
+- 검증은 export된 파일에서 한다. **프레임 격자만 보고 통과시키지 말 것** — 한 장짜리 프레임으로는
+  "움직이는가"를 볼 수 없어서, 05~07화가 4~8초 정지화면으로 시작하는 채로 검수를 통과했다.
+
+```
+python scripts/pipeline/check_render.py episodes/<slug>/final.mp4 episodes/<slug>/short.mp4
+```
+
+  오프닝 움직임(원시 프레임을 파이썬에서 직접 차분), 라우드니스, 길이를 잰다.
+  눈금: **완전 정지 0.002~0.006 / 켄번즈 푸시 0.11~0.40 / 실사 1.6~3.9.**
+  ffmpeg `tblend`로 재는 첫 버전은 정지 오프닝을 3.55로 읽어 통과시켰다 — 측정 자체를
+  아는 정답(정지 클립·움직이는 클립)으로 검증하기 전에는 믿지 않는다.
+
+- **프레임 격자도 따로 본다.** 측정으로 안 잡히고 눈으로만 보이는 결함이 실제로 세 종류 나왔다:
+  청사진 가로 늘어남, 세로 증거카드 좌우 잘림, 스펙시트 뒤 검은 구간. 앞의 둘은
+  **이전 렌더와 같은 시각의 프레임을 나란히 놓아야** 보인다.
+- **프리뷰 캡처로 알파 클립을 판단하지 말 것**(프리뷰 잔상 버그).
+- **export 중에는 다른 ffmpeg을 돌리지 말 것.** 4분 1080p 그래프 하나가 8~16 GB를 쓴다.
+  다른 세션이 동시에 렌더하면 27 GB 머신이 스왑에 들어가 export가 멈춘다.
+  세션마다 `AURAVIDEO_AGENT_FILE`을 다르게 줘서 앱 인스턴스를 분리한다.
 - `agent_client.py`의 HTTP 대기가 먼저 끝나도 앱 안의 ffmpeg는 계속 돈다. 파일이 `ffprobe`로 열릴 때까지 기다린다.
 
 ## ⑧ 썸네일

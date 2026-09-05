@@ -15,13 +15,14 @@
   },
   {
    "track": "v11",
-   "file": "ss02.jpg",
+   "file": "trailer_main.mp4",
    "start": 0.0,
-   "in": 0,
-   "out": 5.102,
+   "in": 17.0,
+   "out": 22.102,
    "fillMode": "blur",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
+   "muted": true,
    "transformScale": 1.95
   },
   {
@@ -54,13 +55,14 @@
   },
   {
    "track": "v11",
-   "file": "ev_pdb_v.png",
+   "file": "ev_pdb_v_mvv.mp4",
    "start": 10.021,
    "in": 0,
    "out": 7.113,
    "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
+   "muted": true,
    "transformScale": 1.0
   },
   {
@@ -73,13 +75,14 @@
   },
   {
    "track": "v11",
-   "file": "ev_size_v.png",
+   "file": "ev_size_v_mvv.mp4",
    "start": 17.134,
    "in": 0,
    "out": 6.304,
    "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
+   "muted": true,
    "transformScale": 1.0
   },
   {
@@ -92,13 +95,14 @@
   },
   {
    "track": "v11",
-   "file": "ss01.jpg",
+   "file": "ss01_mv.mp4",
    "start": 23.438,
    "in": 0,
    "out": 5.102,
    "fillMode": "blur",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
+   "muted": true,
    "transformScale": 1.95
   },
   {
@@ -139,7 +143,7 @@
   },
   {
    "track": "v11",
-   "file": "still_bg.png",
+   "file": "still_bg_mv.mp4",
    "start": 33.599,
    "in": 0,
    "out": 9.9,

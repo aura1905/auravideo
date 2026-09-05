@@ -223,13 +223,18 @@ def main():
         # In 9:16 the score card fills the frame, so a caption over it would sit
         # on the stamp. The card shows the numbers and the narration says them.
         if not (VERT and in_score):
+            # A line may carry a separate `sub`: the TTS text spells foreign words the
+            # way they are pronounced ("디엘엘"), which is what the voice needs, but a
+            # caption must show the real token ("DLL") or the viewer cannot search for
+            # it. When `sub` is absent the caption is the narration, as before.
+            caption = s.get('sub') or s['text']
             if VERT:
-                txt = wrap_n(s['text'], 26)
+                txt = wrap_n(caption, 26)
                 # a five-line caption at 50 px would climb into the footage, so the
                 # long ones shrink rather than push upward
                 sub = {**SUB, 'fontSize': 50 if txt.count(chr(10)) < 3 else 42}
             else:
-                txt, sub = wrap2(s['text']), SUB
+                txt, sub = wrap2(caption), SUB
             S.append({'text': txt, 'start': round(t, 3), 'duration': round(d + 0.15, 3), **sub})
         t += span
     total = t + 0.8

@@ -67,9 +67,9 @@
    "track": "v11",
    "file": "trailer_main.mp4",
    "start": 0.0,
-   "in": 1.0,
-   "out": 7.957,
-   "fillMode": "cover",
+   "in": 0.5,
+   "out": 7.457,
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
    "muted": true,
@@ -87,9 +87,9 @@
    "track": "v11",
    "file": "trailer_main.mp4",
    "start": 6.957,
-   "in": 13.2,
-   "out": 18.171,
-   "fillMode": "cover",
+   "in": 13.0,
+   "out": 18.271,
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
    "muted": true,
@@ -123,9 +123,9 @@
    "track": "v11",
    "file": "trailer_main.mp4",
    "start": 28.866,
-   "in": 46.0,
-   "out": 52.408,
-   "fillMode": "cover",
+   "in": 45.7,
+   "out": 52.108,
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
    "muted": true,
@@ -141,7 +141,7 @@
   },
   {
    "track": "v11",
-   "file": "ss08.jpg",
+   "file": "ss02.jpg",
    "start": 35.274,
    "in": 0,
    "out": 6.408,
@@ -162,9 +162,9 @@
    "track": "v11",
    "file": "trailer_main.mp4",
    "start": 41.682,
-   "in": 45.9,
-   "out": 51.107,
-   "fillMode": "cover",
+   "in": 31.1,
+   "out": 36.307,
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
    "muted": true,
@@ -199,7 +199,7 @@
   },
   {
    "track": "v11",
-   "file": "ss05.jpg",
+   "file": "ss04.jpg",
    "start": 55.282,
    "in": 0,
    "out": 7.714,
@@ -220,9 +220,9 @@
    "track": "v11",
    "file": "trailer_main.mp4",
    "start": 62.996,
-   "in": 52.3,
-   "out": 58.421,
-   "fillMode": "cover",
+   "in": 52.0,
+   "out": 58.121,
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
    "muted": true,
@@ -238,7 +238,7 @@
   },
   {
    "track": "v11",
-   "file": "ss02.jpg",
+   "file": "ss05.jpg",
    "start": 69.117,
    "in": 0,
    "out": 3.587,
@@ -257,14 +257,13 @@
   },
   {
    "track": "v11",
-   "file": "trailer_main.mp4",
+   "file": "ss06.jpg",
    "start": 72.704,
-   "in": 1.0,
-   "out": 6.468,
-   "fillMode": "cover",
+   "in": 0,
+   "out": 5.468,
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
-   "muted": true,
    "transformScale": 1.0
   },
   {
@@ -277,13 +276,14 @@
   },
   {
    "track": "v11",
-   "file": "ss07.jpg",
+   "file": "trailer_main.mp4",
    "start": 78.172,
-   "in": 0,
-   "out": 7.009,
+   "in": 0.5,
+   "out": 7.509,
    "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
+   "muted": true,
    "transformScale": 1.0
   },
   {
@@ -296,7 +296,7 @@
   },
   {
    "track": "v11",
-   "file": "ss04.jpg",
+   "file": "ss07.jpg",
    "start": 85.181,
    "in": 0,
    "out": 4.553,
@@ -315,14 +315,13 @@
   },
   {
    "track": "v11",
-   "file": "trailer_main.mp4",
+   "file": "ss08.jpg",
    "start": 89.734,
-   "in": 13.2,
-   "out": 17.649,
-   "fillMode": "cover",
+   "in": 0,
+   "out": 4.449,
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
-   "muted": true,
    "transformScale": 1.0
   },
   {
@@ -335,13 +334,14 @@
   },
   {
    "track": "v11",
-   "file": "ss03.jpg",
+   "file": "trailer_main.mp4",
    "start": 94.183,
-   "in": 0,
-   "out": 7.296,
+   "in": 13.0,
+   "out": 20.296,
    "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
+   "muted": true,
    "transformScale": 1.0
   },
   {
@@ -354,7 +354,7 @@
   },
   {
    "track": "v11",
-   "file": "ss05.jpg",
+   "file": "ss00.jpg",
    "start": 101.479,
    "in": 0,
    "out": 6.696,
@@ -373,14 +373,13 @@
   },
   {
    "track": "v11",
-   "file": "trailer_main.mp4",
+   "file": "ss01.jpg",
    "start": 108.175,
-   "in": 24.0,
-   "out": 31.244,
-   "fillMode": "cover",
+   "in": 0,
+   "out": 7.244,
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
-   "muted": true,
    "transformScale": 1.0
   },
   {
@@ -393,13 +392,14 @@
   },
   {
    "track": "v11",
-   "file": "ss00.jpg",
+   "file": "trailer_main.mp4",
    "start": 115.419,
-   "in": 0,
-   "out": 7.845,
+   "in": 23.7,
+   "out": 31.545,
    "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
+   "muted": true,
    "transformScale": 1.0
   },
   {
@@ -412,14 +412,13 @@
   },
   {
    "track": "v11",
-   "file": "trailer_main.mp4",
+   "file": "ss02.jpg",
    "start": 123.264,
-   "in": 46.0,
-   "out": 52.513,
-   "fillMode": "cover",
+   "in": 0,
+   "out": 6.513,
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
-   "muted": true,
    "transformScale": 1.0
   },
   {
@@ -432,7 +431,7 @@
   },
   {
    "track": "v11",
-   "file": "ss06.jpg",
+   "file": "ss03.jpg",
    "start": 129.777,
    "in": 0,
    "out": 6.774,
@@ -453,9 +452,9 @@
    "track": "v11",
    "file": "trailer_main.mp4",
    "start": 136.551,
-   "in": 39.5,
-   "out": 43.583,
-   "fillMode": "cover",
+   "in": 38.6,
+   "out": 42.683,
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
    "muted": true,
@@ -471,7 +470,7 @@
   },
   {
    "track": "v11",
-   "file": "ss03.jpg",
+   "file": "ss04.jpg",
    "start": 140.634,
    "in": 0,
    "out": 7.767,
@@ -490,7 +489,7 @@
   },
   {
    "track": "v11",
-   "file": "ss02.jpg",
+   "file": "ss05.jpg",
    "start": 148.401,
    "in": 0,
    "out": 7.061,
@@ -509,13 +508,14 @@
   },
   {
    "track": "v11",
-   "file": "ss08.jpg",
+   "file": "trailer_main.mp4",
    "start": 155.462,
-   "in": 0,
-   "out": 7.113,
+   "in": 45.7,
+   "out": 52.813,
    "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
+   "muted": true,
    "transformScale": 1.0
   },
   {
@@ -528,14 +528,13 @@
   },
   {
    "track": "v11",
-   "file": "trailer_main.mp4",
+   "file": "ss06.jpg",
    "start": 162.575,
-   "in": 1.0,
-   "out": 7.722,
-   "fillMode": "cover",
+   "in": 0,
+   "out": 6.722,
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
-   "muted": true,
    "transformScale": 1.0
   },
   {
@@ -548,7 +547,7 @@
   },
   {
    "track": "v11",
-   "file": "ss08.jpg",
+   "file": "ss07.jpg",
    "start": 169.297,
    "in": 0,
    "out": 6.304,
@@ -569,9 +568,9 @@
    "track": "v11",
    "file": "trailer_main.mp4",
    "start": 175.601,
-   "in": 13.2,
-   "out": 19.321,
-   "fillMode": "cover",
+   "in": 52.7,
+   "out": 58.821,
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
    "muted": true,
@@ -587,14 +586,13 @@
   },
   {
    "track": "v11",
-   "file": "trailer_main.mp4",
+   "file": "ss08.jpg",
    "start": 181.722,
-   "in": 24.0,
-   "out": 29.807,
-   "fillMode": "cover",
+   "in": 0,
+   "out": 5.807,
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
-   "muted": true,
    "transformScale": 1.0
   },
   {
@@ -607,7 +605,7 @@
   },
   {
    "track": "v11",
-   "file": "ss07.jpg",
+   "file": "ss00.jpg",
    "start": 187.529,
    "in": 0,
    "out": 6.278,
@@ -626,13 +624,14 @@
   },
   {
    "track": "v11",
-   "file": "ss03.jpg",
+   "file": "trailer_main.mp4",
    "start": 193.807,
-   "in": 0,
-   "out": 5.677,
+   "in": 0.5,
+   "out": 6.177,
    "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
+   "muted": true,
    "transformScale": 1.0
   },
   {
@@ -644,6 +643,17 @@
    "volume": 1.6
   },
   {
+   "track": "v11",
+   "file": "ss01.jpg",
+   "start": 199.484,
+   "in": 0,
+   "out": 2.333,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.0
+  },
+  {
    "track": "a1",
    "file": "tts/33.wav",
    "start": 201.817,
@@ -652,12 +662,35 @@
    "volume": 1.6
   },
   {
+   "track": "v11",
+   "file": "ss02.jpg",
+   "start": 201.817,
+   "in": 0,
+   "out": 7.427,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.0
+  },
+  {
    "track": "a1",
    "file": "tts/34.wav",
    "start": 209.244,
    "in": 0,
    "out": 7.497,
    "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "trailer_main.mp4",
+   "start": 209.244,
+   "in": 13.0,
+   "out": 20.897,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
   },
   {
    "track": "a1",
@@ -669,7 +702,7 @@
   },
   {
    "track": "v11",
-   "file": "ss02.jpg",
+   "file": "ss03.jpg",
    "start": 217.141,
    "in": 0,
    "out": 7.113,
@@ -688,13 +721,14 @@
   },
   {
    "track": "v11",
-   "file": "ss07.jpg",
+   "file": "trailer_main.mp4",
    "start": 224.254,
-   "in": 0,
-   "out": 4.919,
+   "in": 23.7,
+   "out": 28.619,
    "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
+   "muted": true,
    "transformScale": 1.0
   },
   {
@@ -706,12 +740,55 @@
    "volume": 1.6
   },
   {
+   "track": "a1",
+   "file": "tts/38.wav",
+   "start": 233.491,
+   "in": 0,
+   "out": 7.131,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/39.wav",
+   "start": 241.022,
+   "in": 0,
+   "out": 4.624,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/40.wav",
+   "start": 246.046,
+   "in": 0,
+   "out": 10.005,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss06.jpg",
+   "start": 246.046,
+   "in": 0,
+   "out": 10.405,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/41.wav",
+   "start": 256.451,
+   "in": 0,
+   "out": 3.788,
+   "volume": 1.6
+  },
+  {
    "track": "v11",
    "file": "trailer_main.mp4",
-   "start": 229.173,
-   "in": 17.0,
-   "out": 21.318,
-   "fillMode": "cover",
+   "start": 256.451,
+   "in": 62.7,
+   "out": 66.888,
+   "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
    "muted": true,
@@ -720,9 +797,9 @@
   {
    "track": "v11",
    "file": "still_bg.png",
-   "start": 199.284,
+   "start": 228.973,
    "in": 0,
-   "out": 14.6,
+   "out": 17.173,
    "fillMode": "cover",
    "fadeIn": 0.3,
    "fadeOut": 0.3
@@ -730,7 +807,7 @@
   {
    "track": "v4",
    "file": "score_header.mov",
-   "start": 199.484,
+   "start": 229.173,
    "in": 0,
    "out": 14.2,
    "fillMode": "fit",
@@ -739,7 +816,7 @@
   {
    "track": "v5",
    "file": "score_row_0.mov",
-   "start": 199.484,
+   "start": 229.173,
    "in": 0,
    "out": 14.2,
    "fillMode": "fit",
@@ -748,7 +825,7 @@
   {
    "track": "v6",
    "file": "score_row_1.mov",
-   "start": 199.484,
+   "start": 229.173,
    "in": 0,
    "out": 14.2,
    "fillMode": "fit",
@@ -757,7 +834,7 @@
   {
    "track": "v7",
    "file": "score_row_2.mov",
-   "start": 199.484,
+   "start": 229.173,
    "in": 0,
    "out": 14.2,
    "fillMode": "fit",
@@ -766,7 +843,7 @@
   {
    "track": "v8",
    "file": "score_row_3.mov",
-   "start": 199.484,
+   "start": 229.173,
    "in": 0,
    "out": 14.2,
    "fillMode": "fit",
@@ -775,7 +852,7 @@
   {
    "track": "v9",
    "file": "score_row_4.mov",
-   "start": 199.484,
+   "start": 229.173,
    "in": 0,
    "out": 14.2,
    "fillMode": "fit",
@@ -784,7 +861,7 @@
   {
    "track": "v10",
    "file": "score_stamp.mov",
-   "start": 199.484,
+   "start": 229.173,
    "in": 0,
    "out": 14.2,
    "fillMode": "fit",
@@ -795,7 +872,7 @@
    "file": "logo_c_rgba.png",
    "start": 15.728,
    "in": 0,
-   "out": 218.563,
+   "out": 245.711,
    "fillMode": "fit",
    "transformOpacity": 0.6,
    "fadeIn": 0.5,
@@ -838,7 +915,17 @@
    "file": "trailer_main.mp4",
    "start": 180.0,
    "in": 0,
-   "out": 54.291,
+   "out": 60.0,
+   "volume": 0.07,
+   "fadeIn": 1.0,
+   "fadeOut": 1.5
+  },
+  {
+   "track": "a2",
+   "file": "trailer_main.mp4",
+   "start": 240.0,
+   "in": 0,
+   "out": 21.439,
    "volume": 0.07,
    "fadeIn": 1.0,
    "fadeOut": 1.5
@@ -934,7 +1021,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_drop.wav",
-   "start": 199.584,
+   "start": 229.273,
    "in": 0,
    "out": 0.282,
    "volume": 0.5
@@ -942,7 +1029,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 200.884,
+   "start": 230.573,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -950,7 +1037,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 201.434,
+   "start": 231.123,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -958,7 +1045,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 201.834,
+   "start": 231.523,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -966,7 +1053,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 202.384,
+   "start": 232.073,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -974,7 +1061,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 202.784,
+   "start": 232.473,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -982,7 +1069,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 203.334,
+   "start": 233.023,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -990,7 +1077,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 203.734,
+   "start": 233.423,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -998,7 +1085,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 204.284,
+   "start": 233.973,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -1006,7 +1093,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 204.684,
+   "start": 234.373,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -1014,7 +1101,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 205.234,
+   "start": 234.923,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -1022,7 +1109,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/thud.wav",
-   "start": 206.184,
+   "start": 235.873,
    "in": 0,
    "out": 0.415,
    "volume": 0.9
@@ -1030,7 +1117,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/chime_complete.wav",
-   "start": 206.434,
+   "start": 236.123,
    "in": 0,
    "out": 1.105,
    "volume": 0.6
@@ -1038,7 +1125,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_exit.wav",
-   "start": 212.784,
+   "start": 242.473,
    "in": 0,
    "out": 0.298,
    "volume": 0.5
@@ -1046,7 +1133,7 @@
  ],
  "subs": [
   {
-   "text": "2.68 GiB",
+   "text": "282 files / 2.68 GiB",
    "start": 15.928,
    "duration": 12.738,
    "x": -560,
@@ -1061,7 +1148,7 @@
    "fadeOut": 0.3
   },
   {
-   "text": "282 files",
+   "text": "유료 에셋 $95",
    "start": 16.378,
    "duration": 12.288,
    "x": 560,
@@ -1076,7 +1163,7 @@
    "fadeOut": 0.3
   },
   {
-   "text": "자체 모듈 8개",
+   "text": "Assembly-CSharp 5 KB",
    "start": 16.828,
    "duration": 11.838,
    "x": -560,
@@ -1091,7 +1178,7 @@
    "fadeOut": 0.3
   },
   {
-   "text": "Assembly-CSharp 5 KB",
+   "text": "Spine 대신 Unity 2D",
    "start": 17.278,
    "duration": 11.388,
    "x": 560,
@@ -1106,189 +1193,209 @@
    "fadeOut": 0.3
   },
   {
-   "text": "정식 출시된 게임 파일 안에, 유니티를 AI 에이전트한테\n맡길 때 쓰는 연결 모듈이 그대로 들어 있었습니다.",
+   "text": "이 게임에 들어간 유료 도구는\n전부 합쳐 $95. 13만 원.",
    "start": 0.0,
    "duration": 6.707
   },
   {
-   "text": "빼는 걸 잊은 거겠죠. 그런데 이 빌드에는\n그것 말고도 이상한 게 더 있습니다.",
+   "text": "나머지는 다 무료거나 오픈소스입니다. 그게\n설치 파일 목록에 그대로 적혀 있습니다.",
    "start": 6.957,
    "duration": 4.721
   },
   {
-   "text": "펭퐁은 펭귄이 하키채로 아무거나 튕기는 뱀서라이크입니다.\n총도 던지고, 이어폰도 던지고, 복어도 던집니다.",
+   "text": "펭퐁은 펭귄이 하키채로 아무거나 튕기는\n뱀서라이크입니다. 총도 던지고 복어도 던집니다.",
    "start": 15.528,
    "duration": 7.281
   },
   {
-   "text": "만든 곳은 한국의 샌디 플로어. 데모가 먼저\n나왔고, 본편은 팔월 이십일에 나왔습니다.",
+   "text": "한국 스튜디오 SANDY FLOOR가\n만들었고, 본편은 8월 20일에 나왔습니다.",
    "start": 23.059,
    "duration": 5.557
   },
   {
-   "text": "데모 평가는 팔십육 점 육 퍼센트, 본편은\n팔십사 점 구 퍼센트. 나쁘지 않은 숫자입니다.",
+   "text": "데모 평가 86.6%, 본편 84.9%.\n칭찬은 거의 다 그림에 몰려 있습니다.",
    "start": 28.866,
    "duration": 6.158
   },
   {
-   "text": "칭찬은 거의 다 그림에 몰려 있습니다. 재즈,\n러버호스 카툰, 컵헤드. 리뷰마다 같은 단어가 나옵니다.",
+   "text": "1930년대 러버호스 카툰. Cuphead 이야기가\n리뷰마다 나옵니다. 이런 그림은 보통 돈이 많이 듭니다.",
    "start": 35.274,
    "duration": 6.158
   },
   {
-   "text": "그럼 이 그림은 몇 명이 얼마나 걸려\n만든 걸까요. 파일 목록부터 봤습니다.",
+   "text": "그래서 궁금했습니다. 이 팀은 뭘\n사서 썼고, 뭘 직접 만들었을까.",
    "start": 41.682,
    "duration": 4.957
   },
   {
-   "text": "스팀은 게임을 설치할 때 뭘 받는지 파일 목록을 공개합니다.\n펭퐁 데모는 이백여든두 개, 이 점 육팔 기가입니다.",
+   "text": "Steam은 설치 파일 목록을 공개합니다.\n펭퐁 데모는 282개, 2.68 GiB.",
    "start": 46.889,
    "duration": 8.143
   },
   {
-   "text": "폴더 이름이 먼저 답을 줍니다. 모노블리딩엣지. 유니티인데\n아이엘투씨피피가 아니라 모노로 빌드했다는 뜻입니다.",
+   "text": "첫 단서는 폴더 이름입니다.\nMonoBleedingEdge.",
    "start": 55.282,
    "duration": 7.464
   },
   {
-   "text": "이게 왜 중요하냐면, 모노로 빌드하면 갖다 쓴\n패키지 이름이 디엘엘 파일로 그대로 남기 때문입니다.",
+   "text": "Unity는 코드를 두 가지로 빌드합니다. IL2CPP는\nC#을 네이티브로 합치고, Mono는 DLL을 그대로 남깁니다.",
    "start": 62.996,
    "duration": 5.871
   },
   {
-   "text": "그래서 이 팀이 뭘 샀는지가\n목록에 다 보입니다.",
+   "text": "펭퐁은 Mono입니다. 그래서 뭘 갖다\n썼는지가 파일 이름으로 전부 드러납니다.",
    "start": 69.117,
    "duration": 3.337
   },
   {
-   "text": "에프모드. 상용 오디오 미들웨어입니다.\n사운드 뱅크 파일이 네 개, 이십구 메가.",
+   "text": "오디오는 FMOD입니다.\n사운드 뱅크 4개, 29 MB.",
    "start": 72.704,
    "duration": 5.218
   },
   {
-   "text": "디오트윈, 페부치 텍스트 애니메이터, 아라트레일.\n움직임과 글자 연출을 맡는 유료 에셋들입니다.",
+   "text": "FMOD는 연매출 $200,000 미만이면 무료입니다.\n인디가 상용 오디오 미들웨어를 못 쓸 이유가 없습니다.",
    "start": 78.172,
    "duration": 6.759
   },
   {
-   "text": "게임애널리틱스도 있습니다. 플레이\n데이터를 실제로 모으고 있다는 뜻이죠.",
+   "text": "돈 주고 산 건 딱 둘. Text Animator\n$65, Ara Trails $30.",
    "start": 85.181,
    "duration": 4.303
   },
   {
-   "text": "여기까지는 흔한 구성입니다.\n이상한 건 그다음 줄부터입니다.",
+   "text": "DOTween, GameAnalytics, UIParticle,\nNavMeshPlus는 전부 무료거나 오픈소스.",
    "start": 89.734,
    "duration": 4.199
   },
   {
-   "text": "샌디툴킷. 샌디오디오. 샌디풀링. 샌디세팅.\n샌디디펜던시. 스튜디오 이름이 붙은 모듈이 여덟 개입니다.",
+   "text": "그럼 애니메이션은 뭘로 했을까요. 보통\nSpine을 씁니다. 개인 라이선스 $349.",
    "start": 94.183,
    "duration": 7.046
   },
   {
-   "text": "그리고 유니티가 기본으로 만드는 어셈블리 씨샵 파일은\n오 킬로바이트밖에 안 됩니다. 사실상 비어 있습니다.",
+   "text": "펭퐁에는 Spine이 없습니다. 대신 Unity 2D\nAnimation + IK 패키지가 들어 있습니다.",
    "start": 101.479,
    "duration": 6.446
   },
   {
-   "text": "유니티는 따로 설정하지 않으면 게임 코드를 전부 그 파일\n하나에 몰아넣습니다. 그게 비었다는 건 얘기가 다릅니다.",
+   "text": "뼈를 심어 움직이는 방식은 같습니다. Package\nManager에서 그냥 받습니다. 공짜로.",
    "start": 108.175,
    "duration": 6.994
   },
   {
-   "text": "코드를 어셈블리 데피니션으로 잘게 쪼갰다는 뜻입니다. 컴파일이\n빨라지고, 모듈을 다음 프로젝트로 통째로 옮길 수 있습니다.",
+   "text": "이제 제일 이상한 부분.\nAssembly-CSharp.dll이 5 KB입니다.",
    "start": 115.419,
    "duration": 7.595
   },
   {
-   "text": "한 작품 만들고 버릴 코드는 이렇게 안 짭니다.\n게임을 만들면서 사내 엔진을 같이 만든 겁니다.",
+   "text": "Unity는 따로 설정하지 않으면 게임 코드를 전부 그 파일 하나에\n넣습니다. 그게 비었다는 건, 코드를 전부 밖으로 빼놨다는 뜻입니다.",
    "start": 123.264,
    "duration": 6.263
   },
   {
-   "text": "그럼 정작 게임 코드는 어디 있냐. 코어 디엘엘,\n이 점 삼칠 메가. 로직은 전부 여기 들어 있습니다.",
+   "text": "Assembly Definition(asmdef)입니다.\n폴더마다 파일 하나면 그 폴더가 별도 DLL로 컴파일됩니다.",
    "start": 129.777,
    "duration": 6.524
   },
   {
-   "text": "그리고 처음에 말한 그 파일.\n엠씨피 포 유니티 런타임.",
+   "text": "효과는 컴파일 시간입니다. 한 줄 고칠 때 프로젝트 전체가 아니라\n그 모듈만 다시 빌드합니다. 프로젝트가 커질수록 차이가 큽니다.",
    "start": 136.551,
    "duration": 3.833
   },
   {
-   "text": "엠씨피는 AI 모델이 바깥 프로그램을 직접 조작하게 이어주는\n규격입니다. 유니티에 붙이면 에디터를 시킬 수 있습니다.",
+   "text": "그렇게 빠진 모듈이 8개. 전부 스튜디오 이름이 붙어 있습니다. SandyToolkit,\nSandyAudio, SandyPooling, SandySetting, SandyDependency.",
    "start": 140.634,
    "duration": 7.517
   },
   {
-   "text": "확인된 건 여기까지입니다. 그 모듈이 출시 빌드에 들어\n있다는 것. 어디에 얼마나 썼는지는 개발자만 압니다.",
+   "text": "풀링, 오디오, 세팅, 의존성 주입. 게임마다 다시 짜게 되는\n것들입니다. 이 팀은 그걸 폴더째 다음 프로젝트로 가져갑니다.",
    "start": 148.401,
    "duration": 6.811
   },
   {
-   "text": "제 짐작으로는 개발할 때 붙여놓고 그대로 나간 쪽입니다.\n아니라면 댓글로 알려주세요. 정정해서 고정해두겠습니다.",
+   "text": "세이브 데이터는 SQLite. 아이템 300개가\n넘는 게임에서는 JSON 파일 하나보다 낫습니다.",
    "start": 155.462,
    "duration": 6.863
   },
   {
-   "text": "용량도 봅니다. 이 점 육팔 기가 중에 리소스가\n일 점 칠삼 기가, 에셋 번들이 오백이십구 메가.",
+   "text": "콘텐츠는 Addressables 번들 17개,\n529 MB. 패치할 때 바뀐 번들만 내려받습니다.",
    "start": 162.575,
    "duration": 6.472
   },
   {
-   "text": "디엘엘을 백구십다섯 개 다 합쳐도 구십일 메가입니다.\n이 게임의 부피는 전부 그림과 소리입니다.",
+   "text": "Localization 패키지도 있습니다.\n8개 언어가 이걸로 들어갑니다. 한국어 포함.",
    "start": 169.297,
    "duration": 6.054
   },
   {
-   "text": "그런데 본편 리뷰를 읽으면 분위기가 갈립니다.\n이백쉰여덟 개에 팔십사 점 구 퍼센트.",
+   "text": "반대로, 출시 빌드에 있으면 안 되는\n것도 하나. Unity Recorder.",
    "start": 175.601,
    "duration": 5.871
   },
   {
-   "text": "부정 리뷰는 거의 한 가지를 말합니다.\n정식 출시인데 스테이지가 세 개뿐이라는 것.",
+   "text": "에디터에서 영상 뽑는 개발용 패키지입니다. 빼는 걸 잊은\n거죠. 무해하지만, 이런 건 빌드 전에 한 번 확인할 값입니다.",
    "start": 181.722,
    "duration": 5.557
   },
   {
-   "text": "도구에도 아트에도 몇 년치 공이 들어간 게\n파일에서 보이는데, 정작 플레이할 게 모자랍니다.",
+   "text": "그리고 MCP for Unity. AI 모델이 Unity\n에디터를 직접 조작하게 이어주는 오픈소스입니다.",
    "start": 187.529,
    "duration": 6.028
   },
   {
-   "text": "한국어 리뷰에서는 이렇게 말합니다. 튕기는\n손맛은 좋은데 레벨 디자인이 안 따라온다고.",
+   "text": "확인된 건 그 파일이 출시 빌드에 들어 있다는\n것까지입니다. 어디에 얼마나 썼는지는 개발자만 압니다.",
    "start": 193.807,
    "duration": 5.427
   },
   {
-   "text": "한 장으로 정리하면 이렇습니다.",
+   "text": "제 짐작으로는 개발용으로 붙여놓고 그대로 나간 쪽입니다.\n틀렸으면 댓글로 알려주세요. 정정해서 고정하겠습니다.",
    "start": 199.484,
    "duration": 2.083
   },
   {
-   "text": "유니티 모노. 자체 모듈 여덟 개. 어셈블리 씨샵 오\n킬로바이트. 아트 일 점 칠삼 기가. 스테이지 세 개.",
+   "text": "2.68 GiB 중 그림과 소리가 2.2 GiB.\nDLL은 195개를 다 합쳐도 91 MB.",
    "start": 201.817,
    "duration": 7.177
   },
   {
-   "text": "판정은, 찍먹할 만합니다. 데모는 무료고 튕기는 손맛은\n진짜입니다. 본편은 세일이나 업데이트를 기다려도 됩니다.",
+   "text": "그런데 본편 리뷰를 보면 불만이 한 곳에\n몰립니다. 정식 출시인데 스테이지가 세 개라는 것.",
    "start": 209.244,
    "duration": 7.647
   },
   {
-   "text": "가져갈 건 이겁니다. 도구를 만드는 시간은 다음 게임에서\n돌아옵니다. 대신 이번 게임의 콘텐츠에서 빠져나옵니다.",
+   "text": "도구는 다음 게임까지 남습니다. 그런데 그\n시간은 이번 게임의 콘텐츠에서 빠져나옵니다.",
    "start": 217.141,
    "duration": 6.863
   },
   {
-   "text": "둘 다 맞는 선택입니다. 다만 지금\n뭘 하고 있는지는 알고 해야 합니다.",
+   "text": "프레임워크 여덟 개와 스테이지 세 개.\n이 두 숫자가 같은 팀에서 나옵니다.",
    "start": 224.254,
    "duration": 4.669
   },
   {
-   "text": "다음에도 데모 하나, 파일 목록\n하나. 데모 찍먹이었습니다.",
+   "text": "한 장으로 정리하면 이렇습니다.",
    "start": 229.173,
    "duration": 4.068
+  },
+  {
+   "text": "Unity / Mono. 유료 에셋 $95. Spine 대신\nUnity 2D Animation. 자체 모듈 8개. 스테이지 3개.",
+   "start": 233.491,
+   "duration": 7.281
+  },
+  {
+   "text": "판정은 찍먹 추천입니다. 데모는\n무료고, 튕기는 손맛은 진짜입니다.",
+   "start": 241.022,
+   "duration": 4.774
+  },
+  {
+   "text": "가져갈 건 셋. FMOD는 인디에게 무료. Spine 없이도 뼈\n애니메이션은 됩니다. 코드를 asmdef로 쪼개면 컴파일이 빨라집니다.",
+   "start": 246.046,
+   "duration": 10.155
+  },
+  {
+   "text": "다음에도 데모 하나, 파일 목록\n하나. 데모 찍먹이었습니다.",
+   "start": 256.451,
+   "duration": 3.938
   }
  ],
  "tracks_extra": [
@@ -1325,5 +1432,5 @@
    "name": "BG"
   }
  ],
- "total": 234.291
+ "total": 261.439
 }

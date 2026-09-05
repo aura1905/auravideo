@@ -1,32 +1,37 @@
-펭퐁 — 정식 출시된 게임 파일 안에, 유니티를 AI 에이전트한테 맡길 때 쓰는 연결 모듈이 그대로 들어 있었습니다.
-도구를 만드는 시간은 다음 게임에서 돌아옵니다. 대신 이번 게임의 콘텐츠에서 빠져나옵니다.
+펭퐁 — 이 게임에 들어간 유료 도구는 전부 합쳐 $95. 나머지는 다 무료거나 오픈소스입니다.
+FMOD는 인디에게 무료, Spine 없이도 뼈 애니메이션은 되고, asmdef로 쪼개면 컴파일이 빨라집니다.
 
 ▶ 무료 데모: https://store.steampowered.com/app/3636220/
 ▶ 본편: https://store.steampowered.com/app/2766910/
 
 ── 이렇게 만들었습니다 ──
-엔진      : 유니티 / 모노
-팀        : 한국, 샌디 플로어
-자체 모듈 : 여덟 개
-게임 코드 : Assembly-CSharp 5 KB
-함정      : 스테이지 세 개
-판정      : 찍먹 추천
+엔진       : Unity / Mono
+유료 에셋  : $95 (2개)
+애니메이션 : Unity 2D Animation
+자체 모듈  : 8개 (asmdef)
+함정       : 스테이지 3개
+판정       : 찍먹 추천
 
 ── 쓰인 도구들 ──
-FMOD (오디오 미들웨어) : https://www.fmod.com/
-DOTween                : http://dotween.demigiant.com/
-Febucci Text Animator  : https://www.febucci.com/text-animator-unity/
-GameAnalytics          : https://gameanalytics.com/
-Steamworks.NET         : https://steamworks.github.io/
-MCP for Unity          : https://github.com/CoplayDev/unity-mcp
-펭퐁 스팀 페이지       : https://store.steampowered.com/app/2766910/
+FMOD — 연매출 $200k 미만 무료             : https://www.fmod.com/
+Unity 2D Animation (무료, Package Manager) : https://docs.unity3d.com/Packages/com.unity.2d.animation@latest
+Spine (비교용, 개인 $349)                  : http://esotericsoftware.com/spine-purchase
+Text Animator for Unity ($65)              : https://www.febucci.com/text-animator-unity/
+Ara Trails ($30)                           : https://assetstore.unity.com/packages/tools/particles-effects/ara-trails-102638
+DOTween (무료)                             : http://dotween.demigiant.com/
+Addressables                               : https://docs.unity3d.com/Packages/com.unity.addressables@latest
+Assembly Definition (asmdef) 문서          : https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html
+MCP for Unity (오픈소스)                   : https://github.com/CoplayDev/unity-mcp
+GameAnalytics (무료 티어)                  : https://gameanalytics.com/
+NavMeshPlus — 2D NavMesh (오픈소스)       : https://github.com/h8man/NavMeshPlus
+펭퐁 스팀 페이지                           : https://store.steampowered.com/app/2766910/
 
 ── 챕터 ──
 0:00 빌드에서 나온 것
 0:15 펭퐁이 어떤 게임인가
 0:46 파일 목록 뜯어보기
-2:55 플레이어들이 하는 말
-3:19 스펙 시트와 판정
+3:29 플레이어들이 하는 말
+3:49 스펙 시트와 판정
 
 이 영상의 제작 분석은 전부 공개된 정보만 보고 쓴 것입니다. 스팀 상점 페이지, 개발사의
 공개 발언, 최근 리뷰, 그리고 스팀이 공개하는 데모 depot 파일 목록(파일 이름과 크기만

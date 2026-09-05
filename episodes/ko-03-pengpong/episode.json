@@ -13,10 +13,10 @@
   "scale": 1.15
  },
  "labels": [
-  "2.68 GiB",
-  "282 files",
-  "자체 모듈 8개",
-  "Assembly-CSharp 5 KB"
+  "282 files / 2.68 GiB",
+  "유료 에셋 $95",
+  "Assembly-CSharp 5 KB",
+  "Spine 대신 Unity 2D"
  ],
  "hook_lines": 2,
  "cold_open_lines": 2,
@@ -24,23 +24,23 @@
  "specs": [
   [
    "엔진",
-   "유니티 / 모노"
+   "Unity / Mono"
   ],
   [
-   "팀",
-   "한국, 샌디 플로어"
+   "유료 에셋",
+   "$95 (2개)"
+  ],
+  [
+   "애니메이션",
+   "Unity 2D Animation"
   ],
   [
    "자체 모듈",
-   "여덟 개"
-  ],
-  [
-   "게임 코드",
-   "Assembly-CSharp 5 KB"
+   "8개 (asmdef)"
   ],
   [
    "함정",
-   "스테이지 세 개"
+   "스테이지 3개"
   ]
  ],
  "verdict": "찍먹 추천",
@@ -52,13 +52,13 @@
  "thumbnail": {
   "bg": "ss01.jpg",
   "line1": "펭퐁(PengPong)",
-  "line2": "빌드에 AI 도구가 딸려 나왔다",
+  "line2": "유료 도구 전부 합쳐 $95",
   "tag": "유니티 빌드 분해",
   "focus": "center"
  },
  "youtube": {
-  "title": "[데모 찍먹] 출시 빌드에 AI 도구가 딸려 나왔습니다 | 펭퐁(PengPong)",
-  "tags": "펭퐁,PengPong,샌디플로어,SANDY FLOOR,스팀 데모,인디게임,뱀서라이크,로그라이크,유니티,1인 개발,게임 개발,게임 분석,게임 뜯어보기,한국 인디게임,컵헤드,데모 찍먹",
+  "title": "[데모 찍먹] 유료 도구 전부 합쳐 13만 원 | 펭퐁(PengPong)",
+  "tags": "펭퐁,PengPong,샌디플로어,SANDY FLOOR,스팀 데모,인디게임,유니티,Unity,FMOD,Spine,asmdef,Addressables,1인 개발,게임 개발,유니티 강좌,게임 뜯어보기,한국 인디게임,뱀서라이크,데모 찍먹",
   "privacy": "private",
   "lang": "ko",
   "channel": "aimc"
@@ -72,28 +72,48 @@
  },
  "stack": [
   [
-   "FMOD (오디오 미들웨어)",
+   "FMOD — 연매출 $200k 미만 무료",
    "https://www.fmod.com/"
   ],
   [
-   "DOTween",
-   "http://dotween.demigiant.com/"
+   "Unity 2D Animation (무료, Package Manager)",
+   "https://docs.unity3d.com/Packages/com.unity.2d.animation@latest"
   ],
   [
-   "Febucci Text Animator",
+   "Spine (비교용, 개인 $349)",
+   "http://esotericsoftware.com/spine-purchase"
+  ],
+  [
+   "Text Animator for Unity ($65)",
    "https://www.febucci.com/text-animator-unity/"
   ],
   [
-   "GameAnalytics",
+   "Ara Trails ($30)",
+   "https://assetstore.unity.com/packages/tools/particles-effects/ara-trails-102638"
+  ],
+  [
+   "DOTween (무료)",
+   "http://dotween.demigiant.com/"
+  ],
+  [
+   "Addressables",
+   "https://docs.unity3d.com/Packages/com.unity.addressables@latest"
+  ],
+  [
+   "Assembly Definition (asmdef) 문서",
+   "https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html"
+  ],
+  [
+   "MCP for Unity (오픈소스)",
+   "https://github.com/CoplayDev/unity-mcp"
+  ],
+  [
+   "GameAnalytics (무료 티어)",
    "https://gameanalytics.com/"
   ],
   [
-   "Steamworks.NET",
-   "https://steamworks.github.io/"
-  ],
-  [
-   "MCP for Unity",
-   "https://github.com/CoplayDev/unity-mcp"
+   "NavMeshPlus — 2D NavMesh (오픈소스)",
+   "https://github.com/h8man/NavMeshPlus"
   ],
   [
    "펭퐁 스팀 페이지",
@@ -127,5 +147,5 @@
   ],
   "ai_disclosure": "스팀 페이지에 생성형 AI 공시 없음. 빌드에 MCPForUnity 포함(용도는 추정)"
  },
- "score_line_id": "32"
+ "score_line_id": "37"
 }
