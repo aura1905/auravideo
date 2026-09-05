@@ -1,7 +1,7 @@
 Three people, a 16.9 GB demo, and 770 MB of debug symbols that were never meant to leave the build server. One scene, 1,555 streaming bundles behind it.
 
 ▶ Steam demo (free): https://store.steampowered.com/app/5041080/
-▶ Full teardown: https://youtu.be/f8Ir-wxioT8
+▶ Full teardown: https://youtu.be/EASbEO18yIQ
 
 Read off the demo's public depot manifest — file names and sizes only.
 
