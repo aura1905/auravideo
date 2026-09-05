@@ -101,9 +101,11 @@ def main():
         return vid_dur[f]
 
     plan = {'settings': {'width': CW, 'height': CH, 'fps': 30}, 'clips': [], 'subs': [],
-            'tracks_extra': [{'kind': 'video', 'name': f'FX{i+1}'} for i in range(7)] + [{'kind': 'video', 'name': 'BG'}]}
+            'tracks_extra': [{'kind': 'video', 'name': f'FX{i+1}'} for i in range(7)] + [{'kind': 'video', 'name': 'BG'},
+                             {'kind': 'audio', 'name': 'TRL'}]}
     C, S = plan['clips'], plan['subs']
     BG = 'v11'
+    TRL = 'a12'   # trailer sound under a beat (bridge_build: 9th extra track -> a12)
     hook_n = ep.get('hook_lines', 2)
     cold_n = int(ep.get('cold_open_lines', hook_n))     # lines that run BEFORE the logo sting
     still_n = int(ep.get('still_lines', 2))             # lines over the blueprint still, after it
@@ -182,13 +184,39 @@ def main():
     for idx, s in enumerate(segs):
         if idx == cold_n:
             t = still_start          # jump the timeline past the sting
-        d = s['dur']; vis = s.get('vis') or {}; span = d + GAP
+        d = s['dur']; vis = s.get('vis') or {}
+        # A beat is footage with no narration -- the trailer plays with its own sound.
+        # "매번 플레이 영상에 대본을 써야 하는건 아님": the game gets to be seen on its own.
+        is_beat = bool(s.get('beat'))
+        span = d if is_beat else d + GAP
         if s['id'] == ep['score_line_id']:
             score_t0 = t
-        C.append({'track': 'a1', 'file': f"{TTS}/{s['id']}.wav", 'start': round(t, 3), 'in': 0, 'out': round(d, 3), 'volume': nvol})
+        if not is_beat:
+            C.append({'track': 'a1', 'file': f"{TTS}/{s['id']}.wav", 'start': round(t, 3), 'in': 0, 'out': round(d, 3), 'volume': nvol})
+        elif vis.get('type') == 'video':
+            C.append({'track': TRL, 'file': vis['file'], 'start': round(t, 3), 'in': vis['in'],
+                      'out': round(min(vdur(vis['file']), vis['in'] + span), 3),
+                      'volume': float(ep.get('beat_volume', 0.55)), 'fadeIn': 0.4, 'fadeOut': 0.8})
         in_score = score_t0 is not None and t < score_t0 + SCORE_LEN - 0.5
         on_still = still_from <= idx < still_to
-        if not on_still and not in_score and vis:
+        if not on_still and not in_score and vis and vis.get('type') == 'continue':
+            # Keep the previous shot running under this line instead of cutting. This is
+            # how a trailer gets to play for 20-30 s unbroken while three lines of
+            # narration go by -- one visual per line was making every shot 4-6 s long,
+            # and the user's note was that the game itself never got to be seen.
+            prev = next((c for c in reversed(C) if c['track'] == BG), None)
+            if prev is not None:
+                try:
+                    avail = vdur(prev['file']) - prev['in']
+                except Exception:
+                    avail = None
+                want = (prev['out'] - prev['in']) + span
+                if avail is not None and want > avail:
+                    print(f"  WARNING line {s['id']}: 'continue' runs {want - avail:.1f}s past the "
+                          f"end of {prev['file']} -- the held shot will freeze on its last frame")
+                    want = avail
+                prev['out'] = round(prev['in'] + want, 3)
+        elif not on_still and not in_score and vis:
             if vis['type'] == 'image':
                 c = {'track': BG, 'file': vis['file'], 'start': round(t, 3), 'in': 0, 'out': round(span, 3), 'fillMode': FILL, 'fadeIn': 0.25, 'fadeOut': 0.25}
                 c['transformScale'] = vis.get('zoom', VIS_SCALE)
@@ -222,7 +250,7 @@ def main():
             C.append(c)
         # In 9:16 the score card fills the frame, so a caption over it would sit
         # on the stamp. The card shows the numbers and the narration says them.
-        if not (VERT and in_score):
+        if not (VERT and in_score) and not is_beat:
             # A line may carry a separate `sub`: the TTS text spells foreign words the
             # way they are pronounced ("디엘엘"), which is what the voice needs, but a
             # caption must show the real token ("DLL") or the viewer cannot search for

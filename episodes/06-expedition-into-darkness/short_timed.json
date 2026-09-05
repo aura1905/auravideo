@@ -8,7 +8,7 @@
    "file": "trailer_main.mp4",
    "in": 17.0
   },
-  "dur": 4.702,
+  "dur": 3.971,
   "wav": "episodes/06-expedition-into-darkness/tts_short/s1.wav"
  },
  {
@@ -17,78 +17,101 @@
   "text": "Seven hundred and seventy megabytes of that download is a file they forgot to delete.",
   "vis": {
    "type": "video",
-   "file": "trailer_main.mp4",
-   "in": 17.0
+   "file": "trailer_cinematic.mp4",
+   "in": 52.0
   },
-  "dur": 4.519,
+  "dur": 4.467,
   "wav": "episodes/06-expedition-into-darkness/tts_short/s2.wav"
  },
  {
-  "id": "s3",
-  "sec": "made",
-  "text": "Debug symbols. They're how you read a crash report. They belong on a build server, not on your players' drives.",
+  "id": "b1",
+  "sec": "intro",
+  "beat": 8.0,
   "vis": {
-   "type": "image",
-   "file": "ev_pdb_v.png"
+   "type": "video",
+   "file": "trailer_gameplay.mp4",
+   "in": 1.0
   },
-  "dur": 6.713,
+  "dur": 8.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "First, what it is. Expedition: Into Darkness is a medieval extraction crawler. You go down a hole with a torch, you fill your bag with whatever you can carry, and then you have to walk back out with it.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 18.0
+  },
+  "dur": 11.729,
   "wav": "episodes/06-expedition-into-darkness/tts_short/s3.wav"
  },
  {
   "id": "s4",
+  "sec": "intro",
+  "text": "Five player co-op, permadeath, and about a thousand people playing it while I record this. The co-op is the part reviewers keep praising.",
+  "vis": {
+   "type": "continue"
+  },
+  "dur": 7.576,
+  "wav": "episodes/06-expedition-into-darkness/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Now the build. Debug symbols. They're how you read a crash report. They belong on a build server, not on your players' drives.",
+  "vis": {
+   "type": "image",
+   "file": "ev_pdb_v.png"
+  },
+  "dur": 7.993,
+  "wav": "episodes/06-expedition-into-darkness/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
   "sec": "made",
   "text": "The rest is real content, to be fair. One scene, and fifteen hundred streaming bundles behind it.",
   "vis": {
    "type": "image",
    "file": "ev_size_v.png"
   },
-  "dur": 5.904,
-  "wav": "episodes/06-expedition-into-darkness/tts_short/s4.wav"
- },
- {
-  "id": "s5",
-  "sec": "made",
-  "text": "Every weapon is separate parts with their own stats, so the art multiplies fast.",
-  "vis": {
-   "type": "image",
-   "file": "ss01.jpg"
-  },
-  "dur": 4.702,
-  "wav": "episodes/06-expedition-into-darkness/tts_short/s5.wav"
- },
- {
-  "id": "s6",
-  "sec": "made",
-  "text": "Though a single two gigabyte bundle usually means textures nobody set the compression on.",
-  "vis": {
-   "type": "video",
-   "file": "trailer_main.mp4",
-   "in": 34.0
-  },
-  "dur": 4.859,
+  "dur": 6.426,
   "wav": "episodes/06-expedition-into-darkness/tts_short/s6.wav"
  },
  {
   "id": "s7",
+  "sec": "made",
+  "text": "Every weapon is separate parts with their own stats, so the art multiplies fast. Though a single two gigabyte bundle usually means textures nobody set the compression on.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 46.0
+  },
+  "dur": 9.718,
+  "wav": "episodes/06-expedition-into-darkness/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
   "sec": "score",
   "text": "And the store page still says you need eight gigabytes of storage.",
   "vis": {
    "type": "image",
    "file": "ss07.jpg"
   },
-  "dur": 3.683,
-  "wav": "episodes/06-expedition-into-darkness/tts_short/s7.wav"
+  "dur": 3.788,
+  "wav": "episodes/06-expedition-into-darkness/tts_short/s8.wav"
  },
  {
-  "id": "s8",
+  "id": "s9",
   "sec": "score",
   "text": "If you ship this year, strip your symbols. It's one checkbox. Full teardown on the channel.",
   "vis": {
    "type": "video",
-   "file": "trailer_main.mp4",
-   "in": 17.0
+   "file": "trailer_gameplay.mp4",
+   "in": 18.0
   },
-  "dur": 5.825,
-  "wav": "episodes/06-expedition-into-darkness/tts_short/s8.wav"
+  "dur": 5.721,
+  "wav": "episodes/06-expedition-into-darkness/tts_short/s9.wav"
  }
 ]

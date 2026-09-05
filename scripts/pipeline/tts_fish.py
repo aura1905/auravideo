@@ -47,6 +47,12 @@ def main():
     os.makedirs(a.out, exist_ok=True)
     segs = json.load(open(a.script, encoding='utf-8')); k = key(); total = 0
     for s in segs:
+        # A 'beat' is footage with no narration: the trailer plays for that many seconds
+        # with its own sound. Nothing to synthesise; the duration is the beat itself.
+        if s.get('beat'):
+            s['dur'] = float(s['beat']); s['wav'] = None; total += s['dur']
+            print(s['id'], f"{s['dur']:5.2f}s", '(beat, no narration)')
+            continue
         mp3 = os.path.join(a.out, f"{s['id']}.mp3"); wav = os.path.join(a.out, f"{s['id']}.wav")
         if a.force or not os.path.exists(mp3):
             synth(s['text'], a.voice, a.speed, mp3, k)
