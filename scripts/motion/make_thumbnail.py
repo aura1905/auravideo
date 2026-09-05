@@ -1,9 +1,13 @@
 """YouTube thumbnail for the Demo Dip series (1280x720, < 2 MB; --vertical for 1080x1920).
 
-Shorts: YouTube lets a Short's thumbnail be picked only from a frame (mobile app), and
-whether thumbnails.set takes a custom image on a Short is not documented -- so the
-vertical thumbnail is ALSO baked into the Short's first second by build_plan's
-`opening_stamp`, which makes the first frame read as a thumbnail either way.
+Shorts: **thumbnails.set does accept a custom 9:16 image on a Short** (verified
+2026-09-05 on two Shorts once the channel's thumbnail rate limit cleared). The same
+words are also baked into the Short's first second by build_plan's `opening_stamp`,
+so the first frame reads as a thumbnail wherever YouTube shows a frame instead.
+
+Rate limit: after many re-uploads in a day, thumbnails.set returns 429 "uploaded too
+many thumbnails recently" for hours. youtube_upload.py treats that as non-fatal; retry
+later with the API rather than re-uploading the video.
 
     python scripts/motion/make_thumbnail.py --bg ss00.jpg --out thumb.jpg         --line1 "Pocket Cultivation" --line2 "1 DEV. 4 MONTHS." --tag "SOLO DEV / AI ART"
 
