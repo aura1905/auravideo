@@ -9,164 +9,164 @@ And the people leaving negative reviews had played
 longer than the people leaving positive ones.
 
 3
-00:00:16,939 --> 00:00:25,736
+00:00:16,939 --> 00:00:25,082
 Guildrun is a PvE autobattler roguelike. You build a team,
 you bend heroes out of their class, and you watch the fight resolve itself.
 
 4
-00:00:25,986 --> 00:00:34,887
+00:00:25,332 --> 00:00:34,233
 Nearly two thousand reviews, ninety percent positive,
 and about two and a half thousand people in it as I record this. That's the biggest demo I've taken apart.
 
 5
-00:00:35,137 --> 00:00:39,388
+00:00:34,483 --> 00:00:38,734
 It's also the first one where the file list
 told me the team had done this before.
 
 6
-00:00:39,638 --> 00:00:47,468
-Start with the awkward part. This is an I L two C P P build,
-so all the C sharp is fused into one Game Assembly file.
+00:00:38,984 --> 00:00:46,814
+Start with the awkward part. This is an IL2CPP build,
+so all the C# is fused into one GameAssembly file.
 
 7
-00:00:47,718 --> 00:00:52,936
+00:00:47,064 --> 00:00:52,282
 In the last teardown that was a dead end.
 There's no folder of package names to read.
 
 8
-00:00:53,186 --> 00:01:01,983
+00:00:52,532 --> 00:01:01,329
 Except it isn't quite a dead end.
 Any assembly that shipped with embedded resources leaves its name behind in a data file, and Steam lists those.
 
 9
-00:01:02,233 --> 00:01:06,536
+00:01:01,579 --> 00:01:05,882
 Twenty four names came out.
 Here's what a team that has shipped before installs.
 
 10
-00:01:06,786 --> 00:01:16,157
+00:01:06,132 --> 00:01:15,503
 Sentry, with six assemblies and a native crash handler behind it.
 They've shipped a patch every single week since January. That's what makes that survivable.
 
 11
-00:01:16,407 --> 00:01:24,237
-S Q Lite, because the demo alone has three hundred relics and a hundred items.
+00:01:15,753 --> 00:01:23,583
+SQLite, because the demo alone has three hundred relics and a hundred items.
 At some point that stops being a pile of JSON files.
 
 12
-00:01:24,487 --> 00:01:33,284
-N Log for structured logging. R three and System Reactive for event streams.
+00:01:23,833 --> 00:01:32,630
+NLog for structured logging. R3 and System Reactive for event streams.
 Threading Channels for the producer-consumer work.
 
 13
-00:01:33,534 --> 00:01:41,495
-And Z Link, which exists for one reason: doing LINQ without allocating.
+00:01:32,880 --> 00:01:40,423
+And ZLinq, which exists for one reason: doing LINQ without allocating.
 You install that when you've been bitten by garbage collection hitches.
 
 14
-00:01:41,745 --> 00:01:48,086
+00:01:40,673 --> 00:01:47,014
 None of that is exciting.
 It's the stuff you only know to install because something went wrong on the last project.
 
 15
-00:01:48,336 --> 00:01:56,636
+00:01:47,264 --> 00:01:55,564
 Compare the solo demo I took apart two episodes ago.
 Its entire third party list was one entry: Discord rich presence.
 
 16
-00:01:56,886 --> 00:02:03,175
+00:01:55,814 --> 00:02:02,103
 Neither is wrong. But if you're about to start your second project,
 that list up there is a shopping list.
 
 17
-00:02:03,425 --> 00:02:11,020
-Audio is F MOD with Resonance, same as the last one.
-Networking is nanosockets, a thin U D P layer.
+00:02:02,353 --> 00:02:09,948
+Audio is FMOD with Resonance, same as the last one.
+Networking is nanosockets, a thin UDP layer.
 
 18
-00:02:11,270 --> 00:02:13,667
+00:02:10,198 --> 00:02:12,595
 Then the number I stared at for a while.
 
 19
-00:02:13,917 --> 00:02:18,952
+00:02:12,845 --> 00:02:17,880
 The demo is ten and a half gigabytes on disk.
 The download is one point one seven.
 
 20
-00:02:19,202 --> 00:02:25,230
+00:02:18,130 --> 00:02:24,158
 That's an eighty nine percent saving.
 Which means the files sitting on your drive are barely compressed at all.
 
 21
-00:02:25,480 --> 00:02:31,534
+00:02:24,408 --> 00:02:30,462
 My first thought was that somebody forgot the import settings.
 My second thought was to read the store page.
 
 22
-00:02:31,784 --> 00:02:39,301
+00:02:30,712 --> 00:02:38,229
 Minimum requirements: fifteen gigabytes of storage,
-and a line that says H D D okay, no S S D required.
+and a line that says HDD okay, no SSD required.
 
 23
-00:02:39,551 --> 00:02:48,922
-Uncompressed assets cost disk and save C P U. On a hard drive with no decompression to do,
+00:02:38,479 --> 00:02:47,850
+Uncompressed assets cost disk and save CPU. On a hard drive with no decompression to do,
 they load faster. My read is that this is deliberate.
 
 24
-00:02:49,172 --> 00:02:56,349
+00:02:48,100 --> 00:02:55,277
 They spent ten gigabytes of somebody's drive to keep the game playable on old hardware.
 Tell me in the comments if I've got that backwards.
 
 25
-00:02:56,599 --> 00:03:05,265
+00:02:55,527 --> 00:03:04,193
 There are also twenty two scenes in here.
 The last two games I took apart shipped one each and built everything at runtime. This one is authored in the editor.
 
 26
-00:03:05,515 --> 00:03:10,707
+00:03:04,443 --> 00:03:09,635
 So the engineering is careful.
 The fight in the reviews is about something else entirely.
 
 27
-00:03:10,957 --> 00:03:17,167
+00:03:09,885 --> 00:03:16,095
 Performance barely comes up. Ten mentions positive,
 two negative. Nobody is complaining about the build.
 
 28
-00:03:17,417 --> 00:03:25,247
+00:03:16,345 --> 00:03:24,175
 They're complaining about balance. Certain combinations only,
 dead heroes, and a random draw that decides your run before you play it.
 
 29
-00:03:25,497 --> 00:03:33,327
+00:03:24,425 --> 00:03:32,255
 And that's why the negative reviewers had fifteen hours in.
 You don't find a balance ceiling in an hour. You find it after you've mastered the thing.
 
 30
-00:03:33,577 --> 00:03:37,698
+00:03:32,505 --> 00:03:36,626
 Which is a very different problem from the
 demos where people quit in the first hour.
 
 31
-00:03:37,948 --> 00:03:40,240
+00:03:36,876 --> 00:03:39,168
 Here's the whole teardown on one card.
 
 32
-00:03:40,490 --> 00:03:50,514
-Unity, I L two C P P, C sharp. A stack full of things you only reach for the second time around.
+00:03:39,418 --> 00:03:49,442
+Unity, IL2CPP, C#. A stack full of things you only reach for the second time around.
 Ten gigabytes of deliberately uncompressed art.
 
 33
-00:03:50,764 --> 00:03:55,015
+00:03:49,692 --> 00:03:53,943
 Worth a dip, and be careful,
 because eleven hours is the median.
 
 34
-00:03:55,265 --> 00:04:03,095
+00:03:54,193 --> 00:04:02,023
 If you're starting your next project, take the boring half of that list.
 Crash reporting on day one is the cheapest thing you will ever install.
 
 35
-00:04:03,345 --> 00:04:13,578
+00:04:02,273 --> 00:04:12,506
 That's my read from the outside. If you made this and I got something wrong,
 say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.

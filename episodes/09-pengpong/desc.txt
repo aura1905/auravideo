@@ -1,0 +1,39 @@
+PengPong — Ninety five dollars. That is every paid tool in this build, added up.
+
+▶ Steam demo (free): https://store.steampowered.com/app/3636220/
+▶ The full game: https://store.steampowered.com/app/2766910/
+
+── How they made it ──
+Engine     : Unity / Mono
+Paid Tools : $95, two of them
+Animation  : Unity 2D, no Spine
+In-House   : 8 asmdef modules
+In The Box : MCP for Unity
+Verdict    : Worth A Dip
+
+── The stack, if you want to use it ──
+FMOD Studio (free under $200k/yr) : https://www.fmod.com/licensing
+Unity 2D Animation                : https://docs.unity3d.com/Packages/com.unity.2d.animation@latest
+Assembly Definitions (asmdef)     : https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html
+Unity Addressables                : https://docs.unity3d.com/Packages/com.unity.addressables@latest
+DOTween                           : https://dotween.demigiant.com/
+Febucci Text Animator             : https://www.febucci.com/text-animator-unity/
+MCP for Unity                     : https://github.com/CoplayDev/unity-mcp
+The demo on Steam                 : https://store.steampowered.com/app/3636220/
+
+── Chapters ──
+0:00 Ninety-five dollars
+0:14 What it is
+0:49 Opening the build
+4:05 What players actually say
+4:24 The spec sheet + verdict
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to SANDY FLOOR.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

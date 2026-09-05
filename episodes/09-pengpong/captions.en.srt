@@ -1,0 +1,198 @@
+1
+00:00:00,000 --> 00:00:04,617
+Ninety five dollars.
+That is every paid tool in this build, added up.
+
+2
+00:00:04,867 --> 00:00:10,659
+Everything else is free or open source.
+And one file in there was never supposed to ship at all.
+
+3
+00:00:14,509 --> 00:00:22,861
+PengPong is a survivors-like where a penguin with a hockey stick whacks whatever is in front of it.
+Guns. Pufferfish. Other penguins.
+
+4
+00:00:23,111 --> 00:00:28,668
+It's from a Korean studio called SANDY FLOOR,
+and the full game came out on August twentieth.
+
+5
+00:00:28,918 --> 00:00:35,546
+The demo sits at eighty six percent, the full game at eighty five.
+Nearly all of the praise is for the art.
+
+6
+00:00:35,796 --> 00:00:43,809
+Nineteen thirties rubber-hose cartoon. Cuphead comes up in review after review.
+That look normally costs a lot of money.
+
+7
+00:00:44,059 --> 00:00:48,780
+So that was my question.
+What did this team buy, and what did they build.
+
+8
+00:00:49,030 --> 00:00:57,173
+Steam publishes the list of files a demo installs.
+PengPong's is two hundred and eighty two files, two point six eight gigabytes.
+
+9
+00:00:57,423 --> 00:01:01,204
+The first clue is a folder name.
+MonoBleedingEdge.
+
+10
+00:01:01,454 --> 00:01:12,523
+Unity builds your code one of two ways.
+IL2CPP turns the C# into native code and fuses it into one block. Mono leaves the DLLs as they are.
+
+11
+00:01:12,773 --> 00:01:17,991
+PengPong is Mono.
+So everything this team pulled in is sitting there under its own file name.
+
+12
+00:01:18,241 --> 00:01:23,276
+Audio is FMOD. Four sound bank files,
+twenty nine megabytes.
+
+13
+00:01:23,526 --> 00:01:32,244
+Take this one with you. FMOD is free below two hundred thousand dollars a year in revenue.
+There is no reason an indie can't use commercial audio middleware.
+
+14
+00:01:32,494 --> 00:01:38,966
+The paid items are exactly two. Text Animator,
+sixty five dollars. Ara Trails, thirty.
+
+15
+00:01:39,216 --> 00:01:45,322
+DOTween, GameAnalytics, UIParticle,
+NavMeshPlus. All free, or open source.
+
+16
+00:01:45,572 --> 00:01:53,924
+So what did they animate that Cuphead look with. Normally that's Spine,
+and a personal licence for Spine is three hundred and forty nine dollars.
+
+17
+00:01:54,174 --> 00:02:01,220
+There is no Spine in this build.
+There is Unity's own 2D Animation package, and the IK package next to it.
+
+18
+00:02:01,470 --> 00:02:07,863
+Same idea. You put bones in a drawing and move the bones.
+And you get it from the Package Manager for nothing.
+
+19
+00:02:08,113 --> 00:02:13,905
+Now the strangest thing in the list.
+Assembly-CSharp.dll is five kilobytes.
+
+20
+00:02:14,155 --> 00:02:22,638
+Unless you tell it otherwise, Unity puts all of your game code in that one file.
+Five kilobytes means the code has been moved out.
+
+21
+00:02:22,888 --> 00:02:32,938
+The mechanism is called an Assembly Definition, asmdef for short.
+One small file in a folder, and that folder compiles to its own DLL.
+
+22
+00:02:33,188 --> 00:02:42,638
+What you get is compile time. Change one line and only that module rebuilds,
+not the whole project. The bigger the project, the bigger the difference.
+
+23
+00:02:42,888 --> 00:02:53,644
+Eight modules came out of this, and every one carries the studio's name.
+SandyToolkit. SandyAudio. SandyPooling. SandySetting. SandyDependency.
+
+24
+00:02:53,894 --> 00:03:02,508
+Pooling, audio, settings, dependency injection. The things you rewrite for every game.
+This team carries them to the next project as folders.
+
+25
+00:03:02,758 --> 00:03:09,752
+Saves go through SQLite. With over three hundred items,
+that beats one big JSON file.
+
+26
+00:03:10,002 --> 00:03:18,616
+Content is split into seventeen Addressables bundles,
+five hundred and twenty nine megabytes. A patch only downloads the bundles that changed.
+
+27
+00:03:18,866 --> 00:03:22,987
+There's a Localization package too.
+Eight languages go through it.
+
+28
+00:03:23,237 --> 00:03:32,843
+And then two things that should not be in a release build. The first is Unity Recorder,
+an editor tool for capturing video. Harmless. Somebody forgot to take it out.
+
+29
+00:03:33,093 --> 00:03:40,453
+The second is MCP for Unity.
+That's the open source bridge that lets an AI model drive the Unity editor directly.
+
+30
+00:03:40,703 --> 00:03:47,384
+What I can confirm is that the file is in the shipped build.
+How much they used it, and for what, only the developer knows.
+
+31
+00:03:47,634 --> 00:03:54,811
+My guess is it was wired up for development and went out with everything else.
+If I'm wrong, say so in the comments and I'll pin the correction.
+
+32
+00:03:55,061 --> 00:04:05,347
+For scale: of the two point six eight gigabytes, art and sound are two point two.
+All one hundred and ninety five DLLs together are ninety one megabytes.
+
+33
+00:04:05,597 --> 00:04:11,755
+Now the reviews of the full game,
+where the complaints land in one place. It launched with three stages.
+
+34
+00:04:12,005 --> 00:04:18,764
+Tools outlive the game they were built for.
+But the hours that went into them are hours this game's content did not get.
+
+35
+00:04:19,014 --> 00:04:23,788
+Eight frameworks and three stages.
+Those two numbers come from the same team.
+
+36
+00:04:24,038 --> 00:04:26,435
+Here's the whole teardown on one card.
+
+37
+00:04:26,685 --> 00:04:36,971
+Unity, Mono. Ninety five dollars of paid assets.
+Unity 2D Animation instead of Spine. Eight in-house modules. Three stages.
+
+38
+00:04:37,221 --> 00:04:42,360
+Worth a dip. The demo is free,
+and hitting things with that stick feels as good as it looks.
+
+39
+00:04:42,610 --> 00:04:54,149
+Three things to take away. FMOD is free for indies. You can do bone animation without paying for Spine.
+And splitting your code into asmdefs is what makes a big project compile fast.
+
+40
+00:04:54,399 --> 00:05:04,789
+That's my read from the outside. If you made this and I got something wrong,
+say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.

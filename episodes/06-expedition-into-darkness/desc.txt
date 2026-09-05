@@ -1,5 +1,4 @@
-Expedition: Into Darkness — a sixteen-gigabyte demo from three people, and 770 MB they forgot to delete.
-A Unity / IL2CPP teardown: what three developers shipped, what it cost them in build size, and the two checkboxes that would have fixed it.
+Expedition: Into Darkness — This demo is sixteen point nine gigabytes. That's bigger than most finished games I own.
 
 ▶ Steam demo (free): https://store.steampowered.com/app/5041080/
 ▶ The full game: https://store.steampowered.com/app/3126410/

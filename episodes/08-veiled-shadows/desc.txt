@@ -1,0 +1,39 @@
+Veiled Shadows — Every demo I've taken apart on this channel was made in Unity, by people who write code. This one wasn't.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5060640/
+▶ The full game: https://store.steampowered.com/app/4122240/
+
+── How they made it ──
+Engine     : RPG Dev Bakin
+Sold As    : no programming
+Team       : one person
+The Pack   : 1.35 GB, one file
+In The Box : a C# compiler
+Verdict    : Worth A Dip
+
+── The stack, if you want to use it ──
+RPG Developer Bakin (the engine)     : https://store.steampowered.com/app/1036640/RPG_Developer_Bakin/
+SmileBoom, who make it               : https://smileboom.com/en/
+VRM (the avatar format)              : https://vrm.dev/en/
+VRoid Studio                         : https://vroid.com/en/studio
+Roslyn, the C# compiler in the build : https://github.com/dotnet/roslyn
+Microsoft Edge WebView2              : https://developer.microsoft.com/microsoft-edge/webview2/
+Bullet Physics                       : https://pybullet.org/
+The demo on Steam                    : https://store.steampowered.com/app/5060640/
+
+── Chapters ──
+0:00 Not Unity, for once
+0:17 What it is
+0:45 Opening the build
+3:17 What six reviewers say
+3:35 The spec sheet + verdict
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to Party of One Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

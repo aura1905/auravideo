@@ -24,9 +24,9 @@ The demo on Steam                  : https://store.steampowered.com/app/4425970/
 ── Chapters ──
 0:00 Eleven hours is the median
 0:16 What it is
-0:39 Opening the build
-3:05 What players actually say
-3:37 The spec sheet + verdict
+0:38 Opening the build
+3:04 What players actually say
+3:36 The spec sheet + verdict
 
 Everything about how this game was built is read off public information: the
 Steam store page, the developer's own devlogs, the recent review corpus, and the

@@ -1,4 +1,7 @@
-"""Write an exact SRT for an episode, from the narration timings we already have.
+"""
+Captions come from `sub` when a line has one (the caption-form token, e.g. IL2CPP);
+`text` is the spoken form for TTS and must not reach the SRT.
+Write an exact SRT for an episode, from the narration timings we already have.
 
     python scripts/pipeline/make_srt.py --episode episodes/05-casualties-unknown/episode.json \
         --out episodes/05-casualties-unknown/captions.en.srt
@@ -57,7 +60,7 @@ def main():
         if i == cold_n:
             t = still_start
         n += 1
-        out.append(f'{n}\n{ts(t)} --> {ts(t + s["dur"] + 0.15)}\n{wrap(s["text"])}\n')
+        out.append(f'{n}\n{ts(t)} --> {ts(t + s["dur"] + 0.15)}\n{wrap(s.get("sub") or s["text"])}\n')
         t += s['dur'] + GAP
 
     open(a.out, 'w', encoding='utf-8', newline='\n').write('\n'.join(out))

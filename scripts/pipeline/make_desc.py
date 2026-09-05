@@ -63,7 +63,7 @@ def main():
     total = t + 0.8
 
     name = ep.get('title_en') or ep.get('title_ko') or 'this demo'
-    hook = a.hook or ' '.join(segs[0]['text'].split())
+    hook = a.hook or ' '.join((segs[0].get('sub') or segs[0]['text']).split())
     L = []
     L.append(f'{name} — {hook}')
     if a.takeaway:
