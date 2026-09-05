@@ -260,11 +260,16 @@ def main():
                 # cards into video clips, and without this the 9:16 cards lost their
                 # left and right edges -- the first Short built this way cropped
                 # "UnityPlayer.dll" down to "layer.dll".
-                try:
-                    if abs(aspect(os.path.join(wd, vis['file'])) - CW / CH) < 0.05:
-                        c['fillMode'] = 'fit'; c['transformScale'] = 1.0
-                except Exception:
-                    pass
+                # Only for a still turned into a clip (kenburns' _mv/_mvv): a real trailer
+                # that happens to match the canvas aspect must still honour visual_scale --
+                # this override silently cancelled the 1.18x crop meant to remove the FF
+                # Resonance trailer's burnt-in subtitles.
+                if vis['file'].endswith(('_mv.mp4', '_mvv.mp4')):
+                    try:
+                        if abs(aspect(os.path.join(wd, vis['file'])) - CW / CH) < 0.05:
+                            c['fillMode'] = 'fit'; c['transformScale'] = 1.0
+                    except Exception:
+                        pass
             C.append(c)
         # In 9:16 the score card fills the frame, so a caption over it would sit
         # on the stamp. The card shows the numbers and the narration says them.
