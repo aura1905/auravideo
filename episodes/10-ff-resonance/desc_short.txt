@@ -1,0 +1,8 @@
+Unreal Engine 5, a 467 MB monolithic executable, an ONNX Runtime + DirectML inference stack, and the DirectX 12 debug layer shipped to players. 4,400 people were in the demo two days after it went up.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4474710/
+▶ Full teardown: https://youtu.be/-EIfqlnv0Cg
+
+Read off the demo's public depot manifest — file names and sizes only.
+
+#shorts #gamedev #steamdemo
