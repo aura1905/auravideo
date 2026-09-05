@@ -1,0 +1,97 @@
+{
+ "title_en": "SlashZero",
+ "demo_appid": 5099550,
+ "full_appid": 4061170,
+ "developer": "Streetlamp Studio / Skystone Games",
+ "workdir": "episodes/11-slashzero",
+ "script_timed": "episodes/11-slashzero/script_tts_timed.json",
+ "intro_bg": {
+  "file": "s_playtest.mp4",
+  "in": 104.0,
+  "out": 107.6,
+  "scale": 1.0
+ },
+ "labels": [
+  "497 files / 14.22 GB",
+  "103 videos, shipped twice",
+  "two Chromium browsers",
+  "a kernel driver"
+ ],
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 2,
+ "score_line_id": "36",
+ "specs": [
+  ["ENGINE", "Unreal Engine 5"],
+  ["THE BUILD", "14.22 GB / 497 files"],
+  ["THE TWIN", "103 videos, PC + Mobile"],
+  ["IN THE BOX", "2 Chromiums, 2 voice SDKs"],
+  ["THE SLIP", "Wwise Profile build"]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": {
+  "file": "s_story.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "thumbnail": {
+  "bg": "ss03.jpg",
+  "line1": "SlashZero",
+  "line2": "14 GB. AND A KERNEL DRIVER.",
+  "tag": "UNREAL 5 TEARDOWN",
+  "focus": "right",
+  "text_side": "left"
+ },
+ "chapters": {
+  "hook": "Fourteen gigabytes",
+  "intro": "What it is, and who made it",
+  "made": "Opening the build",
+  "review": "The only number there is",
+  "score": "The spec sheet + verdict"
+ },
+ "stack": [
+  ["Unreal Engine 5", "https://www.unrealengine.com/"],
+  ["Bink Video (RAD Game Tools)", "http://www.radgametools.com/bnkmain.htm"],
+  ["Chromium Embedded Framework", "https://bitbucket.org/chromiumembedded/cef"],
+  ["VolcEngine RTC (ByteDance)", "https://www.volcengine.com/product/veRTC"],
+  ["Tencent GME", "https://www.tencentcloud.com/products/gme"],
+  ["Audiokinetic Wwise", "https://www.audiokinetic.com/products/wwise/"],
+  ["NVIDIA DLSS / Streamline", "https://developer.nvidia.com/rtx/streamline"],
+  ["AMD FidelityFX FSR", "https://gpuopen.com/fidelityfx-super-resolution/"],
+  ["The demo on Steam", "https://store.steampowered.com/app/5099550/"]
+ ],
+ "ledger": {
+  "team": "Streetlamp Studio (pub. Skystone Games)",
+  "engine": "**Unreal Engine 5**",
+  "pipeline": "IoStore (.ucas/.utoc), 3 pak chunks",
+  "backend": "C++ (234 MiB exe)",
+  "build": "14.22 GiB",
+  "files": 497,
+  "scenes": 0,
+  "third_party": "DLL 119개 (Wwise 33 + CEF 2벌 + 바이트댄스/텐센트)",
+  "approach": "모바일 빌드의 PC 포팅 — 스킬 영상 103개가 PC/Mobile 두 벌",
+  "reception": "리뷰 없음 / 접속 337",
+  "packages": [
+   "Bink Video",
+   "CEF (Chromium 128) x2",
+   "VolcEngine RTC (ByteDance)",
+   "Tencent GME",
+   "Cronet",
+   "Wwise (Profile build)",
+   "NVIDIA DLSS 3 + Streamline",
+   "AMD FSR",
+   "Discord Game SDK",
+   "Steamworks v1.61",
+   "NVIDIA Aftermath",
+   "oneTBB"
+  ],
+  "ai_disclosure": null
+ },
+ "youtube": {
+  "title": "SlashZero — a 14 GB demo that ships 103 videos twice, two Chromiums, and a kernel driver",
+  "tags": "SlashZero,steam demo,unreal engine 5,streetlamp studio,skystone games,game teardown,how games are made,demo dip,roguelike,action roguelike,anime game,bytedance,tencent,anti-cheat,kernel driver,cef,wwise",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "visual_scale": 1.0
+}

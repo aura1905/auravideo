@@ -1,0 +1,197 @@
+1
+00:00:00,000 --> 00:00:04,434
+This demo is fourteen gigabytes.
+For a side-scrolling action game.
+
+2
+00:00:04,684 --> 00:00:09,588
+Eight hundred megabytes of that is video files.
+And half of them are for a phone.
+
+3
+00:00:19,438 --> 00:00:28,470
+SlashZero. A 3D anime side-scrolling action roguelike,
+from Streetlamp Studio, published by Skystone Games.
+
+4
+00:00:28,720 --> 00:00:38,170
+You play a Timehacker. You dash, vault and combo your way across a collapsing cyberpunk timeline,
+and you build a run out of blessings, fragments and chips.
+
+5
+00:00:46,420 --> 00:00:54,772
+The full game is Q1 twenty twenty-seven. The demo went up on the third of September,
+and it has three hundred and forty people in it as I record this.
+
+6
+00:00:55,022 --> 00:01:00,475
+It also has zero reviews. So there is nothing to read,
+and everything to take apart.
+
+7
+00:01:00,725 --> 00:01:08,868
+Steam publishes the file list for every demo.
+This one is four hundred and ninety seven files, fourteen point two two gigabytes.
+
+8
+00:01:09,118 --> 00:01:16,426
+It's Unreal Engine 5. The container files say so:
+global dot ucas, and three pak chunks.
+
+9
+00:01:16,676 --> 00:01:28,320
+Almost all of it is one chunk. Pakchunk two is eleven point nine three gigabytes on its own.
+Pakchunk one is a stub: sixty four bytes. Somebody set up a chunk and never filled it.
+
+10
+00:01:28,570 --> 00:01:32,534
+But the size isn't the story.
+The movies folder is.
+
+11
+00:01:32,784 --> 00:01:41,737
+There are two hundred and eight Bink videos in this build.
+Skill demonstrations, tutorials, one intro. And they come in two complete sets.
+
+12
+00:01:41,987 --> 00:01:53,526
+One folder is called PC. The other is called Mobile. A hundred and three files each,
+and every single filename in one exists in the other. I checked all two hundred and six.
+
+13
+00:01:53,776 --> 00:02:01,919
+The PC set is six hundred and fourteen megabytes.
+The Mobile set is a hundred and sixty five. Same clips, phone resolution.
+
+14
+00:02:02,169 --> 00:02:11,305
+So a PC player downloads a hundred and sixty five megabytes of phone video that will never be shown to them.
+Nobody stripped the platform branch out of the cook.
+
+15
+00:02:11,555 --> 00:02:20,090
+And the folders are numbered. One oh one, one oh two, one oh four.
+Three playable Timehackers in the demo. One oh three is missing.
+
+16
+00:02:27,340 --> 00:02:31,121
+Now the DLLs,
+because this is where it gets strange.
+
+17
+00:02:31,371 --> 00:02:37,399
+There are two Chromium browsers in this build.
+Not two files. Two entire copies of Chromium.
+
+18
+00:02:37,649 --> 00:02:49,789
+Unreal ships one of its own, and it's here: libcef, two hundred and twenty nine megabytes,
+Chromium one twenty eight. Then there is a second one, in the game's own folder, at a hundred and eighty eight.
+
+19
+00:02:50,039 --> 00:03:02,702
+The second one has a resource folder next to it with back, forward, close and reload buttons,
+and an offline error page. That is not a UI widget. That is a browser, with a toolbar, inside the game.
+
+20
+00:03:02,952 --> 00:03:11,017
+The build ships a hundred and nineteen pak files.
+A hundred and ten of them are Chromium language packs. The game itself has six languages.
+
+21
+00:03:11,267 --> 00:03:18,627
+Next. Voice chat. VolcEngine RTC,
+twenty three megabytes, which is ByteDance.
+
+22
+00:03:18,877 --> 00:03:31,409
+And, in the same build, GME. Which is Tencent. Two real-time voice SDKs,
+from the two companies least likely to want to share a folder, in a game with no visible multiplayer.
+
+23
+00:03:31,659 --> 00:03:45,471
+The ByteDance side doesn't stop at voice. There's a game SDK, a logging SDK, a device registration library,
+a downloader, and two copies of Cronet. That's Chromium's network stack, shipped on its own.
+
+24
+00:03:45,721 --> 00:03:51,461
+Which means this build carries three separate network layers.
+Unreal's, curl, and Cronet.
+
+25
+00:03:51,711 --> 00:04:02,336
+And then a file that stops you. GPLDriver dot sys.
+One point one two megabytes, signed, with an installer. A kernel-mode driver.
+
+26
+00:04:02,586 --> 00:04:13,028
+What it does, a file list cannot tell you. What I can tell you is that a single-player side-scroller demo wants to put code in ring zero,
+and you should know that before you install it.
+
+27
+00:04:13,278 --> 00:04:15,544
+Now the slips, and there are three.
+
+28
+00:04:15,794 --> 00:04:30,364
+One. The Wwise audio engine here is the Profile build, not the Release build. Profile is the one that leaves the connection to the authoring tool open.
+Every stock plugin came along too, including the recorder and the sine tone generator.
+
+29
+00:04:30,614 --> 00:04:37,974
+Two. The full cook manifest ships as plain text.
+Eight and a half megabytes listing every asset path in the game.
+
+30
+00:04:38,224 --> 00:04:49,450
+Three. The Unreal debug fallback font, five megabytes,
+and an ARM64 Visual C++ redistributable in a build with no ARM64 binaries.
+
+31
+00:04:49,700 --> 00:04:56,799
+Last episode a Square Enix build shipped the DirectX debug layer.
+Different studio, same drawer left open.
+
+32
+00:04:57,049 --> 00:05:10,365
+One thing they did tighten: the upscalers. Full DLSS 3 with frame generation and ray reconstruction,
+Streamline, and AMD's FSR alongside it. Both vendors, current versions.
+
+33
+00:05:10,615 --> 00:05:14,396
+Reception. There are no reviews,
+so there is one number.
+
+34
+00:05:14,646 --> 00:05:21,118
+Three hundred and forty people in the demo, two days after it went live,
+for a game that doesn't ship until next year.
+
+35
+00:05:21,368 --> 00:05:28,075
+That's a modest number, and it's an honest one.
+This is a demo doing its job: it's here to be played, not to be reviewed.
+
+36
+00:05:28,325 --> 00:05:31,009
+Here's the whole teardown on one card.
+
+37
+00:05:31,259 --> 00:05:40,996
+Unreal 5. Fourteen gigabytes. Two Chromium browsers, two rival voice SDKs,
+a kernel driver, and a hundred and three videos shipped twice.
+
+38
+00:05:41,246 --> 00:05:52,472
+Worth a dip, with one caveat. The game underneath looks fast and it looks good,
+and the demo is free. But it installs a kernel driver, so read the prompt before you click it.
+
+39
+00:05:52,722 --> 00:06:04,549
+If you build in Unreal, the thing to take from this is the cook. Open your packaged Movies folder and see how many platforms are in it.
+Every one you don't ship on is free download size you're charging your players for.
+
+40
+00:06:04,799 --> 00:06:15,267
+That's my read from the outside. If you worked on this and I got something wrong,
+say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.

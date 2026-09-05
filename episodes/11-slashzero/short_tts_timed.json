@@ -1,0 +1,168 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "This Steam demo is fourteen gigabytes. For a side-scrolling action game.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 140.0
+  },
+  "sub": "This Steam demo is fourteen gigabytes. For a side-scrolling action game.",
+  "dur": 4.336,
+  "wav": "episodes/11-slashzero/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "And a hundred and sixty five megabytes of it is video made for a phone.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "And a hundred and sixty five megabytes of it is video made for a phone.",
+  "dur": 3.918,
+  "wav": "episodes/11-slashzero/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 7.0,
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 102.0
+  },
+  "dur": 7.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Here's what it is. Slash Zero, a three-D anime action roguelike from Street lamp Studio. You play a Time-hacker.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Here's what it is. SlashZero, a 3D anime action roguelike from Streetlamp Studio. You play a Timehacker.",
+  "dur": 8.385,
+  "wav": "episodes/11-slashzero/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "You dash, vault and combo across a collapsing cyberpunk timeline, and every run you rebuild your character out of blessings, fragments and chips.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 120.0
+  },
+  "sub": "You dash, vault and combo across a collapsing cyberpunk timeline, and every run you rebuild your character out of blessings, fragments and chips.",
+  "dur": 8.986,
+  "wav": "episodes/11-slashzero/tts_short/s4.wav"
+ },
+ {
+  "id": "b2",
+  "sec": "intro",
+  "beat": 6.0,
+  "vis": {
+   "type": "continue"
+  },
+  "dur": 6.0,
+  "wav": null
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Now the build. Unreal five, and two hundred and eight Bink videos inside it.",
+  "vis": {
+   "type": "image",
+   "file": "ev_movies_v.png"
+  },
+  "sub": "Now the build. Unreal 5, and two hundred and eight Bink videos inside it.",
+  "dur": 5.277,
+  "wav": "episodes/11-slashzero/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "One folder called P C, one called Mobile. A hundred and three files each, and every filename in one exists in the other.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "One folder called PC, one called Mobile. A hundred and three files each, and every filename in one exists in the other.",
+  "dur": 7.732,
+  "wav": "episodes/11-slashzero/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "made",
+  "text": "So a P C player downloads a hundred and sixty five megabytes of phone video that nobody will ever show them.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 172.0
+  },
+  "sub": "So a PC player downloads a hundred and sixty five megabytes of phone video that nobody will ever show them.",
+  "dur": 6.713,
+  "wav": "episodes/11-slashzero/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "made",
+  "text": "It also ships two entire copies of Chromium. Four hundred and seventeen megabytes of web browser.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack_v.png"
+  },
+  "sub": "It also ships two entire copies of Chromium. Four hundred and seventeen megabytes of web browser.",
+  "dur": 5.721,
+  "wav": "episodes/11-slashzero/tts_short/s8.wav"
+ },
+ {
+  "id": "s9",
+  "sec": "made",
+  "text": "Two real-time voice S D Ks, one from Byte Dance and one from Tencent, in a game with no visible multiplayer.",
+  "vis": {
+   "type": "image",
+   "file": "ev_rtc_v.png"
+  },
+  "sub": "Two real-time voice SDKs, one from ByteDance and one from Tencent, in a game with no visible multiplayer.",
+  "dur": 6.975,
+  "wav": "episodes/11-slashzero/tts_short/s9.wav"
+ },
+ {
+  "id": "s10",
+  "sec": "made",
+  "text": "And a signed kernel-mode driver.",
+  "vis": {
+   "type": "image",
+   "file": "ev_driver_v.png"
+  },
+  "sub": "And a signed kernel-mode driver.",
+  "dur": 1.933,
+  "wav": "episodes/11-slashzero/tts_short/s10.wav"
+ },
+ {
+  "id": "s11",
+  "sec": "score",
+  "text": "The game underneath looks fast and it looks good, and the demo is free.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 44.0
+  },
+  "sub": "The game underneath looks fast and it looks good, and the demo is free.",
+  "dur": 4.467,
+  "wav": "episodes/11-slashzero/tts_short/s11.wav"
+ },
+ {
+  "id": "s12",
+  "sec": "score",
+  "text": "Just read the driver prompt before you click it. Full teardown on the channel.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Just read the driver prompt before you click it. Full teardown on the channel.",
+  "dur": 4.023,
+  "wav": "episodes/11-slashzero/tts_short/s12.wav"
+ }
+]

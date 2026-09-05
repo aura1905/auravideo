@@ -1,0 +1,40 @@
+SlashZero — This demo is fourteen gigabytes. For a side-scrolling action game.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5099550/
+▶ The full game: https://store.steampowered.com/app/4061170/
+
+── How they made it ──
+Engine     : Unreal Engine 5
+The Build  : 14.22 GB / 497 files
+The Twin   : 103 videos, PC + Mobile
+In The Box : 2 Chromiums, 2 voice SDKs
+The Slip   : Wwise Profile build
+Verdict    : Worth A Dip
+
+── The stack, if you want to use it ──
+Unreal Engine 5             : https://www.unrealengine.com/
+Bink Video (RAD Game Tools) : http://www.radgametools.com/bnkmain.htm
+Chromium Embedded Framework : https://bitbucket.org/chromiumembedded/cef
+VolcEngine RTC (ByteDance)  : https://www.volcengine.com/product/veRTC
+Tencent GME                 : https://www.tencentcloud.com/products/gme
+Audiokinetic Wwise          : https://www.audiokinetic.com/products/wwise/
+NVIDIA DLSS / Streamline    : https://developer.nvidia.com/rtx/streamline
+AMD FidelityFX FSR          : https://gpuopen.com/fidelityfx-super-resolution/
+The demo on Steam           : https://store.steampowered.com/app/5099550/
+
+── Chapters ──
+0:00 Fourteen gigabytes
+0:19 What it is, and who made it
+1:01 Opening the build
+5:11 The only number there is
+5:29 The spec sheet + verdict
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to Streetlamp Studio / Skystone Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

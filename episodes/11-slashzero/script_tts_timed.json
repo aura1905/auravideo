@@ -1,0 +1,534 @@
+[
+ {
+  "id": "01",
+  "sec": "hook",
+  "text": "This demo is fourteen gigabytes. For a side-scrolling action game.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 140.0
+  },
+  "sub": "This demo is fourteen gigabytes. For a side-scrolling action game.",
+  "dur": 4.284,
+  "wav": "episodes/11-slashzero/tts/01.wav"
+ },
+ {
+  "id": "02",
+  "sec": "hook",
+  "text": "Eight hundred megabytes of that is video files. And half of them are for a phone.",
+  "vis": {
+   "type": "video",
+   "file": "s_features.mp4",
+   "in": 32.0
+  },
+  "sub": "Eight hundred megabytes of that is video files. And half of them are for a phone.",
+  "dur": 4.754,
+  "wav": "episodes/11-slashzero/tts/02.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "hook",
+  "beat": 6.0,
+  "vis": {
+   "type": "continue"
+  },
+  "dur": 6.0,
+  "wav": null
+ },
+ {
+  "id": "03",
+  "sec": "intro",
+  "text": "Slash Zero. A three-D anime side-scrolling action roguelike, from Street lamp Studio, published by Sky stone Games.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 102.0
+  },
+  "sub": "SlashZero. A 3D anime side-scrolling action roguelike, from Streetlamp Studio, published by Skystone Games.",
+  "dur": 8.882,
+  "wav": "episodes/11-slashzero/tts/03.wav"
+ },
+ {
+  "id": "04",
+  "sec": "intro",
+  "text": "You play a Time-hacker. You dash, vault and combo your way across a collapsing cyberpunk timeline, and you build a run out of blessings, fragments and chips.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "You play a Timehacker. You dash, vault and combo your way across a collapsing cyberpunk timeline, and you build a run out of blessings, fragments and chips.",
+  "dur": 9.3,
+  "wav": "episodes/11-slashzero/tts/04.wav"
+ },
+ {
+  "id": "b2",
+  "sec": "intro",
+  "beat": 8.0,
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 120.0
+  },
+  "dur": 8.0,
+  "wav": null
+ },
+ {
+  "id": "05",
+  "sec": "intro",
+  "text": "The full game is Q one twenty twenty-seven. The demo went up on the third of September, and it has three hundred and forty people in it as I record this.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 84.0
+  },
+  "sub": "The full game is Q1 twenty twenty-seven. The demo went up on the third of September, and it has three hundred and forty people in it as I record this.",
+  "dur": 8.202,
+  "wav": "episodes/11-slashzero/tts/05.wav"
+ },
+ {
+  "id": "06",
+  "sec": "intro",
+  "text": "It also has zero reviews. So there is nothing to read, and everything to take apart.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 48.0
+  },
+  "sub": "It also has zero reviews. So there is nothing to read, and everything to take apart.",
+  "dur": 5.303,
+  "wav": "episodes/11-slashzero/tts/06.wav"
+ },
+ {
+  "id": "07",
+  "sec": "made",
+  "text": "Steam publishes the file list for every demo. This one is four hundred and ninety seven files, fourteen point two two gigabytes.",
+  "vis": {
+   "type": "image",
+   "file": "ev_engine.png"
+  },
+  "sub": "Steam publishes the file list for every demo. This one is four hundred and ninety seven files, fourteen point two two gigabytes.",
+  "dur": 7.993,
+  "wav": "episodes/11-slashzero/tts/07.wav"
+ },
+ {
+  "id": "08",
+  "sec": "made",
+  "text": "It's Unreal Engine five. The container files say so: global dot you-cas, and three pak chunks.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 62.0
+  },
+  "sub": "It's Unreal Engine 5. The container files say so: global dot ucas, and three pak chunks.",
+  "dur": 7.158,
+  "wav": "episodes/11-slashzero/tts/08.wav"
+ },
+ {
+  "id": "09",
+  "sec": "made",
+  "text": "Almost all of it is one chunk. Pak chunk two is eleven point nine three gigabytes on its own. Pak chunk one is a stub: sixty four bytes. Somebody set up a chunk and never filled it.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Almost all of it is one chunk. Pakchunk two is eleven point nine three gigabytes on its own. Pakchunk one is a stub: sixty four bytes. Somebody set up a chunk and never filled it.",
+  "dur": 11.494,
+  "wav": "episodes/11-slashzero/tts/09.wav"
+ },
+ {
+  "id": "10",
+  "sec": "made",
+  "text": "But the size isn't the story. The movies folder is.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 94.0
+  },
+  "sub": "But the size isn't the story. The movies folder is.",
+  "dur": 3.814,
+  "wav": "episodes/11-slashzero/tts/10.wav"
+ },
+ {
+  "id": "11",
+  "sec": "made",
+  "text": "There are two hundred and eight Bink videos in this build. Skill demonstrations, tutorials, one intro. And they come in two complete sets.",
+  "vis": {
+   "type": "image",
+   "file": "ev_movies.png"
+  },
+  "sub": "There are two hundred and eight Bink videos in this build. Skill demonstrations, tutorials, one intro. And they come in two complete sets.",
+  "dur": 8.803,
+  "wav": "episodes/11-slashzero/tts/11.wav"
+ },
+ {
+  "id": "12",
+  "sec": "made",
+  "text": "One folder is called P C. The other is called Mobile. A hundred and three files each, and every single filename in one exists in the other. I checked all two hundred and six.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 36.0
+  },
+  "sub": "One folder is called PC. The other is called Mobile. A hundred and three files each, and every single filename in one exists in the other. I checked all two hundred and six.",
+  "dur": 11.389,
+  "wav": "episodes/11-slashzero/tts/12.wav"
+ },
+ {
+  "id": "13",
+  "sec": "made",
+  "text": "The P C set is six hundred and fourteen megabytes. The Mobile set is a hundred and sixty five. Same clips, phone resolution.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 172.0
+  },
+  "sub": "The PC set is six hundred and fourteen megabytes. The Mobile set is a hundred and sixty five. Same clips, phone resolution.",
+  "dur": 7.993,
+  "wav": "episodes/11-slashzero/tts/13.wav"
+ },
+ {
+  "id": "14",
+  "sec": "made",
+  "text": "So a P C player downloads a hundred and sixty five megabytes of phone video that will never be shown to them. Nobody stripped the platform branch out of the cook.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "So a PC player downloads a hundred and sixty five megabytes of phone video that will never be shown to them. Nobody stripped the platform branch out of the cook.",
+  "dur": 8.986,
+  "wav": "episodes/11-slashzero/tts/14.wav"
+ },
+ {
+  "id": "15",
+  "sec": "made",
+  "text": "And the folders are numbered. One oh one, one oh two, one oh four. Three playable Time-hackers in the demo. One oh three is missing.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 30.0
+  },
+  "sub": "And the folders are numbered. One oh one, one oh two, one oh four. Three playable Timehackers in the demo. One oh three is missing.",
+  "dur": 8.385,
+  "wav": "episodes/11-slashzero/tts/15.wav"
+ },
+ {
+  "id": "b3",
+  "sec": "made",
+  "beat": 7.0,
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 144.0
+  },
+  "dur": 7.0,
+  "wav": null
+ },
+ {
+  "id": "16",
+  "sec": "made",
+  "text": "Now the D L Ls, because this is where it gets strange.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack.png"
+  },
+  "sub": "Now the DLLs, because this is where it gets strange.",
+  "dur": 3.631,
+  "wav": "episodes/11-slashzero/tts/16.wav"
+ },
+ {
+  "id": "17",
+  "sec": "made",
+  "text": "There are two Chromium browsers in this build. Not two files. Two entire copies of Chromium.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "There are two Chromium browsers in this build. Not two files. Two entire copies of Chromium.",
+  "dur": 5.878,
+  "wav": "episodes/11-slashzero/tts/17.wav"
+ },
+ {
+  "id": "18",
+  "sec": "made",
+  "text": "Unreal ships one of its own, and it's here: lib-seff, two hundred and twenty nine megabytes, Chromium one twenty eight. Then there is a second one, in the game's own folder, at a hundred and eighty eight.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 10.0
+  },
+  "sub": "Unreal ships one of its own, and it's here: libcef, two hundred and twenty nine megabytes, Chromium one twenty eight. Then there is a second one, in the game's own folder, at a hundred and eighty eight.",
+  "dur": 11.99,
+  "wav": "episodes/11-slashzero/tts/18.wav"
+ },
+ {
+  "id": "19",
+  "sec": "made",
+  "text": "The second one has a resource folder next to it with back, forward, close and reload buttons, and an offline error page. That is not a U I widget. That is a browser, with a toolbar, inside the game.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "The second one has a resource folder next to it with back, forward, close and reload buttons, and an offline error page. That is not a UI widget. That is a browser, with a toolbar, inside the game.",
+  "dur": 12.513,
+  "wav": "episodes/11-slashzero/tts/19.wav"
+ },
+ {
+  "id": "20",
+  "sec": "made",
+  "text": "The build ships a hundred and nineteen pak files. A hundred and ten of them are Chromium language packs. The game itself has six languages.",
+  "vis": {
+   "type": "video",
+   "file": "s_features.mp4",
+   "in": 28.0
+  },
+  "sub": "The build ships a hundred and nineteen pak files. A hundred and ten of them are Chromium language packs. The game itself has six languages.",
+  "dur": 7.915,
+  "wav": "episodes/11-slashzero/tts/20.wav"
+ },
+ {
+  "id": "21",
+  "sec": "made",
+  "text": "Next. Voice chat. Volk Engine R T C, twenty three megabytes, which is Byte Dance.",
+  "vis": {
+   "type": "image",
+   "file": "ev_rtc.png"
+  },
+  "sub": "Next. Voice chat. VolcEngine RTC, twenty three megabytes, which is ByteDance.",
+  "dur": 7.21,
+  "wav": "episodes/11-slashzero/tts/21.wav"
+ },
+ {
+  "id": "22",
+  "sec": "made",
+  "text": "And, in the same build, G M E. Which is Tencent. Two real-time voice S D Ks, from the two companies least likely to want to share a folder, in a game with no visible multiplayer.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 148.0
+  },
+  "sub": "And, in the same build, GME. Which is Tencent. Two real-time voice SDKs, from the two companies least likely to want to share a folder, in a game with no visible multiplayer.",
+  "dur": 12.382,
+  "wav": "episodes/11-slashzero/tts/22.wav"
+ },
+ {
+  "id": "23",
+  "sec": "made",
+  "text": "The Byte Dance side doesn't stop at voice. There's a game S D K, a logging S D K, a device registration library, a downloader, and two copies of Cro-net. That's Chromium's network stack, shipped on its own.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 156.0
+  },
+  "sub": "The ByteDance side doesn't stop at voice. There's a game SDK, a logging SDK, a device registration library, a downloader, and two copies of Cronet. That's Chromium's network stack, shipped on its own.",
+  "dur": 13.662,
+  "wav": "episodes/11-slashzero/tts/23.wav"
+ },
+ {
+  "id": "24",
+  "sec": "made",
+  "text": "Which means this build carries three separate network layers. Unreal's, curl, and Cro-net.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Which means this build carries three separate network layers. Unreal's, curl, and Cronet.",
+  "dur": 5.59,
+  "wav": "episodes/11-slashzero/tts/24.wav"
+ },
+ {
+  "id": "25",
+  "sec": "made",
+  "text": "And then a file that stops you. G P L Driver dot sys. One point one two megabytes, signed, with an installer. A kernel-mode driver.",
+  "vis": {
+   "type": "image",
+   "file": "ev_driver.png"
+  },
+  "sub": "And then a file that stops you. GPLDriver dot sys. One point one two megabytes, signed, with an installer. A kernel-mode driver.",
+  "dur": 10.475,
+  "wav": "episodes/11-slashzero/tts/25.wav"
+ },
+ {
+  "id": "26",
+  "sec": "made",
+  "text": "What it does, a file list cannot tell you. What I can tell you is that a single-player side-scroller demo wants to put code in ring zero, and you should know that before you install it.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 66.0
+  },
+  "sub": "What it does, a file list cannot tell you. What I can tell you is that a single-player side-scroller demo wants to put code in ring zero, and you should know that before you install it.",
+  "dur": 10.292,
+  "wav": "episodes/11-slashzero/tts/26.wav"
+ },
+ {
+  "id": "27",
+  "sec": "made",
+  "text": "Now the slips, and there are three.",
+  "vis": {
+   "type": "video",
+   "file": "s_story.mp4",
+   "in": 30.0
+  },
+  "sub": "Now the slips, and there are three.",
+  "dur": 2.116,
+  "wav": "episodes/11-slashzero/tts/27.wav"
+ },
+ {
+  "id": "28",
+  "sec": "made",
+  "text": "One. The wise audio engine here is the Profile build, not the Release build. Profile is the one that leaves the connection to the authoring tool open. Every stock plugin came along too, including the recorder and the sine tone generator.",
+  "vis": {
+   "type": "image",
+   "file": "ev_slip.png"
+  },
+  "sub": "One. The Wwise audio engine here is the Profile build, not the Release build. Profile is the one that leaves the connection to the authoring tool open. Every stock plugin came along too, including the recorder and the sine tone generator.",
+  "dur": 14.42,
+  "wav": "episodes/11-slashzero/tts/28.wav"
+ },
+ {
+  "id": "29",
+  "sec": "made",
+  "text": "Two. The full cook manifest ships as plain text. Eight and a half megabytes listing every asset path in the game.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 112.0
+  },
+  "sub": "Two. The full cook manifest ships as plain text. Eight and a half megabytes listing every asset path in the game.",
+  "dur": 7.21,
+  "wav": "episodes/11-slashzero/tts/29.wav"
+ },
+ {
+  "id": "30",
+  "sec": "made",
+  "text": "Three. The Unreal debug fallback font, five megabytes, and an arm sixty-four Visual C plus plus redistributable in a build with no arm sixty-four binaries.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Three. The Unreal debug fallback font, five megabytes, and an ARM64 Visual C++ redistributable in a build with no ARM64 binaries.",
+  "dur": 11.076,
+  "wav": "episodes/11-slashzero/tts/30.wav"
+ },
+ {
+  "id": "31",
+  "sec": "made",
+  "text": "Last episode a Square Enix build shipped the DirectX debug layer. Different studio, same drawer left open.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 192.0
+  },
+  "sub": "Last episode a Square Enix build shipped the DirectX debug layer. Different studio, same drawer left open.",
+  "dur": 6.949,
+  "wav": "episodes/11-slashzero/tts/31.wav"
+ },
+ {
+  "id": "32",
+  "sec": "made",
+  "text": "One thing they did tighten: the upscalers. Full D L S S three with frame generation and ray reconstruction, Streamline, and A M D's F S R alongside it. Both vendors, current versions.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 64.0
+  },
+  "sub": "One thing they did tighten: the upscalers. Full DLSS 3 with frame generation and ray reconstruction, Streamline, and AMD's FSR alongside it. Both vendors, current versions.",
+  "dur": 13.166,
+  "wav": "episodes/11-slashzero/tts/32.wav"
+ },
+ {
+  "id": "33",
+  "sec": "review",
+  "text": "Reception. There are no reviews, so there is one number.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 184.0
+  },
+  "sub": "Reception. There are no reviews, so there is one number.",
+  "dur": 3.631,
+  "wav": "episodes/11-slashzero/tts/33.wav"
+ },
+ {
+  "id": "34",
+  "sec": "review",
+  "text": "Three hundred and forty people in the demo, two days after it went live, for a game that doesn't ship until next year.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Three hundred and forty people in the demo, two days after it went live, for a game that doesn't ship until next year.",
+  "dur": 6.322,
+  "wav": "episodes/11-slashzero/tts/34.wav"
+ },
+ {
+  "id": "35",
+  "sec": "review",
+  "text": "That's a modest number, and it's an honest one. This is a demo doing its job: it's here to be played, not to be reviewed.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 86.0
+  },
+  "sub": "That's a modest number, and it's an honest one. This is a demo doing its job: it's here to be played, not to be reviewed.",
+  "dur": 6.557,
+  "wav": "episodes/11-slashzero/tts/35.wav"
+ },
+ {
+  "id": "36",
+  "sec": "score",
+  "text": "Here's the whole teardown on one card.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 98.0
+  },
+  "sub": "Here's the whole teardown on one card.",
+  "dur": 2.534,
+  "wav": "episodes/11-slashzero/tts/36.wav"
+ },
+ {
+  "id": "37",
+  "sec": "score",
+  "text": "Unreal five. Fourteen gigabytes. Two Chromium browsers, two rival voice S D Ks, a kernel driver, and a hundred and three videos shipped twice.",
+  "vis": {
+   "type": "video",
+   "file": "s_features.mp4",
+   "in": 34.0
+  },
+  "sub": "Unreal 5. Fourteen gigabytes. Two Chromium browsers, two rival voice SDKs, a kernel driver, and a hundred and three videos shipped twice.",
+  "dur": 9.587,
+  "wav": "episodes/11-slashzero/tts/37.wav"
+ },
+ {
+  "id": "38",
+  "sec": "score",
+  "text": "Worth a dip, with one caveat. The game underneath looks fast and it looks good, and the demo is free. But it installs a kernel driver, so read the prompt before you click it.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 122.0
+  },
+  "sub": "Worth a dip, with one caveat. The game underneath looks fast and it looks good, and the demo is free. But it installs a kernel driver, so read the prompt before you click it.",
+  "dur": 11.076,
+  "wav": "episodes/11-slashzero/tts/38.wav"
+ },
+ {
+  "id": "39",
+  "sec": "score",
+  "text": "If you build in Unreal, the thing to take from this is the cook. Open your packaged Movies folder and see how many platforms are in it. Every one you don't ship on is free download size you're charging your players for.",
+  "vis": {
+   "type": "video",
+   "file": "s_playtest.mp4",
+   "in": 44.0
+  },
+  "sub": "If you build in Unreal, the thing to take from this is the cook. Open your packaged Movies folder and see how many platforms are in it. Every one you don't ship on is free download size you're charging your players for.",
+  "dur": 11.677,
+  "wav": "episodes/11-slashzero/tts/39.wav"
+ },
+ {
+  "id": "40",
+  "sec": "score",
+  "text": "That's my read from the outside. If you worked on this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "vis": {
+   "type": "video",
+   "file": "s_story.mp4",
+   "in": 34.0
+  },
+  "sub": "That's my read from the outside. If you worked on this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "dur": 10.318,
+  "wav": "episodes/11-slashzero/tts/40.wav"
+ }
+]

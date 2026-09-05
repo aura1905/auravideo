@@ -21,20 +21,22 @@
 | 07 | Guildrun | 미상 | Unity | 미상(IL2CPP) | **IL2CPP** | 10.58 GiB | 137 | 22 | 어셈블리 24개 복원 | 숙련된 스택 + 주간 패치 | 89.8% / 1,994 |
 | 08 | Veiled Shadows | 1인 (오스트리아) | **RPG Developer Bakin** | OpenGL 4.4 / D3D12 | C# (Roslyn 동봉) | 1.42 GiB | 65 | 0 | 엔진 런타임 통째 | 노코드 툴 + 자작 콘텐츠 | 100% / 6 |
 | 09 | PengPong | 미상 (SANDY FLOOR, 한국) | Unity | Addressables | Mono | 2.68 GiB | 282 | 0 | 8종 이상 | 사내 프레임워크 + 유료 에셋 $95 | 86.6% / 134 |
+| 10 | FINAL FANTASY RESONANCE | Square Enix Team Asano + LANCARSE | **Unreal Engine 5** | IoStore (.ucas/.utoc) | C++ (467 MiB exe) | 5.72 GiB | 26 | 0 | DLL 14개 (전부 서드파티) | 대형 퍼블리셔, 1장 통째 데모 | 리뷰 없음 / 접속 4,400 |
+| 11 | SlashZero | Streetlamp Studio (pub. Skystone Games) | **Unreal Engine 5** | IoStore (.ucas/.utoc), 3 pak chunks | C++ (234 MiB exe) | 14.22 GiB | 497 | 0 | DLL 119개 (Wwise 33 + CEF 2벌 + 바이트댄스/텐센트) | 모바일 빌드의 PC 포팅 — 스킬 영상 103개가 PC/Mobile 두 벌 | 리뷰 없음 / 접속 337 |
 | ko | PengPong | 한국 인디 (인원 미공개) | Unity | **Mono 백엔드**, Addressables | Mono | 2.68 GiB (Win64 데모) | 282 | ? | **8종 이상** | 사내 프레임워크 + 유료 에셋 조합 | 데모 86.6% / 134, 본편 84.9% / 258 |
 
-## 누적 집계 (7편 기준 — 의미 있는 수치는 10편부터)
+## 누적 집계 (9편 기준 — 의미 있는 수치는 10편부터)
 
-- 엔진: Unity 6 / RPG Developer Bakin 1
-- 파이프라인: 미상(IL2CPP) 2 / **HDRP** 1 / **URP 2D** 1 / OpenGL 4.4 / D3D12 1 / Addressables 1 / **Mono 백엔드**, Addressables 1
-- 스크립팅 백엔드: Mono 4 / **IL2CPP** 2 / C# (Roslyn 동봉) 1
-- 중간값 빌드 크기: 2.68 GiB
-- 서드파티 패키지 중간값: 8개
-- 생성형 AI 공시가 있는 편: 2 / 7
+- 엔진: Unity 6 / Unreal Engine 2 / RPG Developer Bakin 1
+- 파이프라인: 미상(IL2CPP) 2 / **HDRP** 1 / **URP 2D** 1 / OpenGL 4.4 / D3D12 1 / Addressables 1 / IoStore (.ucas/.utoc) 1 / IoStore (.ucas/.utoc), 3 pak chunks 1 / **Mono 백엔드**, Addressables 1
+- 스크립팅 백엔드: Mono 4 / **IL2CPP** 2 / C# (Roslyn 동봉) 1 / C++ (467 MiB exe) 1 / C++ (234 MiB exe) 1
+- 중간값 빌드 크기: 3.71 GiB
+- 서드파티 패키지 중간값: 11개
+- 생성형 AI 공시가 있는 편: 2 / 9
 
 ## 지금까지 두 번 이상 나온 패키지
 
-- **FMOD** (4편), **Steamworks** (4편), **Resonance Audio** (2편), **SQLite** (2편), **DOTween** (2편), **AraTrail** (2편), **NavMeshPlus** (2편), **GameAnalytics** (2편)
+- **Steamworks** (5편), **FMOD** (4편), **Resonance Audio** (2편), **SQLite** (2편), **DOTween** (2편), **AraTrail** (2편), **NavMeshPlus** (2편), **GameAnalytics** (2편), **NVIDIA Aftermath** (2편), **oneTBB** (2편)
 
 ## 언급한 도구는 설명문에 링크한다
 

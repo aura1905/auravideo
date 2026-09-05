@@ -3,6 +3,8 @@
 `python scripts/pipeline/demo_queue.py --ids ... --engine <id>=Unity --out docs/QUEUE.md` 로 갱신한다.
 엔진은 SteamDB의 **데모 appid** 페이지에서 손으로 확인해 `--engine`으로 넘긴다(SteamDB는 스크립트 fetch를 막는다).
 
+**이미 배정된 후보 (다시 뽑지 말 것):** Guildrun = 07화, FINAL FANTASY RESONANCE = 10화, SlashZero = 11화(데모 5099550 / 본편 4061170, Streetlamp Studio·Skystone Games, Unreal 5, 접속 337). PengPong = 09화 준비 완료 후 킵, Veiled Shadows = 08화 준비 완료 후 홀드.
+
 | 점수 | 게임 | 개발사 / 퍼블리셔 | 엔진 | 리뷰 | 접속 중 | 판정 | 데모 |
 |---|---|---|---|---|---|---|---|
 | 165.2 | Guildrun Demo | Leyline / Leyline | Unity | 2008 (89.6%) | 2895 | GO | https://store.steampowered.com/app/4425970/ |

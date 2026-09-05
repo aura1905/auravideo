@@ -59,6 +59,11 @@ def main():
     for i, s in enumerate(segs):
         if i == cold_n:
             t = still_start
+        # A `beat` is footage with no narration (build_plan.py): it occupies time on the
+        # timeline but produces no caption, and carries no trailing GAP.
+        if s.get('beat') and not s.get('text'):
+            t += float(s['beat'])
+            continue
         n += 1
         out.append(f'{n}\n{ts(t)} --> {ts(t + s["dur"] + 0.15)}\n{wrap(s.get("sub") or s["text"])}\n')
         t += s['dur'] + GAP

@@ -1,0 +1,16 @@
+[
+ {"id":"s1","sec":"hook","text":"This Steam demo is fourteen gigabytes. For a side-scrolling action game.","vis":{"type":"video","file":"s_playtest.mp4","in":140.0}},
+ {"id":"s2","sec":"hook","text":"And a hundred and sixty five megabytes of it is video made for a phone.","vis":{"type":"continue"}},
+ {"id":"b1","sec":"intro","beat":7.0,"vis":{"type":"video","file":"s_playtest.mp4","in":102.0}},
+ {"id":"s3","sec":"intro","text":"Here's what it is. SlashZero, a 3D anime action roguelike from Streetlamp Studio. You play a Timehacker.","vis":{"type":"continue"}},
+ {"id":"s4","sec":"intro","text":"You dash, vault and combo across a collapsing cyberpunk timeline, and every run you rebuild your character out of blessings, fragments and chips.","vis":{"type":"video","file":"s_playtest.mp4","in":120.0}},
+ {"id":"b2","sec":"intro","beat":6.0,"vis":{"type":"continue"}},
+ {"id":"s5","sec":"made","text":"Now the build. Unreal 5, and two hundred and eight Bink videos inside it.","vis":{"type":"image","file":"ev_movies_v.png"}},
+ {"id":"s6","sec":"made","text":"One folder called PC, one called Mobile. A hundred and three files each, and every filename in one exists in the other.","vis":{"type":"continue"}},
+ {"id":"s7","sec":"made","text":"So a PC player downloads a hundred and sixty five megabytes of phone video that nobody will ever show them.","vis":{"type":"video","file":"s_playtest.mp4","in":172.0}},
+ {"id":"s8","sec":"made","text":"It also ships two entire copies of Chromium. Four hundred and seventeen megabytes of web browser.","vis":{"type":"image","file":"ev_stack_v.png"}},
+ {"id":"s9","sec":"made","text":"Two real-time voice SDKs, one from ByteDance and one from Tencent, in a game with no visible multiplayer.","vis":{"type":"image","file":"ev_rtc_v.png"}},
+ {"id":"s10","sec":"made","text":"And a signed kernel-mode driver.","vis":{"type":"image","file":"ev_driver_v.png"}},
+ {"id":"s11","sec":"score","text":"The game underneath looks fast and it looks good, and the demo is free.","vis":{"type":"video","file":"s_playtest.mp4","in":44.0}},
+ {"id":"s12","sec":"score","text":"Just read the driver prompt before you click it. Full teardown on the channel.","vis":{"type":"continue"}}
+]

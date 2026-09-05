@@ -1,0 +1,39 @@
+{
+ "demo_appid": 5099550,
+ "full_appid": 4061170,
+ "name": "SlashZero",
+ "developers": [
+  "Streetlamp Studio"
+ ],
+ "publishers": [
+  "Skystone Games"
+ ],
+ "release": "Q1 2027",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Indie",
+  "RPG"
+ ],
+ "languages": "English*, Simplified Chinese*, French, German, Japanese, Korean*languages with full audio support",
+ "website": "https://streetlampgame.com/",
+ "short": "SlashZero is a side-scrolling action roguelike game. As a Timehacker, your job is to travel across timelines and explore a cyberpunk world, use combat skills and strategies to piece together the truth, and take down the Lord of the Void! Is what you see the truth?",
+ "about": " SlashZero is a 3D anime-style side-scrolling action roguelike game. In this game, you can unleash flashy moves, dive into thrilling combat and customize endless builds to suit your playstyle. Fight, power up, collect items and uncover the hidden truth beneath this stunning cyberpunk world!         Master rich movesets and in-depth combat combos featuring signature aerial strings. Dash, vault, and fight across multi-layered maps for smooth, parkour-style action!             Feel every strike with precise hit feedback. Diverse level designs keep every battle fresh and challenging. Dominate foes by blending acrobatic finesse with tactical combat strategy to claim victory!               Try out different Timehackers and find the combat playstyle that suits you best. Are you a melee expert? A ranged specialist? Or do you prefer something more flexible in both offense and defense? Find your style as you experience each character's unique movesets and explore their stories!       Mix   and   match   a   wide   range   of   in-run   and   out-of-run   systems   to   shape   your   own   combat   build.   In every run, you can choose a path and grow stronger as you follow it.   Combine   the   power   of   Blessings   from   different   Authorities,   harness   the   run-changing   effects   of   Temporal   Fragments,   and   equip   Upgrade   Chips   that   can   fundamentally   reshape   how   your   character   plays.   Back   at   the   base,   unlock   permanent   progression   options   to   prepare   for   what   comes   next.   Increase   your   stats,   acquire   Dual   Blessings,   gain   additional   rerolls, and more! You may even get to bring your own preset builds   into   future   runs!               As the timelines collapse, HIEROS-I descends, and he intends to drag every timeline toward destruction.   As   a   Timehacker,   the   fate   of   the   world   falls   to   you.   Guided   by   the   mysterious   voice   known   as   Silver,   travel   across   timelines,   gather   greater   power,   seek   out   Timeline   Zero,   hunt   down   the   Lord   of   the   Void,   and   put   an   end   to   HIEROS-I   before   everything   is   lost.         ",
+ "min_req": " Minimum:     OS:  Windows 10 64 bit    Processor:  Intel Core i5-7300U@2.6G or AMD Ryzen 3 3300U@2.1G    Memory:  8 GB RAM    Graphics:  NVIDIA GeForce GTX 1050 or AMD Radeon RX 560    DirectX:  Version 12  ",
+ "movies": [
+  {
+   "id": 257415504,
+   "name": "Story Trailer"
+  },
+  {
+   "id": 257298782,
+   "name": "SlashZero - Reveal Trailer"
+  }
+ ],
+ "screenshots": 9,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}
