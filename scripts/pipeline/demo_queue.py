@@ -124,24 +124,26 @@ def score(c, weekly=False):
 
 def verdict(c):
     e = (c['engine'] or '').lower()
+    # 2026-09-05, user: "너무 빡빡하게 인디 게임만 할 필요는 없어 보임" -- ranking and player
+    # interest come first; reviews + what it was built with + who made it is enough of an
+    # episode. So Unreal and big studios are notes, not drops. The build teardown just
+    # goes as deep as the file list allows.
     if 'unreal' in e:
-        return 'DROP — Unreal: content is one blob, nothing to read'
+        c['note'] = 'Unreal: one blob, teardown is engine + company + reviews'
     if any(h in c['name'].lower() for h in UTILITY_HINTS):
         return 'DROP — utility, not a game'
     # Match whole words: a substring test read "Purple Bean Games" as EA.
     words = set(re.findall(r"[a-z0-9&+-]+", f"{c['dev']} {c['pub']}".lower()))
     blob = f"{c['dev']} {c['pub']}".lower()
     if any((b in words) if ' ' not in b else (b in blob) for b in BIG):
-        return 'DROP — big publisher'
+        c['note'] = (c.get('note', '') + '; ' if c.get('note') else '') + 'big publisher'
     if 0 <= c.get('players', -1) < MIN_PLAYERS:
         return f'HOLD — {c["players"]} playing now; outside the ranking, parked for now (user, 2026-09-05)'
     if c['reviews'] < c['min_reviews']:
         return f"HOLD — under {c['min_reviews']} reviews, reception unreadable"
-    if c['dev'] != c['pub']:
-        return 'CHECK — has a publisher; verify it is not a funded studio'
     if not c['engine']:
         return 'CHECK — engine unknown, look it up on SteamDB'
-    return 'GO'
+    return 'GO' + (f" ({c['note']})" if c.get('note') else '')
 
 
 def main():
