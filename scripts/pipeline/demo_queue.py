@@ -139,7 +139,10 @@ def verdict(c):
         c['note'] = (c.get('note', '') + '; ' if c.get('note') else '') + 'big publisher'
     if 0 <= c.get('players', -1) < MIN_PLAYERS:
         return f'HOLD — {c["players"]} playing now; outside the ranking, parked for now (user, 2026-09-05)'
-    if c['reviews'] < c['min_reviews']:
+    # Major publishers switch reviews off on pre-release demos (FF Resonance: 4,400 playing,
+    # 0 reviews). When the player count clears the bar, reception is read from the hub and
+    # previews instead, so the review floor only applies below it.
+    if c['reviews'] < c['min_reviews'] and c.get('players', 0) < MIN_PLAYERS:
         return f"HOLD — under {c['min_reviews']} reviews, reception unreadable"
     if not c['engine']:
         return 'CHECK — engine unknown, look it up on SteamDB'
