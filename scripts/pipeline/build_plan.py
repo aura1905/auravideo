@@ -81,7 +81,10 @@ def main():
     FILL = ep.get('fill_mode', 'blur' if VERT else 'cover')
     # y is measured from the canvas centre; the bottom 16% of a Short belongs to its
     # title and handle, so the caption block sits well above that.
-    SUB = {'fontSize': 50, 'y': 330, 'bgOpacity': 0.62} if VERT else {}
+    # A 9:16 Short keeps the 16:9 source's full height, so a trailer's burnt-in dialogue
+    # subtitles land exactly under our caption (FF Resonance). `sub_y` lifts the caption
+    # clear of that band for the episode; the long-form crops it away with visual_scale.
+    SUB = {'fontSize': 50, 'y': int(ep.get('sub_y', 330)), 'bgOpacity': 0.62} if VERT else {}
     LABEL_POS = ([(0, -640), (0, -500), (0, -360), (0, -220)] if VERT
                  else [(-560, -230), (560, -230), (-560, 60), (560, 60)])
     LABEL_FS = 46 if VERT else 40
