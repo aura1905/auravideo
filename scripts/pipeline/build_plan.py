@@ -357,6 +357,26 @@ def main():
         print(f'  closed {len(closed)} background gap(s): '
               + ', '.join(f'{g}s at {t}s' for t, g in closed))
 
+    # --- subtitle mask: cover a trailer's burnt-in subtitles instead of cropping them
+    # Episode 10 first hid FF Resonance's baked-in dialogue by enlarging the frame 1.18x,
+    # which resampled 1080p pixel art into mush. A dark band over that strip costs nothing:
+    # the picture stays 1:1. episode.json: "sub_mask": {"height": 0.14, "opacity": 0.88}
+    mask = ep.get('sub_mask')
+    if mask:
+        mpath = os.path.join(wd, '_submask.png')
+        if not os.path.exists(mpath):
+            from PIL import Image, ImageDraw
+            h = int(CH * float(mask.get('height', 0.14)))
+            op = float(mask.get('opacity', 0.88))
+            im = Image.new('RGBA', (CW, CH), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+            for i in range(h):                       # soft top edge so it is not a hard line
+                a = int(255 * op * min(1.0, i / max(1, h * 0.35)))
+                d.line((0, CH - h + i, CW, CH - h + i), fill=(0, 0, 0, a))
+            im.save(mpath)
+            print(f'  wrote {os.path.basename(mpath)} ({h}px band, opacity {op})')
+        C.append({'track': 'v10', 'file': '_submask.png', 'start': 0.0, 'in': 0,
+                  'out': round(total, 3), 'fillMode': 'fit', 'transformScale': 1.0})
+
     plan['total'] = round(total, 3)
     json.dump(plan, open(a.out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print(f"plan: {CW}x{CH}, total {plan['total']}s, clips {len(C)}, subs {len(S)}, score at {score_t0}")
