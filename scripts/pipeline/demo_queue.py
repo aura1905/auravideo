@@ -32,6 +32,9 @@ BIG = {'capcom', 'square enix', 'sega', 'bandai', 'ubisoft', 'ea', 'electronic a
        'devolver', 'annapurna', 'paradox', 'focus', 'thq', 'kepler', 'raw fury', 'team17',
        'tinybuild', 'humble', 'curve', 'valve'}
 UTILITY_HINTS = ('soundpad', '3dmark', 'benchmark', 'wallpaper')
+# Below this many concurrent players the demo is outside the ranking. The two Shorts
+# that have run so far tracked this number, so games under it are parked.
+MIN_PLAYERS = 300
 
 
 def get(url, timeout=40):
@@ -41,6 +44,19 @@ def get(url, timeout=40):
 def appdetails(appid):
     d = get(f'https://store.steampowered.com/api/appdetails?appids={appid}&l=english')
     return (d.get(str(appid)) or {}).get('data') or {}
+
+
+def players_now(appid):
+    """Steam's live concurrent count for the demo. After two Shorts went live the
+    views-per-hour tracked this number, not the review count: Casualties (6.8k reviews,
+    ~900 playing) did 101/h, Nomad Drive (1.3k, ~1.4k playing) 35/h, and the user's
+    read was "유저들이 관심있는 게임이 확실히 조회수가 잘 나온다". So it is a first-class
+    signal now, and anything outside the ranking is held for the time being."""
+    try:
+        r = get(f'https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid={appid}')
+        return int((r.get('response') or {}).get('player_count') or 0)
+    except Exception:
+        return -1
 
 
 def reviews(appid):
@@ -84,6 +100,7 @@ def score(c, weekly=False):
     """
     s = 0.0
     k = engine_key(c['engine'])
+    s += min(max(c.get('players', 0), 0), 3000) / 60.0       # 0-50: people in it right now
     if weekly:
         s += min(c['reviews'], 100) / 2.0                   # 0-50: within-the-week demand
         if c['reviews'] >= 5:
@@ -116,6 +133,8 @@ def verdict(c):
     blob = f"{c['dev']} {c['pub']}".lower()
     if any((b in words) if ' ' not in b else (b in blob) for b in BIG):
         return 'DROP — big publisher'
+    if 0 <= c.get('players', -1) < MIN_PLAYERS:
+        return f'HOLD — {c["players"]} playing now; outside the ranking, parked for now (user, 2026-09-05)'
     if c['reviews'] < c['min_reviews']:
         return f"HOLD — under {c['min_reviews']} reviews, reception unreadable"
     if c['dev'] != c['pub']:
@@ -161,6 +180,7 @@ def main():
                 'pct': round(pos / tot * 100, 1) if tot else 0.0,
                 'full': (d.get('fullgame') or {}).get('appid', ''),
                 'release': (d.get('release_date') or {}).get('date', ''),
+                'players': players_now(i),
             })
         except Exception as e:
             print(f'{i}: {e}', file=sys.stderr)
@@ -175,11 +195,11 @@ def main():
     lines = ['# 후보 큐 — 다음에 뜯을 데모', '',
              '`python scripts/pipeline/demo_queue.py --ids ... --engine <id>=Unity --out docs/QUEUE.md` 로 갱신한다.',
              '엔진은 SteamDB의 **데모 appid** 페이지에서 손으로 확인해 `--engine`으로 넘긴다(SteamDB는 스크립트 fetch를 막는다).', '',
-             '| 점수 | 게임 | 개발사 / 퍼블리셔 | 엔진 | 리뷰 | 판정 | 데모 |',
-             '|---|---|---|---|---|---|---|']
+             '| 점수 | 게임 | 개발사 / 퍼블리셔 | 엔진 | 리뷰 | 접속 중 | 판정 | 데모 |',
+             '|---|---|---|---|---|---|---|---|']
     for r in rows:
         lines.append(f"| {r['score']} | {r['name']} | {r['dev']} / {r['pub']} | {r['engine'] or '?'} | "
-                     f"{r['reviews']} ({r['pct']}%) | {r['verdict']} | "
+                     f"{r['reviews']} ({r['pct']}%) | {r.get('players', '?')} | {r['verdict']} | "
                      f"https://store.steampowered.com/app/{r['id']}/ |")
     text = '\n'.join(lines) + '\n'
     print(text)
