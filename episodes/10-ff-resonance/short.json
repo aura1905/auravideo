@@ -34,7 +34,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 20.0
+   "in": 19.0
   }
  },
  {
@@ -79,7 +79,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 24.0
+   "in": 22.0
   }
  },
  {
@@ -89,7 +89,7 @@
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
-   "in": 28.0
+   "in": 25.0
   }
  }
 ]
