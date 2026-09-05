@@ -14,8 +14,9 @@
   "sec": "hook",
   "text": "Seven hundred and seventy megabytes of it is a file they forgot to delete. And there are three people on this team.",
   "vis": {
-   "type": "image",
-   "file": "ss07.jpg"
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 16.0
   }
  },
  {
@@ -23,8 +24,9 @@
   "sec": "intro",
   "text": "Expedition: Into Darkness is a medieval extraction crawler. You go down with a torch, you fill your bag, and you try to get back out.",
   "vis": {
-   "type": "image",
-   "file": "ss03.jpg"
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 26.0
   }
  },
  {
@@ -78,8 +80,9 @@
   "sec": "made",
   "text": "That's C sharp translated into C plus plus and compiled native. You write the easy language and ship the fast one.",
   "vis": {
-   "type": "image",
-   "file": "ss07.jpg"
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 36.0
   }
  },
  {
@@ -105,8 +108,9 @@
   "sec": "made",
   "text": "There's also a native plugin in there called R F Lib C Native. It shows up in other Unity games and I could not work out what it does. If you know, the comments are right there.",
   "vis": {
-   "type": "image",
-   "file": "ss06.jpg"
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 46.0
   }
  },
  {
@@ -169,8 +173,9 @@
   "sec": "made",
   "text": "And that's usually what a two gigabyte bundle means. Not too much art. Art that never got its compression settings looked at.",
   "vis": {
-   "type": "image",
-   "file": "ss00.jpg"
+   "type": "video",
+   "file": "trailer_gameplay.mp4",
+   "in": 1.0
   }
  },
  {
@@ -196,8 +201,9 @@
   "sec": "made",
   "text": "Symbols are how you read a crash report. They belong on your build server, not in the download. Nobody has ever needed them to play a game.",
   "vis": {
-   "type": "image",
-   "file": "ss05.jpg"
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 17.0
   }
  },
  {
@@ -224,8 +230,8 @@
   "text": "None of this is incompetence. It's what happens when there are three of you and nobody owns the build.",
   "vis": {
    "type": "video",
-   "file": "trailer_main.mp4",
-   "in": 17.0
+   "file": "trailer_gameplay.mp4",
+   "in": 18.0
   }
  },
  {
@@ -251,8 +257,9 @@
   "sec": "review",
   "text": "Co-op, meanwhile, gets a hundred and six mentions in positive reviews and eight in negative ones. Three people built five player netcode that works.",
   "vis": {
-   "type": "image",
-   "file": "ss01.jpg"
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 34.0
   }
  },
  {
@@ -288,8 +295,8 @@
   "text": "Worth a dip, and it's free while the early access date moves around.",
   "vis": {
    "type": "video",
-   "file": "trailer_main.mp4",
-   "in": 17.0
+   "file": "trailer_gameplay.mp4",
+   "in": 13.0
   }
  },
  {
@@ -306,8 +313,9 @@
   "sec": "score",
   "text": "That's my read of it from the outside. If you made this and I got something wrong, say so in the comments and I'll pin the correction.",
   "vis": {
-   "type": "image",
-   "file": "ss03.jpg"
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 50.0
   }
  },
  {
