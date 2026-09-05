@@ -33,3 +33,8 @@
 !*/desc_short.txt
 # 9:16 thumbnail for the Short (make_thumbnail.py --vertical)
 !*/thumb_short.jpg
+# caption-form script -> spoken-form (pron_*.json); the *_tts_timed file is what build_plan reads
+!*/script_tts.json
+!*/script_tts_timed.json
+!*/short_tts.json
+!*/short_tts_timed.json

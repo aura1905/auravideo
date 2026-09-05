@@ -65,13 +65,14 @@
   },
   {
    "track": "v11",
-   "file": "ss02.jpg",
+   "file": "trailer_main.mp4",
    "start": 0.0,
-   "in": 0,
-   "out": 6.46,
+   "in": 1.0,
+   "out": 7.46,
    "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
+   "muted": true,
    "transformScale": 1.0
   },
   {

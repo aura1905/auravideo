@@ -1,0 +1,366 @@
+[
+ {
+  "id": "01",
+  "sec": "hook",
+  "text": "This demo is sixteen point nine gigabytes. That's bigger than most finished games I own.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 34.0
+  },
+  "sub": "This demo is sixteen point nine gigabytes. That's bigger than most finished games I own."
+ },
+ {
+  "id": "02",
+  "sec": "hook",
+  "text": "Seven hundred and seventy megabytes of it is a file they forgot to delete. And there are three people on this team.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 16.0
+  },
+  "sub": "Seven hundred and seventy megabytes of it is a file they forgot to delete. And there are three people on this team."
+ },
+ {
+  "id": "03",
+  "sec": "intro",
+  "text": "Expedition: Into Darkness is a medieval extraction crawler. You go down with a torch, you fill your bag, and you try to get back out.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 26.0
+  },
+  "sub": "Expedition: Into Darkness is a medieval extraction crawler. You go down with a torch, you fill your bag, and you try to get back out."
+ },
+ {
+  "id": "04",
+  "sec": "intro",
+  "text": "Nine hundred and eleven reviews, sixty nine percent positive. Mixed, in Steam's words. And about a thousand people are in it right now.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "Nine hundred and eleven reviews, sixty nine percent positive. Mixed, in Steam's words. And about a thousand people are in it right now."
+ },
+ {
+  "id": "05",
+  "sec": "intro",
+  "text": "The median reviewer had five hours on it. The top ten percent, thirty six. One of them, two hundred and thirteen.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "The median reviewer had five hours on it. The top ten percent, thirty six. One of them, two hundred and thirteen."
+ },
+ {
+  "id": "06",
+  "sec": "intro",
+  "text": "So people are staying. The argument is about everything around the game, not the game.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 52.0
+  },
+  "sub": "So people are staying. The argument is about everything around the game, not the game."
+ },
+ {
+  "id": "07",
+  "sec": "made",
+  "text": "Steam publishes a file list for every demo, so let's go through what three people actually shipped.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Steam publishes a file list for every demo, so let's go through what three people actually shipped."
+ },
+ {
+  "id": "08",
+  "sec": "made",
+  "text": "It's Unity, and the code is C sharp — you can tell because the build has a Game Assembly D L L, which is what the I L two C P P compiler leaves behind.",
+  "vis": {
+   "type": "image",
+   "file": "ev_engine.png"
+  },
+  "sub": "It's Unity, and the code is C# — you can tell because the build has a GameAssembly.dll, which is what the IL2CPP compiler leaves behind."
+ },
+ {
+  "id": "09",
+  "sec": "made",
+  "text": "That's C sharp translated into C plus plus and compiled native. You write the easy language and ship the fast one.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 36.0
+  },
+  "sub": "That's C# translated into C plus plus and compiled native. You write the easy language and ship the fast one."
+ },
+ {
+  "id": "10",
+  "sec": "made",
+  "text": "Audio is F MOD Studio, with Google's Resonance Audio next to it for spatial sound.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack.png"
+  },
+  "sub": "Audio is FMOD Studio, with Google's Resonance Audio next to it for spatial sound."
+ },
+ {
+  "id": "11",
+  "sec": "made",
+  "text": "In a game where the thing about to kill you is behind you in the dark, that isn't decoration. That's the one middleware I'd argue three people should pay for.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "In a game where the thing about to kill you is behind you in the dark, that isn't decoration. That's the one middleware I'd argue three people should pay for."
+ },
+ {
+  "id": "12",
+  "sec": "made",
+  "text": "There's also a native plugin in there called R F Lib C Native. It shows up in other Unity games and I could not work out what it does. If you know, the comments are right there.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 46.0
+  },
+  "sub": "There's also a native plugin in there called RFLib_CNative. It shows up in other Unity games and I could not work out what it does. If you know, the comments are right there."
+ },
+ {
+  "id": "13",
+  "sec": "made",
+  "text": "Now the size, because that's the story here.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "Now the size, because that's the story here."
+ },
+ {
+  "id": "14",
+  "sec": "made",
+  "text": "One scene in the whole build. Twenty three kilobytes. Everything else streams in from fifteen hundred and fifty five Addressable bundles.",
+  "vis": {
+   "type": "image",
+   "file": "ev_size.png"
+  },
+  "sub": "One scene in the whole build. Twenty three kilobytes. Everything else streams in from fifteen hundred and fifty five Addressable bundles."
+ },
+ {
+  "id": "15",
+  "sec": "made",
+  "text": "Those bundles are fifteen and a half gigabytes. The single biggest one is two gigabytes on its own.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 17.0
+  },
+  "sub": "Those bundles are fifteen and a half gigabytes. The single biggest one is two gigabytes on its own."
+ },
+ {
+  "id": "16",
+  "sec": "made",
+  "text": "Some of that is honest. Look at the crafting screen: every weapon is separate parts, a shaft and a head, each with its own durability and inertia.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Some of that is honest. Look at the crafting screen: every weapon is separate parts, a shaft and a head, each with its own durability and inertia."
+ },
+ {
+  "id": "17",
+  "sec": "made",
+  "text": "That means a mesh and a texture set for every part, not every weapon. Armour is the same, piece by piece. Content adds up fast when it's modular.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "That means a mesh and a texture set for every part, not every weapon. Armour is the same, piece by piece. Content adds up fast when it's modular."
+ },
+ {
+  "id": "18",
+  "sec": "made",
+  "text": "But three people did not hand-model sixteen gigabytes of medieval kit. My guess is bought libraries and scanned assets, dropped in at source resolution.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  },
+  "sub": "But three people did not hand-model sixteen gigabytes of medieval kit. My guess is bought libraries and scanned assets, dropped in at source resolution."
+ },
+ {
+  "id": "19",
+  "sec": "made",
+  "text": "And that's usually what a two gigabyte bundle means. Not too much art. Art that never got its compression settings looked at.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_gameplay.mp4",
+   "in": 1.0
+  },
+  "sub": "And that's usually what a two gigabyte bundle means. Not too much art. Art that never got its compression settings looked at."
+ },
+ {
+  "id": "20",
+  "sec": "made",
+  "text": "Then there's the file that isn't art at all.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "Then there's the file that isn't art at all."
+ },
+ {
+  "id": "21",
+  "sec": "made",
+  "text": "Game Assembly dot P D B. Seven hundred and forty five megabytes of debug symbols, shipped to players.",
+  "vis": {
+   "type": "image",
+   "file": "ev_pdb.png"
+  },
+  "sub": "GameAssembly.pdb. Seven hundred and forty five megabytes of debug symbols, shipped to players."
+ },
+ {
+  "id": "22",
+  "sec": "made",
+  "text": "Symbols are how you read a crash report. They belong on your build server, not in the download. Nobody has ever needed them to play a game.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 17.0
+  },
+  "sub": "Symbols are how you read a crash report. They belong on your build server, not in the download. Nobody has ever needed them to play a game."
+ },
+ {
+  "id": "23",
+  "sec": "made",
+  "text": "With the other four, that's seven hundred and seventy megabytes of a demo doing nothing.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "With the other four, that's seven hundred and seventy megabytes of a demo doing nothing."
+ },
+ {
+  "id": "24",
+  "sec": "made",
+  "text": "And the store page says you need eight gigabytes of storage. The build is sixteen point nine.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  },
+  "sub": "And the store page says you need eight gigabytes of storage. The build is sixteen point nine."
+ },
+ {
+  "id": "25",
+  "sec": "made",
+  "text": "None of this is incompetence. It's what happens when there are three of you and nobody owns the build.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_gameplay.mp4",
+   "in": 18.0
+  },
+  "sub": "None of this is incompetence. It's what happens when there are three of you and nobody owns the build."
+ },
+ {
+  "id": "26",
+  "sec": "review",
+  "text": "Which shows up in the reviews exactly where you'd expect.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "Which shows up in the reviews exactly where you'd expect."
+ },
+ {
+  "id": "27",
+  "sec": "review",
+  "text": "Performance is the loudest complaint by a distance. Blurry, poorly optimised, and a volumetric fog you can't turn off.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "Performance is the loudest complaint by a distance. Blurry, poorly optimised, and a volumetric fog you can't turn off."
+ },
+ {
+  "id": "28",
+  "sec": "review",
+  "text": "Co-op, meanwhile, gets a hundred and six mentions in positive reviews and eight in negative ones. Three people built five player netcode that works.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 34.0
+  },
+  "sub": "Co-op, meanwhile, gets a hundred and six mentions in positive reviews and eight in negative ones. Three people built five player netcode that works."
+ },
+ {
+  "id": "29",
+  "sec": "review",
+  "text": "And people who recommended it had played seven and a half hours. People who didn't, one.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "And people who recommended it had played seven and a half hours. People who didn't, one."
+ },
+ {
+  "id": "30",
+  "sec": "score",
+  "text": "Here's the whole teardown on one card.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "Here's the whole teardown on one card."
+ },
+ {
+  "id": "31",
+  "sec": "score",
+  "text": "Unity, I L two C P P, so the code is C sharp. Three people. F MOD and Resonance for audio. And seven hundred and seventy megabytes of debug symbols nobody meant to ship.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "Unity, IL2CPP, so the code is C#. Three people. FMOD and Resonance for audio. And seven hundred and seventy megabytes of debug symbols nobody meant to ship."
+ },
+ {
+  "id": "32",
+  "sec": "score",
+  "text": "Worth a dip, and it's free while the early access date moves around.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_gameplay.mp4",
+   "in": 13.0
+  },
+  "sub": "Worth a dip, and it's free while the early access date moves around."
+ },
+ {
+  "id": "33",
+  "sec": "score",
+  "text": "If you're shipping this year, two checkboxes. Strip your symbols. Then open your own store page and check the number you wrote for storage.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  },
+  "sub": "If you're shipping this year, two checkboxes. Strip your symbols. Then open your own store page and check the number you wrote for storage."
+ },
+ {
+  "id": "34",
+  "sec": "score",
+  "text": "That's my read of it from the outside. If you made this and I got something wrong, say so in the comments and I'll pin the correction.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_cinematic.mp4",
+   "in": 50.0
+  },
+  "sub": "That's my read of it from the outside. If you made this and I got something wrong, say so in the comments and I'll pin the correction."
+ },
+ {
+  "id": "35",
+  "sec": "score",
+  "text": "Next time, another demo, another file list. This is Demo Dip.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 52.0
+  },
+  "sub": "Next time, another demo, another file list. This is Demo Dip."
+ }
+]

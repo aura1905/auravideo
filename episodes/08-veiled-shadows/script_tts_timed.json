@@ -1,0 +1,433 @@
+[
+ {
+  "id": "01",
+  "sec": "hook",
+  "text": "Every demo I've taken apart on this channel was made in Unity, by people who write code. This one wasn't.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 1.0
+  },
+  "sub": "Every demo I've taken apart on this channel was made in Unity, by people who write code. This one wasn't.",
+  "dur": 6.06,
+  "wav": "episodes/08-veiled-shadows/tts/01.wav"
+ },
+ {
+  "id": "02",
+  "sec": "hook",
+  "text": "It was made in a tool sold on the promise that you never have to program. There's a C sharp compiler inside the build anyway.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 13.0
+  },
+  "sub": "It was made in a tool sold on the promise that you never have to program. There's a C# compiler inside the build anyway.",
+  "dur": 6.557,
+  "wav": "episodes/08-veiled-shadows/tts/02.wav"
+ },
+ {
+  "id": "03",
+  "sec": "intro",
+  "text": "Veiled Shadows is a month in a rural mountain town. You build bonds during the day, and at night you go into another world.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "Veiled Shadows is a month in a rural mountain town. You build bonds during the day, and at night you go into another world.",
+  "dur": 7.079,
+  "wav": "episodes/08-veiled-shadows/tts/03.wav"
+ },
+ {
+  "id": "04",
+  "sec": "intro",
+  "text": "Everyone who has played it reaches for the same word: Persona. One reviewer counted the nods to Persona four.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Everyone who has played it reaches for the same word: Persona. One reviewer counted the nods to Persona 4.",
+  "dur": 6.531,
+  "wav": "episodes/08-veiled-shadows/tts/04.wav"
+ },
+ {
+  "id": "05",
+  "sec": "intro",
+  "text": "The battle menu is drawn as a handheld console, and your abilities are cartridges you slot into it.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "The battle menu is drawn as a handheld console, and your abilities are cartridges you slot into it.",
+  "dur": 5.538,
+  "wav": "episodes/08-veiled-shadows/tts/05.wav"
+ },
+ {
+  "id": "06",
+  "sec": "intro",
+  "text": "The demo went up five days ago. Six reviews, all positive. That's not a reception, so what I can actually read here is the build.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 1.0
+  },
+  "sub": "The demo went up five days ago. Six reviews, all positive. That's not a reception, so what I can actually read here is the build.",
+  "dur": 7.811,
+  "wav": "episodes/08-veiled-shadows/tts/06.wav"
+ },
+ {
+  "id": "07",
+  "sec": "made",
+  "text": "Steam publishes the file list for every demo. This one has seventy one entries.",
+  "vis": {
+   "type": "image",
+   "file": "ev_engine.png"
+  },
+  "sub": "Steam publishes the file list for every demo. This one has seventy one entries.",
+  "dur": 4.937,
+  "wav": "episodes/08-veiled-shadows/tts/07.wav"
+ },
+ {
+  "id": "08",
+  "sec": "made",
+  "text": "The engine is R P G Developer Bakin, from a Japanese studio called SmileBoom. Seventy dollars on Steam, and it's sold as programming-free R P G creation.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "The engine is RPG Developer Bakin, from a Japanese studio called SmileBoom. Seventy dollars on Steam, and it's sold as programming-free RPG creation.",
+  "dur": 10.136,
+  "wav": "episodes/08-veiled-shadows/tts/08.wav"
+ },
+ {
+  "id": "09",
+  "sec": "made",
+  "text": "The game's own executable is five hundred and sixty two kilobytes. It's a launcher.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  },
+  "sub": "The game's own executable is five hundred and sixty two kilobytes. It's a launcher.",
+  "dur": 5.12,
+  "wav": "episodes/08-veiled-shadows/tts/09.wav"
+ },
+ {
+  "id": "10",
+  "sec": "made",
+  "text": "What actually runs the game is bakinplayer dot exe, and the engine D L L sitting next to it.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 27.0
+  },
+  "sub": "What actually runs the game is bakinplayer.exe, and the engine DLL sitting next to it.",
+  "dur": 6.374,
+  "wav": "episodes/08-veiled-shadows/tts/10.wav"
+ },
+ {
+  "id": "11",
+  "sec": "made",
+  "text": "Then there's one file that is the entire game.",
+  "vis": {
+   "type": "image",
+   "file": "ev_size.png"
+  },
+  "sub": "Then there's one file that is the entire game.",
+  "dur": 2.664,
+  "wav": "episodes/08-veiled-shadows/tts/11.wav"
+ },
+ {
+  "id": "12",
+  "sec": "made",
+  "text": "data dot R B pack. One point three five gigabytes. Ninety five percent of the download.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "data.rbpack. One point three five gigabytes. Ninety five percent of the download.",
+  "dur": 5.773,
+  "wav": "episodes/08-veiled-shadows/tts/12.wav"
+ },
+ {
+  "id": "13",
+  "sec": "made",
+  "text": "Every map, every model, every portrait and every voice line this person made is inside that one file.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 34.0
+  },
+  "sub": "Every map, every model, every portrait and every voice line this person made is inside that one file.",
+  "dur": 6.374,
+  "wav": "episodes/08-veiled-shadows/tts/13.wav"
+ },
+ {
+  "id": "14",
+  "sec": "made",
+  "text": "The other seventy entries are the engine, shipped exactly as it arrived.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "The other seventy entries are the engine, shipped exactly as it arrived.",
+  "dur": 4.284,
+  "wav": "episodes/08-veiled-shadows/tts/14.wav"
+ },
+ {
+  "id": "15",
+  "sec": "made",
+  "text": "Which is the interesting part, because of what a no-code tool puts in your game without asking.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack.png"
+  },
+  "sub": "Which is the interesting part, because of what a no-code tool puts in your game without asking.",
+  "dur": 5.277,
+  "wav": "episodes/08-veiled-shadows/tts/15.wav"
+ },
+ {
+  "id": "16",
+  "sec": "made",
+  "text": "First. Microsoft Code Analysis, two D L Ls, ten point seven megabytes. That's Roslyn. That is a C sharp compiler.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "First. Microsoft.CodeAnalysis, two DLLs, ten point seven megabytes. That's Roslyn. That is a C# compiler.",
+  "dur": 8.829,
+  "wav": "episodes/08-veiled-shadows/tts/16.wav"
+ },
+ {
+  "id": "17",
+  "sec": "made",
+  "text": "Bakin does offer an optional C sharp scripting feature, and this is what pays for it. Every game made in the tool carries a compiler, whether its author wrote a line of C sharp or not.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 44.0
+  },
+  "sub": "Bakin does offer an optional C# scripting feature, and this is what pays for it. Every game made in the tool carries a compiler, whether its author wrote a line of C# or not.",
+  "dur": 10.553,
+  "wav": "episodes/08-veiled-shadows/tts/17.wav"
+ },
+ {
+  "id": "18",
+  "sec": "made",
+  "text": "Second. WebView two, and an Edge browser control. There is a web browser inside this turn-based R P G.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Second. WebView2, and an Edge browser control. There is a web browser inside this turn-based RPG.",
+  "dur": 7.732,
+  "wav": "episodes/08-veiled-shadows/tts/18.wav"
+ },
+ {
+  "id": "19",
+  "sec": "made",
+  "text": "I could not work out what it's for from a file list. If you've built something in Bakin, the comments are right there.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "I could not work out what it's for from a file list. If you've built something in Bakin, the comments are right there.",
+  "dur": 6.322,
+  "wav": "episodes/08-veiled-shadows/tts/19.wav"
+ },
+ {
+  "id": "20",
+  "sec": "made",
+  "text": "Third, and this is the one worth taking away. V R M Loader.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 48.0
+  },
+  "sub": "Third, and this is the one worth taking away. VRM Loader.",
+  "dur": 4.389,
+  "wav": "episodes/08-veiled-shadows/tts/20.wav"
+ },
+ {
+  "id": "21",
+  "sec": "made",
+  "text": "V R M is the avatar format V-roid Studio exports. The format VTubers use.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  },
+  "sub": "VRM is the avatar format VRoid Studio exports. The format VTubers use.",
+  "dur": 5.59,
+  "wav": "episodes/08-veiled-shadows/tts/21.wav"
+ },
+ {
+  "id": "22",
+  "sec": "made",
+  "text": "So a solo developer can pull a three-D character out of an avatar maker instead of modelling one from scratch.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "So a solo developer can pull a 3D character out of an avatar maker instead of modelling one from scratch.",
+  "dur": 5.904,
+  "wav": "episodes/08-veiled-shadows/tts/22.wav"
+ },
+ {
+  "id": "23",
+  "sec": "made",
+  "text": "The shaders ship as plain text, uncompiled. Seven include files, thirty eight kilobytes between them. One is six bytes long.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 27.0
+  },
+  "sub": "The shaders ship as plain text, uncompiled. Seven include files, thirty eight kilobytes between them. One is six bytes long.",
+  "dur": 7.732,
+  "wav": "episodes/08-veiled-shadows/tts/23.wav"
+ },
+ {
+  "id": "24",
+  "sec": "made",
+  "text": "They get compiled on your machine when you play. That's what the seventeen megabyte DirectX shader compiler next to them is for.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "They get compiled on your machine when you play. That's what the seventeen megabyte DirectX shader compiler next to them is for.",
+  "dur": 7.158,
+  "wav": "episodes/08-veiled-shadows/tts/24.wav"
+ },
+ {
+  "id": "25",
+  "sec": "made",
+  "text": "And there's a log file in there. bakinplayer log dot t x t, from the developer's own session, shipped to players.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "And there's a log file in there. bakinplayer_log.txt, from the developer's own session, shipped to players.",
+  "dur": 7.079,
+  "wav": "episodes/08-veiled-shadows/tts/25.wav"
+ },
+ {
+  "id": "26",
+  "sec": "made",
+  "text": "It's fourteen kilobytes. Two episodes ago the same mistake was seven hundred and seventy megabytes of debug symbols. Four orders of magnitude apart.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 13.0
+  },
+  "sub": "It's fourteen kilobytes. Two episodes ago the same mistake was seven hundred and seventy megabytes of debug symbols. Four orders of magnitude apart.",
+  "dur": 8.803,
+  "wav": "episodes/08-veiled-shadows/tts/26.wav"
+ },
+ {
+  "id": "27",
+  "sec": "made",
+  "text": "There are four readme files too, in English, Japanese and both kinds of Chinese, on a store page that lists English only. Those are the engine's own readmes, which tells you the folder went out untouched.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "There are four readme files too, in English, Japanese and both kinds of Chinese, on a store page that lists English only. Those are the engine's own readmes, which tells you the folder went out untouched.",
+  "dur": 12.042,
+  "wav": "episodes/08-veiled-shadows/tts/27.wav"
+ },
+ {
+  "id": "28",
+  "sec": "review",
+  "text": "Now the six reviews. You can't count six of anything, but you can read them.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Now the six reviews. You can't count six of anything, but you can read them.",
+  "dur": 4.441,
+  "wav": "episodes/08-veiled-shadows/tts/28.wav"
+ },
+ {
+  "id": "29",
+  "sec": "review",
+  "text": "One of them tells me the developer is one person in Austria. That's the team size, from a player, not a press kit.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 34.0
+  },
+  "sub": "One of them tells me the developer is one person in Austria. That's the team size, from a player, not a press kit.",
+  "dur": 6.478,
+  "wav": "episodes/08-veiled-shadows/tts/29.wav"
+ },
+ {
+  "id": "30",
+  "sec": "review",
+  "text": "Two of them mention the voice acting, unprompted. And one had seven hours on a demo that covers a few in-game days.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "Two of them mention the voice acting, unprompted. And one had seven hours on a demo that covers a few in-game days.",
+  "dur": 6.713,
+  "wav": "episodes/08-veiled-shadows/tts/30.wav"
+ },
+ {
+  "id": "31",
+  "sec": "score",
+  "text": "Here's the whole teardown on one card.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  },
+  "sub": "Here's the whole teardown on one card.",
+  "dur": 2.194,
+  "wav": "episodes/08-veiled-shadows/tts/31.wav"
+ },
+ {
+  "id": "32",
+  "sec": "score",
+  "text": "Bakin, seventy dollars, one person. One point three five gigabytes of their content against sixty seven megabytes of engine they didn't write.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  },
+  "sub": "Bakin, seventy dollars, one person. One point three five gigabytes of their content against sixty seven megabytes of engine they didn't write.",
+  "dur": 7.967,
+  "wav": "episodes/08-veiled-shadows/tts/32.wav"
+ },
+ {
+  "id": "33",
+  "sec": "score",
+  "text": "Worth a dip, and worth it for the art alone.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 58.0
+  },
+  "sub": "Worth a dip, and worth it for the art alone.",
+  "dur": 2.664,
+  "wav": "episodes/08-veiled-shadows/tts/33.wav"
+ },
+ {
+  "id": "34",
+  "sec": "score",
+  "text": "If somebody has told you no-code means a low ceiling, this build ships a C sharp compiler. The ceiling is wherever you stop.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "If somebody has told you no-code means a low ceiling, this build ships a C# compiler. The ceiling is wherever you stop.",
+  "dur": 7.915,
+  "wav": "episodes/08-veiled-shadows/tts/34.wav"
+ },
+ {
+  "id": "35",
+  "sec": "score",
+  "text": "And before you publish, open your engine folder. That's my read from the outside, though. If you made this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "And before you publish, open your engine folder. That's my read from the outside, though. If you made this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "dur": 13.166,
+  "wav": "episodes/08-veiled-shadows/tts/35.wav"
+ }
+]
