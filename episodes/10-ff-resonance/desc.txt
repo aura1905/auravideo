@@ -1,0 +1,38 @@
+FINAL FANTASY RESONANCE — Four thousand four hundred people are playing this demo right now. Two days after it went up. That's more than any demo I've taken apart.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4474710/
+▶ The full game: https://store.steampowered.com/app/3259780/
+
+── How they made it ──
+Engine     : Unreal Engine 5
+Team       : Team Asano + LANCARSE
+The Exe    : 467 MB, monolithic
+In The Box : an ML runtime
+The Slip   : D3D12 debug layer
+Verdict    : Worth A Dip
+
+── The stack, if you want to use it ──
+Unreal Engine 5                    : https://www.unrealengine.com/
+Unreal NNE (Neural Network Engine) : https://dev.epicgames.com/documentation/en-us/unreal-engine/neural-network-engine-nne-in-unreal-engine
+ONNX Runtime                       : https://onnxruntime.ai/
+DirectML                           : https://learn.microsoft.com/windows/ai/directml/
+NVIDIA Nsight Aftermath            : https://developer.nvidia.com/nsight-aftermath
+LANCARSE                           : https://www.lancarse.co.jp/company_profile/en.php
+The demo on Steam                  : https://store.steampowered.com/app/4474710/
+
+── Chapters ──
+0:00 Four thousand people, two days in
+0:16 What it is, and who made it
+1:11 Opening the build
+3:31 The only number there is
+3:53 The spec sheet + verdict
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to Square Enix / LANCARSE.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

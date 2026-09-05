@@ -1,0 +1,148 @@
+1
+00:00:00,000 --> 00:00:07,177
+Four thousand four hundred people are playing this demo right now.
+Two days after it went up. That's more than any demo I've taken apart.
+
+2
+00:00:07,427 --> 00:00:12,384
+It's a pixel-art Final Fantasy,
+and the build has a machine learning runtime inside it.
+
+3
+00:00:16,234 --> 00:00:25,004
+FINAL FANTASY RESONANCE is the first HD-2D Final Fantasy.
+Pixel characters, a 3D world, and the Octopath Traveler look.
+
+4
+00:00:25,254 --> 00:00:34,390
+Which makes sense, because it's the Octopath team. Team Asano at Square Enix,
+with a Tokyo studio called LANCARSE doing the co-development.
+
+5
+00:00:34,640 --> 00:00:43,123
+LANCARSE is the studio you've played without knowing it.
+Shin Megami Tensei Strange Journey, Lost Dimension, The DioField Chronicle.
+
+6
+00:00:43,373 --> 00:00:53,476
+The story is season one of Brave Exvius, the mobile game, rebuilt.
+And in battle you summon Visions, which are classic Final Fantasy characters. Cloud shows up.
+
+7
+00:00:53,726 --> 00:01:03,515
+The demo is not a slice. The Japanese title says it outright:
+the whole of chapter one, ahead of release. The full game lands October twenty second.
+
+8
+00:01:03,765 --> 00:01:11,595
+There are no reviews to read. Square Enix switches them off before launch.
+So this one is the build and the people, which is the part I can actually check.
+
+9
+00:01:11,845 --> 00:01:18,526
+Steam publishes the file list for every demo.
+This one is twenty six files, five point seven gigabytes.
+
+10
+00:01:18,776 --> 00:01:26,606
+It's Unreal Engine 5. You can tell from two file extensions,
+ucas and utoc. That container format only exists in five.
+
+11
+00:01:26,856 --> 00:01:35,156
+Almost all of the size is content. One container is four point one gigabytes,
+the other one point one. That's five gigabytes for one chapter.
+
+12
+00:01:35,406 --> 00:01:44,124
+And the executable is four hundred and sixty seven megabytes. That's not a launcher.
+That's the whole engine and the whole game, linked into one file.
+
+13
+00:01:44,374 --> 00:01:54,477
+Only fourteen DLLs ship, and every one of them is somebody else's.
+That's a very different shape from the Unity builds on this channel, where the package list is the story.
+
+14
+00:01:54,727 --> 00:02:00,781
+So with Unreal, the teardown is what's around the engine.
+And around this one there are a few surprises.
+
+15
+00:02:01,031 --> 00:02:13,406
+First. ONNX Runtime and DirectML. Together, thirty one megabytes.
+That's Unreal's neural network plugin. A machine learning inference runtime, in a pixel-art RPG.
+
+16
+00:02:13,656 --> 00:02:24,307
+What it's for, I can't see from a file list. It could be upscaling. It could be animation.
+It could be a plugin dependency nobody trimmed. If you know, the comments are right there.
+
+17
+00:02:24,557 --> 00:02:36,985
+Second. NVIDIA Aftermath, for GPU crash reports, and MsQuic,
+which is the transport under HTTP/3. So something in here phones home over QUIC.
+
+18
+00:02:37,235 --> 00:02:47,625
+Third, the audio. XAudio2 and Ogg Vorbis. No Wwise, no FMOD.
+A Final Fantasy shipping on the engine's stock audio path is worth noting.
+
+19
+00:02:47,875 --> 00:03:00,773
+And then the slip. d3d12SDKLayers.dll. That's the DirectX 12 debug layer.
+Five and a half megabytes that exist to help a developer find bugs, shipped to players.
+
+20
+00:03:01,023 --> 00:03:11,413
+Next to it, a five megabyte debug fallback font, and a three byte staging config file.
+None of it hurts you. All of it says the shipping config wasn't tightened.
+
+21
+00:03:11,663 --> 00:03:21,217
+Three episodes ago a three-person team shipped seven hundred megabytes of debug symbols.
+Different scale, same mistake. It happens at Square Enix too.
+
+22
+00:03:21,467 --> 00:03:31,073
+One more date. The manifest says this build was made on July third.
+Two months before the demo went live. That's the buffer a publisher this size keeps.
+
+23
+00:03:31,323 --> 00:03:35,757
+Reception, then. There are no reviews,
+so here's the only number there is.
+
+24
+00:03:36,007 --> 00:03:45,274
+Four thousand four hundred people in the demo at once, on a Saturday, two days in.
+The previous record on this channel was Guildrun at two thousand eight hundred.
+
+25
+00:03:45,524 --> 00:03:53,485
+A whole chapter for free, from the Octopath team,
+in a series people already trust. The number isn't surprising. It's still big.
+
+26
+00:03:53,735 --> 00:03:55,844
+Here's the whole teardown on one card.
+
+27
+00:03:56,094 --> 00:04:06,014
+Unreal 5. Team Asano and LANCARSE. A four hundred and sixty seven megabyte executable,
+an ML runtime, and the debug layer left in.
+
+28
+00:04:06,264 --> 00:04:11,874
+Worth a dip. It's a full chapter, it's free,
+and it goes away when the game ships.
+
+29
+00:04:12,124 --> 00:04:21,861
+If you build in Unreal, the thing to take from this is the shipping config.
+Open your packaged folder and look for SDKLayers. If it's there, so is everyone else's.
+
+30
+00:04:22,111 --> 00:04:32,344
+That's my read from the outside. If you worked on this and I got something wrong,
+say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.
