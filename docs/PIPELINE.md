@@ -155,6 +155,11 @@ python scripts/pipeline/check_render.py episodes/<slug>/final.mp4 episodes/<slug
   다른 세션이 동시에 렌더하면 27 GB 머신이 스왑에 들어가 export가 멈춘다.
   세션마다 `AURAVIDEO_AGENT_FILE`을 다르게 줘서 앱 인스턴스를 분리한다.
 - `agent_client.py`의 HTTP 대기가 먼저 끝나도 앱 안의 ffmpeg는 계속 돈다. 파일이 `ffprobe`로 열릴 때까지 기다린다.
+- **export는 항상 `rangeStart`/`rangeEnd`를 명시한다.** 범위 없이(자동 트림) 돌린 68초 쇼츠가
+  두 번 연속 36초(영상 스트림은 4.5초)에서 끝났고, 같은 타임라인을 `rangeStart:0, rangeEnd:68.164`로
+  돌리니 온전히 나왔다(2026-09-05). 원인은 못 잡았다 — 범위를 주는 게 확실한 우회다.
+- 교체 업로드 후에는 **쇼츠 설명의 "Full teardown" 링크가 현재 롱폼 ID인지** 확인한다.
+  롱폼을 다시 교체하면 ID가 또 바뀐다(7화에서 물러난 ID로 한 번 나갔다).
 
 ## ⑧ 썸네일
 
