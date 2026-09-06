@@ -10,7 +10,7 @@
    "file": "tts_short/s1.wav",
    "start": 0.0,
    "in": 0,
-   "out": 4.336,
+   "out": 4.624,
    "volume": 1.6
   },
   {
@@ -18,7 +18,7 @@
    "file": "s_playtest.mp4",
    "start": 0.0,
    "in": 140.0,
-   "out": 149.054,
+   "out": 149.055,
    "fillMode": "blur",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
@@ -28,17 +28,17 @@
   {
    "track": "a1",
    "file": "tts_short/s2.wav",
-   "start": 4.736,
+   "start": 5.024,
    "in": 0,
-   "out": 3.918,
+   "out": 3.631,
    "volume": 1.6
   },
   {
    "track": "a12",
    "file": "s_playtest.mp4",
-   "start": 9.054,
+   "start": 9.055,
    "in": 102.0,
-   "out": 109.0,
+   "out": 105.5,
    "volume": 0.55,
    "fadeIn": 0.4,
    "fadeOut": 0.8
@@ -46,9 +46,9 @@
   {
    "track": "v11",
    "file": "s_playtest.mp4",
-   "start": 9.054,
+   "start": 9.055,
    "in": 102.0,
-   "out": 117.785,
+   "out": 113.058,
    "fillMode": "blur",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
@@ -58,45 +58,45 @@
   {
    "track": "a1",
    "file": "tts_short/s3.wav",
-   "start": 16.054,
+   "start": 12.555,
    "in": 0,
-   "out": 8.385,
+   "out": 7.158,
    "volume": 1.6
   },
   {
    "track": "a1",
    "file": "tts_short/s4.wav",
-   "start": 24.839,
+   "start": 20.113,
    "in": 0,
-   "out": 8.986,
-   "volume": 1.6
-  },
-  {
-   "track": "v11",
-   "file": "s_playtest.mp4",
-   "start": 24.839,
-   "in": 120.0,
-   "out": 135.386,
-   "fillMode": "blur",
-   "fadeIn": 0.25,
-   "fadeOut": 0.25,
-   "muted": true,
-   "transformScale": 1.5
-  },
-  {
-   "track": "a1",
-   "file": "tts_short/s5.wav",
-   "start": 40.225,
-   "in": 0,
-   "out": 5.277,
+   "out": 8.333,
    "volume": 1.6
   },
   {
    "track": "v11",
    "file": "ev_movies_v_mvv.mp4",
-   "start": 40.225,
+   "start": 20.113,
    "in": 0,
-   "out": 13.809,
+   "out": 8.733,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s5.wav",
+   "start": 28.846,
+   "in": 0,
+   "out": 7.314,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ev_rtc_v_mvv.mp4",
+   "start": 28.846,
+   "in": 0,
+   "out": 7.714,
    "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
@@ -106,85 +106,17 @@
   {
    "track": "a1",
    "file": "tts_short/s6.wav",
-   "start": 45.902,
+   "start": 36.56,
    "in": 0,
-   "out": 7.732,
-   "volume": 1.6
-  },
-  {
-   "track": "a1",
-   "file": "tts_short/s7.wav",
-   "start": 54.034,
-   "in": 0,
-   "out": 6.713,
-   "volume": 1.6
-  },
-  {
-   "track": "v11",
-   "file": "s_playtest.mp4",
-   "start": 54.034,
-   "in": 172.0,
-   "out": 179.113,
-   "fillMode": "blur",
-   "fadeIn": 0.25,
-   "fadeOut": 0.25,
-   "muted": true,
-   "transformScale": 1.5
-  },
-  {
-   "track": "a1",
-   "file": "tts_short/s8.wav",
-   "start": 61.147,
-   "in": 0,
-   "out": 5.721,
-   "volume": 1.6
-  },
-  {
-   "track": "v11",
-   "file": "ev_stack_v_mvv.mp4",
-   "start": 61.147,
-   "in": 0,
-   "out": 6.121,
-   "fillMode": "fit",
-   "fadeIn": 0.25,
-   "fadeOut": 0.25,
-   "muted": true,
-   "transformScale": 1.0
-  },
-  {
-   "track": "a1",
-   "file": "tts_short/s9.wav",
-   "start": 67.268,
-   "in": 0,
-   "out": 6.975,
-   "volume": 1.6
-  },
-  {
-   "track": "v11",
-   "file": "ev_rtc_v_mvv.mp4",
-   "start": 67.268,
-   "in": 0,
-   "out": 7.375,
-   "fillMode": "fit",
-   "fadeIn": 0.25,
-   "fadeOut": 0.25,
-   "muted": true,
-   "transformScale": 1.0
-  },
-  {
-   "track": "a1",
-   "file": "tts_short/s10.wav",
-   "start": 74.643,
-   "in": 0,
-   "out": 1.933,
+   "out": 2.194,
    "volume": 1.6
   },
   {
    "track": "v11",
    "file": "ev_driver_v_mvv.mp4",
-   "start": 74.643,
+   "start": 36.56,
    "in": 0,
-   "out": 2.333,
+   "out": 2.594,
    "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
@@ -193,24 +125,24 @@
   },
   {
    "track": "a1",
-   "file": "tts_short/s11.wav",
-   "start": 76.976,
+   "file": "tts_short/s7.wav",
+   "start": 39.154,
    "in": 0,
-   "out": 4.467,
+   "out": 3.082,
    "volume": 1.6
   },
   {
    "track": "a1",
-   "file": "tts_short/s12.wav",
-   "start": 81.843,
+   "file": "tts_short/s8.wav",
+   "start": 42.636,
    "in": 0,
-   "out": 4.023,
+   "out": 4.389,
    "volume": 1.6
   },
   {
    "track": "v11",
    "file": "still_bg_mv.mp4",
-   "start": 76.776,
+   "start": 38.954,
    "in": 0,
    "out": 9.9,
    "fillMode": "blur",
@@ -220,7 +152,7 @@
   {
    "track": "v4",
    "file": "v_score_header.mov",
-   "start": 76.976,
+   "start": 39.154,
    "in": 0,
    "out": 9.5,
    "fillMode": "fit",
@@ -229,7 +161,7 @@
   {
    "track": "v5",
    "file": "v_score_row_0.mov",
-   "start": 76.976,
+   "start": 39.154,
    "in": 0,
    "out": 9.5,
    "fillMode": "fit",
@@ -238,7 +170,7 @@
   {
    "track": "v6",
    "file": "v_score_row_1.mov",
-   "start": 76.976,
+   "start": 39.154,
    "in": 0,
    "out": 9.5,
    "fillMode": "fit",
@@ -247,7 +179,7 @@
   {
    "track": "v7",
    "file": "v_score_row_2.mov",
-   "start": 76.976,
+   "start": 39.154,
    "in": 0,
    "out": 9.5,
    "fillMode": "fit",
@@ -256,7 +188,7 @@
   {
    "track": "v8",
    "file": "v_score_row_3.mov",
-   "start": 76.976,
+   "start": 39.154,
    "in": 0,
    "out": 9.5,
    "fillMode": "fit",
@@ -265,7 +197,7 @@
   {
    "track": "v9",
    "file": "v_score_row_4.mov",
-   "start": 76.976,
+   "start": 39.154,
    "in": 0,
    "out": 9.5,
    "fillMode": "fit",
@@ -274,7 +206,7 @@
   {
    "track": "v10",
    "file": "v_score_stamp.mov",
-   "start": 76.976,
+   "start": 39.154,
    "in": 0,
    "out": 9.5,
    "fillMode": "fit",
@@ -285,7 +217,7 @@
    "file": "logo_c_rgba.png",
    "start": 0.5,
    "in": 0,
-   "out": 86.566,
+   "out": 47.725,
    "fillMode": "fit",
    "transformOpacity": 0.6,
    "fadeIn": 0.5,
@@ -298,17 +230,7 @@
    "file": "s_story.mp4",
    "start": 0.0,
    "in": 0,
-   "out": 60.0,
-   "volume": 0.07,
-   "fadeIn": 1.0,
-   "fadeOut": 1.5
-  },
-  {
-   "track": "a2",
-   "file": "s_story.mp4",
-   "start": 60.0,
-   "in": 0,
-   "out": 27.066,
+   "out": 48.225,
    "volume": 0.07,
    "fadeIn": 1.0,
    "fadeOut": 1.5
@@ -316,7 +238,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_drop.wav",
-   "start": 77.076,
+   "start": 39.254,
    "in": 0,
    "out": 0.282,
    "volume": 0.5
@@ -324,7 +246,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 77.876,
+   "start": 40.054,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -332,7 +254,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 78.426,
+   "start": 40.604,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -340,7 +262,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 78.496,
+   "start": 40.674,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -348,7 +270,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 79.046,
+   "start": 41.224,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -356,7 +278,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 79.116,
+   "start": 41.294,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -364,7 +286,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 79.666,
+   "start": 41.844,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -372,7 +294,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 79.736,
+   "start": 41.914,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -380,7 +302,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 80.286,
+   "start": 42.464,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -388,7 +310,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 80.356,
+   "start": 42.534,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -396,7 +318,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 80.906,
+   "start": 43.084,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -404,7 +326,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/thud.wav",
-   "start": 81.526,
+   "start": 43.704,
    "in": 0,
    "out": 0.415,
    "volume": 0.9
@@ -412,7 +334,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/chime_complete.wav",
-   "start": 81.776,
+   "start": 43.954,
    "in": 0,
    "out": 1.105,
    "volume": 0.6
@@ -420,7 +342,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_exit.wav",
-   "start": 85.576,
+   "start": 47.754,
    "in": 0,
    "out": 0.298,
    "volume": 0.5
@@ -460,79 +382,47 @@
   {
    "text": "This Steam demo is\nfourteen gigabytes. For a\nside-scrolling action\ngame.",
    "start": 0.0,
-   "duration": 4.486,
+   "duration": 4.774,
    "fontSize": 42,
    "y": 560,
    "bgOpacity": 0.62
   },
   {
    "text": "And a hundred and sixty\nfive megabytes of it is\nvideo made for a phone.",
-   "start": 4.736,
-   "duration": 4.068,
+   "start": 5.024,
+   "duration": 3.781,
    "fontSize": 50,
    "y": 560,
    "bgOpacity": 0.62
   },
   {
-   "text": "Here's what it is.\nSlashZero, a 3D anime\naction roguelike from\nStreetlamp Studio. You\nplay a Timehacker.",
-   "start": 16.054,
-   "duration": 8.535,
+   "text": "It's SlashZero, a 3D anime\naction roguelike. You're a\nTimehacker, and you\nrebuild your character\nevery run.",
+   "start": 12.555,
+   "duration": 7.308,
    "fontSize": 42,
    "y": 560,
    "bgOpacity": 0.62
   },
   {
-   "text": "You dash, vault and combo\nacross a collapsing\ncyberpunk timeline, and\nevery run you rebuild your\ncharacter out of\nblessings, fragments and\nchips.",
-   "start": 24.839,
-   "duration": 9.136,
+   "text": "The build ships two\nhundred and eight Bink\nvideos. One folder called\nPC, one called Mobile, the\nsame hundred and three\nfiles in each.",
+   "start": 20.113,
+   "duration": 8.483,
    "fontSize": 42,
    "y": 560,
    "bgOpacity": 0.62
   },
   {
-   "text": "Now the build. Unreal 5,\nand two hundred and eight\nBink videos inside it.",
-   "start": 40.225,
-   "duration": 5.427,
-   "fontSize": 50,
-   "y": 560,
-   "bgOpacity": 0.62
-  },
-  {
-   "text": "One folder called PC, one\ncalled Mobile. A hundred\nand three files each, and\nevery filename in one\nexists in the other.",
-   "start": 45.902,
-   "duration": 7.882,
-   "fontSize": 42,
-   "y": 560,
-   "bgOpacity": 0.62
-  },
-  {
-   "text": "So a PC player downloads a\nhundred and sixty five\nmegabytes of phone video\nthat nobody will ever show\nthem.",
-   "start": 54.034,
-   "duration": 6.863,
-   "fontSize": 42,
-   "y": 560,
-   "bgOpacity": 0.62
-  },
-  {
-   "text": "It also ships two entire\ncopies of Chromium. Four\nhundred and seventeen\nmegabytes of web browser.",
-   "start": 61.147,
-   "duration": 5.871,
-   "fontSize": 42,
-   "y": 560,
-   "bgOpacity": 0.62
-  },
-  {
-   "text": "Two real-time voice SDKs,\none from ByteDance and one\nfrom Tencent, in a game\nwith no visible\nmultiplayer.",
-   "start": 67.268,
-   "duration": 7.125,
+   "text": "It also carries two voice\nchat SDKs, one from\nByteDance and one from\nTencent, in a game with no\nvisible multiplayer.",
+   "start": 28.846,
+   "duration": 7.464,
    "fontSize": 42,
    "y": 560,
    "bgOpacity": 0.62
   },
   {
    "text": "And a signed kernel-mode\ndriver.",
-   "start": 74.643,
-   "duration": 2.083,
+   "start": 36.56,
+   "duration": 2.344,
    "fontSize": 50,
    "y": 560,
    "bgOpacity": 0.62
@@ -576,5 +466,5 @@
    "name": "TRL"
   }
  ],
- "total": 87.066
+ "total": 48.225
 }

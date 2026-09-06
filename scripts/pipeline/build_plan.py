@@ -17,9 +17,10 @@ v4..v10 score layers (added via track.add, in order), v11 background (added LAST
 sits behind everything — appended tracks draw behind the defaults).
 Audio: a1 narration, a2 bgm, a3 sfx (one clip per cue).
 """
-import argparse, json, os, re, subprocess
+import argparse, json, os, re, subprocess, sys
 
 GAP = 0.4
+SHORT_MAX_SEC = 50.0   # Shorts must finish under this; see the check near the end of main()
 INTRO_LEN = 3.4      # the logo layer clips are 3.4 s long
 # docs/CHANNEL.md: the episode opens COLD -- the hook plays over real game footage
 # first, and the logo sting lands after it. A brand-new channel that opens on its own
@@ -376,6 +377,15 @@ def main():
             print(f'  wrote {os.path.basename(mpath)} ({h}px band, opacity {op})')
         C.append({'track': 'v10', 'file': '_submask.png', 'start': 0.0, 'in': 0,
                   'out': round(total, 3), 'fillMode': 'fit', 'transformScale': 1.0})
+
+    # --- hard length cap for Shorts. Measured, not a preference: every Short at or under
+    # 47 s has run 31-116 views/hour, and every one over 50 s has run 14-19, on the same
+    # channel in the same week. The cap is enforced here rather than remembered, because
+    # it was written down once (2026-09-06) and then broken twice the same afternoon.
+    if VERT and total > SHORT_MAX_SEC:
+        over = total - SHORT_MAX_SEC
+        sys.exit(f'ERROR: Short is {total:.1f}s, {over:.1f}s over the {SHORT_MAX_SEC:.0f}s cap.\n'
+                 f'       Cut narration lines or shorten a beat, then rebuild. Do not raise the cap.')
 
     plan['total'] = round(total, 3)
     json.dump(plan, open(a.out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
