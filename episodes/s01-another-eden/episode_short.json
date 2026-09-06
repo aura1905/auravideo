@@ -1,0 +1,100 @@
+{
+ "title_en": "Another Eden Begins",
+ "demo_appid": 4391790,
+ "full_appid": 4163960,
+ "developer": "WRIGHT FLYER STUDIOS",
+ "workdir": "episodes/s01-another-eden",
+ "bgm": {
+  "file": "t_final.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s01-another-eden/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s8",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity / IL2CPP"
+  ],
+  [
+   "THE BUILD",
+   "5.57 GB / 13,130 files"
+  ],
+  [
+   "THE PIPELINE",
+   "12,676 bundles"
+  ],
+  [
+   "IN THE BOX",
+   "Lua, CRIWARE, Sentry"
+  ],
+  [
+   "THE TELL",
+   "a mobile build on PC"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Another Eden Begins",
+  "line2": "5.5 GB. A QUARTER IS VIDEO.",
+  "size1": 80,
+  "size2": 56
+ },
+ "stack": [
+  [
+   "Unity Addressables",
+   "https://docs.unity3d.com/Packages/com.unity.addressables@latest"
+  ],
+  [
+   "xLua",
+   "https://github.com/Tencent/xLua"
+  ],
+  [
+   "CRIWARE ADX / Sofdec2",
+   "https://www.criware.com/"
+  ],
+  [
+   "Sentry",
+   "https://sentry.io/"
+  ],
+  [
+   "R3 (Cysharp)",
+   "https://github.com/Cysharp/R3"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/4391790/"
+  ]
+ ],
+ "chapters": {
+  "hook": "Five and a half gigabytes",
+  "intro": "What it is",
+  "made": "Opening the build",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Another Eden Begins: a 5.5 GB demo that is a mobile build in disguise #shorts",
+  "tags": "shorts,Another Eden Begins,another eden,steam demo,unity,il2cpp,wright flyer,jrpg,chrono trigger,masato kato,yasunori mitsuda,game teardown,demo dip,addressables,lua",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

@@ -1,0 +1,109 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "This demo is five and a half gigabytes, and a quarter of that is video files.",
+  "vis": {
+   "type": "video",
+   "file": "t_final.mp4",
+   "in": 30.0
+  },
+  "sub": "This demo is five and a half gigabytes, and a quarter of that is video files.",
+  "dur": 4.65,
+  "wav": "episodes/s01-another-eden/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Four of them are two hundred and eighteen megabytes each.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Four of them are two hundred and eighteen megabytes each.",
+  "dur": 3.03,
+  "wav": "episodes/s01-another-eden/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 4.0,
+  "vis": {
+   "type": "video",
+   "file": "t_final.mp4",
+   "in": 42.0
+  },
+  "dur": 4.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "It's Another Eden Begins, a J R P G from Wright Flyer, with Chrono Trigger's writer and composer on it.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "It's Another Eden Begins, a JRPG from Wright Flyer, with Chrono Trigger's writer and composer on it.",
+  "dur": 6.426,
+  "wav": "episodes/s01-another-eden/tts_short/s3.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Now the build. Unity, and twelve thousand six hundred asset bundles, every filename a hash.",
+  "vis": {
+   "type": "image",
+   "file": "ev_bundles_v.png"
+  },
+  "sub": "Now the build. Unity, and twelve thousand six hundred asset bundles, every filename a hash.",
+  "dur": 6.243,
+  "wav": "episodes/s01-another-eden/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "And X Lua dot D L L. They embedded Lua so content can be patched without an app store review. Steam doesn't have one.",
+  "vis": {
+   "type": "image",
+   "file": "ev_lua_v.png"
+  },
+  "sub": "And xlua.dll. They embedded Lua so content can be patched without an app store review. Steam doesn't have one.",
+  "dur": 7.68,
+  "wav": "episodes/s01-another-eden/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "made",
+  "text": "Sentry for crashes, cry-ware for audio and video, R three for reactive C sharp. A modern stack, straight off mobile.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack_v.png"
+  },
+  "sub": "Sentry for crashes, CRIWARE for audio and video, R3 for reactive C#. A modern stack, straight off mobile.",
+  "dur": 8.046,
+  "wav": "episodes/s01-another-eden/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "Worth a dip. It's free, it's in four languages, and the writer and composer came from Chrono Trigger.",
+  "vis": {
+   "type": "video",
+   "file": "t_final.mp4",
+   "in": 34.0
+  },
+  "sub": "Worth a dip. It's free, it's in four languages, and the writer and composer came from Chrono Trigger.",
+  "dur": 5.46,
+  "wav": "episodes/s01-another-eden/tts_short/s8.wav"
+ },
+ {
+  "id": "s9",
+  "sec": "score",
+  "text": "Every demo I open, I read the file list first. That's the whole channel.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Every demo I open, I read the file list first. That's the whole channel.",
+  "dur": 4.441,
+  "wav": "episodes/s01-another-eden/tts_short/s9.wav"
+ }
+]

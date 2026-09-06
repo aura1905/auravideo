@@ -1,0 +1,36 @@
+Another Eden Begins — This demo is five and a half gigabytes, and a quarter of that is video files.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4391790/
+▶ The full game: https://store.steampowered.com/app/4163960/
+
+── How they made it ──
+Engine       : Unity / IL2CPP
+The Build    : 5.57 GB / 13,130 files
+The Pipeline : 12,676 bundles
+In The Box   : Lua, CRIWARE, Sentry
+The Tell     : a mobile build on PC
+Verdict      : Worth A Dip
+
+── The stack, if you want to use it ──
+Unity Addressables    : https://docs.unity3d.com/Packages/com.unity.addressables@latest
+xLua                  : https://github.com/Tencent/xLua
+CRIWARE ADX / Sofdec2 : https://www.criware.com/
+Sentry                : https://sentry.io/
+R3 (Cysharp)          : https://github.com/Cysharp/R3
+The demo on Steam     : https://store.steampowered.com/app/4391790/
+
+── Chapters ──
+0:00 Five and a half gigabytes
+0:12 What it is
+0:23 Opening the build
+0:46 The spec sheet
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to WRIGHT FLYER STUDIOS.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo
