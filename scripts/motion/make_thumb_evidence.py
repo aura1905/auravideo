@@ -1,5 +1,10 @@
 """An 'evidence' thumbnail: game art plus the actual file list, one row ringed.
 
+SUPERSEDED (2026-09-06). The panel eats 38% of the frame and the user's rule is that the
+game screenshot comes first and must not be damaged. Use make_thumbnail.py --analysed
+instead, which leaves the shot untouched and adds one ring. Kept only as a record of the
+idea; do not use it for an episode.
+
     python scripts/motion/make_thumb_evidence.py --bg ss03.jpg --out thumb.jpg \
         --claim "A KERNEL DRIVER" --game "SlashZero" \
         --rows "Zero-Win64-Shipping.exe|234 MB" "libcef.dll|229 MB" \

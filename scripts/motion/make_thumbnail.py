@@ -76,6 +76,12 @@ def main():
     ap.add_argument('--text-side', default='left', choices=['left', 'right'])
     ap.add_argument('--title-size', type=int, default=150); ap.add_argument('--hook-size', type=int, default=92)
     ap.add_argument('--vertical', action='store_true', help='1080x1920 for a Short')
+    ap.add_argument('--analysed', action='store_true',
+                    help='overlay a thin instrument frame: cyan corner brackets, edge ticks and '
+                         'an optional marker ring. It says "this was measured" while covering '
+                         'almost none of the screenshot -- the game has to stay intact.')
+    ap.add_argument('--mark', default='', metavar='X,Y',
+                    help='0-1 coordinates for the marker ring, e.g. 0.72,0.42')
     ap.add_argument('--claim-first', action='store_true',
                     help='swap the hierarchy: the claim (line2) becomes the headline and the '
                          'game name shrinks above it. For an unknown demo the name earns no '
@@ -101,6 +107,33 @@ def main():
             f = (1 - x / W) if a.text_side == 'left' else x / W
             gd.line((x, 0, x, H), fill=int(max(0, f - 0.35) / 0.65 * 140))
     dark = Image.new('RGBA', (W, H), (4, 10, 28, 255)); dark.putalpha(grad); bg.alpha_composite(dark)
+
+    # --- instrument mark. The game screenshot comes first and must not be damaged, so
+    # this is ONE bold gesture, not a frame of thin chrome: a bright ring on the thing the
+    # episode found, with a leader line running toward the caption. A first pass drew
+    # corner brackets and ruler ticks at 3 px; at a real 246 px thumbnail they vanished
+    # entirely, so the rule is one mark, thick enough to survive the downscale.
+    if a.analysed and a.mark:
+        try:
+            mx, my = (float(v) for v in a.mark.split(','))
+        except ValueError:
+            mx = my = None
+        if mx is not None:
+            ov = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+            od = ImageDraw.Draw(ov)
+            cx, cy = int(W * mx), int(H * my)
+            r = int(min(W, H) * 0.115)
+            lw = max(6, int(min(W, H) / 105))
+            od.ellipse((cx - r - lw, cy - r - lw, cx + r + lw, cy + r + lw),
+                       outline=(6, 14, 34, 190), width=lw + 6)      # dark backing so it reads on light art
+            od.ellipse((cx - r, cy - r, cx + r, cy + r), outline=TEAL, width=lw)
+            # leader line toward the caption side, ending in a solid dot
+            sgn = -1 if a.text_side == 'left' else 1
+            x2 = cx + sgn * (r + int(W * 0.085))
+            od.line((cx + sgn * r, cy, x2, cy), fill=(6, 14, 34, 190), width=lw + 5)
+            od.line((cx + sgn * r, cy, x2, cy), fill=TEAL, width=lw)
+            od.ellipse((x2 - lw, cy - lw, x2 + lw, cy + lw), fill=TEAL)
+            bg.alpha_composite(ov)
 
     x0 = 40 if a.text_side == 'left' else None
     # Shorts UI covers the right ~14% and bottom ~16%; start the text block at 22% down
