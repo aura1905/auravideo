@@ -76,6 +76,10 @@ def main():
     ap.add_argument('--text-side', default='left', choices=['left', 'right'])
     ap.add_argument('--title-size', type=int, default=150); ap.add_argument('--hook-size', type=int, default=92)
     ap.add_argument('--vertical', action='store_true', help='1080x1920 for a Short')
+    ap.add_argument('--claim-first', action='store_true',
+                    help='swap the hierarchy: the claim (line2) becomes the headline and the '
+                         'game name shrinks above it. For an unknown demo the name earns no '
+                         'click, so it should not be the largest thing on the image.')
     a = ap.parse_args()
     global W, H
     if a.vertical:
@@ -101,15 +105,31 @@ def main():
     x0 = 40 if a.text_side == 'left' else None
     # Shorts UI covers the right ~14% and bottom ~16%; start the text block at 22% down
     y = int(H * 0.22) if a.vertical else 60
-    if a.tag:
-        t = outlined_text(a.tag, 34, TEAL, outline=6, shadow=(4, 5), label=True)
-        bg.alpha_composite(t, (x0 if x0 is not None else W - t.width - 40, y)); y += 78
     usable = W - 80 - (int(W * 0.14) if a.vertical else 0)
-    l1 = outlined_text(a.line1, fit_size(a.line1, a.title_size, usable), WHITE, outline=14)
-    bg.alpha_composite(l1, (x0 if x0 is not None else W - l1.width - 40, y)); y += int(l1.height * 0.86)
-    if a.line2:
-        l2 = outlined_text(a.line2, fit_size(a.line2, a.hook_size, usable - 180), TEAL, outline=12)  # keep the hook narrower than the title
-        bg.alpha_composite(l2, (x0 if x0 is not None else W - l2.width - 40, y))
+
+    def put(img, yy):
+        bg.alpha_composite(img, (x0 if x0 is not None else W - img.width - 40, yy))
+
+    if a.claim_first:
+        # Claim big and white, name small above it, no engine tag. Measured against the
+        # first six episodes: at a real 246 px thumbnail the game's name was the largest
+        # element and the least legible reason to click, while the number that earns the
+        # click sat half-size in teal over busy art. Two blocks, one of them dominant.
+        if a.line1:
+            n = outlined_text(a.line1, fit_size(a.line1, 54, usable), TEAL, outline=8, shadow=(5, 6))
+            put(n, y); y += int(n.height * 0.98)
+        if a.line2:
+            c = outlined_text(a.line2, fit_size(a.line2, a.title_size, usable), WHITE, outline=16)
+            put(c, y)
+    else:
+        if a.tag:
+            t = outlined_text(a.tag, 34, TEAL, outline=6, shadow=(4, 5), label=True)
+            put(t, y); y += 78
+        l1 = outlined_text(a.line1, fit_size(a.line1, a.title_size, usable), WHITE, outline=14)
+        put(l1, y); y += int(l1.height * 0.86)
+        if a.line2:
+            l2 = outlined_text(a.line2, fit_size(a.line2, a.hook_size, usable - 180), TEAL, outline=12)  # keep the hook narrower than the title
+            put(l2, y)
     badge = Image.open(a.badge or BADGE).convert('RGBA'); bs = 190 / badge.height
     badge = badge.resize((int(badge.width * bs), 190), Image.LANCZOS)
     bg.alpha_composite(badge, (36, H - badge.height - (int(H * 0.16) + 30 if a.vertical else 30)))
