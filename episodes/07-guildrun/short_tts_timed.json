@@ -9,7 +9,7 @@
    "in": 25.0
   },
   "sub": "Nobody quit this Steam demo in under ten minutes. Not one reviewer.",
-  "dur": 4.441,
+  "dur": 4.153,
   "wav": "episodes/07-guildrun/tts_short/s1.wav"
  },
  {
@@ -20,72 +20,48 @@
    "type": "continue"
   },
   "sub": "The median player had eleven hours in before they wrote anything.",
-  "dur": 3.448,
+  "dur": 3.736,
   "wav": "episodes/07-guildrun/tts_short/s2.wav"
  },
  {
   "id": "b1",
   "sec": "intro",
-  "beat": 7.0,
+  "beat": 4.0,
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
    "in": 13.0
   },
-  "dur": 7.0,
+  "dur": 4.0,
   "wav": null
  },
  {
   "id": "s3",
   "sec": "intro",
-  "text": "So here's what it is. Guildrun is a P v E autobattler roguelike. You draft a team of heroes, you bend them out of the class they started in, and then you watch the fight resolve itself without touching anything.",
+  "text": "Guildrun is a P v E autobattler roguelike. You draft a team of heroes, then watch the fight resolve itself.",
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
    "in": 25.0
   },
-  "sub": "So here's what it is. Guildrun is a PvE autobattler roguelike. You draft a team of heroes, you bend them out of the class they started in, and then you watch the fight resolve itself without touching anything.",
-  "dur": 11.86,
+  "sub": "Guildrun is a PvE autobattler roguelike. You draft a team of heroes, then watch the fight resolve itself.",
+  "dur": 7.576,
   "wav": "episodes/07-guildrun/tts_short/s3.wav"
- },
- {
-  "id": "s4",
-  "sec": "intro",
-  "text": "Twenty five heroes, three hundred relics and a hundred items in the demo alone. No timer, no queue, no P v P. You think as long as you want.",
-  "vis": {
-   "type": "image",
-   "file": "ss03.jpg"
-  },
-  "sub": "Twenty five heroes, three hundred relics and a hundred items in the demo alone. No timer, no queue, no PvP. You think as long as you want.",
-  "dur": 8.986,
-  "wav": "episodes/07-guildrun/tts_short/s4.wav"
  },
  {
   "id": "s5",
   "sec": "made",
-  "text": "Now the build. It's Unity, and I L two C P P usually hides what a team used.",
-  "vis": {
-   "type": "image",
-   "file": "ev_engine_v.png"
-  },
-  "sub": "Now the build. It's Unity, and IL2CPP usually hides what a team used.",
-  "dur": 5.904,
-  "wav": "episodes/07-guildrun/tts_short/s5.wav"
- },
- {
-  "id": "s6",
-  "sec": "made",
-  "text": "Except twenty four assembly names leak out in a data file. Here's what they installed.",
+  "text": "Now the build. It's Unity, and twenty four assembly names leak out of a data file. Here's what they installed.",
   "vis": {
    "type": "image",
    "file": "ev_stack_v.png"
   },
-  "sub": "Except twenty four assembly names leak out in a data file. Here's what they installed.",
-  "dur": 4.754,
-  "wav": "episodes/07-guildrun/tts_short/s6.wav"
+  "sub": "Now the build. It's Unity, and twenty four assembly names leak out of a data file. Here's what they installed.",
+  "dur": 6.713,
+  "wav": "episodes/07-guildrun/tts_short/s5.wav"
  },
  {
-  "id": "s7",
+  "id": "s6",
   "sec": "made",
   "text": "Sentry for crash reports. S Q Lite for three hundred relics. Zero-allocation link. That's not a first project's list.",
   "vis": {
@@ -93,11 +69,11 @@
    "file": "ss08.jpg"
   },
   "sub": "Sentry for crash reports. SQLite for three hundred relics. Zero-allocation LINQ. That's not a first project's list.",
-  "dur": 7.967,
-  "wav": "episodes/07-guildrun/tts_short/s7.wav"
+  "dur": 7.732,
+  "wav": "episodes/07-guildrun/tts_short/s6.wav"
  },
  {
-  "id": "s8",
+  "id": "s7",
   "sec": "score",
   "text": "And the negative reviewers had played longer than the positive ones. Fifteen hours.",
   "vis": {
@@ -106,10 +82,10 @@
   },
   "sub": "And the negative reviewers had played longer than the positive ones. Fifteen hours.",
   "dur": 4.441,
-  "wav": "episodes/07-guildrun/tts_short/s8.wav"
+  "wav": "episodes/07-guildrun/tts_short/s7.wav"
  },
  {
-  "id": "s9",
+  "id": "s8",
   "sec": "score",
   "text": "They didn't bounce. They hit the ceiling. Full teardown on the channel.",
   "vis": {
@@ -118,7 +94,7 @@
    "in": 29.0
   },
   "sub": "They didn't bounce. They hit the ceiling. Full teardown on the channel.",
-  "dur": 4.389,
-  "wav": "episodes/07-guildrun/tts_short/s9.wav"
+  "dur": 4.101,
+  "wav": "episodes/07-guildrun/tts_short/s8.wav"
  }
 ]

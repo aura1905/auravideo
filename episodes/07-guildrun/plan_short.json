@@ -10,7 +10,7 @@
    "file": "tts_short/s1.wav",
    "start": 0.0,
    "in": 0,
-   "out": 4.441,
+   "out": 4.153,
    "volume": 1.6
   },
   {
@@ -28,9 +28,9 @@
   {
    "track": "a1",
    "file": "tts_short/s2.wav",
-   "start": 4.841,
+   "start": 4.553,
    "in": 0,
-   "out": 3.448,
+   "out": 3.736,
    "volume": 1.6
   },
   {
@@ -38,7 +38,7 @@
    "file": "trailer_main.mp4",
    "start": 8.689,
    "in": 13.0,
-   "out": 20.0,
+   "out": 17.0,
    "volume": 0.55,
    "fadeIn": 0.4,
    "fadeOut": 0.8
@@ -48,7 +48,7 @@
    "file": "trailer_main.mp4",
    "start": 8.689,
    "in": 13.0,
-   "out": 20.0,
+   "out": 17.0,
    "fillMode": "blur",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
@@ -58,37 +58,17 @@
   {
    "track": "a1",
    "file": "tts_short/s3.wav",
-   "start": 15.689,
+   "start": 12.689,
    "in": 0,
-   "out": 11.86,
+   "out": 7.576,
    "volume": 1.6
   },
   {
    "track": "v11",
    "file": "trailer_main.mp4",
-   "start": 15.689,
+   "start": 12.689,
    "in": 25.0,
-   "out": 37.26,
-   "fillMode": "blur",
-   "fadeIn": 0.25,
-   "fadeOut": 0.25,
-   "muted": true,
-   "transformScale": 1.95
-  },
-  {
-   "track": "a1",
-   "file": "tts_short/s4.wav",
-   "start": 27.949,
-   "in": 0,
-   "out": 8.986,
-   "volume": 1.6
-  },
-  {
-   "track": "v11",
-   "file": "ss03_mv.mp4",
-   "start": 27.949,
-   "in": 0,
-   "out": 9.386,
+   "out": 32.976,
    "fillMode": "blur",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
@@ -98,17 +78,17 @@
   {
    "track": "a1",
    "file": "tts_short/s5.wav",
-   "start": 37.335,
+   "start": 20.665,
    "in": 0,
-   "out": 5.904,
+   "out": 6.713,
    "volume": 1.6
   },
   {
    "track": "v11",
-   "file": "ev_engine_v_mvv.mp4",
-   "start": 37.335,
+   "file": "ev_stack_v_mvv.mp4",
+   "start": 20.665,
    "in": 0,
-   "out": 6.304,
+   "out": 7.113,
    "fillMode": "fit",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
@@ -118,53 +98,17 @@
   {
    "track": "a1",
    "file": "tts_short/s6.wav",
-   "start": 43.639,
+   "start": 27.778,
    "in": 0,
-   "out": 4.754,
+   "out": 7.732,
    "volume": 1.6
   },
   {
    "track": "v11",
-   "file": "ev_stack_v_mvv.mp4",
-   "start": 43.639,
+   "file": "ss08_mv.mp4",
+   "start": 27.778,
    "in": 0,
-   "out": 5.154,
-   "fillMode": "fit",
-   "fadeIn": 0.25,
-   "fadeOut": 0.25,
-   "muted": true,
-   "transformScale": 1.0
-  },
-  {
-   "track": "a1",
-   "file": "tts_short/s7.wav",
-   "start": 48.793,
-   "in": 0,
-   "out": 7.967,
-   "volume": 1.6
-  },
-  {
-   "track": "a1",
-   "file": "tts_short/s8.wav",
-   "start": 57.16,
-   "in": 0,
-   "out": 4.441,
-   "volume": 1.6
-  },
-  {
-   "track": "a1",
-   "file": "tts_short/s9.wav",
-   "start": 62.001,
-   "in": 0,
-   "out": 4.389,
-   "volume": 1.6
-  },
-  {
-   "track": "v11",
-   "file": "trailer_main.mp4",
-   "start": 62.001,
-   "in": 29.0,
-   "out": 33.789,
+   "out": 8.132,
    "fillMode": "blur",
    "fadeIn": 0.25,
    "fadeOut": 0.25,
@@ -172,11 +116,27 @@
    "transformScale": 1.95
   },
   {
+   "track": "a1",
+   "file": "tts_short/s7.wav",
+   "start": 35.91,
+   "in": 0,
+   "out": 4.441,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s8.wav",
+   "start": 40.751,
+   "in": 0,
+   "out": 4.101,
+   "volume": 1.6
+  },
+  {
    "track": "v11",
    "file": "still_bg_mv.mp4",
-   "start": 48.593,
+   "start": 35.71,
    "in": 0,
-   "out": 13.508,
+   "out": 9.9,
    "fillMode": "blur",
    "fadeIn": 0.3,
    "fadeOut": 0.3
@@ -184,7 +144,7 @@
   {
    "track": "v4",
    "file": "v_score_header.mov",
-   "start": 48.793,
+   "start": 35.91,
    "in": 0,
    "out": 9.5,
    "fillMode": "fit",
@@ -193,7 +153,7 @@
   {
    "track": "v5",
    "file": "v_score_row_0.mov",
-   "start": 48.793,
+   "start": 35.91,
    "in": 0,
    "out": 9.5,
    "fillMode": "fit",
@@ -202,7 +162,7 @@
   {
    "track": "v6",
    "file": "v_score_row_1.mov",
-   "start": 48.793,
+   "start": 35.91,
    "in": 0,
    "out": 9.5,
    "fillMode": "fit",
@@ -211,7 +171,7 @@
   {
    "track": "v7",
    "file": "v_score_row_2.mov",
-   "start": 48.793,
+   "start": 35.91,
    "in": 0,
    "out": 9.5,
    "fillMode": "fit",
@@ -220,7 +180,7 @@
   {
    "track": "v8",
    "file": "v_score_row_3.mov",
-   "start": 48.793,
+   "start": 35.91,
    "in": 0,
    "out": 9.5,
    "fillMode": "fit",
@@ -229,7 +189,7 @@
   {
    "track": "v9",
    "file": "v_score_row_4.mov",
-   "start": 48.793,
+   "start": 35.91,
    "in": 0,
    "out": 9.5,
    "fillMode": "fit",
@@ -238,7 +198,7 @@
   {
    "track": "v10",
    "file": "v_score_stamp.mov",
-   "start": 48.793,
+   "start": 35.91,
    "in": 0,
    "out": 9.5,
    "fillMode": "fit",
@@ -249,7 +209,7 @@
    "file": "logo_c_rgba.png",
    "start": 0.5,
    "in": 0,
-   "out": 67.09,
+   "out": 45.552,
    "fillMode": "fit",
    "transformOpacity": 0.6,
    "fadeIn": 0.5,
@@ -262,17 +222,7 @@
    "file": "trailer_main.mp4",
    "start": 0.0,
    "in": 0,
-   "out": 60.0,
-   "volume": 0.07,
-   "fadeIn": 1.0,
-   "fadeOut": 1.5
-  },
-  {
-   "track": "a2",
-   "file": "trailer_main.mp4",
-   "start": 60.0,
-   "in": 0,
-   "out": 7.59,
+   "out": 46.052,
    "volume": 0.07,
    "fadeIn": 1.0,
    "fadeOut": 1.5
@@ -280,7 +230,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_drop.wav",
-   "start": 48.893,
+   "start": 36.01,
    "in": 0,
    "out": 0.282,
    "volume": 0.5
@@ -288,7 +238,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 49.693,
+   "start": 36.81,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -296,7 +246,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 50.243,
+   "start": 37.36,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -304,7 +254,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 50.313,
+   "start": 37.43,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -312,7 +262,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 50.863,
+   "start": 37.98,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -320,7 +270,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 50.933,
+   "start": 38.05,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -328,7 +278,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 51.483,
+   "start": 38.6,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -336,7 +286,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 51.553,
+   "start": 38.67,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -344,7 +294,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 52.103,
+   "start": 39.22,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -352,7 +302,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
-   "start": 52.173,
+   "start": 39.29,
    "in": 0,
    "out": 0.281,
    "volume": 0.45
@@ -360,7 +310,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
-   "start": 52.723,
+   "start": 39.84,
    "in": 0,
    "out": 0.532,
    "volume": 0.4
@@ -368,7 +318,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/thud.wav",
-   "start": 53.343,
+   "start": 40.46,
    "in": 0,
    "out": 0.415,
    "volume": 0.9
@@ -376,7 +326,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/chime_complete.wav",
-   "start": 53.593,
+   "start": 40.71,
    "in": 0,
    "out": 1.105,
    "volume": 0.6
@@ -384,7 +334,7 @@
   {
    "track": "a3",
    "file": "C:/Git/auravideo/assets/sfx/whoosh_exit.wav",
-   "start": 57.393,
+   "start": 44.51,
    "in": 0,
    "out": 0.298,
    "volume": 0.5
@@ -424,56 +374,40 @@
   {
    "text": "Nobody quit this Steam\ndemo in under ten minutes.\nNot one reviewer.",
    "start": 0.0,
-   "duration": 4.591,
+   "duration": 4.303,
    "fontSize": 50,
    "y": 330,
    "bgOpacity": 0.62
   },
   {
    "text": "The median player had\neleven hours in before\nthey wrote anything.",
-   "start": 4.841,
-   "duration": 3.598,
+   "start": 4.553,
+   "duration": 3.886,
    "fontSize": 50,
    "y": 330,
    "bgOpacity": 0.62
   },
   {
-   "text": "So here's what it is.\nGuildrun is a PvE\nautobattler roguelike. You\ndraft a team of heroes,\nyou bend them out of the\nclass they started in, and\nthen you watch the fight\nresolve itself without\ntouching anything.",
-   "start": 15.689,
-   "duration": 12.01,
+   "text": "Guildrun is a PvE\nautobattler roguelike. You\ndraft a team of heroes,\nthen watch the fight\nresolve itself.",
+   "start": 12.689,
+   "duration": 7.726,
    "fontSize": 42,
    "y": 330,
    "bgOpacity": 0.62
   },
   {
-   "text": "Twenty five heroes, three\nhundred relics and a\nhundred items in the demo\nalone. No timer, no queue,\nno PvP. You think as long\nas you want.",
-   "start": 27.949,
-   "duration": 9.136,
+   "text": "Now the build. It's Unity,\nand twenty four assembly\nnames leak out of a data\nfile. Here's what they\ninstalled.",
+   "start": 20.665,
+   "duration": 6.863,
    "fontSize": 42,
    "y": 330,
    "bgOpacity": 0.62
   },
   {
-   "text": "Now the build. It's Unity,\nand IL2CPP usually hides\nwhat a team used.",
-   "start": 37.335,
-   "duration": 6.054,
-   "fontSize": 50,
-   "y": 330,
-   "bgOpacity": 0.62
-  },
-  {
-   "text": "Except twenty four\nassembly names leak out in\na data file. Here's what\nthey installed.",
-   "start": 43.639,
-   "duration": 4.904,
+   "text": "Sentry for crash reports.\nSQLite for three hundred\nrelics. Zero-allocation\nLINQ. That's not a first\nproject's list.",
+   "start": 27.778,
+   "duration": 7.882,
    "fontSize": 42,
-   "y": 330,
-   "bgOpacity": 0.62
-  },
-  {
-   "text": "They didn't bounce. They\nhit the ceiling. Full\nteardown on the channel.",
-   "start": 62.001,
-   "duration": 4.539,
-   "fontSize": 50,
    "y": 330,
    "bgOpacity": 0.62
   }
@@ -516,5 +450,5 @@
    "name": "TRL"
   }
  ],
- "total": 67.59
+ "total": 46.052
 }

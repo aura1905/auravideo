@@ -20,7 +20,7 @@
  {
   "id": "b1",
   "sec": "intro",
-  "beat": 7.0,
+  "beat": 4.0,
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
@@ -30,7 +30,7 @@
  {
   "id": "s3",
   "sec": "intro",
-  "text": "So here's what it is. Guildrun is a PvE autobattler roguelike. You draft a team of heroes, you bend them out of the class they started in, and then you watch the fight resolve itself without touching anything.",
+  "text": "Guildrun is a PvE autobattler roguelike. You draft a team of heroes, then watch the fight resolve itself.",
   "vis": {
    "type": "video",
    "file": "trailer_main.mp4",
@@ -38,34 +38,16 @@
   }
  },
  {
-  "id": "s4",
-  "sec": "intro",
-  "text": "Twenty five heroes, three hundred relics and a hundred items in the demo alone. No timer, no queue, no PvP. You think as long as you want.",
-  "vis": {
-   "type": "image",
-   "file": "ss03.jpg"
-  }
- },
- {
   "id": "s5",
   "sec": "made",
-  "text": "Now the build. It's Unity, and IL2CPP usually hides what a team used.",
-  "vis": {
-   "type": "image",
-   "file": "ev_engine_v.png"
-  }
- },
- {
-  "id": "s6",
-  "sec": "made",
-  "text": "Except twenty four assembly names leak out in a data file. Here's what they installed.",
+  "text": "Now the build. It's Unity, and twenty four assembly names leak out of a data file. Here's what they installed.",
   "vis": {
    "type": "image",
    "file": "ev_stack_v.png"
   }
  },
  {
-  "id": "s7",
+  "id": "s6",
   "sec": "made",
   "text": "Sentry for crash reports. SQLite for three hundred relics. Zero-allocation LINQ. That's not a first project's list.",
   "vis": {
@@ -74,7 +56,7 @@
   }
  },
  {
-  "id": "s8",
+  "id": "s7",
   "sec": "score",
   "text": "And the negative reviewers had played longer than the positive ones. Fifteen hours.",
   "vis": {
@@ -83,7 +65,7 @@
   }
  },
  {
-  "id": "s9",
+  "id": "s8",
   "sec": "score",
   "text": "They didn't bounce. They hit the ceiling. Full teardown on the channel.",
   "vis": {
