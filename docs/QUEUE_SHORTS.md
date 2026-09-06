@@ -27,11 +27,11 @@
 |---|---|---|---|---|---|
 | 4892 | OC | Square Enix, LANCARSE | [FINAL FANTASY RESONANCE DEMO](https://store.steampowered.com/app/4474710/) | [SteamDB](https://steamdb.info/app/4474710/depots/) | 10화로 사용 |
 | 242 | O | Haymaker Games | [Oar'some Adventures Demo](https://store.steampowered.com/app/5057590/) | [SteamDB](https://steamdb.info/app/5057590/depots/) | 언리얼, 파일 32개 — 후크 없음 |
-| 193 | - | TEAM42 | [World of Slime Demo](https://store.steampowered.com/app/4793900/) | [SteamDB](https://steamdb.info/app/4793900/depots/) | 중국어 없음 |
-| 188 | OC | Biang Studio | [口袋修仙 Demo](https://store.steampowered.com/app/4777710/) | [SteamDB](https://steamdb.info/app/4777710/depots/) | **후보 1순위** — 중국어 원제, 수선(修仙) 소재 |
+| 193 | - | TEAM42 | [World of Slime Demo](https://store.steampowered.com/app/4793900/) | [SteamDB](https://steamdb.info/app/4793900/depots/) | 번체만 있고 간체 없음 — 기준 미달 |
+| 188 | OC | Biang Studio | [口袋修仙 Demo](https://store.steampowered.com/app/4777710/) | [SteamDB](https://steamdb.info/app/4777710/depots/) | **탈락 — 간체 전용.** 영어권이 못 하는 게임은 이 슬롯에 안 맞는다 |
 | 184 | OC | Streetlamp Studio | [SlashZero Demo](https://store.steampowered.com/app/5099550/) | [SteamDB](https://steamdb.info/app/5099550/depots/) | 11화로 사용 |
-| 155 | O | WRIGHT FLYER STUDIOS | [Another Eden Begins Demo](https://store.steampowered.com/app/4391790/) | [SteamDB](https://steamdb.info/app/4391790/depots/) | 모바일 JRPG의 PC판 — 모바일 잔재 후크 가능 |
-| 135 | OC | GPTRACK50 Inc. | [Stupid Never Dies: First Bite Demo](https://store.steampowered.com/app/4880100/) | [SteamDB](https://steamdb.info/app/4880100/depots/) | 넷이즈 산하, 캡콤 출신 — 롱폼은 탈락이나 쇼츠는 가능 |
+| 155 | O | WRIGHT FLYER STUDIOS | [Another Eden Begins Demo](https://store.steampowered.com/app/4391790/) | [SteamDB](https://steamdb.info/app/4391790/depots/) | **s01로 사용** (9/6 13:00) |
+| 135 | OC | GPTRACK50 Inc. | [Stupid Never Dies: First Bite Demo](https://store.steampowered.com/app/4880100/) | [SteamDB](https://steamdb.info/app/4880100/depots/) | **s02로 사용** (9/6 16:00) |
 | 48 | O | Max Ritters | [Idle Pixel Battle Demo](https://store.steampowered.com/app/5020820/) | [SteamDB](https://steamdb.info/app/5020820/depots/) |  |
 | 45 | OC | APOPHIS GAME STUDIO | [Frontier Tale Demo](https://store.steampowered.com/app/5010220/) | [SteamDB](https://steamdb.info/app/5010220/depots/) |  |
 | 38 | O | Chugget | [Into the Planet's Flesh Demo](https://store.steampowered.com/app/4797850/) | [SteamDB](https://steamdb.info/app/4797850/depots/) |  |

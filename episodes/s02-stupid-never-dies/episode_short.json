@@ -1,0 +1,96 @@
+{
+ "title_en": "Stupid Never Dies",
+ "demo_appid": 4880100,
+ "full_appid": 3486530,
+ "developer": "GPTRACK50 Inc.",
+ "workdir": "episodes/s02-stupid-never-dies",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s02-stupid-never-dies/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "ENGINE",
+   "Unreal Engine 5"
+  ],
+  [
+   "THE BUILD",
+   "11.47 GB / 155 files"
+  ],
+  [
+   "ONE FILE",
+   "9.13 GB .ucas"
+  ],
+  [
+   "THE VIDEO",
+   "74 Bink, 1.90 GB"
+  ],
+  [
+   "THE UPSCALER",
+   "116 MB of DLSS"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Stupid Never Dies",
+  "line2": "11.5 GB. 155 FILES.",
+  "size1": 86,
+  "size2": 60
+ },
+ "stack": [
+  [
+   "Unreal Engine 5",
+   "https://www.unrealengine.com/"
+  ],
+  [
+   "Bink Video (RAD Game Tools)",
+   "http://www.radgametools.com/bnkmain.htm"
+  ],
+  [
+   "Audiokinetic Wwise",
+   "https://www.audiokinetic.com/products/wwise/"
+  ],
+  [
+   "NVIDIA DLSS",
+   "https://developer.nvidia.com/rtx/dlss"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/4880100/"
+  ]
+ ],
+ "chapters": {
+  "hook": "155 files",
+  "intro": "What it is",
+  "made": "Opening the build",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Stupid Never Dies: an 11.5 GB demo that is only 155 files #shorts",
+  "tags": "shorts,Stupid Never Dies,GPTRACK50,steam demo,unreal engine 5,game teardown,demo dip,action rpg,dlss,bink video,capcom",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

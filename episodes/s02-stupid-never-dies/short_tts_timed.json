@@ -1,0 +1,111 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "This demo is eleven and a half gigabytes, in a hundred and fifty five files.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.0
+  },
+  "sub": "This demo is eleven and a half gigabytes, in a hundred and fifty five files.",
+  "dur": 4.624,
+  "wav": "episodes/s02-stupid-never-dies/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "One of those files is nine gigabytes on its own.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "One of those files is nine gigabytes on its own.",
+  "dur": 2.717,
+  "wav": "episodes/s02-stupid-never-dies/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 4.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 48.0
+  },
+  "dur": 4.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "It's Stupid Never Dies, an action R P G from GPTRACK50, a studio founded by Capcom veterans.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 64.0
+  },
+  "sub": "It's Stupid Never Dies, an action RPG from GPTRACK50, a studio founded by Capcom veterans.",
+  "dur": 7.027,
+  "wav": "episodes/s02-stupid-never-dies/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "made",
+  "text": "Now the build. Unreal five, and the whole game lives in one container.",
+  "vis": {
+   "type": "image",
+   "file": "ev_files_v.png"
+  },
+  "sub": "Now the build. Unreal 5, and the whole game lives in one container.",
+  "dur": 4.624,
+  "wav": "episodes/s02-stupid-never-dies/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Most of what's left is video. Seventy four Bink movies, one point nine gigabytes. Two cutscenes are a gigabyte between them.",
+  "vis": {
+   "type": "image",
+   "file": "ev_video_v.png"
+  },
+  "sub": "Most of what's left is video. Seventy four Bink movies, one point nine gigabytes. Two cutscenes are a gigabyte between them.",
+  "dur": 8.098,
+  "wav": "episodes/s02-stupid-never-dies/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "And a hundred and sixteen megabytes of D L S S. The upscaler's neural network weighs two thirds of the game's own executable.",
+  "vis": {
+   "type": "image",
+   "file": "ev_dlss_v.png"
+  },
+  "sub": "And a hundred and sixteen megabytes of DLSS. The upscaler's neural network weighs two thirds of the game's own executable.",
+  "dur": 7.393,
+  "wav": "episodes/s02-stupid-never-dies/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip. Thirteen languages, eighty percent positive, out in October.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 88.0
+  },
+  "sub": "Worth a dip. Thirteen languages, eighty percent positive, out in October.",
+  "dur": 4.702,
+  "wav": "episodes/s02-stupid-never-dies/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "Every demo I open, I read the file list first. That's the whole channel.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Every demo I open, I read the file list first. That's the whole channel.",
+  "dur": 4.101,
+  "wav": "episodes/s02-stupid-never-dies/tts_short/s8.wav"
+ }
+]
