@@ -1,0 +1,153 @@
+1
+00:00:00,000 --> 00:00:04,434
+This horror demo shipped with
+two AI agent runtimes inside it.
+
+2
+00:00:04,684 --> 00:00:09,954
+Not one. Two. Plus a tokenizer,
+in a game about a haunted fort.
+
+3
+00:00:13,804 --> 00:00:23,672
+Rudravati is a first-person supernatural horror set in the ruins of an Indian fort.
+You go looking for your brother. The fort has opinions about that.
+
+4
+00:00:23,922 --> 00:00:29,532
+It's made by LeZit Games, who also publish it.
+English and Hindi, both with full voice acting.
+
+5
+00:00:35,782 --> 00:00:42,489
+The demo went up yesterday. It has no reviews yet,
+and single digits of players. This one is all build.
+
+6
+00:00:42,739 --> 00:00:50,256
+Before the files, one thing the store won't tell you.
+Steam's own database still lists the parent game under a different name.
+
+7
+00:00:50,506 --> 00:01:05,572
+It was Ratnavati, Curse of Bhangarh. Bhangarh Fort is a real place in Rajasthan, and Ratnavati is the princess in its legend.
+The store now says Rudravati, Curse of Bhankilla. Both names were changed to invented ones.
+
+8
+00:01:05,822 --> 00:01:11,562
+The executable is still called RUDRAVATI.
+Why they changed it, a manifest can't tell you.
+
+9
+00:01:11,812 --> 00:01:17,239
+Now the build. Six point zero nine gigabytes,
+two hundred and twenty eight files.
+
+10
+00:01:17,489 --> 00:01:24,849
+It's Unity, on the High Definition render pipeline,
+with Unity 6's GPU resident drawer and ray tracing.
+
+11
+00:01:25,099 --> 00:01:37,161
+And it's a Mono build, not IL2CPP. That matters here.
+On IL2CPP I have to recover the package list from leftover filenames. On Mono the assemblies are just there.
+
+12
+00:01:37,411 --> 00:01:45,554
+So for once this is the real list, not my reconstruction of one.
+A hundred and eighty two DLLs. And three of them stopped me.
+
+13
+00:01:45,804 --> 00:01:54,418
+MCPForUnity dot Runtime. That's the Model Context Protocol bridge,
+the thing that lets an AI agent drive the Unity editor.
+
+14
+00:01:54,668 --> 00:02:03,883
+Next to it, Unity dot AI dot MCP dot Runtime. That's Unity's own.
+Both are in the same build, from the same folder.
+
+15
+00:02:04,133 --> 00:02:12,433
+Then Unity's Inference Engine, with a tokenization assembly beside it.
+A tokenizer is text model tooling. It isn't there to sharpen textures.
+
+16
+00:02:12,683 --> 00:02:18,005
+And thirteen megabytes of DirectML,
+Microsoft's GPU inference runtime.
+
+17
+00:02:18,255 --> 00:02:28,175
+Here's what that does and doesn't mean. MCP is an editor tool.
+Finding it in a player build tells you it wasn't stripped out, not that the game is talking to an agent while you play.
+
+18
+00:02:28,425 --> 00:02:38,397
+What it does tell you is that this game was built with an AI agent wired into the editor,
+and the wiring is still visible from outside. That's the first time I've been able to see it in a file list.
+
+19
+00:02:38,647 --> 00:02:42,533
+Once you know nothing was stripped,
+the rest of the list reads differently.
+
+20
+00:02:42,783 --> 00:02:54,897
+Better Inspector and Better Mesh are Asset Store editor tools. Unity Recorder captures video in the editor.
+Six Timeline sample assemblies, and a documentation examples assembly.
+
+21
+00:02:55,147 --> 00:03:06,974
+There are also two ASP dot NET web pages in there, one for Mono two point zero and one for four point zero.
+Those ship with the stock Mono tree. Nobody put them there on purpose.
+
+22
+00:03:07,224 --> 00:03:10,509
+Now the size,
+because it's the number you can act on.
+
+23
+00:03:10,759 --> 00:03:19,791
+Four point four three gigabytes of the six are resS files.
+That's Unity's raw texture and audio stream. Seventy three percent of the download.
+
+24
+00:03:20,041 --> 00:03:27,871
+And Steam still finds forty percent to compress out of the finished package.
+That's what an uncrunched texture set looks like from the outside.
+
+25
+00:03:28,121 --> 00:03:33,992
+Reception, then. There isn't any.
+No reviews, a handful of players, one day old.
+
+26
+00:03:34,242 --> 00:03:43,927
+So I'll say the honest thing instead. The trailer is very dark,
+and the demo is a small studio's first swing at a location every Indian ghost story already knows.
+
+27
+00:03:44,177 --> 00:03:46,678
+Here's the whole teardown on one card.
+
+28
+00:03:46,928 --> 00:03:54,627
+Unity 6 on HDRP, Mono, six gigabytes,
+two MCP runtimes, an inference engine and a tokenizer.
+
+29
+00:03:54,877 --> 00:03:59,598
+Worth a dip,
+if you like slow first-person horror and you can stand how dark it is.
+
+30
+00:03:59,848 --> 00:04:11,544
+If you build in Unity, the thing to take from this is the strip list. Open your player build and search it for Recorder,
+for editor inspectors, for anything with MCP in the name. If it's here, it shipped.
+
+31
+00:04:11,794 --> 00:04:22,550
+That's my read from the outside. If you worked on this and I got something wrong,
+say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.

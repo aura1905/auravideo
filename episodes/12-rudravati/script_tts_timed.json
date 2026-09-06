@@ -1,0 +1,397 @@
+[
+ {
+  "id": "01",
+  "sec": "hook",
+  "text": "This horror demo shipped with two AI agent runtimes inside it.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 63.0
+  },
+  "sub": "This horror demo shipped with two AI agent runtimes inside it.",
+  "dur": 4.284,
+  "wav": "episodes/12-rudravati/tts/01.wav"
+ },
+ {
+  "id": "02",
+  "sec": "hook",
+  "text": "Not one. Two. Plus a tokenizer, in a game about a haunted fort.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Not one. Two. Plus a tokenizer, in a game about a haunted fort.",
+  "dur": 5.12,
+  "wav": "episodes/12-rudravati/tts/02.wav"
+ },
+ {
+  "id": "03",
+  "sec": "intro",
+  "text": "Rood-ra-vah-tee is a first-person supernatural horror set in the ruins of an Indian fort. You go looking for your brother. The fort has opinions about that.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.5
+  },
+  "sub": "Rudravati is a first-person supernatural horror set in the ruins of an Indian fort. You go looking for your brother. The fort has opinions about that.",
+  "dur": 9.718,
+  "wav": "episodes/12-rudravati/tts/03.wav"
+ },
+ {
+  "id": "04",
+  "sec": "intro",
+  "text": "It's made by Le-Zit Games, who also publish it. English and Hindi, both with full voice acting.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "It's made by LeZit Games, who also publish it. English and Hindi, both with full voice acting.",
+  "dur": 5.46,
+  "wav": "episodes/12-rudravati/tts/04.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 6.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 60.5
+  },
+  "dur": 6.0,
+  "wav": null
+ },
+ {
+  "id": "05",
+  "sec": "intro",
+  "text": "The demo went up yesterday. It has no reviews yet, and single digits of players. This one is all build.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 44.0
+  },
+  "sub": "The demo went up yesterday. It has no reviews yet, and single digits of players. This one is all build.",
+  "dur": 6.557,
+  "wav": "episodes/12-rudravati/tts/05.wav"
+ },
+ {
+  "id": "06",
+  "sec": "intro",
+  "text": "Before the files, one thing the store won't tell you. Steam's own database still lists the parent game under a different name.",
+  "vis": {
+   "type": "image",
+   "file": "ev_rename.png"
+  },
+  "sub": "Before the files, one thing the store won't tell you. Steam's own database still lists the parent game under a different name.",
+  "dur": 7.367,
+  "wav": "episodes/12-rudravati/tts/06.wav"
+ },
+ {
+  "id": "07",
+  "sec": "intro",
+  "text": "It was Rat-na-vah-tee, Curse of Bhan-garh. Bhan-garh Fort is a real place in Rah-jas-tan, and Rat-na-vah-tee is the princess in its legend. The store now says Rood-ra-vah-tee, Curse of Bhan-killa. Both names were changed to invented ones.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  },
+  "sub": "It was Ratnavati, Curse of Bhangarh. Bhangarh Fort is a real place in Rajasthan, and Ratnavati is the princess in its legend. The store now says Rudravati, Curse of Bhankilla. Both names were changed to invented ones.",
+  "dur": 14.916,
+  "wav": "episodes/12-rudravati/tts/07.wav"
+ },
+ {
+  "id": "08",
+  "sec": "intro",
+  "text": "The executable is still called RUDRAVATI. Why they changed it, a manifest can't tell you.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 48.5
+  },
+  "sub": "The executable is still called RUDRAVATI. Why they changed it, a manifest can't tell you.",
+  "dur": 5.59,
+  "wav": "episodes/12-rudravati/tts/08.wav"
+ },
+ {
+  "id": "09",
+  "sec": "made",
+  "text": "Now the build. Six point zero nine gigabytes, two hundred and twenty eight files.",
+  "vis": {
+   "type": "image",
+   "file": "ev_engine.png"
+  },
+  "sub": "Now the build. Six point zero nine gigabytes, two hundred and twenty eight files.",
+  "dur": 5.277,
+  "wav": "episodes/12-rudravati/tts/09.wav"
+ },
+ {
+  "id": "10",
+  "sec": "made",
+  "text": "It's Unity, on the High Definition render pipeline, with Unity six's G P U resident drawer and ray tracing.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "It's Unity, on the High Definition render pipeline, with Unity 6's GPU resident drawer and ray tracing.",
+  "dur": 7.21,
+  "wav": "episodes/12-rudravati/tts/10.wav"
+ },
+ {
+  "id": "11",
+  "sec": "made",
+  "text": "And it's a Mono build, not I L two C P P. That matters here. On I L two C P P I have to recover the package list from leftover filenames. On Mono the assemblies are just there.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 50.5
+  },
+  "sub": "And it's a Mono build, not IL2CPP. That matters here. On IL2CPP I have to recover the package list from leftover filenames. On Mono the assemblies are just there.",
+  "dur": 11.912,
+  "wav": "episodes/12-rudravati/tts/11.wav"
+ },
+ {
+  "id": "12",
+  "sec": "made",
+  "text": "So for once this is the real list, not my reconstruction of one. A hundred and eighty two D L Ls. And three of them stopped me.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "So for once this is the real list, not my reconstruction of one. A hundred and eighty two DLLs. And three of them stopped me.",
+  "dur": 7.993,
+  "wav": "episodes/12-rudravati/tts/12.wav"
+ },
+ {
+  "id": "13",
+  "sec": "made",
+  "text": "M C P for Unity dot Runtime. That's the Model Context Protocol bridge, the thing that lets an AI agent drive the Unity editor.",
+  "vis": {
+   "type": "image",
+   "file": "ev_mcp.png"
+  },
+  "sub": "MCPForUnity dot Runtime. That's the Model Context Protocol bridge, the thing that lets an AI agent drive the Unity editor.",
+  "dur": 8.464,
+  "wav": "episodes/12-rudravati/tts/13.wav"
+ },
+ {
+  "id": "14",
+  "sec": "made",
+  "text": "Next to it, Unity dot AI dot M C P dot Runtime. That's Unity's own. Both are in the same build, from the same folder.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 41.0
+  },
+  "sub": "Next to it, Unity dot AI dot MCP dot Runtime. That's Unity's own. Both are in the same build, from the same folder.",
+  "dur": 9.065,
+  "wav": "episodes/12-rudravati/tts/14.wav"
+ },
+ {
+  "id": "15",
+  "sec": "made",
+  "text": "Then Unity's Inference Engine, with a tokenization assembly beside it. A tokenizer is text model tooling. It isn't there to sharpen textures.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 66.0
+  },
+  "sub": "Then Unity's Inference Engine, with a tokenization assembly beside it. A tokenizer is text model tooling. It isn't there to sharpen textures.",
+  "dur": 8.15,
+  "wav": "episodes/12-rudravati/tts/15.wav"
+ },
+ {
+  "id": "16",
+  "sec": "made",
+  "text": "And thirteen megabytes of Direct M L, Microsoft's G P U inference runtime.",
+  "vis": {
+   "type": "image",
+   "file": "ev_ai.png"
+  },
+  "sub": "And thirteen megabytes of DirectML, Microsoft's GPU inference runtime.",
+  "dur": 5.172,
+  "wav": "episodes/12-rudravati/tts/16.wav"
+ },
+ {
+  "id": "17",
+  "sec": "made",
+  "text": "Here's what that does and doesn't mean. M C P is an editor tool. Finding it in a player build tells you it wasn't stripped out, not that the game is talking to an agent while you play.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Here's what that does and doesn't mean. MCP is an editor tool. Finding it in a player build tells you it wasn't stripped out, not that the game is talking to an agent while you play.",
+  "dur": 9.77,
+  "wav": "episodes/12-rudravati/tts/17.wav"
+ },
+ {
+  "id": "18",
+  "sec": "made",
+  "text": "What it does tell you is that this game was built with an AI agent wired into the editor, and the wiring is still visible from outside. That's the first time I've been able to see it in a file list.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 51.0
+  },
+  "sub": "What it does tell you is that this game was built with an AI agent wired into the editor, and the wiring is still visible from outside. That's the first time I've been able to see it in a file list.",
+  "dur": 9.822,
+  "wav": "episodes/12-rudravati/tts/18.wav"
+ },
+ {
+  "id": "19",
+  "sec": "made",
+  "text": "Once you know nothing was stripped, the rest of the list reads differently.",
+  "vis": {
+   "type": "image",
+   "file": "ev_editor.png"
+  },
+  "sub": "Once you know nothing was stripped, the rest of the list reads differently.",
+  "dur": 3.736,
+  "wav": "episodes/12-rudravati/tts/19.wav"
+ },
+ {
+  "id": "20",
+  "sec": "made",
+  "text": "Better Inspector and Better Mesh are Asset Store editor tools. Unity Recorder captures video in the editor. Six Timeline sample assemblies, and a documentation examples assembly.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 70.0
+  },
+  "sub": "Better Inspector and Better Mesh are Asset Store editor tools. Unity Recorder captures video in the editor. Six Timeline sample assemblies, and a documentation examples assembly.",
+  "dur": 11.964,
+  "wav": "episodes/12-rudravati/tts/20.wav"
+ },
+ {
+  "id": "21",
+  "sec": "made",
+  "text": "There are also two ASP dot NET web pages in there, one for Mono two point zero and one for four point zero. Those ship with the stock Mono tree. Nobody put them there on purpose.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 58.0
+  },
+  "sub": "There are also two ASP dot NET web pages in there, one for Mono two point zero and one for four point zero. Those ship with the stock Mono tree. Nobody put them there on purpose.",
+  "dur": 11.677,
+  "wav": "episodes/12-rudravati/tts/21.wav"
+ },
+ {
+  "id": "22",
+  "sec": "made",
+  "text": "Now the size, because it's the number you can act on.",
+  "vis": {
+   "type": "image",
+   "file": "ev_size.png"
+  },
+  "sub": "Now the size, because it's the number you can act on.",
+  "dur": 3.135,
+  "wav": "episodes/12-rudravati/tts/22.wav"
+ },
+ {
+  "id": "23",
+  "sec": "made",
+  "text": "Four point four three gigabytes of the six are res S files. That's Unity's raw texture and audio stream. Seventy three percent of the download.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Four point four three gigabytes of the six are resS files. That's Unity's raw texture and audio stream. Seventy three percent of the download.",
+  "dur": 8.882,
+  "wav": "episodes/12-rudravati/tts/23.wav"
+ },
+ {
+  "id": "24",
+  "sec": "made",
+  "text": "And Steam still finds forty percent to compress out of the finished package. That's what an uncrunched texture set looks like from the outside.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 56.5
+  },
+  "sub": "And Steam still finds forty percent to compress out of the finished package. That's what an uncrunched texture set looks like from the outside.",
+  "dur": 7.68,
+  "wav": "episodes/12-rudravati/tts/24.wav"
+ },
+ {
+  "id": "25",
+  "sec": "review",
+  "text": "Reception, then. There isn't any. No reviews, a handful of players, one day old.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 38.5
+  },
+  "sub": "Reception, then. There isn't any. No reviews, a handful of players, one day old.",
+  "dur": 5.721,
+  "wav": "episodes/12-rudravati/tts/25.wav"
+ },
+ {
+  "id": "26",
+  "sec": "review",
+  "text": "So I'll say the honest thing instead. The trailer is very dark, and the demo is a small studio's first swing at a location every Indian ghost story already knows.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "So I'll say the honest thing instead. The trailer is very dark, and the demo is a small studio's first swing at a location every Indian ghost story already knows.",
+  "dur": 9.535,
+  "wav": "episodes/12-rudravati/tts/26.wav"
+ },
+ {
+  "id": "27",
+  "sec": "score",
+  "text": "Here's the whole teardown on one card.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 34.2
+  },
+  "sub": "Here's the whole teardown on one card.",
+  "dur": 2.351,
+  "wav": "episodes/12-rudravati/tts/27.wav"
+ },
+ {
+  "id": "28",
+  "sec": "score",
+  "text": "Unity six on H D R P, Mono, six gigabytes, two M C P runtimes, an inference engine and a tokenizer.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 54.0
+  },
+  "sub": "Unity 6 on HDRP, Mono, six gigabytes, two MCP runtimes, an inference engine and a tokenizer.",
+  "dur": 7.549,
+  "wav": "episodes/12-rudravati/tts/28.wav"
+ },
+ {
+  "id": "29",
+  "sec": "score",
+  "text": "Worth a dip, if you like slow first-person horror and you can stand how dark it is.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 52.5
+  },
+  "sub": "Worth a dip, if you like slow first-person horror and you can stand how dark it is.",
+  "dur": 4.571,
+  "wav": "episodes/12-rudravati/tts/29.wav"
+ },
+ {
+  "id": "30",
+  "sec": "score",
+  "text": "If you build in Unity, the thing to take from this is the strip list. Open your player build and search it for Recorder, for editor inspectors, for anything with M C P in the name. If it's here, it shipped.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 62.5
+  },
+  "sub": "If you build in Unity, the thing to take from this is the strip list. Open your player build and search it for Recorder, for editor inspectors, for anything with MCP in the name. If it's here, it shipped.",
+  "dur": 11.546,
+  "wav": "episodes/12-rudravati/tts/30.wav"
+ },
+ {
+  "id": "31",
+  "sec": "score",
+  "text": "That's my read from the outside. If you worked on this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 45.5
+  },
+  "sub": "That's my read from the outside. If you worked on this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "dur": 10.606,
+  "wav": "episodes/12-rudravati/tts/31.wav"
+ }
+]

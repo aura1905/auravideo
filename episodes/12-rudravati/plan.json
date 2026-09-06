@@ -1,0 +1,1161 @@
+{
+ "settings": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 10.404,
+   "in": 87.0,
+   "out": 90.6,
+   "fillMode": "cover",
+   "muted": true,
+   "transformScale": 1.0,
+   "saturation": 1.05,
+   "fadeIn": 0.2,
+   "fadeOut": 0.3
+  },
+  {
+   "track": "v1",
+   "file": "intro_mark.mov",
+   "start": 10.404,
+   "in": 0,
+   "out": 3.4,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "intro_title.mov",
+   "start": 10.404,
+   "in": 0,
+   "out": 3.4,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v3",
+   "file": "intro_sub.mov",
+   "start": 10.404,
+   "in": 0,
+   "out": 3.4,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v11",
+   "file": "still_bg_mv.mp4",
+   "start": 13.804,
+   "in": 0,
+   "out": 15.978,
+   "fillMode": "cover",
+   "fadeIn": 0.3,
+   "fadeOut": 0.3
+  },
+  {
+   "track": "a1",
+   "file": "tts/01.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 4.284,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 0.0,
+   "in": 63.0,
+   "out": 73.504,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/02.wav",
+   "start": 4.684,
+   "in": 0,
+   "out": 5.12,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/03.wav",
+   "start": 13.804,
+   "in": 0,
+   "out": 9.718,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/04.wav",
+   "start": 23.922,
+   "in": 0,
+   "out": 5.46,
+   "volume": 1.6
+  },
+  {
+   "track": "a12",
+   "file": "t0.mp4",
+   "start": 29.782,
+   "in": 60.5,
+   "out": 66.5,
+   "volume": 0.55,
+   "fadeIn": 0.4,
+   "fadeOut": 0.8
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 29.782,
+   "in": 60.5,
+   "out": 66.5,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/05.wav",
+   "start": 35.782,
+   "in": 0,
+   "out": 6.557,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 35.782,
+   "in": 44.0,
+   "out": 50.957,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/06.wav",
+   "start": 42.739,
+   "in": 0,
+   "out": 7.367,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ev_rename_mv.mp4",
+   "start": 42.739,
+   "in": 0,
+   "out": 7.767,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/07.wav",
+   "start": 50.506,
+   "in": 0,
+   "out": 14.916,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 50.506,
+   "in": 40.0,
+   "out": 55.316,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/08.wav",
+   "start": 65.822,
+   "in": 0,
+   "out": 5.59,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 65.822,
+   "in": 48.5,
+   "out": 54.49,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/09.wav",
+   "start": 71.812,
+   "in": 0,
+   "out": 5.277,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ev_engine_mv.mp4",
+   "start": 71.812,
+   "in": 0,
+   "out": 13.287,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/10.wav",
+   "start": 77.489,
+   "in": 0,
+   "out": 7.21,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/11.wav",
+   "start": 85.099,
+   "in": 0,
+   "out": 11.912,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 85.099,
+   "in": 50.5,
+   "out": 71.205,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/12.wav",
+   "start": 97.411,
+   "in": 0,
+   "out": 7.993,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/13.wav",
+   "start": 105.804,
+   "in": 0,
+   "out": 8.464,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ev_mcp_mv.mp4",
+   "start": 105.804,
+   "in": 0,
+   "out": 8.864,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/14.wav",
+   "start": 114.668,
+   "in": 0,
+   "out": 9.065,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 114.668,
+   "in": 41.0,
+   "out": 50.465,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/15.wav",
+   "start": 124.133,
+   "in": 0,
+   "out": 8.15,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 124.133,
+   "in": 66.0,
+   "out": 74.55,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/16.wav",
+   "start": 132.683,
+   "in": 0,
+   "out": 5.172,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ev_ai_mv.mp4",
+   "start": 132.683,
+   "in": 0,
+   "out": 15.742,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/17.wav",
+   "start": 138.255,
+   "in": 0,
+   "out": 9.77,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/18.wav",
+   "start": 148.425,
+   "in": 0,
+   "out": 9.822,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 148.425,
+   "in": 51.0,
+   "out": 61.222,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/19.wav",
+   "start": 158.647,
+   "in": 0,
+   "out": 3.736,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ev_editor_mv.mp4",
+   "start": 158.647,
+   "in": 0,
+   "out": 4.136,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/20.wav",
+   "start": 162.783,
+   "in": 0,
+   "out": 11.964,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 162.783,
+   "in": 70.0,
+   "out": 82.364,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/21.wav",
+   "start": 175.147,
+   "in": 0,
+   "out": 11.677,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 175.147,
+   "in": 58.0,
+   "out": 70.077,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/22.wav",
+   "start": 187.224,
+   "in": 0,
+   "out": 3.135,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ev_size_mv.mp4",
+   "start": 187.224,
+   "in": 0,
+   "out": 12.817,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/23.wav",
+   "start": 190.759,
+   "in": 0,
+   "out": 8.882,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/24.wav",
+   "start": 200.041,
+   "in": 0,
+   "out": 7.68,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 200.041,
+   "in": 56.5,
+   "out": 64.58,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/25.wav",
+   "start": 208.121,
+   "in": 0,
+   "out": 5.721,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 208.121,
+   "in": 38.5,
+   "out": 54.556,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/26.wav",
+   "start": 214.242,
+   "in": 0,
+   "out": 9.535,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/27.wav",
+   "start": 224.177,
+   "in": 0,
+   "out": 2.351,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/28.wav",
+   "start": 226.928,
+   "in": 0,
+   "out": 7.549,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/29.wav",
+   "start": 234.877,
+   "in": 0,
+   "out": 4.571,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts/30.wav",
+   "start": 239.848,
+   "in": 0,
+   "out": 11.546,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 239.848,
+   "in": 62.5,
+   "out": 74.446,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts/31.wav",
+   "start": 251.794,
+   "in": 0,
+   "out": 10.606,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 251.794,
+   "in": 45.5,
+   "out": 56.506,
+   "fillMode": "cover",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "v11",
+   "file": "still_bg_mv.mp4",
+   "start": 223.977,
+   "in": 0,
+   "out": 15.971,
+   "fillMode": "cover",
+   "fadeIn": 0.3,
+   "fadeOut": 0.3
+  },
+  {
+   "track": "v4",
+   "file": "score_header.mov",
+   "start": 224.177,
+   "in": 0,
+   "out": 14.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v5",
+   "file": "score_row_0.mov",
+   "start": 224.177,
+   "in": 0,
+   "out": 14.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v6",
+   "file": "score_row_1.mov",
+   "start": 224.177,
+   "in": 0,
+   "out": 14.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v7",
+   "file": "score_row_2.mov",
+   "start": 224.177,
+   "in": 0,
+   "out": 14.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v8",
+   "file": "score_row_3.mov",
+   "start": 224.177,
+   "in": 0,
+   "out": 14.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v9",
+   "file": "score_row_4.mov",
+   "start": 224.177,
+   "in": 0,
+   "out": 14.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v10",
+   "file": "score_stamp.mov",
+   "start": 224.177,
+   "in": 0,
+   "out": 14.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v1",
+   "file": "logo_c_rgba.png",
+   "start": 14.004,
+   "in": 0,
+   "out": 249.596,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.13,
+   "transformX": 810,
+   "transformY": -425
+  },
+  {
+   "track": "a2",
+   "file": "t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 60.0,
+   "volume": 0.07,
+   "fadeIn": 1.0,
+   "fadeOut": 1.5
+  },
+  {
+   "track": "a2",
+   "file": "t0.mp4",
+   "start": 60.0,
+   "in": 0,
+   "out": 60.0,
+   "volume": 0.07,
+   "fadeIn": 1.0,
+   "fadeOut": 1.5
+  },
+  {
+   "track": "a2",
+   "file": "t0.mp4",
+   "start": 120.0,
+   "in": 0,
+   "out": 60.0,
+   "volume": 0.07,
+   "fadeIn": 1.0,
+   "fadeOut": 1.5
+  },
+  {
+   "track": "a2",
+   "file": "t0.mp4",
+   "start": 180.0,
+   "in": 0,
+   "out": 60.0,
+   "volume": 0.07,
+   "fadeIn": 1.0,
+   "fadeOut": 1.5
+  },
+  {
+   "track": "a2",
+   "file": "t0.mp4",
+   "start": 240.0,
+   "in": 0,
+   "out": 23.6,
+   "volume": 0.07,
+   "fadeIn": 1.0,
+   "fadeOut": 1.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_drop.wav",
+   "start": 10.424,
+   "in": 0,
+   "out": 0.282,
+   "volume": 0.55
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 10.754,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/thud.wav",
+   "start": 10.984,
+   "in": 0,
+   "out": 0.415,
+   "volume": 0.6
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/blip_sub.wav",
+   "start": 11.254,
+   "in": 0,
+   "out": 0.48,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/chime_complete.wav",
+   "start": 11.454,
+   "in": 0,
+   "out": 1.105,
+   "volume": 0.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_exit.wav",
+   "start": 13.124,
+   "in": 0,
+   "out": 0.298,
+   "volume": 0.55
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_open.wav",
+   "start": 13.454,
+   "in": 0,
+   "out": 1.793,
+   "volume": 0.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 14.004,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.35
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 14.454,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.35
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 14.904,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.35
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 15.354,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.35
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_drop.wav",
+   "start": 224.277,
+   "in": 0,
+   "out": 0.282,
+   "volume": 0.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 225.577,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 226.127,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 226.527,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 227.077,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 227.477,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 228.027,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 228.427,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 228.977,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 229.377,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 229.927,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/thud.wav",
+   "start": 230.877,
+   "in": 0,
+   "out": 0.415,
+   "volume": 0.9
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/chime_complete.wav",
+   "start": 231.127,
+   "in": 0,
+   "out": 1.105,
+   "volume": 0.6
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_exit.wav",
+   "start": 237.477,
+   "in": 0,
+   "out": 0.298,
+   "volume": 0.5
+  }
+ ],
+ "subs": [
+  {
+   "text": "228 files / 6.09 GB",
+   "start": 14.204,
+   "duration": 15.378,
+   "x": -560,
+   "y": -230,
+   "fontSize": 40,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.85,
+   "bgPadding": 18,
+   "outline": 0,
+   "color": "#eafffb",
+   "fadeIn": 0.25,
+   "fadeOut": 0.3
+  },
+  {
+   "text": "Unity 6 / HDRP / Mono",
+   "start": 14.654,
+   "duration": 14.928,
+   "x": 560,
+   "y": -230,
+   "fontSize": 40,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.85,
+   "bgPadding": 18,
+   "outline": 0,
+   "color": "#eafffb",
+   "fadeIn": 0.25,
+   "fadeOut": 0.3
+  },
+  {
+   "text": "two MCP runtimes",
+   "start": 15.104,
+   "duration": 14.478,
+   "x": -560,
+   "y": 60,
+   "fontSize": 40,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.85,
+   "bgPadding": 18,
+   "outline": 0,
+   "color": "#eafffb",
+   "fadeIn": 0.25,
+   "fadeOut": 0.3
+  },
+  {
+   "text": "73% is texture data",
+   "start": 15.554,
+   "duration": 14.028,
+   "x": 560,
+   "y": 60,
+   "fontSize": 40,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.85,
+   "bgPadding": 18,
+   "outline": 0,
+   "color": "#eafffb",
+   "fadeIn": 0.25,
+   "fadeOut": 0.3
+  },
+  {
+   "text": "This horror demo shipped with\ntwo AI agent runtimes inside it.",
+   "start": 0.0,
+   "duration": 4.434
+  },
+  {
+   "text": "Not one. Two. Plus a tokenizer,\nin a game about a haunted fort.",
+   "start": 4.684,
+   "duration": 5.27
+  },
+  {
+   "text": "Rudravati is a first-person supernatural horror set in the ruins of an Indian\nfort. You go looking for your brother. The fort has opinions about that.",
+   "start": 13.804,
+   "duration": 9.868
+  },
+  {
+   "text": "It's made by LeZit Games, who also publish it.\nEnglish and Hindi, both with full voice acting.",
+   "start": 23.922,
+   "duration": 5.61
+  },
+  {
+   "text": "The demo went up yesterday. It has no reviews yet,\nand single digits of players. This one is all build.",
+   "start": 35.782,
+   "duration": 6.707
+  },
+  {
+   "text": "Before the files, one thing the store won't tell you. Steam's\nown database still lists the parent game under a different name.",
+   "start": 42.739,
+   "duration": 7.517
+  },
+  {
+   "text": "It was Ratnavati, Curse of Bhangarh. Bhangarh Fort is a real place in Rajasthan, and Ratnavati is the princess\nin its legend. The store now says Rudravati, Curse of Bhankilla. Both names were changed to invented ones.",
+   "start": 50.506,
+   "duration": 15.066
+  },
+  {
+   "text": "The executable is still called RUDRAVATI. Why\nthey changed it, a manifest can't tell you.",
+   "start": 65.822,
+   "duration": 5.74
+  },
+  {
+   "text": "Now the build. Six point zero nine gigabytes,\ntwo hundred and twenty eight files.",
+   "start": 71.812,
+   "duration": 5.427
+  },
+  {
+   "text": "It's Unity, on the High Definition render pipeline,\nwith Unity 6's GPU resident drawer and ray tracing.",
+   "start": 77.489,
+   "duration": 7.36
+  },
+  {
+   "text": "And it's a Mono build, not IL2CPP. That matters here. On IL2CPP I have to recover\nthe package list from leftover filenames. On Mono the assemblies are just there.",
+   "start": 85.099,
+   "duration": 12.062
+  },
+  {
+   "text": "So for once this is the real list, not my reconstruction of one.\nA hundred and eighty two DLLs. And three of them stopped me.",
+   "start": 97.411,
+   "duration": 8.143
+  },
+  {
+   "text": "MCPForUnity dot Runtime. That's the Model Context Protocol\nbridge, the thing that lets an AI agent drive the Unity editor.",
+   "start": 105.804,
+   "duration": 8.614
+  },
+  {
+   "text": "Next to it, Unity dot AI dot MCP dot Runtime. That's Unity's\nown. Both are in the same build, from the same folder.",
+   "start": 114.668,
+   "duration": 9.215
+  },
+  {
+   "text": "Then Unity's Inference Engine, with a tokenization assembly beside it.\nA tokenizer is text model tooling. It isn't there to sharpen textures.",
+   "start": 124.133,
+   "duration": 8.3
+  },
+  {
+   "text": "And thirteen megabytes of DirectML,\nMicrosoft's GPU inference runtime.",
+   "start": 132.683,
+   "duration": 5.322
+  },
+  {
+   "text": "Here's what that does and doesn't mean. MCP is an editor tool. Finding it in a player build\ntells you it wasn't stripped out, not that the game is talking to an agent while you play.",
+   "start": 138.255,
+   "duration": 9.92
+  },
+  {
+   "text": "What it does tell you is that this game was built with an AI agent wired into the editor, and the\nwiring is still visible from outside. That's the first time I've been able to see it in a file list.",
+   "start": 148.425,
+   "duration": 9.972
+  },
+  {
+   "text": "Once you know nothing was stripped,\nthe rest of the list reads differently.",
+   "start": 158.647,
+   "duration": 3.886
+  },
+  {
+   "text": "Better Inspector and Better Mesh are Asset Store editor tools. Unity Recorder captures\nvideo in the editor. Six Timeline sample assemblies, and a documentation examples assembly.",
+   "start": 162.783,
+   "duration": 12.114
+  },
+  {
+   "text": "There are also two ASP dot NET web pages in there, one for Mono two point zero and one for\nfour point zero. Those ship with the stock Mono tree. Nobody put them there on purpose.",
+   "start": 175.147,
+   "duration": 11.827
+  },
+  {
+   "text": "Now the size, because it's\nthe number you can act on.",
+   "start": 187.224,
+   "duration": 3.285
+  },
+  {
+   "text": "Four point four three gigabytes of the six are resS files. That's Unity's\nraw texture and audio stream. Seventy three percent of the download.",
+   "start": 190.759,
+   "duration": 9.032
+  },
+  {
+   "text": "And Steam still finds forty percent to compress out of the finished\npackage. That's what an uncrunched texture set looks like from the outside.",
+   "start": 200.041,
+   "duration": 7.83
+  },
+  {
+   "text": "Reception, then. There isn't any. No\nreviews, a handful of players, one day old.",
+   "start": 208.121,
+   "duration": 5.871
+  },
+  {
+   "text": "So I'll say the honest thing instead. The trailer is very dark, and the demo is a\nsmall studio's first swing at a location every Indian ghost story already knows.",
+   "start": 214.242,
+   "duration": 9.685
+  },
+  {
+   "text": "Here's the whole\nteardown on one card.",
+   "start": 224.177,
+   "duration": 2.501
+  },
+  {
+   "text": "Unity 6 on HDRP, Mono, six gigabytes, two MCP\nruntimes, an inference engine and a tokenizer.",
+   "start": 226.928,
+   "duration": 7.699
+  },
+  {
+   "text": "Worth a dip, if you like slow first-person\nhorror and you can stand how dark it is.",
+   "start": 234.877,
+   "duration": 4.721
+  },
+  {
+   "text": "If you build in Unity, the thing to take from this is the strip list. Open your player build and search\nit for Recorder, for editor inspectors, for anything with MCP in the name. If it's here, it shipped.",
+   "start": 239.848,
+   "duration": 11.696
+  },
+  {
+   "text": "That's my read from the outside. If you worked on this and I got something wrong, say so\nand I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+   "start": 251.794,
+   "duration": 10.756
+  }
+ ],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "FX1"
+  },
+  {
+   "kind": "video",
+   "name": "FX2"
+  },
+  {
+   "kind": "video",
+   "name": "FX3"
+  },
+  {
+   "kind": "video",
+   "name": "FX4"
+  },
+  {
+   "kind": "video",
+   "name": "FX5"
+  },
+  {
+   "kind": "video",
+   "name": "FX6"
+  },
+  {
+   "kind": "video",
+   "name": "FX7"
+  },
+  {
+   "kind": "video",
+   "name": "BG"
+  },
+  {
+   "kind": "audio",
+   "name": "TRL"
+  }
+ ],
+ "total": 263.6
+}

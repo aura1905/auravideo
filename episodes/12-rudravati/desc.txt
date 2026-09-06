@@ -1,0 +1,40 @@
+Rudravati: Curse of Bhankilla — This horror demo shipped with two AI agent runtimes inside it.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5105660/
+▶ The full game: https://store.steampowered.com/app/4201310/
+
+── How they made it ──
+Engine     : Unity 6 / HDRP / Mono
+The Build  : 6.09 GB / 228 files
+In The Box : 2 MCP runtimes
+Also       : inference + tokenizer
+The Slip   : editor tools shipped
+Verdict    : Worth A Dip
+
+── The stack, if you want to use it ──
+Unity 6 / HDRP                       : https://unity.com/
+MCP for Unity                        : https://github.com/CoplayDev/unity-mcp
+Model Context Protocol               : https://modelcontextprotocol.io/
+Unity Inference Engine               : https://docs.unity3d.com/Packages/com.unity.ai.inference@latest
+DirectML                             : https://learn.microsoft.com/windows/ai/directml/
+Unity ProBuilder                     : https://unity.com/features/probuilder
+Cinemachine                          : https://unity.com/unity/features/editor/art-and-design/cinemachine
+Nature Renderer (Visual Design Cafe) : https://www.visualdesigncafe.com/nature-renderer
+The demo on Steam                    : https://store.steampowered.com/app/5105660/
+
+── Chapters ──
+0:00 Two AI runtimes in a horror demo
+0:13 What it is, and the name that changed
+1:12 Opening the build
+3:28 There is no reception yet
+3:44 The spec sheet + verdict
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to LeZit Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

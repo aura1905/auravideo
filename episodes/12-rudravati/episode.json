@@ -1,0 +1,97 @@
+{
+ "title_en": "Rudravati: Curse of Bhankilla",
+ "demo_appid": 5105660,
+ "full_appid": 4201310,
+ "developer": "LeZit Games",
+ "workdir": "episodes/12-rudravati",
+ "script_timed": "episodes/12-rudravati/script_tts_timed.json",
+ "intro_bg": {
+  "file": "t0.mp4",
+  "in": 87.0,
+  "out": 90.6,
+  "scale": 1.0
+ },
+ "labels": [
+  "228 files / 6.09 GB",
+  "Unity 6 / HDRP / Mono",
+  "two MCP runtimes",
+  "73% is texture data"
+ ],
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 2,
+ "score_line_id": "27",
+ "specs": [
+  ["ENGINE", "Unity 6 / HDRP / Mono"],
+  ["THE BUILD", "6.09 GB / 228 files"],
+  ["IN THE BOX", "2 MCP runtimes"],
+  ["ALSO", "inference + tokenizer"],
+  ["THE SLIP", "editor tools shipped"]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "thumbnail": {
+  "bg": "ss03.jpg",
+  "line1": "Rudravati",
+  "line2": "TWO AI AGENT RUNTIMES. SHIPPED.",
+  "tag": "UNITY 6 TEARDOWN",
+  "focus": "center",
+  "text_side": "left"
+ },
+ "chapters": {
+  "hook": "Two AI runtimes in a horror demo",
+  "intro": "What it is, and the name that changed",
+  "made": "Opening the build",
+  "review": "There is no reception yet",
+  "score": "The spec sheet + verdict"
+ },
+ "stack": [
+  ["Unity 6 / HDRP", "https://unity.com/"],
+  ["MCP for Unity", "https://github.com/CoplayDev/unity-mcp"],
+  ["Model Context Protocol", "https://modelcontextprotocol.io/"],
+  ["Unity Inference Engine", "https://docs.unity3d.com/Packages/com.unity.ai.inference@latest"],
+  ["DirectML", "https://learn.microsoft.com/windows/ai/directml/"],
+  ["Unity ProBuilder", "https://unity.com/features/probuilder"],
+  ["Cinemachine", "https://unity.com/unity/features/editor/art-and-design/cinemachine"],
+  ["Nature Renderer (Visual Design Cafe)", "https://www.visualdesigncafe.com/nature-renderer"],
+  ["The demo on Steam", "https://store.steampowered.com/app/5105660/"]
+ ],
+ "ledger": {
+  "team": "LeZit Games (self-published)",
+  "engine": "**Unity 6 / HDRP**",
+  "pipeline": "HDRP + GPU Resident Drawer",
+  "backend": "Mono (Assembly-CSharp.dll)",
+  "build": "6.09 GiB",
+  "files": 228,
+  "scenes": 0,
+  "third_party": "DLL 182개 (Unity 118 / System·Mono 33 / 기타 31)",
+  "approach": "AI 에이전트를 에디터에 붙여 개발 — MCP 런타임 2종이 빌드에 남음",
+  "reception": "리뷰 없음 / 접속 한 자릿수",
+  "packages": [
+   "MCP for Unity",
+   "Unity AI MCP Runtime",
+   "Unity Inference Engine",
+   "Unity Inference Engine Tokenization",
+   "DirectML",
+   "Cinemachine",
+   "ProBuilder",
+   "Visual Scripting",
+   "Nature Renderer",
+   "TextMeshPro",
+   "Newtonsoft.Json",
+   "Unity Recorder"
+  ],
+  "ai_disclosure": null
+ },
+ "youtube": {
+  "title": "Rudravati — a horror demo that shipped two AI agent runtimes in the build",
+  "tags": "Rudravati,Curse of Bhankilla,Bhangarh,LeZit Games,steam demo,unity 6,hdrp,mono,mcp,model context protocol,unity mcp,directml,inference engine,game teardown,how games are made,demo dip,indian horror,horror game",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "visual_scale": 1.0
+}

@@ -1,0 +1,302 @@
+[
+ {
+  "id": "01",
+  "sec": "hook",
+  "text": "This horror demo shipped with two AI agent runtimes inside it.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 63.0
+  }
+ },
+ {
+  "id": "02",
+  "sec": "hook",
+  "text": "Not one. Two. Plus a tokenizer, in a game about a haunted fort.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "03",
+  "sec": "intro",
+  "text": "Rudravati is a first-person supernatural horror set in the ruins of an Indian fort. You go looking for your brother. The fort has opinions about that.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.5
+  }
+ },
+ {
+  "id": "04",
+  "sec": "intro",
+  "text": "It's made by LeZit Games, who also publish it. English and Hindi, both with full voice acting.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 6.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 60.5
+  }
+ },
+ {
+  "id": "05",
+  "sec": "intro",
+  "text": "The demo went up yesterday. It has no reviews yet, and single digits of players. This one is all build.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 44.0
+  }
+ },
+ {
+  "id": "06",
+  "sec": "intro",
+  "text": "Before the files, one thing the store won't tell you. Steam's own database still lists the parent game under a different name.",
+  "vis": {
+   "type": "image",
+   "file": "ev_rename.png"
+  }
+ },
+ {
+  "id": "07",
+  "sec": "intro",
+  "text": "It was Ratnavati, Curse of Bhangarh. Bhangarh Fort is a real place in Rajasthan, and Ratnavati is the princess in its legend. The store now says Rudravati, Curse of Bhankilla. Both names were changed to invented ones.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  }
+ },
+ {
+  "id": "08",
+  "sec": "intro",
+  "text": "The executable is still called RUDRAVATI. Why they changed it, a manifest can't tell you.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 48.5
+  }
+ },
+ {
+  "id": "09",
+  "sec": "made",
+  "text": "Now the build. Six point zero nine gigabytes, two hundred and twenty eight files.",
+  "vis": {
+   "type": "image",
+   "file": "ev_engine.png"
+  }
+ },
+ {
+  "id": "10",
+  "sec": "made",
+  "text": "It's Unity, on the High Definition render pipeline, with Unity 6's GPU resident drawer and ray tracing.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "11",
+  "sec": "made",
+  "text": "And it's a Mono build, not IL2CPP. That matters here. On IL2CPP I have to recover the package list from leftover filenames. On Mono the assemblies are just there.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 50.5
+  }
+ },
+ {
+  "id": "12",
+  "sec": "made",
+  "text": "So for once this is the real list, not my reconstruction of one. A hundred and eighty two DLLs. And three of them stopped me.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "13",
+  "sec": "made",
+  "text": "MCPForUnity dot Runtime. That's the Model Context Protocol bridge, the thing that lets an AI agent drive the Unity editor.",
+  "vis": {
+   "type": "image",
+   "file": "ev_mcp.png"
+  }
+ },
+ {
+  "id": "14",
+  "sec": "made",
+  "text": "Next to it, Unity dot AI dot MCP dot Runtime. That's Unity's own. Both are in the same build, from the same folder.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 41.0
+  }
+ },
+ {
+  "id": "15",
+  "sec": "made",
+  "text": "Then Unity's Inference Engine, with a tokenization assembly beside it. A tokenizer is text model tooling. It isn't there to sharpen textures.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 66.0
+  }
+ },
+ {
+  "id": "16",
+  "sec": "made",
+  "text": "And thirteen megabytes of DirectML, Microsoft's GPU inference runtime.",
+  "vis": {
+   "type": "image",
+   "file": "ev_ai.png"
+  }
+ },
+ {
+  "id": "17",
+  "sec": "made",
+  "text": "Here's what that does and doesn't mean. MCP is an editor tool. Finding it in a player build tells you it wasn't stripped out, not that the game is talking to an agent while you play.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "18",
+  "sec": "made",
+  "text": "What it does tell you is that this game was built with an AI agent wired into the editor, and the wiring is still visible from outside. That's the first time I've been able to see it in a file list.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 51.0
+  }
+ },
+ {
+  "id": "19",
+  "sec": "made",
+  "text": "Once you know nothing was stripped, the rest of the list reads differently.",
+  "vis": {
+   "type": "image",
+   "file": "ev_editor.png"
+  }
+ },
+ {
+  "id": "20",
+  "sec": "made",
+  "text": "Better Inspector and Better Mesh are Asset Store editor tools. Unity Recorder captures video in the editor. Six Timeline sample assemblies, and a documentation examples assembly.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 70.0
+  }
+ },
+ {
+  "id": "21",
+  "sec": "made",
+  "text": "There are also two ASP dot NET web pages in there, one for Mono two point zero and one for four point zero. Those ship with the stock Mono tree. Nobody put them there on purpose.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 58.0
+  }
+ },
+ {
+  "id": "22",
+  "sec": "made",
+  "text": "Now the size, because it's the number you can act on.",
+  "vis": {
+   "type": "image",
+   "file": "ev_size.png"
+  }
+ },
+ {
+  "id": "23",
+  "sec": "made",
+  "text": "Four point four three gigabytes of the six are resS files. That's Unity's raw texture and audio stream. Seventy three percent of the download.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "24",
+  "sec": "made",
+  "text": "And Steam still finds forty percent to compress out of the finished package. That's what an uncrunched texture set looks like from the outside.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 56.5
+  }
+ },
+ {
+  "id": "25",
+  "sec": "review",
+  "text": "Reception, then. There isn't any. No reviews, a handful of players, one day old.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 38.5
+  }
+ },
+ {
+  "id": "26",
+  "sec": "review",
+  "text": "So I'll say the honest thing instead. The trailer is very dark, and the demo is a small studio's first swing at a location every Indian ghost story already knows.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "27",
+  "sec": "score",
+  "text": "Here's the whole teardown on one card.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 34.2
+  }
+ },
+ {
+  "id": "28",
+  "sec": "score",
+  "text": "Unity 6 on HDRP, Mono, six gigabytes, two MCP runtimes, an inference engine and a tokenizer.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 54.0
+  }
+ },
+ {
+  "id": "29",
+  "sec": "score",
+  "text": "Worth a dip, if you like slow first-person horror and you can stand how dark it is.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 52.5
+  }
+ },
+ {
+  "id": "30",
+  "sec": "score",
+  "text": "If you build in Unity, the thing to take from this is the strip list. Open your player build and search it for Recorder, for editor inspectors, for anything with MCP in the name. If it's here, it shipped.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 62.5
+  }
+ },
+ {
+  "id": "31",
+  "sec": "score",
+  "text": "That's my read from the outside. If you worked on this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 45.5
+  }
+ }
+]
