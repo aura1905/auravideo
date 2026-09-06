@@ -141,6 +141,15 @@ python scripts/motion/bridge_build.py --file C:/tmp/agent.json --workdir episode
 python scripts/agent_client.py export '{"outPath":"episodes/<slug>/intro_only.mp4","rangeStart":0,"rangeEnd":6.5}' --file C:/tmp/agent.json
 python scripts/agent_client.py export '{"outPath":"episodes/<slug>/final.mp4","encoder":"libx264","quality":"standard"}' --file C:/tmp/agent.json
 ```
+- **핸드셰이크 파일이 안 생기면 앱을 의심하기 전에 실행 파일이 무슨 이름을 읽는지부터 본다.**
+  `grep -a -o -E "(AURAVIDEO|NABIVIDEO)_AGENT(_FILE)?" src-tauri/target/debug/*.exe`.
+  2026-09-06에 하루치 작업이 여기서 막혔다: 9월 4일 커밋 e1a07f5가 환경 변수를 `AURAVIDEO_*`로
+  바꿨는데 디버그 빌드는 9월 3일 것이라 옛 이름 `NABIVIDEO_*`만 알았고, 앱은 창까지 멀쩡히 뜨면서
+  브리지만 조용히 꺼져 있었다. 소스를 바꿨으면 `npx @tauri-apps/cli build --debug --no-bundle`로
+  실행 파일도 같이 갱신한다. (덤으로 확인한 것: Vite가 죽어 있어도, WebView2 프로필의 IndexedDB가
+  14GB여도 앱은 뜬다. 그건 원인이 아니었다.)
+- `export`의 `outPath`는 **절대 경로**로 준다(상대 경로는 ffmpeg가 "No such file"로 거부한다).
+  긴 export는 `agent_client.py --timeout 3000` — 기본 120초를 넘기면 클라이언트만 끊기고 앱은 계속 렌더한다.
 - 인트로·점수 구간만 먼저 range export해서 프레임을 뽑아 본 뒤 전체를 돌린다(1080p 3.5분 ≈ 10분).
 - 검증은 export된 파일에서 한다. **프레임 격자만 보고 통과시키지 말 것** — 한 장짜리 프레임으로는
   "움직이는가"를 볼 수 없어서, 05~07화가 4~8초 정지화면으로 시작하는 채로 검수를 통과했다.
