@@ -1,0 +1,93 @@
+{
+ "title_en": "COMPARTMENT 666: ANOMALY EXPRESS",
+ "demo_appid": 5016400,
+ "full_appid": 5016110,
+ "developer": "ShepherdWorks",
+ "workdir": "episodes/13-compartment-666",
+ "script_timed": "episodes/13-compartment-666/script_tts_timed.json",
+ "intro_bg": {
+  "file": "t0.mp4",
+  "in": 30.2,
+  "out": 33.8,
+  "scale": 1.0
+ },
+ "labels": [
+  "36 files / 1.48 GB",
+  "Unreal, default exe name",
+  "Python 3.11 in the build",
+  "DirectML + ONNX"
+ ],
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 2,
+ "score_line_id": "31",
+ "specs": [
+  ["ENGINE", "Unreal Engine"],
+  ["THE BUILD", "1.48 GB / 36 files"],
+  ["THE EXE", "UnrealGame — the default"],
+  ["LEFT IN", "debug layer + Python"],
+  ["ALSO", "DirectML + ONNX"]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "thumbnail": {
+  "bg": "ss00.jpg",
+  "line1": "Compartment 666",
+  "line2": "PYTHON. IN A HORROR GAME.",
+  "tag": "UNREAL TEARDOWN",
+  "focus": "center",
+  "text_side": "left"
+ },
+ "chapters": {
+  "hook": "Python in a horror demo",
+  "intro": "What an anomaly hunt actually is",
+  "made": "Opening the build",
+  "review": "There is no reception yet",
+  "score": "The spec sheet + verdict"
+ },
+ "stack": [
+  ["Unreal Engine", "https://www.unrealengine.com/"],
+  ["Unreal Python scripting (editor)", "https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python"],
+  ["Unreal NNE (Neural Network Engine)", "https://dev.epicgames.com/documentation/en-us/unreal-engine/neural-network-engine-nne-in-unreal-engine"],
+  ["ONNX Runtime", "https://onnxruntime.ai/"],
+  ["DirectML", "https://learn.microsoft.com/windows/ai/directml/"],
+  ["Epic Online Services", "https://dev.epicgames.com/en-US/services"],
+  ["NVIDIA Nsight Aftermath", "https://developer.nvidia.com/nsight-aftermath"],
+  ["The demo on Steam", "https://store.steampowered.com/app/5016400/"]
+ ],
+ "ledger": {
+  "team": "ShepherdWorks (self-published)",
+  "engine": "**Unreal Engine**",
+  "pipeline": "IoStore (.ucas/.utoc), 1 pak",
+  "backend": "C++ (140 MiB exe)",
+  "build": "1.48 GiB",
+  "files": 36,
+  "scenes": 0,
+  "third_party": "DLL 23개 (Boost 9 + EOS + ML 2 + 엔진 서드파티)",
+  "approach": "이상현상 찾기(Exit 8 계열), 1900년대 기차 · 라디오 탐지 · 목숨 3개",
+  "reception": "리뷰 없음 / 당일 공개",
+  "packages": [
+   "Boost (9 libs incl. boost_python311)",
+   "DirectML",
+   "ONNX Runtime",
+   "Epic Online Services",
+   "MsQuic",
+   "NVIDIA Aftermath",
+   "oneTBB",
+   "Ogg / Vorbis",
+   "XAudio2"
+  ],
+  "ai_disclosure": null
+ },
+ "youtube": {
+  "title": "COMPARTMENT 666 — an anomaly-hunt horror demo that shipped Python and an ML runtime",
+  "tags": "COMPARTMENT 666,Anomaly Express,ShepherdWorks,steam demo,unreal engine,anomaly hunting,exit 8,horror game,liminal horror,game teardown,how games are made,demo dip,directml,onnx,python",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "visual_scale": 1.0
+}

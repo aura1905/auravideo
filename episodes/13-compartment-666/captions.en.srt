@@ -1,0 +1,173 @@
+1
+00:00:00,000 --> 00:00:04,904
+This horror demo shipped with Python inside it.
+And a machine learning runtime.
+
+2
+00:00:05,154 --> 00:00:08,151
+In a game about noticing
+when something has changed.
+
+3
+00:00:12,001 --> 00:00:15,416
+Let's do the game first,
+because this one is worth explaining.
+
+4
+00:00:15,666 --> 00:00:24,384
+COMPARTMENT 666 is an anomaly hunt. You wake up on a train with no memory of boarding it,
+and the only way forward is through the carriages.
+
+5
+00:00:24,634 --> 00:00:31,915
+You walk into a compartment. You look at it.
+Then you decide one thing: is this normal, or has something changed.
+
+6
+00:00:32,165 --> 00:00:39,760
+Say normal when it's normal, and the train moves on.
+Say it wrong, either way, and you lose a life. You get three.
+
+7
+00:00:40,010 --> 00:00:49,616
+If you've played Exit 8, you know the shape of this. It's the loop that game turned into a genre:
+same room, again and again, and the only skill is noticing.
+
+8
+00:00:49,866 --> 00:00:57,696
+What this one adds is a radio. A little handheld device that picks up anomalies you can't see,
+and you don't get to use it forever.
+
+9
+00:01:03,946 --> 00:01:14,388
+The dressing is an early 1900s express. Red velvet, oil paintings, brass.
+Which is a smart choice, because a period carriage is full of objects you don't have a memory for.
+
+10
+00:01:14,638 --> 00:01:21,214
+And the anomalies are graded easy, medium and hard,
+with a different death animation waiting when you get one wrong.
+
+11
+00:01:21,464 --> 00:01:29,529
+It went up on Steam today. Single player, fifteen languages,
+no reviews yet. Which means the only thing I can actually check is the build.
+
+12
+00:01:29,779 --> 00:01:34,161
+So. One point four eight gigabytes,
+thirty six files.
+
+13
+00:01:34,411 --> 00:01:41,719
+Unreal Engine, and almost all of it is one container:
+one point one six gigabytes in a single ucas.
+
+14
+00:01:41,969 --> 00:01:46,090
+Then I looked at the executable,
+and it isn't called what you'd expect.
+
+15
+00:01:46,340 --> 00:01:56,861
+The launcher is COMPARTMENT_666 dot exe. But the actual binary,
+the hundred and forty megabyte one, is called UnrealGame-Win64-Shipping.
+
+16
+00:01:57,111 --> 00:02:03,034
+That's Unreal's default.
+Every other Unreal demo I've opened renamed it. This project never did.
+
+17
+00:02:03,284 --> 00:02:07,170
+Once you've seen that,
+the rest of the list reads a certain way.
+
+18
+00:02:07,420 --> 00:02:18,123
+d3d12SDKLayers.dll. Five and a half megabytes.
+That's the DirectX 12 debug layer, and it exists to help a developer find bugs.
+
+19
+00:02:18,373 --> 00:02:25,733
+Three episodes ago Square Enix shipped that exact file.
+Same file, same reason: nobody tightened the shipping config.
+
+20
+00:02:25,983 --> 00:02:30,600
+Then nine Boost libraries.
+And one of them is boost python three eleven.
+
+21
+00:02:30,850 --> 00:02:39,333
+Unreal has a Python plugin. It's for the editor: build scripts,
+asset pipelines, tools. It has no job in the copy a player downloads.
+
+22
+00:02:39,583 --> 00:02:43,103
+It's here because the plugin was
+never switched off before packaging.
+
+23
+00:02:43,353 --> 00:02:50,452
+And then the two that made me stop. DirectML,
+thirteen megabytes. ONNX Runtime, thirteen more.
+
+24
+00:02:50,702 --> 00:02:56,860
+That's a machine learning inference stack,
+in a game whose whole mechanic is spotting a difference between two rooms.
+
+25
+00:02:57,110 --> 00:03:07,343
+I want that to be something. It probably isn't. Unreal's neural network plugin drags both in,
+and this is the second demo I've opened where they're present with nothing to point at.
+
+26
+00:03:07,593 --> 00:03:10,721
+If you made this and I'm wrong,
+the comments are right there.
+
+27
+00:03:10,971 --> 00:03:18,017
+One more. Seventeen megabytes of Epic Online Services,
+in a game the store lists as single player only.
+
+28
+00:03:18,267 --> 00:03:23,406
+Achievements, telemetry, a plan for later.
+A file list can't say which.
+
+29
+00:03:23,656 --> 00:03:29,919
+Reception. There isn't any. It went up this morning,
+no reviews, no player numbers worth reading.
+
+30
+00:03:30,169 --> 00:03:39,906
+So here's the honest read instead. The idea is proven, the train is a good room to hide things in,
+and this build is a first pass that shipped exactly as it left the editor.
+
+31
+00:03:40,156 --> 00:03:42,553
+Here's the whole teardown on one card.
+
+32
+00:03:42,803 --> 00:03:49,327
+Unreal, thirty six files, the default executable name,
+a debug layer, Python, and an ML runtime.
+
+33
+00:03:49,577 --> 00:03:56,885
+Worth a dip. It's free, it's a genre that works,
+and finding the anomaly in a red velvet carriage is a good twenty minutes.
+
+34
+00:03:57,135 --> 00:04:07,786
+If you ship in Unreal, take the packaging list from this one. Rename the target,
+turn off the Python plugin, and check for SDKLayers. Three checkboxes, ninety megabytes.
+
+35
+00:04:08,036 --> 00:04:17,904
+That's my read from the outside. If you worked on this and I got something wrong,
+say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.

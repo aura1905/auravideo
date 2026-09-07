@@ -121,5 +121,14 @@
  "doorstop_config.ini": "doorstop config dot I N I",
  "Doorstop": "Doorstop",
  "BepInEx": "Bep-in-ex",
- ".ini": " dot I N I"
+ ".ini": " dot I N I",
+ "boost_python311-mt-x64.dll": "boost python three eleven",
+ "onnxruntime.dll": "onyx runtime dot D L L",
+ "ONNX Runtime": "onyx Runtime",
+ "UnrealGame-Win64-Shipping": "Unreal Game Win sixty-four Shipping",
+ "COMPARTMENT_666.exe": "Compartment six six six dot exe",
+ "COMPARTMENT 666": "Compartment six six six",
+ "Exit 8": "Exit eight",
+ "EOS": "E O S",
+ ".ucas": " you-cas"
 }

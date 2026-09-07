@@ -1,0 +1,332 @@
+[
+ {
+  "id": "01",
+  "sec": "hook",
+  "text": "This horror demo shipped with Python inside it. And a machine learning runtime.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.5
+  }
+ },
+ {
+  "id": "02",
+  "sec": "hook",
+  "text": "In a game about noticing when something has changed.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "03",
+  "sec": "intro",
+  "text": "Let's do the game first, because this one is worth explaining.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.5
+  }
+ },
+ {
+  "id": "04",
+  "sec": "intro",
+  "text": "COMPARTMENT 666 is an anomaly hunt. You wake up on a train with no memory of boarding it, and the only way forward is through the carriages.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "05",
+  "sec": "intro",
+  "text": "You walk into a compartment. You look at it. Then you decide one thing: is this normal, or has something changed.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 7.5
+  }
+ },
+ {
+  "id": "06",
+  "sec": "intro",
+  "text": "Say normal when it's normal, and the train moves on. Say it wrong, either way, and you lose a life. You get three.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "07",
+  "sec": "intro",
+  "text": "If you've played Exit 8, you know the shape of this. It's the loop that game turned into a genre: same room, again and again, and the only skill is noticing.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 20.5
+  }
+ },
+ {
+  "id": "08",
+  "sec": "intro",
+  "text": "What this one adds is a radio. A little handheld device that picks up anomalies you can't see, and you don't get to use it forever.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 14.0
+  }
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 6.0,
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "09",
+  "sec": "intro",
+  "text": "The dressing is an early 1900s express. Red velvet, oil paintings, brass. Which is a smart choice, because a period carriage is full of objects you don't have a memory for.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 20.5
+  }
+ },
+ {
+  "id": "10",
+  "sec": "intro",
+  "text": "And the anomalies are graded easy, medium and hard, with a different death animation waiting when you get one wrong.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  }
+ },
+ {
+  "id": "11",
+  "sec": "intro",
+  "text": "It went up on Steam today. Single player, fifteen languages, no reviews yet. Which means the only thing I can actually check is the build.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  }
+ },
+ {
+  "id": "12",
+  "sec": "made",
+  "text": "So. One point four eight gigabytes, thirty six files.",
+  "vis": {
+   "type": "image",
+   "file": "ev_engine.png"
+  }
+ },
+ {
+  "id": "13",
+  "sec": "made",
+  "text": "Unreal Engine, and almost all of it is one container: one point one six gigabytes in a single ucas.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "14",
+  "sec": "made",
+  "text": "Then I looked at the executable, and it isn't called what you'd expect.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.5
+  }
+ },
+ {
+  "id": "15",
+  "sec": "made",
+  "text": "The launcher is COMPARTMENT_666 dot exe. But the actual binary, the hundred and forty megabyte one, is called UnrealGame-Win64-Shipping.",
+  "vis": {
+   "type": "image",
+   "file": "ev_name.png"
+  }
+ },
+ {
+  "id": "16",
+  "sec": "made",
+  "text": "That's Unreal's default. Every other Unreal demo I've opened renamed it. This project never did.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  }
+ },
+ {
+  "id": "17",
+  "sec": "made",
+  "text": "Once you've seen that, the rest of the list reads a certain way.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 8.5
+  }
+ },
+ {
+  "id": "18",
+  "sec": "made",
+  "text": "d3d12SDKLayers.dll. Five and a half megabytes. That's the DirectX 12 debug layer, and it exists to help a developer find bugs.",
+  "vis": {
+   "type": "image",
+   "file": "ev_slip.png"
+  }
+ },
+ {
+  "id": "19",
+  "sec": "made",
+  "text": "Three episodes ago Square Enix shipped that exact file. Same file, same reason: nobody tightened the shipping config.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  }
+ },
+ {
+  "id": "20",
+  "sec": "made",
+  "text": "Then nine Boost libraries. And one of them is boost python three eleven.",
+  "vis": {
+   "type": "image",
+   "file": "ev_python.png"
+  }
+ },
+ {
+  "id": "21",
+  "sec": "made",
+  "text": "Unreal has a Python plugin. It's for the editor: build scripts, asset pipelines, tools. It has no job in the copy a player downloads.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "22",
+  "sec": "made",
+  "text": "It's here because the plugin was never switched off before packaging.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 27.5
+  }
+ },
+ {
+  "id": "23",
+  "sec": "made",
+  "text": "And then the two that made me stop. DirectML, thirteen megabytes. ONNX Runtime, thirteen more.",
+  "vis": {
+   "type": "image",
+   "file": "ev_ml.png"
+  }
+ },
+ {
+  "id": "24",
+  "sec": "made",
+  "text": "That's a machine learning inference stack, in a game whose whole mechanic is spotting a difference between two rooms.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "25",
+  "sec": "made",
+  "text": "I want that to be something. It probably isn't. Unreal's neural network plugin drags both in, and this is the second demo I've opened where they're present with nothing to point at.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 15.5
+  }
+ },
+ {
+  "id": "26",
+  "sec": "made",
+  "text": "If you made this and I'm wrong, the comments are right there.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "27",
+  "sec": "made",
+  "text": "One more. Seventeen megabytes of Epic Online Services, in a game the store lists as single player only.",
+  "vis": {
+   "type": "image",
+   "file": "ev_eos.png"
+  }
+ },
+ {
+  "id": "28",
+  "sec": "made",
+  "text": "Achievements, telemetry, a plan for later. A file list can't say which.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.5
+  }
+ },
+ {
+  "id": "29",
+  "sec": "review",
+  "text": "Reception. There isn't any. It went up this morning, no reviews, no player numbers worth reading.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "30",
+  "sec": "review",
+  "text": "So here's the honest read instead. The idea is proven, the train is a good room to hide things in, and this build is a first pass that shipped exactly as it left the editor.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "31",
+  "sec": "score",
+  "text": "Here's the whole teardown on one card.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 31.0
+  }
+ },
+ {
+  "id": "32",
+  "sec": "score",
+  "text": "Unreal, thirty six files, the default executable name, a debug layer, Python, and an ML runtime.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  }
+ },
+ {
+  "id": "33",
+  "sec": "score",
+  "text": "Worth a dip. It's free, it's a genre that works, and finding the anomaly in a red velvet carriage is a good twenty minutes.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.5
+  }
+ },
+ {
+  "id": "34",
+  "sec": "score",
+  "text": "If you ship in Unreal, take the packaging list from this one. Rename the target, turn off the Python plugin, and check for SDKLayers. Three checkboxes, ninety megabytes.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "35",
+  "sec": "score",
+  "text": "That's my read from the outside. If you worked on this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ }
+]

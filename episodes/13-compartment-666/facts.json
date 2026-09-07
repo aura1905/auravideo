@@ -1,0 +1,33 @@
+{
+ "demo_appid": 5016400,
+ "full_appid": 5016110,
+ "name": "COMPARTMENT 666 : ANOMALY EXPRESS",
+ "developers": [
+  "ShepherdWorks"
+ ],
+ "publishers": [
+  "ShepherdWorks"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Adventure"
+ ],
+ "languages": "English, French, Italian, German, Spanish - Spain, Arabic, Simplified Chinese, Portuguese - Brazil, Japanese, Korean, Polish, Russian, Turkish, Ukrainian, Czech",
+ "website": null,
+ "short": "Inspect every compartment, identify anomalies, and survive a mysterious train where every mistake brings you closer to death. Reach the conductor and uncover the truth behind Compartment 666.",
+ "about": "  Every compartment hides a secret. Every decision brings you closer to the truth.    You wake up aboard a mysterious train with no memory of how you got there. The only way forward is to carefully inspect each compartment and decide whether it is normal or affected by an anomaly.  Observe your surroundings, trust your instincts, and don't overlook the smallest details. A missing suitcase, an unfamiliar silhouette, or a subtle change in the environment could mean the difference between survival and failure.  But be careful...  Not every anomaly remains still.       FEATURES    🚆 Explore a mysterious train inspired by the early 1900s.             👁️ Find and identify dozens of unique anomalies.              📻 Use your limited radio device to detect hidden anomalies.              ❤️ Three lives—every mistake brings you closer to death.  💀 Multiple unique death sequences.  🔍 Increasing difficulty with easy, medium, and hard anomalies.  🚪 Reach the final compartment and uncover the truth behind the journey.                Will you reach the conductor... or become another passenger lost forever?  ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10 (64-bit)    Processor:  Intel Core i5-4460 / AMD FX-6300    Memory:  8 GB RAM    Graphics:  NVIDIA GeForce GTX 960 / AMD Radeon R9 280 (4 GB VRAM)    DirectX:  Version 12    Storage:  8 GB available space  ",
+ "movies": [
+  {
+   "id": 257391076,
+   "name": "Gameplay"
+  }
+ ],
+ "screenshots": 8,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}
