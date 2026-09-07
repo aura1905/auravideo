@@ -165,6 +165,21 @@ AI 티가 나는 순간 채널은 끝난다. 개별 단어가 아니라 **리듬
   전용 TTS 폴더는 `tts_short`.
 - 업로드 시각은 롱폼 사이에 낀다(§8).
 
+### 데모가 언제 올라왔는지 말한다 (2026-09-06, 사용자)
+
+*"언제 올라간 데모다라는 정보도 보여주면 좋지."*
+
+"최근 데모"가 채널 정체성인데 영상에도 설명에도 그게 없었다. 신선도는 시청자에게
+**"아직 늦지 않았다"**는 신호다 — 이미 다들 본 게임이 아니라 지금 받으면 초기 플레이어가
+된다는 뜻이고, 데모는 기간 한정인 경우가 많아 실제로 행동을 만든다.
+
+- **설명문**에 한 줄: `▶ Demo went up on Steam: 2 September 2026 — four days old when this was made.`
+- **나레이션 소개 구간**에 붙인다: "It went up four days ago and 219 people are in it right now."
+  동시접속과 같이 말하면 한 문장에서 신선도와 수요가 둘 다 선다.
+- 날짜는 **스토어 API가 아니라 SteamDB의 데모 appid 등록 시각**을 쓴다. 본편이 미출시면
+  스토어 API는 데모 출시일을 `To be announced` / `coming_soon: true`로 준다 — s03(Frontier
+  Tale)이 실제로 그랬고, 그걸 믿으면 멀쩡한 신규 데모를 미출시로 걸러낸다.
+
 ### 쇼츠는 조회를 만들지만, 구독은 따로 벌어야 한다
 
 동료 채널 `@SamsPlaySift` 실측(2026-09-04): 영상 9개, 쇼츠 조회 156~935(평균 약 350),
@@ -288,6 +303,29 @@ Pocket Cultivation — one dev, four months, and a folder of AI art
 Sephiria — how a two-person team faked a 3D city in Godot
 ```
 
+### 게임 이름은 반드시 제목에 들어간다 (2026-09-06, 사용자)
+
+*"게임 제목이랑 영상 제목이랑 다른데?"*
+
+쇼츠 제목을 후크만으로 쓰다가 게임 이름이 통째로 빠졌다. 공개된 쇼츠 9편 중 4편이
+그랬다 — `Players think this Steam demo is a crypto miner. It isn't.`(Nomad Drive),
+`One dev. 858 KB of code.`(Casualties: Unknown), `A 16.9 GB Steam demo from three
+people`(Expedition), `Nobody quit this Steam demo in under 10 minutes`(Guildrun).
+
+**두 가지를 동시에 잃는다.** 그 게임을 검색한 사람에게 안 걸리고(롱폼이 몇 주에 걸쳐
+쌓는 조회가 바로 그 검색이다), 쇼츠를 본 사람이 게임을 찾아갈 단서가 없다 — 썸네일과
+오프닝 카드에서도 게임 이름을 뺐다면 영상 어디에도 없는 셈이 된다.
+
+**규칙: 제목에는 검색어(엔진·도구·숫자)와 게임 정식 명칭이 둘 다 들어간다.** 순서는
+후크가 앞, 게임 이름이 뒤여도 된다. 빠지는 것만 안 된다.
+
+```
+전:  Unity names a folder 'do not ship it'. This 2.2 GB Steam demo shipped it.
+후:  Unity named this folder 'do not ship it'. Frontier Tale shipped it — 1.6 of 2.2 GB
+```
+
+업로드 전 점검: 제목 문자열에 `episode_short.json`의 `title_en`이 들어 있는가.
+
 ### 검색되는 단어를 제목 앞에 — 경쟁 채널에서 배운 것 (2026-09-05)
 
 **Letta Corporation** (17.7천 구독, 2022년 개설, 1,120편, 누적 613만) 롱폼 106편을 재봤다.
@@ -370,8 +408,23 @@ The trick : ...
 ### 태그
 랭킹 영향은 작지만 오타·원어명 흡수에 유효하다. 게임명 영문/원어/로마자, 엔진명, 장르, `steam demo`, `indie dev`, `ai game art`, `solo dev`.
 
-### 재생목록
-`Made by one person` / `Made with AI` / `Engine teardowns`. 국가별 분류는 만들지 않는다.
+### 재생목록 (2026-09-07 생성)
+
+**롱폼은 업로드할 때 `--playlist`로 반드시 하나 이상 넣는다.** 재생목록은 다음 편을 자동으로
+이어 붙여 세션 시청 시간을 늘리고, 목록 자체가 검색에 노출되며, 흩어진 게임 리뷰가 아니라
+"채널이 반복해서 주는 것"으로 보이게 한다 — 구독이 거기서 온다([[lesson-sams-playsift]]).
+국가별 분류는 만들지 않는다.
+
+| ID | 이름 | 무엇을 넣나 |
+|---|---|---|
+| `PLDP0qAKsKK6I` | Steam demo teardowns — every episode | **모든 롱폼.** 공개 순서대로 |
+| `PLQ7QK9lUYPt4` | Unity teardowns — what's actually in the build | 유니티 편 |
+| `PLJBPrWihrPNU` | Unreal Engine teardowns | 언리얼 편 |
+| `PLEBgGo9W3Prk` | AI in the build | 빌드에 AI 도구 흔적이 남은 편 |
+| `PLDOiejkVT-Kg` | Made by one or two people | 1~2인 팀 편 |
+
+기본은 **전체 목록 + 엔진 목록** 두 개, 해당되면 AI/소규모 목록도 추가한다.
+쇼츠는 넣지 않는다 — 노출 면이 달라 재생목록 연결이 걸리지 않는다.
 
 ---
 
