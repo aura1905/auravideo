@@ -212,7 +212,8 @@ python scripts/motion/make_thumbnail.py --bg episodes/<slug>/ss00.jpg --out epis
 ## ⑨ 유튜브 업로드 ★
 
 ```
-python scripts/youtube_upload.py upload episodes/<slug>/final.mp4 --title "…" --desc-file desc.txt --tags "…" --privacy public --thumb thumb.jpg \n  --captions episodes/<slug>/captions.en.srt --playlist PLDP0qAKsKK6I   # 전체 목록. 엔진 목록에도 한 번 더 넣는다 (docs/CHANNEL.md §7)
+python scripts/youtube_upload.py upload episodes/<slug>/final.mp4 --title "…" --desc-file desc.txt --tags "…" --privacy public --thumb thumb.jpg \n  --captions episodes/<slug>/captions.en.srt --playlist PLDP0qAKsKK6I   # 롱폼: 전체 목록. 엔진 목록에도 한 번 더 넣는다 (docs/CHANNEL.md §7)
+#   쇼츠는 --playlist PLOPiAbgZ7ANs 하나뿐이다. 롱폼 목록에 넣지 않는다.
 ```
 - 채널은 `--channel`로 고른다: `demodip`(기본, Demo Dip) / `aimc`(구 한국어 편 01–03). 채널마다 토큰이 따로다 — `C:\Git\docs\youtube_token_<채널>.json`. 만료되면 `auth --channel <채널>`을 돌리고 **브라우저 동의 화면에서 그 채널을 골라야** 한다(스크립트가 매번 토큰의 채널 id를 대조해 불일치면 거부).
 - 하루 한도는 **업로드 6편**(할당량 10,000 / 업로드당 1,600).
