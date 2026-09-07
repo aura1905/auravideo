@@ -1,0 +1,91 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "This cooking demo ships Epic's S D K twice. Once for your P C, and once for arm sixty-four.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 88.0
+  },
+  "sub": "This cooking demo ships Epic's SDK twice. Once for your PC, and once for ARM64."
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "It's a Windows only build. That second copy never runs.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "It's a Windows only build. That second copy never runs."
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 3.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 104.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "It's Tasty Chef, a co-op restaurant sim that went up two days ago.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "It's Tasty Chef, a co-op restaurant sim that went up two days ago."
+ },
+ {
+  "id": "s4",
+  "sec": "made",
+  "text": "The build is 1.16 gigabytes, and 1.01 of that is one Unity bundle.",
+  "vis": {
+   "type": "image",
+   "file": "ev_bundle_v.png"
+  },
+  "sub": "The build is 1.16 gigabytes, and 1.01 of that is one Unity bundle."
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Around it, thirty six megabytes of Epic Online Services, plus an arm sixty-four loader and renderer.",
+  "vis": {
+   "type": "image",
+   "file": "ev_arm_v.png"
+  },
+  "sub": "Around it, thirty six megabytes of Epic Online Services, plus an ARM64 loader and renderer."
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "And one file called eos dash Editor dot steam dot utility. Editor. In the copy you download.",
+  "vis": {
+   "type": "image",
+   "file": "ev_editor_v.png"
+  },
+  "sub": "And one file called eos dash Editor dot steam dot utility. Editor. In the copy you download."
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip. Co-op cooking, fifteen of sixteen reviews positive.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 92.0
+  },
+  "sub": "Worth a dip. Co-op cooking, fifteen of sixteen reviews positive."
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "Every demo I open, I read the file list first. That's the whole channel.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Every demo I open, I read the file list first. That's the whole channel."
+ }
+]

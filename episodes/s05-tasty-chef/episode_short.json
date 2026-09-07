@@ -1,0 +1,92 @@
+{
+ "title_en": "Tasty Chef",
+ "demo_appid": 5067140,
+ "full_appid": 5019920,
+ "developer": "Xpercent Games",
+ "workdir": "episodes/s05-tasty-chef",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s05-tasty-chef/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity / Mono"
+  ],
+  [
+   "THE BUILD",
+   "1.16 GB / 231 files"
+  ],
+  [
+   "ONE FILE",
+   "1.01 GB .unity3d"
+  ],
+  [
+   "EPIC SDK",
+   "36 MB, twice"
+  ],
+  [
+   "THE SLIP",
+   "an -Editor assembly"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Tasty Chef",
+  "line2": "EPIC'S SDK, SHIPPED TWICE.",
+  "size1": 104,
+  "size2": 56
+ },
+ "stack": [
+  [
+   "Epic Online Services",
+   "https://dev.epicgames.com/en-US/services"
+  ],
+  [
+   "PlayEveryWare EOS plugin for Unity",
+   "https://github.com/PlayEveryWare/eos_plugin_for_unity"
+  ],
+  [
+   "Steamworks.NET",
+   "https://steamworks.github.io/"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5067140/"
+  ]
+ ],
+ "chapters": {
+  "hook": "Shipped twice",
+  "intro": "What it is",
+  "made": "Opening the build",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Tasty Chef ships Epic's SDK twice — and half of it can't run #shorts",
+  "tags": "shorts,Tasty Chef,Xpercent Games,steam demo,unity,mono,epic online services,eos,co-op,cooking game,restaurant sim,game teardown,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

@@ -1,0 +1,199 @@
+{
+ "type": "game",
+ "name": "Tasty Chef",
+ "steam_appid": 5019920,
+ "required_age": 0,
+ "is_free": false,
+ "detailed_description": "<h2 class=\"bb_tag\" >自分で作り、自分で料理し、レストランを経営しよう！</h2><p class=\"bb_paragraph\" >『Tasty Chef』では、あなたはレストランのオーナーであり、現場で働くスタッフでもあります。作業エリアを設計し、食材を仕入れ、倉庫を管理し、手順に沿って料理を作りましょう。注文がたまってしまう前に、できたての料理をお客さんへ届けてください！</p><p class=\"bb_paragraph\" >レストランのすべてはあなた次第。店舗を拡張し、調理器具や収納設備、作業台を自由に配置して厨房の動線を整え、効率よく回るレストランを作り上げましょう。</p><h2 class=\"bb_tag\" >自分だけのメニューを作ろう</h2><p class=\"bb_paragraph\" >新しいレシピをアンロックし、その日に提供する料理を自由に選べます。作りたくないレシピは無効にし、味をカスタマイズして、お店の個性が光るメニューを作りましょう。</p><p class=\"bb_paragraph\" >料理ごとに、独自の調理工程があります。食材を準備し、さまざまな設備を使い、すべての工程を終えたら、完成した料理を待っているお客さんへ届けましょう。</p><h2 class=\"bb_tag\" >頼れるスタッフチームを作ろう</h2><p class=\"bb_paragraph\" >レストランの仕事を、すべて一人でこなす必要はありません。NPCスタッフを雇えば、注文受付、仕込み、調理、配膳、在庫補充、食材整理など、プレイヤーが行えるさまざまな仕事を任せられます。</p><p class=\"bb_paragraph\" >自分たちで動けるチームを作り、あなたはお店の成長に集中しましょう。忙しい時間帯には、いつでも厨房へ戻って直接手伝うこともできます。</p><h2 class=\"bb_tag\" >個性豊かなレストランを体験しよう</h2><p class=\"bb_paragraph\" >まずは居心地のよいミルクティーショップから、飲食店経営の基本を学びましょう。ゲームを進めると、寿司屋やピザ屋など、さまざまなレストランが登場します。それぞれに独自のレシピ、設備、調理工程、経営システムが用意されています。</p><p class=\"bb_paragraph\" >ミルクティーショップではドリンクの配合や味のカスタマイズが重要ですが、寿司屋では回転寿司など、まったく異なる働き方が待っています。お店の特徴に合わせて空間を設計し直し、最適な運営の流れを作りましょう。</p><p class=\"bb_paragraph\" >本作には、従来型の固定ステージはありません。どのレストランも、いつまでも拡張、改善、カスタマイズを続けられる、あなただけのビジネスです。</p><h2 class=\"bb_tag\" >一人でも、フレンドと一緒でも</h2><p class=\"bb_paragraph\" >レストラン全体を一人で切り盛りしたり、NPCスタッフの力を借りたり、フレンドと一緒に遊んだりできます。仕事をうまく分担して協力し、店内のすべてのエリアをスムーズに動かしましょう。</p><p class=\"bb_paragraph\" >自分で料理するのが好きでも、効率的な動線を考えるのが好きでも、在庫管理やスタッフ育成が好きでも、『Tasty Chef』なら自分らしい方法で理想のレストランを作れます。</p><p class=\"bb_paragraph\" ></p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" >料理ごとに独自の手順がある、手を動かして楽しむ調理ゲームプレイ</p></li><li><p class=\"bb_paragraph\" >自由に拡張・レイアウトできるレストラン</p></li><li><p class=\"bb_paragraph\" >食材の仕入れ、倉庫での保管、在庫補充の管理</p></li><li><p class=\"bb_paragraph\" >自由に調整できるメニュー、レシピ、味</p></li><li><p class=\"bb_paragraph\" >注文受付、調理、配膳、補充をこなすNPCスタッフ</p></li><li><p class=\"bb_paragraph\" >独自のシステムと運営フローを持つ多彩なレストラン</p></li><li><p class=\"bb_paragraph\" >シングルプレイとマルチプレイに対応</p></li><li><p class=\"bb_paragraph\" >明るくカラフルな2.5D視点のフル3D空間と、のんびり癒やされる雰囲気</p></li></ul>",
+ "about_the_game": "<h2 class=\"bb_tag\" >自分で作り、自分で料理し、レストランを経営しよう！</h2><p class=\"bb_paragraph\" >『Tasty Chef』では、あなたはレストランのオーナーであり、現場で働くスタッフでもあります。作業エリアを設計し、食材を仕入れ、倉庫を管理し、手順に沿って料理を作りましょう。注文がたまってしまう前に、できたての料理をお客さんへ届けてください！</p><p class=\"bb_paragraph\" >レストランのすべてはあなた次第。店舗を拡張し、調理器具や収納設備、作業台を自由に配置して厨房の動線を整え、効率よく回るレストランを作り上げましょう。</p><h2 class=\"bb_tag\" >自分だけのメニューを作ろう</h2><p class=\"bb_paragraph\" >新しいレシピをアンロックし、その日に提供する料理を自由に選べます。作りたくないレシピは無効にし、味をカスタマイズして、お店の個性が光るメニューを作りましょう。</p><p class=\"bb_paragraph\" >料理ごとに、独自の調理工程があります。食材を準備し、さまざまな設備を使い、すべての工程を終えたら、完成した料理を待っているお客さんへ届けましょう。</p><h2 class=\"bb_tag\" >頼れるスタッフチームを作ろう</h2><p class=\"bb_paragraph\" >レストランの仕事を、すべて一人でこなす必要はありません。NPCスタッフを雇えば、注文受付、仕込み、調理、配膳、在庫補充、食材整理など、プレイヤーが行えるさまざまな仕事を任せられます。</p><p class=\"bb_paragraph\" >自分たちで動けるチームを作り、あなたはお店の成長に集中しましょう。忙しい時間帯には、いつでも厨房へ戻って直接手伝うこともできます。</p><h2 class=\"bb_tag\" >個性豊かなレストランを体験しよう</h2><p class=\"bb_paragraph\" >まずは居心地のよいミルクティーショップから、飲食店経営の基本を学びましょう。ゲームを進めると、寿司屋やピザ屋など、さまざまなレストランが登場します。それぞれに独自のレシピ、設備、調理工程、経営システムが用意されています。</p><p class=\"bb_paragraph\" >ミルクティーショップではドリンクの配合や味のカスタマイズが重要ですが、寿司屋では回転寿司など、まったく異なる働き方が待っています。お店の特徴に合わせて空間を設計し直し、最適な運営の流れを作りましょう。</p><p class=\"bb_paragraph\" >本作には、従来型の固定ステージはありません。どのレストランも、いつまでも拡張、改善、カスタマイズを続けられる、あなただけのビジネスです。</p><h2 class=\"bb_tag\" >一人でも、フレンドと一緒でも</h2><p class=\"bb_paragraph\" >レストラン全体を一人で切り盛りしたり、NPCスタッフの力を借りたり、フレンドと一緒に遊んだりできます。仕事をうまく分担して協力し、店内のすべてのエリアをスムーズに動かしましょう。</p><p class=\"bb_paragraph\" >自分で料理するのが好きでも、効率的な動線を考えるのが好きでも、在庫管理やスタッフ育成が好きでも、『Tasty Chef』なら自分らしい方法で理想のレストランを作れます。</p><p class=\"bb_paragraph\" ></p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" >料理ごとに独自の手順がある、手を動かして楽しむ調理ゲームプレイ</p></li><li><p class=\"bb_paragraph\" >自由に拡張・レイアウトできるレストラン</p></li><li><p class=\"bb_paragraph\" >食材の仕入れ、倉庫での保管、在庫補充の管理</p></li><li><p class=\"bb_paragraph\" >自由に調整できるメニュー、レシピ、味</p></li><li><p class=\"bb_paragraph\" >注文受付、調理、配膳、補充をこなすNPCスタッフ</p></li><li><p class=\"bb_paragraph\" >独自のシステムと運営フローを持つ多彩なレストラン</p></li><li><p class=\"bb_paragraph\" >シングルプレイとマルチプレイに対応</p></li><li><p class=\"bb_paragraph\" >明るくカラフルな2.5D視点のフル3D空間と、のんびり癒やされる雰囲気</p></li></ul>",
+ "short_description": "『Tasty Chef』は、のんびり楽しめるレストラン経営＆クッキングゲームです。注文を受け、食材を準備し、料理を作ってお客さんをもてなしましょう。食材の仕入れや店舗の拡張、設備の配置、メニューのアレンジも自由自在。スタッフを雇い、ミルクティーショップから寿司屋やピザ屋へと事業を広げ、自分だけのグルメビジネスを育てましょう！",
+ "supported_languages": "英語, 中国語（簡体字）, フランス語, イタリア語, ドイツ語, インドネシア語, 日本語, 韓国語, ポルトガル語－ポルトガル, ロシア語, 中国語（繁体字）, ベトナム語",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/f68a77dcee43b69d9f3403e92dbe45de8f3e9c7b/header.jpg?t=1788752359",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/e1805480be637466087c7a6f244a796f229488f3/capsule_231x87.jpg?t=1788752359",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/e1805480be637466087c7a6f244a796f229488f3/capsule_184x69.jpg?t=1788752359",
+ "website": null,
+ "pc_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"><li>64 ビットプロセッサとオペレーティングシステムが必要です<br></li><li><strong>OS:</strong> <br></li><li><strong>プロセッサー:</strong> Intel i5-9500T / AMD Ryzen 5 2600H<br></li><li><strong>メモリー:</strong> 4 GB RAM<br></li><li><strong>グラフィック:</strong> GeForce GTX 660 / Radeon RX 460<br></li><li><strong>ストレージ:</strong> 3 GB の空き容量</li></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"><li>64 ビットプロセッサとオペレーティングシステムが必要です<br></li><li><strong>OS:</strong> <br></li><li><strong>プロセッサー:</strong> Intel Core i7-11700K @ 3.60GHz / AMD Ryzen 7 5700<br></li><li><strong>メモリー:</strong> 8 GB RAM<br></li><li><strong>グラフィック:</strong> GeForce RTX 2060 / Radeon RX 5700<br></li><li><strong>ストレージ:</strong> 6 GB の空き容量</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "developers": [
+  "Xpercent Games"
+ ],
+ "publishers": [
+  "Xpercent Games"
+ ],
+ "demos": [
+  {
+   "appid": 5067140,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "シングルプレイヤー"
+  },
+  {
+   "id": 1,
+   "description": "マルチプレイヤー"
+  },
+  {
+   "id": 9,
+   "description": "協力プレイ"
+  },
+  {
+   "id": 67,
+   "description": "カメラの快適性"
+  },
+  {
+   "id": 68,
+   "description": "カスタム音量調整"
+  },
+  {
+   "id": 78,
+   "description": "難易度の調整"
+  },
+  {
+   "id": 79,
+   "description": "いつでもセーブ可能"
+  },
+  {
+   "id": 18,
+   "description": "部分的コントローラサポート"
+  },
+  {
+   "id": 23,
+   "description": "Steamクラウド"
+  },
+  {
+   "id": 62,
+   "description": "ファミリーシェアリング"
+  }
+ ],
+ "genres": [
+  {
+   "id": "4",
+   "description": "カジュアル"
+  },
+  {
+   "id": "23",
+   "description": "インディー"
+  },
+  {
+   "id": "28",
+   "description": "シミュレーション"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/60376257fbbc09f1417b87bc47c3a61392750cee/ss_60376257fbbc09f1417b87bc47c3a61392750cee.600x338.jpg?t=1788752359",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/60376257fbbc09f1417b87bc47c3a61392750cee/ss_60376257fbbc09f1417b87bc47c3a61392750cee.1920x1080.jpg?t=1788752359"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/cb3e795add1f1b05c2c28297f6ef0de11a547c63/ss_cb3e795add1f1b05c2c28297f6ef0de11a547c63.600x338.jpg?t=1788752359",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/cb3e795add1f1b05c2c28297f6ef0de11a547c63/ss_cb3e795add1f1b05c2c28297f6ef0de11a547c63.1920x1080.jpg?t=1788752359"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/cec8a881b6090890ac0bd368134d685b54c6ce39/ss_cec8a881b6090890ac0bd368134d685b54c6ce39.600x338.jpg?t=1788752359",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/cec8a881b6090890ac0bd368134d685b54c6ce39/ss_cec8a881b6090890ac0bd368134d685b54c6ce39.1920x1080.jpg?t=1788752359"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/c9ec6daa6742c2e06c19ae45ed10caa3aecb2e84/ss_c9ec6daa6742c2e06c19ae45ed10caa3aecb2e84.600x338.jpg?t=1788752359",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/c9ec6daa6742c2e06c19ae45ed10caa3aecb2e84/ss_c9ec6daa6742c2e06c19ae45ed10caa3aecb2e84.1920x1080.jpg?t=1788752359"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/01e28cdcf351585f9ce70e7b9af50bb0bb25af5e/ss_01e28cdcf351585f9ce70e7b9af50bb0bb25af5e.600x338.jpg?t=1788752359",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/01e28cdcf351585f9ce70e7b9af50bb0bb25af5e/ss_01e28cdcf351585f9ce70e7b9af50bb0bb25af5e.1920x1080.jpg?t=1788752359"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/23761a5fe6439b25995679b4548ae065dab8d0f8/ss_23761a5fe6439b25995679b4548ae065dab8d0f8.600x338.jpg?t=1788752359",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/23761a5fe6439b25995679b4548ae065dab8d0f8/ss_23761a5fe6439b25995679b4548ae065dab8d0f8.1920x1080.jpg?t=1788752359"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/65e773222f53dd3d05c646b782a03a2c4e53500f/ss_65e773222f53dd3d05c646b782a03a2c4e53500f.600x338.jpg?t=1788752359",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/65e773222f53dd3d05c646b782a03a2c4e53500f/ss_65e773222f53dd3d05c646b782a03a2c4e53500f.1920x1080.jpg?t=1788752359"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/4df57eb1a122880d7c051c166e769428c77f3849/ss_4df57eb1a122880d7c051c166e769428c77f3849.600x338.jpg?t=1788752359",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/4df57eb1a122880d7c051c166e769428c77f3849/ss_4df57eb1a122880d7c051c166e769428c77f3849.1920x1080.jpg?t=1788752359"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/710548d703fff4d96ab7387225c271e52ec72bef/ss_710548d703fff4d96ab7387225c271e52ec72bef.600x338.jpg?t=1788752359",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/710548d703fff4d96ab7387225c271e52ec72bef/ss_710548d703fff4d96ab7387225c271e52ec72bef.1920x1080.jpg?t=1788752359"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257406706,
+   "name": "Tasty Chef EA Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257406706/9e457dab1ece95f61977b50dd70516498ef69eab/movie_600x337.jpg?t=1787523838",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5019920/1770959720/06a32642a2ae29042859d90ccfeae928b3309d34/1787522326/dash_av1.mpd?t=1787523838",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5019920/1770959720/06a32642a2ae29042859d90ccfeae928b3309d34/1787522326/dash_h264.mpd?t=1787523838",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5019920/1770959720/06a32642a2ae29042859d90ccfeae928b3309d34/1787522326/hls_264_master.m3u8?t=1787523838",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "2026年9月"
+ },
+ "support_info": {
+  "url": "",
+  "email": "contact@onepercentstudio.games"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5019920?t=1788752359",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5019920/41ffe21273dccf3a54f44d04679d7d916b9a295c/page_bg_raw.jpg?t=1788752359",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "6",
+   "required_age": "6",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "12",
+   "required_age": "12",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "3",
+   "required_age": "3",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Interaksi Daring"
+  }
+ }
+}

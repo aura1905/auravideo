@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5067140,
+ "full_appid": 5019920,
+ "name": "Tasty Chef",
+ "developers": [
+  "Xpercent Games"
+ ],
+ "publishers": [
+  "Xpercent Games"
+ ],
+ "release": "September 2026",
+ "coming_soon": true,
+ "genres": [
+  "Casual",
+  "Indie",
+  "Simulation"
+ ],
+ "languages": "English, Simplified Chinese, French, Italian, German, Indonesian, Japanese, Korean, Portuguese - Portugal, Russian, Traditional Chinese, Vietnamese",
+ "website": null,
+ "short": "Tasty Chef is a cozy restaurant management and cooking game where you build and expand unique restaurants, design menus, order ingredients, prepare dishes step by step, hire helpful staff, and serve customers alone or with friends.",
+ "about": "  Build, cook, and run your restaurant with your own two hands!   In  Tasty Chef , you are both the restaurant owner and a hands-on member of the team. Design work areas, purchase ingredients, manage storage, prepare dishes step by step, and serve customers before the orders pile up!  Every part of the restaurant is up to you. Expand your space, freely place cooking equipment, storage units, and workstations, improve your kitchen flow, and build a restaurant that runs efficiently.   Design Your Own Menu   Unlock new recipes, choose which dishes to serve each day, disable recipes you do not want to make, and customize flavors to create a menu that matches your restaurant’s style.  Each item has its own unique preparation process. Prepare ingredients, use different equipment, complete every cooking step, and finally serve the finished food or drink to waiting customers.   Build a Reliable Staff Team   Running a restaurant does not mean doing everything yourself. You can hire NPC employees to help with all kinds of tasks the player can perform, including taking orders, preparing ingredients, cooking, serving, restocking, and organizing supplies.  Build a team that can keep the restaurant running on its own, so you can focus on growing the business. When the rush hour hits, you can always jump back into the kitchen and help out yourself.   Experience Different Types of Restaurants   Start with a cozy bubble tea shop and learn the basics of running a food business. As the game progresses, you will also encounter different restaurant types such as sushi shops and bakery. Each restaurant features its own recipes, equipment, preparation processes, and management mechanics.  The bubble tea shop focuses on drink preparation and flavor customization, while the sushi restaurant introduces completely different systems such as conveyor belt sushi. You will need to redesign your space and build a workflow that fits each restaurant’s unique style.  There are no traditional fixed levels. Each restaurant is a business you can continue to expand, optimize, and personalize.   Run the Restaurant Alone or With Friends   Manage the entire restaurant by yourself, rely on NPC employees for support, or play together with friends. Divide tasks, cooperate efficiently, and keep every area of the restaurant running smoothly.  Whether you enjoy hands-on cooking, planning efficient workflows, managing inventory, or training a reliable staff team,  Tasty Chef  lets you build your ideal restaurant in your own way.        Hands-on cooking gameplay with unique preparation steps       Freely expandable and customizable restaurants       Ingredient purchasing, storage, and restocking management       Adjustable menus, recipes, and flavors       NPC employees who can take orders, cook, serve, and restock       Multiple restaurant types with different mechanics and workflows       Single-player and multiplayer support       A relaxing, cozy atmosphere with bright colors and a 2.5D-style view in fully 3D environments    ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:      Processor:  Intel i5-9500T / AMD Ryzen 5 2600H    Memory:  4 GB RAM    Graphics:  GeForce GTX 660 / Radeon RX 460    Storage:  3 GB available space  ",
+ "movies": [
+  {
+   "id": 257406706,
+   "name": "Tasty Chef EA Trailer"
+  }
+ ],
+ "screenshots": 9,
+ "reviews": {
+  "total": 16,
+  "positive": 15,
+  "desc": "Positive"
+ }
+}

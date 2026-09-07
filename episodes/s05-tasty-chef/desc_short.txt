@@ -1,0 +1,38 @@
+Tasty Chef — This cooking demo ships Epic's SDK twice. Once for your PC, and once for ARM64.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5067140/
+▶ The full game: https://store.steampowered.com/app/5019920/
+
+── How they made it ──
+Engine    : Unity / Mono
+The Build : 1.16 GB / 231 files
+One File  : 1.01 GB .unity3d
+Epic Sdk  : 36 MB, twice
+The Slip  : an -Editor assembly
+Verdict   : Worth A Dip
+
+── The stack, if you want to use it ──
+Epic Online Services               : https://dev.epicgames.com/en-US/services
+PlayEveryWare EOS plugin for Unity : https://github.com/PlayEveryWare/eos_plugin_for_unity
+Steamworks.NET                     : https://steamworks.github.io/
+The demo on Steam                  : https://store.steampowered.com/app/5067140/
+
+── Chapters ──
+0:00 Shipped twice
+0:15 What it is
+0:23 Opening the build
+0:44 The spec sheet
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to Xpercent Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo
+
+── More teardowns ──
+▶ A full teardown — Rudravati: https://youtu.be/Mxe7zasU0PI
+▶ Every episode, in order: https://www.youtube.com/playlist?list=PLDP0qAKsKK6I
