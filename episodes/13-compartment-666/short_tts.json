@@ -1,0 +1,103 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "This horror demo shipped with Python inside it. And a machine learning runtime.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 20.3
+  },
+  "sub": "This horror demo shipped with Python inside it. And a machine learning runtime."
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "In a game about noticing when something has changed.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "In a game about noticing when something has changed."
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 7.0
+  }
+ },
+ {
+  "id": "s3a",
+  "sec": "intro",
+  "text": "It's Compartment six six six. You wake on a nineteen hundreds express.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.2
+  },
+  "sub": "It's COMPARTMENT 666. You wake on a 1900s express."
+ },
+ {
+  "id": "s3b",
+  "sec": "intro",
+  "text": "Walk into a carriage and decide: normal, or not.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "Walk into a carriage and decide: normal, or not."
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "Get it wrong and you lose a life. You get three. The Exit eight loop, plus a radio.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Get it wrong and you lose a life. You get three. The Exit 8 loop, plus a radio."
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Thirty six files, Unreal. The binary is still called UnrealGame. Nobody renamed it.",
+  "vis": {
+   "type": "image",
+   "file": "ev_name_v.png"
+  },
+  "sub": "Thirty six files, Unreal. The binary is still called UnrealGame. Nobody renamed it."
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "Beside it: the DirectX twelve debug layer, boost python, Direct M L and onyx.",
+  "vis": {
+   "type": "image",
+   "file": "ev_python_v.png"
+  },
+  "sub": "Beside it: the DirectX 12 debug layer, boost python, DirectML and ONNX."
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Editor tools, shipped. Worth a dip. It's free, and it's a good twenty minutes.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.0
+  },
+  "sub": "Editor tools, shipped. Worth a dip. It's free, and it's a good twenty minutes."
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "Every demo I open, I read the file list first. That's the whole channel.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Every demo I open, I read the file list first. That's the whole channel."
+ }
+]

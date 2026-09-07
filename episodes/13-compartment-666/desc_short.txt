@@ -1,0 +1,36 @@
+COMPARTMENT 666: ANOMALY EXPRESS — This horror demo shipped with Python inside it. And a machine learning runtime.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5016400/
+▶ The full game: https://store.steampowered.com/app/5016110/
+▶ Full teardown: https://youtu.be/Zzm4CAGciYs
+
+── How they made it ──
+Engine    : Unreal Engine
+The Build : 1.48 GB / 36 files
+The Exe   : UnrealGame - default
+Left In   : debug layer + Python
+Also      : DirectML + ONNX
+Verdict   : Worth A Dip
+
+── The stack, if you want to use it ──
+Unreal Engine                      : https://www.unrealengine.com/
+Unreal Python scripting (editor)   : https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python
+Unreal NNE (Neural Network Engine) : https://dev.epicgames.com/documentation/en-us/unreal-engine/neural-network-engine-nne-in-unreal-engine
+ONNX Runtime                       : https://onnxruntime.ai/
+The demo on Steam                  : https://store.steampowered.com/app/5016400/
+
+── Chapters ──
+0:00 Python in a horror demo
+0:12 What it is
+0:28 Opening the build
+0:40 The spec sheet
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to ShepherdWorks.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo
