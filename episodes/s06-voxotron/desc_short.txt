@@ -1,0 +1,39 @@
+Voxotron — This racing demo ships the two files a mod loader uses to inject code.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5107400/
+▶ The full game: https://store.steampowered.com/app/4633120/
+
+── How they made it ──
+Engine    : Unity / Mono
+The Build : 913 MB / 208 files
+The Find  : Unity Doorstop
+Netcode   : Photon Fusion
+Also      : GameAnalytics, SQLite
+Verdict   : Worth A Dip
+
+── The stack, if you want to use it ──
+Unity Doorstop    : https://github.com/NeighTools/UnityDoorstop
+BepInEx           : https://github.com/BepInEx/BepInEx
+Photon Fusion     : https://www.photonengine.com/fusion
+GameAnalytics     : https://gameanalytics.com/
+The demo on Steam : https://store.steampowered.com/app/5107400/
+
+── Chapters ──
+0:00 A mod loader
+0:10 What it is
+0:19 Opening the build
+0:42 The spec sheet
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to Squeezed Hamster Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo
+
+── More teardowns ──
+▶ A full teardown — Rudravati: https://youtu.be/Mxe7zasU0PI
+▶ Every episode, in order: https://www.youtube.com/playlist?list=PLDP0qAKsKK6I

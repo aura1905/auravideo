@@ -1,0 +1,96 @@
+{
+ "title_en": "Voxotron",
+ "demo_appid": 5107400,
+ "full_appid": 4633120,
+ "developer": "Squeezed Hamster Games",
+ "workdir": "episodes/s06-voxotron",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s06-voxotron/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity / Mono"
+  ],
+  [
+   "THE BUILD",
+   "913 MB / 208 files"
+  ],
+  [
+   "THE FIND",
+   "Unity Doorstop"
+  ],
+  [
+   "NETCODE",
+   "Photon Fusion"
+  ],
+  [
+   "ALSO",
+   "GameAnalytics, SQLite"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Voxotron",
+  "line2": "A MOD LOADER, IN THE DEMO.",
+  "size1": 110,
+  "size2": 56
+ },
+ "stack": [
+  [
+   "Unity Doorstop",
+   "https://github.com/NeighTools/UnityDoorstop"
+  ],
+  [
+   "BepInEx",
+   "https://github.com/BepInEx/BepInEx"
+  ],
+  [
+   "Photon Fusion",
+   "https://www.photonengine.com/fusion"
+  ],
+  [
+   "GameAnalytics",
+   "https://gameanalytics.com/"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5107400/"
+  ]
+ ],
+ "chapters": {
+  "hook": "A mod loader",
+  "intro": "What it is",
+  "made": "Opening the build",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Voxotron's demo ships a mod loader — winhttp.dll and doorstop_config.ini #shorts",
+  "tags": "shorts,Voxotron,Squeezed Hamster Games,steam demo,unity,mono,doorstop,bepinex,modding,photon fusion,game teardown,demo dip,racing game",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

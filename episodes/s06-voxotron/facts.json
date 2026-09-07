@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5107400,
+ "full_appid": 4633120,
+ "name": "Voxotron",
+ "developers": [
+  "Squeezed Hamster Games"
+ ],
+ "publishers": [
+  "Squeezed Hamster Games"
+ ],
+ "release": "Q4 2026",
+ "coming_soon": true,
+ "genres": [
+  "Casual",
+  "Indie",
+  "Racing"
+ ],
+ "languages": "English, Simplified Chinese, Japanese, Polish",
+ "website": "https://hamsteroncoke.com/",
+ "short": "A psychedelic hyper-speed racer with no speed limit and no brakes. Dodge, graze, and boost around a rotating cosmic cylinder where runs last 30 seconds and death is instant. Chase world records, race ghost replays, or play with 7 friends.",
+ "about": "  A psychedelic hyper-speed racer with no speed limit.     You pilot an insanely fast ship  around a cosmic cylinder. There's no speed limit - only your ability to stay focused.     No brakes. No speed limit.     This is not a game about slowing down. It's about going faster. There are no brakes. Brakes are boring.   But there is a boost button. It's free to use, and it's always on the table.   Going faster isn't a punishment. It's the entire point of the game.             Short runs. Instant Death.     Most runs last under 30 seconds. If you hit something - you die.           Three speed classes.   Prove your skill across three speed classes:     FLOW  - Plenty of time to react and learn the tracks. You can keep the boost pressed the whole way.   HYPER  - The boost gets serious. You can still probably hold it the entire run.    OVERDRIVE  - Speedrunner territory. Insanely fast. If you can't hyperfocus and stay fully locked in, it's not for you.             Insane skill ceiling.   So you can hold the boost the entire run. Good. You can still go faster:     Grazing  - near misses give you extra speed. The more you risk, the bigger the return.  Smoothness  - turning scrubs speed. Carve clean lines and keep the speed you've earned.   The Line  - use the cylinder's curvature to find the shortest path and shave off milliseconds.           Global leaderboards. Ghost replays.     You just got Gold after 30 runs on the same track. Then you check the leaderboard - the world record is five seconds faster than your time. You load its Ghost Replay.    You know you can do better.    One more run.     Multiplayer.   Nobody knows the track. Randomized runs mean your 200 hours don't guarantee a win against someone with 2 - whoever survives furthest takes the race. Up to 8 players.           Features      No speed limit.  Most racing games cap your top speed. Not this one.     A track that wraps 360°.  Slits come from every angle. Your &quot;ground&quot; is the entire tube.     Three speed classes.  From &quot;I can see what's coming&quot; to &quot;I'm one with the track now.&quot;     Multiplayer.  Race up to 8 players on randomized tracks.     Medal tiers and global leaderboards.  The world record is waiting for you.     Short runs, deep ceiling.  Easy to start. Designed to keep getting better the more you play.     Psychedelic voxel aesthetic.  Designed to look as fast as it feels.     Hyperfocus by design.  The speed leaves you no choice - lock into flow, or die trying.     Psytrance soundtrack.  Powerful  pumpy music that matches the speed of the race.     ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10    Processor:  i5    Graphics:  GeForce 1080  ",
+ "movies": [
+  {
+   "id": 257398135,
+   "name": "VOXOTRON Trailer 2"
+  }
+ ],
+ "screenshots": 11,
+ "reviews": {
+  "total": 1,
+  "positive": 1,
+  "desc": "1 user reviews"
+ }
+}

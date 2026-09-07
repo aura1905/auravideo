@@ -1,0 +1,110 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "This racing demo ships the two files a mod loader uses to inject code.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 7.0
+  },
+  "sub": "This racing demo ships the two files a mod loader uses to inject code.",
+  "dur": 4.441,
+  "wav": "episodes/s06-voxotron/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Before the game starts.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Before the game starts.",
+  "dur": 1.515,
+  "wav": "episodes/s06-voxotron/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 3.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  },
+  "dur": 3.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "It's Voxotron, a hyper-speed racer where a run lasts thirty seconds and there are no brakes.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 17.0
+  },
+  "sub": "It's Voxotron, a hyper-speed racer where a run lasts thirty seconds and there are no brakes.",
+  "dur": 5.277,
+  "wav": "episodes/s06-voxotron/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "made",
+  "text": "Now the build. Unity on Mono, and next to the exe: win H T T P dot D L L, and doorstop config dot I N I.",
+  "vis": {
+   "type": "image",
+   "file": "ev_doorstop_v.png"
+  },
+  "sub": "Now the build. Unity on Mono, and next to the exe: winhttp.dll, and doorstop_config.ini.",
+  "dur": 9.822,
+  "wav": "episodes/s06-voxotron/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "That pair is Unity Doorstop. Windows loads the fake winhttp, and your code runs before the game does.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That pair is Unity Doorstop. Windows loads the fake winhttp, and your code runs before the game does.",
+  "dur": 6.661,
+  "wav": "episodes/s06-voxotron/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "Whether that's built-in mod support or a tool nobody removed, a file list can't say.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 25.0
+  },
+  "sub": "Whether that's built-in mod support or a tool nobody removed, a file list can't say.",
+  "dur": 5.172,
+  "wav": "episodes/s06-voxotron/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip. Photon Fusion for eight-player races, and thirty-second runs.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack_v.png"
+  },
+  "sub": "Worth a dip. Photon Fusion for eight-player races, and thirty-second runs.",
+  "dur": 5.407,
+  "wav": "episodes/s06-voxotron/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "Every demo I open, I read the file list first. That's the whole channel.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Every demo I open, I read the file list first. That's the whole channel.",
+  "dur": 4.336,
+  "wav": "episodes/s06-voxotron/tts_short/s8.wav"
+ }
+]

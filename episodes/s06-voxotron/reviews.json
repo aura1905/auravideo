@@ -1,0 +1,46 @@
+{
+ "success": 1,
+ "query_summary": {
+  "num_reviews": 1,
+  "review_score": 0,
+  "review_score_desc": "1 user reviews",
+  "total_positive": 1,
+  "total_negative": 0,
+  "total_reviews": 1
+ },
+ "reviews": [
+  {
+   "recommendationid": "234623594",
+   "author": {
+    "steamid": "76561199616111323",
+    "personaname": "I love Blue Reimu",
+    "persona_status": "offline",
+    "profile_url": "https://steamcommunity.com/profiles/76561199616111323/",
+    "num_games_owned": 0,
+    "num_reviews": 1,
+    "playtime_forever": 43,
+    "playtime_last_two_weeks": 43,
+    "playtime_at_review": 43,
+    "last_played": 1788704439,
+    "avatar": "ff0b96a60369ed0b7dbdeae81e20959abed00c2b"
+   },
+   "language": "bulgarian",
+   "review": "10/10 \nProgressive reflexes isn't in the demo",
+   "timestamp_created": 1788704601,
+   "timestamp_updated": 1788704601,
+   "voted_up": true,
+   "votes_up": 0,
+   "votes_funny": 0,
+   "weighted_vote_score": 0.5,
+   "comment_count": 0,
+   "steam_purchase": true,
+   "received_for_free": false,
+   "refunded": false,
+   "written_during_early_access": false,
+   "primarily_steam_deck": false,
+   "app_release_date": "1788699102",
+   "reactions": []
+  }
+ ],
+ "cursor": "AoJ4usbGu6ADeqaC/wY="
+}

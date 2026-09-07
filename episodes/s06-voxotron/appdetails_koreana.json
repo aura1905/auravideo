@@ -1,0 +1,202 @@
+{
+ "type": "game",
+ "name": "Voxotron",
+ "steam_appid": 4633120,
+ "required_age": 0,
+ "is_free": false,
+ "controller_support": "full",
+ "dlc": [
+  4918240,
+  5107400
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" ><strong>속도 제한 없는 사이키델릭 초고속 레이싱 게임.</strong></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >우주 원통을 따라 미친 듯이 빠른 우주선을 조종하세요. 속도 제한은 없으며, 오직 당신의 집중력이 한계를 결정합니다.</p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" ><strong>브레이크 같은 건 없습니다. 속도 제한도 없습니다.</strong></h2><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >이 게임은 속도를 늦추는 게임이 아닙니다. 더 빨리 달리는 게임입니다. 브레이크는 없습니다. 브레이크는 재미없으니까요. <br><br>대신 터보 버튼이 있습니다. 터보 버튼은 무료로 언제든지 사용할 수 있습니다. <br><br>더 빠르게 달리는 것은 페널티가 아닙니다. 그것이 바로 이 게임의 핵심입니다.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/d4be591ff0c7cdf1b3b1aaed8731819e.poster.avif?t=1788765461\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/d4be591ff0c7cdf1b3b1aaed8731819e.webm?t=1788765461\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/d4be591ff0c7cdf1b3b1aaed8731819e.mp4?t=1788765461\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" ><strong>짧은 질주. 즉시 사망.</strong></h2><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >대부분의 질주는 30초 안에 끝납니다. 무언가에 부딪히면 즉시 사망합니다.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/140a3b9b381d7a873184289be9e20016.poster.avif?t=1788765461\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/140a3b9b381d7a873184289be9e20016.webm?t=1788765461\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/140a3b9b381d7a873184289be9e20016.mp4?t=1788765461\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" ><strong>세 가지 속도 등급.</strong></h2><p class=\"bb_paragraph\" >세 가지 속도 등급에서 실력을 증명해 보이세요.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><strong>플로우</strong> - 반응하고 코스를 익힐 시간이 충분합니다. 터보를 처음부터 끝까지 유지할 수 있습니다.</p><p class=\"bb_paragraph\" ><strong>하이퍼</strong> - 이제 터보의 진가가 드러납니다. 그래도 아마 끝까지 터보를 유지할 수 있을 겁니다. </p><p class=\"bb_paragraph\" ><strong>오버드라이브</strong> - 스피드러너의 영역입니다. 미친 듯이 빠릅니다. 극도의 집중력을 발휘해 게임에 완전히 몰입할 수 없다면 도전하지 않는 편이 좋습니다.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/0562a22fd44124e836677238c8388144.poster.avif?t=1788765461\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/0562a22fd44124e836677238c8388144.webm?t=1788765461\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/0562a22fd44124e836677238c8388144.mp4?t=1788765461\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" ><strong>극한의 실력 한계.</strong></h2><p class=\"bb_paragraph\" >터보를 처음부터 끝까지 유지할 수 있다고요? 좋습니다. 그렇다면 더 빨라질 수 있습니다.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><strong>그레이징</strong> - 장애물을 아슬아슬하게 스쳐 지나가면 속도가 더 빨라집니다. 더 큰 위험을 감수할수록 보상도 커집니다.<br><strong>부드러운 조작</strong> - 방향을 전환하면 속도가 감소합니다. 깔끔한 라인을 그리며, 그동안 쌓아온 속도를 유지하세요. <br><strong>최적의 라인</strong> - 원통의 곡률을 이용해 최단 경로를 찾아내고, 밀리초 단위까지 시간을 단축해 보세요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/4c8fcd286915c00ea52751d3b720aa05.poster.avif?t=1788765461\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/4c8fcd286915c00ea52751d3b720aa05.webm?t=1788765461\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/4c8fcd286915c00ea52751d3b720aa05.mp4?t=1788765461\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" ><strong>글로벌 리더보드. 고스트 리플레이.</strong></h2><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >동일한 코스를 30번 완주하고 골드 메달을 획득했습니다. 그런데 리더보드를 확인해 보니 세계 기록은 당신보다 무려 5초나 더 빠릅니다. 그렇다면 고스트 리플레이를 불러오세요.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >당신은 더 잘할 수 있습니다.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >한 번 더 질주해 보세요.</p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" ><strong>멀티플레이.</strong></h2><p class=\"bb_paragraph\" >아무도 코스를 알지 못합니다. 코스는 매번 무작위로 생성되므로 플레이 시간이 200시간에 달하는 플레이어도 2시간만 한 플레이어를 이긴다는 보장은 없습니다. 가장 오래 살아남는 플레이어가 승리합니다. 최대 8명이 함께 플레이할 수 있습니다.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/e4f311f21b0d5c4340408ad2672b71ad.poster.avif?t=1788765461\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/e4f311f21b0d5c4340408ad2672b71ad.webm?t=1788765461\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/e4f311f21b0d5c4340408ad2672b71ad.mp4?t=1788765461\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" ><strong>주요 특징</strong></h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong>속도 제한 없음.</strong> 대부분의 레이싱 게임은 최고 속도에 제한이 있습니다. 이 게임은 그렇지 않습니다.</p></li><li><p class=\"bb_paragraph\" ><strong>360°를 에워싸는 코스.</strong> 사방팔방에서 나타나는 좁은 틈을 통과하세요. 당신이 달리는 &quot;지면&quot;은 원통 전체입니다.</p></li><li><p class=\"bb_paragraph\" ><strong>세 가지 속도 등급.</strong> &quot;앞에 뭐가 있는지 보인다&quot;에서 &quot;이제 나는 이 코스와 하나가 되었다&quot;까지</p></li><li><p class=\"bb_paragraph\" ><strong>멀티플레이.</strong> 최대 8명이 무작위로 생성된 코스에서 경쟁합니다.</p></li><li><p class=\"bb_paragraph\" ><strong>메달 등급과 글로벌 리더보드.</strong> 세계 기록이 당신을 기다립니다.</p></li><li><p class=\"bb_paragraph\" ><strong>짧은 질주, 끝없는 실력 한계.</strong> 쉽게 시작할 수 있으며, 플레이할수록 실력이 좋아지도록 설계되었습니다.</p></li><li><p class=\"bb_paragraph\" ><strong>사이키델릭한 큐브형(복셀) 그래픽 스타일.</strong> 속도감이 눈으로도 그대로 느껴지도록 디자인되었습니다.</p></li><li><p class=\"bb_paragraph\" ><strong>극한의 집중을 요하는 설계.</strong> 이 엄청난 속도 앞에서는 선택지가 없습니다. 흐름에 완전히 몰입하거나 죽거나 둘뿐입니다.</p></li><li><p class=\"bb_paragraph\" ><strong>사이키델릭 트랜스 사운드트랙.</strong> 레이스의 속도와 어울리는 강렬하고 박진감 넘치는 음악.</p><p class=\"bb_paragraph\" ></p></li></ul>",
+ "about_the_game": "<p class=\"bb_paragraph\" ><strong>속도 제한 없는 사이키델릭 초고속 레이싱 게임.</strong></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >우주 원통을 따라 미친 듯이 빠른 우주선을 조종하세요. 속도 제한은 없으며, 오직 당신의 집중력이 한계를 결정합니다.</p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" ><strong>브레이크 같은 건 없습니다. 속도 제한도 없습니다.</strong></h2><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >이 게임은 속도를 늦추는 게임이 아닙니다. 더 빨리 달리는 게임입니다. 브레이크는 없습니다. 브레이크는 재미없으니까요. <br><br>대신 터보 버튼이 있습니다. 터보 버튼은 무료로 언제든지 사용할 수 있습니다. <br><br>더 빠르게 달리는 것은 페널티가 아닙니다. 그것이 바로 이 게임의 핵심입니다.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/d4be591ff0c7cdf1b3b1aaed8731819e.poster.avif?t=1788765461\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/d4be591ff0c7cdf1b3b1aaed8731819e.webm?t=1788765461\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/d4be591ff0c7cdf1b3b1aaed8731819e.mp4?t=1788765461\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" ><strong>짧은 질주. 즉시 사망.</strong></h2><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >대부분의 질주는 30초 안에 끝납니다. 무언가에 부딪히면 즉시 사망합니다.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/140a3b9b381d7a873184289be9e20016.poster.avif?t=1788765461\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/140a3b9b381d7a873184289be9e20016.webm?t=1788765461\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/140a3b9b381d7a873184289be9e20016.mp4?t=1788765461\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" ><strong>세 가지 속도 등급.</strong></h2><p class=\"bb_paragraph\" >세 가지 속도 등급에서 실력을 증명해 보이세요.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><strong>플로우</strong> - 반응하고 코스를 익힐 시간이 충분합니다. 터보를 처음부터 끝까지 유지할 수 있습니다.</p><p class=\"bb_paragraph\" ><strong>하이퍼</strong> - 이제 터보의 진가가 드러납니다. 그래도 아마 끝까지 터보를 유지할 수 있을 겁니다. </p><p class=\"bb_paragraph\" ><strong>오버드라이브</strong> - 스피드러너의 영역입니다. 미친 듯이 빠릅니다. 극도의 집중력을 발휘해 게임에 완전히 몰입할 수 없다면 도전하지 않는 편이 좋습니다.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/0562a22fd44124e836677238c8388144.poster.avif?t=1788765461\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/0562a22fd44124e836677238c8388144.webm?t=1788765461\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/0562a22fd44124e836677238c8388144.mp4?t=1788765461\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" ><strong>극한의 실력 한계.</strong></h2><p class=\"bb_paragraph\" >터보를 처음부터 끝까지 유지할 수 있다고요? 좋습니다. 그렇다면 더 빨라질 수 있습니다.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><strong>그레이징</strong> - 장애물을 아슬아슬하게 스쳐 지나가면 속도가 더 빨라집니다. 더 큰 위험을 감수할수록 보상도 커집니다.<br><strong>부드러운 조작</strong> - 방향을 전환하면 속도가 감소합니다. 깔끔한 라인을 그리며, 그동안 쌓아온 속도를 유지하세요. <br><strong>최적의 라인</strong> - 원통의 곡률을 이용해 최단 경로를 찾아내고, 밀리초 단위까지 시간을 단축해 보세요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/4c8fcd286915c00ea52751d3b720aa05.poster.avif?t=1788765461\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/4c8fcd286915c00ea52751d3b720aa05.webm?t=1788765461\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/4c8fcd286915c00ea52751d3b720aa05.mp4?t=1788765461\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" ><strong>글로벌 리더보드. 고스트 리플레이.</strong></h2><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >동일한 코스를 30번 완주하고 골드 메달을 획득했습니다. 그런데 리더보드를 확인해 보니 세계 기록은 당신보다 무려 5초나 더 빠릅니다. 그렇다면 고스트 리플레이를 불러오세요.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >당신은 더 잘할 수 있습니다.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >한 번 더 질주해 보세요.</p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" ><strong>멀티플레이.</strong></h2><p class=\"bb_paragraph\" >아무도 코스를 알지 못합니다. 코스는 매번 무작위로 생성되므로 플레이 시간이 200시간에 달하는 플레이어도 2시간만 한 플레이어를 이긴다는 보장은 없습니다. 가장 오래 살아남는 플레이어가 승리합니다. 최대 8명이 함께 플레이할 수 있습니다.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/e4f311f21b0d5c4340408ad2672b71ad.poster.avif?t=1788765461\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/e4f311f21b0d5c4340408ad2672b71ad.webm?t=1788765461\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/extras/e4f311f21b0d5c4340408ad2672b71ad.mp4?t=1788765461\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" ><strong>주요 특징</strong></h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong>속도 제한 없음.</strong> 대부분의 레이싱 게임은 최고 속도에 제한이 있습니다. 이 게임은 그렇지 않습니다.</p></li><li><p class=\"bb_paragraph\" ><strong>360°를 에워싸는 코스.</strong> 사방팔방에서 나타나는 좁은 틈을 통과하세요. 당신이 달리는 &quot;지면&quot;은 원통 전체입니다.</p></li><li><p class=\"bb_paragraph\" ><strong>세 가지 속도 등급.</strong> &quot;앞에 뭐가 있는지 보인다&quot;에서 &quot;이제 나는 이 코스와 하나가 되었다&quot;까지</p></li><li><p class=\"bb_paragraph\" ><strong>멀티플레이.</strong> 최대 8명이 무작위로 생성된 코스에서 경쟁합니다.</p></li><li><p class=\"bb_paragraph\" ><strong>메달 등급과 글로벌 리더보드.</strong> 세계 기록이 당신을 기다립니다.</p></li><li><p class=\"bb_paragraph\" ><strong>짧은 질주, 끝없는 실력 한계.</strong> 쉽게 시작할 수 있으며, 플레이할수록 실력이 좋아지도록 설계되었습니다.</p></li><li><p class=\"bb_paragraph\" ><strong>사이키델릭한 큐브형(복셀) 그래픽 스타일.</strong> 속도감이 눈으로도 그대로 느껴지도록 디자인되었습니다.</p></li><li><p class=\"bb_paragraph\" ><strong>극한의 집중을 요하는 설계.</strong> 이 엄청난 속도 앞에서는 선택지가 없습니다. 흐름에 완전히 몰입하거나 죽거나 둘뿐입니다.</p></li><li><p class=\"bb_paragraph\" ><strong>사이키델릭 트랜스 사운드트랙.</strong> 레이스의 속도와 어울리는 강렬하고 박진감 넘치는 음악.</p><p class=\"bb_paragraph\" ></p></li></ul>",
+ "short_description": "속도 제한도 브레이크도 없는 사이키델릭 초고속 레이싱 게임. 한 번 부딪히면 죽는 30초간의 질주 중에 회전하는 우주 원통을 달리며 장애물을 피하거나 아슬아슬하게 스쳐 지나가고 터보를 사용해 더 빨리 달리세요. 세계 기록에 도전하고, 고스트 리플레이와 경쟁하거나, 친구 7명과 함께 플레이하세요.",
+ "supported_languages": "영어, 중국어 간체, 일본어, 폴란드어",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/ddac3656d68a257db94b27cf282aa8f48ff0f347/header.jpg?t=1788765461",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/7bffbfd4a36d27d32985c5a9422a6fcef60abbd3/capsule_231x87.jpg?t=1788765461",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/7bffbfd4a36d27d32985c5a9422a6fcef60abbd3/capsule_184x69.jpg?t=1788765461",
+ "website": "https://hamsteroncoke.com/",
+ "pc_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"><li>64비트 프로세서와 운영 체제가 필요합니다<br></li><li><strong>운영 체제:</strong> Windows 10<br></li><li><strong>프로세서:</strong> i5<br></li><li><strong>그래픽:</strong> GeForce 1080</li></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"><li>64비트 프로세서와 운영 체제가 필요합니다<br></li><li><strong>운영 체제:</strong> Windows 10<br></li><li><strong>프로세서:</strong> i7<br></li><li><strong>그래픽:</strong> GeForce 1080</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "developers": [
+  "Squeezed Hamster Games"
+ ],
+ "publishers": [
+  "Squeezed Hamster Games"
+ ],
+ "demos": [
+  {
+   "appid": 5107400,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "싱글 플레이어"
+  },
+  {
+   "id": 1,
+   "description": "멀티플레이어"
+  },
+  {
+   "id": 28,
+   "description": "컨트롤러 완벽 지원"
+  },
+  {
+   "id": 60,
+   "description": "게임패드 권장"
+  },
+  {
+   "id": 23,
+   "description": "Steam Cloud"
+  },
+  {
+   "id": 25,
+   "description": "Steam 순위표"
+  },
+  {
+   "id": 62,
+   "description": "가족 공유"
+  }
+ ],
+ "genres": [
+  {
+   "id": "4",
+   "description": "캐주얼"
+  },
+  {
+   "id": "23",
+   "description": "인디"
+  },
+  {
+   "id": "9",
+   "description": "레이싱"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/417279492613ec3e75b52c14f81f28605d0af678/ss_417279492613ec3e75b52c14f81f28605d0af678.600x338.jpg?t=1788765461",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/417279492613ec3e75b52c14f81f28605d0af678/ss_417279492613ec3e75b52c14f81f28605d0af678.1920x1080.jpg?t=1788765461"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/51331fa2e25135a94cd6b8f579b2fe18281ce3a7/ss_51331fa2e25135a94cd6b8f579b2fe18281ce3a7.600x338.jpg?t=1788765461",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/51331fa2e25135a94cd6b8f579b2fe18281ce3a7/ss_51331fa2e25135a94cd6b8f579b2fe18281ce3a7.1920x1080.jpg?t=1788765461"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/61f93f69af4981a478dd3163f8860df92aa77c98/ss_61f93f69af4981a478dd3163f8860df92aa77c98.600x338.jpg?t=1788765461",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/61f93f69af4981a478dd3163f8860df92aa77c98/ss_61f93f69af4981a478dd3163f8860df92aa77c98.1920x1080.jpg?t=1788765461"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/e68e50d0291303aea5e7b657741d245a165bfbbf/ss_e68e50d0291303aea5e7b657741d245a165bfbbf.600x338.jpg?t=1788765461",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/e68e50d0291303aea5e7b657741d245a165bfbbf/ss_e68e50d0291303aea5e7b657741d245a165bfbbf.1920x1080.jpg?t=1788765461"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/3e94325b0983f86cc3dad4901fc42b177339dedd/ss_3e94325b0983f86cc3dad4901fc42b177339dedd.600x338.jpg?t=1788765461",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/3e94325b0983f86cc3dad4901fc42b177339dedd/ss_3e94325b0983f86cc3dad4901fc42b177339dedd.1920x1080.jpg?t=1788765461"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/72f8195cdeb26c8d0910fe0b71b0f07abdc29e83/ss_72f8195cdeb26c8d0910fe0b71b0f07abdc29e83.600x338.jpg?t=1788765461",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/72f8195cdeb26c8d0910fe0b71b0f07abdc29e83/ss_72f8195cdeb26c8d0910fe0b71b0f07abdc29e83.1920x1080.jpg?t=1788765461"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/e3c912ce032cd8033ce05d54dfd69af4ca99adb2/ss_e3c912ce032cd8033ce05d54dfd69af4ca99adb2.600x338.jpg?t=1788765461",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/e3c912ce032cd8033ce05d54dfd69af4ca99adb2/ss_e3c912ce032cd8033ce05d54dfd69af4ca99adb2.1920x1080.jpg?t=1788765461"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/1ba22af38cef1abef98967bfcaaa4cd09147c2f4/ss_1ba22af38cef1abef98967bfcaaa4cd09147c2f4.600x338.jpg?t=1788765461",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/1ba22af38cef1abef98967bfcaaa4cd09147c2f4/ss_1ba22af38cef1abef98967bfcaaa4cd09147c2f4.1920x1080.jpg?t=1788765461"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/04c166ced848fd6c54512550b0eb5b8da11c422c/ss_04c166ced848fd6c54512550b0eb5b8da11c422c.600x338.jpg?t=1788765461",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/04c166ced848fd6c54512550b0eb5b8da11c422c/ss_04c166ced848fd6c54512550b0eb5b8da11c422c.1920x1080.jpg?t=1788765461"
+  },
+  {
+   "id": 9,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/d4e3f79d1d54720199e8f41e5098b4366c10b4fb/ss_d4e3f79d1d54720199e8f41e5098b4366c10b4fb.600x338.jpg?t=1788765461",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/d4e3f79d1d54720199e8f41e5098b4366c10b4fb/ss_d4e3f79d1d54720199e8f41e5098b4366c10b4fb.1920x1080.jpg?t=1788765461"
+  },
+  {
+   "id": 10,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/73e5d434ea7906a98366f34546080da83f76a7f0/ss_73e5d434ea7906a98366f34546080da83f76a7f0.600x338.jpg?t=1788765461",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/73e5d434ea7906a98366f34546080da83f76a7f0/ss_73e5d434ea7906a98366f34546080da83f76a7f0.1920x1080.jpg?t=1788765461"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257398135,
+   "name": "VOXOTRON Trailer 2",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257398135/7dc9cffca3f6d3bc75b5018827d6488c80e8f773/movie_600x337.jpg?t=1788331056",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/4633120/1700963084/a142833d9e811b348f6c747aadadaa115b43594a/1786621286/dash_av1.mpd?t=1788331056",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/4633120/1700963084/a142833d9e811b348f6c747aadadaa115b43594a/1786621286/dash_h264.mpd?t=1788331056",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/4633120/1700963084/a142833d9e811b348f6c747aadadaa115b43594a/1786621286/hls_264_master.m3u8?t=1788331056",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "2026년 4분기"
+ },
+ "support_info": {
+  "url": "https://hamsteroncoke.com/",
+  "email": "omx.jonson@gmail.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/4633120?t=1788765461",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4633120/5e041af1c9cf7a9804d900382965194392f00f0a/page_bg_raw.jpg?t=1788765461",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "l",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "0",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "3",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  }
+ }
+}

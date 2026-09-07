@@ -1,0 +1,84 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "This racing demo ships the two files a mod loader uses to inject code.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 7.0
+  }
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Before the game starts.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 3.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "It's Voxotron, a hyper-speed racer where a run lasts thirty seconds and there are no brakes.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 17.0
+  }
+ },
+ {
+  "id": "s4",
+  "sec": "made",
+  "text": "Now the build. Unity on Mono, and next to the exe: winhttp.dll, and doorstop_config.ini.",
+  "vis": {
+   "type": "image",
+   "file": "ev_doorstop_v.png"
+  }
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "That pair is Unity Doorstop. Windows loads the fake winhttp, and your code runs before the game does.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "Whether that's built-in mod support or a tool nobody removed, a file list can't say.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 25.0
+  }
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip. Photon Fusion for eight-player races, and thirty-second runs.",
+  "vis": {
+   "type": "image",
+   "file": "ev_stack_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "Every demo I open, I read the file list first. That's the whole channel.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]
