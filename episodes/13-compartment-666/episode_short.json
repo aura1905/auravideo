@@ -4,26 +4,52 @@
  "full_appid": 5016110,
  "developer": "ShepherdWorks",
  "workdir": "episodes/13-compartment-666",
- "bgm": {"file": "t0.mp4", "volume": 0.07},
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
  "narration_volume": 1.6,
  "script_timed": "episodes/13-compartment-666/short_tts_timed.json",
  "hook_lines": 2,
  "cold_open_lines": 2,
  "still_lines": 0,
  "sting": false,
- "canvas": {"width": 1080, "height": 1920},
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
  "layer_prefix": "v_",
  "tts_dir": "tts_short",
  "visual_scale": 1.5,
  "score_len": 9.5,
- "labels": ["", "", "", ""],
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
  "score_line_id": "s7",
  "specs": [
-  ["ENGINE", "Unreal Engine"],
-  ["THE BUILD", "1.48 GB / 36 files"],
-  ["THE EXE", "UnrealGame - default"],
-  ["LEFT IN", "debug layer + Python"],
-  ["ALSO", "DirectML + ONNX"]
+  [
+   "ENGINE",
+   "Unreal Engine"
+  ],
+  [
+   "THE BUILD",
+   "1.48 GB / 36 files"
+  ],
+  [
+   "THE EXE",
+   "UnrealGame - default"
+  ],
+  [
+   "LEFT IN",
+   "debug layer + Python"
+  ],
+  [
+   "ALSO",
+   "DirectML + ONNX"
+  ]
  ],
  "verdict": "WORTH A DIP",
  "opening_stamp": {
@@ -33,11 +59,26 @@
   "size2": 54
  },
  "stack": [
-  ["Unreal Engine", "https://www.unrealengine.com/"],
-  ["Unreal Python scripting (editor)", "https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python"],
-  ["Unreal NNE (Neural Network Engine)", "https://dev.epicgames.com/documentation/en-us/unreal-engine/neural-network-engine-nne-in-unreal-engine"],
-  ["ONNX Runtime", "https://onnxruntime.ai/"],
-  ["The demo on Steam", "https://store.steampowered.com/app/5016400/"]
+  [
+   "Unreal Engine",
+   "https://www.unrealengine.com/"
+  ],
+  [
+   "Unreal Python scripting (editor)",
+   "https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python"
+  ],
+  [
+   "Unreal NNE (Neural Network Engine)",
+   "https://dev.epicgames.com/documentation/en-us/unreal-engine/neural-network-engine-nne-in-unreal-engine"
+  ],
+  [
+   "ONNX Runtime",
+   "https://onnxruntime.ai/"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5016400/"
+  ]
  ],
  "chapters": {
   "hook": "Python in a horror demo",
@@ -51,5 +92,16 @@
   "privacy": "private",
   "lang": "en"
  },
- "sub_y": 560
+ "sub_y": 560,
+ "thumbnail": {
+  "bg": "ss00.jpg",
+  "line1": "COMPARTMENT {666}",
+  "line2": "PYTHON. IN A HORROR GAME.",
+  "title_size": 88,
+  "hook_size": 50,
+  "accent_scale": 1.7,
+  "ox": 0.603,
+  "text_y": 0.545,
+  "vertical": true
+ }
 }

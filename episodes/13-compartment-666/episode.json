@@ -22,11 +22,26 @@
  "still_lines": 2,
  "score_line_id": "31",
  "specs": [
-  ["ENGINE", "Unreal Engine"],
-  ["THE BUILD", "1.48 GB / 36 files"],
-  ["THE EXE", "UnrealGame — the default"],
-  ["LEFT IN", "debug layer + Python"],
-  ["ALSO", "DirectML + ONNX"]
+  [
+   "ENGINE",
+   "Unreal Engine"
+  ],
+  [
+   "THE BUILD",
+   "1.48 GB / 36 files"
+  ],
+  [
+   "THE EXE",
+   "UnrealGame — the default"
+  ],
+  [
+   "LEFT IN",
+   "debug layer + Python"
+  ],
+  [
+   "ALSO",
+   "DirectML + ONNX"
+  ]
  ],
  "verdict": "WORTH A DIP",
  "bgm": {
@@ -36,10 +51,14 @@
  "narration_volume": 1.6,
  "thumbnail": {
   "bg": "ss00.jpg",
-  "line1": "Compartment 666",
+  "line1": "COMPARTMENT {666}",
   "line2": "PYTHON. IN A HORROR GAME.",
-  "tag": "UNREAL TEARDOWN",
-  "focus": "center",
+  "title_size": 84,
+  "hook_size": 50,
+  "accent_scale": 1.7,
+  "zoom": 1.8,
+  "ox": 0.368,
+  "oy": 0.083,
   "text_side": "left"
  },
  "chapters": {
@@ -50,14 +69,38 @@
   "score": "The spec sheet + verdict"
  },
  "stack": [
-  ["Unreal Engine", "https://www.unrealengine.com/"],
-  ["Unreal Python scripting (editor)", "https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python"],
-  ["Unreal NNE (Neural Network Engine)", "https://dev.epicgames.com/documentation/en-us/unreal-engine/neural-network-engine-nne-in-unreal-engine"],
-  ["ONNX Runtime", "https://onnxruntime.ai/"],
-  ["DirectML", "https://learn.microsoft.com/windows/ai/directml/"],
-  ["Epic Online Services", "https://dev.epicgames.com/en-US/services"],
-  ["NVIDIA Nsight Aftermath", "https://developer.nvidia.com/nsight-aftermath"],
-  ["The demo on Steam", "https://store.steampowered.com/app/5016400/"]
+  [
+   "Unreal Engine",
+   "https://www.unrealengine.com/"
+  ],
+  [
+   "Unreal Python scripting (editor)",
+   "https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python"
+  ],
+  [
+   "Unreal NNE (Neural Network Engine)",
+   "https://dev.epicgames.com/documentation/en-us/unreal-engine/neural-network-engine-nne-in-unreal-engine"
+  ],
+  [
+   "ONNX Runtime",
+   "https://onnxruntime.ai/"
+  ],
+  [
+   "DirectML",
+   "https://learn.microsoft.com/windows/ai/directml/"
+  ],
+  [
+   "Epic Online Services",
+   "https://dev.epicgames.com/en-US/services"
+  ],
+  [
+   "NVIDIA Nsight Aftermath",
+   "https://developer.nvidia.com/nsight-aftermath"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5016400/"
+  ]
  ],
  "ledger": {
   "team": "ShepherdWorks (self-published)",
