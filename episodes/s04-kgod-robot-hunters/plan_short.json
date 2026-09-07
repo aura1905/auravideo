@@ -1,0 +1,472 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a12",
+   "file": "ev_open_v_mvv.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 0.9,
+   "volume": 0.55,
+   "fadeIn": 0.4,
+   "fadeOut": 0.8
+  },
+  {
+   "track": "v11",
+   "file": "ev_open_v_mvv.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 0.9,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s1.wav",
+   "start": 0.9,
+   "in": 0,
+   "out": 3.213,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "trailer_main.mp4",
+   "start": 0.9,
+   "in": 3.0,
+   "out": 10.2,
+   "fillMode": "blur",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.5
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s2.wav",
+   "start": 4.513,
+   "in": 0,
+   "out": 3.187,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s3.wav",
+   "start": 8.1,
+   "in": 0,
+   "out": 5.695,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "trailer_main.mp4",
+   "start": 8.1,
+   "in": 11.0,
+   "out": 17.095,
+   "fillMode": "blur",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.5
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s4.wav",
+   "start": 14.195,
+   "in": 0,
+   "out": 2.978,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "trailer_main.mp4",
+   "start": 14.195,
+   "in": 20.0,
+   "out": 23.378,
+   "fillMode": "blur",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.5
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s5.wav",
+   "start": 17.573,
+   "in": 0,
+   "out": 6.74,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ev_build_v_mvv.mp4",
+   "start": 17.573,
+   "in": 0,
+   "out": 7.14,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s6.wav",
+   "start": 24.713,
+   "in": 0,
+   "out": 5.486,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ev_size_v_mvv.mp4",
+   "start": 24.713,
+   "in": 0,
+   "out": 5.886,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s7.wav",
+   "start": 30.599,
+   "in": 0,
+   "out": 5.642,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "trailer_main.mp4",
+   "start": 30.599,
+   "in": 30.0,
+   "out": 36.042,
+   "fillMode": "blur",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.5
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s8.wav",
+   "start": 36.641,
+   "in": 0,
+   "out": 6.426,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "still_bg_mv.mp4",
+   "start": 36.441,
+   "in": 0,
+   "out": 9.9,
+   "fillMode": "blur",
+   "fadeIn": 0.3,
+   "fadeOut": 0.3
+  },
+  {
+   "track": "v4",
+   "file": "v_score_header.mov",
+   "start": 36.641,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v5",
+   "file": "v_score_row_0.mov",
+   "start": 36.641,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v6",
+   "file": "v_score_row_1.mov",
+   "start": 36.641,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v7",
+   "file": "v_score_row_2.mov",
+   "start": 36.641,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v8",
+   "file": "v_score_row_3.mov",
+   "start": 36.641,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v9",
+   "file": "v_score_row_4.mov",
+   "start": 36.641,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v10",
+   "file": "v_score_stamp.mov",
+   "start": 36.641,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v1",
+   "file": "logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 43.767,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "trailer_main.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 44.267,
+   "volume": 0.07,
+   "fadeIn": 1.0,
+   "fadeOut": 1.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_drop.wav",
+   "start": 36.741,
+   "in": 0,
+   "out": 0.282,
+   "volume": 0.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 37.541,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 38.091,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 38.161,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 38.711,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 38.781,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 39.331,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 39.401,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 39.951,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 40.021,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 40.571,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/thud.wav",
+   "start": 41.191,
+   "in": 0,
+   "out": 0.415,
+   "volume": 0.9
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/chime_complete.wav",
+   "start": 41.441,
+   "in": 0,
+   "out": 1.105,
+   "volume": 0.6
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_exit.wav",
+   "start": 45.241,
+   "in": 0,
+   "out": 0.298,
+   "volume": 0.5
+  }
+ ],
+ "subs": [
+  {
+   "text": "This is a poker game. The\ndemo is three gigabytes.",
+   "start": 0.9,
+   "duration": 3.363,
+   "fontSize": 50,
+   "y": 330,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "One file inside it is 1.6\nof them.",
+   "start": 4.513,
+   "duration": 3.337,
+   "fontSize": 50,
+   "y": 330,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "K-God Robot Hunters is a\nKorean-fantasy poker\nroguelike. It went up on\nSteam yesterday.",
+   "start": 8.1,
+   "duration": 5.845,
+   "fontSize": 42,
+   "y": 330,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "You play hands, and\ngoddesses rewrite them.",
+   "start": 14.195,
+   "duration": 3.128,
+   "fontSize": 50,
+   "y": 330,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "Unity, IL2CPP, 92 files.\nFor a card game that is\nalready a lot of build.",
+   "start": 17.573,
+   "duration": 6.89,
+   "fontSize": 50,
+   "y": 330,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "Two thirds of it is eight\nraw asset streams. The\nbiggest is 1.6 gigabytes\non its own.",
+   "start": 24.713,
+   "duration": 5.636,
+   "fontSize": 42,
+   "y": 330,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "And every asset bundle in\nthe build is one thing:\nenemy animation, ante zero\nthrough eight.",
+   "start": 30.599,
+   "duration": 5.792,
+   "fontSize": 42,
+   "y": 330,
+   "bgOpacity": 0.62
+  }
+ ],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "FX1"
+  },
+  {
+   "kind": "video",
+   "name": "FX2"
+  },
+  {
+   "kind": "video",
+   "name": "FX3"
+  },
+  {
+   "kind": "video",
+   "name": "FX4"
+  },
+  {
+   "kind": "video",
+   "name": "FX5"
+  },
+  {
+   "kind": "video",
+   "name": "FX6"
+  },
+  {
+   "kind": "video",
+   "name": "FX7"
+  },
+  {
+   "kind": "video",
+   "name": "BG"
+  },
+  {
+   "kind": "audio",
+   "name": "TRL"
+  }
+ ],
+ "total": 44.267
+}

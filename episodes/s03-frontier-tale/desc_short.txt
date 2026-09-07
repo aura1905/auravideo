@@ -1,0 +1,21 @@
+Frontier Tale's demo is 2.17 GB. 1.6 GB of it sits in a folder Unity itself names
+"BackUpThisFolder_ButDontShipItWithYourGame" — 892 files, including the 577 C++ files
+IL2CPP generated from their C#, and 88 debug symbol files (one is 688 MB on its own).
+
+The game is 615 MB. Everything else is a folder that never runs.
+
+Because it shipped, IL2CPP hides nothing here: A* Pathfinding Project, Behavior Designer,
+Cinemachine, DOTween, FMOD, Steamworks.NET.
+
+▶ The demo (free): https://store.steampowered.com/app/5010220/
+▶ Demo went up on Steam: 2 September 2026 — four days old when this was made.
+
+Take it with you: check your build output folder before you upload. Unity already tells
+you which one not to ship — it is in the folder's name.
+
+Read off public information only: the Steam store page and the demo depot manifest Steam
+publishes (file names and sizes — nothing unpacked, decompiled or redistributed). An
+outside reading, not a statement from the developer. Game footage belongs to
+APOPHIS GAME STUDIO.
+
+#shorts #gamedev #indiedev #unity

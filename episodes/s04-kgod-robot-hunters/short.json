@@ -1,0 +1,87 @@
+[
+ {
+  "id": "b0",
+  "sec": "hook",
+  "beat": 0.9,
+  "vis": {
+   "type": "image",
+   "file": "ev_open_v.png"
+  }
+ },
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "This is a poker game. The demo is three gigabytes.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 3.0
+  }
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "One file inside it is 1.6 of them.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "K-God Robot Hunters is a Korean-fantasy poker roguelike. It went up on Steam yesterday.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 11.0
+  }
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "You play hands, and goddesses rewrite them.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 20.0
+  }
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Unity, IL2CPP, 92 files. For a card game that is already a lot of build.",
+  "vis": {
+   "type": "image",
+   "file": "ev_build_v.png"
+  }
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "Two thirds of it is eight raw asset streams. The biggest is 1.6 gigabytes on its own.",
+  "vis": {
+   "type": "image",
+   "file": "ev_size_v.png"
+  }
+ },
+ {
+  "id": "s7",
+  "sec": "made",
+  "text": "And every asset bundle in the build is one thing: enemy animation, ante zero through eight.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 30.0
+  }
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "The cards were never the expensive part. The bosses were. Budget for that before you start. This is Demo Dip.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 40.0
+  }
+ }
+]

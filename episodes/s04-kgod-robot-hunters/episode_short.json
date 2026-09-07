@@ -1,0 +1,83 @@
+{
+ "title_en": "K-God Robot Hunters",
+ "demo_appid": 5084500,
+ "full_appid": 5084490,
+ "developer": "StoneIronGames",
+ "workdir": "episodes/s04-kgod-robot-hunters",
+ "bgm": {
+  "file": "trailer_main.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "beat_volume": 0.55,
+ "script_timed": "episodes/s04-kgod-robot-hunters/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s8",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity / IL2CPP"
+  ],
+  [
+   "THE BUILD",
+   "3.08 GiB / 92 files"
+  ],
+  [
+   "ONE FILE",
+   "1.60 GiB .resS"
+  ],
+  [
+   "RAW STREAMS",
+   "2.02 GiB, 66%"
+  ],
+  [
+   "EVERY BUNDLE",
+   "enemy animation"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "stack": [
+  [
+   "Unity IL2CPP",
+   "https://docs.unity3d.com/Manual/IL2CPP.html"
+  ],
+  [
+   "Unity Addressables",
+   "https://docs.unity3d.com/Packages/com.unity.addressables@latest"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5084500/"
+  ]
+ ],
+ "chapters": {
+  "hook": "3 GB",
+  "intro": "What it is",
+  "made": "Opening the build",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "A poker roguelike with a 3 GB demo — K-God Robot Hunters, and where it all went #shorts",
+  "tags": "shorts,K-God Robot Hunters,StoneIronGames,steam demo,unity,il2cpp,poker roguelike,deckbuilder,game teardown,indie dev,gamedev,demo dip,build size",
+  "privacy": "private",
+  "lang": "en",
+  "channel": "demodip"
+ }
+}

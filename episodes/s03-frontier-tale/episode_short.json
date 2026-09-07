@@ -1,0 +1,95 @@
+{
+ "title_en": "Frontier Tale",
+ "demo_appid": 5010220,
+ "full_appid": 4829780,
+ "developer": "APOPHIS GAME STUDIO",
+ "workdir": "episodes/s03-frontier-tale",
+ "bgm": {
+  "file": "trailer_main.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "beat_volume": 0.55,
+ "script_timed": "episodes/s03-frontier-tale/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s8",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity / IL2CPP"
+  ],
+  [
+   "THE BUILD",
+   "2.17 GiB / 1,106 files"
+  ],
+  [
+   "THE FOLDER",
+   "1.6 GiB, do not ship"
+  ],
+  [
+   "THE SOURCE",
+   "577 .cpp files"
+  ],
+  [
+   "THE SYMBOLS",
+   "88 .pdb, 694 MiB"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "stack": [
+  [
+   "Unity IL2CPP",
+   "https://docs.unity3d.com/Manual/IL2CPP.html"
+  ],
+  [
+   "A* Pathfinding Project",
+   "https://arongranberg.com/astar/"
+  ],
+  [
+   "Behavior Designer",
+   "https://opsive.com/assets/behavior-designer/"
+  ],
+  [
+   "Cinemachine",
+   "https://unity.com/features/cinemachine"
+  ],
+  [
+   "FMOD",
+   "https://www.fmod.com/"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5010220/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The folder",
+  "intro": "What it is",
+  "made": "Opening the build",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Unity named this folder 'do not ship it'. Frontier Tale shipped it — 1.6 of 2.2 GB #shorts",
+  "tags": "shorts,Frontier Tale,开拓物语,steam demo,unity,il2cpp,game teardown,indie dev,gamedev,demo dip,build size,pdb,debug symbols",
+  "privacy": "private",
+  "lang": "en",
+  "channel": "demodip"
+ }
+}

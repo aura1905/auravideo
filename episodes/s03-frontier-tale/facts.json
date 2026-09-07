@@ -1,0 +1,37 @@
+{
+ "demo_appid": 5010220,
+ "full_appid": 4829780,
+ "name": "Frontier Tale",
+ "developers": [
+  "APOPHIS GAME STUDIO"
+ ],
+ "publishers": [
+  "APOPHIS GAME STUDIO"
+ ],
+ "release": "To be announced",
+ "coming_soon": true,
+ "genres": [
+  "Adventure",
+  "Casual",
+  "Indie",
+  "RPG",
+  "Simulation"
+ ],
+ "languages": "Simplified Chinese*, English, Japanese, Traditional Chinese*languages with full audio support",
+ "website": null,
+ "short": "Frontier Tale is a cozy adventure farming game that blends extraction-style gameplay with town building. Forge weapons, explore a charming cel-shaded fantasy world, gather rare resources, recruit unique companions, and build your dream frontier from the ground up.",
+ "about": "  Frontier Tale  is a cozy adventure farming game where  extraction-style expeditions  fuel the growth of your settlement. As a pioneer, you'll venture into the wilderness alongside your loyal maid, Mia, to gather resources, build a thriving village, recruit unique companions, and explore procedurally generated maps. Every expedition brings you one step closer to creating a prosperous frontier that's truly your own.           【GAME FEATURES】      Every Expedition Is a New Adventure  No two expeditions are ever the same. Explore procedurally generated maps filled with unexpected encounters, dangerous monsters, hidden treasures, and valuable resources.  Fight with weapons you've forged yourself, decide how much you're willing to risk, and make the crucial choice between pushing deeper for greater rewards or extracting safely before losing everything.             Build the Village of Your Dreams  Turn the resources you recover into a flourishing frontier settlement.  Construct workshops, warehouses, farms, and production facilities to process materials, craft equipment, brew drinks, and prepare for future expeditions. As your village grows, your companions will live, work, and breathe life back into the forgotten land.             Recruit Unforgettable Companions  As your territory expands, you’ll encounter a group of wild and wonderful companions: a mercenary girl who fears rabbits, a mysterious carpenter with a hidden past, a knight with a unique obsession with combat...   Recruit these companions, each with their own combat style and work specialties. They won’t just join you on adventures — they’ll also become your trusted helpers in the village, taking care of farming, watering crops, animal husbandry, gathering, and other important tasks as you work together to build your home.             A Charming Cel-Shaded Fantasy World  Don't let the colorful visuals fool you.  Behind the storybook-inspired cel-shaded art style lies a wilderness full of danger, mystery, and unexpected challenges. Every peaceful landscape may hide a deadly surprise.             Uncover the Secrets of a Lost Civilization  Why did a once-prosperous land where humans and monsters lived together fall into ruin?  Recover ancient documents, restore forgotten relics, and gradually piece together the truth behind the lost civilization as you venture deeper into the frontier.             Play Your Way   Tailor the adventure to your own pace.Whether you're looking for a relaxing exploration experience or a high-stakes extraction challenge, multiple difficulty options let you customize the level of risk and reward.There's always one more run waiting.           ",
+ "min_req": " Minimum:     OS:  Windows 10+    Processor:   Intel(R) Core(TM) i3-3220    Memory:  8 GB RAM    Graphics:  1Gb Video Memory, Capable of OpenGL 3.0+ Support    Storage:  8 GB available space  ",
+ "movies": [
+  {
+   "id": 257415454,
+   "name": "Demo PV EN"
+  }
+ ],
+ "screenshots": 10,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

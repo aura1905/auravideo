@@ -1,0 +1,19 @@
+K-God Robot Hunters is a Korean-fantasy poker roguelike. Its demo is 3.08 GB in 92 files.
+
+Two thirds of that — 2.02 GB — is eight raw asset streams, and one of them,
+sharedassets1.assets.resS, is 1.60 GB on its own. Every asset bundle in the build is
+the same thing: enemy animation, ante00 through ante08, 404 MB of it.
+
+The cards were never the expensive part. The bosses were.
+
+▶ The demo (free): https://store.steampowered.com/app/5084500/
+▶ Demo went up on Steam: 5 September 2026 — one day old when this was made.
+
+Unity with IL2CPP, so the package list is hidden; the sizes are not.
+
+Read off public information only: the Steam store page and the demo depot manifest Steam
+publishes (file names and sizes — nothing unpacked, decompiled or redistributed). An
+outside reading, not a statement from the developer. Game footage belongs to
+StoneIronGames.
+
+#shorts #gamedev #indiedev #unity

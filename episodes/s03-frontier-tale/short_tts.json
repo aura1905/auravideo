@@ -1,0 +1,95 @@
+[
+ {
+  "id": "b0",
+  "sec": "hook",
+  "beat": 0.9,
+  "vis": {
+   "type": "image",
+   "file": "ev_open_v.png"
+  }
+ },
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "Unity names one folder 'Do Not Ship It With Your Game.' This demo shipped it.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 2.0
+  },
+  "sub": "Unity names one folder 'Do Not Ship It With Your Game.' This demo shipped it."
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "It is 1.6 of the 2.2 gigabytes you download.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "It is 1.6 of the 2.2 gigabytes you download."
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Frontier Tale is a cozy farming game with extraction runs. 219 people are in the demo now.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 12.0
+  },
+  "sub": "Frontier Tale is a cozy farming game with extraction runs. 219 people are in the demo now."
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "The game itself is 615 megabytes. The rest is that folder.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 24.0
+  },
+  "sub": "The game itself is 615 megabytes. The rest is that folder."
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Inside: 577 C plus plus files, their whole game translated out of C sharp.",
+  "vis": {
+   "type": "image",
+   "file": "ev_folder_v.png"
+  },
+  "sub": "Inside: 577 C++ files, their whole game translated out of C#."
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "And 88 debug symbol files. One is 688 megabytes by itself.",
+  "vis": {
+   "type": "image",
+   "file": "ev_pdb_v.png"
+  },
+  "sub": "And 88 debug symbol files. One is 688 megabytes by itself."
+ },
+ {
+  "id": "s7",
+  "sec": "made",
+  "text": "I L two C P P hides what a team used. This build lists it: A* Pathfinding, F MOD, Cinemachine.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 38.0
+  },
+  "sub": "IL2CPP hides what a team used. This build lists it: A* Pathfinding, FMOD, Cinemachine."
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "So check your build folder before you upload. Unity already told you which one. This is Demo Dip.",
+  "vis": {
+   "type": "video",
+   "file": "trailer_main.mp4",
+   "in": 50.0
+  },
+  "sub": "So check your build folder before you upload. Unity already told you which one. This is Demo Dip."
+ }
+]

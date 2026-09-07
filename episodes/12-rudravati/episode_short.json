@@ -1,0 +1,96 @@
+{
+ "title_en": "Rudravati: Curse of Bhankilla",
+ "demo_appid": 5105660,
+ "full_appid": 4201310,
+ "developer": "LeZit Games",
+ "workdir": "episodes/12-rudravati",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/12-rudravati/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity 6 / HDRP / Mono"
+  ],
+  [
+   "THE BUILD",
+   "6.09 GB / 228 files"
+  ],
+  [
+   "IN THE BOX",
+   "2 MCP runtimes"
+  ],
+  [
+   "ALSO",
+   "inference + tokenizer"
+  ],
+  [
+   "THE SLIP",
+   "editor tools shipped"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Rudravati",
+  "line2": "TWO AI AGENTS. SHIPPED.",
+  "size1": 104,
+  "size2": 58
+ },
+ "stack": [
+  [
+   "MCP for Unity",
+   "https://github.com/CoplayDev/unity-mcp"
+  ],
+  [
+   "Model Context Protocol",
+   "https://modelcontextprotocol.io/"
+  ],
+  [
+   "Unity Inference Engine",
+   "https://docs.unity3d.com/Packages/com.unity.ai.inference@latest"
+  ],
+  [
+   "DirectML",
+   "https://learn.microsoft.com/windows/ai/directml/"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5105660/"
+  ]
+ ],
+ "chapters": {
+  "hook": "Two AI runtimes",
+  "intro": "What it is",
+  "made": "Opening the build",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Rudravati: a horror demo that shipped two AI agent runtimes #shorts",
+  "tags": "shorts,Rudravati,Curse of Bhankilla,Bhangarh,LeZit Games,steam demo,unity,mono,mcp,model context protocol,unity mcp,directml,game teardown,demo dip,indian horror",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

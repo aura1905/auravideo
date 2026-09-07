@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5084500,
+ "full_appid": 5084490,
+ "name": "K-God Robot Hunters",
+ "developers": [
+  "StoneIronGames"
+ ],
+ "publishers": [
+  "StoneIronGames"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Casual",
+  "Indie",
+  "Strategy"
+ ],
+ "languages": "English, French, German, Spanish - Spain, Japanese, Korean, Russian, Simplified Chinese",
+ "website": null,
+ "short": "A Korean-fantasy poker roguelike where goddesses reshape every hand.",
+ "about": "  K-God Robot Hunters   A Roguelike Deckbuilder steeped in Korean mythology.   Five elements. 150 goddesses. Every hand reshapes the world.        The Story   When abandoned robots learned to feel &quot;love,&quot; the world fell apart. Their devotion to humanity twisted into rage, and cities crumbled under the weight of a machine uprising. On the brink of collapse, robot hunter Lee Jin-Gyeom discovers an ancient power — goddesses of Korean myth, sealed within cards — and launches humanity's last stand.          Deckbuilder Unlike Anything You've Played   Forget Spades and Hearts. K-God Robot Hunters is built from the ground up on  Eastern game grammar .  Your deck runs on  Five Wuxing Suits  — Wood, Fire, Earth, Metal, and Water — with ten ranks drawn from the Eight Trigrams, Yin, and Yang. The card-ranking system fuses the strategic depth of Western poker with the rhythm of Korea's traditional card game  Badugi .       Master hands you won't find anywhere else: Deungyongmun, Seonbi, Yangban, Samjeongseung, Osaek, Osaek-chan-yeon, Eoga, Yongmaru, Sabangsin — all the way up to the supreme hand: Yongbi.    Read the balance of Yin and Yang to unlock maximum firepower. Can you reach that level of mastery?     150 Goddess Cards   Every card is a goddess born from Korean and Eastern mythology — but not the way you remember them.    A  Nine-Tailed Fox  running an investment bank as CEO    An  Ungnyeo (Bear Woman)  making her rounds through subway cars as a merchant    A  Seonnyeo (Celestial Maiden)  gliding gracefully across the rink as an ice fairy            Each goddess is a modern reimagining at the crossroads of ancient myth and contemporary Korean life. Combine their unique abilities, build your deck, and fight back.     Key Features     Poker roguelite built on an original Five-Element (Wuxing) card system    150+ goddess cards inspired by Korean and Eastern mythology    A unique hand-ranking system rooted in Eastern philosophy    Cyberpunk world where ancient myth meets machine rebellion    Strategic deckbuilding with Yin-Yang balance mechanics              Early Demo — We Need Your Feedback!   This is an early build of K-God Robot Hunters. We're actively developing the game and your feedback will directly shape its future. Play the demo, break things, and let us know what you think! ",
+ "min_req": " Minimum:     OS:  Windows 10 64-bit, version 21H1 or later    Processor:  Intel Celeron G4900 or equivalent    Memory:  4 GB RAM    Graphics:  Intel UHD Graphics 610 or equivalent    DirectX:  Version 11    Storage:  5 GB available space  ",
+ "movies": [
+  {
+   "id": 257408797,
+   "name": "K-God Robot Hunters"
+  }
+ ],
+ "screenshots": 10,
+ "reviews": {
+  "total": 1,
+  "positive": 1,
+  "desc": "1 user reviews"
+ }
+}
