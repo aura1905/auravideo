@@ -1,0 +1,42 @@
+{
+ "title_en": "Disco Ball Simulator 2000",
+ "demo_appid": 5089460,
+ "full_appid": 5089450,
+ "developer": "Timi Ocean",
+ "workdir": "episodes/s09-disco-ball",
+ "bgm": {"file": "t0.mp4", "volume": 0.07},
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s09-disco-ball/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {"width": 1080, "height": 1920},
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": ["", "", "", ""],
+ "score_line_id": "s7",
+ "specs": [
+  ["ENGINE", "Unity - Mono"],
+  ["THE BUILD", "109 MB / 194 files"],
+  ["THE ENGINE", "146 DLLs - 80 MB"],
+  ["THE GAME", "25.8 MB"],
+  ["BOUGHT IN", "Odin Inspector"]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {"line1": "Disco Ball Simulator 2000", "line2": "109 MB. 26 OF IT IS THE GAME.", "size1": 74, "size2": 48},
+ "stack": [
+  ["Unity", "https://unity.com/"],
+  ["Odin Inspector (Sirenix)", "https://odininspector.com/"],
+  ["The demo on Steam", "https://store.steampowered.com/app/5089460/"]
+ ],
+ "chapters": {"hook": "109 MB, 26 of it the game", "intro": "What it is", "made": "Where the rest goes", "score": "The spec sheet"},
+ "youtube": {
+  "title": "Disco Ball Simulator 2000: 109 MB, and only 26 of it is the game #shorts",
+  "tags": "shorts,Disco Ball Simulator 2000,Timi Ocean,steam demo,unity,mono,incremental game,idle game,clicker,odin inspector,game teardown,demo dip",
+  "privacy": "private", "lang": "en"
+ },
+ "sub_y": 560
+}

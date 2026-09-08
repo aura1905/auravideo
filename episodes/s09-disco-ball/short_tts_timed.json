@@ -1,0 +1,112 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "You download a hundred and nine megabytes. About twenty-six of it is the game.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 16.5
+  },
+  "sub": "You download a hundred and nine megabytes. About twenty-six of it is the game.",
+  "dur": 4.467,
+  "wav": "episodes/s09-disco-ball/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "The rest is the engine carrying it.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 3.0
+  },
+  "sub": "The rest is the engine carrying it.",
+  "dur": 1.959,
+  "wav": "episodes/s09-disco-ball/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  },
+  "dur": 2.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Disco Ball Simulator 2000. You owe a million dollars and you own one disco ball.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 32.6
+  },
+  "sub": "Disco Ball Simulator 2000. You owe a million dollars and you own one disco ball.",
+  "dur": 5.277,
+  "wav": "episodes/s09-disco-ball/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "So you swipe it, over and over, until the party pays it off.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "So you swipe it, over and over, until the party pays it off.",
+  "dur": 4.101,
+  "wav": "episodes/s09-disco-ball/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "A hundred and forty-six D L Ls. Eighty megabytes. Three quarters of the download.",
+  "vis": {
+   "type": "image",
+   "file": "ev_dll_v.png"
+  },
+  "sub": "A hundred and forty-six DLLs. Eighty megabytes. Three quarters of the download.",
+  "dur": 5.303,
+  "wav": "episodes/s09-disco-ball/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "And the biggest file that isn't a D L L is Unity's own default resources.",
+  "vis": {
+   "type": "image",
+   "file": "ev_big_v.png"
+  },
+  "sub": "And the biggest file that isn't a DLL is Unity's own default resources.",
+  "dur": 4.937,
+  "wav": "episodes/s09-disco-ball/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "That isn't a criticism. It's the floor — what a small game costs on a big engine.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "That isn't a criticism. It's the floor — what a small game costs on a big engine.",
+  "dur": 5.172,
+  "wav": "episodes/s09-disco-ball/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "Worth a dip. Every demo I open, I read the file list first.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Worth a dip. Every demo I open, I read the file list first.",
+  "dur": 3.866,
+  "wav": "episodes/s09-disco-ball/tts_short/s8.wav"
+ }
+]

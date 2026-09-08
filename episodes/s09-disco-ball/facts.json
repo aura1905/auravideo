@@ -1,0 +1,34 @@
+{
+ "demo_appid": 5089460,
+ "full_appid": 5089020,
+ "name": "Disco Ball Simulator 2000",
+ "developers": [
+  "Timi Ocean"
+ ],
+ "publishers": [
+  "Timi Ocean"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Casual",
+  "Indie"
+ ],
+ "languages": "English**languages with full audio support",
+ "website": null,
+ "short": "You owe 1 million $ and all you have is a disco ball! A hectic but satisfying incremental swiping game about creating the perfect party night with light effects. Juggle cooldowns, upgrade equipment, earn $$$ and most importantly: Make numbers go up!",
+ "about": " You owe one million dollars. And you have nothing but a disco ball to pay it back.  Disco Ball Simulator 2000 is a satisfying incremental game about creating hype on the dance floor to eventually pay back the large debt you owe to shady creditors. How to spin a disco ball The club you rent is nothing but a shady backroom with a small dusty disco ball. It is your task to get the party going by turning one boring disco ball into an exstasy-inducing dopamine explosion of a light show.     Flick the disco ball  by swiping right. You know this move from your favorite dating app.     Upgrade your disco ball , clean it and rent more light effects to make your crowd go wild     Optimize your timing  of cleaning the disco ball, charging the disco motor and refilling the fog machine to ideally  stack hype multiplicators      Earn $  after each party night to  permanently improve  your equipment and unlock new equipment.           Incremental but not idle Keeping your dance floor running on maximum hype generation can get hectic. Manage four different light tools (From your cleaning sponge to an orchestrated laser show) with different cooldowns and effects to exponentially stack their effects.         ",
+ "min_req": " Minimum:     OS:  Windows 10 (64-bit)  ",
+ "movies": [
+  {
+   "id": 257409031,
+   "name": "Trailer2"
+  }
+ ],
+ "screenshots": 6,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

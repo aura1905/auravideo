@@ -1,0 +1,82 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "This ship-cleaning demo ships a language its store page doesn't sell.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 6.0
+  }
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Vietnamese. It's in the build. It's not on the page.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 26.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "It's Seaside Wash. You scrape barnacles and rust off wrecked ships.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "Six hundred and nine megabytes. A hundred and ninety-one files.",
+  "vis": {
+   "type": "image",
+   "file": "ev_build_v.png"
+  }
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "It's Unity on Mono, so the localization tables sit there with their names on them.",
+  "vis": {
+   "type": "image",
+   "file": "ev_lang_v.png"
+  }
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "English, Japanese, Korean, Simplified and Traditional Chinese. And Vietnamese, which the page never mentions.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Somebody already translated the whole thing. So either it's coming, or it got cut.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 38.0
+  }
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "Worth a dip. Every demo I open, I read the file list first.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

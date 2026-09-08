@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:04,382
+This ship-cleaning demo ships a
+language its store page doesn't sell.
+
+2
+00:00:04,632 --> 00:00:08,100
+Vietnamese. It's in the build.
+It's not on the page.
+
+3
+00:00:10,350 --> 00:00:14,889
+It's Seaside Wash.
+You scrape barnacles and rust off wrecked ships.
+
+4
+00:00:15,139 --> 00:00:19,573
+Six hundred and nine megabytes.
+A hundred and ninety-one files.
+
+5
+00:00:19,823 --> 00:00:24,780
+It's Unity on Mono,
+so the localization tables sit there with their names on them.
+
+6
+00:00:25,030 --> 00:00:32,494
+English, Japanese, Korean, Simplified and Traditional Chinese.
+And Vietnamese, which the page never mentions.
+
+7
+00:00:32,894 --> 00:00:38,347
+Somebody already translated the whole thing.
+So either it's coming, or it got cut.
+
+8
+00:00:38,747 --> 00:00:43,129
+Worth a dip. Every demo I open,
+I read the file list first.

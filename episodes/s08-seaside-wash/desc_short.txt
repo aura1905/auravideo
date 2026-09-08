@@ -1,0 +1,36 @@
+Seaside Wash — This ship-cleaning demo ships a language its store page doesn't sell.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4924230/
+▶ The full game: https://store.steampowered.com/app/4924220/
+
+── How they made it ──
+Engine       : Unity - Mono
+The Build    : 609 MB / 191 files
+In The Build : 6 language tables
+On The Page  : 5 languages
+Also         : a DoNotShip folder
+Verdict      : Worth A Dip
+
+── The stack, if you want to use it ──
+Unity              : https://unity.com/
+Unity Localization : https://docs.unity3d.com/Packages/com.unity.localization@latest
+Cinemachine        : https://unity.com/unity/features/editor/art-and-design/cinemachine
+DOTween            : http://dotween.demigiant.com/
+Steamworks.NET     : https://steamworks.github.io/
+The demo on Steam  : https://store.steampowered.com/app/4924230/
+
+── Chapters ──
+0:00 A language they didn't advertise
+0:11 What it is
+0:23 The localization tables
+0:36 The spec sheet
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to BITCOVER.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

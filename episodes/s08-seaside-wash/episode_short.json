@@ -1,0 +1,45 @@
+{
+ "title_en": "Seaside Wash",
+ "demo_appid": 4924230,
+ "full_appid": 4924220,
+ "developer": "BITCOVER",
+ "workdir": "episodes/s08-seaside-wash",
+ "bgm": {"file": "t0.mp4", "volume": 0.07},
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s08-seaside-wash/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {"width": 1080, "height": 1920},
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": ["", "", "", ""],
+ "score_line_id": "s7",
+ "specs": [
+  ["ENGINE", "Unity - Mono"],
+  ["THE BUILD", "609 MB / 191 files"],
+  ["IN THE BUILD", "6 language tables"],
+  ["ON THE PAGE", "5 languages"],
+  ["ALSO", "a DoNotShip folder"]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {"line1": "Seaside Wash", "line2": "A LANGUAGE THEY DIDN'T ADVERTISE.", "size1": 100, "size2": 48},
+ "stack": [
+  ["Unity", "https://unity.com/"],
+  ["Unity Localization", "https://docs.unity3d.com/Packages/com.unity.localization@latest"],
+  ["Cinemachine", "https://unity.com/unity/features/editor/art-and-design/cinemachine"],
+  ["DOTween", "http://dotween.demigiant.com/"],
+  ["Steamworks.NET", "https://steamworks.github.io/"],
+  ["The demo on Steam", "https://store.steampowered.com/app/4924230/"]
+ ],
+ "chapters": {"hook": "A language they didn't advertise", "intro": "What it is", "made": "The localization tables", "score": "The spec sheet"},
+ "youtube": {
+  "title": "Seaside Wash ships a language its store page doesn't sell #shorts",
+  "tags": "shorts,Seaside Wash,BITCOVER,steam demo,unity,mono,localization,cozy game,cleaning simulator,ship restoration,game teardown,demo dip",
+  "privacy": "private", "lang": "en"
+ },
+ "sub_y": 560
+}

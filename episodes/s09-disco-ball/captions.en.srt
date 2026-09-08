@@ -1,0 +1,38 @@
+1
+00:00:00,000 --> 00:00:04,617
+You download a hundred and nine megabytes.
+About twenty-six of it is the game.
+
+2
+00:00:04,867 --> 00:00:06,976
+The rest is the engine carrying it.
+
+3
+00:00:09,226 --> 00:00:14,653
+Disco Ball Simulator 2000.
+You owe a million dollars and you own one disco ball.
+
+4
+00:00:14,903 --> 00:00:19,154
+So you swipe it, over and over,
+until the party pays it off.
+
+5
+00:00:19,404 --> 00:00:24,857
+A hundred and forty-six DLLs.
+Eighty megabytes. Three quarters of the download.
+
+6
+00:00:25,107 --> 00:00:30,194
+And the biggest file that isn't a
+DLL is Unity's own default resources.
+
+7
+00:00:30,594 --> 00:00:35,916
+That isn't a criticism. It's the floor —
+what a small game costs on a big engine.
+
+8
+00:00:36,316 --> 00:00:40,332
+Worth a dip. Every demo I open,
+I read the file list first.

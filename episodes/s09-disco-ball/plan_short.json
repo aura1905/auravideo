@@ -1,0 +1,494 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts_short/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 4.467,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 0.0,
+   "in": 16.5,
+   "out": 21.367,
+   "fillMode": "blur",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.5
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s2.wav",
+   "start": 4.867,
+   "in": 0,
+   "out": 1.959,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 4.867,
+   "in": 3.0,
+   "out": 5.359,
+   "fillMode": "blur",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.5
+  },
+  {
+   "track": "a12",
+   "file": "t0.mp4",
+   "start": 7.226,
+   "in": 0.0,
+   "out": 2.0,
+   "volume": 0.55,
+   "fadeIn": 0.4,
+   "fadeOut": 0.8
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 7.226,
+   "in": 0.0,
+   "out": 2.0,
+   "fillMode": "blur",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.5
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s3.wav",
+   "start": 9.226,
+   "in": 0,
+   "out": 5.277,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "t0.mp4",
+   "start": 9.226,
+   "in": 32.6,
+   "out": 38.277,
+   "fillMode": "blur",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.5
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s4.wav",
+   "start": 14.903,
+   "in": 0,
+   "out": 4.101,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ss01_mv.mp4",
+   "start": 14.903,
+   "in": 0,
+   "out": 4.501,
+   "fillMode": "blur",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.5
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s5.wav",
+   "start": 19.404,
+   "in": 0,
+   "out": 5.303,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ev_dll_v_mvv.mp4",
+   "start": 19.404,
+   "in": 0,
+   "out": 5.703,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s6.wav",
+   "start": 25.107,
+   "in": 0,
+   "out": 4.937,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "ev_big_v_mvv.mp4",
+   "start": 25.107,
+   "in": 0,
+   "out": 5.337,
+   "fillMode": "fit",
+   "fadeIn": 0.25,
+   "fadeOut": 0.25,
+   "muted": true,
+   "transformScale": 1.0
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s7.wav",
+   "start": 30.444,
+   "in": 0,
+   "out": 5.172,
+   "volume": 1.6
+  },
+  {
+   "track": "a1",
+   "file": "tts_short/s8.wav",
+   "start": 36.016,
+   "in": 0,
+   "out": 3.866,
+   "volume": 1.6
+  },
+  {
+   "track": "v11",
+   "file": "still_bg_mv.mp4",
+   "start": 30.244,
+   "in": 0,
+   "out": 9.9,
+   "fillMode": "blur",
+   "fadeIn": 0.3,
+   "fadeOut": 0.3
+  },
+  {
+   "track": "v4",
+   "file": "v_score_header.mov",
+   "start": 30.444,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v5",
+   "file": "v_score_row_0.mov",
+   "start": 30.444,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v6",
+   "file": "v_score_row_1.mov",
+   "start": 30.444,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v7",
+   "file": "v_score_row_2.mov",
+   "start": 30.444,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v8",
+   "file": "v_score_row_3.mov",
+   "start": 30.444,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v9",
+   "file": "v_score_row_4.mov",
+   "start": 30.444,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v10",
+   "file": "v_score_stamp.mov",
+   "start": 30.444,
+   "in": 0,
+   "out": 9.5,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v1",
+   "file": "logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 40.582,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 41.082,
+   "volume": 0.07,
+   "fadeIn": 1.0,
+   "fadeOut": 1.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_drop.wav",
+   "start": 30.544,
+   "in": 0,
+   "out": 0.282,
+   "volume": 0.5
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 31.344,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 31.894,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 31.964,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 32.514,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 32.584,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 33.134,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 33.204,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 33.754,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_title.wav",
+   "start": 33.824,
+   "in": 0,
+   "out": 0.281,
+   "volume": 0.45
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/ui_add.wav",
+   "start": 34.374,
+   "in": 0,
+   "out": 0.532,
+   "volume": 0.4
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/thud.wav",
+   "start": 34.994,
+   "in": 0,
+   "out": 0.415,
+   "volume": 0.9
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/chime_complete.wav",
+   "start": 35.244,
+   "in": 0,
+   "out": 1.105,
+   "volume": 0.6
+  },
+  {
+   "track": "a3",
+   "file": "C:/Git/auravideo/assets/sfx/whoosh_exit.wav",
+   "start": 39.044,
+   "in": 0,
+   "out": 0.298,
+   "volume": 0.5
+  }
+ ],
+ "subs": [
+  {
+   "x": 0,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.0,
+   "bgPadding": 0,
+   "outline": 10,
+   "color": "#ffffff",
+   "fadeIn": 0.0,
+   "fadeOut": 0.35,
+   "start": 0.0,
+   "duration": 1.4,
+   "text": "Disco Ball Simulator 2000",
+   "y": -560,
+   "fontSize": 74
+  },
+  {
+   "x": 0,
+   "bgColor": "#0b1a3a",
+   "bgOpacity": 0.0,
+   "bgPadding": 0,
+   "outline": 10,
+   "color": "#19c6b7",
+   "fadeIn": 0.0,
+   "fadeOut": 0.35,
+   "start": 0.0,
+   "duration": 1.4,
+   "text": "109 MB. 26 OF IT IS THE GAME.",
+   "y": -420,
+   "fontSize": 48
+  },
+  {
+   "text": "You download a hundred and\nnine megabytes. About\ntwenty-six of it is the\ngame.",
+   "start": 0.0,
+   "duration": 4.617,
+   "fontSize": 42,
+   "y": 560,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "The rest is the engine\ncarrying it.",
+   "start": 4.867,
+   "duration": 2.109,
+   "fontSize": 50,
+   "y": 560,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "Disco Ball Simulator 2000.\nYou owe a million dollars\nand you own one disco\nball.",
+   "start": 9.226,
+   "duration": 5.427,
+   "fontSize": 42,
+   "y": 560,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "So you swipe it, over and\nover, until the party pays\nit off.",
+   "start": 14.903,
+   "duration": 4.251,
+   "fontSize": 50,
+   "y": 560,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "A hundred and forty-six\nDLLs. Eighty megabytes.\nThree quarters of the\ndownload.",
+   "start": 19.404,
+   "duration": 5.453,
+   "fontSize": 42,
+   "y": 560,
+   "bgOpacity": 0.62
+  },
+  {
+   "text": "And the biggest file that\nisn't a DLL is Unity's own\ndefault resources.",
+   "start": 25.107,
+   "duration": 5.087,
+   "fontSize": 50,
+   "y": 560,
+   "bgOpacity": 0.62
+  }
+ ],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "FX1"
+  },
+  {
+   "kind": "video",
+   "name": "FX2"
+  },
+  {
+   "kind": "video",
+   "name": "FX3"
+  },
+  {
+   "kind": "video",
+   "name": "FX4"
+  },
+  {
+   "kind": "video",
+   "name": "FX5"
+  },
+  {
+   "kind": "video",
+   "name": "FX6"
+  },
+  {
+   "kind": "video",
+   "name": "FX7"
+  },
+  {
+   "kind": "video",
+   "name": "BG"
+  },
+  {
+   "kind": "audio",
+   "name": "TRL"
+  }
+ ],
+ "total": 41.082
+}
