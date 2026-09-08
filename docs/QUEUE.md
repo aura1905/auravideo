@@ -1,50 +1,77 @@
-# 롱폼 후보 큐
+# 롱폼 후보 큐 — 2026-09-09 갱신
 
-기준은 `docs/CHANNEL.md` §8-B. **접속자 순위가 아니라 세 관문**으로 고른다.
+세 관문(`docs/CHANNEL.md` §8-B). 순서대로 걸러내는 게 아니라 셋을 다 보고 순위를 매긴다.
 
-1. 영상으로 봤을 때 계속 보게 되는 게임인가 — 트레일러·스샷에 인물이나 장면이 크게 잡힌
-   HUD 없는 컷이 있는가. 메뉴·지도·UI뿐이면 4~6분을 못 버틴다.
-2. 파일 목록이 아니라 이야기가 있는가.
-3. 시청자가 옮길 한 문장이 남는가.
-
-셋 중 하나라도 비면 쇼츠로만 낸다. 소재가 모자라면 편수를 줄이지 말고 더 넓게 찾는다.
+1. **이번 주에 올라온 데모인가.** 채널 정체성이라 예외 없음.
+2. **파일 목록이 아니라 이야기가 있는가.** 크기·이름·빠진 것·있으면 안 되는 것 중
+   한 문장으로 스크롤을 멈추게 할 사실.
+3. **영상으로 계속 볼 만한 게임인가.** 이슈가 될 소재인가, 게임성이 독특한가.
+   재미없을 것 같으면 거른다(사용자, 2026-09-06).
 
 **후보 찾는 법**: `https://store.steampowered.com/search/?category1=10&sort_by=Released_DESC&supportedlang=english`
-(`_DESC`가 빠지면 스팀이 관련도순으로 되돌려 옛날 유명 데모만 나온다.)
-엔진은 SteamDB의 **데모 appid** 페이지에서 손으로 확인한다.
+— `sort_by=Released`는 조용히 무시된다. **반드시 `Released_DESC`.**
+엔진과 depot 크기는 SteamDB에서 손으로 본다(스크립트 fetch 차단, 탭 이동 필요).
 
-## 제작 중
+## 이번 스캔 (2026-09-09)
 
-| 게임 | 데모 appid | 엔진 | 왜 |
-|---|---|---|---|
-| **Rudravati: Curse of Bhankilla** | 5105660 | Unity / **Mono** | 12화 제작 중. 빌드에 `MCPForUnity.Runtime.dll`과 `Unity.AI.MCP.Runtime.dll`이 **둘 다** 들어 있고 `Unity.InferenceEngine`(토크나이저 포함), `DirectML.dll` 13.4MB까지 있다. AI로 만든 흔적이 파일 목록에 통째로 남은 첫 사례. Mono라 `Assembly-CSharp.dll`이 그대로 있어 패키지 목록이 완전히 보인다. 에디터 전용 도구(`TinyGiantStudio.BetterInspector`, `BetterMesh`, `Unity.Recorder`, `Timeline.Samples.*` 6개)도 플레이어 빌드에 나갔다. 덤으로 SteamDB 본편명은 **RATNAVATI: Curse of Bhangarh**(실존 방가르 요새)인데 스토어에서 가상 이름으로 바꿨다. 인도 1인칭 호러, 영어·힌디 풀보이스, 9/6 등록 |
+Steam 검색 6페이지 300개 → 상세 조회 160개 → 전부 최근 5일. 그중 빌드까지 열어본 것:
 
-## 다음
+| 데모 | appid | 등록 | 빌드 | 판정 |
+|---|---|---|---|---|
+| **1.44MB RESCUE** | 5139920 | 9/7 | **1023.22 KiB / 파일 2개** | **다음 편** |
+| Did You See That? | 5164600 | 9/6 | 3.86 GiB | 보류 — 2인 협동이라 혼자 못 찍음 |
+| Project Spooky | 4795370 | 9/5 | 3.07 GiB | 예비 |
+| Night Portable | 5065360 | 9/5 | 743.43 MiB | 예비 |
 
-| 게임 | 데모 appid | 등록 | 왜 |
-|---|---|---|---|
-| **K-God Robot Hunters** | 5084500 | 9/4 | 사용자 지목. 한국 신화 판타지 + 포커 로그라이크라는 조합이 특이하고, 키 아트가 이번 주 후보 177편 중 상위권(애니 사이버펑크 여신, 네온 도시). 8개 언어(영·중·일·한 포함). 개발사 StoneIronGames. **엔진 미확인 — SteamDB 확인 필요** |
+### 제작 예정 — 1.44MB RESCUE (5139920)
 
-## 그림으로 걸러낸 예비 후보 (2026-09-06)
+본편 `5027770`, 1440 Works 자체 배급, Q4 2026 예정. 데모는 9/7 17:39 UTC 등록.
 
-이번 주 신규 데모 600편 → 트레일러+스샷 5장 이상+영어 지원 177편 → 키 아트 전수 확인.
-접속자는 전부 0~2명이라 기준에서 뺐다.
+데모 전체가 **두 파일**이다.
 
-| 게임 | 데모 appid | 메모 |
+```
+game.exe          711.57 KiB
+steam_api64.dll   311.65 KiB
+```
+
+관문 2를 가장 극단적인 방식으로 통과한다 — **읽을 파일 목록이 없다는 것 자체가 이야기다.**
+엔진 런타임도, 데이터 폴더도, 에셋 번들도, 서드파티 DLL도 없다. 아트·사운드·코드가 전부
+711 KB짜리 실행 파일 하나 안에 들어 있다. 그리고 이 데모에서 제일 큰 단일 의존성은
+**밸브의 Steam API DLL**이고, 그게 데모 용량의 30%다.
+
+바로 앞 편과 붙여 놓으면 그림이 선다:
+
+| | 14화 Prenecrotic | 15화 1.44MB RESCUE |
 |---|---|---|
-| PRIDEBLOOD -Born of Claws- | 4767890 | **Godot + C#** — 채널 첫 고도. DLL 186개 중 161개가 `System.*`, 게임 코드는 3.44MB뿐. "C#을 고르면 78MB가 붙는다"가 관문 3. 스샷 19장·트레일러 3개로 자료 최다. `_startup_check.log.err`도 나갔다 |
-| Mo Wu Tian Gong | 4343680 | 무협, 손그림 키 아트, 트레일러 3개, 간체 |
-| Airlock | 5017790 | 사실적 3D, 안개 낀 풍경 |
-| Overdue | 5148500 | 호러 크리처, 간체 |
-| The Black Breath | 5160770 | 다크 판타지 크리처 |
-| Layang Atma | 5068530 | 인도네시아 호러, 붉은 숲 |
-| Succubus Abyss | 4608720 | 애니 아트, 이 풀에서 리뷰 최다(39) |
+| 크기 | 22.28 GiB | 1023 KiB |
+| 파일 | 1,171개 | **2개** |
+| 배수 | | **약 22,000배 차이** |
 
-## 걸러낸 것과 이유
+관문 3도 통과한다. 게임 자체가 1.44 MB 플로피를 복구하는 프로그래밍 퍼즐이고,
+파이썬 비슷한 코드를 짜서 패처를 만든다. **소재가 곧 이 채널의 주제**다 — 용량.
+데모가 자기가 구하려는 플로피보다 작다.
 
-| 게임 | 왜 |
-|---|---|
-| Revenant Survivors (4693240) | 관문 1 탈락 — 사용자: "그래픽이 B급이다". 빌드에는 이야기가 있었다(5.66GB 중 4.34GB가 압축 안 된 `.resS`) |
-| IT THINKS! - Build Your Own GPU (5198250) | 관문 1 탈락 — 스샷 8장이 전부 회로도와 문서 화면. 빌드는 재미있었다(Electron, 게임 24MB에 브라우저 275MB) |
-| Tasty Chef / Idle Pixel Battle / Project OC | 접속자 상위(109·89·80)지만 관문 1·2 모두 약함 |
-| Oar'some Adventures (5057590) | 언리얼, 파일 32개 — 뜯을 게 없다 |
+## 이번 스캔에서 눈에 띈 것들 (아직 빌드 안 봄)
+
+- **5180670 Shrine Full of Anomalies** — 동방 2차 창작 이상현상 찾기. 13화와 장르가
+  겹쳐서 당장은 안 쓴다.
+- **4852000 ChocoPhobia** — 화염방사기로 살점 먹는 초콜릿을 태운다. 소재가 튄다.
+- **5128940 PSYCHO CASKET** — "정통 이모 RPG", 뱀파이어.
+- **5199770 The Day I Became a Werewolf**
+- **5135710 AI School Simulator** — AI 학생들이 있는 학원물. AI 각도.
+- **데스크톱 위젯 게임이 한 주에 넷** — 5069600 Desktop Forge, 5119870 TBF: Task Bar
+  Fishing, 5125580 Goats and Shrubs: Desktop Topiary, 5191390 Kawaii Evolution Clicker
+  Desktop Edition. 흐름으로는 흥미롭지만 **게임 하나를 깊게 파는 게 정체성**이라
+  묶음 영상은 만들지 않는다(사용자, 2026-09-06).
+
+## 이미 만든 것
+
+| 데모 | appid | 편 |
+|---|---|---|
+| COMPARTMENT 666 : ANOMALY EXPRESS | 5016400 | 13화 + 쇼츠 |
+| Prenecrotic: The Cursed School VR | 4947430 | 14화 |
+| Rudravati: Curse of Bhankilla | 5105660 | 12화 + 쇼츠 |
+| Voxotron | 5107400 | 쇼츠 s06 |
+| Rising Above It | 5183320 | — 사용자 추천, 미제작 |
+| Tasty Chef | 5067140 | 쇼츠 s05 |
+| K-God Robot Hunters | 5084500 | 쇼츠 s04 |
