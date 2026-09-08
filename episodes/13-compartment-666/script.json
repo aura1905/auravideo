@@ -6,7 +6,7 @@
   "vis": {
    "type": "video",
    "file": "t0.mp4",
-   "in": 13.5
+   "in": 20.4
   }
  },
  {
@@ -42,7 +42,7 @@
   "vis": {
    "type": "video",
    "file": "t0.mp4",
-   "in": 7.5
+   "in": 24.5
   }
  },
  {
@@ -50,7 +50,8 @@
   "sec": "intro",
   "text": "Say normal when it's normal, and the train moves on. Say it wrong, either way, and you lose a life. You get three.",
   "vis": {
-   "type": "continue"
+   "type": "image",
+   "file": "ss04.jpg"
   }
  },
  {
@@ -70,7 +71,7 @@
   "vis": {
    "type": "video",
    "file": "t0.mp4",
-   "in": 14.0
+   "in": 22.5
   }
  },
  {
@@ -78,7 +79,8 @@
   "sec": "intro",
   "beat": 6.0,
   "vis": {
-   "type": "continue"
+   "type": "image",
+   "file": "ss01.jpg"
   }
  },
  {
@@ -162,7 +164,7 @@
   "vis": {
    "type": "video",
    "file": "t0.mp4",
-   "in": 8.5
+   "in": 13.2
   }
  },
  {
@@ -234,7 +236,7 @@
   "vis": {
    "type": "video",
    "file": "t0.mp4",
-   "in": 15.5
+   "in": 20.4
   }
  },
  {
@@ -242,7 +244,9 @@
   "sec": "made",
   "text": "If you made this and I'm wrong, the comments are right there.",
   "vis": {
-   "type": "continue"
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.5
   }
  },
  {
@@ -261,7 +265,7 @@
   "vis": {
    "type": "video",
    "file": "t0.mp4",
-   "in": 9.5
+   "in": 26.5
   }
  },
  {
@@ -289,7 +293,7 @@
   "vis": {
    "type": "video",
    "file": "t0.mp4",
-   "in": 31.0
+   "in": 21.0
   }
  },
  {

@@ -1,0 +1,199 @@
+1
+00:00:00,000 --> 00:00:05,218
+This VR demo is twenty-two gigabytes.
+The store page asks you to free up nine.
+
+2
+00:00:05,468 --> 00:00:09,432
+And eighteen and a half of those gigabytes are the same thing,
+six times over.
+
+3
+00:00:13,282 --> 00:00:15,025
+Let's do the game first.
+
+4
+00:00:15,275 --> 00:00:21,903
+Prenecrotic: The Cursed School. You are in a headset,
+in an abandoned school, looking for your wife.
+
+5
+00:00:22,153 --> 00:00:28,729
+It is VR only. No flat screen mode, no keyboard.
+If you don't own a headset there is nothing here for you.
+
+6
+00:00:28,979 --> 00:00:32,629
+And it commits to that.
+Watch what your hands are made to do.
+
+7
+00:00:32,879 --> 00:00:40,840
+You hold a paper map up to a flashlight to read it.
+You wind a record player. You punch a code into a keypad, one finger at a time.
+
+8
+00:00:46,090 --> 00:00:52,980
+That is the argument for horror in VR. The fear isn't the thing in the room.
+It's that your hands are busy when it arrives.
+
+9
+00:00:53,230 --> 00:00:58,683
+There's a bat early on,
+and later a pistol with fifteen rounds you can count in the corner of your eye.
+
+10
+00:00:58,933 --> 00:01:04,673
+It went up on Steam yesterday. Ten languages,
+no reviews, and a full game with no date on it.
+
+11
+00:01:04,923 --> 00:01:06,353
+Which leaves the build.
+
+12
+00:01:06,603 --> 00:01:12,056
+Twenty-two point two eight gigabytes.
+One thousand one hundred and seventy-one files.
+
+13
+00:01:12,306 --> 00:01:19,169
+The store page's own minimum spec asks for nine gigabytes of storage.
+The demo by itself is more than twice that.
+
+14
+00:01:19,419 --> 00:01:23,435
+So I went looking for where it all went.
+It isn't the art.
+
+15
+00:01:23,685 --> 00:01:29,843
+Unity's Addressables system packs content into bundles,
+and this build's bundles sit in one folder.
+
+16
+00:01:30,093 --> 00:01:37,270
+Six of them carry the same group name.
+Six different hashes. Three point zero nine gigabytes each.
+
+17
+00:01:37,520 --> 00:01:45,063
+That trailing hash is a content hash.
+Six hashes means six builds of one group — not six sets of scenes.
+
+18
+00:01:45,313 --> 00:01:52,542
+Every rebuild writes a new bundle beside the old one,
+and nothing deletes the old one. Then the whole folder gets packed.
+
+19
+00:01:52,792 --> 00:01:56,260
+One of the six is loaded.
+The other five are last week.
+
+20
+00:01:56,510 --> 00:02:00,160
+Eighteen and a half gigabytes of previous builds,
+in a demo.
+
+21
+00:02:00,410 --> 00:02:01,918
+Then there is this one.
+
+22
+00:02:02,168 --> 00:02:07,908
+Unity writes that folder name itself.
+Back up this folder, but don't ship it with your game.
+
+23
+00:02:08,158 --> 00:02:18,861
+One thousand and sixty-nine files. Seven hundred and fifty C++ files that IL2CPP generated out of their C#,
+and the managed assemblies beside them.
+
+24
+00:02:19,111 --> 00:02:27,072
+If you saw the Frontier Tale short yesterday, that is the same folder.
+Different studio, different engine, same unticked box.
+
+25
+00:02:27,322 --> 00:02:32,592
+There's a second one next to it,
+and Unity named that one Do Not Ship. Also shipped.
+
+26
+00:02:32,842 --> 00:02:38,216
+Take out the duplicates and those two folders,
+and the game is about three point seven gigabytes.
+
+27
+00:02:38,466 --> 00:02:41,516
+Five sixths of what you
+download never runs.
+
+28
+00:02:41,766 --> 00:02:44,998
+The VR side has its own
+version of the same story.
+
+29
+00:02:45,248 --> 00:02:54,045
+SteamVR, Meta's plugin, and Unity's OpenXR are all in there.
+Three routes into a headset, and a player uses one.
+
+30
+00:02:54,295 --> 00:03:00,558
+There's also an ARM64 folder holding the editor's fake headset,
+in a game that only ships for Windows.
+
+31
+00:03:00,808 --> 00:03:02,656
+And two I can't account for.
+
+32
+00:03:02,906 --> 00:03:11,990
+Thirty-four megabytes of OpenCV — computer vision — and forty-nine of DLSS.
+Then Meta's XR agent bridge, which is a thing you drive the editor with.
+
+33
+00:03:12,240 --> 00:03:19,757
+Two episodes ago I found an agent bridge in another horror demo and said I'd rather be wrong out loud.
+Same offer here.
+
+34
+00:03:20,007 --> 00:03:23,475
+Reception. There isn't any yet —
+it's a day old.
+
+35
+00:03:23,725 --> 00:03:34,428
+So here's the honest read. The game underneath is more careful than the build around it.
+The hands do real work, the school is a good place to be lost in, and somebody spent time on it.
+
+36
+00:03:34,678 --> 00:03:38,015
+What shipped around it is a
+first build that nobody swept.
+
+37
+00:03:38,265 --> 00:03:40,609
+Here's the whole teardown on one card.
+
+38
+00:03:40,859 --> 00:03:50,230
+Unity on IL2CPP, twenty-two gigabytes, eighteen of them stale,
+three VR runtimes, and a folder that asked not to come.
+
+39
+00:03:50,480 --> 00:03:57,657
+Worth a dip if you own a headset. It's free,
+it's genuinely unpleasant in the way it wants to be, and it's about half an hour.
+
+40
+00:03:57,907 --> 00:04:11,641
+If you ship Unity in VR, take three things from this one. Clear the Addressables folder between builds.
+Delete the two folders Unity told you to delete. Pick one XR path. That's eighteen gigabytes of somebody's download.
+
+41
+00:04:11,891 --> 00:04:22,464
+That's my read from the outside. If you worked on this and I got something wrong,
+say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.

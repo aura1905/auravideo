@@ -1,0 +1,511 @@
+[
+ {
+  "id": "01",
+  "sec": "hook",
+  "text": "This VR demo is twenty-two gigabytes. The store page asks you to free up nine.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 26.0
+  },
+  "sub": "This VR demo is twenty-two gigabytes. The store page asks you to free up nine.",
+  "dur": 5.068,
+  "wav": "episodes/14-prenecrotic/tts/01.wav"
+ },
+ {
+  "id": "02",
+  "sec": "hook",
+  "text": "And eighteen and a half of those gigabytes are the same thing, six times over.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "And eighteen and a half of those gigabytes are the same thing, six times over.",
+  "dur": 3.814,
+  "wav": "episodes/14-prenecrotic/tts/02.wav"
+ },
+ {
+  "id": "03",
+  "sec": "intro",
+  "text": "Let's do the game first.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 8.5
+  },
+  "sub": "Let's do the game first.",
+  "dur": 1.593,
+  "wav": "episodes/14-prenecrotic/tts/03.wav"
+ },
+ {
+  "id": "04",
+  "sec": "intro",
+  "text": "Prenecrotic: The Cursed School. You are in a headset, in an abandoned school, looking for your wife.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 34.0
+  },
+  "sub": "Prenecrotic: The Cursed School. You are in a headset, in an abandoned school, looking for your wife.",
+  "dur": 6.478,
+  "wav": "episodes/14-prenecrotic/tts/04.wav"
+ },
+ {
+  "id": "05",
+  "sec": "intro",
+  "text": "It is VR only. No flat screen mode, no keyboard. If you don't own a headset there is nothing here for you.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 42.0
+  },
+  "sub": "It is VR only. No flat screen mode, no keyboard. If you don't own a headset there is nothing here for you.",
+  "dur": 6.426,
+  "wav": "episodes/14-prenecrotic/tts/05.wav"
+ },
+ {
+  "id": "06",
+  "sec": "intro",
+  "text": "And it commits to that. Watch what your hands are made to do.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "And it commits to that. Watch what your hands are made to do.",
+  "dur": 3.5,
+  "wav": "episodes/14-prenecrotic/tts/06.wav"
+ },
+ {
+  "id": "07",
+  "sec": "intro",
+  "text": "You hold a paper map up to a flashlight to read it. You wind a record player. You punch a code into a keypad, one finger at a time.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "You hold a paper map up to a flashlight to read it. You wind a record player. You punch a code into a keypad, one finger at a time.",
+  "dur": 7.811,
+  "wav": "episodes/14-prenecrotic/tts/07.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 5.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.0
+  },
+  "dur": 5.0,
+  "wav": null
+ },
+ {
+  "id": "08",
+  "sec": "intro",
+  "text": "That is the argument for horror in VR. The fear isn't the thing in the room. It's that your hands are busy when it arrives.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "That is the argument for horror in VR. The fear isn't the thing in the room. It's that your hands are busy when it arrives.",
+  "dur": 6.74,
+  "wav": "episodes/14-prenecrotic/tts/08.wav"
+ },
+ {
+  "id": "09",
+  "sec": "intro",
+  "text": "There's a bat early on, and later a pistol with fifteen rounds you can count in the corner of your eye.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "There's a bat early on, and later a pistol with fifteen rounds you can count in the corner of your eye.",
+  "dur": 5.303,
+  "wav": "episodes/14-prenecrotic/tts/09.wav"
+ },
+ {
+  "id": "10",
+  "sec": "intro",
+  "text": "It went up on Steam yesterday. Ten languages, no reviews, and a full game with no date on it.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "It went up on Steam yesterday. Ten languages, no reviews, and a full game with no date on it.",
+  "dur": 5.59,
+  "wav": "episodes/14-prenecrotic/tts/10.wav"
+ },
+ {
+  "id": "11",
+  "sec": "intro",
+  "text": "Which leaves the build.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 53.0
+  },
+  "sub": "Which leaves the build.",
+  "dur": 1.28,
+  "wav": "episodes/14-prenecrotic/tts/11.wav"
+ },
+ {
+  "id": "12",
+  "sec": "made",
+  "text": "Twenty-two point two eight gigabytes. One thousand one hundred and seventy-one files.",
+  "vis": {
+   "type": "image",
+   "file": "ev_size.png"
+  },
+  "sub": "Twenty-two point two eight gigabytes. One thousand one hundred and seventy-one files.",
+  "dur": 5.303,
+  "wav": "episodes/14-prenecrotic/tts/12.wav"
+ },
+ {
+  "id": "13",
+  "sec": "made",
+  "text": "The store page's own minimum spec asks for nine gigabytes of storage. The demo by itself is more than twice that.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "The store page's own minimum spec asks for nine gigabytes of storage. The demo by itself is more than twice that.",
+  "dur": 6.713,
+  "wav": "episodes/14-prenecrotic/tts/13.wav"
+ },
+ {
+  "id": "14",
+  "sec": "made",
+  "text": "So I went looking for where it all went. It isn't the art.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 37.0
+  },
+  "sub": "So I went looking for where it all went. It isn't the art.",
+  "dur": 3.866,
+  "wav": "episodes/14-prenecrotic/tts/14.wav"
+ },
+ {
+  "id": "15",
+  "sec": "made",
+  "text": "Unity's addressables system packs content into bundles, and this build's bundles sit in one folder.",
+  "vis": {
+   "type": "image",
+   "file": "ev_dupes.png"
+  },
+  "sub": "Unity's Addressables system packs content into bundles, and this build's bundles sit in one folder.",
+  "dur": 6.008,
+  "wav": "episodes/14-prenecrotic/tts/15.wav"
+ },
+ {
+  "id": "16",
+  "sec": "made",
+  "text": "Six of them carry the same group name. Six different hashes. Three point zero nine gigabytes each.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Six of them carry the same group name. Six different hashes. Three point zero nine gigabytes each.",
+  "dur": 7.027,
+  "wav": "episodes/14-prenecrotic/tts/16.wav"
+ },
+ {
+  "id": "17",
+  "sec": "made",
+  "text": "That trailing hash is a content hash. Six hashes means six builds of one group — not six sets of scenes.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 88.0
+  },
+  "sub": "That trailing hash is a content hash. Six hashes means six builds of one group — not six sets of scenes.",
+  "dur": 7.393,
+  "wav": "episodes/14-prenecrotic/tts/17.wav"
+ },
+ {
+  "id": "18",
+  "sec": "made",
+  "text": "Every rebuild writes a new bundle beside the old one, and nothing deletes the old one. Then the whole folder gets packed.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "Every rebuild writes a new bundle beside the old one, and nothing deletes the old one. Then the whole folder gets packed.",
+  "dur": 7.079,
+  "wav": "episodes/14-prenecrotic/tts/18.wav"
+ },
+ {
+  "id": "19",
+  "sec": "made",
+  "text": "One of the six is loaded. The other five are last week.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "One of the six is loaded. The other five are last week.",
+  "dur": 3.318,
+  "wav": "episodes/14-prenecrotic/tts/19.wav"
+ },
+ {
+  "id": "20",
+  "sec": "made",
+  "text": "Eighteen and a half gigabytes of previous builds, in a demo.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Eighteen and a half gigabytes of previous builds, in a demo.",
+  "dur": 3.5,
+  "wav": "episodes/14-prenecrotic/tts/20.wav"
+ },
+ {
+  "id": "21",
+  "sec": "made",
+  "text": "Then there is this one.",
+  "vis": {
+   "type": "image",
+   "file": "ev_folder.png"
+  },
+  "sub": "Then there is this one.",
+  "dur": 1.358,
+  "wav": "episodes/14-prenecrotic/tts/21.wav"
+ },
+ {
+  "id": "22",
+  "sec": "made",
+  "text": "Unity writes that folder name itself. Back up this folder, but don't ship it with your game.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Unity writes that folder name itself. Back up this folder, but don't ship it with your game.",
+  "dur": 5.59,
+  "wav": "episodes/14-prenecrotic/tts/22.wav"
+ },
+ {
+  "id": "23",
+  "sec": "made",
+  "text": "One thousand and sixty-nine files. Seven hundred and fifty C plus plus files that I L two C P P generated out of their C sharp, and the managed assemblies beside them.",
+  "vis": {
+   "type": "image",
+   "file": "ev_folder.png"
+  },
+  "sub": "One thousand and sixty-nine files. Seven hundred and fifty C++ files that IL2CPP generated out of their C#, and the managed assemblies beside them.",
+  "dur": 10.553,
+  "wav": "episodes/14-prenecrotic/tts/23.wav"
+ },
+ {
+  "id": "24",
+  "sec": "made",
+  "text": "If you saw the Frontier Tale short yesterday, that is the same folder. Different studio, different engine, same unticked box.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  },
+  "sub": "If you saw the Frontier Tale short yesterday, that is the same folder. Different studio, different engine, same unticked box.",
+  "dur": 7.811,
+  "wav": "episodes/14-prenecrotic/tts/24.wav"
+ },
+ {
+  "id": "25",
+  "sec": "made",
+  "text": "There's a second one next to it, and Unity named that one Do Not Ship. Also shipped.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 56.0
+  },
+  "sub": "There's a second one next to it, and Unity named that one Do Not Ship. Also shipped.",
+  "dur": 5.12,
+  "wav": "episodes/14-prenecrotic/tts/25.wav"
+ },
+ {
+  "id": "26",
+  "sec": "made",
+  "text": "Take out the duplicates and those two folders, and the game is about three point seven gigabytes.",
+  "vis": {
+   "type": "image",
+   "file": "ev_left.png"
+  },
+  "sub": "Take out the duplicates and those two folders, and the game is about three point seven gigabytes.",
+  "dur": 5.224,
+  "wav": "episodes/14-prenecrotic/tts/26.wav"
+ },
+ {
+  "id": "27",
+  "sec": "made",
+  "text": "Five sixths of what you download never runs.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Five sixths of what you download never runs.",
+  "dur": 2.9,
+  "wav": "episodes/14-prenecrotic/tts/27.wav"
+ },
+ {
+  "id": "28",
+  "sec": "made",
+  "text": "The VR side has its own version of the same story.",
+  "vis": {
+   "type": "image",
+   "file": "ev_vr.png"
+  },
+  "sub": "The VR side has its own version of the same story.",
+  "dur": 3.082,
+  "wav": "episodes/14-prenecrotic/tts/28.wav"
+ },
+ {
+  "id": "29",
+  "sec": "made",
+  "text": "Steam V R, Meta's plugin, and Unity's open X R are all in there. Three routes into a headset, and a player uses one.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "SteamVR, Meta's plugin, and Unity's OpenXR are all in there. Three routes into a headset, and a player uses one.",
+  "dur": 8.647,
+  "wav": "episodes/14-prenecrotic/tts/29.wav"
+ },
+ {
+  "id": "30",
+  "sec": "made",
+  "text": "There's also an arm sixty-four folder holding the editor's fake headset, in a game that only ships for Windows.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 92.0
+  },
+  "sub": "There's also an ARM64 folder holding the editor's fake headset, in a game that only ships for Windows.",
+  "dur": 6.113,
+  "wav": "episodes/14-prenecrotic/tts/30.wav"
+ },
+ {
+  "id": "31",
+  "sec": "made",
+  "text": "And two I can't account for.",
+  "vis": {
+   "type": "image",
+   "file": "ev_odd.png"
+  },
+  "sub": "And two I can't account for.",
+  "dur": 1.698,
+  "wav": "episodes/14-prenecrotic/tts/31.wav"
+ },
+ {
+  "id": "32",
+  "sec": "made",
+  "text": "Thirty-four megabytes of open C V — computer vision — and forty-nine of D L S S. Then Meta's XR agent bridge, which is a thing you drive the editor with.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Thirty-four megabytes of OpenCV — computer vision — and forty-nine of DLSS. Then Meta's XR agent bridge, which is a thing you drive the editor with.",
+  "dur": 8.934,
+  "wav": "episodes/14-prenecrotic/tts/32.wav"
+ },
+ {
+  "id": "33",
+  "sec": "made",
+  "text": "Two episodes ago I found an agent bridge in another horror demo and said I'd rather be wrong out loud. Same offer here.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 45.0
+  },
+  "sub": "Two episodes ago I found an agent bridge in another horror demo and said I'd rather be wrong out loud. Same offer here.",
+  "dur": 7.367,
+  "wav": "episodes/14-prenecrotic/tts/33.wav"
+ },
+ {
+  "id": "34",
+  "sec": "review",
+  "text": "Reception. There isn't any yet — it's a day old.",
+  "vis": {
+   "type": "image",
+   "file": "ss08.jpg"
+  },
+  "sub": "Reception. There isn't any yet — it's a day old.",
+  "dur": 3.318,
+  "wav": "episodes/14-prenecrotic/tts/34.wav"
+ },
+ {
+  "id": "35",
+  "sec": "review",
+  "text": "So here's the honest read. The game underneath is more careful than the build around it. The hands do real work, the school is a good place to be lost in, and somebody spent time on it.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 83.0
+  },
+  "sub": "So here's the honest read. The game underneath is more careful than the build around it. The hands do real work, the school is a good place to be lost in, and somebody spent time on it.",
+  "dur": 10.553,
+  "wav": "episodes/14-prenecrotic/tts/35.wav"
+ },
+ {
+  "id": "36",
+  "sec": "review",
+  "text": "What shipped around it is a first build that nobody swept.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  },
+  "sub": "What shipped around it is a first build that nobody swept.",
+  "dur": 3.187,
+  "wav": "episodes/14-prenecrotic/tts/36.wav"
+ },
+ {
+  "id": "37",
+  "sec": "score",
+  "text": "Here's the whole teardown on one card.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 92.0
+  },
+  "sub": "Here's the whole teardown on one card.",
+  "dur": 2.194,
+  "wav": "episodes/14-prenecrotic/tts/37.wav"
+ },
+ {
+  "id": "38",
+  "sec": "score",
+  "text": "Unity on I L two C P P, twenty-two gigabytes, eighteen of them stale, three VR runtimes, and a folder that asked not to come.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "Unity on IL2CPP, twenty-two gigabytes, eighteen of them stale, three VR runtimes, and a folder that asked not to come.",
+  "dur": 9.221,
+  "wav": "episodes/14-prenecrotic/tts/38.wav"
+ },
+ {
+  "id": "39",
+  "sec": "score",
+  "text": "Worth a dip if you own a headset. It's free, it's genuinely unpleasant in the way it wants to be, and it's about half an hour.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 32.0
+  },
+  "sub": "Worth a dip if you own a headset. It's free, it's genuinely unpleasant in the way it wants to be, and it's about half an hour.",
+  "dur": 7.027,
+  "wav": "episodes/14-prenecrotic/tts/39.wav"
+ },
+ {
+  "id": "40",
+  "sec": "score",
+  "text": "If you ship Unity in VR, take three things from this one. Clear the addressables folder between builds. Delete the two folders Unity told you to delete. Pick one XR path. That's eighteen gigabytes of somebody's download.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "If you ship Unity in VR, take three things from this one. Clear the Addressables folder between builds. Delete the two folders Unity told you to delete. Pick one XR path. That's eighteen gigabytes of somebody's download.",
+  "dur": 13.584,
+  "wav": "episodes/14-prenecrotic/tts/40.wav"
+ },
+ {
+  "id": "41",
+  "sec": "score",
+  "text": "That's my read from the outside. If you worked on this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "That's my read from the outside. If you worked on this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "dur": 10.423,
+  "wav": "episodes/14-prenecrotic/tts/41.wav"
+ }
+]

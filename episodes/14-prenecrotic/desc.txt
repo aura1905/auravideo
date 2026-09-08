@@ -1,0 +1,40 @@
+Prenecrotic: The Cursed School VR — This VR demo is 22 GB. 18 of them are the same build, six times over.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4947430/
+▶ The full game: https://store.steampowered.com/app/3723640/
+
+── How they made it ──
+Engine    : Unity - IL2CPP - VR only
+The Build : 22.28 GB / 1,171 files
+The Waste : 18.54 GB of old builds
+Left In   : the DoNotShip folders
+Also      : 3 XR runtimes, OpenCV
+Verdict   : Worth A Dip
+
+── The stack, if you want to use it ──
+Unity              : https://unity.com/
+Unity Addressables : https://docs.unity3d.com/Packages/com.unity.addressables@latest
+OpenXR             : https://www.khronos.org/openxr/
+Meta XR SDK        : https://developers.meta.com/horizon/develop/unity
+SteamVR (OpenVR)   : https://github.com/ValveSoftware/openvr
+OpenCvSharp        : https://github.com/shimat/opencvsharp
+NVIDIA DLSS        : https://developer.nvidia.com/rtx/dlss
+Bakery lightmapper : https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218
+The demo on Steam  : https://store.steampowered.com/app/4947430/
+
+── Chapters ──
+0:00 22 GB, and 18 of them are duplicates
+0:13 What a VR anomaly school actually plays like
+1:07 Opening the build
+3:20 No reception yet
+3:38 The spec sheet + verdict
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to Elfhiem Game Studio.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

@@ -2,6 +2,7 @@ COMPARTMENT 666: ANOMALY EXPRESS — This horror demo shipped with Python inside
 
 ▶ Steam demo (free): https://store.steampowered.com/app/5016400/
 ▶ The full game: https://store.steampowered.com/app/5016110/
+▶ The 45-second version: https://youtube.com/shorts/dvLgeznrdgU
 
 ── How they made it ──
 Engine    : Unreal Engine
@@ -37,8 +38,3 @@ from the developer. All game footage and images belong to ShepherdWorks.
 Made by someone who's been building games for over twenty years.
 
 #indiedev #gamedev #steamdemo
-
-── More teardowns ──
-◀ Previous episode — Rudravati: https://youtu.be/Mxe7zasU0PI
-▶ Every episode, in order: https://www.youtube.com/playlist?list=PLDP0qAKsKK6I
-▶ Unreal Engine teardowns: https://www.youtube.com/playlist?list=PLJBPrWihrPNU

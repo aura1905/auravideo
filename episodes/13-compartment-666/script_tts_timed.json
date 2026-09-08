@@ -6,7 +6,7 @@
   "vis": {
    "type": "video",
    "file": "t0.mp4",
-   "in": 13.5
+   "in": 20.4
   },
   "sub": "This horror demo shipped with Python inside it. And a machine learning runtime.",
   "dur": 4.754,
@@ -54,7 +54,7 @@
   "vis": {
    "type": "video",
    "file": "t0.mp4",
-   "in": 7.5
+   "in": 24.5
   },
   "sub": "You walk into a compartment. You look at it. Then you decide one thing: is this normal, or has something changed.",
   "dur": 7.131,
@@ -65,7 +65,8 @@
   "sec": "intro",
   "text": "Say normal when it's normal, and the train moves on. Say it wrong, either way, and you lose a life. You get three.",
   "vis": {
-   "type": "continue"
+   "type": "image",
+   "file": "ss04.jpg"
   },
   "sub": "Say normal when it's normal, and the train moves on. Say it wrong, either way, and you lose a life. You get three.",
   "dur": 7.445,
@@ -91,7 +92,7 @@
   "vis": {
    "type": "video",
    "file": "t0.mp4",
-   "in": 14.0
+   "in": 22.5
   },
   "sub": "What this one adds is a radio. A little handheld device that picks up anomalies you can't see, and you don't get to use it forever.",
   "dur": 7.68,
@@ -102,7 +103,8 @@
   "sec": "intro",
   "beat": 6.0,
   "vis": {
-   "type": "continue"
+   "type": "image",
+   "file": "ss01.jpg"
   },
   "dur": 6.0,
   "wav": null
@@ -110,7 +112,7 @@
  {
   "id": "09",
   "sec": "intro",
-  "text": "The dressing is an early 1900s express. Red velvet, oil paintings, brass. Which is a smart choice, because a period carriage is full of objects you don't have a memory for.",
+  "text": "The dressing is an early nineteen hundreds express. Red velvet, oil paintings, brass. Which is a smart choice, because a period carriage is full of objects you don't have a memory for.",
   "vis": {
    "type": "video",
    "file": "t0.mp4",
@@ -212,7 +214,7 @@
   "vis": {
    "type": "video",
    "file": "t0.mp4",
-   "in": 8.5
+   "in": 13.2
   },
   "sub": "Once you've seen that, the rest of the list reads a certain way.",
   "dur": 3.736,
@@ -308,7 +310,7 @@
   "vis": {
    "type": "video",
    "file": "t0.mp4",
-   "in": 15.5
+   "in": 20.4
   },
   "sub": "I want that to be something. It probably isn't. Unreal's neural network plugin drags both in, and this is the second demo I've opened where they're present with nothing to point at.",
   "dur": 10.083,
@@ -319,7 +321,9 @@
   "sec": "made",
   "text": "If you made this and I'm wrong, the comments are right there.",
   "vis": {
-   "type": "continue"
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.5
   },
   "sub": "If you made this and I'm wrong, the comments are right there.",
   "dur": 2.978,
@@ -344,7 +348,7 @@
   "vis": {
    "type": "video",
    "file": "t0.mp4",
-   "in": 9.5
+   "in": 26.5
   },
   "sub": "Achievements, telemetry, a plan for later. A file list can't say which.",
   "dur": 4.989,
@@ -381,7 +385,7 @@
   "vis": {
    "type": "video",
    "file": "t0.mp4",
-   "in": 31.0
+   "in": 21.0
   },
   "sub": "Here's the whole teardown on one card.",
   "dur": 2.247,

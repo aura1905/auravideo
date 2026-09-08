@@ -1,0 +1,39 @@
+{
+ "demo_appid": 4947430,
+ "full_appid": 3723640,
+ "name": "Prenecrotic: The Cursed School VR",
+ "developers": [
+  "Elfhiem Game Studio"
+ ],
+ "publishers": [
+  "Elfhiem Game Studio"
+ ],
+ "release": "To be announced",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Adventure",
+  "Early Access"
+ ],
+ "languages": "English*, French, Italian, German, Spanish - Spain, Japanese, Korean, Portuguese - Brazil, Russian, Simplified Chinese*languages with full audio support",
+ "website": null,
+ "short": "VR psychological horror where you're desperate to find your lost wife in a abandoned school. Explore decaying halls, uncover dark secrets, and survive twisted supernatural encounters. Use tools, instincts, and courage to endure the nightmare before it consumes you forever.",
+ "about": " ENGAGING STORY  Step into the shoes of  Jason , a man desperate to uncover the truth behind his wife's mysterious disappearance inside a remote and decaying school. What begins as a simple search spiral into a nightmarish descent through shadowed hallways, blood-soaked classrooms, and twisted alternate realities.       HORROR VR EXPRIENCE  Built from the ground up for  Virtual Reality ,  Prenecrotic  delivers a deeply immersive and psychologically disturbing horror experience. Face terrifying, otherworldly creatures, gather cryptic clues, and solve environmental puzzles to uncover the school’s cursed history — and the secrets it’s dying to keep.  🔑  Key Features :     VR-Only Immersion  Every scare, every sound, every shadow — feel it all in full virtual reality.     Narrative-Driven Horror  Uncover a dark, emotional story as you piece together your wife's final steps.     Tense Exploration &amp; Survival  Use found tools and instinct to survive unpredictable encounters.     Reality-Bending Mechanics  Shift between worlds using a cursed doll to unlock new paths — and new horrors.     Atmospheric Puzzle Solving  Decipher cryptic messages, keys, and blood-stained notes to progress deeper into the darkness.        “If you’re interested, don’t forget to add to your Wishlist – it really helps us!”    ",
+ "min_req": " Minimum:     OS:  Windows 10 (64 bits)    Processor:  ntel Core i5-7300HQ equivalent    Memory:  8 GB RAM    Graphics:  NVIDIA GTX 1060 equivalent    Storage:  9 GB available space    VR Support:  Meta Quest  ",
+ "movies": [
+  {
+   "id": 257393582,
+   "name": "Gameplay Trailer New"
+  },
+  {
+   "id": 257149642,
+   "name": "Gameplay Trailer"
+  }
+ ],
+ "screenshots": 9,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

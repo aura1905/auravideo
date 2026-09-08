@@ -1,0 +1,91 @@
+{
+ "title_en": "Prenecrotic: The Cursed School VR",
+ "demo_appid": 4947430,
+ "full_appid": 3723640,
+ "developer": "Elfhiem Game Studio",
+ "workdir": "episodes/14-prenecrotic",
+ "script_timed": "episodes/14-prenecrotic/script_tts_timed.json",
+ "intro_bg": {"file": "t0.mp4", "in": 28.0, "out": 31.6, "scale": 1.0},
+ "labels": [
+  "22.28 GB / 1,171 files",
+  "18.54 GB is old builds",
+  "the DoNotShip folders, shipped",
+  "SteamVR + OVR + OpenXR"
+ ],
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 2,
+ "score_line_id": "37",
+ "specs": [
+  ["ENGINE", "Unity - IL2CPP - VR only"],
+  ["THE BUILD", "22.28 GB / 1,171 files"],
+  ["THE WASTE", "18.54 GB of old builds"],
+  ["LEFT IN", "the DoNotShip folders"],
+  ["ALSO", "3 XR runtimes, OpenCV"]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": {"file": "t0.mp4", "volume": 0.07},
+ "narration_volume": 1.6,
+ "thumbnail": {
+  "bg": "ss00.jpg",
+  "line1": "22 GB DEMO",
+  "line2": "18 OF THEM ARE OLD BUILDS",
+  "tag": "UNITY VR TEARDOWN",
+  "focus": "center",
+  "text_side": "left"
+ },
+ "chapters": {
+  "hook": "22 GB, and 18 of them are duplicates",
+  "intro": "What a VR anomaly school actually plays like",
+  "made": "Opening the build",
+  "review": "No reception yet",
+  "score": "The spec sheet + verdict"
+ },
+ "stack": [
+  ["Unity", "https://unity.com/"],
+  ["Unity Addressables", "https://docs.unity3d.com/Packages/com.unity.addressables@latest"],
+  ["OpenXR", "https://www.khronos.org/openxr/"],
+  ["Meta XR SDK", "https://developers.meta.com/horizon/develop/unity"],
+  ["SteamVR (OpenVR)", "https://github.com/ValveSoftware/openvr"],
+  ["OpenCvSharp", "https://github.com/shimat/opencvsharp"],
+  ["NVIDIA DLSS", "https://developer.nvidia.com/rtx/dlss"],
+  ["Bakery lightmapper", "https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218"],
+  ["The demo on Steam", "https://store.steampowered.com/app/4947430/"]
+ ],
+ "ledger": {
+  "team": "Elfhiem Game Studio (self-published)",
+  "engine": "**Unity** (IL2CPP)",
+  "pipeline": "Addressables, StreamingAssets/aa",
+  "backend": "C++ via IL2CPP (GameAssembly.dll 75.5 MiB)",
+  "build": "22.28 GiB",
+  "files": 1171,
+  "scenes": 0,
+  "third_party": "관리 어셈블리 153개 (Bakery, MagicaCloth, SALSA, Final IK, EasyRoads3D, AdaptiveGI …)",
+  "approach": "VR 전용 심리 공포, 폐교에서 아내 찾기, 손으로 지도·전축·키패드 조작",
+  "reception": "리뷰 없음 / 2026-09-07 공개",
+  "packages": [
+   "Unity Addressables",
+   "SteamVR",
+   "Meta XR (OVRPlugin, ImmersiveDebugger, ai.mcpbridge, ai.agentbridge)",
+   "Unity OpenXR",
+   "OpenCvSharp",
+   "NVIDIA DLSS (AlterEgo aeg-dlss)",
+   "Bakery",
+   "MagicaClothV2",
+   "SALSA LipSync",
+   "RootMotion (Final IK)",
+   "EasyRoads3D v3",
+   "AdaptiveGI",
+   "MeshBaker",
+   "CutsceneEngine"
+  ],
+  "ai_disclosure": null
+ },
+ "youtube": {
+  "title": "Prenecrotic: a 22 GB VR horror demo where 18 GB is the same build, six times",
+  "tags": "Prenecrotic,The Cursed School,Elfhiem Game Studio,steam demo,vr horror,unity,addressables,il2cpp,openxr,steamvr,meta xr,game teardown,how games are made,demo dip,vr game,horror demo",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "visual_scale": 1.0
+}

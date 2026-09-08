@@ -41,13 +41,49 @@ def aspect(path):
     return w / h
 
 
+# Measured on the 16:9 master: a caption line reaches the frame edge at about 90
+# characters, so 88 is the budget. wrap2 used to split at the midpoint and return
+# TWO lines whatever the length, so a long caption silently became two 110-character
+# lines that ran off both edges -- episode 14 line 40 lost its first and last words
+# that way, and nothing in the pipeline complained. Episode 13 line 25 sat at 91 and
+# touched both edges, which is how close the old behaviour was to failing all along.
+WRAP_CHARS = 88
+
+
+def _greedy(words, width):
+    lines, cur = [], ''
+    for w in words:
+        cand = (cur + ' ' + w).strip()
+        if cur and len(cand) > width:
+            lines.append(cur); cur = w
+        else:
+            cur = cand
+    if cur:
+        lines.append(cur)
+    return lines
+
+
 def wrap2(t):
+    """Balance `t` over the fewest lines that keep every line inside WRAP_CHARS.
+
+    Find the minimum number of lines at the full budget, then narrow the width until
+    one more line would be needed -- that is the balanced wrap, and it can never
+    exceed the budget.
+    """
     if len(t) <= 26:
         return t
-    mid = len(t) // 2
-    c = [m.end() for m in re.finditer(r'[,.!?]\s', t)] + [m.start() for m in re.finditer(r'\s', t)]
-    b = min(c, key=lambda i: abs(i - mid)) if c else mid
-    return t[:b].rstrip() + '\n' + t[b:].lstrip()
+    words = t.split()
+    # never fewer than two lines: the series has looked that way for 13 episodes,
+    # and this function only exists to add lines when one would overflow.
+    n = max(2, len(_greedy(words, WRAP_CHARS)))
+    lo, hi = max(len(w) for w in words), WRAP_CHARS
+    while lo < hi:
+        mid = (lo + hi) // 2
+        if len(_greedy(words, mid)) <= n:
+            hi = mid
+        else:
+            lo = mid + 1
+    return chr(10).join(_greedy(words, lo))
 
 
 def wrap_n(t, width):
@@ -286,7 +322,10 @@ def main():
                 # long ones shrink rather than push upward
                 sub = {**SUB, 'fontSize': 50 if txt.count(chr(10)) < 3 else 42}
             else:
-                txt, sub = wrap2(caption), SUB
+                txt = wrap2(caption)
+                # same reason as the Short above: a third line has to come out of the
+                # type size, not out of the picture.
+                sub = SUB if txt.count(chr(10)) < 2 else {**SUB, 'fontSize': 42}
             S.append({'text': txt, 'start': round(t, 3), 'duration': round(d + 0.15, 3), **sub})
         t += span
     total = t + 0.8
