@@ -12,6 +12,10 @@
 !*/plan_short.json
 !*/desc.txt
 !*/facts.json
+# teardown.md carries the evidence AND the shell commands that regenerate every
+# ignored asset (evidence cards, spec layers, thumbnail) plus the trailer windows
+# that are safe to cut from. Without it a fresh clone has the scripts but not the
+# arguments, and the episode is not actually reproducible. Every episode needs one.
 !*/teardown.md
 # Korean side-by-side of the narration, so the user can review an English episode
 !*/script_ko.md
