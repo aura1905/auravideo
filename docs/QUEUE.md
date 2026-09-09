@@ -1,77 +1,134 @@
-# 롱폼 후보 큐 — 2026-09-09 갱신
+# 롱폼·쇼츠 후보 큐 — 2026-09-09 저녁 갱신
 
-세 관문(`docs/CHANNEL.md` §8-B). 순서대로 걸러내는 게 아니라 셋을 다 보고 순위를 매긴다.
+## 후보 찾는 법 — 그림부터 본다
 
-1. **이번 주에 올라온 데모인가.** 채널 정체성이라 예외 없음.
-2. **파일 목록이 아니라 이야기가 있는가.** 크기·이름·빠진 것·있으면 안 되는 것 중
-   한 문장으로 스크롤을 멈추게 할 사실.
-3. **영상으로 계속 볼 만한 게임인가.** 이슈가 될 소재인가, 게임성이 독특한가.
-   재미없을 것 같으면 거른다(사용자, 2026-09-06).
-
-**후보 찾는 법**: `https://store.steampowered.com/search/?category1=10&sort_by=Released_DESC&supportedlang=english`
+`https://store.steampowered.com/search/?category1=10&sort_by=Released_DESC&supportedlang=english`
 — `sort_by=Released`는 조용히 무시된다. **반드시 `Released_DESC`.**
-엔진과 depot 크기는 SteamDB에서 손으로 본다(스크립트 fetch 차단, 탭 이동 필요).
 
-## 이번 스캔 (2026-09-09)
+**appdetails의 `header_image`를 전부 받아 연락처 시트로 깔고, 눈으로 먼저 고른다.**
+2026-09-09에 후보 63개를 스크린샷 한 장 안 보고 매니페스트와 설명 텍스트만으로 줄 세웠다가
+사용자에게 반려당했다("내가 발굴해서 알려줘야지"). 사용자가 직접 고른 것들(Night Portable,
+Witchbound, Seaside Wash, The Price of Grief, Disco Ball)은 전부 **스크린샷 한 장으로 이 게임이
+뭔지, 뭐가 이상한지가 즉시 보이는** 것들이었다. 분해는 영상의 *내용*이고, 그림이 클릭의 *이유*다.
+순서를 바꾸면 안 된다.
 
-Steam 검색 6페이지 300개 → 상세 조회 160개 → 전부 최근 5일. 그중 빌드까지 열어본 것:
+헤더 URL은 콘텐츠 해시가 붙어 있어 추측할 수 없다 — 반드시 appdetails에서 받는다.
 
-| 데모 | appid | 등록 | 빌드 | 판정 |
-|---|---|---|---|---|
-| **1.44MB RESCUE** | 5139920 | 9/7 | **1023.22 KiB / 파일 2개** | **다음 편** |
-| Did You See That? | 5164600 | 9/6 | 3.86 GiB | 보류 — 2인 협동이라 혼자 못 찍음 |
-| Project Spooky | 4795370 | 9/5 | 3.07 GiB | 예비 |
-| Night Portable | 5065360 | 9/5 | 743.43 MiB | 예비 |
+## 관문
 
-### 제작 예정 — 1.44MB RESCUE (5139920)
+1. **이번 주에 올라온 데모인가.** 정체성이라 예외 없음.
+2. **화면이 한 장으로 말하는가.** 그리고 그게 흔한 것이 아닌가.
+3. **파일 목록에 한 문장이 있는가.**
+4. **후크가 이미 쓴 것과 겹치지 않는가.** ← 아래 표를 먼저 볼 것.
 
-본편 `5027770`, 1440 Works 자체 배급, Q4 2026 예정. 데모는 9/7 17:39 UTC 등록.
+## 이미 쓴 후크 (겹치면 안 됨)
 
-데모 전체가 **두 파일**이다.
+| 후크 | 쓴 편 |
+|---|---|
+| 빌드 속 AI/ML 런타임 | PengPong, FINAL FANTASY RESONANCE, Rudravati, COMPARTMENT 666 — **4회, 당분간 금지** |
+| 중복·잔재 데이터 | Expedition(770 MB), SlashZero(영상 103개 두 번), Prenecrotic(18.5 GB) — **3회** |
+| 용량 대비 실제 내용물 | Stupid Never Dies, K-God, Disco Ball — **3회** |
+| 넣지 말라고 이름 붙은 폴더 | Frontier Tale |
+| 잘못 들어간 것 | Tasty Chef(EOS 두 번), Voxotron(모드 로더) |
+| 스토어와 빌드의 불일치 | Seaside Wash(언어), Another Eden(모바일 빌드) |
+| 코드 없이 만든 게임 | Veiled Shadows |
+| 사온 도구 값 합계 | PengPong |
+
+## 다음 제작 — 확인 완료
+
+### 롱폼 ① The No Jumpscare Show (`5056910`, 9/8, Polypaw)
+
+> 점프스케어가 게으른 클리셰인 세상. Illy는 진짜 심리 공포를 약속하는 수상한 유령의 집에
+> 등록한다. 안 놀라고 버티면 1만 달러. "100% 점프스케어 없는 경험 :)"
+
+339.26 MiB / 262 파일 / Unity Mono / 영어만.
+
+**서드파티 관리 어셈블리가 `Assembly-CSharp` 하나뿐이다.** DOTween도, Odin도, Steamworks도,
+아무것도 없다. StreamingAssets 없음, Plugins 없음, DoNotShip 폴더 없음.
+`level10` 한 개가 71.97 MiB로 게임의 21%.
+
+**후크가 지금까지와 정반대다.** 열다섯 편 내내 "뭘 잘못 넣었나"였는데 이건 **"아무것도 안 사 왔다"**.
+장르의 상투 수단을 거부하는 게임이 남의 코드도 안 쓴다 — 화면(완전 흑백, 종이인형)까지 같은 말을 한다.
+
+### 롱폼 ② Octbuster: Video Rental Store Cleanup (`5159140`, 9/8, Alex)
+
+> 80년대 비디오 대여점을 영업 후에 정리하는 아늑한 게임. **문어가 되어** 새끼고양이들과
+> 진짜 촉수 팔로 VHS 테이프를 쓸어 담아 1만 개 넘게 분류한다. 타이머도 점수도 없다.
+
+2.77 GiB(Win) / 2.87 GiB(macOS) — 그런데 **파일이 58개뿐**. IL2CPP.
+
+| 파일 | |
+|---|---|
+| `sharedassets0.assets.resS` | 1.04 GiB |
+| `props_assets_all_*.bundle` | **780.37 MiB** — 소품 번들 하나 |
+| PNG 2장 | **69.67 MiB** (한 장에 ~35 MB) |
+| `nvngx_dlss.dll` | 52.24 MiB — 문어가 가게 치우는 게임에 DLSS |
+
+후크는 **테이프**다. 1만 개가 진짜 개별 오브젝트고 표지가 있으니 소품 번들이 780 MB다.
+"용량 대비 내용물"과 다르다 — 여기선 **용량이 곧 게임의 요점**이다.
+
+### 쇼츠 ① INKBORN (`5187060`, 9/8, OverLKD Studio)
+
+151.66 MiB, **파일 3개**. Windows + Linux. 8개 언어(간체 포함).
 
 ```
-game.exe          711.57 KiB
-steam_api64.dll   311.65 KiB
+INKBORN_Demo.exe                                 147.58 MiB
+libgodotsteam.windows.template_release.x86_64.dll  3.78 MiB
+steam_api64.dll                                    311.65 KiB
 ```
 
-관문 2를 가장 극단적인 방식으로 통과한다 — **읽을 파일 목록이 없다는 것 자체가 이야기다.**
-엔진 런타임도, 데이터 폴더도, 에셋 번들도, 서드파티 DLL도 없다. 아트·사운드·코드가 전부
-711 KB짜리 실행 파일 하나 안에 들어 있다. 그리고 이 데모에서 제일 큰 단일 의존성은
-**밸브의 Steam API DLL**이고, 그게 데모 용량의 30%다.
+**`libgodotsteam` — 고닷이다. 채널 열다섯 편이 전부 유니티 아니면 언리얼이었다.**
+Godot은 게임을 실행 파일 하나에 통째로 넣어 내보내서 읽을 파일 목록이 없다.
+분해 방법 자체가 달라진다는 게 할 말이다. 손으로 그린 연필 아트라 화면도 눈에 띈다.
 
-바로 앞 편과 붙여 놓으면 그림이 선다:
+### 쇼츠 ② Haunted House Hellshift (`5196080`, 9/8, Deege Games)
 
-| | 14화 Prenecrotic | 15화 1.44MB RESCUE |
+2.14 GiB / 363 파일 / Unity Mono / 11개 언어(한국어·간체 포함) / Win·mac·Linux.
+
+관리 어셈블리 255개 중 서드파티가 40개 이상이다 — AllIn1 3D Shader, A* Pathfinding,
+CartoonFX, DOTween Pro, DamageNumbersPro, EasySave3, Febucci Text Animator(6개),
+Heathen Steamworks, Kamgam UIToolkit(3개), KinoBloom, Clipper2, AFPSCounter,
+그리고 에디터 도구인 `AssetInventory.Examples`까지.
+
+**후크는 `DunGen`이다** — 절차적 던전 생성기. 유령의 집이 근무 때마다 다시 지어진다는 뜻이고,
+파일 목록에서 *게임 플레이*를 읽어내는 종류라 제일 좋은 발견이다.
+("사온 도구 값 합계"는 PengPong에서 이미 썼으니 그쪽으로 몰지 말 것.)
+
+### 쇼츠 ③ The Last Wait (`5092070`, 9/8)
+
+2.43 GiB / 322 파일 / **Unreal** / 간체 지원.
+
+```
+Movies/Eye_1_Anim.mp4    153.40 MiB
+```
+
+2.4 GB짜리 공포 데모에 "Eye_1_Anim"이라는 이름의 **153 MB짜리 동영상 한 개**.
+
+**주의**: 이 빌드에도 `DirectML.dll`(17.68 MiB)과 `onnxruntime.dll`(14.01 MiB)이 있다.
+다섯 번째다. **거기로 가지 말 것** — 영상은 그 동영상 파일로 끌고 간다.
+
+## 눈으로 골랐지만 빌드 미확인 (예비)
+
+| 데모 | appid | 왜 |
 |---|---|---|
-| 크기 | 22.28 GiB | 1023 KiB |
-| 파일 | 1,171개 | **2개** |
-| 배수 | | **약 22,000배 차이** |
-
-관문 3도 통과한다. 게임 자체가 1.44 MB 플로피를 복구하는 프로그래밍 퍼즐이고,
-파이썬 비슷한 코드를 짜서 패처를 만든다. **소재가 곧 이 채널의 주제**다 — 용량.
-데모가 자기가 구하려는 플로피보다 작다.
-
-## 이번 스캔에서 눈에 띈 것들 (아직 빌드 안 봄)
-
-- **5180670 Shrine Full of Anomalies** — 동방 2차 창작 이상현상 찾기. 13화와 장르가
-  겹쳐서 당장은 안 쓴다.
-- **4852000 ChocoPhobia** — 화염방사기로 살점 먹는 초콜릿을 태운다. 소재가 튄다.
-- **5128940 PSYCHO CASKET** — "정통 이모 RPG", 뱀파이어.
-- **5199770 The Day I Became a Werewolf**
-- **5135710 AI School Simulator** — AI 학생들이 있는 학원물. AI 각도.
-- **데스크톱 위젯 게임이 한 주에 넷** — 5069600 Desktop Forge, 5119870 TBF: Task Bar
-  Fishing, 5125580 Goats and Shrubs: Desktop Topiary, 5191390 Kawaii Evolution Clicker
-  Desktop Edition. 흐름으로는 흥미롭지만 **게임 하나를 깊게 파는 게 정체성**이라
-  묶음 영상은 만들지 않는다(사용자, 2026-09-06).
+| Lethal Wedding | 4768410 | Mega Cat Studios, 광대가 신랑을 납치, 신부+장모가 총 든 16비트 |
+| Tommy Gun Marionettes | 5051860 | 마녀·오징어인간·돼지인간 느와르 포인트앤클릭 |
+| Newtone's Gospel | 4853020 | 뉴턴이 눈에서 레이저 쏘는 노트 UI 로그라이크, EN+JP+CN |
+| DEAD RECALL | 5194570 | 크리처 공포 |
+| Cardsharp | 5157490 | 조커+칼, CN |
+| Did You See That? | 5164600 | 서로 다른 현실을 보는 2인 공포 — **혼자 못 찍어서 보류** |
+| Night Portable | 5065360 | `HorrorSubliminal1.mp4`. 사용자 추천, 아직 미제작 |
+| Witchbound | 5158760 | 유령이 주인공, 729 MB 중 569 MB가 한 파일. 사용자 추천, 미제작 |
+| The Price of Grief | 5134320 | Godot, 파일 3개. 본편은 12/18이지만 **데모는 지금 배포 중** |
+| 1.44MB RESCUE | 5139920 | 파일 2개, 엔진 없음. 아직 미제작 |
 
 ## 이미 만든 것
 
-| 데모 | appid | 편 |
+| 데모 | appid | |
 |---|---|---|
-| COMPARTMENT 666 : ANOMALY EXPRESS | 5016400 | 13화 + 쇼츠 |
-| Prenecrotic: The Cursed School VR | 4947430 | 14화 |
-| Rudravati: Curse of Bhankilla | 5105660 | 12화 + 쇼츠 |
-| Voxotron | 5107400 | 쇼츠 s06 |
-| Rising Above It | 5183320 | — 사용자 추천, 미제작 |
-| Tasty Chef | 5067140 | 쇼츠 s05 |
-| K-God Robot Hunters | 5084500 | 쇼츠 s04 |
+| Nomad Drive 4568400 · Casualties 4576510 · Expedition 5041080 · Guildrun 4425970 | | 롱폼+쇼츠 |
+| FF RESONANCE 4474710 · SlashZero 5099550 · Rudravati 5105660 · COMPARTMENT 666 5016400 | | 롱폼+쇼츠 |
+| Prenecrotic 4947430 | | 롱폼 |
+| Another Eden 4391790 · Stupid Never Dies 4880100 · Frontier Tale 5010220 · K-God 5084500 | | 쇼츠 |
+| Tasty Chef 5067140 · Voxotron 5107400 · Seaside Wash 4924230 · Disco Ball 5089460 | | 쇼츠 |
+| PengPong 3636220 · Veiled Shadows 5060640 | | 한국어/보류 |
