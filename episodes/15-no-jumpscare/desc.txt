@@ -1,0 +1,35 @@
+The No Jumpscare Show — A horror demo whose build contains nothing they didn't write themselves.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5056910/
+▶ Previous episode — Prenecrotic, a 22 GB VR demo: https://youtu.be/c2_NxPFpdCA
+▶ The full game: https://store.steampowered.com/app/5056900/
+
+── How they made it ──
+Engine        : Unity - Mono
+The Build     : 339 MB / 262 files
+Bought In     : nothing
+Left In       : nothing
+Where It Went : one scene = 21%
+Verdict       : Worth A Dip
+
+── The stack, if you want to use it ──
+Unity                          : https://unity.com/
+Mono (Unity scripting backend) : https://docs.unity3d.com/Manual/Mono.html
+The demo on Steam              : https://store.steampowered.com/app/5056910/
+
+── Chapters ──
+0:00 One non-engine assembly
+0:14 A haunted house that refuses to jump at you
+1:12 Opening the build
+2:37 Four reviews, one day
+3:04 The spec sheet + verdict
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to Polypaw.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

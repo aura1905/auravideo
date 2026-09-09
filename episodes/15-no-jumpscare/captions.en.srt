@@ -1,0 +1,165 @@
+1
+00:00:00,000 --> 00:00:06,472
+This horror demo promises no jumpscares.
+Its build quietly makes the same kind of promise about everything else.
+
+2
+00:00:06,722 --> 00:00:10,608
+There is exactly one non-engine assembly in it.
+One.
+
+3
+00:00:14,458 --> 00:00:15,966
+Let's do the game first.
+
+4
+00:00:16,216 --> 00:00:24,046
+The No Jumpscare Show. In its world the paranormal is ordinary,
+and jumpscares are a lazy cliche everybody is tired of.
+
+5
+00:00:24,296 --> 00:00:32,361
+So a girl called Illy signs up for a haunted house that advertises the opposite.
+Real psychological horror, no cheap shots.
+
+6
+00:00:32,611 --> 00:00:36,732
+Survive the night without getting scared
+and you win ten thousand dollars.
+
+7
+00:00:41,982 --> 00:00:49,290
+It's black and white. All of it. Not drained of colour afterwards,
+built that way, with checkerboard floors and paper faces.
+
+8
+00:00:49,540 --> 00:00:58,023
+And the monsters have names, and they talk to you. Thingy. Skelly Billy.
+Manicus, who says hello and thanks you for coming to the show.
+
+9
+00:00:58,273 --> 00:01:04,614
+That's the joke and the threat in one move.
+Nothing leaps out. Things walk up and start a conversation.
+
+10
+00:01:04,864 --> 00:01:10,186
+It went up yesterday. English only,
+four reviews, and a full game with no date on it.
+
+11
+00:01:10,436 --> 00:01:11,892
+Which leaves the build.
+
+12
+00:01:12,142 --> 00:01:16,628
+Three hundred and thirty-nine megabytes.
+Two hundred and sixty-two files.
+
+13
+00:01:16,878 --> 00:01:24,421
+Unity, on the Mono backend. Mono matters here,
+because it means the assembly list is readable instead of compiled away.
+
+14
+00:01:24,671 --> 00:01:31,770
+That list is where every one of these episodes has found its story.
+Who they bought from. What they forgot to take out.
+
+15
+00:01:32,020 --> 00:01:34,181
+So here is this one, in full.
+
+16
+00:01:34,431 --> 00:01:39,231
+Assembly-CSharp. Their own code,
+compiled. And then nothing.
+
+17
+00:01:39,481 --> 00:01:48,800
+No DOTween. No Odin. No Steamworks wrapper, no asset-store shaders,
+no text animator, no save system, no pathfinding library.
+
+18
+00:01:49,050 --> 00:01:53,641
+A haunted-house demo that went up the same
+day carries more than forty of those.
+
+19
+00:01:53,891 --> 00:01:57,541
+There's no StreamingAssets folder either.
+No Plugins folder.
+
+20
+00:01:57,791 --> 00:02:06,692
+And no folder called BackUpThisFolder_ButDontShipItWithYourGame.
+Unity writes that name for you, and three demos I've opened this month shipped it anyway.
+
+21
+00:02:06,942 --> 00:02:10,462
+The hundred and eight DLLs
+in here are all Unity's own.
+
+22
+00:02:10,712 --> 00:02:14,833
+So if three hundred megabytes didn't go into packages,
+where did it go?
+
+23
+00:02:15,083 --> 00:02:21,711
+Into the rooms. level10 on its own is seventy-two megabytes.
+One scene, twenty-one percent of the game.
+
+24
+00:02:21,961 --> 00:02:33,318
+Ninety-eight megabytes of resource files and sixty-two of resS beside it.
+Audio and textures, sitting exactly where Unity leaves them when nobody has built a pipeline.
+
+25
+00:02:33,568 --> 00:02:36,513
+It is the plainest build I
+have opened on this channel.
+
+26
+00:02:36,763 --> 00:02:40,884
+Reception is four reviews and one day.
+There's nothing to read there yet.
+
+27
+00:02:41,134 --> 00:02:47,344
+So here's the honest read.
+This is what it looks like when a small team writes the thing and doesn't go shopping.
+
+28
+00:02:47,594 --> 00:02:56,965
+That is not automatically better, and I want to be clear about it.
+Bought packages are how small teams ship at all. I've said exactly that about six demos in a row.
+
+29
+00:02:57,215 --> 00:03:03,425
+But after fifteen builds where the story was what somebody left in,
+a list with nothing on it is worth stopping on.
+
+30
+00:03:03,675 --> 00:03:05,941
+Here's the whole teardown on one card.
+
+31
+00:03:06,191 --> 00:03:15,223
+Unity on Mono, three hundred and thirty-nine megabytes, two hundred and sixty-two files,
+and one assembly that isn't the engine's — which is theirs.
+
+32
+00:03:15,473 --> 00:03:23,434
+Worth a dip. It's free, it's genuinely strange,
+and a monster that introduces itself politely turns out to be worse than one that jumps.
+
+33
+00:03:23,684 --> 00:03:32,663
+If you ship in Unity, open your own Managed folder and count what's in it.
+There's no prize for a short list. But there is a lot of information in yours.
+
+34
+00:03:32,913 --> 00:03:42,284
+That's my read from the outside. If you worked on this and I got something wrong,
+say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.

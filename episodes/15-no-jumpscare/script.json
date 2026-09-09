@@ -1,0 +1,322 @@
+[
+ {
+  "id": "01",
+  "sec": "hook",
+  "text": "This horror demo promises no jumpscares. Its build quietly makes the same kind of promise about everything else.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.0
+  }
+ },
+ {
+  "id": "02",
+  "sec": "hook",
+  "text": "There is exactly one non-engine assembly in it. One.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "03",
+  "sec": "intro",
+  "text": "Let's do the game first.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 10.5
+  }
+ },
+ {
+  "id": "04",
+  "sec": "intro",
+  "text": "The No Jumpscare Show. In its world the paranormal is ordinary, and jumpscares are a lazy cliche everybody is tired of.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "05",
+  "sec": "intro",
+  "text": "So a girl called Illy signs up for a haunted house that advertises the opposite. Real psychological horror, no cheap shots.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "06",
+  "sec": "intro",
+  "text": "Survive the night without getting scared and you win ten thousand dollars.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 5.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 29.0
+  }
+ },
+ {
+  "id": "07",
+  "sec": "intro",
+  "text": "It's black and white. All of it. Not drained of colour afterwards, built that way, with checkerboard floors and paper faces.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "08",
+  "sec": "intro",
+  "text": "And the monsters have names, and they talk to you. Thingy. Skelly Billy. Manicus, who says hello and thanks you for coming to the show.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  }
+ },
+ {
+  "id": "09",
+  "sec": "intro",
+  "text": "That's the joke and the threat in one move. Nothing leaps out. Things walk up and start a conversation.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 34.0
+  }
+ },
+ {
+  "id": "10",
+  "sec": "intro",
+  "text": "It went up yesterday. English only, four reviews, and a full game with no date on it.",
+  "vis": {
+   "type": "image",
+   "file": "ss10.jpg"
+  }
+ },
+ {
+  "id": "11",
+  "sec": "intro",
+  "text": "Which leaves the build.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  }
+ },
+ {
+  "id": "12",
+  "sec": "made",
+  "text": "Three hundred and thirty-nine megabytes. Two hundred and sixty-two files.",
+  "vis": {
+   "type": "image",
+   "file": "ev_build.png"
+  }
+ },
+ {
+  "id": "13",
+  "sec": "made",
+  "text": "Unity, on the Mono backend. Mono matters here, because it means the assembly list is readable instead of compiled away.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "14",
+  "sec": "made",
+  "text": "That list is where every one of these episodes has found its story. Who they bought from. What they forgot to take out.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  }
+ },
+ {
+  "id": "15",
+  "sec": "made",
+  "text": "So here is this one, in full.",
+  "vis": {
+   "type": "image",
+   "file": "ev_list.png"
+  }
+ },
+ {
+  "id": "16",
+  "sec": "made",
+  "text": "Assembly-CSharp. Their own code, compiled. And then nothing.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "17",
+  "sec": "made",
+  "text": "No DOTween. No Odin. No Steamworks wrapper, no asset-store shaders, no text animator, no save system, no pathfinding library.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "18",
+  "sec": "made",
+  "text": "A haunted-house demo that went up the same day carries more than forty of those.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  }
+ },
+ {
+  "id": "19",
+  "sec": "made",
+  "text": "There's no StreamingAssets folder either. No Plugins folder.",
+  "vis": {
+   "type": "image",
+   "file": "ev_absent.png"
+  }
+ },
+ {
+  "id": "20",
+  "sec": "made",
+  "text": "And no folder called BackUpThisFolder_ButDontShipItWithYourGame. Unity writes that name for you, and three demos I've opened this month shipped it anyway.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "21",
+  "sec": "made",
+  "text": "The hundred and eight DLLs in here are all Unity's own.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 26.5
+  }
+ },
+ {
+  "id": "22",
+  "sec": "made",
+  "text": "So if three hundred megabytes didn't go into packages, where did it go?",
+  "vis": {
+   "type": "image",
+   "file": "ev_where.png"
+  }
+ },
+ {
+  "id": "23",
+  "sec": "made",
+  "text": "Into the rooms. level10 on its own is seventy-two megabytes. One scene, twenty-one percent of the game.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "24",
+  "sec": "made",
+  "text": "Ninety-eight megabytes of resource files and sixty-two of resS beside it. Audio and textures, sitting exactly where Unity leaves them when nobody has built a pipeline.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  }
+ },
+ {
+  "id": "25",
+  "sec": "made",
+  "text": "It is the plainest build I have opened on this channel.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.5
+  }
+ },
+ {
+  "id": "26",
+  "sec": "review",
+  "text": "Reception is four reviews and one day. There's nothing to read there yet.",
+  "vis": {
+   "type": "image",
+   "file": "ss08.jpg"
+  }
+ },
+ {
+  "id": "27",
+  "sec": "review",
+  "text": "So here's the honest read. This is what it looks like when a small team writes the thing and doesn't go shopping.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.5
+  }
+ },
+ {
+  "id": "28",
+  "sec": "review",
+  "text": "That is not automatically better, and I want to be clear about it. Bought packages are how small teams ship at all. I've said exactly that about six demos in a row.",
+  "vis": {
+   "type": "image",
+   "file": "ss11.jpg"
+  }
+ },
+ {
+  "id": "29",
+  "sec": "review",
+  "text": "But after fifteen builds where the story was what somebody left in, a list with nothing on it is worth stopping on.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 38.5
+  }
+ },
+ {
+  "id": "30",
+  "sec": "score",
+  "text": "Here's the whole teardown on one card.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 27.5
+  }
+ },
+ {
+  "id": "31",
+  "sec": "score",
+  "text": "Unity on Mono, three hundred and thirty-nine megabytes, two hundred and sixty-two files, and one assembly that isn't the engine's — which is theirs.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  }
+ },
+ {
+  "id": "32",
+  "sec": "score",
+  "text": "Worth a dip. It's free, it's genuinely strange, and a monster that introduces itself politely turns out to be worse than one that jumps.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 32.0
+  }
+ },
+ {
+  "id": "33",
+  "sec": "score",
+  "text": "If you ship in Unity, open your own Managed folder and count what's in it. There's no prize for a short list. But there is a lot of information in yours.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  }
+ },
+ {
+  "id": "34",
+  "sec": "score",
+  "text": "That's my read from the outside. If you worked on this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ }
+]

@@ -1,0 +1,69 @@
+{
+ "title_en": "The No Jumpscare Show",
+ "demo_appid": 5056910,
+ "full_appid": 5056900,
+ "developer": "Polypaw",
+ "workdir": "episodes/15-no-jumpscare",
+ "script_timed": "episodes/15-no-jumpscare/script_tts_timed.json",
+ "intro_bg": {"file": "t0.mp4", "in": 12.0, "out": 15.6, "scale": 1.0},
+ "labels": [
+  "339 MB / 262 files",
+  "Unity on Mono",
+  "third-party assemblies: 0",
+  "no DoNotShip folder"
+ ],
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 2,
+ "score_line_id": "30",
+ "specs": [
+  ["ENGINE", "Unity - Mono"],
+  ["THE BUILD", "339 MB / 262 files"],
+  ["BOUGHT IN", "nothing"],
+  ["LEFT IN", "nothing"],
+  ["WHERE IT WENT", "one scene = 21%"]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": {"file": "t0.mp4", "volume": 0.07},
+ "narration_volume": 1.6,
+ "thumbnail": {
+  "bg": "ss03.jpg",
+  "line1": "{NOTHING} WAS BOUGHT IN",
+  "line2": "A 262-FILE HORROR DEMO",
+  "tag": "UNITY TEARDOWN",
+  "text_side": "left"
+ },
+ "chapters": {
+  "hook": "One non-engine assembly",
+  "intro": "A haunted house that refuses to jump at you",
+  "made": "Opening the build",
+  "review": "Four reviews, one day",
+  "score": "The spec sheet + verdict"
+ },
+ "stack": [
+  ["Unity", "https://unity.com/"],
+  ["Mono (Unity scripting backend)", "https://docs.unity3d.com/Manual/Mono.html"],
+  ["The demo on Steam", "https://store.steampowered.com/app/5056910/"]
+ ],
+ "ledger": {
+  "team": "Polypaw (self-published)",
+  "engine": "**Unity** (Mono)",
+  "pipeline": "no Addressables, no StreamingAssets",
+  "backend": "Mono - Assembly-CSharp only",
+  "build": "339.26 MiB",
+  "files": 262,
+  "scenes": 0,
+  "third_party": "0 (관리 어셈블리 중 엔진 것이 아닌 건 Assembly-CSharp 하나뿐)",
+  "approach": "점프스케어를 거부하는 흑백 심리 공포. 안 놀라고 버티면 1만 달러",
+  "reception": "리뷰 4개 / 2026-09-08 공개",
+  "packages": [],
+  "ai_disclosure": null
+ },
+ "youtube": {
+  "title": "The No Jumpscare Show — a horror demo whose build contains nothing they didn't write",
+  "tags": "The No Jumpscare Show,Polypaw,steam demo,unity,mono,psychological horror,black and white,indie horror,game teardown,how games are made,demo dip,no jumpscares",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "visual_scale": 1.0
+}
