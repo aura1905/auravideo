@@ -1,0 +1,227 @@
+{
+ "type": "game",
+ "name": "The Last Wait",
+ "steam_appid": 4165280,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  5092070
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" style=\"text-align: center\"><strong>The Last Wait</strong> 将带你进入一位被困在病床上的老人的衰败意识之中。在这里，时间变得漫长，记忆逐渐模糊，而每一个夜晚都变得更加难以忍受。当你等待女儿的到来时，原本的平静正在慢慢瓦解，取而代之的是一种深深的不安。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\">随着时间流逝，周围的环境逐渐变成充满威胁的梦魇，而你的身体也开始背叛你。诡异的存在悄然出现，迫使你用仅剩的力量做出反应。为了生存，你必须谨慎管理自己的行动，并与周围的一切互动，因为每一个选择都有其代价，而一次微小的失误也可能带来长久的后果。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\">现实与想象之间的界限正在逐渐消失。这些恐怖正在吞噬你……还是它们源自内心更深处的某种存在？随着真相的碎片逐渐浮现，医院不再是一个治疗的地方，而成为了一面映照内心的镜子，映射出一个拼命挣扎、不愿崩溃的灵魂。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><strong>熬过这些夜晚。紧紧抓住那些你仍相信真实的事物。<br>你能否撑过这漫长的等待，还是会在再次见到她之前，被黑暗彻底吞噬？</strong></p>",
+ "about_the_game": "<p class=\"bb_paragraph\" style=\"text-align: center\"><strong>The Last Wait</strong> 将带你进入一位被困在病床上的老人的衰败意识之中。在这里，时间变得漫长，记忆逐渐模糊，而每一个夜晚都变得更加难以忍受。当你等待女儿的到来时，原本的平静正在慢慢瓦解，取而代之的是一种深深的不安。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\">随着时间流逝，周围的环境逐渐变成充满威胁的梦魇，而你的身体也开始背叛你。诡异的存在悄然出现，迫使你用仅剩的力量做出反应。为了生存，你必须谨慎管理自己的行动，并与周围的一切互动，因为每一个选择都有其代价，而一次微小的失误也可能带来长久的后果。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\">现实与想象之间的界限正在逐渐消失。这些恐怖正在吞噬你……还是它们源自内心更深处的某种存在？随着真相的碎片逐渐浮现，医院不再是一个治疗的地方，而成为了一面映照内心的镜子，映射出一个拼命挣扎、不愿崩溃的灵魂。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><strong>熬过这些夜晚。紧紧抓住那些你仍相信真实的事物。<br>你能否撑过这漫长的等待，还是会在再次见到她之前，被黑暗彻底吞噬？</strong></p>",
+ "short_description": "你被困在一间无菌的医院里，苦苦维持着生命，等待着女儿的到来，而现实却渐渐开始模糊。你唯一的机会就是熬过这漫长而令人窒息的等待。你能坚持到再见她一面的那一刻吗？",
+ "supported_languages": "英语<strong>*</strong>, 法语, 德语, 简体中文, 日语, 葡萄牙语 - 巴西, 俄语, 西班牙语 - 拉丁美洲<br><strong>*</strong>具有完全音频支持的语言",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/7df4674f8c9254a8df97988770f7bdf5901b89d8/header.jpg?t=1788883233",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/2a8b318980282179a38025f4846c04250c49ad67/capsule_231x87.jpg?t=1788883233",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/2a8b318980282179a38025f4846c04250c49ad67/capsule_184x69.jpg?t=1788883233",
+ "website": "https://beanuttsgames.vercel.app/games/the-last-wait",
+ "pc_requirements": {
+  "minimum": "<strong>最低配置:</strong><br><ul class=\"bb_ul\"><li><strong>操作系统:</strong> Windows 10<br></li><li><strong>处理器:</strong> Intel Core i5-8300H / AMD Ryzen 5 3400G 或同等配置<br></li><li><strong>内存:</strong> 8 GB RAM<br></li><li><strong>显卡:</strong> NVIDIA GTX 1050 / AMD RX 560 或同等配置<br></li><li><strong>DirectX 版本:</strong> 11<br></li><li><strong>存储空间:</strong> 需要 5 GB 可用空间<br></li><li><strong>声卡:</strong> 兼容 DirectX 的声卡<br></li><li><strong>附注事项:</strong> 建议使用优质耳机，以获得最佳音效体验。</li></ul>",
+  "recommended": "<strong>推荐配置:</strong><br><ul class=\"bb_ul\"><li><strong>操作系统:</strong> Windows 11<br></li><li><strong>处理器:</strong> Intel Core i7-9700K / AMD Ryzen 7 3700X 或同等配置<br></li><li><strong>内存:</strong> 12 MB RAM<br></li><li><strong>显卡:</strong> NVIDIA RTX 2060 / AMD RX 5700 或更高<br></li><li><strong>DirectX 版本:</strong> 12<br></li><li><strong>存储空间:</strong> 需要 5 GB 可用空间<br></li><li><strong>声卡:</strong> 兼容 DirectX 的声卡<br></li><li><strong>附注事项:</strong> 建议使用优质耳机，以获得最佳音效体验。</li></ul>"
+ },
+ "mac_requirements": [],
+ "linux_requirements": [],
+ "legal_notice": "©2026 BeanuttsGames。《The Last Wait》由 BeanuttsGames 开发并发行。保留所有权利。",
+ "developers": [
+  "Beanutts Games"
+ ],
+ "publishers": [
+  "Beanutts Games"
+ ],
+ "demos": [
+  {
+   "appid": 5092070,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "单人"
+  },
+  {
+   "id": 22,
+   "description": "Steam 成就"
+  },
+  {
+   "id": 79,
+   "description": "随时保存"
+  },
+  {
+   "id": 69,
+   "description": "立体声"
+  },
+  {
+   "id": 70,
+   "description": "环绕声"
+  },
+  {
+   "id": 23,
+   "description": "Steam 云"
+  },
+  {
+   "id": 62,
+   "description": "家庭共享"
+  }
+ ],
+ "genres": [
+  {
+   "id": "23",
+   "description": "独立"
+  },
+  {
+   "id": "28",
+   "description": "模拟"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/3beacb1758964a8b8c6b6efc3ccd6298444db170/ss_3beacb1758964a8b8c6b6efc3ccd6298444db170.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/3beacb1758964a8b8c6b6efc3ccd6298444db170/ss_3beacb1758964a8b8c6b6efc3ccd6298444db170.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/b20a2f0930e402eff36b4b809a46df63cf7b07ac/ss_b20a2f0930e402eff36b4b809a46df63cf7b07ac.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/b20a2f0930e402eff36b4b809a46df63cf7b07ac/ss_b20a2f0930e402eff36b4b809a46df63cf7b07ac.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/1d82d697df6566727e988407d413c6dff6f58eab/ss_1d82d697df6566727e988407d413c6dff6f58eab.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/1d82d697df6566727e988407d413c6dff6f58eab/ss_1d82d697df6566727e988407d413c6dff6f58eab.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/4647bc3abf17f7439428063fced30d92597a18e6/ss_4647bc3abf17f7439428063fced30d92597a18e6.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/4647bc3abf17f7439428063fced30d92597a18e6/ss_4647bc3abf17f7439428063fced30d92597a18e6.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/4f948f343b22335c15a10d8458d43619491644ad/ss_4f948f343b22335c15a10d8458d43619491644ad.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/4f948f343b22335c15a10d8458d43619491644ad/ss_4f948f343b22335c15a10d8458d43619491644ad.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/7092d18c471c017d5f162fd5498357e1431dce2a/ss_7092d18c471c017d5f162fd5498357e1431dce2a.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/7092d18c471c017d5f162fd5498357e1431dce2a/ss_7092d18c471c017d5f162fd5498357e1431dce2a.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/ddb4c33be16734aa44ab727ba0cd29060fad29bb/ss_ddb4c33be16734aa44ab727ba0cd29060fad29bb.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/ddb4c33be16734aa44ab727ba0cd29060fad29bb/ss_ddb4c33be16734aa44ab727ba0cd29060fad29bb.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/61af283672865b05e02a2cfac5197465703e3009/ss_61af283672865b05e02a2cfac5197465703e3009.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/61af283672865b05e02a2cfac5197465703e3009/ss_61af283672865b05e02a2cfac5197465703e3009.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/4e1bb57a2dd03a2ac4676de59b5c40667f3d13d1/ss_4e1bb57a2dd03a2ac4676de59b5c40667f3d13d1.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/4e1bb57a2dd03a2ac4676de59b5c40667f3d13d1/ss_4e1bb57a2dd03a2ac4676de59b5c40667f3d13d1.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 9,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/1b3d38f69e6ee31b1be5af6c158442996f5cca92/ss_1b3d38f69e6ee31b1be5af6c158442996f5cca92.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/1b3d38f69e6ee31b1be5af6c158442996f5cca92/ss_1b3d38f69e6ee31b1be5af6c158442996f5cca92.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 10,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/025fedd1742c24aed5b1036adec6fec735f10e90/ss_025fedd1742c24aed5b1036adec6fec735f10e90.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/025fedd1742c24aed5b1036adec6fec735f10e90/ss_025fedd1742c24aed5b1036adec6fec735f10e90.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 11,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/fbd087d1b90bfda92f78a90cd67e805fb5b3a1ac/ss_fbd087d1b90bfda92f78a90cd67e805fb5b3a1ac.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/fbd087d1b90bfda92f78a90cd67e805fb5b3a1ac/ss_fbd087d1b90bfda92f78a90cd67e805fb5b3a1ac.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 12,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/64539ba6f84bc775dc99196987349f6ff86f15fc/ss_64539ba6f84bc775dc99196987349f6ff86f15fc.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/64539ba6f84bc775dc99196987349f6ff86f15fc/ss_64539ba6f84bc775dc99196987349f6ff86f15fc.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 13,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/3db1e24edcc552ea6bd699f1eef96878e9624ffb/ss_3db1e24edcc552ea6bd699f1eef96878e9624ffb.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/3db1e24edcc552ea6bd699f1eef96878e9624ffb/ss_3db1e24edcc552ea6bd699f1eef96878e9624ffb.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 14,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/9ea2a1678f09c581e9de0dec4ccf40c2077bb96c/ss_9ea2a1678f09c581e9de0dec4ccf40c2077bb96c.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/9ea2a1678f09c581e9de0dec4ccf40c2077bb96c/ss_9ea2a1678f09c581e9de0dec4ccf40c2077bb96c.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 15,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/bfa828bb2fbc3a194abdd9a6970ea9d3adf23bcc/ss_bfa828bb2fbc3a194abdd9a6970ea9d3adf23bcc.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/bfa828bb2fbc3a194abdd9a6970ea9d3adf23bcc/ss_bfa828bb2fbc3a194abdd9a6970ea9d3adf23bcc.1920x1080.jpg?t=1788883233"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257380569,
+   "name": "Official Gameplay Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257380569/f6b8b96741fd70c91e596ac27589ac96f07f47d0/movie_600x337.jpg?t=1787507037",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/4165280/997536014/63f8cec61ad2c3bd248e9e6275c195c444e34c2b/1787506606/dash_av1.mpd?t=1787507037",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/4165280/997536014/63f8cec61ad2c3bd248e9e6275c195c444e34c2b/1787506606/dash_h264.mpd?t=1787507037",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/4165280/997536014/63f8cec61ad2c3bd248e9e6275c195c444e34c2b/1787506606/hls_264_master.m3u8?t=1787507037",
+   "highlight": true
+  },
+  {
+   "id": 257385524,
+   "name": "Official Cinematic Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257385524/e021dc50b1e6533e0f8380504ab924ce2e9a1bfc/movie_600x337.jpg?t=1785108697",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/4165280/457469186/72ec6ae2a3a60289360886cdb0d43187430a7b77/1785108264/dash_av1.mpd?t=1785108697",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/4165280/457469186/72ec6ae2a3a60289360886cdb0d43187430a7b77/1785108264/dash_h264.mpd?t=1785108697",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/4165280/457469186/72ec6ae2a3a60289360886cdb0d43187430a7b77/1785108264/hls_264_master.m3u8?t=1785108697",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "2026 年"
+ },
+ "support_info": {
+  "url": "https://beanuttsgames.vercel.app/games/the-last-wait",
+  "email": "beanuttsgames@gmail.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/4165280?t=1788883233",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/4e2355d6ff59edfd6776c8017e3b7fccebdf8e56/page_bg_raw.jpg?t=1788883233",
+ "content_descriptors": {
+  "ids": [
+   5
+  ],
+  "notes": "本游戏包含成人主题内容，包括血腥元素和死亡相关内容。这些元素是游戏氛围和剧情叙事的重要组成部分。建议玩家根据自身情况谨慎游玩。"
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Violência Extrema\nTemas sensíveis\nMedo"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Drastische Gewalt"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Horor\nKekerasan"
+  }
+ }
+}

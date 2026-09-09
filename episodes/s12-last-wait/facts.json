@@ -1,0 +1,38 @@
+{
+ "demo_appid": 5092070,
+ "full_appid": 4165280,
+ "name": "The Last Wait",
+ "developers": [
+  "Beanutts Games"
+ ],
+ "publishers": [
+  "Beanutts Games"
+ ],
+ "release": "2026",
+ "coming_soon": true,
+ "genres": [
+  "Indie",
+  "Simulation"
+ ],
+ "languages": "English*, French, German, Simplified Chinese, Japanese, Portuguese - Brazil, Russian, Spanish - Latin America*languages with full audio support",
+ "website": "https://beanuttsgames.vercel.app/games/the-last-wait",
+ "short": "Trapped in a sterile hospital, clinging to life, you anticipate your daughter’s arrival as reality slowly begins to slip. Your only chance is to endure the long, suffocating wait. The Last Wait. Can you hold on long enough to see her once more?",
+ "about": "  The Last Wait  places you in the fading mind of an elderly man confined to a hospital bed, where time stretches, memories blur, and each night becomes harder to endure. As you wait for your daughter’s arrival, the quiet slowly unravels into something far more unsettling.    As time passes, the surroundings twist into threatening dreams, and your own body begins to fail you. Strange presences emerge, forcing you to react with what little strength you have left. To survive, you must carefully manage your actions and interact with the environment around you, where every choice carries weight and even small mistakes can have lasting consequences.    The boundary between reality and imagination grows thinner. Are these horrors invading you… or are they being shaped by something deeper? As fragments of truth surface, the hospital becomes less a place of care and more a reflection of a mind struggling to hold itself together.     Endure the nights. Hold on to what feels real.   Will you survive the wait, or will the darkness claim you before you can see her again?  ",
+ "min_req": " Minimum:     OS:  Windows 10    Processor:  Intel Core i5-8300H / AMD Ryzen 5 3400G or equivalent    Memory:  8 GB RAM    Graphics:  NVIDIA GTX 1050 / AMD RX 560 or equivalent    DirectX:  Version 11    Storage:  5 GB available space    Sound Card:  DirectX-compatible sound card    Additional Notes:  Good headset for the best sound experience.  ",
+ "movies": [
+  {
+   "id": 257380569,
+   "name": "Official Gameplay Trailer"
+  },
+  {
+   "id": 257385524,
+   "name": "Official Cinematic Trailer"
+  }
+ ],
+ "screenshots": 16,
+ "reviews": {
+  "total": 1,
+  "positive": 1,
+  "desc": "1 user reviews"
+ }
+}

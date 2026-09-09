@@ -1,0 +1,88 @@
+{
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "verdict": "WORTH A DIP",
+ "narration_volume": 1.6,
+ "sub_y": 560,
+ "title_en": "Haunted House Hellshift",
+ "demo_appid": 5196080,
+ "full_appid": 5094290,
+ "developer": "Deege Games LLC",
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "ENGINE",
+   "Unity - Mono"
+  ],
+  [
+   "THE BUILD",
+   "2.14 GB / 363 files"
+  ],
+  [
+   "THE TRICK",
+   "DunGen at runtime"
+  ],
+  [
+   "SO",
+   "a new house each shift"
+  ],
+  [
+   "ALSO",
+   "local 2-player"
+  ]
+ ],
+ "opening_stamp": {
+  "line1": "Haunted House Hellshift",
+  "line2": "THE HOUSE IS BUILT AT RUNTIME.",
+  "size1": 72,
+  "size2": 48
+ },
+ "stack": [
+  [
+   "Unity",
+   "https://unity.com/"
+  ],
+  [
+   "DunGen",
+   "https://assetstore.unity.com/packages/tools/utilities/dungen-15682"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5196080/"
+  ]
+ ],
+ "chapters": {
+  "hook": "A dungeon generator",
+  "intro": "What it is",
+  "made": "DunGen",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Haunted House Hellshift builds a different house every run — the file list says so #shorts",
+  "tags": "shorts,Haunted House Hellshift,Deege Games,steam demo,unity,mono,dungen,procedural generation,horror game,local co-op,game teardown,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "workdir": "episodes/s11-hellshift",
+ "script_timed": "episodes/s11-hellshift/short_tts_timed.json",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ }
+}

@@ -1,0 +1,38 @@
+1
+00:00:00,000 --> 00:00:04,904
+Every day I open a Steam demo and read its file list.
+This one has three.
+
+2
+00:00:05,154 --> 00:00:07,315
+And one of them is the whole game.
+
+3
+00:00:09,565 --> 00:00:15,828
+It's INKBORN. You wake inside a comic nobody finished,
+and an eraser is eating the page.
+
+4
+00:00:16,078 --> 00:00:21,505
+You carry a sketchbook. Trace an axe,
+and you're holding an axe. Ink is the cost.
+
+5
+00:00:21,755 --> 00:00:26,189
+The whole demo is a hundred and fifty-one megabytes.
+Three files.
+
+6
+00:00:26,439 --> 00:00:32,963
+libgodotsteam. It's Godot.
+After fifteen teardowns of Unity and Unreal, that's the first one.
+
+7
+00:00:33,213 --> 00:00:39,371
+Godot packs everything inside the executable.
+No data folder, no bundles, nothing to read.
+
+8
+00:00:39,771 --> 00:00:43,892
+Every demo I open,
+I read the file list first. When there is one.

@@ -1,0 +1,110 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "There is one video file in this horror demo. It's a hundred and fifty-three megabytes.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 38.5
+  },
+  "sub": "There is one video file in this horror demo. It's a hundred and fifty-three megabytes.",
+  "dur": 4.754,
+  "wav": "episodes/s12-last-wait/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "It's called Eye_1_Anim.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "It's called Eye_1_Anim.",
+  "dur": 3.187,
+  "wav": "episodes/s12-last-wait/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 12.0
+  },
+  "dur": 2.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "The Last Wait. You're in a hospital bed, waiting for your daughter to arrive before you go.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "The Last Wait. You're in a hospital bed, waiting for your daughter to arrive before you go.",
+  "dur": 5.277,
+  "wav": "episodes/s12-last-wait/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "And the room keeps changing while you wait.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 28.5
+  },
+  "sub": "And the room keeps changing while you wait.",
+  "dur": 2.429,
+  "wav": "episodes/s12-last-wait/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Two point four gigabytes, Unreal. Nearly all of it sealed in one container.",
+  "vis": {
+   "type": "image",
+   "file": "ev_build_v.png"
+  },
+  "sub": "Two point four gigabytes, Unreal. Nearly all of it sealed in one container.",
+  "dur": 4.754,
+  "wav": "episodes/s12-last-wait/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "But movies sit outside the container, names still on them. There is exactly one.",
+  "vis": {
+   "type": "image",
+   "file": "ev_eye_v.png"
+  },
+  "sub": "But movies sit outside the container, names still on them. There is exactly one.",
+  "dur": 5.407,
+  "wav": "episodes/s12-last-wait/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "made",
+  "text": "A hundred and fifty-three megabytes of eye. They gave it more room than anything else they had to name.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "A hundred and fifty-three megabytes of eye. They gave it more room than anything else they had to name.",
+  "dur": 5.721,
+  "wav": "episodes/s12-last-wait/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "Worth a dip if hospitals frighten you. Every demo I open, I read the file list first.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 64.5
+  },
+  "sub": "Worth a dip if hospitals frighten you. Every demo I open, I read the file list first.",
+  "dur": 5.172,
+  "wav": "episodes/s12-last-wait/tts_short/s8.wav"
+ }
+]

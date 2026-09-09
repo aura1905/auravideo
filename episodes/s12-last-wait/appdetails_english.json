@@ -1,0 +1,227 @@
+{
+ "type": "game",
+ "name": "The Last Wait",
+ "steam_appid": 4165280,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  5092070
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" style=\"text-align: center\"><strong>The Last Wait</strong> places you in the fading mind of an elderly man confined to a hospital bed, where time stretches, memories blur, and each night becomes harder to endure. As you wait for your daughter’s arrival, the quiet slowly unravels into something far more unsettling.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\">As time passes, the surroundings twist into threatening dreams, and your own body begins to fail you. Strange presences emerge, forcing you to react with what little strength you have left. To survive, you must carefully manage your actions and interact with the environment around you, where every choice carries weight and even small mistakes can have lasting consequences.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\">The boundary between reality and imagination grows thinner. Are these horrors invading you… or are they being shaped by something deeper? As fragments of truth surface, the hospital becomes less a place of care and more a reflection of a mind struggling to hold itself together.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><strong>Endure the nights. Hold on to what feels real.</strong><br><strong>Will you survive the wait, or will the darkness claim you before you can see her again?</strong></p>",
+ "about_the_game": "<p class=\"bb_paragraph\" style=\"text-align: center\"><strong>The Last Wait</strong> places you in the fading mind of an elderly man confined to a hospital bed, where time stretches, memories blur, and each night becomes harder to endure. As you wait for your daughter’s arrival, the quiet slowly unravels into something far more unsettling.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\">As time passes, the surroundings twist into threatening dreams, and your own body begins to fail you. Strange presences emerge, forcing you to react with what little strength you have left. To survive, you must carefully manage your actions and interact with the environment around you, where every choice carries weight and even small mistakes can have lasting consequences.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\">The boundary between reality and imagination grows thinner. Are these horrors invading you… or are they being shaped by something deeper? As fragments of truth surface, the hospital becomes less a place of care and more a reflection of a mind struggling to hold itself together.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><strong>Endure the nights. Hold on to what feels real.</strong><br><strong>Will you survive the wait, or will the darkness claim you before you can see her again?</strong></p>",
+ "short_description": "Trapped in a sterile hospital, clinging to life, you anticipate your daughter’s arrival as reality slowly begins to slip. Your only chance is to endure the long, suffocating wait. The Last Wait. Can you hold on long enough to see her once more?",
+ "supported_languages": "English<strong>*</strong>, French, German, Simplified Chinese, Japanese, Portuguese - Brazil, Russian, Spanish - Latin America<br><strong>*</strong>languages with full audio support",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/7df4674f8c9254a8df97988770f7bdf5901b89d8/header.jpg?t=1788883233",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/2a8b318980282179a38025f4846c04250c49ad67/capsule_231x87.jpg?t=1788883233",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/2a8b318980282179a38025f4846c04250c49ad67/capsule_184x69.jpg?t=1788883233",
+ "website": "https://beanuttsgames.vercel.app/games/the-last-wait",
+ "pc_requirements": {
+  "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 10<br></li><li><strong>Processor:</strong> Intel Core i5-8300H / AMD Ryzen 5 3400G or equivalent<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GTX 1050 / AMD RX 560 or equivalent<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 5 GB available space<br></li><li><strong>Sound Card:</strong> DirectX-compatible sound card<br></li><li><strong>Additional Notes:</strong> Good headset for the best sound experience.</li></ul>",
+  "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 11<br></li><li><strong>Processor:</strong> Intel Core i7-9700K / AMD Ryzen 7 3700X or equivalent<br></li><li><strong>Memory:</strong> 12 MB RAM<br></li><li><strong>Graphics:</strong> NVIDIA RTX 2060 / AMD RX 5700 or higher<br></li><li><strong>DirectX:</strong> Version 12<br></li><li><strong>Storage:</strong> 5 GB available space<br></li><li><strong>Sound Card:</strong> DirectX-compatible sound card<br></li><li><strong>Additional Notes:</strong> Good headset for the best sound experience.</li></ul>"
+ },
+ "mac_requirements": [],
+ "linux_requirements": [],
+ "legal_notice": "©2026 BeanuttsGames. The Last Wait is developed and published by BeanuttsGames. All rights reserved.",
+ "developers": [
+  "Beanutts Games"
+ ],
+ "publishers": [
+  "Beanutts Games"
+ ],
+ "demos": [
+  {
+   "appid": 5092070,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "Single-player"
+  },
+  {
+   "id": 22,
+   "description": "Steam Achievements"
+  },
+  {
+   "id": 79,
+   "description": "Save Anytime"
+  },
+  {
+   "id": 69,
+   "description": "Stereo Sound"
+  },
+  {
+   "id": 70,
+   "description": "Surround Sound"
+  },
+  {
+   "id": 23,
+   "description": "Steam Cloud"
+  },
+  {
+   "id": 62,
+   "description": "Family Sharing"
+  }
+ ],
+ "genres": [
+  {
+   "id": "23",
+   "description": "Indie"
+  },
+  {
+   "id": "28",
+   "description": "Simulation"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/3beacb1758964a8b8c6b6efc3ccd6298444db170/ss_3beacb1758964a8b8c6b6efc3ccd6298444db170.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/3beacb1758964a8b8c6b6efc3ccd6298444db170/ss_3beacb1758964a8b8c6b6efc3ccd6298444db170.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/b20a2f0930e402eff36b4b809a46df63cf7b07ac/ss_b20a2f0930e402eff36b4b809a46df63cf7b07ac.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/b20a2f0930e402eff36b4b809a46df63cf7b07ac/ss_b20a2f0930e402eff36b4b809a46df63cf7b07ac.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/1d82d697df6566727e988407d413c6dff6f58eab/ss_1d82d697df6566727e988407d413c6dff6f58eab.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/1d82d697df6566727e988407d413c6dff6f58eab/ss_1d82d697df6566727e988407d413c6dff6f58eab.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/4647bc3abf17f7439428063fced30d92597a18e6/ss_4647bc3abf17f7439428063fced30d92597a18e6.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/4647bc3abf17f7439428063fced30d92597a18e6/ss_4647bc3abf17f7439428063fced30d92597a18e6.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/4f948f343b22335c15a10d8458d43619491644ad/ss_4f948f343b22335c15a10d8458d43619491644ad.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/4f948f343b22335c15a10d8458d43619491644ad/ss_4f948f343b22335c15a10d8458d43619491644ad.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/7092d18c471c017d5f162fd5498357e1431dce2a/ss_7092d18c471c017d5f162fd5498357e1431dce2a.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/7092d18c471c017d5f162fd5498357e1431dce2a/ss_7092d18c471c017d5f162fd5498357e1431dce2a.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/ddb4c33be16734aa44ab727ba0cd29060fad29bb/ss_ddb4c33be16734aa44ab727ba0cd29060fad29bb.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/ddb4c33be16734aa44ab727ba0cd29060fad29bb/ss_ddb4c33be16734aa44ab727ba0cd29060fad29bb.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/61af283672865b05e02a2cfac5197465703e3009/ss_61af283672865b05e02a2cfac5197465703e3009.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/61af283672865b05e02a2cfac5197465703e3009/ss_61af283672865b05e02a2cfac5197465703e3009.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/4e1bb57a2dd03a2ac4676de59b5c40667f3d13d1/ss_4e1bb57a2dd03a2ac4676de59b5c40667f3d13d1.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/4e1bb57a2dd03a2ac4676de59b5c40667f3d13d1/ss_4e1bb57a2dd03a2ac4676de59b5c40667f3d13d1.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 9,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/1b3d38f69e6ee31b1be5af6c158442996f5cca92/ss_1b3d38f69e6ee31b1be5af6c158442996f5cca92.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/1b3d38f69e6ee31b1be5af6c158442996f5cca92/ss_1b3d38f69e6ee31b1be5af6c158442996f5cca92.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 10,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/025fedd1742c24aed5b1036adec6fec735f10e90/ss_025fedd1742c24aed5b1036adec6fec735f10e90.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/025fedd1742c24aed5b1036adec6fec735f10e90/ss_025fedd1742c24aed5b1036adec6fec735f10e90.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 11,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/fbd087d1b90bfda92f78a90cd67e805fb5b3a1ac/ss_fbd087d1b90bfda92f78a90cd67e805fb5b3a1ac.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/fbd087d1b90bfda92f78a90cd67e805fb5b3a1ac/ss_fbd087d1b90bfda92f78a90cd67e805fb5b3a1ac.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 12,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/64539ba6f84bc775dc99196987349f6ff86f15fc/ss_64539ba6f84bc775dc99196987349f6ff86f15fc.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/64539ba6f84bc775dc99196987349f6ff86f15fc/ss_64539ba6f84bc775dc99196987349f6ff86f15fc.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 13,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/3db1e24edcc552ea6bd699f1eef96878e9624ffb/ss_3db1e24edcc552ea6bd699f1eef96878e9624ffb.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/3db1e24edcc552ea6bd699f1eef96878e9624ffb/ss_3db1e24edcc552ea6bd699f1eef96878e9624ffb.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 14,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/9ea2a1678f09c581e9de0dec4ccf40c2077bb96c/ss_9ea2a1678f09c581e9de0dec4ccf40c2077bb96c.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/9ea2a1678f09c581e9de0dec4ccf40c2077bb96c/ss_9ea2a1678f09c581e9de0dec4ccf40c2077bb96c.1920x1080.jpg?t=1788883233"
+  },
+  {
+   "id": 15,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/bfa828bb2fbc3a194abdd9a6970ea9d3adf23bcc/ss_bfa828bb2fbc3a194abdd9a6970ea9d3adf23bcc.600x338.jpg?t=1788883233",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/bfa828bb2fbc3a194abdd9a6970ea9d3adf23bcc/ss_bfa828bb2fbc3a194abdd9a6970ea9d3adf23bcc.1920x1080.jpg?t=1788883233"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257380569,
+   "name": "Official Gameplay Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257380569/f6b8b96741fd70c91e596ac27589ac96f07f47d0/movie_600x337.jpg?t=1787507037",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/4165280/997536014/63f8cec61ad2c3bd248e9e6275c195c444e34c2b/1787506606/dash_av1.mpd?t=1787507037",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/4165280/997536014/63f8cec61ad2c3bd248e9e6275c195c444e34c2b/1787506606/dash_h264.mpd?t=1787507037",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/4165280/997536014/63f8cec61ad2c3bd248e9e6275c195c444e34c2b/1787506606/hls_264_master.m3u8?t=1787507037",
+   "highlight": true
+  },
+  {
+   "id": 257385524,
+   "name": "Official Cinematic Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257385524/e021dc50b1e6533e0f8380504ab924ce2e9a1bfc/movie_600x337.jpg?t=1785108697",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/4165280/457469186/72ec6ae2a3a60289360886cdb0d43187430a7b77/1785108264/dash_av1.mpd?t=1785108697",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/4165280/457469186/72ec6ae2a3a60289360886cdb0d43187430a7b77/1785108264/dash_h264.mpd?t=1785108697",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/4165280/457469186/72ec6ae2a3a60289360886cdb0d43187430a7b77/1785108264/hls_264_master.m3u8?t=1785108697",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "2026"
+ },
+ "support_info": {
+  "url": "https://beanuttsgames.vercel.app/games/the-last-wait",
+  "email": "beanuttsgames@gmail.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/4165280?t=1788883233",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4165280/4e2355d6ff59edfd6776c8017e3b7fccebdf8e56/page_bg_raw.jpg?t=1788883233",
+ "content_descriptors": {
+  "ids": [
+   5
+  ],
+  "notes": "This game contains mature themes, including blood and death. These elements are integral to the atmosphere and narrative of the game. Player discretion is advised."
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Violência Extrema\nTemas sensíveis\nMedo"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Drastische Gewalt"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Horor\nKekerasan"
+  }
+ }
+}

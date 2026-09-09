@@ -1,0 +1,32 @@
+The Last Wait — One video file, 153 MB, called Eye_1_Anim.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5092070/
+▶ The full game: https://store.steampowered.com/app/5092060/
+
+── How they made it ──
+Engine        : Unreal
+The Build     : 2.43 GB / 322 files
+The Container : 2.03 GB in one .ucas
+Outside It    : Eye_1_Anim.mp4
+That File     : 153.40 MiB
+Verdict       : Worth A Dip
+
+── The stack, if you want to use it ──
+Unreal Engine     : https://www.unrealengine.com/
+The demo on Steam : https://store.steampowered.com/app/5092070/
+
+── Chapters ──
+0:00 One video file
+0:12 What it is
+0:23 Eye_1_Anim.mp4
+0:40 The spec sheet
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to Beanutts Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

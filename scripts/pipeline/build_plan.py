@@ -333,6 +333,11 @@ def main():
     # --- score scene: blueprint still + 7 layers
     if score_t0 is not None:
         T0 = score_t0
+        # The card runs SCORE_LEN from T0 and can outlast the narration -- on a Short the
+        # last two lines are short and the spec sheet is 9.5 s, so it usually does. `total`
+        # has to cover it, because callers use it as the export's rangeEnd: three Shorts
+        # were exported to `total` on 2026-09-09 and lost the verdict stamp off the end.
+        total = max(total, T0 + SCORE_LEN + 0.4)
         C.append({'track': BG, 'file': still_file, 'start': round(T0 - 0.2, 3), 'in': 0, 'out': SCORE_LEN + 0.4, 'fillMode': FILL, 'fadeIn': 0.3, 'fadeOut': 0.3})
         layers = ['score_header'] + [f'score_row_{i}' for i in range(5)] + ['score_stamp']
         for i, n in enumerate(layers):

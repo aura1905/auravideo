@@ -1,0 +1,201 @@
+{
+ "type": "game",
+ "name": "INKBORN",
+ "steam_appid": 5187050,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  5187060
+ ],
+ "detailed_description": "<h2 class=\"bb_tag\" >消されつつある漫画</h2><p class=\"bb_paragraph\" >気づくと漫画の中にいる。足元は紙、線はインクで描かれ、空にはハーフトーンの網点が浮かぶ。そしてページは</p><p class=\"bb_paragraph\" >縮んでいく。消しゴムが端から少しずつ食い込み、触れたものはただ消えていく。</p><p class=\"bb_paragraph\" >武器もなく、道具もなく、拠点もない。持っているのはスケッチブックだけ。それがすべての作戦だ。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/c6df339b789fe832abeeee9a21e23fbf.poster.avif?t=1788935185\" width=720 height=406 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/c6df339b789fe832abeeee9a21e23fbf.webm?t=1788935185\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/c6df339b789fe832abeeee9a21e23fbf.mp4?t=1788935185\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >必要なものは自分で描く</h2><p class=\"bb_paragraph\" >クラフトメニューは存在しない。スケッチブックを開くと、ページには斧の形をした灰色のガイドラインが</p><p class=\"bb_paragraph\" >描かれている。それを手でなぞる。すると、あなたは斧を手にしている。</p><p class=\"bb_paragraph\" >線は自動でガイドに吸着したりしない。それを決めるのはあなた自身で、ページはその出来栄えをちゃんと見ている。</p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >インクがすべてを決める</h2><p class=\"bb_paragraph\" >資源はインクひとつだけだが、あらゆる場面に絡んでくる。線を引くたびに消費し、文字を書くたびに消費する。オベリスクは</p><p class=\"bb_paragraph\" >大量に消費する。敵に一撃を与えるとインクが飛び散る。夜にはインクの雨が降り、体力を回復させると同時に</p><p class=\"bb_paragraph\" >体を冷やす。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/60d64bbfbaa836d412bd78860e708fbb.poster.avif?t=1788935185\" width=800 height=450 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/60d64bbfbaa836d412bd78860e708fbb.webm?t=1788935185\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/60d64bbfbaa836d412bd78860e708fbb.mp4?t=1788935185\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >消しゴムを押し戻せ</h2><p class=\"bb_paragraph\" >ページには9本のオベリスクが立っている。近づいてキーを押し続け、インクを支払えば、消しゴムは30</p><p class=\"bb_paragraph\" >メートル後退する。それが唯一、消しゴムに通じる言葉だ。一日でもインクを注ぎ足さずに放置すれば、消しゴムは</p><p class=\"bb_paragraph\" >再び近づいてくる。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/74185754b645b40c3d68876bdf5d5207.poster.avif?t=1788935185\" width=700 height=394 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/74185754b645b40c3d68876bdf5d5207.webm?t=1788935185\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/74185754b645b40c3d68876bdf5d5207.mp4?t=1788935185\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >夜を生き延びろ</h2><p class=\"bb_paragraph\" >空腹、喉の渇き、体温は常に減り続ける。道具はひび割れ、やがて壊れる。「未完成者たち」は</p><p class=\"bb_paragraph\" >日が暮れると現れる。誰にも色を塗ってもらえなかった者たちだ。持ちこたえる拠点を築くか、自分でベッドを描いて</p><p class=\"bb_paragraph\" >眠り、夜をやり過ごせ。</p>",
+ "about_the_game": "<h2 class=\"bb_tag\" >消されつつある漫画</h2><p class=\"bb_paragraph\" >気づくと漫画の中にいる。足元は紙、線はインクで描かれ、空にはハーフトーンの網点が浮かぶ。そしてページは</p><p class=\"bb_paragraph\" >縮んでいく。消しゴムが端から少しずつ食い込み、触れたものはただ消えていく。</p><p class=\"bb_paragraph\" >武器もなく、道具もなく、拠点もない。持っているのはスケッチブックだけ。それがすべての作戦だ。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/c6df339b789fe832abeeee9a21e23fbf.poster.avif?t=1788935185\" width=720 height=406 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/c6df339b789fe832abeeee9a21e23fbf.webm?t=1788935185\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/c6df339b789fe832abeeee9a21e23fbf.mp4?t=1788935185\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >必要なものは自分で描く</h2><p class=\"bb_paragraph\" >クラフトメニューは存在しない。スケッチブックを開くと、ページには斧の形をした灰色のガイドラインが</p><p class=\"bb_paragraph\" >描かれている。それを手でなぞる。すると、あなたは斧を手にしている。</p><p class=\"bb_paragraph\" >線は自動でガイドに吸着したりしない。それを決めるのはあなた自身で、ページはその出来栄えをちゃんと見ている。</p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >インクがすべてを決める</h2><p class=\"bb_paragraph\" >資源はインクひとつだけだが、あらゆる場面に絡んでくる。線を引くたびに消費し、文字を書くたびに消費する。オベリスクは</p><p class=\"bb_paragraph\" >大量に消費する。敵に一撃を与えるとインクが飛び散る。夜にはインクの雨が降り、体力を回復させると同時に</p><p class=\"bb_paragraph\" >体を冷やす。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/60d64bbfbaa836d412bd78860e708fbb.poster.avif?t=1788935185\" width=800 height=450 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/60d64bbfbaa836d412bd78860e708fbb.webm?t=1788935185\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/60d64bbfbaa836d412bd78860e708fbb.mp4?t=1788935185\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >消しゴムを押し戻せ</h2><p class=\"bb_paragraph\" >ページには9本のオベリスクが立っている。近づいてキーを押し続け、インクを支払えば、消しゴムは30</p><p class=\"bb_paragraph\" >メートル後退する。それが唯一、消しゴムに通じる言葉だ。一日でもインクを注ぎ足さずに放置すれば、消しゴムは</p><p class=\"bb_paragraph\" >再び近づいてくる。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/74185754b645b40c3d68876bdf5d5207.poster.avif?t=1788935185\" width=700 height=394 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/74185754b645b40c3d68876bdf5d5207.webm?t=1788935185\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/74185754b645b40c3d68876bdf5d5207.mp4?t=1788935185\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >夜を生き延びろ</h2><p class=\"bb_paragraph\" >空腹、喉の渇き、体温は常に減り続ける。道具はひび割れ、やがて壊れる。「未完成者たち」は</p><p class=\"bb_paragraph\" >日が暮れると現れる。誰にも色を塗ってもらえなかった者たちだ。持ちこたえる拠点を築くか、自分でベッドを描いて</p><p class=\"bb_paragraph\" >眠り、夜をやり過ごせ。</p>",
+ "short_description": "誰も完成させなかった漫画の中で目を覚ますと、消しゴムがページの端から世界を食い尽くしていく。持っているのはスケッチブックだけ。斧をなぞれば、斧が手に入る。すべてがインクを消費する。消える前にページに色を塗り戻せ。最大4人まで。",
+ "supported_languages": "英語, フランス語, ドイツ語, スペイン語 - スペイン, ポルトガル語－ブラジル, 中国語（簡体字）, ロシア語, 日本語",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/a4b4ec0863348b60c2aa3467a839c4a139bb0f13/header.jpg?t=1788935185",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/b81b7e46652ef0c8362467bd9a940fa1943511a2/capsule_231x87.jpg?t=1788935185",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/b81b7e46652ef0c8362467bd9a940fa1943511a2/capsule_184x69.jpg?t=1788935185",
+ "website": "https://www.overlkd.com/",
+ "pc_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 10<br></li><li><strong>プロセッサー:</strong> Quad-core 2.5 GHz<br></li><li><strong>メモリー:</strong> 4 GB RAM<br></li><li><strong>グラフィック:</strong> Vulkan 1.0 compatible GPU with 2 GB VRAM (GeForce GTX 1050 / Radeon RX 560)<br></li><li><strong>ストレージ:</strong> 1 GB の空き容量</li></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 11<br></li><li><strong>プロセッサー:</strong> Quad-core 3.0 GHz<br></li><li><strong>メモリー:</strong> 8 GB RAM<br></li><li><strong>グラフィック:</strong> Vulkan 1.0 compatible GPU with 4 GB VRAM (GeForce GTX 1060 / Radeon RX 580)<br></li><li><strong>ストレージ:</strong> 1 GB の空き容量</li></ul>"
+ },
+ "mac_requirements": [],
+ "linux_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Ubuntu 22.04 / SteamOS 3<br></li><li><strong>プロセッサー:</strong> Quad-core 2.5 GHz<br></li><li><strong>メモリー:</strong> 4 MB RAM<br></li><li><strong>グラフィック:</strong> Vulkan 1.0 compatible GPU with 2 GB VRAM<br></li><li><strong>ストレージ:</strong> 1 GB の空き容量</li></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Ubuntu 24.04 / SteamOS 3<br></li><li><strong>プロセッサー:</strong> Quad-core 3.0 GHz<br></li><li><strong>メモリー:</strong> 8 MB RAM<br></li><li><strong>グラフィック:</strong>  Vulkan 1.0 compatible GPU with 4 GB VRAM<br></li><li><strong>ストレージ:</strong> 1 GB の空き容量</li></ul>"
+ },
+ "developers": [
+  "OverLKD Studio"
+ ],
+ "publishers": [
+  "OverLKD Studio"
+ ],
+ "demos": [
+  {
+   "appid": 5187060,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": true
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "シングルプレイヤー"
+  },
+  {
+   "id": 1,
+   "description": "マルチプレイヤー"
+  },
+  {
+   "id": 9,
+   "description": "協力プレイ"
+  },
+  {
+   "id": 38,
+   "description": "オンライン協力プレイ"
+  },
+  {
+   "id": 48,
+   "description": "LAN協力プレイ"
+  },
+  {
+   "id": 27,
+   "description": "クロスプラットフォームマルチプレイヤー"
+  },
+  {
+   "id": 22,
+   "description": "Steam実績"
+  },
+  {
+   "id": 68,
+   "description": "カスタム音量調整"
+  },
+  {
+   "id": 74,
+   "description": "時間制限付き入力なしでプレイ可能"
+  },
+  {
+   "id": 79,
+   "description": "いつでもセーブ可能"
+  },
+  {
+   "id": 23,
+   "description": "Steamクラウド"
+  },
+  {
+   "id": 62,
+   "description": "ファミリーシェアリング"
+  }
+ ],
+ "genres": [
+  {
+   "id": "1",
+   "description": "アクション"
+  },
+  {
+   "id": "25",
+   "description": "アドベンチャー"
+  },
+  {
+   "id": "23",
+   "description": "インディー"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/2d639a538c4379a82aa8dd4170883e3d98195080/ss_2d639a538c4379a82aa8dd4170883e3d98195080.600x338.jpg?t=1788935185",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/2d639a538c4379a82aa8dd4170883e3d98195080/ss_2d639a538c4379a82aa8dd4170883e3d98195080.1920x1080.jpg?t=1788935185"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/a163d89d977c6e18839a1e048d3c493bc9df6627/ss_a163d89d977c6e18839a1e048d3c493bc9df6627.600x338.jpg?t=1788935185",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/a163d89d977c6e18839a1e048d3c493bc9df6627/ss_a163d89d977c6e18839a1e048d3c493bc9df6627.1920x1080.jpg?t=1788935185"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/ba7dcdefb63daf70d0abe7952957334a7ee2289d/ss_ba7dcdefb63daf70d0abe7952957334a7ee2289d.600x338.jpg?t=1788935185",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/ba7dcdefb63daf70d0abe7952957334a7ee2289d/ss_ba7dcdefb63daf70d0abe7952957334a7ee2289d.1920x1080.jpg?t=1788935185"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/dbc8abe010c76ba43a645b044c8abcb7db87bdef/ss_dbc8abe010c76ba43a645b044c8abcb7db87bdef.600x338.jpg?t=1788935185",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/dbc8abe010c76ba43a645b044c8abcb7db87bdef/ss_dbc8abe010c76ba43a645b044c8abcb7db87bdef.1920x1080.jpg?t=1788935185"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/b03813f18baa703507bb5847e7b758e5a3136540/ss_b03813f18baa703507bb5847e7b758e5a3136540.600x338.jpg?t=1788935185",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/b03813f18baa703507bb5847e7b758e5a3136540/ss_b03813f18baa703507bb5847e7b758e5a3136540.1920x1080.jpg?t=1788935185"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/a56759afc21e1bffd25bcc118231f3c45ce9f1a6/ss_a56759afc21e1bffd25bcc118231f3c45ce9f1a6.600x338.jpg?t=1788935185",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/a56759afc21e1bffd25bcc118231f3c45ce9f1a6/ss_a56759afc21e1bffd25bcc118231f3c45ce9f1a6.1920x1080.jpg?t=1788935185"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257416672,
+   "name": "Trailer EN",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257416672/520bbdb0c876b459b5a9bd05b13dbdc98c5b3b2c/movie_600x337.jpg?t=1788453749",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5187050/1674760910/c5f2ab676c0d343a6ec47b89c9422c13e47a9ffb/1788453454/dash_av1.mpd?t=1788453749",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5187050/1674760910/c5f2ab676c0d343a6ec47b89c9422c13e47a9ffb/1788453454/dash_h264.mpd?t=1788453749",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5187050/1674760910/c5f2ab676c0d343a6ec47b89c9422c13e47a9ffb/1788453454/hls_264_master.m3u8?t=1788453749",
+   "highlight": true
+  },
+  {
+   "id": 257416670,
+   "name": "Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257416670/520bbdb0c876b459b5a9bd05b13dbdc98c5b3b2c/movie_600x337.jpg?t=1788453923",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5187050/598671510/d5fa37a55ff369cf3745214d7f0efbaf46882ec5/1788453243/dash_av1.mpd?t=1788453923",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5187050/598671510/d5fa37a55ff369cf3745214d7f0efbaf46882ec5/1788453243/dash_h264.mpd?t=1788453923",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5187050/598671510/d5fa37a55ff369cf3745214d7f0efbaf46882ec5/1788453243/hls_264_master.m3u8?t=1788453923",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "近日登場"
+ },
+ "support_info": {
+  "url": "https://www.overlkd.com/",
+  "email": "support@overlkd.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5187050?t=1788935185",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/45b5d1e435a04511b6373bb1b8824b0fc904e05f/page_bg_raw.jpg?t=1788935185",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "14",
+   "required_age": "14",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Violência fantasiosa"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "12",
+   "required_age": "12",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Fantasy-Gewalt"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Interaksi Daring\nKekerasan"
+  }
+ }
+}

@@ -1,0 +1,201 @@
+{
+ "type": "game",
+ "name": "INKBORN",
+ "steam_appid": 5187050,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  5187060
+ ],
+ "detailed_description": "<h2 class=\"bb_tag\" >一本正在被擦除的漫画</h2><p class=\"bb_paragraph\" >你在一本漫画里醒来。脚下是纸张,线条是墨水,天空是网点。而这一页正在</p><p class=\"bb_paragraph\" >缩小。一块橡皮擦日复一日地从边缘向内啃食,凡是它触及之处都会直接消失。</p><p class=\"bb_paragraph\" >没有武器,没有工具,没有营地。你只有一本速写本。这就是全部的计划。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/c6df339b789fe832abeeee9a21e23fbf.poster.avif?t=1788935185\" width=720 height=406 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/c6df339b789fe832abeeee9a21e23fbf.webm?t=1788935185\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/c6df339b789fe832abeeee9a21e23fbf.mp4?t=1788935185\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >你需要什么就画什么</h2><p class=\"bb_paragraph\" >这里没有制作菜单。你翻开速写本,页面上是斧头形状的灰色</p><p class=\"bb_paragraph\" >引导线。你用手描摹它们。然后你手中就多了一把斧头。</p><p class=\"bb_paragraph\" >你的线条不会自动吸附到引导线上。这一步全靠你自己,而页面能看出你画得有多准。</p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >墨水就是一切</h2><p class=\"bb_paragraph\" >只有一种资源,却贯穿一切。每一笔都要消耗墨水,每一个符文也是。每座方尖碑的花费都</p><p class=\"bb_paragraph\" >很高。击中敌人时,它们会溅出墨水。夜里会下墨水雨,既能补充你的墨水</p><p class=\"bb_paragraph\" >也会让你感到寒冷。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/60d64bbfbaa836d412bd78860e708fbb.poster.avif?t=1788935185\" width=800 height=450 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/60d64bbfbaa836d412bd78860e708fbb.webm?t=1788935185\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/60d64bbfbaa836d412bd78860e708fbb.mp4?t=1788935185\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >把橡皮擦逼退</h2><p class=\"bb_paragraph\" >页面上矗立着九座方尖碑。走近,按住按键,支付墨水,橡皮擦就会后退三十</p><p class=\"bb_paragraph\" >米。这是它唯一听得懂的语言。若一整天没有为方尖碑重新注入墨水,它就会</p><p class=\"bb_paragraph\" >再次逼近。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/74185754b645b40c3d68876bdf5d5207.poster.avif?t=1788935185\" width=700 height=394 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/74185754b645b40c3d68876bdf5d5207.webm?t=1788935185\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/74185754b645b40c3d68876bdf5d5207.mp4?t=1788935185\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >熬过黑夜</h2><p class=\"bb_paragraph\" >饥饿、口渴和体温会持续下降。你的工具会先出现裂纹,然后碎裂。&quot;未完成者&quot;会在</p><p class=\"bb_paragraph\" >天黑后出现,没有人给它们上过色。搭建一座能撑住的庇护所,或者画一张床</p><p class=\"bb_paragraph\" >睡过这一夜。</p>",
+ "about_the_game": "<h2 class=\"bb_tag\" >一本正在被擦除的漫画</h2><p class=\"bb_paragraph\" >你在一本漫画里醒来。脚下是纸张,线条是墨水,天空是网点。而这一页正在</p><p class=\"bb_paragraph\" >缩小。一块橡皮擦日复一日地从边缘向内啃食,凡是它触及之处都会直接消失。</p><p class=\"bb_paragraph\" >没有武器,没有工具,没有营地。你只有一本速写本。这就是全部的计划。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/c6df339b789fe832abeeee9a21e23fbf.poster.avif?t=1788935185\" width=720 height=406 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/c6df339b789fe832abeeee9a21e23fbf.webm?t=1788935185\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/c6df339b789fe832abeeee9a21e23fbf.mp4?t=1788935185\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >你需要什么就画什么</h2><p class=\"bb_paragraph\" >这里没有制作菜单。你翻开速写本,页面上是斧头形状的灰色</p><p class=\"bb_paragraph\" >引导线。你用手描摹它们。然后你手中就多了一把斧头。</p><p class=\"bb_paragraph\" >你的线条不会自动吸附到引导线上。这一步全靠你自己,而页面能看出你画得有多准。</p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >墨水就是一切</h2><p class=\"bb_paragraph\" >只有一种资源,却贯穿一切。每一笔都要消耗墨水,每一个符文也是。每座方尖碑的花费都</p><p class=\"bb_paragraph\" >很高。击中敌人时,它们会溅出墨水。夜里会下墨水雨,既能补充你的墨水</p><p class=\"bb_paragraph\" >也会让你感到寒冷。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/60d64bbfbaa836d412bd78860e708fbb.poster.avif?t=1788935185\" width=800 height=450 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/60d64bbfbaa836d412bd78860e708fbb.webm?t=1788935185\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/60d64bbfbaa836d412bd78860e708fbb.mp4?t=1788935185\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >把橡皮擦逼退</h2><p class=\"bb_paragraph\" >页面上矗立着九座方尖碑。走近,按住按键,支付墨水,橡皮擦就会后退三十</p><p class=\"bb_paragraph\" >米。这是它唯一听得懂的语言。若一整天没有为方尖碑重新注入墨水,它就会</p><p class=\"bb_paragraph\" >再次逼近。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/74185754b645b40c3d68876bdf5d5207.poster.avif?t=1788935185\" width=700 height=394 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/74185754b645b40c3d68876bdf5d5207.webm?t=1788935185\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/extras/74185754b645b40c3d68876bdf5d5207.mp4?t=1788935185\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >熬过黑夜</h2><p class=\"bb_paragraph\" >饥饿、口渴和体温会持续下降。你的工具会先出现裂纹,然后碎裂。&quot;未完成者&quot;会在</p><p class=\"bb_paragraph\" >天黑后出现,没有人给它们上过色。搭建一座能撑住的庇护所,或者画一张床</p><p class=\"bb_paragraph\" >睡过这一夜。</p>",
+ "short_description": "你在一本无人完成的漫画里醒来,橡皮擦正从页面边缘吞噬整个世界。你只有一本速写本:描摹一把斧头,斧头就会出现在你手中。一切都要消耗墨水。在页面消失之前把它重新上色。最多支持四人。",
+ "supported_languages": "英语, 法语, 德语, 西班牙语 - 西班牙, 葡萄牙语 - 巴西, 简体中文, 俄语, 日语",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/a4b4ec0863348b60c2aa3467a839c4a139bb0f13/header.jpg?t=1788935185",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/b81b7e46652ef0c8362467bd9a940fa1943511a2/capsule_231x87.jpg?t=1788935185",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/b81b7e46652ef0c8362467bd9a940fa1943511a2/capsule_184x69.jpg?t=1788935185",
+ "website": "https://www.overlkd.com/",
+ "pc_requirements": {
+  "minimum": "<strong>最低配置:</strong><br><ul class=\"bb_ul\"><li><strong>操作系统:</strong> Windows 10<br></li><li><strong>处理器:</strong> Quad-core 2.5 GHz<br></li><li><strong>内存:</strong> 4 GB RAM<br></li><li><strong>显卡:</strong> Vulkan 1.0 compatible GPU with 2 GB VRAM (GeForce GTX 1050 / Radeon RX 560)<br></li><li><strong>存储空间:</strong> 需要 1 GB 可用空间</li></ul>",
+  "recommended": "<strong>推荐配置:</strong><br><ul class=\"bb_ul\"><li><strong>操作系统:</strong> Windows 11<br></li><li><strong>处理器:</strong> Quad-core 3.0 GHz<br></li><li><strong>内存:</strong> 8 GB RAM<br></li><li><strong>显卡:</strong> Vulkan 1.0 compatible GPU with 4 GB VRAM (GeForce GTX 1060 / Radeon RX 580)<br></li><li><strong>存储空间:</strong> 需要 1 GB 可用空间</li></ul>"
+ },
+ "mac_requirements": [],
+ "linux_requirements": {
+  "minimum": "<strong>最低配置:</strong><br><ul class=\"bb_ul\"><li><strong>操作系统:</strong> Ubuntu 22.04 / SteamOS 3<br></li><li><strong>处理器:</strong> Quad-core 2.5 GHz<br></li><li><strong>内存:</strong> 4 MB RAM<br></li><li><strong>显卡:</strong> Vulkan 1.0 compatible GPU with 2 GB VRAM<br></li><li><strong>存储空间:</strong> 需要 1 GB 可用空间</li></ul>",
+  "recommended": "<strong>推荐配置:</strong><br><ul class=\"bb_ul\"><li><strong>操作系统:</strong> Ubuntu 24.04 / SteamOS 3<br></li><li><strong>处理器:</strong> Quad-core 3.0 GHz<br></li><li><strong>内存:</strong> 8 MB RAM<br></li><li><strong>显卡:</strong>  Vulkan 1.0 compatible GPU with 4 GB VRAM<br></li><li><strong>存储空间:</strong> 需要 1 GB 可用空间</li></ul>"
+ },
+ "developers": [
+  "OverLKD Studio"
+ ],
+ "publishers": [
+  "OverLKD Studio"
+ ],
+ "demos": [
+  {
+   "appid": 5187060,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": true
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "单人"
+  },
+  {
+   "id": 1,
+   "description": "多人"
+  },
+  {
+   "id": 9,
+   "description": "合作"
+  },
+  {
+   "id": 38,
+   "description": "在线合作"
+  },
+  {
+   "id": 48,
+   "description": "局域网合作"
+  },
+  {
+   "id": 27,
+   "description": "跨平台多人"
+  },
+  {
+   "id": 22,
+   "description": "Steam 成就"
+  },
+  {
+   "id": 68,
+   "description": "自定义音量控制"
+  },
+  {
+   "id": 74,
+   "description": "无需应对快速反应事件"
+  },
+  {
+   "id": 79,
+   "description": "随时保存"
+  },
+  {
+   "id": 23,
+   "description": "Steam 云"
+  },
+  {
+   "id": 62,
+   "description": "家庭共享"
+  }
+ ],
+ "genres": [
+  {
+   "id": "1",
+   "description": "动作"
+  },
+  {
+   "id": "25",
+   "description": "冒险"
+  },
+  {
+   "id": "23",
+   "description": "独立"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/2d639a538c4379a82aa8dd4170883e3d98195080/ss_2d639a538c4379a82aa8dd4170883e3d98195080.600x338.jpg?t=1788935185",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/2d639a538c4379a82aa8dd4170883e3d98195080/ss_2d639a538c4379a82aa8dd4170883e3d98195080.1920x1080.jpg?t=1788935185"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/a163d89d977c6e18839a1e048d3c493bc9df6627/ss_a163d89d977c6e18839a1e048d3c493bc9df6627.600x338.jpg?t=1788935185",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/a163d89d977c6e18839a1e048d3c493bc9df6627/ss_a163d89d977c6e18839a1e048d3c493bc9df6627.1920x1080.jpg?t=1788935185"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/ba7dcdefb63daf70d0abe7952957334a7ee2289d/ss_ba7dcdefb63daf70d0abe7952957334a7ee2289d.600x338.jpg?t=1788935185",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/ba7dcdefb63daf70d0abe7952957334a7ee2289d/ss_ba7dcdefb63daf70d0abe7952957334a7ee2289d.1920x1080.jpg?t=1788935185"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/dbc8abe010c76ba43a645b044c8abcb7db87bdef/ss_dbc8abe010c76ba43a645b044c8abcb7db87bdef.600x338.jpg?t=1788935185",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/dbc8abe010c76ba43a645b044c8abcb7db87bdef/ss_dbc8abe010c76ba43a645b044c8abcb7db87bdef.1920x1080.jpg?t=1788935185"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/b03813f18baa703507bb5847e7b758e5a3136540/ss_b03813f18baa703507bb5847e7b758e5a3136540.600x338.jpg?t=1788935185",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/b03813f18baa703507bb5847e7b758e5a3136540/ss_b03813f18baa703507bb5847e7b758e5a3136540.1920x1080.jpg?t=1788935185"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/a56759afc21e1bffd25bcc118231f3c45ce9f1a6/ss_a56759afc21e1bffd25bcc118231f3c45ce9f1a6.600x338.jpg?t=1788935185",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/a56759afc21e1bffd25bcc118231f3c45ce9f1a6/ss_a56759afc21e1bffd25bcc118231f3c45ce9f1a6.1920x1080.jpg?t=1788935185"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257416672,
+   "name": "Trailer EN",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257416672/520bbdb0c876b459b5a9bd05b13dbdc98c5b3b2c/movie_600x337.jpg?t=1788453749",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5187050/1674760910/c5f2ab676c0d343a6ec47b89c9422c13e47a9ffb/1788453454/dash_av1.mpd?t=1788453749",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5187050/1674760910/c5f2ab676c0d343a6ec47b89c9422c13e47a9ffb/1788453454/dash_h264.mpd?t=1788453749",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5187050/1674760910/c5f2ab676c0d343a6ec47b89c9422c13e47a9ffb/1788453454/hls_264_master.m3u8?t=1788453749",
+   "highlight": true
+  },
+  {
+   "id": 257416670,
+   "name": "Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257416670/520bbdb0c876b459b5a9bd05b13dbdc98c5b3b2c/movie_600x337.jpg?t=1788453923",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5187050/598671510/d5fa37a55ff369cf3745214d7f0efbaf46882ec5/1788453243/dash_av1.mpd?t=1788453923",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5187050/598671510/d5fa37a55ff369cf3745214d7f0efbaf46882ec5/1788453243/dash_h264.mpd?t=1788453923",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5187050/598671510/d5fa37a55ff369cf3745214d7f0efbaf46882ec5/1788453243/hls_264_master.m3u8?t=1788453923",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "即将推出"
+ },
+ "support_info": {
+  "url": "https://www.overlkd.com/",
+  "email": "support@overlkd.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5187050?t=1788935185",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5187050/45b5d1e435a04511b6373bb1b8824b0fc904e05f/page_bg_raw.jpg?t=1788935185",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "14",
+   "required_age": "14",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Violência fantasiosa"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "12",
+   "required_age": "12",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Fantasy-Gewalt"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Interaksi Daring\nKekerasan"
+  }
+ }
+}

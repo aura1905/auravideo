@@ -1,0 +1,39 @@
+{
+ "demo_appid": 5187060,
+ "full_appid": 5187050,
+ "name": "INKBORN",
+ "developers": [
+  "OverLKD Studio"
+ ],
+ "publishers": [
+  "OverLKD Studio"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Adventure",
+  "Indie"
+ ],
+ "languages": "English, French, German, Spanish - Spain, Portuguese - Brazil, Simplified Chinese, Russian, Japanese",
+ "website": "https://www.overlkd.com/",
+ "short": "You wake up in a comic nobody finished, and an eraser is eating the world from the edge of the page. You have a sketchbook: trace an axe and you are holding an axe. Everything costs ink. Colour the page back in before it is gone. Up to four.",
+ "about": " A COMIC THAT IS BEING ERASED    You wake up inside a comic. Paper underfoot, ink lines, halftone dots in the sky. And the page is    shrinking. An eraser chews inward from the edge, day after day, and whatever it reaches is simply gone.    No weapon, no tools, no camp. You have a sketchbook. That is the whole plan.              YOU DRAW WHAT YOU NEED    There is no crafting menu. You open your sketchbook, and on the page are grey guide lines in the shape    of an axe. You trace them by hand. And then you are holding an axe.    Nothing snaps your line onto the guide. That part is you, and the page can tell how well you did.        INK IS EVERYTHING    One resource, and it is inside all of it. Every stroke drinks it. Every glyph. Every obelisk costs a    lot. Enemies splash ink when you land a hit. At night it rains ink, which tops you up and chills you at    the same time.                PUSH THE ERASER BACK    Nine obelisks stand on the page. Walk up, hold the key, pay the ink, and the eraser gives up thirty    metres. That is the only language it understands. Let a day pass without re-inking one and it comes    closer.                  SURVIVE THE NIGHTS    Hunger, thirst and warmth drain the whole time. Your tools crack, then break. The Unfinished come out    after dark, and nobody coloured them in. Build a shelter that holds, or draw yourself a bed and sleep    through it. ",
+ "min_req": " Minimum:     OS:  Windows 10    Processor:  Quad-core 2.5 GHz    Memory:  4 GB RAM    Graphics:  Vulkan 1.0 compatible GPU with 2 GB VRAM (GeForce GTX 1050 / Radeon RX 560)    Storage:  1 GB available space  ",
+ "movies": [
+  {
+   "id": 257416672,
+   "name": "Trailer EN"
+  },
+  {
+   "id": 257416670,
+   "name": "Trailer"
+  }
+ ],
+ "screenshots": 6,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

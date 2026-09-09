@@ -1,0 +1,84 @@
+{
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "verdict": "WORTH A DIP",
+ "narration_volume": 1.6,
+ "sub_y": 560,
+ "title_en": "The Last Wait",
+ "demo_appid": 5092070,
+ "full_appid": 5092060,
+ "developer": "Beanutts Games",
+ "score_line_id": "s8",
+ "specs": [
+  [
+   "ENGINE",
+   "Unreal"
+  ],
+  [
+   "THE BUILD",
+   "2.43 GB / 322 files"
+  ],
+  [
+   "THE CONTAINER",
+   "2.03 GB in one .ucas"
+  ],
+  [
+   "OUTSIDE IT",
+   "Eye_1_Anim.mp4"
+  ],
+  [
+   "THAT FILE",
+   "153.40 MiB"
+  ]
+ ],
+ "opening_stamp": {
+  "line1": "The Last Wait",
+  "line2": "153 MB OF ONE VIDEO FILE.",
+  "size1": 96,
+  "size2": 50
+ },
+ "stack": [
+  [
+   "Unreal Engine",
+   "https://www.unrealengine.com/"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5092070/"
+  ]
+ ],
+ "chapters": {
+  "hook": "One video file",
+  "intro": "What it is",
+  "made": "Eye_1_Anim.mp4",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "The Last Wait ships one video file, 153 MB, called Eye_1_Anim #shorts",
+  "tags": "shorts,The Last Wait,Beanutts Games,steam demo,unreal engine,hospital horror,psychological horror,game teardown,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "workdir": "episodes/s12-last-wait",
+ "script_timed": "episodes/s12-last-wait/short_tts_timed.json",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ }
+}

@@ -1,0 +1,33 @@
+1
+00:00:00,000 --> 00:00:06,054
+It's a haunted house you run through on live television.
+The build says it isn't the same house twice.
+
+2
+00:00:06,304 --> 00:00:08,178
+It ships a dungeon generator.
+
+3
+00:00:10,428 --> 00:00:17,056
+Haunted House Hellshift. You collect eyeballs to open cursed doors,
+and a studio audience watches.
+
+4
+00:00:17,306 --> 00:00:22,524
+Two point one gigabytes, Unity on Mono.
+So every package name is readable.
+
+5
+00:00:22,774 --> 00:00:29,533
+And in that list is DunGen — a procedural level builder.
+Rooms and rules in, a layout out, at runtime.
+
+6
+00:00:29,783 --> 00:00:35,210
+So tonight's house isn't the one you learned yesterday.
+A design decision, read off a file list.
+
+7
+00:00:35,610 --> 00:00:41,220
+Worth a dip, and there's local two-player.
+Every demo I open, I read the file list first.

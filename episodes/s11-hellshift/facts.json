@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5196080,
+ "full_appid": 5094290,
+ "name": "Haunted House Hellshift",
+ "developers": [
+  "Deege Games LLC"
+ ],
+ "publishers": [
+  "Deege Games LLC"
+ ],
+ "release": "9 Nov, 2026",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Adventure",
+  "Indie"
+ ],
+ "languages": "English*, French*, Italian*, German*, Spanish - Spain*, Japanese*, Korean*, Polish*, Portuguese - Brazil*, Simplified Chinese*, Turkish*, Ukrainian**languages with full audio support",
+ "website": "https://www.deege.games/haunted-house-hellshift.html",
+ "short": "Fight through a haunted house full of monsters and traps while a live TV audience watches. Collect eyeballs to open cursed doors, find the exit, and try to make it out alive—solo or with a friend in local 2-player co-op.",
+ "about": " WELCOME TO THE DEADLIEST SHOW ON TELEVISION  Haunted House Hellshift is a fast, chaotic top-down shooter where you fight your way through a haunted house while a live TV audience watches.  Shoot monsters, dodge traps, collect eyeballs to open locked doors, find new weapons, and try to make it out alive.  You can play by yourself or with a friend on the same computer.          SURVIVE THE HOUSE  Every room has something waiting for you.  You might find monsters, traps, strange hazards, useful items, or members of the television crew who are somehow still working after death.  Collect enough eyeballs to open the way forward, grab whatever helps you survive, and keep searching for the exit.  The farther you get, the worse the house becomes.  PUT ON A SHOW  You are not just trying to survive. You are doing it on live TV.  Kill enemies quickly to earn more money. Murder tests well with the audience!  The announcer follows the action, celebrating when things go well and making sure everyone notices when they do not.  WHAT'S BEHIND THE NEXT DOOR?  You never know exactly what the house has waiting for you.  One room might be full of monsters. Another might contain traps, a useful weapon, a strange reward, or a boss looking to end the show early.  Keep moving, use what you can find, and be ready for whatever comes next.          KEY FEATURES    Fight your way through rooms filled with monsters, traps, and supernatural hazards.    Collect eyeballs to unlock doors and move deeper into the house.    Find new weapons and temporary boosts to help you survive.    Take on dangerous bosses standing between you and the exit.    Earn more cash by defeating enemies quickly.    Hear the TV announcer react to your victories, mistakes, and close calls.    Play alone or with a friend in local co-op.    Experience a mix of haunted-house horror, fast action, and ridiculous game-show spectacle.    Clear the house. Make some money. Give the audience a show. ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10 64-bit    Processor:  AMD Ryzen 3 4300U or equivalent    Memory:  8 GB RAM    Graphics:  AMD Radeon Vega 8 or equivalent    DirectX:  Version 11    Storage:  2 GB available space  ",
+ "movies": [
+  {
+   "id": 257412469,
+   "name": "Haunted House Hellshift"
+  }
+ ],
+ "screenshots": 7,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

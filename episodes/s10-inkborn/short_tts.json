@@ -1,0 +1,92 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "Every day I open a Steam demo and read its file list. This one has three.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 1.4
+  },
+  "sub": "Every day I open a Steam demo and read its file list. This one has three."
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "And one of them is the whole game.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "And one of them is the whole game."
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 6.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "It's INKBORN. You wake inside a comic nobody finished, and an eraser is eating the page.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "It's INKBORN. You wake inside a comic nobody finished, and an eraser is eating the page."
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "You carry a sketchbook. Trace an axe, and you're holding an axe. Ink is the cost.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 11.0
+  },
+  "sub": "You carry a sketchbook. Trace an axe, and you're holding an axe. Ink is the cost."
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "The whole demo is a hundred and fifty-one megabytes. Three files.",
+  "vis": {
+   "type": "image",
+   "file": "ev_files_v.png"
+  },
+  "sub": "The whole demo is a hundred and fifty-one megabytes. Three files."
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "libgodotsteam. It's Godot. After fifteen teardowns of Unity and Unreal, that's the first one.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "libgodotsteam. It's Godot. After fifteen teardowns of Unity and Unreal, that's the first one."
+ },
+ {
+  "id": "s7",
+  "sec": "made",
+  "text": "Godot packs everything inside the executable. No data folder, no bundles, nothing to read.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Godot packs everything inside the executable. No data folder, no bundles, nothing to read."
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "Every demo I open, I read the file list first. When there is one.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.5
+  },
+  "sub": "Every demo I open, I read the file list first. When there is one."
+ }
+]

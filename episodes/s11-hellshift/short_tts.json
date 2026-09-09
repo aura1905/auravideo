@@ -1,0 +1,83 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "It's a haunted house you run through on live television. The build says it isn't the same house twice.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 18.0
+  },
+  "sub": "It's a haunted house you run through on live television. The build says it isn't the same house twice."
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "It ships a dungeon generator.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "It ships a dungeon generator."
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 26.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Haunted House Hellshift. You collect eyeballs to open cursed doors, and a studio audience watches.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Haunted House Hellshift. You collect eyeballs to open cursed doors, and a studio audience watches."
+ },
+ {
+  "id": "s4",
+  "sec": "made",
+  "text": "Two point one gigabytes, Unity on Mono. So every package name is readable.",
+  "vis": {
+   "type": "image",
+   "file": "ev_build_v.png"
+  },
+  "sub": "Two point one gigabytes, Unity on Mono. So every package name is readable."
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "And in that list is DunGen — a procedural level builder. Rooms and rules in, a layout out, at runtime.",
+  "vis": {
+   "type": "image",
+   "file": "ev_dungen_v.png"
+  },
+  "sub": "And in that list is DunGen — a procedural level builder. Rooms and rules in, a layout out, at runtime."
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "So tonight's house isn't the one you learned yesterday. A design decision, read off a file list.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 44.0
+  },
+  "sub": "So tonight's house isn't the one you learned yesterday. A design decision, read off a file list."
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip, and there's local two-player. Every demo I open, I read the file list first.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 52.0
+  },
+  "sub": "Worth a dip, and there's local two-player. Every demo I open, I read the file list first."
+ }
+]

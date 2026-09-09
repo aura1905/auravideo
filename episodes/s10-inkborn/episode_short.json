@@ -1,0 +1,88 @@
+{
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "verdict": "WORTH A DIP",
+ "narration_volume": 1.6,
+ "sub_y": 560,
+ "title_en": "INKBORN",
+ "demo_appid": 5187060,
+ "full_appid": 5187050,
+ "developer": "OverLKD Studio",
+ "score_line_id": "s8",
+ "specs": [
+  [
+   "ENGINE",
+   "Godot"
+  ],
+  [
+   "THE BUILD",
+   "151 MB / 3 files"
+  ],
+  [
+   "THE GAME",
+   "inside the .exe"
+  ],
+  [
+   "DATA FOLDER",
+   "none"
+  ],
+  [
+   "A FIRST",
+   "not Unity, not Unreal"
+  ]
+ ],
+ "opening_stamp": {
+  "line1": "INKBORN",
+  "line2": "THREE FILES. THAT'S THE DEMO.",
+  "size1": 104,
+  "size2": 50
+ },
+ "stack": [
+  [
+   "Godot Engine",
+   "https://godotengine.org/"
+  ],
+  [
+   "GodotSteam",
+   "https://godotsteam.com/"
+  ],
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5187060/"
+  ]
+ ],
+ "chapters": {
+  "hook": "Three files",
+  "intro": "What it is",
+  "made": "It's Godot",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "INKBORN's demo is three files — and one of them is the whole game #shorts",
+  "tags": "shorts,INKBORN,OverLKD Studio,steam demo,godot,godotsteam,comic game,drawing game,game teardown,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "workdir": "episodes/s10-inkborn",
+ "script_timed": "episodes/s10-inkborn/short_tts_timed.json",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ }
+}
