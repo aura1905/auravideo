@@ -1,0 +1,470 @@
+[
+ {
+  "id": "01",
+  "sec": "hook",
+  "text": "This demo's store page sells fifteen languages. The build ships six.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 6.0
+  },
+  "sub": "This demo's store page sells fifteen languages. The build ships six.",
+  "dur": 4.624,
+  "wav": "episodes/16-seaside-wash/tts/01.wav"
+ },
+ {
+  "id": "02",
+  "sec": "hook",
+  "text": "And which six is the most interesting thing in the whole download.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "And which six is the most interesting thing in the whole download.",
+  "dur": 3.213,
+  "wav": "episodes/16-seaside-wash/tts/02.wav"
+ },
+ {
+  "id": "03",
+  "sec": "intro",
+  "text": "Let's do the game first, because a lot of you turned up for the game.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 26.5
+  },
+  "sub": "Let's do the game first, because a lot of you turned up for the game.",
+  "dur": 3.448,
+  "wav": "episodes/16-seaside-wash/tts/03.wav"
+ },
+ {
+  "id": "04",
+  "sec": "intro",
+  "text": "Seaside Wash. You run a boatyard on a pier, and filthy ships pull in one at a time.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Seaside Wash. You run a boatyard on a pier, and filthy ships pull in one at a time.",
+  "dur": 5.904,
+  "wav": "episodes/16-seaside-wash/tts/04.wav"
+ },
+ {
+  "id": "05",
+  "sec": "intro",
+  "text": "You play a small monkey. His arm extends. That's the whole traversal system — he stands on the dock and reaches.",
+  "vis": {
+   "type": "image",
+   "file": "ss15.jpg"
+  },
+  "sub": "You play a small monkey. His arm extends. That's the whole traversal system — he stands on the dock and reaches.",
+  "dur": 6.296,
+  "wav": "episodes/16-seaside-wash/tts/05.wav"
+ },
+ {
+  "id": "06",
+  "sec": "intro",
+  "text": "Salt, rust and barnacles all behave differently, and each one wants a different tool.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 38.0
+  },
+  "sub": "Salt, rust and barnacles all behave differently, and each one wants a different tool.",
+  "dur": 5.407,
+  "wav": "episodes/16-seaside-wash/tts/06.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 5.0,
+  "vis": {
+   "type": "continue"
+  },
+  "dur": 5.0,
+  "wav": null
+ },
+ {
+  "id": "07",
+  "sec": "intro",
+  "text": "Between hulls there's a whole second game. You repair your own tools by hammering the glowing spots.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "Between hulls there's a whole second game. You repair your own tools by hammering the glowing spots.",
+  "dur": 5.721,
+  "wav": "episodes/16-seaside-wash/tts/07.wav"
+ },
+ {
+  "id": "08",
+  "sec": "intro",
+  "text": "You patch holes. You wash windows. And there's an arm training minigame, where a monkey punches a bag under a sign that says: strong body, sleepy mind.",
+  "vis": {
+   "type": "image",
+   "file": "ss14.jpg"
+  },
+  "sub": "You patch holes. You wash windows. And there's an arm training minigame, where a monkey punches a bag under a sign that says: strong body, sleepy mind.",
+  "dur": 9.3,
+  "wav": "episodes/16-seaside-wash/tts/08.wav"
+ },
+ {
+  "id": "09",
+  "sec": "intro",
+  "text": "Jobs arrive as email. You walk home, sit at a P C, and pick the next ship off an inbox that lists the owner, the problems, and the tools it recommends.",
+  "vis": {
+   "type": "image",
+   "file": "ss08.jpg"
+  },
+  "sub": "Jobs arrive as email. You walk home, sit at a PC, and pick the next ship off an inbox that lists the owner, the problems, and the tools it recommends.",
+  "dur": 8.15,
+  "wav": "episodes/16-seaside-wash/tts/09.wav"
+ },
+ {
+  "id": "10",
+  "sec": "intro",
+  "text": "It went up on Steam two days ago. Nine reviews, all nine positive, and people are playing it for half an hour a sitting.",
+  "vis": {
+   "type": "image",
+   "file": "ss16.jpg"
+  },
+  "sub": "It went up on Steam two days ago. Nine reviews, all nine positive, and people are playing it for half an hour a sitting.",
+  "dur": 6.557,
+  "wav": "episodes/16-seaside-wash/tts/10.wav"
+ },
+ {
+  "id": "11",
+  "sec": "intro",
+  "text": "So let's open it.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 45.0
+  },
+  "sub": "So let's open it.",
+  "dur": 1.045,
+  "wav": "episodes/16-seaside-wash/tts/11.wav"
+ },
+ {
+  "id": "12",
+  "sec": "made",
+  "text": "Six hundred and nine megabytes. A hundred and ninety-one files.",
+  "vis": {
+   "type": "image",
+   "file": "ev_build.png"
+  },
+  "sub": "Six hundred and nine megabytes. A hundred and ninety-one files.",
+  "dur": 4.284,
+  "wav": "episodes/16-seaside-wash/tts/12.wav"
+ },
+ {
+  "id": "13",
+  "sec": "made",
+  "text": "Unity, on the Mono backend, which is the good case for this channel: every package they used is sitting there with its name on it.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Unity, on the Mono backend, which is the good case for this channel: every package they used is sitting there with its name on it.",
+  "dur": 6.896,
+  "wav": "episodes/16-seaside-wash/tts/13.wav"
+ },
+ {
+  "id": "14",
+  "sec": "made",
+  "text": "Before the packages, though — where does six hundred megabytes of a pixel-art cleaning game actually go?",
+  "vis": {
+   "type": "image",
+   "file": "ev_where.png"
+  },
+  "sub": "Before the packages, though — where does six hundred megabytes of a pixel-art cleaning game actually go?",
+  "dur": 5.878,
+  "wav": "episodes/16-seaside-wash/tts/14.wav"
+ },
+ {
+  "id": "15",
+  "sec": "made",
+  "text": "Three files. One asset group, four hundred and fifty-five megabytes, seventy-five percent of the download.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Three files. One asset group, four hundred and fifty-five megabytes, seventy-five percent of the download.",
+  "dur": 6.792,
+  "wav": "episodes/16-seaside-wash/tts/15.wav"
+ },
+ {
+  "id": "16",
+  "sec": "made",
+  "text": "That's the ships. Every hull is hand-drawn at a size you can scrub pixel by pixel, and that costs what it costs.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 56.0
+  },
+  "sub": "That's the ships. Every hull is hand-drawn at a size you can scrub pixel by pixel, and that costs what it costs.",
+  "dur": 6.426,
+  "wav": "episodes/16-seaside-wash/tts/16.wav"
+ },
+ {
+  "id": "17",
+  "sec": "made",
+  "text": "Now the packages. This is the entire list of things they didn't write.",
+  "vis": {
+   "type": "image",
+   "file": "ev_bought.png"
+  },
+  "sub": "Now the packages. This is the entire list of things they didn't write.",
+  "dur": 3.866,
+  "wav": "episodes/16-seaside-wash/tts/17.wav"
+ },
+ {
+  "id": "18",
+  "sec": "made",
+  "text": "Six. Cinemachine for the camera, dot tween for movement, a particle helper, a utility grab-bag, a JSON reader, and Steam.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Six. Cinemachine for the camera, DOTween for movement, a particle helper, a utility grab-bag, a JSON reader, and Steam.",
+  "dur": 8.647,
+  "wav": "episodes/16-seaside-wash/tts/18.wav"
+ },
+ {
+  "id": "19",
+  "sec": "made",
+  "text": "I opened a haunted-house demo from the same week that had more than forty. Neither number is wrong. But this is a small, deliberate build.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  },
+  "sub": "I opened a haunted-house demo from the same week that had more than forty. Neither number is wrong. But this is a small, deliberate build.",
+  "dur": 7.863,
+  "wav": "episodes/16-seaside-wash/tts/19.wav"
+ },
+ {
+  "id": "20",
+  "sec": "made",
+  "text": "And they used Unity's addressables system for exactly one thing.",
+  "vis": {
+   "type": "image",
+   "file": "ev_lang.png"
+  },
+  "sub": "And they used Unity's Addressables system for exactly one thing.",
+  "dur": 3.631,
+  "wav": "episodes/16-seaside-wash/tts/20.wav"
+ },
+ {
+  "id": "21",
+  "sec": "made",
+  "text": "Translations. Eight bundles, a hundred and twenty-five kilobytes all together, and six of them are string tables.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Translations. Eight bundles, a hundred and twenty-five kilobytes all together, and six of them are string tables.",
+  "dur": 6.531,
+  "wav": "episodes/16-seaside-wash/tts/21.wav"
+ },
+ {
+  "id": "22",
+  "sec": "made",
+  "text": "English. Japanese. Korean. Simplified Chinese. Traditional Chinese. Vietnamese.",
+  "vis": {
+   "type": "image",
+   "file": "ev_lang.png"
+  },
+  "sub": "English. Japanese. Korean. Simplified Chinese. Traditional Chinese. Vietnamese.",
+  "dur": 6.374,
+  "wav": "episodes/16-seaside-wash/tts/22.wav"
+ },
+ {
+  "id": "23",
+  "sec": "made",
+  "text": "The store page lists fifteen.",
+  "vis": {
+   "type": "image",
+   "file": "ev_store.png"
+  },
+  "sub": "The store page lists fifteen.",
+  "dur": 2.064,
+  "wav": "episodes/16-seaside-wash/tts/23.wav"
+ },
+ {
+  "id": "24",
+  "sec": "made",
+  "text": "French, Italian, German, Polish, Portuguese, Russian, Turkish, Indonesian and Thai are all advertised, and none of them are in this build yet.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "French, Italian, German, Polish, Portuguese, Russian, Turkish, Indonesian and Thai are all advertised, and none of them are in this build yet.",
+  "dur": 7.732,
+  "wav": "episodes/16-seaside-wash/tts/24.wav"
+ },
+ {
+  "id": "25",
+  "sec": "made",
+  "text": "I want to be careful here, because I got this backwards in a short yesterday. I said the build had a language the store didn't. It's the other way round.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 14.0
+  },
+  "sub": "I want to be careful here, because I got this backwards in a short yesterday. I said the build had a language the store didn't. It's the other way round.",
+  "dur": 8.385,
+  "wav": "episodes/16-seaside-wash/tts/25.wav"
+ },
+ {
+  "id": "26",
+  "sec": "made",
+  "text": "And the other way round is the better story. Because a demo is where you find out who shows up, and translations cost money, so you pick.",
+  "vis": {
+   "type": "image",
+   "file": "ss12.jpg"
+  },
+  "sub": "And the other way round is the better story. Because a demo is where you find out who shows up, and translations cost money, so you pick.",
+  "dur": 7.549,
+  "wav": "episodes/16-seaside-wash/tts/26.wav"
+ },
+ {
+  "id": "27",
+  "sec": "made",
+  "text": "They picked English, and then five markets in Asia. That's not a translation order. That's a bet on an audience.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.0
+  },
+  "sub": "They picked English, and then five markets in Asia. That's not a translation order. That's a bet on an audience.",
+  "dur": 6.374,
+  "wav": "episodes/16-seaside-wash/tts/27.wav"
+ },
+ {
+  "id": "28",
+  "sec": "review",
+  "text": "So did the bet land? Nine reviews is a small sample, but you can read every one of them.",
+  "vis": {
+   "type": "image",
+   "file": "ev_reviews.png"
+  },
+  "sub": "So did the bet land? Nine reviews is a small sample, but you can read every one of them.",
+  "dur": 5.277,
+  "wav": "episodes/16-seaside-wash/tts/28.wav"
+ },
+ {
+  "id": "29",
+  "sec": "review",
+  "text": "Three Simplified Chinese, two English, two Korean, one Traditional Chinese. Eight of the nine are speaking a language this build already covers.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Three Simplified Chinese, two English, two Korean, one Traditional Chinese. Eight of the nine are speaking a language this build already covers.",
+  "dur": 7.445,
+  "wav": "episodes/16-seaside-wash/tts/29.wav"
+ },
+ {
+  "id": "30",
+  "sec": "review",
+  "text": "The ninth is Brazilian Portuguese — a language the store sells and the build can't serve yet. He liked it anyway.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 50.0
+  },
+  "sub": "The ninth is Brazilian Portuguese — a language the store sells and the build can't serve yet. He liked it anyway.",
+  "dur": 6.557,
+  "wav": "episodes/16-seaside-wash/tts/30.wav"
+ },
+ {
+  "id": "31",
+  "sec": "review",
+  "text": "And the reviews are useful, which is rarer than it sounds. The praise is all about feel: the sound of the chisel, the music, the little monkey.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "And the reviews are useful, which is rarer than it sounds. The praise is all about feel: the sound of the chisel, the music, the little monkey.",
+  "dur": 8.516,
+  "wav": "episodes/16-seaside-wash/tts/31.wav"
+ },
+ {
+  "id": "32",
+  "sec": "review",
+  "text": "The complaints are all structural. You can't run. Every single job sends you home to the P C and back. The tools feel too much alike, and a lot of the scenery does nothing.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  },
+  "sub": "The complaints are all structural. You can't run. Every single job sends you home to the PC and back. The tools feel too much alike, and a lot of the scenery does nothing.",
+  "dur": 10.475,
+  "wav": "episodes/16-seaside-wash/tts/32.wav"
+ },
+ {
+  "id": "33",
+  "sec": "review",
+  "text": "One Korean player wrote down that the mouse cursor disappears during tool repair, and that a brush and a sponge are hard to tell apart. That's a bug report and a legibility note, for free, in week one.",
+  "vis": {
+   "type": "image",
+   "file": "ss15.jpg"
+  },
+  "sub": "One Korean player wrote down that the mouse cursor disappears during tool repair, and that a brush and a sponge are hard to tell apart. That's a bug report and a legibility note, for free, in week one.",
+  "dur": 11.311,
+  "wav": "episodes/16-seaside-wash/tts/33.wav"
+ },
+ {
+  "id": "34",
+  "sec": "score",
+  "text": "Here's the whole teardown on one card.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 42.0
+  },
+  "sub": "Here's the whole teardown on one card.",
+  "dur": 2.664,
+  "wav": "episodes/16-seaside-wash/tts/34.wav"
+ },
+ {
+  "id": "35",
+  "sec": "score",
+  "text": "Unity on Mono, six hundred and nine megabytes, three quarters of it ships, six packages bought in, and six translations for a store page that promises fifteen.",
+  "vis": {
+   "type": "image",
+   "file": "ss09.jpg"
+  },
+  "sub": "Unity on Mono, six hundred and nine megabytes, three quarters of it ships, six packages bought in, and six translations for a store page that promises fifteen.",
+  "dur": 9.953,
+  "wav": "episodes/16-seaside-wash/tts/35.wav"
+ },
+ {
+  "id": "36",
+  "sec": "score",
+  "text": "Worth a dip. It's free, it's genuinely relaxing, and the demo is about half an hour of it.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 34.0
+  },
+  "sub": "Worth a dip. It's free, it's genuinely relaxing, and the demo is about half an hour of it.",
+  "dur": 4.989,
+  "wav": "episodes/16-seaside-wash/tts/36.wav"
+ },
+ {
+  "id": "37",
+  "sec": "score",
+  "text": "If you're shipping a demo, take the localization idea. Ship the few you can afford, put them behind addressables so they're cheap to add to, and let the demo tell you which one to buy next.",
+  "vis": {
+   "type": "image",
+   "file": "ss10.jpg"
+  },
+  "sub": "If you're shipping a demo, take the localization idea. Ship the few you can afford, put them behind Addressables so they're cheap to add to, and let the demo tell you which one to buy next.",
+  "dur": 10.136,
+  "wav": "episodes/16-seaside-wash/tts/37.wav"
+ },
+ {
+  "id": "38",
+  "sec": "score",
+  "text": "That's my read from the outside. If you worked on this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "That's my read from the outside. If you worked on this and I got something wrong, say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.",
+  "dur": 10.475,
+  "wav": "episodes/16-seaside-wash/tts/38.wav"
+ }
+]

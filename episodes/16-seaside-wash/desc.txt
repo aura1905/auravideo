@@ -1,0 +1,41 @@
+Seaside Wash — The store page sells fifteen languages. The build ships six.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4924230/
+▶ The 45-second version (with a correction in the comments): https://youtube.com/shorts/P7czdQ6Pdr4
+▶ Previous episode — The No Jumpscare Show: https://youtu.be/7eufu3rMYhg
+▶ The full game: https://store.steampowered.com/app/4924230/
+
+── How they made it ──
+Engine     : Unity - Mono
+The Build  : 609 MB / 191 files
+75% Of It  : the ships
+Bought In  : 6 packages
+Translated : 6 of the 15 sold
+Verdict    : Worth A Dip
+
+── The stack, if you want to use it ──
+Unity                             : https://unity.com/
+Unity Localization + Addressables : https://docs.unity3d.com/Packages/com.unity.localization@latest
+Cinemachine                       : https://unity.com/unity/features/editor/art-and-design/cinemachine
+DOTween                           : http://dotween.demigiant.com/
+UIParticle (Coffee)               : https://github.com/mob-sakai/ParticleEffectForUGUI
+MyBox                             : https://github.com/Deadcows/MyBox
+Steamworks.NET                    : https://steamworks.github.io/
+The demo on Steam                 : https://store.steampowered.com/app/4924230/
+
+── Chapters ──
+0:00 Fifteen sold, six shipped
+0:12 A monkey with a very long arm
+1:13 Opening the build
+2:58 Nine reviews, and who wrote them
+3:50 The spec sheet + verdict
+
+Everything about how this game was built is read off public information: the
+Steam store page, the developer's own devlogs, the recent review corpus, and the
+demo depot manifest that Steam publishes (file names and sizes only — nothing was
+unpacked, decompiled, or redistributed). It is an outside reading, not a statement
+from the developer. All game footage and images belong to BITCOVER.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

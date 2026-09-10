@@ -1,0 +1,39 @@
+{
+ "demo_appid": 4924230,
+ "full_appid": 4719020,
+ "name": "Seaside Wash",
+ "developers": [
+  "BITCOVER"
+ ],
+ "publishers": [
+  "BITCOVER"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Casual",
+  "Indie",
+  "Simulation"
+ ],
+ "languages": "English, French, Italian, German, Indonesian, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Thai, Traditional Chinese, Turkish, Vietnamese",
+ "website": null,
+ "short": "Seaside Wash is a cozy job simulator where you clean, repair, and restore ships from rust and barnacles to pristine condition. Upgrade tools, grow your business, discover rare finds, build your own ship, and enjoy peaceful seaside activities.",
+ "about": " WISHLIST NOW          About the Game        Seaside Wash  pairs immersive cleaning sounds with a soothing soundtrack to create  a tranquil and engaging experience . Every job delivers a satisfying sense of progress as rusty, worn ships slowly return to pristine condition.                   Different surfaces and dirt require different tools.  Pick wisely for maximum efficiency  as each cleaning task demands the right equipment, and approach to achieve the best results.                     Improve your efficiency by  upgrading and repairing your tools  to handle tougher and more rewarding jobs.  Unlock better tools and refine your approach  as restoration tasks become more demanding                   Work on a  variety of vessels , from small fishing boats to massive cargo freighters. Each ship features its own structure, scale, and cleaning challenges waiting to be restored.                    Clean every part of the ship , from the hull and bow to the mast, deck, and interior spaces. Explore detailed work areas filled with grime, hidden spots, and satisfying restoration opportunities.                   Tackle layers of  salt ,  rust , and  stubborn barnacles  that require different cleaning strategies. Learn how each type of grime behaves and choose the best method to remove it effectively.                   Take on jobs at your own pace, choosing tasks that fit your tools, your strategy, and your time.  Progress freely through a variety of tasks  while  building your reputation  and  improving your workshop.                    Between jobs, unwind with  relaxing mini games  like  fishing  and  cooking  at your cozy seaside home. Enjoy peaceful seaside moments that offer a refreshing break from your daily restoration work.             FEATURES   🛥️ Restore a variety of ships across immersive and detailed work environments  🧰 Use specialized tools and workshop systems to handle challenging restoration tasks  🔧 Upgrade and expand your workspace through rewarding progression mechanics  🏠 Work across multi-level indoor and outdoor seaside areas  🌤️ Experience dynamic weather, day–night cycles, and relaxing seaside events    Get ready, and don’t forget to join our Discord to stay updated with the latest news and updates for Seaside Wash!            ",
+ "min_req": " Minimum:     OS:  Windows 10 or newer    Processor:  Intel® Core™ i3 @ 3.2 GHZ    Memory:  4 GB RAM    Graphics:  Graphics card with DX9  ",
+ "movies": [
+  {
+   "id": 257416153,
+   "name": "Trailer Demo"
+  },
+  {
+   "id": 257353060,
+   "name": "Trailer storepage launch"
+  }
+ ],
+ "screenshots": 18,
+ "reviews": {
+  "total": 1,
+  "positive": 1,
+  "desc": "1 user reviews"
+ }
+}

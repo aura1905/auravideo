@@ -1,0 +1,67 @@
+{
+ "title_en": "Seaside Wash",
+ "demo_appid": 4924230,
+ "full_appid": 4924230,
+ "developer": "BITCOVER",
+ "workdir": "episodes/16-seaside-wash",
+ "script_timed": "episodes/16-seaside-wash/script_tts_timed.json",
+ "intro_bg": {"file": "t0.mp4", "in": 28.0, "out": 31.6, "scale": 1.0},
+ "labels": [
+  "609 MB / 191 files",
+  "75% of it is the ships",
+  "6 packages bought in",
+  "6 translations, 15 sold"
+ ],
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 2,
+ "score_line_id": "34",
+ "specs": [
+  ["ENGINE", "Unity - Mono"],
+  ["THE BUILD", "609 MB / 191 files"],
+  ["75% OF IT", "the ships"],
+  ["BOUGHT IN", "6 packages"],
+  ["TRANSLATED", "6 of the 15 sold"]
+ ],
+ "verdict": "WORTH A DIP",
+ "bgm": {"file": "t0.mp4", "volume": 0.07},
+ "narration_volume": 1.6,
+ "chapters": {
+  "hook": "Fifteen sold, six shipped",
+  "intro": "A monkey with a very long arm",
+  "made": "Opening the build",
+  "review": "Nine reviews, and who wrote them",
+  "score": "The spec sheet + verdict"
+ },
+ "stack": [
+  ["Unity", "https://unity.com/"],
+  ["Unity Localization + Addressables", "https://docs.unity3d.com/Packages/com.unity.localization@latest"],
+  ["Cinemachine", "https://unity.com/unity/features/editor/art-and-design/cinemachine"],
+  ["DOTween", "http://dotween.demigiant.com/"],
+  ["UIParticle (Coffee)", "https://github.com/mob-sakai/ParticleEffectForUGUI"],
+  ["MyBox", "https://github.com/Deadcows/MyBox"],
+  ["Steamworks.NET", "https://steamworks.github.io/"],
+  ["The demo on Steam", "https://store.steampowered.com/app/4924230/"]
+ ],
+ "ledger": {
+  "team": "BITCOVER (self-published)",
+  "engine": "**Unity** (Mono)",
+  "pipeline": "Addressables used only for localization",
+  "backend": "Mono",
+  "build": "609.52 MiB (Windows) / 622.16 MiB (macOS)",
+  "files": 191,
+  "scenes": 0,
+  "third_party": "6 (Cinemachine, DOTween, Coffee.UIParticle, MyBox, Newtonsoft.Json, Steamworks.NET)",
+  "approach": "픽셀아트 선박 세척 시뮬. 팔이 늘어나는 원숭이, 부두 고정 시점, 도구 수리·구멍 메우기·창문 닦기·팔 훈련 미니게임",
+  "reception": "리뷰 9개 전부 긍정 / 2026-09-08 공개",
+  "packages": ["Cinemachine", "DOTween", "Coffee.UIParticle", "MyBox", "Newtonsoft.Json", "Steamworks.NET"],
+  "ai_disclosure": null
+ },
+ "youtube": {
+  "title": "Seaside Wash sells fifteen languages and ships six — and the six tell you who it's for",
+  "tags": "Seaside Wash,BITCOVER,steam demo,unity,mono,localization,addressables,cozy game,cleaning simulator,ship restoration,pixel art,game teardown,how games are made,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "visual_scale": 1.0
+}

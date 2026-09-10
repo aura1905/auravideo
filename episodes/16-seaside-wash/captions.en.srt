@@ -1,0 +1,186 @@
+1
+00:00:00,000 --> 00:00:04,774
+This demo's store page sells fifteen languages.
+The build ships six.
+
+2
+00:00:05,024 --> 00:00:08,387
+And which six is the most interesting
+thing in the whole download.
+
+3
+00:00:12,237 --> 00:00:15,835
+Let's do the game first,
+because a lot of you turned up for the game.
+
+4
+00:00:16,085 --> 00:00:22,139
+Seaside Wash. You run a boatyard on a pier,
+and filthy ships pull in one at a time.
+
+5
+00:00:22,389 --> 00:00:28,835
+You play a small monkey. His arm extends.
+That's the whole traversal system — he stands on the dock and reaches.
+
+6
+00:00:29,085 --> 00:00:34,642
+Salt, rust and barnacles all behave differently,
+and each one wants a different tool.
+
+7
+00:00:39,892 --> 00:00:45,763
+Between hulls there's a whole second game.
+You repair your own tools by hammering the glowing spots.
+
+8
+00:00:46,013 --> 00:00:55,463
+You patch holes. You wash windows. And there's an arm training minigame,
+where a monkey punches a bag under a sign that says: strong body, sleepy mind.
+
+9
+00:00:55,713 --> 00:01:04,013
+Jobs arrive as email. You walk home, sit at a PC,
+and pick the next ship off an inbox that lists the owner, the problems, and the tools it recommends.
+
+10
+00:01:04,263 --> 00:01:10,970
+It went up on Steam two days ago. Nine reviews, all nine positive,
+and people are playing it for half an hour a sitting.
+
+11
+00:01:11,220 --> 00:01:12,415
+So let's open it.
+
+12
+00:01:12,665 --> 00:01:17,099
+Six hundred and nine megabytes.
+A hundred and ninety-one files.
+
+13
+00:01:17,349 --> 00:01:24,395
+Unity, on the Mono backend, which is the good case for this channel:
+every package they used is sitting there with its name on it.
+
+14
+00:01:24,645 --> 00:01:30,673
+Before the packages, though —
+where does six hundred megabytes of a pixel-art cleaning game actually go?
+
+15
+00:01:30,923 --> 00:01:37,865
+Three files. One asset group, four hundred and fifty-five megabytes,
+seventy-five percent of the download.
+
+16
+00:01:38,115 --> 00:01:44,691
+That's the ships. Every hull is hand-drawn at a size you can scrub pixel by pixel,
+and that costs what it costs.
+
+17
+00:01:44,941 --> 00:01:48,957
+Now the packages.
+This is the entire list of things they didn't write.
+
+18
+00:01:49,207 --> 00:01:58,004
+Six. Cinemachine for the camera, DOTween for movement,
+a particle helper, a utility grab-bag, a JSON reader, and Steam.
+
+19
+00:01:58,254 --> 00:02:06,267
+I opened a haunted-house demo from the same week that had more than forty.
+Neither number is wrong. But this is a small, deliberate build.
+
+20
+00:02:06,517 --> 00:02:10,298
+And they used Unity's Addressables
+system for exactly one thing.
+
+21
+00:02:10,548 --> 00:02:17,229
+Translations. Eight bundles, a hundred and twenty-five kilobytes all together,
+and six of them are string tables.
+
+22
+00:02:17,479 --> 00:02:24,003
+English. Japanese. Korean. Simplified Chinese.
+Traditional Chinese. Vietnamese.
+
+23
+00:02:24,253 --> 00:02:26,467
+The store page lists fifteen.
+
+24
+00:02:26,717 --> 00:02:34,599
+French, Italian, German, Polish, Portuguese, Russian, Turkish,
+Indonesian and Thai are all advertised, and none of them are in this build yet.
+
+25
+00:02:34,849 --> 00:02:43,384
+I want to be careful here, because I got this backwards in a short yesterday.
+I said the build had a language the store didn't. It's the other way round.
+
+26
+00:02:43,634 --> 00:02:51,333
+And the other way round is the better story.
+Because a demo is where you find out who shows up, and translations cost money, so you pick.
+
+27
+00:02:51,583 --> 00:02:58,107
+They picked English, and then five markets in Asia.
+That's not a translation order. That's a bet on an audience.
+
+28
+00:02:58,357 --> 00:03:03,784
+So did the bet land? Nine reviews is a small sample,
+but you can read every one of them.
+
+29
+00:03:04,034 --> 00:03:11,629
+Three Simplified Chinese, two English, two Korean, one Traditional Chinese.
+Eight of the nine are speaking a language this build already covers.
+
+30
+00:03:11,879 --> 00:03:18,586
+The ninth is Brazilian Portuguese —
+a language the store sells and the build can't serve yet. He liked it anyway.
+
+31
+00:03:18,836 --> 00:03:27,502
+And the reviews are useful, which is rarer than it sounds.
+The praise is all about feel: the sound of the chisel, the music, the little monkey.
+
+32
+00:03:27,752 --> 00:03:38,377
+The complaints are all structural. You can't run. Every single job sends you home to the PC and back.
+The tools feel too much alike, and a lot of the scenery does nothing.
+
+33
+00:03:38,627 --> 00:03:50,088
+One Korean player wrote down that the mouse cursor disappears during tool repair,
+and that a brush and a sponge are hard to tell apart. That's a bug report and a legibility note, for free, in week one.
+
+34
+00:03:50,338 --> 00:03:53,152
+Here's the whole teardown on one card.
+
+35
+00:03:53,402 --> 00:04:03,505
+Unity on Mono, six hundred and nine megabytes, three quarters of it ships,
+six packages bought in, and six translations for a store page that promises fifteen.
+
+36
+00:04:03,755 --> 00:04:08,894
+Worth a dip. It's free, it's genuinely relaxing,
+and the demo is about half an hour of it.
+
+37
+00:04:09,144 --> 00:04:19,430
+If you're shipping a demo, take the localization idea. Ship the few you can afford,
+put them behind Addressables so they're cheap to add to, and let the demo tell you which one to buy next.
+
+38
+00:04:19,680 --> 00:04:30,305
+That's my read from the outside. If you worked on this and I got something wrong,
+say so and I'll pin the correction. Next time, another demo, another file list. This is Demo Dip.
