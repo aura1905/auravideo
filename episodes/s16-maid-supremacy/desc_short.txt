@@ -1,0 +1,29 @@
+Maid Supremacy — A game about maids driving a drifting tank, translated into 31 languages.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5138880/
+
+── The numbers ──
+Genre     : maid tank shooter
+Co-Op     : online + split-screen
+Windows   : 916 MB
+Linux     : 1.04 GB
+Languages : 31
+Verdict   : Worth A Dip
+
+── The stack, if you want to use it ──
+The demo on Steam : https://store.steampowered.com/app/5138880/
+
+── Chapters ──
+0:00 The hook
+0:10 What it is
+0:26 The numbers
+0:32 The spec sheet
+
+Everything in this video is read off public information: the Steam store page,
+the demo's reviews, and the depot sizes Steam publishes in its product info.
+No files were downloaded, unpacked, decompiled, or redistributed. It is an
+outside reading, not a statement from the developer. All game footage and images belong to MaidsWithGuns.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

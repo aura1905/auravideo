@@ -1,0 +1,177 @@
+{
+ "type": "game",
+ "name": "Ghost in the SQL Data",
+ "steam_appid": 5072430,
+ "required_age": 0,
+ "is_free": false,
+ "detailed_description": "<p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/bb5291cd49f78d94649c4a8fd00fae4a.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/bb5291cd49f78d94649c4a8fd00fae4a.webp?t=1789068592 width=1560 height=408 /></span>사건 하나를 소개합니다. SQL을 사용해 신고 접수 센터의 데이터를 살펴보고, 화재가 시작되기 전에 누가 전화를 걸었는지 찾아내세요.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/0c33850dce3ff2aba428a719950e34ec.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/0c33850dce3ff2aba428a719950e34ec.webp?t=1789068592 width=1560 height=602 /></span>SQL 언어로 데이터를 탐색하고, 필터링하고, 요소들을 연결하세요. 쉬운 레벨에서는 기초를 배우고, 어려운 레벨에서는 진짜 데이터 포렌식, 즉 데이터를 다루는 수사관의 입장이 되어 봅니다.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/2a6844bb9e1af963ab92322f3ed81fef.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/2a6844bb9e1af963ab92322f3ed81fef.webp?t=1789068592 width=1560 height=602 /></span>화이트보드 시스템을 사용해 그래프와 단서를 만들고, 사건의 모든 요소를 이해해 해결로 이어가세요.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/e8a259d74c9f7d280d192aa965cb41d2.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/e8a259d74c9f7d280d192aa965cb41d2.webp?t=1789068592 width=1560 height=602 /></span>현재 2개의 수사 캠페인을 플레이할 수 있습니다. 신고 접수 센터의 데이터베이스를 조사해 학교 방화범을 밝혀내는 사건, 그리고 파리 지하철 이용객들의 행동을 관찰해 범인을 추적하는 사건입니다.</p>",
+ "about_the_game": "<p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/bb5291cd49f78d94649c4a8fd00fae4a.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/bb5291cd49f78d94649c4a8fd00fae4a.webp?t=1789068592 width=1560 height=408 /></span>사건 하나를 소개합니다. SQL을 사용해 신고 접수 센터의 데이터를 살펴보고, 화재가 시작되기 전에 누가 전화를 걸었는지 찾아내세요.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/0c33850dce3ff2aba428a719950e34ec.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/0c33850dce3ff2aba428a719950e34ec.webp?t=1789068592 width=1560 height=602 /></span>SQL 언어로 데이터를 탐색하고, 필터링하고, 요소들을 연결하세요. 쉬운 레벨에서는 기초를 배우고, 어려운 레벨에서는 진짜 데이터 포렌식, 즉 데이터를 다루는 수사관의 입장이 되어 봅니다.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/2a6844bb9e1af963ab92322f3ed81fef.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/2a6844bb9e1af963ab92322f3ed81fef.webp?t=1789068592 width=1560 height=602 /></span>화이트보드 시스템을 사용해 그래프와 단서를 만들고, 사건의 모든 요소를 이해해 해결로 이어가세요.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/e8a259d74c9f7d280d192aa965cb41d2.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/e8a259d74c9f7d280d192aa965cb41d2.webp?t=1789068592 width=1560 height=602 /></span>현재 2개의 수사 캠페인을 플레이할 수 있습니다. 신고 접수 센터의 데이터베이스를 조사해 학교 방화범을 밝혀내는 사건, 그리고 파리 지하철 이용객들의 행동을 관찰해 범인을 추적하는 사건입니다.</p>",
+ "short_description": "누군가 화재가 시작되기 십사 분 전에 그것을 신고했다. 신고 접수 센터의 데이터를 SQL로 조사해 증명하라.",
+ "supported_languages": "영어<strong>*</strong>, 프랑스어<strong>*</strong>, 이탈리아어<strong>*</strong>, 독일어<strong>*</strong>, 스페인어 - 스페인<strong>*</strong>, 일본어<strong>*</strong>, 한국어<strong>*</strong>, 러시아어<strong>*</strong><br><strong>*</strong>음성이 지원되는 언어",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/51f9c7715c2f874443595ae9e76269b02444c496/header.jpg?t=1789068592",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/68f0d273de2d8da9c13f6cf314089ec320eb377d/capsule_231x87.jpg?t=1789068592",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/68f0d273de2d8da9c13f6cf314089ec320eb377d/capsule_184x69.jpg?t=1789068592",
+ "website": null,
+ "pc_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"><li><strong>운영 체제:</strong> Windows 10 (64-bit)<br></li><li><strong>프로세서:</strong> Dual Core 2,0 GHz (Intel Core i3)<br></li><li><strong>메모리:</strong> 4 GB RAM<br></li><li><strong>그래픽:</strong> Intel HD Graphics 4000 (support WebGL / DirectX 11)<br></li><li><strong>저장 공간:</strong> 1 GB 사용 가능 공간</li></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"><li><strong>운영 체제:</strong> Windows 10/11 (64-bit)<br></li><li><strong>프로세서:</strong> Quad Core 2,5 GHz or more<br></li><li><strong>메모리:</strong> 8 GB RAM<br></li><li><strong>그래픽:</strong> GPU (Intel Iris Xe / AMD Vega 8)<br></li><li><strong>저장 공간:</strong> 1 GB 사용 가능 공간</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"><li><strong>운영 체제:</strong> macOS 11<br></li><li><strong>프로세서:</strong> Apple M1 or Intel Core i5<br></li><li><strong>메모리:</strong> 4 GB RAM</li></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"><li><strong>운영 체제:</strong> macOS 11+<br></li><li><strong>프로세서:</strong> Apple M1 or Intel Core i5<br></li><li><strong>메모리:</strong> 8 GB RAM</li></ul>"
+ },
+ "linux_requirements": [],
+ "developers": [
+  "Isaac MENARD"
+ ],
+ "publishers": [
+  "Isaac MENARD"
+ ],
+ "demos": [
+  {
+   "appid": 5072550,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": true,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "싱글 플레이어"
+  },
+  {
+   "id": 22,
+   "description": "Steam 도전 과제"
+  },
+  {
+   "id": 64,
+   "description": "텍스트 크기 조정"
+  },
+  {
+   "id": 68,
+   "description": "음량 개별 조절"
+  },
+  {
+   "id": 80,
+   "description": "#category_playable_at_your_own_pace"
+  },
+  {
+   "id": 74,
+   "description": "퀵타임 이벤트 없이 플레이 가능"
+  },
+  {
+   "id": 79,
+   "description": "수시 저장"
+  },
+  {
+   "id": 23,
+   "description": "Steam Cloud"
+  },
+  {
+   "id": 17,
+   "description": "레벨 에디터 포함"
+  },
+  {
+   "id": 62,
+   "description": "가족 공유"
+  }
+ ],
+ "genres": [
+  {
+   "id": "28",
+   "description": "시뮬레이션"
+  },
+  {
+   "id": "2",
+   "description": "전략"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/5497a4892084b4919909d6734807b4eb2920acd1/ss_5497a4892084b4919909d6734807b4eb2920acd1.600x338.jpg?t=1789068592",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/5497a4892084b4919909d6734807b4eb2920acd1/ss_5497a4892084b4919909d6734807b4eb2920acd1.1920x1080.jpg?t=1789068592"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/9ccaf070edcc4054ccb4aaa163143d8ac9d499c8/ss_9ccaf070edcc4054ccb4aaa163143d8ac9d499c8.600x338.jpg?t=1789068592",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/9ccaf070edcc4054ccb4aaa163143d8ac9d499c8/ss_9ccaf070edcc4054ccb4aaa163143d8ac9d499c8.1920x1080.jpg?t=1789068592"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/4d7b837d03a2d4caabf9010ad05ec55e92be7965/ss_4d7b837d03a2d4caabf9010ad05ec55e92be7965.600x338.jpg?t=1789068592",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/4d7b837d03a2d4caabf9010ad05ec55e92be7965/ss_4d7b837d03a2d4caabf9010ad05ec55e92be7965.1920x1080.jpg?t=1789068592"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/8ee9c18d2baccefb53ea4392d70e76975904bfe4/ss_8ee9c18d2baccefb53ea4392d70e76975904bfe4.600x338.jpg?t=1789068592",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/8ee9c18d2baccefb53ea4392d70e76975904bfe4/ss_8ee9c18d2baccefb53ea4392d70e76975904bfe4.1920x1080.jpg?t=1789068592"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/afebdfb04219922b5b8c4d2afaa1b1852c82652e/ss_afebdfb04219922b5b8c4d2afaa1b1852c82652e.600x338.jpg?t=1789068592",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/afebdfb04219922b5b8c4d2afaa1b1852c82652e/ss_afebdfb04219922b5b8c4d2afaa1b1852c82652e.1920x1080.jpg?t=1789068592"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/79302acaf55953ee915f9d65b1ec1f707c7793e1/ss_79302acaf55953ee915f9d65b1ec1f707c7793e1.600x338.jpg?t=1789068592",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/79302acaf55953ee915f9d65b1ec1f707c7793e1/ss_79302acaf55953ee915f9d65b1ec1f707c7793e1.1920x1080.jpg?t=1789068592"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257405852,
+   "name": "main trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257405852/9ccaf070edcc4054ccb4aaa163143d8ac9d499c8/movie_600x337.jpg?t=1788702497",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5072430/96834704/af9f9b841e8a6360cebf220a850de96c3775191e/1788702280/dash_av1.mpd?t=1788702497",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5072430/96834704/af9f9b841e8a6360cebf220a850de96c3775191e/1788702280/dash_h264.mpd?t=1788702497",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5072430/96834704/af9f9b841e8a6360cebf220a850de96c3775191e/1788702280/hls_264_master.m3u8?t=1788702497",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "2026년 10월"
+ },
+ "support_info": {
+  "url": "",
+  "email": "menardisaac@gmail.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5072430?t=1789068592",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/e8b9f4c76a2ccf89948c3ca09c227cf2884083a5/page_bg_raw.jpg?t=1789068592",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "l",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "0",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "3",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  }
+ }
+}

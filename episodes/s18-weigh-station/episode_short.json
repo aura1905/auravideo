@@ -1,0 +1,80 @@
+{
+ "title_en": "The Weigh Station",
+ "demo_appid": 5202340,
+ "full_appid": 5202340,
+ "developer": "might not adorable",
+ "workdir": "episodes/s18-weigh-station",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s18-weigh-station/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "GENRE",
+   "night-shift horror"
+  ],
+  [
+   "JOB",
+   "weigh the trucks"
+  ],
+  [
+   "INSTALLED",
+   "1.3 GB"
+  ],
+  [
+   "DOWNLOAD",
+   "1.2 GB"
+  ],
+  [
+   "LANGUAGES",
+   "13"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "The Weigh Station",
+  "line2": "WHEN THE BATTERY DIES, GO OUTSIDE.",
+  "size1": 70,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5202340/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "The Weigh Station: weigh trucks all night, and don't let the battery die #shorts",
+  "tags": "shorts,The Weigh Station,steam demo,horror game,night shift,papers please,truck,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

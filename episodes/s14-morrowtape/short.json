@@ -1,0 +1,84 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "This horror demo is two hundred and sixty-three megabytes, and the monster in it hunts by sound.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.0
+  }
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Every noise you make, it hears.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.2
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "MORROWTAPE. You're under a condemned 1989 telephone archive with a radio, tuning in calls that shouldn't exist.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "Find the frequency, take the call, and stay quiet.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Every other horror demo I measured this week was bigger. This one is small, and it's all atmosphere.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "English only, and out on Steam now as a free demo.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.0
+  }
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip if you like your horror quiet.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 26.0
+  }
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

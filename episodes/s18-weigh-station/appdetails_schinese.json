@@ -1,0 +1,190 @@
+{
+ "type": "game",
+ "name": "The Weigh Station",
+ "steam_appid": 5131990,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  5202340
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" ><strong>夜班从日落开始</strong><br>你接受了一份没人愿意做的工作:在一座偏僻的称重站担任夜间检查员。卡车一辆接一辆地到达停靠点,而你的任务就是放行它们,或者发现哪里不对劲。</p><p class=\"bb_paragraph\" ><strong>读取车辆编号</strong><br>黑暗掩盖了一切。你需要用夜视摄像头看清每辆卡车的编号,然后将其输入系统以调出货运清单。</p><p class=\"bb_paragraph\" ><strong>核对细节</strong><br>将车牌号、司机姓名、货物、目的地、日期和重量与货运清单进行核对。异常之处并不总是显而易见。</p><p class=\"bb_paragraph\" ><strong>每次都要重新称重</strong><br>磅秤并不总是可靠的。每次称重前都要重新称重,确保眼前的数字是准确的。</p><p class=\"bb_paragraph\" ><strong>做出你的判断</strong><br>放行卡车,或者拒绝它。每个决定都由你做出,每个决定都有后果。</p><p class=\"bb_paragraph\" ><strong>留意电力</strong><br>这座车站靠借来的时间和廉价的线路运转。摄像头、加热器、终端、岗亭门:每一样都在消耗电力。若不加节制地消耗,当你最需要它的时候就会一无所有。</p><p class=\"bb_paragraph\" ><strong>关闭岗亭门</strong><br>在检查站灯光之外的黑暗中,有什么东西在移动。封闭岗亭门需要消耗电力,所以不要习惯性地一直关着它,把这份电力留到真正有什么东西靠近你的岗亭时再用。</p><p class=\"bb_paragraph\" ><strong>电力耗尽时</strong><br>如果电力彻底耗尽,你只有一个选择:走到外面,找到变压器,亲手让车站重新恢复供电。没有摄像头,没有锁着的门。只有你、黑暗,以及和你一起待在那里的东西。</p><p class=\"bb_paragraph\" >随着夜晚一天天延续,货运清单变得越来越难以信任,电力也从来都不够用。保持警觉,保持电量充足,撑到日出就好。</p>",
+ "about_the_game": "<p class=\"bb_paragraph\" ><strong>夜班从日落开始</strong><br>你接受了一份没人愿意做的工作:在一座偏僻的称重站担任夜间检查员。卡车一辆接一辆地到达停靠点,而你的任务就是放行它们,或者发现哪里不对劲。</p><p class=\"bb_paragraph\" ><strong>读取车辆编号</strong><br>黑暗掩盖了一切。你需要用夜视摄像头看清每辆卡车的编号,然后将其输入系统以调出货运清单。</p><p class=\"bb_paragraph\" ><strong>核对细节</strong><br>将车牌号、司机姓名、货物、目的地、日期和重量与货运清单进行核对。异常之处并不总是显而易见。</p><p class=\"bb_paragraph\" ><strong>每次都要重新称重</strong><br>磅秤并不总是可靠的。每次称重前都要重新称重,确保眼前的数字是准确的。</p><p class=\"bb_paragraph\" ><strong>做出你的判断</strong><br>放行卡车,或者拒绝它。每个决定都由你做出,每个决定都有后果。</p><p class=\"bb_paragraph\" ><strong>留意电力</strong><br>这座车站靠借来的时间和廉价的线路运转。摄像头、加热器、终端、岗亭门:每一样都在消耗电力。若不加节制地消耗,当你最需要它的时候就会一无所有。</p><p class=\"bb_paragraph\" ><strong>关闭岗亭门</strong><br>在检查站灯光之外的黑暗中,有什么东西在移动。封闭岗亭门需要消耗电力,所以不要习惯性地一直关着它,把这份电力留到真正有什么东西靠近你的岗亭时再用。</p><p class=\"bb_paragraph\" ><strong>电力耗尽时</strong><br>如果电力彻底耗尽,你只有一个选择:走到外面,找到变压器,亲手让车站重新恢复供电。没有摄像头,没有锁着的门。只有你、黑暗,以及和你一起待在那里的东西。</p><p class=\"bb_paragraph\" >随着夜晚一天天延续,货运清单变得越来越难以信任,电力也从来都不够用。保持警觉,保持电量充足,撑到日出就好。</p>",
+ "short_description": "在一座荒凉的称重站,检查卡车,核实货运清单,并合理分配电力。在有东西靠近之前,封锁你的岗亭门。每一点电力都至关重要,因为电池耗尽时,你唯一的选择就是走进外面的黑暗,以及那些和你一起在那里的东西。",
+ "supported_languages": "英语, 法语, 意大利语, 德语, 西班牙语 - 西班牙, 阿拉伯语, 简体中文, 葡萄牙语 - 巴西, 日语, 韩语, 波兰语, 俄语, 土耳其语",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/e165b7cae9c3ece29322fc4515f266db929072fd/header.jpg?t=1788615696",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/a21551f27c15139a10ae11de3077c18cbfe43727/capsule_231x87.jpg?t=1788615696",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/a21551f27c15139a10ae11de3077c18cbfe43727/capsule_184x69.jpg?t=1788615696",
+ "website": null,
+ "pc_requirements": {
+  "minimum": "<strong>最低配置:</strong><br><ul class=\"bb_ul\"><li>需要 64 位处理器和操作系统<br></li><li><strong>操作系统:</strong> Windows 10 (64 位)<br></li><li><strong>处理器:</strong> Intel Core i5-4690 / AMD Ryzen 3 1200<br></li><li><strong>内存:</strong> 8 GB RAM<br></li><li><strong>显卡:</strong> NVIDIA GeForce GTX 1060 (3 GB) / AMD Radeon RX 580 (4 GB)<br></li><li><strong>DirectX 版本:</strong> 11<br></li><li><strong>存储空间:</strong> 需要 2 GB 可用空间<br></li><li><strong>声卡:</strong> 兼容 DirectX</li></ul>",
+  "recommended": "<strong>推荐配置:</strong><br><ul class=\"bb_ul\"><li>需要 64 位处理器和操作系统</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>最低配置:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>推荐配置:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>最低配置:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>推荐配置:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "developers": [
+  "might not adorable"
+ ],
+ "publishers": [
+  "might not adorable"
+ ],
+ "demos": [
+  {
+   "appid": 5202340,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "单人"
+  },
+  {
+   "id": 22,
+   "description": "Steam 成就"
+  },
+  {
+   "id": 80,
+   "description": "#category_playable_at_your_own_pace"
+  },
+  {
+   "id": 74,
+   "description": "无需应对快速反应事件"
+  },
+  {
+   "id": 69,
+   "description": "立体声"
+  },
+  {
+   "id": 15,
+   "description": "统计数据"
+  },
+  {
+   "id": 25,
+   "description": "Steam 排行榜"
+  },
+  {
+   "id": 62,
+   "description": "家庭共享"
+  }
+ ],
+ "genres": [
+  {
+   "id": "23",
+   "description": "独立"
+  },
+  {
+   "id": "28",
+   "description": "模拟"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/07465c6e9c60b4e253bde5e351192256a74c0faa/ss_07465c6e9c60b4e253bde5e351192256a74c0faa.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/07465c6e9c60b4e253bde5e351192256a74c0faa/ss_07465c6e9c60b4e253bde5e351192256a74c0faa.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/c4509572d5f42b8ae1181fe0554dc8a8350d67d5/ss_c4509572d5f42b8ae1181fe0554dc8a8350d67d5.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/c4509572d5f42b8ae1181fe0554dc8a8350d67d5/ss_c4509572d5f42b8ae1181fe0554dc8a8350d67d5.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/23f77770887693909364ed359a81f8a177aa61fc/ss_23f77770887693909364ed359a81f8a177aa61fc.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/23f77770887693909364ed359a81f8a177aa61fc/ss_23f77770887693909364ed359a81f8a177aa61fc.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/9db1ade0cc80134816613a0000c75b5c352260e9/ss_9db1ade0cc80134816613a0000c75b5c352260e9.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/9db1ade0cc80134816613a0000c75b5c352260e9/ss_9db1ade0cc80134816613a0000c75b5c352260e9.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/32b953fcc45684aa0915c4679c0335443952d67d/ss_32b953fcc45684aa0915c4679c0335443952d67d.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/32b953fcc45684aa0915c4679c0335443952d67d/ss_32b953fcc45684aa0915c4679c0335443952d67d.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/6ed6a0e557540347dbad03bff7f6557f251c49c1/ss_6ed6a0e557540347dbad03bff7f6557f251c49c1.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/6ed6a0e557540347dbad03bff7f6557f251c49c1/ss_6ed6a0e557540347dbad03bff7f6557f251c49c1.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/7111a7b3519a7a39e8d1164dae7a21d589b5c1e4/ss_7111a7b3519a7a39e8d1164dae7a21d589b5c1e4.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/7111a7b3519a7a39e8d1164dae7a21d589b5c1e4/ss_7111a7b3519a7a39e8d1164dae7a21d589b5c1e4.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/10d688a6c1ea62f9914146f5b0ed66c097d8876c/ss_10d688a6c1ea62f9914146f5b0ed66c097d8876c.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/10d688a6c1ea62f9914146f5b0ed66c097d8876c/ss_10d688a6c1ea62f9914146f5b0ed66c097d8876c.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/bcdc0429844ab4fed5c447540e4061157db74bf8/ss_bcdc0429844ab4fed5c447540e4061157db74bf8.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/bcdc0429844ab4fed5c447540e4061157db74bf8/ss_bcdc0429844ab4fed5c447540e4061157db74bf8.1920x1080.jpg?t=1788615696"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257404437,
+   "name": "Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257404437/aad7b42397527f5916a4c7a2d32e11bf6275bbcc/movie_600x337.jpg?t=1788157666",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5131990/1500646356/5c93799012ac02019441111947d594851d437265/1787255588/dash_av1.mpd?t=1788157666",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5131990/1500646356/5c93799012ac02019441111947d594851d437265/1787255588/dash_h264.mpd?t=1788157666",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5131990/1500646356/5c93799012ac02019441111947d594851d437265/1787255588/hls_264_master.m3u8?t=1788157666",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "即将推出"
+ },
+ "support_info": {
+  "url": "",
+  "email": "unrealkafasi@gmail.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5131990?t=1788615696",
+ "background_raw": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5131990?t=1788615696",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "10",
+   "required_age": "10",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Medo"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "6",
+   "required_age": "6",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Ängstigende Inhalte"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Horor"
+  }
+ }
+}

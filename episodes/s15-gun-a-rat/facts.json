@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5164120,
+ "full_appid": 4163660,
+ "name": "Gun a Rat",
+ "developers": [
+  "WhalePlay"
+ ],
+ "publishers": [
+  "WhalePlay"
+ ],
+ "release": "2 Nov, 2026",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Casual",
+  "Indie"
+ ],
+ "languages": "English, French, Italian, German, Spanish - Spain, Arabic, Simplified Chinese, Japanese, Bulgarian, Traditional Chinese, Korean, Danish, Spanish - Latin America, Finnish, Greek, Hungarian, Indonesian, Norwegian, Dutch, Polish, Portuguese - Brazil, Portuguese - Portugal, Romanian, Russian, Swedish, Czech, Thai, Turkish, Ukrainian, Vietnamese",
+ "website": null,
+ "short": "Don’t like rats? Don’t like your friends? Then this game is made for you! Hunt down the rats before they wreck the place, and methodically place your traps to slow them down as much as possible!",
+ "about": "  Gun a Rat  is a fast-paced asymmetrical multiplayer game to play with your friends.  Play as the  Rats  and trash the house... or as the  Exterminator  and wipe them out to the very last one. Jump into matches for 2 to 20 players across varied maps, each packed with its own set of surprises…    A unique voice chat...      Rats  can talk to each other via voice chat without fear of being understood.    The  Exterminator  only hears squeaks instead of their words!              Your goal as a Rat:     Reach the target score by destroying and stealing items before the timer runs out, without getting killed!    But watch out... every piece of destruction makes noise that will give you away!           If the  Exterminator  gives chase, quickly hide inside furniture to escape their sight.            As the Exterminator:     Use your  camera  to track the rats' movements and uncover their hiding spots...    Place your  traps  strategically to slow them down as much as possible     Kill  them all!             A wide variety of traps are at your disposal, each with its own nasty surprise in store for the  Rats ...           Play match after match to earn  Cheese-Coins , and spend them on skins to customize your rat!           So, which side will you be on?   ",
+ "min_req": " Minimum:     OS *:  Windows 7+    Processor:  3 Ghz    Memory:  4 GB RAM    Graphics:  Nvidia RTX 1060    Storage:  1000 MB available space  ",
+ "movies": [
+  {
+   "id": 257419384,
+   "name": "Demo Trailer"
+  }
+ ],
+ "screenshots": 12,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

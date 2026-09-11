@@ -1,0 +1,29 @@
+Gun a Rat — Two gigabytes installed, 270 MB to download. It shrinks eight to one.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5164120/
+
+── The numbers ──
+Genre     : rat hunt, online PvP
+Installed : 2.1 GB
+Download  : 271 MB
+Shrinks   : 8 to 1
+Languages : 30
+Verdict   : Worth A Dip
+
+── The stack, if you want to use it ──
+The demo on Steam : https://store.steampowered.com/app/5164120/
+
+── Chapters ──
+0:00 The hook
+0:13 What it is
+0:28 The numbers
+0:33 The spec sheet
+
+Everything in this video is read off public information: the Steam store page,
+the demo's reviews, and the depot sizes Steam publishes in its product info.
+No files were downloaded, unpacked, decompiled, or redistributed. It is an
+outside reading, not a statement from the developer. All game footage and images belong to WhalePlay.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

@@ -1,0 +1,29 @@
+Brazilian LAN House 2003 — Six beige PCs sharing one 512 kbps line. On that line, this demo takes about sixteen minutes to download.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5192920/
+
+── The numbers ──
+Genre       : LAN house manager
+Year        : 2003
+Download    : 59 MB
+On 512 Kbps : 16 minutes
+Platforms   : Win / Mac / Linux
+Verdict     : Worth A Dip
+
+── The stack, if you want to use it ──
+The demo on Steam : https://store.steampowered.com/app/5192920/
+
+── Chapters ──
+0:00 The hook
+0:13 What it is
+0:30 The numbers
+0:36 The spec sheet
+
+Everything in this video is read off public information: the Steam store page,
+the demo's reviews, and the depot sizes Steam publishes in its product info.
+No files were downloaded, unpacked, decompiled, or redistributed. It is an
+outside reading, not a statement from the developer. All game footage and images belong to MonkeyLogic.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

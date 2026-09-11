@@ -1,0 +1,80 @@
+{
+ "title_en": "KOMMUNALKA",
+ "demo_appid": 5192780,
+ "full_appid": 5192780,
+ "developer": "FOOTAGE LOGS",
+ "workdir": "episodes/s17-kommunalka",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s17-kommunalka/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "GENRE",
+   "point-and-click horror"
+  ],
+  [
+   "SETTING",
+   "Soviet communal flat"
+  ],
+  [
+   "INSTALLED",
+   "796 MB"
+  ],
+  [
+   "LANGUAGES",
+   "English, Russian"
+  ],
+  [
+   "REVIEWS",
+   "5 of 5 positive"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "KOMMUNALKA",
+  "line2": "THE DOOR LOCKED BEHIND YOU.",
+  "size1": 96,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5192780/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "KOMMUNALKA: a courier locked inside a post-Soviet communal flat #shorts",
+  "tags": "shorts,KOMMUNALKA,FOOTAGE LOGS,steam demo,horror game,point and click,soviet,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

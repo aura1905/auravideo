@@ -1,0 +1,81 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "Your whole job is weighing trucks at night, and every watt you use brings the dark closer.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 20.0
+  },
+  "sub": "Your whole job is weighing trucks at night, and every watt you use brings the dark closer."
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "When the battery dies, you have to go outside.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "When the battery dies, you have to go outside."
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "The Weigh Station. You check each driver's manifest on an amber screen, weigh the truck, and seal the booth door.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "The Weigh Station. You check each driver's manifest on an amber screen, weigh the truck, and seal the booth door."
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "It's a paperwork game, with something waiting past the floodlights.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "It's a paperwork game, with something waiting past the floodlights."
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "It's about one point three gigabytes, in thirteen languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "It's about one point three gigabytes, in thirteen languages."
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip if you liked checking papers in the dark.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  },
+  "sub": "Worth a dip if you liked checking papers in the dark."
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day."
+ }
+]

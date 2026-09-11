@@ -1,0 +1,190 @@
+{
+ "type": "game",
+ "name": "The Weigh Station",
+ "steam_appid": 5131990,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  5202340
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" ><strong>야간 근무는 해가 지면 시작된다</strong><br>아무도 원하지 않던 일을 맡게 되었다: 외딴 계량소의 야간 검사관. 트럭들이 한 대씩 정차 지점에 도착하고, 그것들을 통과시키거나 무언가 맞지 않는 부분을 찾아내는 것이 당신의 일이다.</p><p class=\"bb_paragraph\" ><strong>ID를 읽어라</strong><br>어둠은 모든 것을 숨긴다. 야간 투시 카메라를 이용해 각 트럭의 ID를 확인하고, 시스템에 입력해 화물 명세서를 불러와라.</p><p class=\"bb_paragraph\" ><strong>세부 사항을 확인하라</strong><br>번호판, 운전자 이름, 화물, 목적지, 날짜, 중량을 명세서와 대조하라. 불일치가 항상 뚜렷한 것은 아니다.</p><p class=\"bb_paragraph\" ><strong>항상 다시 계량하라</strong><br>저울은 항상 신뢰할 수 있는 것은 아니다. 매 계량 전에 다시 계량해 눈앞의 숫자가 정확한지 확인하라.</p><p class=\"bb_paragraph\" ><strong>결정을 내려라</strong><br>트럭을 통과시키거나, 거부하라. 모든 결정은 당신의 몫이며, 모든 결정에는 결과가 따른다.</p><p class=\"bb_paragraph\" ><strong>전력에 주의하라</strong><br>이 시설은 빌려온 시간과 값싼 배선으로 돌아간다. 카메라, 난방기, 단말기, 부스 문. 모든 것이 전력을 소모한다. 무심코 써버리면, 가장 필요할 때 아무것도 남지 않을 것이다.</p><p class=\"bb_paragraph\" ><strong>문을 닫아라</strong><br>검문소 불빛 너머 어둠 속에서 무언가가 움직인다. 문을 봉쇄하려면 전력이 든다. 습관적으로 닫아두지 마라. 정말로 무언가가 부스에 다가왔을 때를 위해 아껴두어라.</p><p class=\"bb_paragraph\" ><strong>전력이 끊겼을 때</strong><br>전력이 완전히 바닥나면, 선택지는 하나뿐이다: 밖으로 나가, 변압기를 찾아, 직접 시설을 다시 가동시키는 것. 카메라도 없다. 잠긴 문도 없다. 오직 당신과 어둠, 그리고 그곳에서 당신과 함께 있는 무언가뿐이다.</p><p class=\"bb_paragraph\" >밤이 길어질수록 명세서는 믿기 어려워지고, 전력은 결코 충분하지 않다. 정신을 바짝 차려라. 충전 상태를 유지하라. 그저 해가 뜰 때까지 버텨라.</p>",
+ "about_the_game": "<p class=\"bb_paragraph\" ><strong>야간 근무는 해가 지면 시작된다</strong><br>아무도 원하지 않던 일을 맡게 되었다: 외딴 계량소의 야간 검사관. 트럭들이 한 대씩 정차 지점에 도착하고, 그것들을 통과시키거나 무언가 맞지 않는 부분을 찾아내는 것이 당신의 일이다.</p><p class=\"bb_paragraph\" ><strong>ID를 읽어라</strong><br>어둠은 모든 것을 숨긴다. 야간 투시 카메라를 이용해 각 트럭의 ID를 확인하고, 시스템에 입력해 화물 명세서를 불러와라.</p><p class=\"bb_paragraph\" ><strong>세부 사항을 확인하라</strong><br>번호판, 운전자 이름, 화물, 목적지, 날짜, 중량을 명세서와 대조하라. 불일치가 항상 뚜렷한 것은 아니다.</p><p class=\"bb_paragraph\" ><strong>항상 다시 계량하라</strong><br>저울은 항상 신뢰할 수 있는 것은 아니다. 매 계량 전에 다시 계량해 눈앞의 숫자가 정확한지 확인하라.</p><p class=\"bb_paragraph\" ><strong>결정을 내려라</strong><br>트럭을 통과시키거나, 거부하라. 모든 결정은 당신의 몫이며, 모든 결정에는 결과가 따른다.</p><p class=\"bb_paragraph\" ><strong>전력에 주의하라</strong><br>이 시설은 빌려온 시간과 값싼 배선으로 돌아간다. 카메라, 난방기, 단말기, 부스 문. 모든 것이 전력을 소모한다. 무심코 써버리면, 가장 필요할 때 아무것도 남지 않을 것이다.</p><p class=\"bb_paragraph\" ><strong>문을 닫아라</strong><br>검문소 불빛 너머 어둠 속에서 무언가가 움직인다. 문을 봉쇄하려면 전력이 든다. 습관적으로 닫아두지 마라. 정말로 무언가가 부스에 다가왔을 때를 위해 아껴두어라.</p><p class=\"bb_paragraph\" ><strong>전력이 끊겼을 때</strong><br>전력이 완전히 바닥나면, 선택지는 하나뿐이다: 밖으로 나가, 변압기를 찾아, 직접 시설을 다시 가동시키는 것. 카메라도 없다. 잠긴 문도 없다. 오직 당신과 어둠, 그리고 그곳에서 당신과 함께 있는 무언가뿐이다.</p><p class=\"bb_paragraph\" >밤이 길어질수록 명세서는 믿기 어려워지고, 전력은 결코 충분하지 않다. 정신을 바짝 차려라. 충전 상태를 유지하라. 그저 해가 뜰 때까지 버텨라.</p>",
+ "short_description": "황폐한 계량소에서 트럭을 점검하고, 화물 명세서를 확인하고, 전력을 아껴 쓰세요. 무언가 당신에게 다가오기 전에 부스 문을 잠그세요. 배터리가 방전되면 남은 선택지는 어둠 속으로 나가는 것뿐입니다. 그곳에서 무엇이 당신과 함께 기다리고 있든지 말이죠.",
+ "supported_languages": "영어, 프랑스어, 이탈리아어, 독일어, 스페인어 - 스페인, 아랍어, 중국어 간체, 포르투갈어 - 브라질, 일본어, 한국어, 폴란드어, 러시아어, 튀르키예어",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/e165b7cae9c3ece29322fc4515f266db929072fd/header.jpg?t=1788615696",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/a21551f27c15139a10ae11de3077c18cbfe43727/capsule_231x87.jpg?t=1788615696",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/a21551f27c15139a10ae11de3077c18cbfe43727/capsule_184x69.jpg?t=1788615696",
+ "website": null,
+ "pc_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"><li>64비트 프로세서와 운영 체제가 필요합니다<br></li><li><strong>운영 체제:</strong> Windows 10 (64비트)<br></li><li><strong>프로세서:</strong> Intel Core i5-4690 / AMD Ryzen 3 1200<br></li><li><strong>메모리:</strong> 8 GB RAM<br></li><li><strong>그래픽:</strong> NVIDIA GeForce GTX 1060 (3 GB) / AMD Radeon RX 580 (4 GB)<br></li><li><strong>DirectX:</strong> 버전 11<br></li><li><strong>저장 공간:</strong> 2 GB 사용 가능 공간<br></li><li><strong>사운드카드:</strong> DirectX 호환</li></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"><li>64비트 프로세서와 운영 체제가 필요합니다</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "developers": [
+  "might not adorable"
+ ],
+ "publishers": [
+  "might not adorable"
+ ],
+ "demos": [
+  {
+   "appid": 5202340,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "싱글 플레이어"
+  },
+  {
+   "id": 22,
+   "description": "Steam 도전 과제"
+  },
+  {
+   "id": 80,
+   "description": "#category_playable_at_your_own_pace"
+  },
+  {
+   "id": 74,
+   "description": "퀵타임 이벤트 없이 플레이 가능"
+  },
+  {
+   "id": 69,
+   "description": "스테레오 사운드"
+  },
+  {
+   "id": 15,
+   "description": "통계"
+  },
+  {
+   "id": 25,
+   "description": "Steam 순위표"
+  },
+  {
+   "id": 62,
+   "description": "가족 공유"
+  }
+ ],
+ "genres": [
+  {
+   "id": "23",
+   "description": "인디"
+  },
+  {
+   "id": "28",
+   "description": "시뮬레이션"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/07465c6e9c60b4e253bde5e351192256a74c0faa/ss_07465c6e9c60b4e253bde5e351192256a74c0faa.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/07465c6e9c60b4e253bde5e351192256a74c0faa/ss_07465c6e9c60b4e253bde5e351192256a74c0faa.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/c4509572d5f42b8ae1181fe0554dc8a8350d67d5/ss_c4509572d5f42b8ae1181fe0554dc8a8350d67d5.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/c4509572d5f42b8ae1181fe0554dc8a8350d67d5/ss_c4509572d5f42b8ae1181fe0554dc8a8350d67d5.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/23f77770887693909364ed359a81f8a177aa61fc/ss_23f77770887693909364ed359a81f8a177aa61fc.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/23f77770887693909364ed359a81f8a177aa61fc/ss_23f77770887693909364ed359a81f8a177aa61fc.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/9db1ade0cc80134816613a0000c75b5c352260e9/ss_9db1ade0cc80134816613a0000c75b5c352260e9.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/9db1ade0cc80134816613a0000c75b5c352260e9/ss_9db1ade0cc80134816613a0000c75b5c352260e9.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/32b953fcc45684aa0915c4679c0335443952d67d/ss_32b953fcc45684aa0915c4679c0335443952d67d.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/32b953fcc45684aa0915c4679c0335443952d67d/ss_32b953fcc45684aa0915c4679c0335443952d67d.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/6ed6a0e557540347dbad03bff7f6557f251c49c1/ss_6ed6a0e557540347dbad03bff7f6557f251c49c1.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/6ed6a0e557540347dbad03bff7f6557f251c49c1/ss_6ed6a0e557540347dbad03bff7f6557f251c49c1.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/7111a7b3519a7a39e8d1164dae7a21d589b5c1e4/ss_7111a7b3519a7a39e8d1164dae7a21d589b5c1e4.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/7111a7b3519a7a39e8d1164dae7a21d589b5c1e4/ss_7111a7b3519a7a39e8d1164dae7a21d589b5c1e4.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/10d688a6c1ea62f9914146f5b0ed66c097d8876c/ss_10d688a6c1ea62f9914146f5b0ed66c097d8876c.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/10d688a6c1ea62f9914146f5b0ed66c097d8876c/ss_10d688a6c1ea62f9914146f5b0ed66c097d8876c.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/bcdc0429844ab4fed5c447540e4061157db74bf8/ss_bcdc0429844ab4fed5c447540e4061157db74bf8.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/bcdc0429844ab4fed5c447540e4061157db74bf8/ss_bcdc0429844ab4fed5c447540e4061157db74bf8.1920x1080.jpg?t=1788615696"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257404437,
+   "name": "Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257404437/aad7b42397527f5916a4c7a2d32e11bf6275bbcc/movie_600x337.jpg?t=1788157666",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5131990/1500646356/5c93799012ac02019441111947d594851d437265/1787255588/dash_av1.mpd?t=1788157666",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5131990/1500646356/5c93799012ac02019441111947d594851d437265/1787255588/dash_h264.mpd?t=1788157666",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5131990/1500646356/5c93799012ac02019441111947d594851d437265/1787255588/hls_264_master.m3u8?t=1788157666",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "출시 예정"
+ },
+ "support_info": {
+  "url": "",
+  "email": "unrealkafasi@gmail.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5131990?t=1788615696",
+ "background_raw": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5131990?t=1788615696",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "10",
+   "required_age": "10",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Medo"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "6",
+   "required_age": "6",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Ängstigende Inhalte"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Horor"
+  }
+ }
+}

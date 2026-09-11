@@ -1,0 +1,83 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "A game about maids driving a drifting tank is translated into thirty-one languages.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.2
+  },
+  "sub": "A game about maids driving a drifting tank is translated into thirty-one languages."
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Thirty-one.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Thirty-one."
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 10.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Maid Supremacy. Your maids take a tank with bolt-on weapons into battle to prove, and I'm quoting the store page, that maids are better.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "Maid Supremacy. Your maids take a tank with bolt-on weapons into battle to prove, and I'm quoting the store page, that maids are better."
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "You can play it alone, online, or split-screen on one couch.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 12.5
+  },
+  "sub": "You can play it alone, online, or split-screen on one couch."
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "And it ships for Windows, Mac and Linux. The Linux build is the biggest of the three, just over a gigabyte.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "And it ships for Windows, Mac and Linux. The Linux build is the biggest of the three, just over a gigabyte."
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip. It knows exactly what it is.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 5.0
+  },
+  "sub": "Worth a dip. It knows exactly what it is."
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day."
+ }
+]

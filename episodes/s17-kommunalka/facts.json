@@ -1,0 +1,33 @@
+{
+ "demo_appid": 5192780,
+ "full_appid": 5192400,
+ "name": "KOMMUNALKA",
+ "developers": [
+  "FOOTAGE LOGS"
+ ],
+ "publishers": [
+  "FOOTAGE LOGS"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Adventure"
+ ],
+ "languages": "English, Russian**languages with full audio support",
+ "website": null,
+ "short": "KOMMUNALKA is an atmospheric Point &amp; Click horror game. Immerse yourself in a grim story set inside a dilapidated post-Soviet communal apartment. Will you be able to escape?",
+ "about": "                     The last delivery. Late evening. An old Soviet building.    Take on the role of a courier who just wanted to finish their shift by delivering the last order, but the apartment door closed and now you need to get out of here. In your hands, only a flashlight, giving only an illusion of safety.                      Explore the apartment, look for a way out, and listen to the dark stories of the residents. But be careful: you will have to decide who you can trust and who is just stringing you along.  FEATURES:    Atmospheric Point &amp; Click horror.    Exploring dark locations with a flashlight.    Uncover a dark story through environmental details.    Sound design without background music.                      ",
+ "min_req": " Minimum:     OS:  Windows 10 64x    Processor:  1.8GHz Dual-Core CPU    Memory:  2 GB RAM    Graphics:  Integrated graphics    Storage:  2 GB available space  ",
+ "movies": [
+  {
+   "id": 257413594,
+   "name": "KOMMUNALKA - Trailer"
+  }
+ ],
+ "screenshots": 6,
+ "reviews": {
+  "total": 5,
+  "positive": 5,
+  "desc": "5 user reviews"
+ }
+}

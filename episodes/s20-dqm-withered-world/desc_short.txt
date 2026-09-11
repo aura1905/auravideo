@@ -1,0 +1,29 @@
+DRAGON QUEST MONSTERS: The Withered World — A Dragon Quest Monsters demo that is fifteen and a half gigabytes.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4445890/
+
+── The numbers ──
+Publisher : Square Enix
+Installed : 15.6 GB
+Download  : 15.0 GB
+Languages : 9
+Full Game : 3 Dec 2026
+Verdict   : Worth A Dip
+
+── The stack, if you want to use it ──
+The demo on Steam : https://store.steampowered.com/app/4445890/
+
+── Chapters ──
+0:00 The hook
+0:09 What it is
+0:23 The numbers
+0:27 The spec sheet
+
+Everything in this video is read off public information: the Steam store page,
+the demo's reviews, and the depot sizes Steam publishes in its product info.
+No files were downloaded, unpacked, decompiled, or redistributed. It is an
+outside reading, not a statement from the developer. All game footage and images belong to Square Enix.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

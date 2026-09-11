@@ -1,0 +1,99 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "A game about maids driving a drifting tank is translated into thirty-one languages.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.2
+  },
+  "sub": "A game about maids driving a drifting tank is translated into thirty-one languages.",
+  "dur": 4.937,
+  "wav": "episodes/s16-maid-supremacy/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Thirty-one.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Thirty-one.",
+  "dur": 1.097,
+  "wav": "episodes/s16-maid-supremacy/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 10.0
+  },
+  "dur": 2.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Maid Supremacy. Your maids take a tank with bolt-on weapons into battle to prove, and I'm quoting the store page, that maids are better.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "Maid Supremacy. Your maids take a tank with bolt-on weapons into battle to prove, and I'm quoting the store page, that maids are better.",
+  "dur": 8.464,
+  "wav": "episodes/s16-maid-supremacy/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "You can play it alone, online, or split-screen on one couch.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 12.5
+  },
+  "sub": "You can play it alone, online, or split-screen on one couch.",
+  "dur": 3.971,
+  "wav": "episodes/s16-maid-supremacy/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "And it ships for Windows, Mac and Linux. The Linux build is the biggest of the three, just over a gigabyte.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "And it ships for Windows, Mac and Linux. The Linux build is the biggest of the three, just over a gigabyte.",
+  "dur": 5.59,
+  "wav": "episodes/s16-maid-supremacy/tts_short/s5.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip. It knows exactly what it is.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 5.0
+  },
+  "sub": "Worth a dip. It knows exactly what it is.",
+  "dur": 2.847,
+  "wav": "episodes/s16-maid-supremacy/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day.",
+  "dur": 3.318,
+  "wav": "episodes/s16-maid-supremacy/tts_short/s8.wav"
+ }
+]

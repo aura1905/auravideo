@@ -1,0 +1,74 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "In this game you share one five hundred and twelve kilobit line between a whole shop of customers.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.0
+  }
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "On that line, this demo would take about sixteen minutes to download.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Brazilian LAN House 2003. Six beige PCs, a foosball table, and a neighbourhood that wants to play.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "You run the tabs, the power and the machines, and when a PC freezes, you fix it from the network monitor.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "The whole demo is a hundred and fifty-eight megabytes, and it ships for Windows, Mac and Linux.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip if you remember paying by the hour.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.0
+  }
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

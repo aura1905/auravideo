@@ -1,0 +1,80 @@
+{
+ "title_en": "MORROWTAPE",
+ "demo_appid": 5225900,
+ "full_appid": 5225900,
+ "developer": "Grey Line Interactive LLC",
+ "workdir": "episodes/s14-morrowtape",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s14-morrowtape/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "GENRE",
+   "horror by sound"
+  ],
+  [
+   "SETTING",
+   "1989 phone archive"
+  ],
+  [
+   "WINDOWS",
+   "263 MB"
+  ],
+  [
+   "MAC",
+   "339 MB"
+  ],
+  [
+   "LANGUAGE",
+   "English"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "MORROWTAPE",
+  "line2": "IT HUNTS BY SOUND.",
+  "size1": 96,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5225900/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "MORROWTAPE: a 263 MB horror demo where the monster hunts by sound #shorts",
+  "tags": "shorts,MORROWTAPE,Grey Line Interactive,steam demo,horror game,psychological horror,analog horror,radio,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

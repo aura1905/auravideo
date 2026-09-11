@@ -1,0 +1,34 @@
+{
+ "demo_appid": 5138880,
+ "full_appid": 5138090,
+ "name": "Maid Supremacy: Achieving World Domination with a Tank!",
+ "developers": [
+  "MaidsWithGuns"
+ ],
+ "publishers": [
+  "MaidsWithGuns"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Adventure"
+ ],
+ "languages": "English, French, Italian, German, Spanish - Spain, Arabic, Bulgarian, Czech, Danish, Dutch, Finnish, Greek, Hungarian, Indonesian, Japanese*, Korean, Malay, Norwegian, Polish, Portuguese - Brazil, Portuguese - Portugal, Romanian, Russian, Simplified Chinese, Spanish - Latin America, Swedish, Thai, Traditional Chinese, Turkish, Ukrainian, Vietnamese*languages with full audio support",
+ "website": null,
+ "short": "A 3D action-shooter campaign about maids controlling a drifting tank with multiple weapon extensions! Destroy those filthy uncultured girls and prove that MAIDS ARE BETTER, alone or with your friends! Personalize your tank and unlock even more parts!",
+ "about": " Maid Supremacy: Achieving World Domination with a Tank! is a linear 3D action-shooter focused on fun gameplay and cute female characters. In a world where clothes dictate culture and identity, you must prove that maids are simply superior to everyone else through sheer violence and dominance.  Gameplay  Take cover, dash, and drift in a tank that is far more mobile than normal! Customize the tank with different bases, heads, extensions, and camouflages earned by completing difficult objectives throughout the campaign. You can stack up to 3 different extensions, each with its own advantages and disadvantages, keeping the action fast while still feeling tactical. Invite your friends through local and/or online co-op, just like the good old days! It even supports up to 4 players!          Story  In a completely different world, clothes determine your identity, your personality, your blood, and your grudges. Males are scarce, leaving it up to girls to decide what a nation is and what they fight for.  As you obviously know, maids are far superior because we created culture! If it weren't for us, they wouldn't even know what tea or cleaning is! So, as maids submit to their masters, other inferior girls must submit to us. Bunny girls, swimsuit girls, catgirls, ninja girls, military girls, clown girls, it doesn't matter! They're all to be conquered!          Characters        Prika  A stoic leader who hates paperwork and loves action! She takes her work very seriously and even practices swordsmanship in her free time.          Kogi  A cowgirl-styled driver and a master of tight curves! When she discovered she could get paid to do what her heroines do, she entered the military without a second thought.          Machi  The group's mechanic and Kogi's best friend. She is so good at her job that she is even arrogant about it.          Vena  A newcomer to the squad, Vena looks up to Prika and her superiors. She is still a newbie with a lot to learn and gets picked on by Machi.   ",
+ "min_req": " Minimum:     OS:  Windows 10    Processor:  Intel Core i5-8250U / Ryzen 5 2500U    Memory:  4 GB RAM    Graphics:  Intel Iris Plus / Vega 8 / GT 1030 equivalent    Storage:  8 GB available space  ",
+ "movies": [
+  {
+   "id": 257411240,
+   "name": "Demo Trailer"
+  }
+ ],
+ "screenshots": 9,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5192920,
+ "full_appid": 5045640,
+ "name": "Brazilian LAN House 2003",
+ "developers": [
+  "MonkeyLogic"
+ ],
+ "publishers": [
+  "MonkeyLogic"
+ ],
+ "release": "30 Oct, 2026",
+ "coming_soon": true,
+ "genres": [
+  "Casual",
+  "Indie",
+  "Simulation"
+ ],
+ "languages": "English, Portuguese - Brazil*, French, Italian, German, Spanish - Spain*languages with full audio support",
+ "website": "https://www.monkeylogic.dk",
+ "short": "Run a Brazilian LAN house in 2003 in this first-person management sim. Share 512 kbps between customers, manage tabs, power and PCs, and turn six beige machines into the neighborhood hangout.",
+ "about": " “A real old-school LAN café. Just like the ones we knew.”  -  Godenot  BRAZIL, 2003  Broadband has barely reached the neighborhood and already costs a fortune. You open a LAN house with six beige PCs and charge R$ 3 an hour. Customers pay cash or ask for fiado, a handwritten tab kept in the caderninho behind the counter.  Customers are not numbers. You learn their names, their habits and who always asks for credit. Treat them well and some become regulars. Let the queue, ping or service slip and your reputation pays for it.  The internet is the final boss: 512 kbps for the whole room. One person opens Kazuumba and the ping in every Counter Ops match shoots up. At the owner's PC, Janelas XP lets you watch the network, curb the worst bandwidth hogs and decide who has to wait.  Counter Ops players want clean ping and tournaments. Orkontro, Fotologão and MSM draw people who just want to be online. Everyone shares the same PCs, connection and your attention.  The building fights you too. PCs, freezer, fans and microwave share one circuit. If the till allows it, you can add more machines and a second room. If the power drops at the wrong moment, it is your problem.  The game teaches the basics and hands you the keys. You learn the rest behind the counter. FEATURES   Start with six beige PCs and grow to two rooms with 18 machines.   Split 512 kbps between games, downloads, chats and Fotologão uploads.   Meet named customers, recognize returning regulars and keep every fiado debt in the caderninho.   Jammed printers, stolen mouse balls and the pamonha vendor outside: 2003 with no filter.  ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10 (64-bit)    Processor:  Dual-core 2.0 GHz (x64)    Memory:  4 GB RAM    Graphics:  DirectX 11-capable GPU with 1 GB VRAM (Intel UHD 620 or better)    DirectX:  Version 11    Storage:  500 MB available space    Sound Card:  Any    VR Support:  None    Additional Notes:  Offline single-player; saves locally.  ",
+ "movies": [
+  {
+   "id": 257400112,
+   "name": "Launch Trailer"
+  }
+ ],
+ "screenshots": 6,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

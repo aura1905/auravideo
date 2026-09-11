@@ -1,0 +1,80 @@
+{
+ "title_en": "Maid Supremacy",
+ "demo_appid": 5138880,
+ "full_appid": 5138880,
+ "developer": "MaidsWithGuns",
+ "workdir": "episodes/s16-maid-supremacy",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s16-maid-supremacy/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "GENRE",
+   "maid tank shooter"
+  ],
+  [
+   "CO-OP",
+   "online + split-screen"
+  ],
+  [
+   "WINDOWS",
+   "916 MB"
+  ],
+  [
+   "LINUX",
+   "1.04 GB"
+  ],
+  [
+   "LANGUAGES",
+   "31"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Maid Supremacy",
+  "line2": "MAIDS. A TANK. 31 LANGUAGES.",
+  "size1": 96,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5138880/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Maid Supremacy: maids in a drifting tank, translated into 31 languages #shorts",
+  "tags": "shorts,Maid Supremacy,MaidsWithGuns,steam demo,tank game,co-op,split screen,anime,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

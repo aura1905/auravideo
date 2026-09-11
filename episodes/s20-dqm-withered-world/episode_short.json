@@ -1,0 +1,80 @@
+{
+ "title_en": "DRAGON QUEST MONSTERS: The Withered World",
+ "demo_appid": 4445890,
+ "full_appid": 4445890,
+ "developer": "Square Enix",
+ "workdir": "episodes/s20-dqm-withered-world",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s20-dqm-withered-world/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "PUBLISHER",
+   "Square Enix"
+  ],
+  [
+   "INSTALLED",
+   "15.6 GB"
+  ],
+  [
+   "DOWNLOAD",
+   "15.0 GB"
+  ],
+  [
+   "LANGUAGES",
+   "9"
+  ],
+  [
+   "FULL GAME",
+   "3 Dec 2026"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Dragon Quest Monsters",
+  "line2": "A 15.5 GB DEMO.",
+  "size1": 70,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/4445890/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "DRAGON QUEST MONSTERS: The Withered World has a 15.5 GB demo #shorts",
+  "tags": "shorts,Dragon Quest Monsters,The Withered World,Square Enix,steam demo,monster taming,jrpg,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

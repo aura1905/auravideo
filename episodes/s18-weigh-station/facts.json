@@ -1,0 +1,34 @@
+{
+ "demo_appid": 5202340,
+ "full_appid": 5131990,
+ "name": "The Weigh Station",
+ "developers": [
+  "might not adorable"
+ ],
+ "publishers": [
+  "might not adorable"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Indie",
+  "Simulation"
+ ],
+ "languages": "English, French, Italian, German, Spanish - Spain, Arabic, Simplified Chinese, Portuguese - Brazil, Japanese, Korean, Polish, Russian, Turkish",
+ "website": null,
+ "short": "Inspect trucks, verify manifests, and ration your electricity at a desolate Weigh Station. Seal your booth door before something reaches you. Every drop of power matters, because when the battery dies, your only choice is the dark outside, and whatever's out there with you.",
+ "about": "  THE NIGHT SHIFT STARTS AT SUNDOWN  You've taken a job nobody else wanted: night inspector at an isolated weigh station. Trucks pull up one by one, and it's your job to clear them, or catch what doesn't add up.   READ THE ID  The dark hides everything. Use your night vision camera to make out each truck's ID, then enter it into the system to pull up its manifest.   CHECK THE DETAILS  Compare plate number, driver name, cargo, destination, date, and weight against the manifest. Discrepancies aren't always obvious.   RESCALE, ALWAYS  The scale isn't always reliable. Hit rescale before every weigh-in to make sure the number in front of you is the real one.   MAKE YOUR DECISION  Approve the truck, or reject it. Every decision is yours, and every decision has consequences.   MIND THE POWER  The station runs on borrowed time and cheap wiring. CCTV, heater, terminal, booth door, all of it drains electricity. Burn through it carelessly, and you'll have nothing left when you need it most.   CLOSE THE DOOR  Something moves in the dark beyond the checkpoint lights. Sealing the door costs power, so don't keep it shut out of habit, save it for when something's actually reached your booth.   WHEN THE POWER DIES  If your power runs dry, there's only one option: step outside, find the transformer, and bring the station back online yourself. No cameras. No locked door. Just you, the dark, and whatever's out there with you.  As the nights stretch on, the manifests get harder to trust and the power never stretches quite far enough. Stay sharp. Stay charged. Just make it to sunrise. ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10 (64-bit)    Processor:  Intel Core i5-4690 / AMD Ryzen 3 1200    Memory:  8 GB RAM    Graphics:  NVIDIA GeForce GTX 1060 (3 GB) / AMD Radeon RX 580 (4 GB)    DirectX:  Version 11    Storage:  2 GB available space    Sound Card:  DirectX Compatible  ",
+ "movies": [
+  {
+   "id": 257404437,
+   "name": "Trailer"
+  }
+ ],
+ "screenshots": 9,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

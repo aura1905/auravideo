@@ -1,0 +1,159 @@
+{
+ "type": "game",
+ "name": "Brazilian LAN House 2003",
+ "steam_appid": 5045640,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  5192920
+ ],
+ "detailed_description": "<i>“A real old-school LAN café. Just like the ones we knew.”</i><br>- <strong>Godenot</strong><h2 class=\"bb_tag\" >BRAZIL, 2003</h2><br>Broadband has barely reached the neighborhood and already costs a fortune. You open a LAN house with six beige PCs and charge R$ 3 an hour. Customers pay cash or ask for fiado, a handwritten tab kept in the caderninho behind the counter.<br><br>Customers are not numbers. You learn their names, their habits and who always asks for credit. Treat them well and some become regulars. Let the queue, ping or service slip and your reputation pays for it.<br><br>The internet is the final boss: 512 kbps for the whole room. One person opens Kazuumba and the ping in every Counter Ops match shoots up. At the owner's PC, Janelas XP lets you watch the network, curb the worst bandwidth hogs and decide who has to wait.<br><br>Counter Ops players want clean ping and tournaments. Orkontro, Fotologão and MSM draw people who just want to be online. Everyone shares the same PCs, connection and your attention.<br><br>The building fights you too. PCs, freezer, fans and microwave share one circuit. If the till allows it, you can add more machines and a second room. If the power drops at the wrong moment, it is your problem.<br><br>The game teaches the basics and hands you the keys. You learn the rest behind the counter.<h2 class=\"bb_tag\" >FEATURES</h2><ul class=\"bb_ul\"><li>Start with six beige PCs and grow to two rooms with 18 machines.<br></li><li>Split 512 kbps between games, downloads, chats and Fotologão uploads.<br></li><li>Meet named customers, recognize returning regulars and keep every fiado debt in the caderninho.<br></li><li>Jammed printers, stolen mouse balls and the pamonha vendor outside: 2003 with no filter.</li></ul>",
+ "about_the_game": "<i>“A real old-school LAN café. Just like the ones we knew.”</i><br>- <strong>Godenot</strong><h2 class=\"bb_tag\" >BRAZIL, 2003</h2><br>Broadband has barely reached the neighborhood and already costs a fortune. You open a LAN house with six beige PCs and charge R$ 3 an hour. Customers pay cash or ask for fiado, a handwritten tab kept in the caderninho behind the counter.<br><br>Customers are not numbers. You learn their names, their habits and who always asks for credit. Treat them well and some become regulars. Let the queue, ping or service slip and your reputation pays for it.<br><br>The internet is the final boss: 512 kbps for the whole room. One person opens Kazuumba and the ping in every Counter Ops match shoots up. At the owner's PC, Janelas XP lets you watch the network, curb the worst bandwidth hogs and decide who has to wait.<br><br>Counter Ops players want clean ping and tournaments. Orkontro, Fotologão and MSM draw people who just want to be online. Everyone shares the same PCs, connection and your attention.<br><br>The building fights you too. PCs, freezer, fans and microwave share one circuit. If the till allows it, you can add more machines and a second room. If the power drops at the wrong moment, it is your problem.<br><br>The game teaches the basics and hands you the keys. You learn the rest behind the counter.<h2 class=\"bb_tag\" >FEATURES</h2><ul class=\"bb_ul\"><li>Start with six beige PCs and grow to two rooms with 18 machines.<br></li><li>Split 512 kbps between games, downloads, chats and Fotologão uploads.<br></li><li>Meet named customers, recognize returning regulars and keep every fiado debt in the caderninho.<br></li><li>Jammed printers, stolen mouse balls and the pamonha vendor outside: 2003 with no filter.</li></ul>",
+ "short_description": "Run a Brazilian LAN house in 2003 in this first-person management sim. Share 512 kbps between customers, manage tabs, power and PCs, and turn six beige machines into the neighborhood hangout.",
+ "supported_languages": "English, Portuguese - Brazil<strong>*</strong>, French, Italian, German, Spanish - Spain<br><strong>*</strong>languages with full audio support",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/1a954ae052eb797f638cef1402b409de4085a939/header.jpg?t=1789022090",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/7f4afcccdeeedc84acbf6d67a0deee19e7626683/capsule_231x87.jpg?t=1789022090",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/7f4afcccdeeedc84acbf6d67a0deee19e7626683/capsule_184x69.jpg?t=1789022090",
+ "website": "https://www.monkeylogic.dk",
+ "pc_requirements": {
+  "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 (64-bit)<br></li><li><strong>Processor:</strong> Dual-core 2.0 GHz (x64)<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> DirectX 11-capable GPU with 1 GB VRAM (Intel UHD 620 or better)<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 500 MB available space<br></li><li><strong>Sound Card:</strong> Any<br></li><li><strong>VR Support:</strong> None<br></li><li><strong>Additional Notes:</strong> Offline single-player; saves locally.</li></ul>",
+  "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 / 11 (64-bit)<br></li><li><strong>Processor:</strong> Quad-core 2.6 GHz (x64)<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> DirectX 12-capable GPU with 2 GB VRAM (GeForce GTX 1050 / Radeon RX 560 or better)<br></li><li><strong>DirectX:</strong> Version 12<br></li><li><strong>Storage:</strong> 500 MB available space<br></li><li><strong>Sound Card:</strong> Any<br></li><li><strong>VR Support:</strong> None<br></li><li><strong>Additional Notes:</strong> Offline single-player; saves locally.</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> macOS 11<br></li><li><strong>Processor:</strong> Apple M1 or Intel Core i5<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> Metal-capable GPU (any Mac supporting macOS 11)<br></li><li><strong>Storage:</strong> 500 MB available space<br></li><li><strong>Sound Card:</strong> Any<br></li><li><strong>Additional Notes:</strong> Universal build - runs natively on both Apple Silicon and Intel. Offline single-player; saves locally.</li></ul>",
+  "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> macOS 13 or later<br></li><li><strong>Processor:</strong> Apple M1 or better<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> Apple M1 integrated GPU or better<br></li><li><strong>Storage:</strong> 500 MB available space<br></li><li><strong>Sound Card:</strong> Any<br></li><li><strong>Additional Notes:</strong> Universal build - runs natively on both Apple Silicon and Intel. Offline single-player; saves locally.</li></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Ubuntu 20.04 LTS (64-bit) or SteamOS 3<br></li><li><strong>Processor:</strong> Dual-core 2.0 GHz (x86_64)<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> Vulkan-capable GPU with 1 GB VRAM<br></li><li><strong>Storage:</strong> 500 MB available space<br></li><li><strong>Sound Card:</strong> Any<br></li><li><strong>VR Support:</strong> None<br></li><li><strong>Additional Notes:</strong> Native x86_64 build - runs on Steam Deck.</li></ul>",
+  "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Ubuntu 22.04 LTS (64-bit) or latest SteamOS<br></li><li><strong>Processor:</strong> Quad-core 2.6 GHz (x86_64)<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> Vulkan-capable GPU with 2 GB VRAM<br></li><li><strong>Storage:</strong> 500 MB available space<br></li><li><strong>Sound Card:</strong> Any<br></li><li><strong>VR Support:</strong> None<br></li><li><strong>Additional Notes:</strong> Native x86_64 build - runs on Steam Deck.</li></ul>"
+ },
+ "developers": [
+  "MonkeyLogic"
+ ],
+ "publishers": [
+  "MonkeyLogic"
+ ],
+ "demos": [
+  {
+   "appid": 5192920,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": true,
+  "linux": true
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "Single-player"
+  },
+  {
+   "id": 22,
+   "description": "Steam Achievements"
+  },
+  {
+   "id": 62,
+   "description": "Family Sharing"
+  }
+ ],
+ "genres": [
+  {
+   "id": "4",
+   "description": "Casual"
+  },
+  {
+   "id": "23",
+   "description": "Indie"
+  },
+  {
+   "id": "28",
+   "description": "Simulation"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/ae06fc8512647e2fff1e1311833a0300ef311e5c/ss_ae06fc8512647e2fff1e1311833a0300ef311e5c.600x338.jpg?t=1789022090",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/ae06fc8512647e2fff1e1311833a0300ef311e5c/ss_ae06fc8512647e2fff1e1311833a0300ef311e5c.1920x1080.jpg?t=1789022090"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/bd5338b393fee96da070e9565f44ebbbcd4a0f2c/ss_bd5338b393fee96da070e9565f44ebbbcd4a0f2c.600x338.jpg?t=1789022090",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/bd5338b393fee96da070e9565f44ebbbcd4a0f2c/ss_bd5338b393fee96da070e9565f44ebbbcd4a0f2c.1920x1080.jpg?t=1789022090"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/84cb42e3abba37f3bc2b9c642098a44f028734d2/ss_84cb42e3abba37f3bc2b9c642098a44f028734d2.600x338.jpg?t=1789022090",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/84cb42e3abba37f3bc2b9c642098a44f028734d2/ss_84cb42e3abba37f3bc2b9c642098a44f028734d2.1920x1080.jpg?t=1789022090"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/c915d939e532bc28f93466d32d8673df49a364e7/ss_c915d939e532bc28f93466d32d8673df49a364e7.600x338.jpg?t=1789022090",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/c915d939e532bc28f93466d32d8673df49a364e7/ss_c915d939e532bc28f93466d32d8673df49a364e7.1920x1080.jpg?t=1789022090"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/79abc50facffa0d315464fad50cdfe38b193e179/ss_79abc50facffa0d315464fad50cdfe38b193e179.600x338.jpg?t=1789022090",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/79abc50facffa0d315464fad50cdfe38b193e179/ss_79abc50facffa0d315464fad50cdfe38b193e179.1920x1080.jpg?t=1789022090"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/9e5569e328eb710e57ea1f7645dc74886c71cd9f/ss_9e5569e328eb710e57ea1f7645dc74886c71cd9f.600x338.jpg?t=1789022090",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/9e5569e328eb710e57ea1f7645dc74886c71cd9f/ss_9e5569e328eb710e57ea1f7645dc74886c71cd9f.1920x1080.jpg?t=1789022090"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257400112,
+   "name": "Launch Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257400112/6e6af561271de7b7d4b6c5277a20279945c0f542/movie_600x337.jpg?t=1786801719",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5045640/1940738297/2249490bf5434d78bbcc79cc6bc500c2adfa87fd/1786801259/dash_av1.mpd?t=1786801719",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5045640/1940738297/2249490bf5434d78bbcc79cc6bc500c2adfa87fd/1786801259/dash_h264.mpd?t=1786801719",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5045640/1940738297/2249490bf5434d78bbcc79cc6bc500c2adfa87fd/1786801259/hls_264_master.m3u8?t=1786801719",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "30 Oct, 2026"
+ },
+ "support_info": {
+  "url": "https://www.monkeylogic.dk",
+  "email": "hello@monkeylogic.dk"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5045640?t=1789022090",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045640/626bf79bb63a747317eb8f1fa7597ad48370e29b/page_bg_raw.jpg?t=1789022090",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "l",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "0",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "3",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  }
+ }
+}

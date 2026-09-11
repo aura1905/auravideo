@@ -64,7 +64,16 @@ def creds(channel):
         else:
             print('>> stored grant is missing a scope; asking for consent again')
     if c and c.expired and c.refresh_token:
-        c.refresh(Request())
+        # The consent screen is in Testing mode, so Google kills refresh tokens after
+        # 7 days (demodip's died on 2026-09-11, exactly a week after consent). A dead
+        # refresh token raises invalid_grant; that has to fall through to a new consent
+        # flow, or even `auth` crashes before it can open the browser.
+        from google.auth.exceptions import RefreshError
+        try:
+            c.refresh(Request())
+        except RefreshError as e:
+            print(f'>> stored token no longer refreshes ({e.args[0] if e.args else e}); asking for consent again')
+            c = None
     if not c or not c.valid:
         flow = InstalledAppFlow.from_client_secrets_file(CLIENT, SCOPES)
         # Opens the system browser; the user signs in and clicks Allow themselves.

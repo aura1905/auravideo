@@ -1,0 +1,84 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "A school burned, and somebody reported the fire fourteen minutes before it started.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.2
+  }
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "You catch them with SQL.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Ghost in the SQL Data. Your notebook is a query window, and the call-centre records answer back.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "Easy cases teach you SELECT. Hard ones make you a data forensics investigator.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Three hundred and seventy-four megabytes, eight languages, and eleven reviews already.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "Nine of the eleven are positive, for what is secretly a database course.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 6.2
+  }
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip. You'll leave knowing more SQL than you arrived with.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 26.0
+  }
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

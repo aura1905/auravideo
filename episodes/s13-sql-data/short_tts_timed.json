@@ -1,0 +1,110 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "A school burned, and somebody reported the fire fourteen minutes before it started.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.2
+  },
+  "sub": "A school burned, and somebody reported the fire fourteen minutes before it started.",
+  "dur": 4.859,
+  "wav": "episodes/s13-sql-data/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "You catch them with SQL.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "You catch them with SQL.",
+  "dur": 1.593,
+  "wav": "episodes/s13-sql-data/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  },
+  "dur": 2.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Ghost in the SQL Data. Your notebook is a query window, and the call-centre records answer back.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Ghost in the SQL Data. Your notebook is a query window, and the call-centre records answer back.",
+  "dur": 5.904,
+  "wav": "episodes/s13-sql-data/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "Easy cases teach you SELECT. Hard ones make you a data forensics investigator.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Easy cases teach you SELECT. Hard ones make you a data forensics investigator.",
+  "dur": 4.702,
+  "wav": "episodes/s13-sql-data/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Three hundred and seventy-four megabytes, eight languages, and eleven reviews already.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "Three hundred and seventy-four megabytes, eight languages, and eleven reviews already.",
+  "dur": 4.754,
+  "wav": "episodes/s13-sql-data/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "Nine of the eleven are positive, for what is secretly a database course.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 6.2
+  },
+  "sub": "Nine of the eleven are positive, for what is secretly a database course.",
+  "dur": 3.866,
+  "wav": "episodes/s13-sql-data/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip. You'll leave knowing more SQL than you arrived with.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 26.0
+  },
+  "sub": "Worth a dip. You'll leave knowing more SQL than you arrived with.",
+  "dur": 3.605,
+  "wav": "episodes/s13-sql-data/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day.",
+  "dur": 3.37,
+  "wav": "episodes/s13-sql-data/tts_short/s8.wav"
+ }
+]

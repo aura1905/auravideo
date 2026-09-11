@@ -1,0 +1,97 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "In this game you share one five hundred and twelve kilobit line between a whole shop of customers.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.0
+  },
+  "sub": "In this game you share one five hundred and twelve kilobit line between a whole shop of customers.",
+  "dur": 5.59,
+  "wav": "episodes/s19-lan-house-2003/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "On that line, this demo would take about sixteen minutes to download.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "On that line, this demo would take about sixteen minutes to download.",
+  "dur": 3.866,
+  "wav": "episodes/s19-lan-house-2003/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.0
+  },
+  "dur": 2.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Brazilian LAN House 2003. Six beige P Cs, a foosball table, and a neighbourhood that wants to play.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Brazilian LAN House 2003. Six beige PCs, a foosball table, and a neighbourhood that wants to play.",
+  "dur": 7.21,
+  "wav": "episodes/s19-lan-house-2003/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "You run the tabs, the power and the machines, and when a P C freezes, you fix it from the network monitor.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "You run the tabs, the power and the machines, and when a PC freezes, you fix it from the network monitor.",
+  "dur": 6.139,
+  "wav": "episodes/s19-lan-house-2003/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "The whole demo is a hundred and fifty-eight megabytes, and it ships for Windows, Mac and Linux.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The whole demo is a hundred and fifty-eight megabytes, and it ships for Windows, Mac and Linux.",
+  "dur": 5.224,
+  "wav": "episodes/s19-lan-house-2003/tts_short/s5.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip if you remember paying by the hour.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.0
+  },
+  "sub": "Worth a dip if you remember paying by the hour.",
+  "dur": 2.482,
+  "wav": "episodes/s19-lan-house-2003/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day.",
+  "dur": 3.448,
+  "wav": "episodes/s19-lan-house-2003/tts_short/s8.wav"
+ }
+]

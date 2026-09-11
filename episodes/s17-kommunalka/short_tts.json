@@ -1,0 +1,78 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "You're a courier. It's your last delivery. And the apartment door just locked behind you.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "You're a courier. It's your last delivery. And the apartment door just locked behind you."
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "In a post-Soviet communal flat.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "In a post-Soviet communal flat."
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "KOMMUNALKA. You have a flashlight, the residents have stories, and you have to decide who is lying to you.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "KOMMUNALKA. You have a flashlight, the residents have stories, and you have to decide who is lying to you."
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "It's point and click, which in horror means you can't run. You just pick where to look.",
+  "vis": {
+   "type": "image",
+   "file": "ss02_lift.jpg"
+  },
+  "sub": "It's point and click, which in horror means you can't run. You just pick where to look."
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "The demo is in English and Russian, and all five of its reviews are positive.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is in English and Russian, and all five of its reviews are positive."
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip if you like your horror slow and dark.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Worth a dip if you like your horror slow and dark."
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day."
+ }
+]

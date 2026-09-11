@@ -1,0 +1,97 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "Your whole job is weighing trucks at night, and every watt you use brings the dark closer.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 20.0
+  },
+  "sub": "Your whole job is weighing trucks at night, and every watt you use brings the dark closer.",
+  "dur": 5.068,
+  "wav": "episodes/s18-weigh-station/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "When the battery dies, you have to go outside.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "When the battery dies, you have to go outside.",
+  "dur": 2.56,
+  "wav": "episodes/s18-weigh-station/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.0
+  },
+  "dur": 2.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "The Weigh Station. You check each driver's manifest on an amber screen, weigh the truck, and seal the booth door.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "The Weigh Station. You check each driver's manifest on an amber screen, weigh the truck, and seal the booth door.",
+  "dur": 6.374,
+  "wav": "episodes/s18-weigh-station/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "It's a paperwork game, with something waiting past the floodlights.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "It's a paperwork game, with something waiting past the floodlights.",
+  "dur": 3.814,
+  "wav": "episodes/s18-weigh-station/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "It's about one point three gigabytes, in thirteen languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "It's about one point three gigabytes, in thirteen languages.",
+  "dur": 3.448,
+  "wav": "episodes/s18-weigh-station/tts_short/s5.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip if you liked checking papers in the dark.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  },
+  "sub": "Worth a dip if you liked checking papers in the dark.",
+  "dur": 2.56,
+  "wav": "episodes/s18-weigh-station/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day.",
+  "dur": 3.135,
+  "wav": "episodes/s18-weigh-station/tts_short/s8.wav"
+ }
+]

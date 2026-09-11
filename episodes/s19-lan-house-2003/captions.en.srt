@@ -1,0 +1,34 @@
+1
+00:00:00,000 --> 00:00:05,740
+In this game you share one five hundred and twelve
+kilobit line between a whole shop of customers.
+
+2
+00:00:05,990 --> 00:00:10,006
+On that line,
+this demo would take about sixteen minutes to download.
+
+3
+00:00:12,256 --> 00:00:19,616
+Brazilian LAN House 2003. Six beige PCs,
+a foosball table, and a neighbourhood that wants to play.
+
+4
+00:00:19,866 --> 00:00:26,155
+You run the tabs, the power and the machines,
+and when a PC freezes, you fix it from the network monitor.
+
+5
+00:00:26,405 --> 00:00:31,779
+The whole demo is a hundred and fifty-eight megabytes,
+and it ships for Windows, Mac and Linux.
+
+6
+00:00:32,179 --> 00:00:34,811
+Worth a dip if you remember
+paying by the hour.
+
+7
+00:00:35,211 --> 00:00:38,809
+That's Demo Dip.
+A new Steam demo, every day.

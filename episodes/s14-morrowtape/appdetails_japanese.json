@@ -1,0 +1,197 @@
+{
+ "type": "game",
+ "name": "MORROWTAPE",
+ "steam_appid": 5225470,
+ "required_age": 0,
+ "is_free": false,
+ "controller_support": "full",
+ "dlc": [
+  5225900,
+  5225910
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" >It is 11:48 PM on November 6, 1989.</p><p class=\"bb_paragraph\" >Seventeen years after a fire sealed the telephone exchange beneath the Municipal Archive, its dead lines begin ringing again.</p><p class=\"bb_paragraph\" >You are the night archivist assigned to an unfinished intake. Below you: twelve impossible calls, one working service elevator, and an operator-shaped thing that turns every footstep and tuning pulse into a trail.</p><p class=\"bb_paragraph\" ><strong>MORROWTAPE</strong> is a no-combat first-person psychological horror game built around a compact, high-tension extraction loop.</p><p class=\"bb_paragraph\" >Take the field receiver. Follow the carrier. Decide what comes back to the surface.</p><p class=\"bb_paragraph\" >Tune the line. Take the tape. Reach the lift.</p><p class=\"bb_paragraph\" >Each of four escalating dives sends you deeper into a fixed, learnable complex whose objective placement, lighting, and dressing shift between runs. Match exact carrier frequencies to reveal sealed routes and recover three red-spooled call records. Find the lift fuse, choose when to sprint, and extract before your noise catches up with you.</p><p class=\"bb_paragraph\" >Every sound leaves an address</p><p class=\"bb_paragraph\" >Footsteps, tuning pulses, and dead circuits coming online all give The Listener somewhere to search. You have no weapon. Break its search through route knowledge, timing, and deciding when noise is worth the risk.</p><p class=\"bb_paragraph\" >Twelve calls. One buried line.</p><p class=\"bb_paragraph\" >Every recovered reel unlocks a complete on-screen dramatic transcript. Across twelve calls, a child counts telephone poles that appear after dark, a dead subscriber disputes his bill, a patrol officer hears her own voice issue impossible orders, and a vanished operator traces a line the city meant to bury.</p><p class=\"bb_paragraph\" >Choose the official record</p><p class=\"bb_paragraph\" >After every extraction, Preserve the Originals or Erase the Carrier. The record you build across four dives leads to one of three endings.</p><p class=\"bb_paragraph\" >Features</p><p class=\"bb_paragraph\" >• Four escalating extraction dives, each built around three reels, one lift fuse, and a route back out</p><p class=\"bb_paragraph\" >• Hands-on exact-frequency tuning that reveals sealed routes and recoverable evidence</p><p class=\"bb_paragraph\" >• The Listener: a sound-reactive threat that turns movement and activated circuits into risk</p><p class=\"bb_paragraph\" >• No combat — survive through route knowledge, timing, and nerve</p><p class=\"bb_paragraph\" >• Twelve complete on-screen call transcripts forming one buried municipal mystery</p><p class=\"bb_paragraph\" >• Preserve-or-Erase decisions leading to three endings</p><p class=\"bb_paragraph\" >• Three operator modes — Story, Standard, and Overtime — adjust pursuit pressure</p><p class=\"bb_paragraph\" >• Keyboard and mouse controls with gamepad support</p><p class=\"bb_paragraph\" >• Subtitles and descriptive sound captions</p><p class=\"bb_paragraph\" >• High-contrast presentation, flicker reduction, camera-effects control, and independent volume settings</p><p class=\"bb_paragraph\" >• Offline single-player play with local saves</p><p class=\"bb_paragraph\" >Put on headphones if you can. You will not need them to survive.</p>",
+ "about_the_game": "<p class=\"bb_paragraph\" >It is 11:48 PM on November 6, 1989.</p><p class=\"bb_paragraph\" >Seventeen years after a fire sealed the telephone exchange beneath the Municipal Archive, its dead lines begin ringing again.</p><p class=\"bb_paragraph\" >You are the night archivist assigned to an unfinished intake. Below you: twelve impossible calls, one working service elevator, and an operator-shaped thing that turns every footstep and tuning pulse into a trail.</p><p class=\"bb_paragraph\" ><strong>MORROWTAPE</strong> is a no-combat first-person psychological horror game built around a compact, high-tension extraction loop.</p><p class=\"bb_paragraph\" >Take the field receiver. Follow the carrier. Decide what comes back to the surface.</p><p class=\"bb_paragraph\" >Tune the line. Take the tape. Reach the lift.</p><p class=\"bb_paragraph\" >Each of four escalating dives sends you deeper into a fixed, learnable complex whose objective placement, lighting, and dressing shift between runs. Match exact carrier frequencies to reveal sealed routes and recover three red-spooled call records. Find the lift fuse, choose when to sprint, and extract before your noise catches up with you.</p><p class=\"bb_paragraph\" >Every sound leaves an address</p><p class=\"bb_paragraph\" >Footsteps, tuning pulses, and dead circuits coming online all give The Listener somewhere to search. You have no weapon. Break its search through route knowledge, timing, and deciding when noise is worth the risk.</p><p class=\"bb_paragraph\" >Twelve calls. One buried line.</p><p class=\"bb_paragraph\" >Every recovered reel unlocks a complete on-screen dramatic transcript. Across twelve calls, a child counts telephone poles that appear after dark, a dead subscriber disputes his bill, a patrol officer hears her own voice issue impossible orders, and a vanished operator traces a line the city meant to bury.</p><p class=\"bb_paragraph\" >Choose the official record</p><p class=\"bb_paragraph\" >After every extraction, Preserve the Originals or Erase the Carrier. The record you build across four dives leads to one of three endings.</p><p class=\"bb_paragraph\" >Features</p><p class=\"bb_paragraph\" >• Four escalating extraction dives, each built around three reels, one lift fuse, and a route back out</p><p class=\"bb_paragraph\" >• Hands-on exact-frequency tuning that reveals sealed routes and recoverable evidence</p><p class=\"bb_paragraph\" >• The Listener: a sound-reactive threat that turns movement and activated circuits into risk</p><p class=\"bb_paragraph\" >• No combat — survive through route knowledge, timing, and nerve</p><p class=\"bb_paragraph\" >• Twelve complete on-screen call transcripts forming one buried municipal mystery</p><p class=\"bb_paragraph\" >• Preserve-or-Erase decisions leading to three endings</p><p class=\"bb_paragraph\" >• Three operator modes — Story, Standard, and Overtime — adjust pursuit pressure</p><p class=\"bb_paragraph\" >• Keyboard and mouse controls with gamepad support</p><p class=\"bb_paragraph\" >• Subtitles and descriptive sound captions</p><p class=\"bb_paragraph\" >• High-contrast presentation, flicker reduction, camera-effects control, and independent volume settings</p><p class=\"bb_paragraph\" >• Offline single-player play with local saves</p><p class=\"bb_paragraph\" >Put on headphones if you can. You will not need them to survive.</p>",
+ "short_description": "A first-person psychological horror game set beneath a condemned 1989 telephone archive. Tune impossible calls, evade a creature that hunts every sound you make, and decide which evidence the city is allowed to remember.",
+ "supported_languages": "英語",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/fc93f12e79e6f44cc75419dc2c27399aeb2b2276/header.jpg?t=1789072813",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/15653e827b1a9cae62cbbe1286c2d66d9f2ab87b/capsule_231x87.jpg?t=1789072813",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/15653e827b1a9cae62cbbe1286c2d66d9f2ab87b/capsule_184x69.jpg?t=1789072813",
+ "website": "https://greylineinteractive.com/morrowtape/",
+ "pc_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"><li>64 ビットプロセッサとオペレーティングシステムが必要です<br></li><li><strong>OS:</strong> Windows 10, 64-bit<br></li><li><strong>プロセッサー:</strong> 64-bit dual-core processor<br></li><li><strong>メモリー:</strong> 8 GB RAM<br></li><li><strong>グラフィック:</strong> OpenGL 3.3-compatible graphics<br></li><li><strong>ストレージ:</strong> 1 GB の空き容量<br></li><li><strong>追記事項:</strong> Requires a 64-bit processor and operating system</li></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"><li>64 ビットプロセッサとオペレーティングシステムが必要です</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> macOS 11 Big Sur or later<br></li><li><strong>プロセッサー:</strong> Intel 64-bit processor or Apple M1 and newer<br></li><li><strong>メモリー:</strong> 8 GB RAM<br></li><li><strong>グラフィック:</strong> OpenGL 3.3-compatible graphics<br></li><li><strong>追記事項:</strong> Universal Intel and Apple silicon application</li></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "developers": [
+  "Grey Line Interactive LLC"
+ ],
+ "publishers": [
+  "Grey Line Interactive LLC"
+ ],
+ "demos": [
+  {
+   "appid": 5225900,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": true,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "シングルプレイヤー"
+  },
+  {
+   "id": 28,
+   "description": "フルコントローラサポート"
+  },
+  {
+   "id": 67,
+   "description": "カメラの快適性"
+  },
+  {
+   "id": 66,
+   "description": "色のオプション"
+  },
+  {
+   "id": 82,
+   "description": "#category_contrast_controls"
+  },
+  {
+   "id": 68,
+   "description": "カスタム音量調整"
+  },
+  {
+   "id": 78,
+   "description": "難易度の調整"
+  },
+  {
+   "id": 80,
+   "description": "#category_playable_at_your_own_pace"
+  },
+  {
+   "id": 74,
+   "description": "時間制限付き入力なしでプレイ可能"
+  },
+  {
+   "id": 62,
+   "description": "ファミリーシェアリング"
+  }
+ ],
+ "genres": [
+  {
+   "id": "25",
+   "description": "アドベンチャー"
+  },
+  {
+   "id": "23",
+   "description": "インディー"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/b2f81075a7068227558b5572c37c1f806a133ec5/ss_b2f81075a7068227558b5572c37c1f806a133ec5.600x338.jpg?t=1789072813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/b2f81075a7068227558b5572c37c1f806a133ec5/ss_b2f81075a7068227558b5572c37c1f806a133ec5.1920x1080.jpg?t=1789072813"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/7b04084ce9a5934a80573ed22384ff67abc19cc3/ss_7b04084ce9a5934a80573ed22384ff67abc19cc3.600x338.jpg?t=1789072813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/7b04084ce9a5934a80573ed22384ff67abc19cc3/ss_7b04084ce9a5934a80573ed22384ff67abc19cc3.1920x1080.jpg?t=1789072813"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/10dde76e0f4249bed60189ce671fa4e8cf61a763/ss_10dde76e0f4249bed60189ce671fa4e8cf61a763.600x338.jpg?t=1789072813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/10dde76e0f4249bed60189ce671fa4e8cf61a763/ss_10dde76e0f4249bed60189ce671fa4e8cf61a763.1920x1080.jpg?t=1789072813"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/4b7239d3e7f2c6d22fbb39e740ad96cd4af3ea0d/ss_4b7239d3e7f2c6d22fbb39e740ad96cd4af3ea0d.600x338.jpg?t=1789072813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/4b7239d3e7f2c6d22fbb39e740ad96cd4af3ea0d/ss_4b7239d3e7f2c6d22fbb39e740ad96cd4af3ea0d.1920x1080.jpg?t=1789072813"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/e9735a8c02dabaa050a63f4def96279c91407d38/ss_e9735a8c02dabaa050a63f4def96279c91407d38.600x338.jpg?t=1789072813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/e9735a8c02dabaa050a63f4def96279c91407d38/ss_e9735a8c02dabaa050a63f4def96279c91407d38.1920x1080.jpg?t=1789072813"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/a18f6f11f72a6c28ac7bf72c5490ef4f82e72856/ss_a18f6f11f72a6c28ac7bf72c5490ef4f82e72856.600x338.jpg?t=1789072813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/a18f6f11f72a6c28ac7bf72c5490ef4f82e72856/ss_a18f6f11f72a6c28ac7bf72c5490ef4f82e72856.1920x1080.jpg?t=1789072813"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/f4eea06915e278caaea3c0669de136fa01f3967c/ss_f4eea06915e278caaea3c0669de136fa01f3967c.600x338.jpg?t=1789072813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/f4eea06915e278caaea3c0669de136fa01f3967c/ss_f4eea06915e278caaea3c0669de136fa01f3967c.1920x1080.jpg?t=1789072813"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/b18cb173d14c969c5284c85c0b49954b5f01905d/ss_b18cb173d14c969c5284c85c0b49954b5f01905d.600x338.jpg?t=1789072813",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5225470/b18cb173d14c969c5284c85c0b49954b5f01905d/ss_b18cb173d14c969c5284c85c0b49954b5f01905d.1920x1080.jpg?t=1789072813"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257417524,
+   "name": "Gameplay",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257417524/71e9db7e549a01ab73f8f820e8dc7980964ae74f/movie_600x337.jpg?t=1789072812",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5225470/773019367/f74f5cb6df9b3d2215975196a099631ec85253c5/1788730960/dash_av1.mpd?t=1789072812",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5225470/773019367/f74f5cb6df9b3d2215975196a099631ec85253c5/1788730960/dash_h264.mpd?t=1789072812",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5225470/773019367/f74f5cb6df9b3d2215975196a099631ec85253c5/1788730960/hls_264_master.m3u8?t=1789072812",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "2026年12月"
+ },
+ "support_info": {
+  "url": "https://greylineinteractive.com/support/",
+  "email": "support@greylineinteractive.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5225470?t=1789072813",
+ "background_raw": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5225470?t=1789072813",
+ "content_descriptors": {
+  "ids": [
+   5
+  ],
+  "notes": "MORROWTAPE contains sustained psychological horror, dark and claustrophobic environments, stalking and pursuit by a supernatural entity, threatening dialogue, and intense sound and visual effects. Its story includes grief, missing people, a child in danger, implied off-screen deaths, trapped voices, a fatal historical fire, a municipal cover-up, and the destruction or preservation of evidence. Being caught is implied, but no attack, bodily injury, blood, corpse, dismemberment, or gore is shown. The game contains no sexual content or sexual violence, nudity, self-harm or suicide, drug or alcohol abuse, profanity, or player-performed violence."
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "14",
+   "required_age": "14",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Violência\nMedo\nAtos criminosos"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "16",
+   "required_age": "16",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Horror"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Horor\nKekerasan"
+  }
+ }
+}

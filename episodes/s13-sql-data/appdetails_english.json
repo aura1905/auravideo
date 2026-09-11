@@ -1,0 +1,177 @@
+{
+ "type": "game",
+ "name": "Ghost in the SQL Data",
+ "steam_appid": 5072430,
+ "required_age": 0,
+ "is_free": false,
+ "detailed_description": "<p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/71412f5347d2dfea4e20313696527a92.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/71412f5347d2dfea4e20313696527a92.webp?t=1789068592 width=1560 height=485 /></span>Here is a case. Using SQL, dig through the call centre data and find out who called before the fire started.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/9f85af0753d2d547399d8598aa1f58d8.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/9f85af0753d2d547399d8598aa1f58d8.webp?t=1789068592 width=1560 height=695 /></span>Use SQL to explore the data, filter it, connect the pieces. The easy levels teach you the basics and the hard ones put you in the shoes of a real data forensic, meaning an investigator who works on data.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/abba6805c510f722c65c7e69261316a1.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/abba6805c510f722c65c7e69261316a1.webp?t=1789068592 width=1560 height=520 /></span>Using the whiteboard system, you can build charts and leads, and make sense of every piece of the case in order to solve it.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/ffec3977387924fee7356120b696fd8a.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/ffec3977387924fee7356120b696fd8a.webp?t=1789068592 width=1560 height=628 /></span>Two case campaigns are available right now: find out who set the school on fire by searching the call centre databases, and track down a criminal by watching how people move through the Paris metro.</p>",
+ "about_the_game": "<p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/71412f5347d2dfea4e20313696527a92.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/71412f5347d2dfea4e20313696527a92.webp?t=1789068592 width=1560 height=485 /></span>Here is a case. Using SQL, dig through the call centre data and find out who called before the fire started.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/9f85af0753d2d547399d8598aa1f58d8.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/9f85af0753d2d547399d8598aa1f58d8.webp?t=1789068592 width=1560 height=695 /></span>Use SQL to explore the data, filter it, connect the pieces. The easy levels teach you the basics and the hard ones put you in the shoes of a real data forensic, meaning an investigator who works on data.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/abba6805c510f722c65c7e69261316a1.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/abba6805c510f722c65c7e69261316a1.webp?t=1789068592 width=1560 height=520 /></span>Using the whiteboard system, you can build charts and leads, and make sense of every piece of the case in order to solve it.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras/ffec3977387924fee7356120b696fd8a.avif?t=1789068592\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/extras_big/ffec3977387924fee7356120b696fd8a.webp?t=1789068592 width=1560 height=628 /></span>Two case campaigns are available right now: find out who set the school on fire by searching the call centre databases, and track down a criminal by watching how people move through the Paris metro.</p>",
+ "short_description": "Somebody reported the fire fourteen minutes before it started. Prove it in SQL by exploring the call centre data.",
+ "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese<strong>*</strong>, Korean<strong>*</strong>, Russian<strong>*</strong><br><strong>*</strong>languages with full audio support",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/51f9c7715c2f874443595ae9e76269b02444c496/header.jpg?t=1789068592",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/68f0d273de2d8da9c13f6cf314089ec320eb377d/capsule_231x87.jpg?t=1789068592",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/68f0d273de2d8da9c13f6cf314089ec320eb377d/capsule_184x69.jpg?t=1789068592",
+ "website": null,
+ "pc_requirements": {
+  "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 10 (64-bit)<br></li><li><strong>Processor:</strong> Dual Core 2,0 GHz (Intel Core i3)<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> Intel HD Graphics 4000 (support WebGL / DirectX 11)<br></li><li><strong>Storage:</strong> 1 GB available space</li></ul>",
+  "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 10/11 (64-bit)<br></li><li><strong>Processor:</strong> Quad Core 2,5 GHz or more<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> GPU (Intel Iris Xe / AMD Vega 8)<br></li><li><strong>Storage:</strong> 1 GB available space</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> macOS 11<br></li><li><strong>Processor:</strong> Apple M1 or Intel Core i5<br></li><li><strong>Memory:</strong> 4 GB RAM</li></ul>",
+  "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> macOS 11+<br></li><li><strong>Processor:</strong> Apple M1 or Intel Core i5<br></li><li><strong>Memory:</strong> 8 GB RAM</li></ul>"
+ },
+ "linux_requirements": [],
+ "developers": [
+  "Isaac MENARD"
+ ],
+ "publishers": [
+  "Isaac MENARD"
+ ],
+ "demos": [
+  {
+   "appid": 5072550,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": true,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "Single-player"
+  },
+  {
+   "id": 22,
+   "description": "Steam Achievements"
+  },
+  {
+   "id": 64,
+   "description": "Adjustable Text Size"
+  },
+  {
+   "id": 68,
+   "description": "Custom Volume Controls"
+  },
+  {
+   "id": 80,
+   "description": "#category_playable_at_your_own_pace"
+  },
+  {
+   "id": 74,
+   "description": "Playable without Timed Input"
+  },
+  {
+   "id": 79,
+   "description": "Save Anytime"
+  },
+  {
+   "id": 23,
+   "description": "Steam Cloud"
+  },
+  {
+   "id": 17,
+   "description": "Includes level editor"
+  },
+  {
+   "id": 62,
+   "description": "Family Sharing"
+  }
+ ],
+ "genres": [
+  {
+   "id": "28",
+   "description": "Simulation"
+  },
+  {
+   "id": "2",
+   "description": "Strategy"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/5497a4892084b4919909d6734807b4eb2920acd1/ss_5497a4892084b4919909d6734807b4eb2920acd1.600x338.jpg?t=1789068592",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/5497a4892084b4919909d6734807b4eb2920acd1/ss_5497a4892084b4919909d6734807b4eb2920acd1.1920x1080.jpg?t=1789068592"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/9ccaf070edcc4054ccb4aaa163143d8ac9d499c8/ss_9ccaf070edcc4054ccb4aaa163143d8ac9d499c8.600x338.jpg?t=1789068592",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/9ccaf070edcc4054ccb4aaa163143d8ac9d499c8/ss_9ccaf070edcc4054ccb4aaa163143d8ac9d499c8.1920x1080.jpg?t=1789068592"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/4d7b837d03a2d4caabf9010ad05ec55e92be7965/ss_4d7b837d03a2d4caabf9010ad05ec55e92be7965.600x338.jpg?t=1789068592",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/4d7b837d03a2d4caabf9010ad05ec55e92be7965/ss_4d7b837d03a2d4caabf9010ad05ec55e92be7965.1920x1080.jpg?t=1789068592"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/8ee9c18d2baccefb53ea4392d70e76975904bfe4/ss_8ee9c18d2baccefb53ea4392d70e76975904bfe4.600x338.jpg?t=1789068592",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/8ee9c18d2baccefb53ea4392d70e76975904bfe4/ss_8ee9c18d2baccefb53ea4392d70e76975904bfe4.1920x1080.jpg?t=1789068592"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/afebdfb04219922b5b8c4d2afaa1b1852c82652e/ss_afebdfb04219922b5b8c4d2afaa1b1852c82652e.600x338.jpg?t=1789068592",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/afebdfb04219922b5b8c4d2afaa1b1852c82652e/ss_afebdfb04219922b5b8c4d2afaa1b1852c82652e.1920x1080.jpg?t=1789068592"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/79302acaf55953ee915f9d65b1ec1f707c7793e1/ss_79302acaf55953ee915f9d65b1ec1f707c7793e1.600x338.jpg?t=1789068592",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/79302acaf55953ee915f9d65b1ec1f707c7793e1/ss_79302acaf55953ee915f9d65b1ec1f707c7793e1.1920x1080.jpg?t=1789068592"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257405852,
+   "name": "main trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257405852/9ccaf070edcc4054ccb4aaa163143d8ac9d499c8/movie_600x337.jpg?t=1788702497",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5072430/96834704/af9f9b841e8a6360cebf220a850de96c3775191e/1788702280/dash_av1.mpd?t=1788702497",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5072430/96834704/af9f9b841e8a6360cebf220a850de96c3775191e/1788702280/dash_h264.mpd?t=1788702497",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5072430/96834704/af9f9b841e8a6360cebf220a850de96c3775191e/1788702280/hls_264_master.m3u8?t=1788702497",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "October 2026"
+ },
+ "support_info": {
+  "url": "",
+  "email": "menardisaac@gmail.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5072430?t=1789068592",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5072430/e8b9f4c76a2ccf89948c3ca09c227cf2884083a5/page_bg_raw.jpg?t=1789068592",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "l",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "0",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "3",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  }
+ }
+}

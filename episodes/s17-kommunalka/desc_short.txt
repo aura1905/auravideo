@@ -1,0 +1,29 @@
+KOMMUNALKA — A courier on the last delivery, locked inside a post-Soviet communal flat.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5192780/
+
+── The numbers ──
+Genre     : point-and-click horror
+Setting   : Soviet communal flat
+Installed : 796 MB
+Languages : English, Russian
+Reviews   : 5 of 5 positive
+Verdict   : Worth A Dip
+
+── The stack, if you want to use it ──
+The demo on Steam : https://store.steampowered.com/app/5192780/
+
+── Chapters ──
+0:00 The hook
+0:11 What it is
+0:25 The numbers
+0:30 The spec sheet
+
+Everything in this video is read off public information: the Steam store page,
+the demo's reviews, and the depot sizes Steam publishes in its product info.
+No files were downloaded, unpacked, decompiled, or redistributed. It is an
+outside reading, not a statement from the developer. All game footage and images belong to FOOTAGE LOGS.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

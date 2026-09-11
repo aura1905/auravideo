@@ -27,3 +27,4 @@ __pycache__/
 /sc_header/
 /sc_row_*/
 /sc_stamp/
+.venv-steam/

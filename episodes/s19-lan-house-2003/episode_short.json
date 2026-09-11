@@ -1,0 +1,80 @@
+{
+ "title_en": "Brazilian LAN House 2003",
+ "demo_appid": 5192920,
+ "full_appid": 5192920,
+ "developer": "MonkeyLogic",
+ "workdir": "episodes/s19-lan-house-2003",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s19-lan-house-2003/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "GENRE",
+   "LAN house manager"
+  ],
+  [
+   "YEAR",
+   "2003"
+  ],
+  [
+   "DOWNLOAD",
+   "59 MB"
+  ],
+  [
+   "ON 512 KBPS",
+   "16 minutes"
+  ],
+  [
+   "PLATFORMS",
+   "Win / Mac / Linux"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Brazilian LAN House 2003",
+  "line2": "ONE 512 KBPS LINE. SIX PCS.",
+  "size1": 70,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5192920/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Brazilian LAN House 2003: six beige PCs sharing one 512 kbps line #shorts",
+  "tags": "shorts,Brazilian LAN House 2003,MonkeyLogic,steam demo,management sim,internet cafe,lan house,nostalgia,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

@@ -1,0 +1,97 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "This demo is two gigabytes on your drive and two hundred and seventy megabytes to download.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 6.0
+  },
+  "sub": "This demo is two gigabytes on your drive and two hundred and seventy megabytes to download.",
+  "dur": 4.754,
+  "wav": "episodes/s15-gun-a-rat/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "It shrinks eight to one. Something in there is very, very compressible.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "It shrinks eight to one. Something in there is very, very compressible.",
+  "dur": 4.571,
+  "wav": "episodes/s15-gun-a-rat/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 18.0
+  },
+  "dur": 2.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Gun a Rat. An office full of rats, a gun, a pile of traps, and it's online against your friends.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Gun a Rat. An office full of rats, a gun, a pile of traps, and it's online against your friends.",
+  "dur": 6.531,
+  "wav": "episodes/s15-gun-a-rat/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "The store page pitch is: don't like rats? Don't like your friends? This is for you.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "The store page pitch is: don't like rats? Don't like your friends? This is for you.",
+  "dur": 5.46,
+  "wav": "episodes/s15-gun-a-rat/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "It's in thirty languages, which is a lot of translation for a game about shooting rodents.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "It's in thirty languages, which is a lot of translation for a game about shooting rodents.",
+  "dur": 4.624,
+  "wav": "episodes/s15-gun-a-rat/tts_short/s5.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip with friends you're happy to betray.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  },
+  "sub": "Worth a dip with friends you're happy to betray.",
+  "dur": 2.247,
+  "wav": "episodes/s15-gun-a-rat/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day.",
+  "dur": 3.265,
+  "wav": "episodes/s15-gun-a-rat/tts_short/s8.wav"
+ }
+]

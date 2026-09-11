@@ -1,0 +1,81 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "This is a demo, and it's fifteen and a half gigabytes.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  },
+  "sub": "This is a demo, and it's fifteen and a half gigabytes."
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Fifteen of those you download.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Fifteen of those you download."
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.5
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "It's Dragon Quest Monsters: The Withered World. Befriend monsters, raise them, and fuse two into something new.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "It's Dragon Quest Monsters: The Withered World. Befriend monsters, raise them, and fuse two into something new."
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "The full game lands in December. The demo lets you start the adventure now.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "The full game lands in December. The demo lets you start the adventure now."
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "It's in nine languages, with online co-op and P v P already listed.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "It's in nine languages, with online co-op and PvP already listed."
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip, if you've got fifteen gigabytes spare.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 55.0
+  },
+  "sub": "Worth a dip, if you've got fifteen gigabytes spare."
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day."
+ }
+]

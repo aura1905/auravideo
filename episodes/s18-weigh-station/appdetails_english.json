@@ -1,0 +1,190 @@
+{
+ "type": "game",
+ "name": "The Weigh Station",
+ "steam_appid": 5131990,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  5202340
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" ><strong>THE NIGHT SHIFT STARTS AT SUNDOWN</strong><br>You've taken a job nobody else wanted: night inspector at an isolated weigh station. Trucks pull up one by one, and it's your job to clear them, or catch what doesn't add up.</p><p class=\"bb_paragraph\" ><strong>READ THE ID</strong><br>The dark hides everything. Use your night vision camera to make out each truck's ID, then enter it into the system to pull up its manifest.</p><p class=\"bb_paragraph\" ><strong>CHECK THE DETAILS</strong><br>Compare plate number, driver name, cargo, destination, date, and weight against the manifest. Discrepancies aren't always obvious.</p><p class=\"bb_paragraph\" ><strong>RESCALE, ALWAYS</strong><br>The scale isn't always reliable. Hit rescale before every weigh-in to make sure the number in front of you is the real one.</p><p class=\"bb_paragraph\" ><strong>MAKE YOUR DECISION</strong><br>Approve the truck, or reject it. Every decision is yours, and every decision has consequences.</p><p class=\"bb_paragraph\" ><strong>MIND THE POWER</strong><br>The station runs on borrowed time and cheap wiring. CCTV, heater, terminal, booth door, all of it drains electricity. Burn through it carelessly, and you'll have nothing left when you need it most.</p><p class=\"bb_paragraph\" ><strong>CLOSE THE DOOR</strong><br>Something moves in the dark beyond the checkpoint lights. Sealing the door costs power, so don't keep it shut out of habit, save it for when something's actually reached your booth.</p><p class=\"bb_paragraph\" ><strong>WHEN THE POWER DIES</strong><br>If your power runs dry, there's only one option: step outside, find the transformer, and bring the station back online yourself. No cameras. No locked door. Just you, the dark, and whatever's out there with you.</p><p class=\"bb_paragraph\" >As the nights stretch on, the manifests get harder to trust and the power never stretches quite far enough. Stay sharp. Stay charged. Just make it to sunrise.</p>",
+ "about_the_game": "<p class=\"bb_paragraph\" ><strong>THE NIGHT SHIFT STARTS AT SUNDOWN</strong><br>You've taken a job nobody else wanted: night inspector at an isolated weigh station. Trucks pull up one by one, and it's your job to clear them, or catch what doesn't add up.</p><p class=\"bb_paragraph\" ><strong>READ THE ID</strong><br>The dark hides everything. Use your night vision camera to make out each truck's ID, then enter it into the system to pull up its manifest.</p><p class=\"bb_paragraph\" ><strong>CHECK THE DETAILS</strong><br>Compare plate number, driver name, cargo, destination, date, and weight against the manifest. Discrepancies aren't always obvious.</p><p class=\"bb_paragraph\" ><strong>RESCALE, ALWAYS</strong><br>The scale isn't always reliable. Hit rescale before every weigh-in to make sure the number in front of you is the real one.</p><p class=\"bb_paragraph\" ><strong>MAKE YOUR DECISION</strong><br>Approve the truck, or reject it. Every decision is yours, and every decision has consequences.</p><p class=\"bb_paragraph\" ><strong>MIND THE POWER</strong><br>The station runs on borrowed time and cheap wiring. CCTV, heater, terminal, booth door, all of it drains electricity. Burn through it carelessly, and you'll have nothing left when you need it most.</p><p class=\"bb_paragraph\" ><strong>CLOSE THE DOOR</strong><br>Something moves in the dark beyond the checkpoint lights. Sealing the door costs power, so don't keep it shut out of habit, save it for when something's actually reached your booth.</p><p class=\"bb_paragraph\" ><strong>WHEN THE POWER DIES</strong><br>If your power runs dry, there's only one option: step outside, find the transformer, and bring the station back online yourself. No cameras. No locked door. Just you, the dark, and whatever's out there with you.</p><p class=\"bb_paragraph\" >As the nights stretch on, the manifests get harder to trust and the power never stretches quite far enough. Stay sharp. Stay charged. Just make it to sunrise.</p>",
+ "short_description": "Inspect trucks, verify manifests, and ration your electricity at a desolate Weigh Station. Seal your booth door before something reaches you. Every drop of power matters, because when the battery dies, your only choice is the dark outside, and whatever's out there with you.",
+ "supported_languages": "English, French, Italian, German, Spanish - Spain, Arabic, Simplified Chinese, Portuguese - Brazil, Japanese, Korean, Polish, Russian, Turkish",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/e165b7cae9c3ece29322fc4515f266db929072fd/header.jpg?t=1788615696",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/a21551f27c15139a10ae11de3077c18cbfe43727/capsule_231x87.jpg?t=1788615696",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/a21551f27c15139a10ae11de3077c18cbfe43727/capsule_184x69.jpg?t=1788615696",
+ "website": null,
+ "pc_requirements": {
+  "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 (64-bit)<br></li><li><strong>Processor:</strong> Intel Core i5-4690 / AMD Ryzen 3 1200<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX 1060 (3 GB) / AMD Radeon RX 580 (4 GB)<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 2 GB available space<br></li><li><strong>Sound Card:</strong> DirectX Compatible</li></ul>",
+  "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "developers": [
+  "might not adorable"
+ ],
+ "publishers": [
+  "might not adorable"
+ ],
+ "demos": [
+  {
+   "appid": 5202340,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "Single-player"
+  },
+  {
+   "id": 22,
+   "description": "Steam Achievements"
+  },
+  {
+   "id": 80,
+   "description": "#category_playable_at_your_own_pace"
+  },
+  {
+   "id": 74,
+   "description": "Playable without Timed Input"
+  },
+  {
+   "id": 69,
+   "description": "Stereo Sound"
+  },
+  {
+   "id": 15,
+   "description": "Stats"
+  },
+  {
+   "id": 25,
+   "description": "Steam Leaderboards"
+  },
+  {
+   "id": 62,
+   "description": "Family Sharing"
+  }
+ ],
+ "genres": [
+  {
+   "id": "23",
+   "description": "Indie"
+  },
+  {
+   "id": "28",
+   "description": "Simulation"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/07465c6e9c60b4e253bde5e351192256a74c0faa/ss_07465c6e9c60b4e253bde5e351192256a74c0faa.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/07465c6e9c60b4e253bde5e351192256a74c0faa/ss_07465c6e9c60b4e253bde5e351192256a74c0faa.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/c4509572d5f42b8ae1181fe0554dc8a8350d67d5/ss_c4509572d5f42b8ae1181fe0554dc8a8350d67d5.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/c4509572d5f42b8ae1181fe0554dc8a8350d67d5/ss_c4509572d5f42b8ae1181fe0554dc8a8350d67d5.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/23f77770887693909364ed359a81f8a177aa61fc/ss_23f77770887693909364ed359a81f8a177aa61fc.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/23f77770887693909364ed359a81f8a177aa61fc/ss_23f77770887693909364ed359a81f8a177aa61fc.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/9db1ade0cc80134816613a0000c75b5c352260e9/ss_9db1ade0cc80134816613a0000c75b5c352260e9.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/9db1ade0cc80134816613a0000c75b5c352260e9/ss_9db1ade0cc80134816613a0000c75b5c352260e9.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/32b953fcc45684aa0915c4679c0335443952d67d/ss_32b953fcc45684aa0915c4679c0335443952d67d.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/32b953fcc45684aa0915c4679c0335443952d67d/ss_32b953fcc45684aa0915c4679c0335443952d67d.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/6ed6a0e557540347dbad03bff7f6557f251c49c1/ss_6ed6a0e557540347dbad03bff7f6557f251c49c1.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/6ed6a0e557540347dbad03bff7f6557f251c49c1/ss_6ed6a0e557540347dbad03bff7f6557f251c49c1.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/7111a7b3519a7a39e8d1164dae7a21d589b5c1e4/ss_7111a7b3519a7a39e8d1164dae7a21d589b5c1e4.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/7111a7b3519a7a39e8d1164dae7a21d589b5c1e4/ss_7111a7b3519a7a39e8d1164dae7a21d589b5c1e4.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/10d688a6c1ea62f9914146f5b0ed66c097d8876c/ss_10d688a6c1ea62f9914146f5b0ed66c097d8876c.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/10d688a6c1ea62f9914146f5b0ed66c097d8876c/ss_10d688a6c1ea62f9914146f5b0ed66c097d8876c.1920x1080.jpg?t=1788615696"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/bcdc0429844ab4fed5c447540e4061157db74bf8/ss_bcdc0429844ab4fed5c447540e4061157db74bf8.600x338.jpg?t=1788615696",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5131990/bcdc0429844ab4fed5c447540e4061157db74bf8/ss_bcdc0429844ab4fed5c447540e4061157db74bf8.1920x1080.jpg?t=1788615696"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257404437,
+   "name": "Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257404437/aad7b42397527f5916a4c7a2d32e11bf6275bbcc/movie_600x337.jpg?t=1788157666",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5131990/1500646356/5c93799012ac02019441111947d594851d437265/1787255588/dash_av1.mpd?t=1788157666",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5131990/1500646356/5c93799012ac02019441111947d594851d437265/1787255588/dash_h264.mpd?t=1788157666",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5131990/1500646356/5c93799012ac02019441111947d594851d437265/1787255588/hls_264_master.m3u8?t=1788157666",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "Coming soon"
+ },
+ "support_info": {
+  "url": "",
+  "email": "unrealkafasi@gmail.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5131990?t=1788615696",
+ "background_raw": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5131990?t=1788615696",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "10",
+   "required_age": "10",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Medo"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "6",
+   "required_age": "6",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Ängstigende Inhalte"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Horor"
+  }
+ }
+}

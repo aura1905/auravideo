@@ -1,0 +1,80 @@
+{
+ "title_en": "Gun a Rat",
+ "demo_appid": 5164120,
+ "full_appid": 5164120,
+ "developer": "WhalePlay",
+ "workdir": "episodes/s15-gun-a-rat",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s15-gun-a-rat/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "GENRE",
+   "rat hunt, online PvP"
+  ],
+  [
+   "INSTALLED",
+   "2.1 GB"
+  ],
+  [
+   "DOWNLOAD",
+   "271 MB"
+  ],
+  [
+   "SHRINKS",
+   "8 to 1"
+  ],
+  [
+   "LANGUAGES",
+   "30"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Gun a Rat",
+  "line2": "2 GB. SHIPS AS 270 MB.",
+  "size1": 96,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5164120/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Gun a Rat: a 2 GB demo that downloads as 270 MB #shorts",
+  "tags": "shorts,Gun a Rat,WhalePlay,steam demo,multiplayer,pvp,party game,rats,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

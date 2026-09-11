@@ -1,0 +1,38 @@
+1
+00:00:00,000 --> 00:00:05,009
+A school burned,
+and somebody reported the fire fourteen minutes before it started.
+
+2
+00:00:05,259 --> 00:00:07,002
+You catch them with SQL.
+
+3
+00:00:09,252 --> 00:00:15,306
+Ghost in the SQL Data. Your notebook is a query window,
+and the call-centre records answer back.
+
+4
+00:00:15,556 --> 00:00:20,408
+Easy cases teach you SELECT.
+Hard ones make you a data forensics investigator.
+
+5
+00:00:20,658 --> 00:00:25,562
+Three hundred and seventy-four megabytes,
+eight languages, and eleven reviews already.
+
+6
+00:00:25,812 --> 00:00:29,828
+Nine of the eleven are positive,
+for what is secretly a database course.
+
+7
+00:00:30,228 --> 00:00:33,983
+Worth a dip.
+You'll leave knowing more SQL than you arrived with.
+
+8
+00:00:34,383 --> 00:00:37,903
+That's Demo Dip.
+A new Steam demo, every day.

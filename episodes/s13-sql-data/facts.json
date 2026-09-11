@@ -1,0 +1,34 @@
+{
+ "demo_appid": 5072550,
+ "full_appid": 5072430,
+ "name": "Ghost in the SQL Data",
+ "developers": [
+  "Isaac MENARD"
+ ],
+ "publishers": [
+  "Isaac MENARD"
+ ],
+ "release": "October 2026",
+ "coming_soon": true,
+ "genres": [
+  "Simulation",
+  "Strategy"
+ ],
+ "languages": "English*, French*, Italian*, German*, Spanish - Spain*, Japanese*, Korean*, Russian**languages with full audio support",
+ "website": null,
+ "short": "Somebody reported the fire fourteen minutes before it started. Prove it in SQL by exploring the call centre data.",
+ "about": "    Here is a case. Using SQL, dig through the call centre data and find out who called before the fire started.       Use SQL to explore the data, filter it, connect the pieces. The easy levels teach you the basics and the hard ones put you in the shoes of a real data forensic, meaning an investigator who works on data.       Using the whiteboard system, you can build charts and leads, and make sense of every piece of the case in order to solve it.       Two case campaigns are available right now: find out who set the school on fire by searching the call centre databases, and track down a criminal by watching how people move through the Paris metro. ",
+ "min_req": " Minimum:     OS:  Windows 10 (64-bit)    Processor:  Dual Core 2,0 GHz (Intel Core i3)    Memory:  4 GB RAM    Graphics:  Intel HD Graphics 4000 (support WebGL / DirectX 11)    Storage:  1 GB available space  ",
+ "movies": [
+  {
+   "id": 257405852,
+   "name": "main trailer"
+  }
+ ],
+ "screenshots": 6,
+ "reviews": {
+  "total": 11,
+  "positive": 9,
+  "desc": "Positive"
+ }
+}

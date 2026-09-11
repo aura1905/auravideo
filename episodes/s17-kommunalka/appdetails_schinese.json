@@ -1,0 +1,153 @@
+{
+ "type": "game",
+ "name": "KOMMUNALKA",
+ "steam_appid": 5192400,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  5192780
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >             <span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/extras/65e76a353bf733b14adfe31e530990e4.avif?t=1789037415\" width=636 height=84 /></span></p><h2 class=\"bb_tag\" >The last delivery. Late evening. An old Soviet building.</h2><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >Take on the role of a courier who just wanted to finish their shift by delivering the last order, but the apartment door closed and now you need to get out of here. In your hands, only a flashlight, giving only an illusion of safety.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >             <span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/extras/51963135ec432e44d1d0ea4502a6f831.avif?t=1789037415\" width=636 height=84 /></span></p><p class=\"bb_paragraph\" >Explore the apartment, look for a way out, and listen to the dark stories of the residents. But be careful: you will have to decide who you can trust and who is just stringing you along.</p><h2 class=\"bb_tag\" >FEATURES:</h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" >Atmospheric Point &amp; Click horror.</p></li><li><p class=\"bb_paragraph\" >Exploring dark locations with a flashlight.</p></li><li><p class=\"bb_paragraph\" >Uncover a dark story through environmental details.</p></li><li><p class=\"bb_paragraph\" >Sound design without background music.</p><p class=\"bb_paragraph\" >              <span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/extras/8d110182fe570110d9796ca4e625f000.avif?t=1789037415\" width=636 height=84 /></span></p></li></ul>",
+ "about_the_game": "<p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >             <span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/extras/65e76a353bf733b14adfe31e530990e4.avif?t=1789037415\" width=636 height=84 /></span></p><h2 class=\"bb_tag\" >The last delivery. Late evening. An old Soviet building.</h2><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >Take on the role of a courier who just wanted to finish their shift by delivering the last order, but the apartment door closed and now you need to get out of here. In your hands, only a flashlight, giving only an illusion of safety.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >             <span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/extras/51963135ec432e44d1d0ea4502a6f831.avif?t=1789037415\" width=636 height=84 /></span></p><p class=\"bb_paragraph\" >Explore the apartment, look for a way out, and listen to the dark stories of the residents. But be careful: you will have to decide who you can trust and who is just stringing you along.</p><h2 class=\"bb_tag\" >FEATURES:</h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" >Atmospheric Point &amp; Click horror.</p></li><li><p class=\"bb_paragraph\" >Exploring dark locations with a flashlight.</p></li><li><p class=\"bb_paragraph\" >Uncover a dark story through environmental details.</p></li><li><p class=\"bb_paragraph\" >Sound design without background music.</p><p class=\"bb_paragraph\" >              <span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/extras/8d110182fe570110d9796ca4e625f000.avif?t=1789037415\" width=636 height=84 /></span></p></li></ul>",
+ "short_description": "KOMMUNALKA is an atmospheric Point &amp; Click horror game. Immerse yourself in a grim story set inside a dilapidated post-Soviet communal apartment. Will you be able to escape?",
+ "supported_languages": "英语, 俄语<strong>*</strong><br><strong>*</strong>具有完全音频支持的语言",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/3f0806c1ef5ccefe00f80161548819ff66956cb6/header.jpg?t=1789037415",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/331bcf1823e41ee0808a3e501f2aa2c363543c66/capsule_231x87.jpg?t=1789037415",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/331bcf1823e41ee0808a3e501f2aa2c363543c66/capsule_184x69.jpg?t=1789037415",
+ "website": null,
+ "pc_requirements": {
+  "minimum": "<strong>最低配置:</strong><br><ul class=\"bb_ul\"><li><strong>操作系统:</strong> Windows 10 64x<br></li><li><strong>处理器:</strong> 1.8GHz Dual-Core CPU<br></li><li><strong>内存:</strong> 2 GB RAM<br></li><li><strong>显卡:</strong> Integrated graphics<br></li><li><strong>存储空间:</strong> 需要 2 GB 可用空间</li></ul>",
+  "recommended": "<strong>推荐配置:</strong><br><ul class=\"bb_ul\"><li><strong>操作系统:</strong> Windows 10 / 11 (64-bit)<br></li><li><strong>处理器:</strong>  1.8GHz Dual-Core CPU<br></li><li><strong>内存:</strong> 2 GB RAM<br></li><li><strong>显卡:</strong> Integrated graphics<br></li><li><strong>存储空间:</strong> 需要 2 GB 可用空间</li></ul>"
+ },
+ "mac_requirements": [],
+ "linux_requirements": [],
+ "developers": [
+  "FOOTAGE LOGS"
+ ],
+ "publishers": [
+  "FOOTAGE LOGS"
+ ],
+ "demos": [
+  {
+   "appid": 5192780,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "单人"
+  },
+  {
+   "id": 80,
+   "description": "#category_playable_at_your_own_pace"
+  },
+  {
+   "id": 74,
+   "description": "无需应对快速反应事件"
+  },
+  {
+   "id": 69,
+   "description": "立体声"
+  },
+  {
+   "id": 62,
+   "description": "家庭共享"
+  }
+ ],
+ "genres": [
+  {
+   "id": "25",
+   "description": "冒险"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/fa05c407e13446dddf745708ea4b2d8d2318a513/ss_fa05c407e13446dddf745708ea4b2d8d2318a513.600x338.jpg?t=1789037415",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/fa05c407e13446dddf745708ea4b2d8d2318a513/ss_fa05c407e13446dddf745708ea4b2d8d2318a513.1920x1080.jpg?t=1789037415"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/f815181ebd159606844b76dc0edaf970a1902699/ss_f815181ebd159606844b76dc0edaf970a1902699.600x338.jpg?t=1789037415",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/f815181ebd159606844b76dc0edaf970a1902699/ss_f815181ebd159606844b76dc0edaf970a1902699.1920x1080.jpg?t=1789037415"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/0817852ab968cbf5fb5bdf524962b17f72d144e4/ss_0817852ab968cbf5fb5bdf524962b17f72d144e4.600x338.jpg?t=1789037415",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/0817852ab968cbf5fb5bdf524962b17f72d144e4/ss_0817852ab968cbf5fb5bdf524962b17f72d144e4.1920x1080.jpg?t=1789037415"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/412b05bee7b2fb5c48ef0b7208513feb7694ef72/ss_412b05bee7b2fb5c48ef0b7208513feb7694ef72.600x338.jpg?t=1789037415",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/412b05bee7b2fb5c48ef0b7208513feb7694ef72/ss_412b05bee7b2fb5c48ef0b7208513feb7694ef72.1920x1080.jpg?t=1789037415"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/51b53b993b2d52333ba92b3ecac058c51b0d2170/ss_51b53b993b2d52333ba92b3ecac058c51b0d2170.600x338.jpg?t=1789037415",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/51b53b993b2d52333ba92b3ecac058c51b0d2170/ss_51b53b993b2d52333ba92b3ecac058c51b0d2170.1920x1080.jpg?t=1789037415"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/5daeff1c4d7ee82c4e64d9a2cb58923b3aca0bc8/ss_5daeff1c4d7ee82c4e64d9a2cb58923b3aca0bc8.600x338.jpg?t=1789037415",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/5daeff1c4d7ee82c4e64d9a2cb58923b3aca0bc8/ss_5daeff1c4d7ee82c4e64d9a2cb58923b3aca0bc8.1920x1080.jpg?t=1789037415"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257413594,
+   "name": "KOMMUNALKA - Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257413594/5de7ec0f65863f58e354cb560700fe2304b65f70/movie_600x337.jpg?t=1788945716",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5192400/904698413/7449f1650463001f848e1ddbfc61bc17b13b2492/1788183119/dash_av1.mpd?t=1788945716",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5192400/904698413/7449f1650463001f848e1ddbfc61bc17b13b2492/1788183119/dash_h264.mpd?t=1788945716",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5192400/904698413/7449f1650463001f848e1ddbfc61bc17b13b2492/1788183119/hls_264_master.m3u8?t=1788945716",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "即将推出"
+ },
+ "support_info": {
+  "url": "",
+  "email": "errorfootage@gmail.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5192400?t=1789037415",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5192400/874b92e353b3571a9c100a14f6108f3fdf90b754/page_bg_raw.jpg?t=1789037415",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "14",
+   "required_age": "14",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Violência\nMedo\nLinguagem imprópria"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "16",
+   "required_age": "16",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Horror\nSchimpfwörte"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Horor\nPenggunaan bahasa"
+  }
+ }
+}
