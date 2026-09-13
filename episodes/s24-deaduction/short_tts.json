@@ -1,0 +1,92 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "Six workers start the night shift at a hotel.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.0
+  },
+  "sub": "Six workers start the night shift at a hotel."
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Not all of them are human.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Not all of them are human."
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 16.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Deaduction. You might be staff, keeping the hotel running and hunting for the imposters.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Deaduction. You might be staff, keeping the hotel running and hunting for the imposters."
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "Or a poltergeist, dropping chandeliers and launching vases.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  },
+  "sub": "Or a poltergeist, dropping chandeliers and launching vases."
+ },
+ {
+  "id": "s5",
+  "sec": "intro",
+  "text": "Or a doppelganger, disguised as one of your co-workers.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 26.0
+  },
+  "sub": "Or a doppelganger, disguised as one of your co-workers."
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "The Windows demo is just over six gigabytes, English only.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The Windows demo is just over six gigabytes, English only."
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip with friends you don't fully trust.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.0
+  },
+  "sub": "Worth a dip with friends you don't fully trust."
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day."
+ }
+]

@@ -1,0 +1,34 @@
+{
+ "demo_appid": 5080850,
+ "full_appid": 5035770,
+ "name": "Evilos",
+ "developers": [
+  "Bunch of Idiots Studio"
+ ],
+ "publishers": [
+  "Bunch of Idiots Studio"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Strategy"
+ ],
+ "languages": "English, French, Italian, German, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Spanish - Latin America, Turkish",
+ "website": "https://bunchofidiots.website/games",
+ "short": "Evilos is an action tower defense game where you play as an ancient evil sorcerer battling endless waves of do-gooders. Tear down the kingdom with a vast arsenal of evolvable magic weapons and spells, and bolster your defenses with elite minions across 10 acts. This time, you are the final boss!",
+ "about": " Evilos is an action tower defense game where you play as an ancient evil sorcerer battling endless waves of do-gooders. Tear down the kingdom with a vast arsenal of evolvable magic weapons and spells, and bolster your defenses with elite minions across 10 acts. This time, you are the final boss!            Annihilate all the heroes with meteors, tornadoes, lightning and more devastating spells.            Unleash your arsenal of magic-imbued guns to freeze, burn, electrocute and disintegrate your enemies.            Raise the dead to serve as your personal bodyguards. Jack Marrow, Nicolas Ribcage, Scary Potter, Vincent Van Gore and Arnold Schwarzenecro await your command!            Upgrade and evolve your weapons and spells into deadlier new forms.            Exact your revenge upon the world across 10 acts spanning the kingdom, each ending in a challenging boss fight.  KEY FEATURES     Play the villain  — an ancient evil sorcerer, awakened after a thousand years to reclaim his stolen power     A cursed arsenal  — discover tons of weapon and spell combinations and create beautifully evil synergies to destroy your enemies     Upgrade &amp; evolve  — each weapon and spell can be upgraded and evolved into a deadlier final form     Raise the dead  — command the fallen champions as your personal minions     A kingdom to conquer  — 100 levels across 10 acts, each ending in an epic boss battle        The kingdom sealed you away and called it a happy ending. Time to rewrite it — wishlist Evilos and become the final boss.   ",
+ "min_req": " Minimum:     OS:  Windows 10 64-bit    Processor:  Intel Core i3 or equivalent    Memory:  \t2 GB RAM    Graphics:  Intel HD Graphics 4000, 1 GB    DirectX:  Version 11    Storage:  800 MB available space    Sound Card:  DirectX Compatible  ",
+ "movies": [
+  {
+   "id": 257389068,
+   "name": "Announcement Trailer"
+  }
+ ],
+ "screenshots": 7,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

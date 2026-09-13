@@ -1,0 +1,34 @@
+{
+ "demo_appid": 5194100,
+ "full_appid": 4963310,
+ "name": "May, Be Dead",
+ "developers": [
+  "DiBaDo Studio"
+ ],
+ "publishers": [
+  "DiBaDo Studio"
+ ],
+ "release": "December 2026",
+ "coming_soon": true,
+ "genres": [
+  "Adventure",
+  "Indie"
+ ],
+ "languages": "English, Simplified Chinese",
+ "website": "https://maybedead.com",
+ "short": "May, Be Dead is a first-person surrealist adventure game about walking through endless hexagonal rooms of memory and repeatedly killing May, a mysterious figure you shared an intimate yet ambiguous relationship with.",
+ "about": " A country road appeared behind the door. A runaway car crashed into a roadside tree, burning, its hood dented, wisps of smoke rising. May, sitting in the driver's seat, was dead, covered in blood.  This is a journey seen through the rearview mirror. Who exactly is May? Why does &quot;I&quot; need to keep killing May? Coming to your senses, you find yourself gripping another doorknob, passing through another corridor, and arriving at the hub of a series of interconnected rooms, each containing the remains of your deceased friend.   May, Be Dead  comprises four chapters. In the game, &quot;erasing&quot; someone's existence becomes your only path to progress. The art style of  May, Be Dead  draws inspiration from various works of theater, literature, film, and architecture. The game abandons the traditional game structure, prioritizing &quot;monotony&quot; and spatial narrative as its core experience.  Features:     Explore an Endless Architecture of Memory  - Wander through a shifting hexagonal world where intimate rooms appear, disappear, repeat, and gradually transform.       Relive a Fragmented Relationship  - Piece together your past with May through the space, interactions, and encounters.     Experience Repetition -  Return to the same ritual again and again to distortion, uncertainty, and new meaning.   ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10    Processor:  Intel Core i5-4460 / AMD FX-6300    Memory:  4 GB RAM    Graphics:  NVIDIA GeForce GTX 950 / AMD Radeon R7 370 / Intel Arc Graphics    DirectX:  Version 11    Storage:  3 GB available space  ",
+ "movies": [
+  {
+   "id": 257389099,
+   "name": "May, Be Dead - Gameplay Trailer"
+  }
+ ],
+ "screenshots": 11,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "title_en": "Send Them to Hell",
+ "demo_appid": 5129630,
+ "full_appid": 5129630,
+ "developer": "cbgames",
+ "workdir": "episodes/s25-send-them-to-hell",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s25-send-them-to-hell/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "GENRE",
+   "pixel-3D roguelike"
+  ],
+  [
+   "CO-OP",
+   "4 players online"
+  ],
+  [
+   "HEROES",
+   "knight, corn robot, wizard"
+  ],
+  [
+   "INSTALLED",
+   "3 GB"
+  ],
+  [
+   "FULL GAME",
+   "29 Oct 2026"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Send Them to Hell",
+  "line2": "THE CORN ROBOT IS A HERO.",
+  "size1": 70,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5129630/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Send Them to Hell: a roguelike where one of the heroes is a corn-launching robot #shorts",
+  "tags": "shorts,Send Them to Hell,cbgames,Sojaplin Studios,steam demo,roguelike,co-op,horde,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

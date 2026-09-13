@@ -1,0 +1,84 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "In this tower defense game, you're not defending the kingdom.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 1.0
+  }
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "You're the final boss.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 16.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Evilos. An ancient evil sorcerer, holding off endless waves of heroes with meteors, lightning and magic guns.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "Your undead bodyguards include Scary Potter and Arnold Schwarzenecro.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Ten acts, each ending in a boss fight, and the store lists twelve languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "The demo itself is under eight hundred megabytes.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 6.0
+  }
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip. Being evil looks fun.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.0
+  }
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

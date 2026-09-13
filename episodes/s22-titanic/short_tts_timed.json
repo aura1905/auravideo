@@ -1,0 +1,111 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "Someone made a Titanic game, and the developer is called White Star Line.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.0
+  },
+  "sub": "Someone made a Titanic game, and the developer is called White Star Line.",
+  "dur": 4.389,
+  "wav": "episodes/s22-titanic/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "That's the company that owned the real ship.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's the company that owned the real ship.",
+  "dur": 2.142,
+  "wav": "episodes/s22-titanic/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 63.0
+  },
+  "dur": 2.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Titanic. You own the ship, pick the route, and carry three classes of passengers.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Titanic. You own the ship, pick the route, and carry three classes of passengers.",
+  "dur": 5.068,
+  "wav": "episodes/s22-titanic/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "Southampton to New York is on the map. So are the ice fields.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 87.0
+  },
+  "sub": "Southampton to New York is on the map. So are the ice fields.",
+  "dur": 3.814,
+  "wav": "episodes/s22-titanic/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "The demo is about two point seven gigabytes, and almost all of it sits in one single file.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about two point seven gigabytes, and almost all of it sits in one single file.",
+  "dur": 5.486,
+  "wav": "episodes/s22-titanic/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "It also carries Dynamic Water Physics, a Unity plugin that makes boats float.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 97.0
+  },
+  "sub": "It also carries Dynamic Water Physics, a Unity plugin that makes boats float.",
+  "dur": 4.624,
+  "wav": "episodes/s22-titanic/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip. Just watch for icebergs.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.0
+  },
+  "sub": "Worth a dip. Just watch for icebergs.",
+  "dur": 2.664,
+  "wav": "episodes/s22-titanic/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day.",
+  "dur": 3.318,
+  "wav": "episodes/s22-titanic/tts_short/s8.wav"
+ }
+]

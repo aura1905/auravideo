@@ -1,0 +1,203 @@
+{
+ "type": "game",
+ "name": "May, Be Dead",
+ "steam_appid": 4963310,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  5194100
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" >A country road appeared behind the door. A runaway car crashed into a roadside tree, burning, its hood dented, wisps of smoke rising. May, sitting in the driver's seat, was dead, covered in blood.</p><p class=\"bb_paragraph\" >This is a journey seen through the rearview mirror. Who exactly is May? Why does &quot;I&quot; need to keep killing May? Coming to your senses, you find yourself gripping another doorknob, passing through another corridor, and arriving at the hub of a series of interconnected rooms, each containing the remains of your deceased friend.</p><p class=\"bb_paragraph\" ><i>May, Be Dead</i> comprises four chapters. In the game, &quot;erasing&quot; someone's existence becomes your only path to progress. The art style of <i>May, Be Dead</i> draws inspiration from various works of theater, literature, film, and architecture. The game abandons the traditional game structure, prioritizing &quot;monotony&quot; and spatial narrative as its core experience.</p><h2 class=\"bb_tag\" >Features:</h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong>Explore an Endless Architecture of Memory</strong> - Wander through a shifting hexagonal world where intimate rooms appear, disappear, repeat, and gradually transform.</p></li></ul><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong>Relive a Fragmented Relationship</strong> - Piece together your past with May through the space, interactions, and encounters.</p></li><li><p class=\"bb_paragraph\" ><strong>Experience Repetition -</strong> Return to the same ritual again and again to distortion, uncertainty, and new meaning.</p></li></ul>",
+ "about_the_game": "<p class=\"bb_paragraph\" >A country road appeared behind the door. A runaway car crashed into a roadside tree, burning, its hood dented, wisps of smoke rising. May, sitting in the driver's seat, was dead, covered in blood.</p><p class=\"bb_paragraph\" >This is a journey seen through the rearview mirror. Who exactly is May? Why does &quot;I&quot; need to keep killing May? Coming to your senses, you find yourself gripping another doorknob, passing through another corridor, and arriving at the hub of a series of interconnected rooms, each containing the remains of your deceased friend.</p><p class=\"bb_paragraph\" ><i>May, Be Dead</i> comprises four chapters. In the game, &quot;erasing&quot; someone's existence becomes your only path to progress. The art style of <i>May, Be Dead</i> draws inspiration from various works of theater, literature, film, and architecture. The game abandons the traditional game structure, prioritizing &quot;monotony&quot; and spatial narrative as its core experience.</p><h2 class=\"bb_tag\" >Features:</h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong>Explore an Endless Architecture of Memory</strong> - Wander through a shifting hexagonal world where intimate rooms appear, disappear, repeat, and gradually transform.</p></li></ul><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong>Relive a Fragmented Relationship</strong> - Piece together your past with May through the space, interactions, and encounters.</p></li><li><p class=\"bb_paragraph\" ><strong>Experience Repetition -</strong> Return to the same ritual again and again to distortion, uncertainty, and new meaning.</p></li></ul>",
+ "short_description": "May, Be Dead is a first-person surrealist adventure game about walking through endless hexagonal rooms of memory and repeatedly killing May, a mysterious figure you shared an intimate yet ambiguous relationship with.",
+ "supported_languages": "영어, 중국어 간체",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/e861576e0e84cea92128968f003dbe572a95cc6b/header.jpg?t=1789249676",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/34d54baaca148f213991ec89a72719169bb21608/capsule_231x87.jpg?t=1789249676",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/34d54baaca148f213991ec89a72719169bb21608/capsule_184x69.jpg?t=1789249676",
+ "website": "https://maybedead.com",
+ "pc_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"><li>64비트 프로세서와 운영 체제가 필요합니다<br></li><li><strong>운영 체제:</strong> Windows 10<br></li><li><strong>프로세서:</strong> Intel Core i5-4460 / AMD FX-6300<br></li><li><strong>메모리:</strong> 4 GB RAM<br></li><li><strong>그래픽:</strong> NVIDIA GeForce GTX 950 / AMD Radeon R7 370 / Intel Arc Graphics<br></li><li><strong>DirectX:</strong> 버전 11<br></li><li><strong>저장 공간:</strong> 3 GB 사용 가능 공간</li></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"><li>64비트 프로세서와 운영 체제가 필요합니다<br></li><li><strong>운영 체제:</strong> Windows 11<br></li><li><strong>프로세서:</strong> Intel Core i5-10400 / AMD Ryzen 5 3600<br></li><li><strong>메모리:</strong> 8 GB RAM<br></li><li><strong>그래픽:</strong> NVIDIA GeForce GTX 1660 Super / AMD Radeon RX 6600<br></li><li><strong>DirectX:</strong> 버전 11<br></li><li><strong>저장 공간:</strong> 3 GB 사용 가능 공간</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"><li>Apple 프로세서 필요<br></li><li><strong>운영 체제:</strong> macOS 12 Monterey<br></li><li><strong>프로세서:</strong> Apple M1<br></li><li><strong>메모리:</strong> 4 GB RAM<br></li><li><strong>그래픽:</strong> Apple M1<br></li><li><strong>저장 공간:</strong> 3 GB 사용 가능 공간</li></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"><li>Apple 프로세서 필요<br></li><li><strong>운영 체제:</strong> macOS 14 Sonoma<br></li><li><strong>프로세서:</strong> Apple M1<br></li><li><strong>메모리:</strong> 8 GB RAM<br></li><li><strong>그래픽:</strong> Apple M1<br></li><li><strong>저장 공간:</strong> 3 GB 사용 가능 공간</li></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "developers": [
+  "DiBaDo Studio"
+ ],
+ "publishers": [
+  "DiBaDo Studio"
+ ],
+ "demos": [
+  {
+   "appid": 5194100,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": true,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "싱글 플레이어"
+  },
+  {
+   "id": 22,
+   "description": "Steam 도전 과제"
+  },
+  {
+   "id": 82,
+   "description": "#category_contrast_controls"
+  },
+  {
+   "id": 68,
+   "description": "음량 개별 조절"
+  },
+  {
+   "id": 74,
+   "description": "퀵타임 이벤트 없이 플레이 가능"
+  },
+  {
+   "id": 79,
+   "description": "수시 저장"
+  },
+  {
+   "id": 69,
+   "description": "스테레오 사운드"
+  },
+  {
+   "id": 62,
+   "description": "가족 공유"
+  }
+ ],
+ "genres": [
+  {
+   "id": "25",
+   "description": "어드벤처"
+  },
+  {
+   "id": "23",
+   "description": "인디"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/42a2c1eed5c4b77fad752ccb3ba9ff0b27409593/ss_42a2c1eed5c4b77fad752ccb3ba9ff0b27409593.600x338.jpg?t=1789249676",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/42a2c1eed5c4b77fad752ccb3ba9ff0b27409593/ss_42a2c1eed5c4b77fad752ccb3ba9ff0b27409593.1920x1080.jpg?t=1789249676"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/8d14de139c4fbbc14a33246086dbfcac74cc86f9/ss_8d14de139c4fbbc14a33246086dbfcac74cc86f9.600x338.jpg?t=1789249676",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/8d14de139c4fbbc14a33246086dbfcac74cc86f9/ss_8d14de139c4fbbc14a33246086dbfcac74cc86f9.1920x1080.jpg?t=1789249676"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/e1126f54dc7f0f4a8425ff40e46f323cd71fc017/ss_e1126f54dc7f0f4a8425ff40e46f323cd71fc017.600x338.jpg?t=1789249676",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/e1126f54dc7f0f4a8425ff40e46f323cd71fc017/ss_e1126f54dc7f0f4a8425ff40e46f323cd71fc017.1920x1080.jpg?t=1789249676"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/b3f3c1cb26db141a9e2185cb1c0738141a973969/ss_b3f3c1cb26db141a9e2185cb1c0738141a973969.600x338.jpg?t=1789249676",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/b3f3c1cb26db141a9e2185cb1c0738141a973969/ss_b3f3c1cb26db141a9e2185cb1c0738141a973969.1920x1080.jpg?t=1789249676"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/518b1751339f8ad13ceb8c910318dcde5f01ecb2/ss_518b1751339f8ad13ceb8c910318dcde5f01ecb2.600x338.jpg?t=1789249676",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/518b1751339f8ad13ceb8c910318dcde5f01ecb2/ss_518b1751339f8ad13ceb8c910318dcde5f01ecb2.1920x1080.jpg?t=1789249676"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/46a6fe6a8553b5168a4d1256ef3158f6d5af6df1/ss_46a6fe6a8553b5168a4d1256ef3158f6d5af6df1.600x338.jpg?t=1789249676",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/46a6fe6a8553b5168a4d1256ef3158f6d5af6df1/ss_46a6fe6a8553b5168a4d1256ef3158f6d5af6df1.1920x1080.jpg?t=1789249676"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/fa7104f7946bccf00bf868c49f538659f3f77d78/ss_fa7104f7946bccf00bf868c49f538659f3f77d78.600x338.jpg?t=1789249676",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/fa7104f7946bccf00bf868c49f538659f3f77d78/ss_fa7104f7946bccf00bf868c49f538659f3f77d78.1920x1080.jpg?t=1789249676"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/b64cdf1bad3e5b10d3d5d7c220eada14c62d6ebf/ss_b64cdf1bad3e5b10d3d5d7c220eada14c62d6ebf.600x338.jpg?t=1789249676",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/b64cdf1bad3e5b10d3d5d7c220eada14c62d6ebf/ss_b64cdf1bad3e5b10d3d5d7c220eada14c62d6ebf.1920x1080.jpg?t=1789249676"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/7a60f9cd8404f4af4ff8aa5245f9880062517380/ss_7a60f9cd8404f4af4ff8aa5245f9880062517380.600x338.jpg?t=1789249676",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/7a60f9cd8404f4af4ff8aa5245f9880062517380/ss_7a60f9cd8404f4af4ff8aa5245f9880062517380.1920x1080.jpg?t=1789249676"
+  },
+  {
+   "id": 9,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/f883c5f905edacd4e4e33db88b8275cb56dac25b/ss_f883c5f905edacd4e4e33db88b8275cb56dac25b.600x338.jpg?t=1789249676",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/f883c5f905edacd4e4e33db88b8275cb56dac25b/ss_f883c5f905edacd4e4e33db88b8275cb56dac25b.1920x1080.jpg?t=1789249676"
+  },
+  {
+   "id": 10,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/a4e392f71bcab62fc65fcf142672f1fc9ecd73ce/ss_a4e392f71bcab62fc65fcf142672f1fc9ecd73ce.600x338.jpg?t=1789249676",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/a4e392f71bcab62fc65fcf142672f1fc9ecd73ce/ss_a4e392f71bcab62fc65fcf142672f1fc9ecd73ce.1920x1080.jpg?t=1789249676"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257389099,
+   "name": "May, Be Dead - Gameplay Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257389099/92166e4e2af6382749c9814960c12dcb06b972ed/movie_600x337.jpg?t=1789172518",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/4963310/1628593545/5136bf56af216e333df9fe8a15d0aaf001edf192/1789171814/dash_av1.mpd?t=1789172518",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/4963310/1628593545/5136bf56af216e333df9fe8a15d0aaf001edf192/1789171814/dash_h264.mpd?t=1789172518",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/4963310/1628593545/5136bf56af216e333df9fe8a15d0aaf001edf192/1789171814/hls_264_master.m3u8?t=1789172518",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "2026년 12월"
+ },
+ "support_info": {
+  "url": "https://maybedead.com",
+  "email": "info@maybedead.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/4963310?t=1789249676",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4963310/ac6f50abcd384ad10a3d5952cc83d691189d1d10/page_bg_raw.jpg?t=1789249676",
+ "content_descriptors": {
+  "ids": [
+   2,
+   5
+  ],
+  "notes": "May, Be Dead contains frequent depictions of death and mandatory acts of killing.\r\n\r\nPlayer discretion is advised."
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "14",
+   "required_age": "14",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Violência\nMedo"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "16",
+   "required_age": "16",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Horror\nAlkohol / Tabak"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Horor\nKekerasan\nRokok dan/atau rokok elektronik, minuman beralkohol, narkotika, psikotropika, dan/atau zat adiktif lainnya"
+  }
+ }
+}

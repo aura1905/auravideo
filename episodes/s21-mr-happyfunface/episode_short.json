@@ -1,0 +1,80 @@
+{
+ "title_en": "Mr HappyFunFace",
+ "demo_appid": 5208720,
+ "full_appid": 5208720,
+ "developer": "Big Red Eight",
+ "workdir": "episodes/s21-mr-happyfunface",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s21-mr-happyfunface/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "GENRE",
+   "60-second horror escape"
+  ],
+  [
+   "ENGINE",
+   "Unreal"
+  ],
+  [
+   "BROWSER",
+   "Chromium, 146 MB"
+  ],
+  [
+   "INSTALLED",
+   "2.4 GB"
+  ],
+  [
+   "REVIEWS",
+   "11 of 12 positive"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Mr HappyFunFace",
+  "line2": "YOU HAVE 60 SECONDS.",
+  "size1": 96,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5208720/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Mr HappyFunFace: a 60-second horror escape with a web browser inside #shorts",
+  "tags": "shorts,Mr HappyFunFace,Big Red Eight,steam demo,horror game,escape game,unreal engine,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

@@ -1,0 +1,97 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "Four players, one warehouse, and a tool called ROPE that can throw anything.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  },
+  "sub": "Four players, one warehouse, and a tool called ROPE that can throw anything.",
+  "dur": 4.624,
+  "wav": "episodes/s27-stack-the-pack/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Including the cargo you were meant to deliver.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Including the cargo you were meant to deliver.",
+  "dur": 2.194,
+  "wav": "episodes/s27-stack-the-pack/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.0
+  },
+  "dur": 2.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Stack the Pack. Pick the cargo, pack it, stack it, and ship the orders before everything falls apart.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Stack the Pack. Pick the cargo, pack it, stack it, and ship the orders before everything falls apart.",
+  "dur": 5.695,
+  "wav": "episodes/s27-stack-the-pack/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "Break the cargo and you earn fewer coins.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Break the cargo and you earn fewer coins.",
+  "dur": 2.717,
+  "wav": "episodes/s27-stack-the-pack/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "The whole demo is about four hundred megabytes, in English, German and Polish.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The whole demo is about four hundred megabytes, in English, German and Polish.",
+  "dur": 4.624,
+  "wav": "episodes/s27-stack-the-pack/tts_short/s5.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip with friends who can take a little yelling.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 44.0
+  },
+  "sub": "Worth a dip with friends who can take a little yelling.",
+  "dur": 2.717,
+  "wav": "episodes/s27-stack-the-pack/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day.",
+  "dur": 3.265,
+  "wav": "episodes/s27-stack-the-pack/tts_short/s8.wav"
+ }
+]

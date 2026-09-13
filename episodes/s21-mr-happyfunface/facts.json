@@ -1,0 +1,34 @@
+{
+ "demo_appid": 5208720,
+ "full_appid": 3964010,
+ "name": "Mr HappyFunFace",
+ "developers": [
+  "Big Red Eight"
+ ],
+ "publishers": [
+  "Big Red Eight"
+ ],
+ "release": "23 Oct, 2025",
+ "coming_soon": false,
+ "genres": [
+  "Action",
+  "Indie"
+ ],
+ "languages": "English**languages with full audio support",
+ "website": null,
+ "short": "A brutal horror challenge built around fast, repeatable runs. Find randomized keys locations, optimize your route and escape Mr. HappyFunFace. Be fast, die lots but always remember... Mr HappyFunFace is watching.",
+ "about": "  A 60-second horror escape challenge.   Every run begins with one minute on the clock. Find the keys, escape the basement and avoid Mr. HappyFunFace before time runs out. Key locations change every run, turning every failure into a lesson and every escape into a faster one. Master the maze, optimize your route and see if you can survive the twisted experiment.  Mr. HappyFunFace blends psychological horror with fast-paced replayability. Short runs make every attempt meaningful as you master the maze, refine your route and chase the perfect escape.                   Dr. Edmund Vale, once a celebrated child psychologist, believed society was rotting on a diet of screens and endless entertainment. His answer was  Mr HappyFunFace , a grotesque figure designed to shock children into presence and focus. Branded cruel and dangerous, Vale’s career collapsed.  Decades later, warped by isolation, he has turned his theories into a religion. You are now one of many subjects to be tested in his most extreme and brutally difficult experiment yet.                     ⏱  Escape Before Time Runs Out  Every run begins with just 60 seconds. Make every decision count.      🔑  Randomized Objectives  Key locations change between runs, forcing you to adapt instead of memorizing a single solution.      👁  Survive Mr. HappyFunFace  A relentless presence awaits every attempt. Staying alive requires awareness, quick thinking and nerve.      🏃  Learn. Retry. Improve.  Each failure teaches you a faster route, better decisions and new ways to escape.      🧩  Uncover the Mystery  Explore the psychopath's basement and piece together the disturbing story behind Dr. Vale's experiment.       🎯 Built for Replayability  Improve your escape time, discover hidden details and master every run.                       “You see, the real prison was   comfort   all along. Let’s see if you deserve freedom.” - Dr Edmund Vale           ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10 64-bit    Processor:  4-core (Intel i5-6500 / Ryzen 3 1200 or better)    Memory:  8 GB RAM    Graphics:  DX12 - GTX 970 / GTX 1060 3–6 GB / RX 470–580 4 GB or better    DirectX:  Version 12    Storage:  3 GB available space  ",
+ "movies": [
+  {
+   "id": 257187094,
+   "name": "Mr HappyFunFace Announce Trailer"
+  }
+ ],
+ "screenshots": 5,
+ "reviews": {
+  "total": 12,
+  "positive": 11,
+  "desc": "Positive"
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "demo_appid": 5129630,
+ "full_appid": 4922730,
+ "name": "Send Them to Hell",
+ "developers": [
+  "cbgames"
+ ],
+ "publishers": [
+  "Sojaplin Studios"
+ ],
+ "release": "29 Oct, 2026",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Casual",
+  "Indie"
+ ],
+ "languages": "English**languages with full audio support",
+ "website": null,
+ "short": "Demons want Earth. Bad idea. Smash them back to Hell in a chaotic pixel-meets-3D roguelike of absurd, game-breaking builds. With heroes like a holy Knight, a Corn-Launching Robot, or a Wizard Girlie and her ferocious cat. Play solo or 4-player online co-op. Commence the slaughter. Send Them To Hell.",
+ "about": "     ",
+ "min_req": " Minimum:     OS:  Windows 10 64-bit    Processor:  Intel Core i3-4130 / AMD FX-6300    Memory:  4096 MB RAM    Graphics:  GeForce GTX 460 / Radeon HD 5770 / Intel HD 4000 (OpenGL 3.3)    Network:  Broadband Internet connection    Storage:  2048 MB available space    Sound Card:  Any Windows-compatible audio device    Additional Notes:  Requires an OpenGL 3.3 capable GPU. Java runtime is bundled. Internet connection required for online co-op only.  ",
+ "movies": [
+  {
+   "id": 257423478,
+   "name": "DEMO OUT NOW!!"
+  },
+  {
+   "id": 257382740,
+   "name": "Send Them to Hell - Official Trailer "
+  }
+ ],
+ "screenshots": 8,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

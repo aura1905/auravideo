@@ -1,0 +1,80 @@
+{
+ "title_en": "Stack the Pack!",
+ "demo_appid": 5180820,
+ "full_appid": 5180820,
+ "developer": "Super Duper Vibes",
+ "workdir": "episodes/s27-stack-the-pack",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s27-stack-the-pack/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "GENRE",
+   "co-op warehouse chaos"
+  ],
+  [
+   "PLAYERS",
+   "1 to 4"
+  ],
+  [
+   "TOOL",
+   "R.O.P.E."
+  ],
+  [
+   "INSTALLED",
+   "408 MB"
+  ],
+  [
+   "LANGUAGES",
+   "EN / DE / PL"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Stack the Pack!",
+  "line2": "SHIP IT BEFORE IT BREAKS.",
+  "size1": 96,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5180820/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Stack the Pack!: four players, one warehouse, and a rope that throws everything #shorts",
+  "tags": "shorts,Stack the Pack,Super Duper Vibes,steam demo,co-op,party game,warehouse,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

@@ -1,0 +1,84 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "Killer tacos. Rabid salads. Vengeful desserts.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 217.0
+  }
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "And you're a food court chef with a very strange gun.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 49.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Nightmare Kitchen. A miracle ingredient turned the Tater Hills Mall food into mutants, and you're on today's menu.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "Go in alone, or bring up to three friends in co-op.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Every run through the dungeons is laid out differently, themed on American, Mexican, Asian, dessert and health food.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 145.0
+  }
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "The demo is just over seven gigabytes on your drive, English only.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip with friends and no appetite.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 169.0
+  }
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

@@ -1,0 +1,110 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "Killer tacos. Rabid salads. Vengeful desserts.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 217.0
+  },
+  "sub": "Killer tacos. Rabid salads. Vengeful desserts.",
+  "dur": 4.023,
+  "wav": "episodes/s23-nightmare-kitchen/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "And you're a food court chef with a very strange gun.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "And you're a food court chef with a very strange gun.",
+  "dur": 3.082,
+  "wav": "episodes/s23-nightmare-kitchen/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 49.0
+  },
+  "dur": 2.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Nightmare Kitchen. A miracle ingredient turned the Tater Hills Mall food into mutants, and you're on today's menu.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Nightmare Kitchen. A miracle ingredient turned the Tater Hills Mall food into mutants, and you're on today's menu.",
+  "dur": 6.713,
+  "wav": "episodes/s23-nightmare-kitchen/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "Go in alone, or bring up to three friends in co-op.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "Go in alone, or bring up to three friends in co-op.",
+  "dur": 2.978,
+  "wav": "episodes/s23-nightmare-kitchen/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Every run through the dungeons is laid out differently, themed on American, Mexican, Asian, dessert and health food.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 145.0
+  },
+  "sub": "Every run through the dungeons is laid out differently, themed on American, Mexican, Asian, dessert and health food.",
+  "dur": 6.296,
+  "wav": "episodes/s23-nightmare-kitchen/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "The demo is just over seven gigabytes on your drive, English only.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is just over seven gigabytes on your drive, English only.",
+  "dur": 3.814,
+  "wav": "episodes/s23-nightmare-kitchen/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip with friends and no appetite.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 169.0
+  },
+  "sub": "Worth a dip with friends and no appetite.",
+  "dur": 2.351,
+  "wav": "episodes/s23-nightmare-kitchen/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day.",
+  "dur": 3.396,
+  "wav": "episodes/s23-nightmare-kitchen/tts_short/s8.wav"
+ }
+]

@@ -1,0 +1,80 @@
+{
+ "title_en": "May, Be Dead",
+ "demo_appid": 5194100,
+ "full_appid": 5194100,
+ "developer": "DiBaDo Studio",
+ "workdir": "episodes/s26-may-be-dead",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s26-may-be-dead/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "GENRE",
+   "surreal adventure"
+  ],
+  [
+   "CHAPTERS",
+   "4"
+  ],
+  [
+   "WINDOWS",
+   "713 MB"
+  ],
+  [
+   "LANGUAGES",
+   "English, Chinese"
+  ],
+  [
+   "FULL GAME",
+   "December 2026"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "May, Be Dead",
+  "line2": "KILL MAY. AGAIN.",
+  "size1": 96,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5194100/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "May, Be Dead: the only way forward is to kill your friend, again and again #shorts",
+  "tags": "shorts,May Be Dead,DiBaDo Studio,steam demo,surreal,adventure,walking sim,indie,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

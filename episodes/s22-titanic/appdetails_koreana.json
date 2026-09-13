@@ -1,0 +1,278 @@
+{
+ "type": "game",
+ "name": "Titanic",
+ "steam_appid": 3903580,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  5209150
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" >A simulator of the operation of the most famous ship Titanic. Become the owner and captain of the Titanic, sail around the world! Carry passengers and cargo, make money and prosper!</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/1e3cdc4c3a843de1e31733bd495b7f4c.poster.avif?t=1789162489\" width=426 height=240 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/1e3cdc4c3a843de1e31733bd495b7f4c.webm?t=1789162489\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/1e3cdc4c3a843de1e31733bd495b7f4c.mp4?t=1789162489\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >You are the owner of the famous ocean liner Titanic. Your company, the White Star Line, operates regular services around the world. Only you decide where your Titanic goes! Revive the famous Southampton to New York route and avoid the ice fields, or travel to Egypt, Australia and other destinations.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/c52f11b435d47b2456d314801d3c5ead.poster.avif?t=1789162489\" width=426 height=240 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/c52f11b435d47b2456d314801d3c5ead.webm?t=1789162489\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/c52f11b435d47b2456d314801d3c5ead.mp4?t=1789162489\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><strong>What's in store for you in the game</strong></p><p class=\"bb_paragraph\" >- The chance to travel around the world- Titanic carries 3 categories of passengers from the richest to the poorest</p><p class=\"bb_paragraph\" >- Trading</p><p class=\"bb_paragraph\" >- Events</p><p class=\"bb_paragraph\" >- danger and adventure</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/efbf4b4ca8e6e136ff63a8efd5d921c4.poster.avif?t=1789162489\" width=426 height=240 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/efbf4b4ca8e6e136ff63a8efd5d921c4.webm?t=1789162489\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/efbf4b4ca8e6e136ff63a8efd5d921c4.mp4?t=1789162489\" type=\"video/mp4\"></video></span></p>",
+ "about_the_game": "<p class=\"bb_paragraph\" >A simulator of the operation of the most famous ship Titanic. Become the owner and captain of the Titanic, sail around the world! Carry passengers and cargo, make money and prosper!</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/1e3cdc4c3a843de1e31733bd495b7f4c.poster.avif?t=1789162489\" width=426 height=240 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/1e3cdc4c3a843de1e31733bd495b7f4c.webm?t=1789162489\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/1e3cdc4c3a843de1e31733bd495b7f4c.mp4?t=1789162489\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >You are the owner of the famous ocean liner Titanic. Your company, the White Star Line, operates regular services around the world. Only you decide where your Titanic goes! Revive the famous Southampton to New York route and avoid the ice fields, or travel to Egypt, Australia and other destinations.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/c52f11b435d47b2456d314801d3c5ead.poster.avif?t=1789162489\" width=426 height=240 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/c52f11b435d47b2456d314801d3c5ead.webm?t=1789162489\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/c52f11b435d47b2456d314801d3c5ead.mp4?t=1789162489\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><strong>What's in store for you in the game</strong></p><p class=\"bb_paragraph\" >- The chance to travel around the world- Titanic carries 3 categories of passengers from the richest to the poorest</p><p class=\"bb_paragraph\" >- Trading</p><p class=\"bb_paragraph\" >- Events</p><p class=\"bb_paragraph\" >- danger and adventure</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/efbf4b4ca8e6e136ff63a8efd5d921c4.poster.avif?t=1789162489\" width=426 height=240 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/efbf4b4ca8e6e136ff63a8efd5d921c4.webm?t=1789162489\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/extras/efbf4b4ca8e6e136ff63a8efd5d921c4.mp4?t=1789162489\" type=\"video/mp4\"></video></span></p>",
+ "short_description": "A simulator of the operation of the most famous ship Titanic. Become the owner and captain of the Titanic, sail around the world! Carry passengers and cargo, make money and prosper!",
+ "supported_languages": "영어<strong>*</strong><br><strong>*</strong>음성이 지원되는 언어",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/63bf626d47a767305cb430e0a7764537f513bbd6/header.jpg?t=1789162489",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/8622fd3374aaea4f997a7d50a881d8035ed467a9/capsule_231x87.jpg?t=1789162489",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/8622fd3374aaea4f997a7d50a881d8035ed467a9/capsule_184x69.jpg?t=1789162489",
+ "website": null,
+ "pc_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"><li>64비트 프로세서와 운영 체제가 필요합니다<br></li><li><strong>운영 체제:</strong> Windows 10<br></li><li><strong>프로세서:</strong> Core i7-2600  or equivalent<br></li><li><strong>메모리:</strong> 6 GB RAM<br></li><li><strong>그래픽:</strong> Every basic graphics card<br></li><li><strong>저장 공간:</strong> 3 GB 사용 가능 공간</li></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"><li>64비트 프로세서와 운영 체제가 필요합니다<br></li><li><strong>운영 체제:</strong> Windows 10/11<br></li><li><strong>프로세서:</strong> Intel i7-9700 or equivalent<br></li><li><strong>메모리:</strong> 12 GB RAM<br></li><li><strong>그래픽:</strong> RTX 2070 or equivalent<br></li><li><strong>저장 공간:</strong> 3 GB 사용 가능 공간</li></ul>"
+ },
+ "mac_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "linux_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"></ul>"
+ },
+ "developers": [
+  "White Star Line"
+ ],
+ "publishers": [
+  "White Star Line"
+ ],
+ "demos": [
+  {
+   "appid": 5209150,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "싱글 플레이어"
+  },
+  {
+   "id": 78,
+   "description": "난이도 조정"
+  },
+  {
+   "id": 79,
+   "description": "수시 저장"
+  },
+  {
+   "id": 62,
+   "description": "가족 공유"
+  }
+ ],
+ "genres": [
+  {
+   "id": "4",
+   "description": "캐주얼"
+  },
+  {
+   "id": "23",
+   "description": "인디"
+  },
+  {
+   "id": "28",
+   "description": "시뮬레이션"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/7fb390cf00813d65c10c79248dbe4ba9b2a5dc5e/ss_7fb390cf00813d65c10c79248dbe4ba9b2a5dc5e.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/7fb390cf00813d65c10c79248dbe4ba9b2a5dc5e/ss_7fb390cf00813d65c10c79248dbe4ba9b2a5dc5e.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/facb9fc5a427f0b4cd07be128e8cdf5459ea02b5/ss_facb9fc5a427f0b4cd07be128e8cdf5459ea02b5.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/facb9fc5a427f0b4cd07be128e8cdf5459ea02b5/ss_facb9fc5a427f0b4cd07be128e8cdf5459ea02b5.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/1c80bf1b8debd5aa3ff05f01fa2808ba9a7933e1/ss_1c80bf1b8debd5aa3ff05f01fa2808ba9a7933e1.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/1c80bf1b8debd5aa3ff05f01fa2808ba9a7933e1/ss_1c80bf1b8debd5aa3ff05f01fa2808ba9a7933e1.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/a63c2ac8e5c095f01b6032bf4d82767e981829c1/ss_a63c2ac8e5c095f01b6032bf4d82767e981829c1.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/a63c2ac8e5c095f01b6032bf4d82767e981829c1/ss_a63c2ac8e5c095f01b6032bf4d82767e981829c1.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/ffd7ead0113875f8a6d0ebf48aad6e96048911cf/ss_ffd7ead0113875f8a6d0ebf48aad6e96048911cf.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/ffd7ead0113875f8a6d0ebf48aad6e96048911cf/ss_ffd7ead0113875f8a6d0ebf48aad6e96048911cf.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/0cb37c1be12e5dc9def161d74b8c103add139dc5/ss_0cb37c1be12e5dc9def161d74b8c103add139dc5.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/0cb37c1be12e5dc9def161d74b8c103add139dc5/ss_0cb37c1be12e5dc9def161d74b8c103add139dc5.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/38798e881d509c1655959e1e05d6aa68fae306a3/ss_38798e881d509c1655959e1e05d6aa68fae306a3.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/38798e881d509c1655959e1e05d6aa68fae306a3/ss_38798e881d509c1655959e1e05d6aa68fae306a3.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/2eb5757eb26266c21534f8844158766ad76a10af/ss_2eb5757eb26266c21534f8844158766ad76a10af.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/2eb5757eb26266c21534f8844158766ad76a10af/ss_2eb5757eb26266c21534f8844158766ad76a10af.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/050f6222ab51cc57e3cc0fdc1c517a160557d82c/ss_050f6222ab51cc57e3cc0fdc1c517a160557d82c.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/050f6222ab51cc57e3cc0fdc1c517a160557d82c/ss_050f6222ab51cc57e3cc0fdc1c517a160557d82c.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 9,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/9ac901163448a498664f612de11b100ac60926d8/ss_9ac901163448a498664f612de11b100ac60926d8.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/9ac901163448a498664f612de11b100ac60926d8/ss_9ac901163448a498664f612de11b100ac60926d8.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 10,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/70686cc42eda4d104a0b14d296aef0c154c96225/ss_70686cc42eda4d104a0b14d296aef0c154c96225.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/70686cc42eda4d104a0b14d296aef0c154c96225/ss_70686cc42eda4d104a0b14d296aef0c154c96225.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 11,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/d8e5acae8bf75f62c9209e7ff9fe409a27908aea/ss_d8e5acae8bf75f62c9209e7ff9fe409a27908aea.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/d8e5acae8bf75f62c9209e7ff9fe409a27908aea/ss_d8e5acae8bf75f62c9209e7ff9fe409a27908aea.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 12,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/ae3fc999fdcb79173164c5cb0947a2d6ad4f4e68/ss_ae3fc999fdcb79173164c5cb0947a2d6ad4f4e68.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/ae3fc999fdcb79173164c5cb0947a2d6ad4f4e68/ss_ae3fc999fdcb79173164c5cb0947a2d6ad4f4e68.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 13,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/57b616d463d70f9381874a776c4fbf2cb5c0aabb/ss_57b616d463d70f9381874a776c4fbf2cb5c0aabb.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/57b616d463d70f9381874a776c4fbf2cb5c0aabb/ss_57b616d463d70f9381874a776c4fbf2cb5c0aabb.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 14,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/25d9975d477fa3af367ac4a5a8964eece4938044/ss_25d9975d477fa3af367ac4a5a8964eece4938044.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/25d9975d477fa3af367ac4a5a8964eece4938044/ss_25d9975d477fa3af367ac4a5a8964eece4938044.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 15,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/570c3704353de3f99a80219f8b30b06e49343a12/ss_570c3704353de3f99a80219f8b30b06e49343a12.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/570c3704353de3f99a80219f8b30b06e49343a12/ss_570c3704353de3f99a80219f8b30b06e49343a12.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 16,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/09d0d15680b786ca6311bcc10546d9422ce66f43/ss_09d0d15680b786ca6311bcc10546d9422ce66f43.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/09d0d15680b786ca6311bcc10546d9422ce66f43/ss_09d0d15680b786ca6311bcc10546d9422ce66f43.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 17,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/e084836633c891f8db439e86c5d62fc01d2a5ca0/ss_e084836633c891f8db439e86c5d62fc01d2a5ca0.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/e084836633c891f8db439e86c5d62fc01d2a5ca0/ss_e084836633c891f8db439e86c5d62fc01d2a5ca0.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 18,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/8d65b897a32ef79bd5c5307697ed5f53bd977d66/ss_8d65b897a32ef79bd5c5307697ed5f53bd977d66.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/8d65b897a32ef79bd5c5307697ed5f53bd977d66/ss_8d65b897a32ef79bd5c5307697ed5f53bd977d66.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 19,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/424a9e5edc49deebe2cbe477a2606a4ab4239b90/ss_424a9e5edc49deebe2cbe477a2606a4ab4239b90.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/424a9e5edc49deebe2cbe477a2606a4ab4239b90/ss_424a9e5edc49deebe2cbe477a2606a4ab4239b90.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 20,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/5f4c9fa4be0df7ba8553d75c89bcbac591962208/ss_5f4c9fa4be0df7ba8553d75c89bcbac591962208.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/5f4c9fa4be0df7ba8553d75c89bcbac591962208/ss_5f4c9fa4be0df7ba8553d75c89bcbac591962208.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 21,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/13c877986bbca82394fee8ffaa8a9dddd1feb6b7/ss_13c877986bbca82394fee8ffaa8a9dddd1feb6b7.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/13c877986bbca82394fee8ffaa8a9dddd1feb6b7/ss_13c877986bbca82394fee8ffaa8a9dddd1feb6b7.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 22,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/3f04384bf909764bfa3c3bfe39dc7719c7418e66/ss_3f04384bf909764bfa3c3bfe39dc7719c7418e66.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/3f04384bf909764bfa3c3bfe39dc7719c7418e66/ss_3f04384bf909764bfa3c3bfe39dc7719c7418e66.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 23,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/1926193208f88002c83b0aa3be96e45e1257b289/ss_1926193208f88002c83b0aa3be96e45e1257b289.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/1926193208f88002c83b0aa3be96e45e1257b289/ss_1926193208f88002c83b0aa3be96e45e1257b289.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 24,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/f8306262c5d4d6a429cdb7860afaa03b830537d5/ss_f8306262c5d4d6a429cdb7860afaa03b830537d5.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/f8306262c5d4d6a429cdb7860afaa03b830537d5/ss_f8306262c5d4d6a429cdb7860afaa03b830537d5.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 25,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/1c586ffa7db55845d66ce2d2472384de19c72d0a/ss_1c586ffa7db55845d66ce2d2472384de19c72d0a.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/1c586ffa7db55845d66ce2d2472384de19c72d0a/ss_1c586ffa7db55845d66ce2d2472384de19c72d0a.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 26,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/99e7b63f90bb7f4bde7a1957f3d10e33ea4a3eb5/ss_99e7b63f90bb7f4bde7a1957f3d10e33ea4a3eb5.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/99e7b63f90bb7f4bde7a1957f3d10e33ea4a3eb5/ss_99e7b63f90bb7f4bde7a1957f3d10e33ea4a3eb5.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 27,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/9a2d0450189f325d9a2e5c04a9328061b556aa9c/ss_9a2d0450189f325d9a2e5c04a9328061b556aa9c.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/9a2d0450189f325d9a2e5c04a9328061b556aa9c/ss_9a2d0450189f325d9a2e5c04a9328061b556aa9c.1920x1080.jpg?t=1789162489"
+  },
+  {
+   "id": 28,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/9122bd26df3c25f565996cb56b2de513b3038d39/ss_9122bd26df3c25f565996cb56b2de513b3038d39.600x338.jpg?t=1789162489",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3903580/9122bd26df3c25f565996cb56b2de513b3038d39/ss_9122bd26df3c25f565996cb56b2de513b3038d39.1920x1080.jpg?t=1789162489"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257173611,
+   "name": "Game Trailer",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257173611/7fb390cf00813d65c10c79248dbe4ba9b2a5dc5e/movie_600x337.jpg?t=1753728449",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/3903580/1093780171/cbd797972384739e56df68e70c406fc6b53df4b4/1753399800/dash_av1.mpd?t=1753728449",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/3903580/1093780171/cbd797972384739e56df68e70c406fc6b53df4b4/1753399800/dash_h264.mpd?t=1753728449",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/3903580/1093780171/cbd797972384739e56df68e70c406fc6b53df4b4/1753399800/hls_264_master.m3u8?t=1753728449",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "발표 예정"
+ },
+ "support_info": {
+  "url": "",
+  "email": "imperian@post.cz"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/3903580?t=1789162489",
+ "background_raw": "https://store.akamai.steamstatic.com/images/storepagebackground/app/3903580?t=1789162489",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "l",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "0",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "3",
+   "required_age": "0",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": ""
+  }
+ }
+}

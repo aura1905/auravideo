@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5209150,
+ "full_appid": 3903580,
+ "name": "Titanic",
+ "developers": [
+  "White Star Line"
+ ],
+ "publishers": [
+  "White Star Line"
+ ],
+ "release": "To be announced",
+ "coming_soon": true,
+ "genres": [
+  "Casual",
+  "Indie",
+  "Simulation"
+ ],
+ "languages": "English**languages with full audio support",
+ "website": null,
+ "short": "A simulator of the operation of the most famous ship Titanic. Become the owner and captain of the Titanic, sail around the world! Carry passengers and cargo, make money and prosper!",
+ "about": " A simulator of the operation of the most famous ship Titanic. Become the owner and captain of the Titanic, sail around the world! Carry passengers and cargo, make money and prosper!              You are the owner of the famous ocean liner Titanic. Your company, the White Star Line, operates regular services around the world. Only you decide where your Titanic goes! Revive the famous Southampton to New York route and avoid the ice fields, or travel to Egypt, Australia and other destinations.               What's in store for you in the game   - The chance to travel around the world- Titanic carries 3 categories of passengers from the richest to the poorest  - Trading  - Events  - danger and adventure           ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10    Processor:  Core i7-2600  or equivalent    Memory:  6 GB RAM    Graphics:  Every basic graphics card    Storage:  3 GB available space  ",
+ "movies": [
+  {
+   "id": 257173611,
+   "name": "Game Trailer"
+  }
+ ],
+ "screenshots": 29,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

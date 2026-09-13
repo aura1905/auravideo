@@ -1,0 +1,241 @@
+{
+ "type": "game",
+ "name": "Nightmare Kitchen",
+ "steam_appid": 3077140,
+ "required_age": 0,
+ "is_free": false,
+ "controller_support": "full",
+ "dlc": [
+  5205560
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" ><strong>ナイトメア・キッチン 油パンク黙示録へようこそ</strong></p><p class=\"bb_paragraph\" ><strong>これまでのあらすじ</strong><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/fffb6f8fd8035735c6db77adf153dae9.poster.avif?t=1789147577\" width=720 height=576 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/fffb6f8fd8035735c6db77adf153dae9.webm?t=1789147577\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/fffb6f8fd8035735c6db77adf153dae9.mp4?t=1789147577\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >ようこそ、テイター・ヒルズ・モールへ。</p><p class=\"bb_paragraph\" >ここは、栄養の奇跡的成分「コレステライト」を生み出した</p><p class=\"bb_paragraph\" >スプドニック・バイオシステムズの誇り高き本拠地だ。かつては“夢の食材”と称えられたコレステライト。</p><p class=\"bb_paragraph\" >だが今、その副作用ははっきりしている。</p><p class=\"bb_paragraph\" >止まらない食欲。狂気。</p><p class=\"bb_paragraph\" >そして人類を喰らい尽くそうとする、突然変異した食べ物の大群。残念だが――</p><p class=\"bb_paragraph\" >今日のメニューに載っているのは、あなただ。</p><p class=\"bb_paragraph\" >プレイヤーは、閉鎖されたフードコートの料理長となり、</p><p class=\"bb_paragraph\" >なぜかミュータント化し、この悪夢と戦うのに“都合のいい存在”になってしまった者たちを操作する。</p><p class=\"bb_paragraph\" >ネオンに照らされた呪われたモールに閉じ込められた生存者たちと共に、</p><p class=\"bb_paragraph\" >ソロ、または最大4人のCo-opで、</p><p class=\"bb_paragraph\" >狂った料理黙示録からの脱出を目指せ。</p><p class=\"bb_paragraph\" ><strong>主な特徴</strong></p><p class=\"bb_paragraph\" ><strong>食を燃料とする敵：</strong></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/73e379c12f1fed0fab14ca5bd096b6da.poster.avif?t=1789147577\" width=720 height=576 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/73e379c12f1fed0fab14ca5bd096b6da.webm?t=1789147577\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/73e379c12f1fed0fab14ca5bd096b6da.mp4?t=1789147577\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >歪んだ、不気味でグロテスクな食の怪物たちに立ち向かえ。それぞれが邪悪な行動と攻撃を仕掛けてくる。殺人タコス、狂暴なサラダ、復讐に燃えるデザートといった、恐ろしいボスたちに挑め。</p><p class=\"bb_paragraph\" ><strong>自動生成で進化する美味しそうなダンジョン：</strong></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/351f9c07942a5638bc1416994011fa17.poster.avif?t=1789147577\" width=720 height=576 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/351f9c07942a5638bc1416994011fa17.webm?t=1789147577\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/351f9c07942a5638bc1416994011fa17.mp4?t=1789147577\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >アメリカ料理、メキシコ料理、アジア料理、デザート、ヘルシーフードなど、様々なテーマの環境が織りなす、危険な罠、難解なパズルが満載の、常に変化するダンジョンを探索しよう。</p><p class=\"bb_paragraph\" ><strong>奇想天外な料理兵器：</strong></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/ecb6d94a148bd052197096e92daa27dd.poster.avif?t=1789147577\" width=720 height=576 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/ecb6d94a148bd052197096e92daa27dd.webm?t=1789147577\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/ecb6d94a148bd052197096e92daa27dd.mp4?t=1789147577\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >奇妙な武器の組み合わせを作り、使いこなそう。それぞれが独特の食をモチーフにした弾薬を装填し、戦闘と環境に奇抜な効果をもたらす。</p><p class=\"bb_paragraph\" ><strong>戦利品とレベルアップ：</strong></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/7683c82b219de046252e526d76b2e069.poster.avif?t=1789147577\" width=720 height=576 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/7683c82b219de046252e526d76b2e069.webm?t=1789147577\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/7683c82b219de046252e526d76b2e069.mp4?t=1789147577\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >奇妙で強力な戦利品を山ほど集めよう。シェフのステータスを強化して、食の悪夢に立ち向かおう。</p><p class=\"bb_paragraph\" ><strong>ローグライトならではのリプレイ性：</strong></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/b1fbcdca7de3334dc59647b4351e4382.poster.avif?t=1789147577\" width=720 height=576 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/b1fbcdca7de3334dc59647b4351e4382.webm?t=1789147577\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/b1fbcdca7de3334dc59647b4351e4382.mp4?t=1789147577\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >死ぬと代償が伴います。戦利品、武器、一時的なアップグレードを失いますが、ご安心ください。永続的なアップグレード、ストーリーの進行状況、隠された秘密は引き継がれるため、プレイするたびに新たな発見と満足感を得られます。</p><p class=\"bb_paragraph\" ><strong>4人協力プレイで大混乱：</strong></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/fcd3f34abf7a4cf23bb35fe0aa236cac.poster.avif?t=1789147577\" width=720 height=576 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/fcd3f34abf7a4cf23bb35fe0aa236cac.webm?t=1789147577\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/fcd3f34abf7a4cf23bb35fe0aa236cac.mp4?t=1789147577\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >オンラインで友達とチームを組み、ショッピングモールに潜む恐ろしい怪物たちに立ち向かいましょう。生き残り、戦い、そして笑いながら、狂乱の世界を共に駆け抜けましょう。だって、どんなことでも友達と一緒なら楽しいんです。たとえ終末世界でも。</p>",
+ "about_the_game": "<p class=\"bb_paragraph\" ><strong>ナイトメア・キッチン 油パンク黙示録へようこそ</strong></p><p class=\"bb_paragraph\" ><strong>これまでのあらすじ</strong><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/fffb6f8fd8035735c6db77adf153dae9.poster.avif?t=1789147577\" width=720 height=576 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/fffb6f8fd8035735c6db77adf153dae9.webm?t=1789147577\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/fffb6f8fd8035735c6db77adf153dae9.mp4?t=1789147577\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >ようこそ、テイター・ヒルズ・モールへ。</p><p class=\"bb_paragraph\" >ここは、栄養の奇跡的成分「コレステライト」を生み出した</p><p class=\"bb_paragraph\" >スプドニック・バイオシステムズの誇り高き本拠地だ。かつては“夢の食材”と称えられたコレステライト。</p><p class=\"bb_paragraph\" >だが今、その副作用ははっきりしている。</p><p class=\"bb_paragraph\" >止まらない食欲。狂気。</p><p class=\"bb_paragraph\" >そして人類を喰らい尽くそうとする、突然変異した食べ物の大群。残念だが――</p><p class=\"bb_paragraph\" >今日のメニューに載っているのは、あなただ。</p><p class=\"bb_paragraph\" >プレイヤーは、閉鎖されたフードコートの料理長となり、</p><p class=\"bb_paragraph\" >なぜかミュータント化し、この悪夢と戦うのに“都合のいい存在”になってしまった者たちを操作する。</p><p class=\"bb_paragraph\" >ネオンに照らされた呪われたモールに閉じ込められた生存者たちと共に、</p><p class=\"bb_paragraph\" >ソロ、または最大4人のCo-opで、</p><p class=\"bb_paragraph\" >狂った料理黙示録からの脱出を目指せ。</p><p class=\"bb_paragraph\" ><strong>主な特徴</strong></p><p class=\"bb_paragraph\" ><strong>食を燃料とする敵：</strong></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/73e379c12f1fed0fab14ca5bd096b6da.poster.avif?t=1789147577\" width=720 height=576 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/73e379c12f1fed0fab14ca5bd096b6da.webm?t=1789147577\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/73e379c12f1fed0fab14ca5bd096b6da.mp4?t=1789147577\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >歪んだ、不気味でグロテスクな食の怪物たちに立ち向かえ。それぞれが邪悪な行動と攻撃を仕掛けてくる。殺人タコス、狂暴なサラダ、復讐に燃えるデザートといった、恐ろしいボスたちに挑め。</p><p class=\"bb_paragraph\" ><strong>自動生成で進化する美味しそうなダンジョン：</strong></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/351f9c07942a5638bc1416994011fa17.poster.avif?t=1789147577\" width=720 height=576 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/351f9c07942a5638bc1416994011fa17.webm?t=1789147577\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/351f9c07942a5638bc1416994011fa17.mp4?t=1789147577\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >アメリカ料理、メキシコ料理、アジア料理、デザート、ヘルシーフードなど、様々なテーマの環境が織りなす、危険な罠、難解なパズルが満載の、常に変化するダンジョンを探索しよう。</p><p class=\"bb_paragraph\" ><strong>奇想天外な料理兵器：</strong></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/ecb6d94a148bd052197096e92daa27dd.poster.avif?t=1789147577\" width=720 height=576 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/ecb6d94a148bd052197096e92daa27dd.webm?t=1789147577\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/ecb6d94a148bd052197096e92daa27dd.mp4?t=1789147577\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >奇妙な武器の組み合わせを作り、使いこなそう。それぞれが独特の食をモチーフにした弾薬を装填し、戦闘と環境に奇抜な効果をもたらす。</p><p class=\"bb_paragraph\" ><strong>戦利品とレベルアップ：</strong></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/7683c82b219de046252e526d76b2e069.poster.avif?t=1789147577\" width=720 height=576 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/7683c82b219de046252e526d76b2e069.webm?t=1789147577\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/7683c82b219de046252e526d76b2e069.mp4?t=1789147577\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >奇妙で強力な戦利品を山ほど集めよう。シェフのステータスを強化して、食の悪夢に立ち向かおう。</p><p class=\"bb_paragraph\" ><strong>ローグライトならではのリプレイ性：</strong></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/b1fbcdca7de3334dc59647b4351e4382.poster.avif?t=1789147577\" width=720 height=576 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/b1fbcdca7de3334dc59647b4351e4382.webm?t=1789147577\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/b1fbcdca7de3334dc59647b4351e4382.mp4?t=1789147577\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >死ぬと代償が伴います。戦利品、武器、一時的なアップグレードを失いますが、ご安心ください。永続的なアップグレード、ストーリーの進行状況、隠された秘密は引き継がれるため、プレイするたびに新たな発見と満足感を得られます。</p><p class=\"bb_paragraph\" ><strong>4人協力プレイで大混乱：</strong></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/fcd3f34abf7a4cf23bb35fe0aa236cac.poster.avif?t=1789147577\" width=720 height=576 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/fcd3f34abf7a4cf23bb35fe0aa236cac.webm?t=1789147577\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/extras/fcd3f34abf7a4cf23bb35fe0aa236cac.mp4?t=1789147577\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >オンラインで友達とチームを組み、ショッピングモールに潜む恐ろしい怪物たちに立ち向かいましょう。生き残り、戦い、そして笑いながら、狂乱の世界を共に駆け抜けましょう。だって、どんなことでも友達と一緒なら楽しいんです。たとえ終末世界でも。</p>",
+ "short_description": "やあ、シェフ！ 『ナイトメア・キッチン』へようこそ。 どうせローグライトシューター、もう一本欲しかったんだろ？ 呪われたショッピングモール、命を持った食べ物、 そして――食べ物を撃ち出す銃。 仲間を呼んでカオスな協力プレイを楽しむもよし、 一人でこの脂まみれの黙示録に挑むもよし。 覚えておけ、シェフ。 死ぬたびに、キャラはもっと“美味しく”成長する。",
+ "supported_languages": "英語<strong>*</strong><br><strong>*</strong>フル音声対応言語",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/0666513b86c926c59e201421da605714fd481352/header.jpg?t=1789147577",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/25da6dc43e4655834428f9225227a9b05c11f56d/capsule_231x87.jpg?t=1789147577",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/25da6dc43e4655834428f9225227a9b05c11f56d/capsule_184x69.jpg?t=1789147577",
+ "website": "https://bytebackstudios.com",
+ "pc_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 10<br></li><li><strong>プロセッサー:</strong> i5-1038NG7 / Ryzen 5 4600H<br></li><li><strong>メモリー:</strong> 2 GB RAM<br></li><li><strong>グラフィック:</strong> NVIDIA GTX 980<br></li><li><strong>DirectX:</strong> Version 9.0<br></li><li><strong>ストレージ:</strong> 10 GB の空き容量</li></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 10<br></li><li><strong>プロセッサー:</strong> Intel i-7<br></li><li><strong>メモリー:</strong> 8 GB RAM<br></li><li><strong>グラフィック:</strong> NVIDIA RTX 2080<br></li><li><strong>DirectX:</strong> Version 10<br></li><li><strong>ストレージ:</strong> 20 GB の空き容量</li></ul>"
+ },
+ "mac_requirements": [],
+ "linux_requirements": [],
+ "legal_notice": "©Byteback Studios, 2022-2025, All Rights Reserved",
+ "developers": [
+  "Byteback Studios"
+ ],
+ "publishers": [
+  "Byteback Studios"
+ ],
+ "demos": [
+  {
+   "appid": 5205560,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "シングルプレイヤー"
+  },
+  {
+   "id": 1,
+   "description": "マルチプレイヤー"
+  },
+  {
+   "id": 9,
+   "description": "協力プレイ"
+  },
+  {
+   "id": 38,
+   "description": "オンライン協力プレイ"
+  },
+  {
+   "id": 22,
+   "description": "Steam実績"
+  },
+  {
+   "id": 28,
+   "description": "フルコントローラサポート"
+  },
+  {
+   "id": 55,
+   "description": "DUALSHOCKコントローラーサポート"
+  },
+  {
+   "id": 57,
+   "description": "DualSenseコントローラーサポート"
+  },
+  {
+   "id": 25,
+   "description": "Steamランキング"
+  },
+  {
+   "id": 62,
+   "description": "ファミリーシェアリング"
+  }
+ ],
+ "genres": [
+  {
+   "id": "1",
+   "description": "アクション"
+  },
+  {
+   "id": "23",
+   "description": "インディー"
+  },
+  {
+   "id": "3",
+   "description": "RPG"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/e7dc3c8e912d7bf530893c26188f90233d5354c8/ss_e7dc3c8e912d7bf530893c26188f90233d5354c8.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/e7dc3c8e912d7bf530893c26188f90233d5354c8/ss_e7dc3c8e912d7bf530893c26188f90233d5354c8.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/b5d59a181ea559a3cd195d8b023258c8cba39b2b/ss_b5d59a181ea559a3cd195d8b023258c8cba39b2b.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/b5d59a181ea559a3cd195d8b023258c8cba39b2b/ss_b5d59a181ea559a3cd195d8b023258c8cba39b2b.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/b8f55d8a5914b6e2850d4e6d61ada68766aed7c9/ss_b8f55d8a5914b6e2850d4e6d61ada68766aed7c9.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/b8f55d8a5914b6e2850d4e6d61ada68766aed7c9/ss_b8f55d8a5914b6e2850d4e6d61ada68766aed7c9.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/cce9d64d307cc78d7ca4fd37668e9a65585bb8ff/ss_cce9d64d307cc78d7ca4fd37668e9a65585bb8ff.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/cce9d64d307cc78d7ca4fd37668e9a65585bb8ff/ss_cce9d64d307cc78d7ca4fd37668e9a65585bb8ff.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/699657379cbeba4a0b32fdc112646617a805b1a6/ss_699657379cbeba4a0b32fdc112646617a805b1a6.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/699657379cbeba4a0b32fdc112646617a805b1a6/ss_699657379cbeba4a0b32fdc112646617a805b1a6.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/5f8843fe1152139a5032192b937ca4ed68ce0382/ss_5f8843fe1152139a5032192b937ca4ed68ce0382.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/5f8843fe1152139a5032192b937ca4ed68ce0382/ss_5f8843fe1152139a5032192b937ca4ed68ce0382.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/a7d2a7d0221a014473d72ffee2ec5fce0ea04078/ss_a7d2a7d0221a014473d72ffee2ec5fce0ea04078.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/a7d2a7d0221a014473d72ffee2ec5fce0ea04078/ss_a7d2a7d0221a014473d72ffee2ec5fce0ea04078.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/f5506e36517990c2712e33ffd722210a26a905fd/ss_f5506e36517990c2712e33ffd722210a26a905fd.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/f5506e36517990c2712e33ffd722210a26a905fd/ss_f5506e36517990c2712e33ffd722210a26a905fd.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/4ceabebdfc941f40121cadd92b044c0362b5c15c/ss_4ceabebdfc941f40121cadd92b044c0362b5c15c.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/4ceabebdfc941f40121cadd92b044c0362b5c15c/ss_4ceabebdfc941f40121cadd92b044c0362b5c15c.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 9,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/996255576090fcf464b0e37b4e16ac640489dcb3/ss_996255576090fcf464b0e37b4e16ac640489dcb3.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/996255576090fcf464b0e37b4e16ac640489dcb3/ss_996255576090fcf464b0e37b4e16ac640489dcb3.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 10,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/ebe8d474d578881651e83232e214fd1fd5bdb4a9/ss_ebe8d474d578881651e83232e214fd1fd5bdb4a9.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/ebe8d474d578881651e83232e214fd1fd5bdb4a9/ss_ebe8d474d578881651e83232e214fd1fd5bdb4a9.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 11,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/a532d52ae2c406656bf52c4ec83f5fc15f0e8e34/ss_a532d52ae2c406656bf52c4ec83f5fc15f0e8e34.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/a532d52ae2c406656bf52c4ec83f5fc15f0e8e34/ss_a532d52ae2c406656bf52c4ec83f5fc15f0e8e34.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 12,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/bf456c3f74d0bdd830132732b62b99bcb3dc749d/ss_bf456c3f74d0bdd830132732b62b99bcb3dc749d.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/bf456c3f74d0bdd830132732b62b99bcb3dc749d/ss_bf456c3f74d0bdd830132732b62b99bcb3dc749d.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 13,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/34460e0b3da903a91929364292639f8ba811f183/ss_34460e0b3da903a91929364292639f8ba811f183.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/34460e0b3da903a91929364292639f8ba811f183/ss_34460e0b3da903a91929364292639f8ba811f183.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 14,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/8ab238355a7acc115af955f63f725c1e51209818/ss_8ab238355a7acc115af955f63f725c1e51209818.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/8ab238355a7acc115af955f63f725c1e51209818/ss_8ab238355a7acc115af955f63f725c1e51209818.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 15,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/e48be432e99a111c130ba9787df5e54b4f67754e/ss_e48be432e99a111c130ba9787df5e54b4f67754e.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/e48be432e99a111c130ba9787df5e54b4f67754e/ss_e48be432e99a111c130ba9787df5e54b4f67754e.1920x1080.jpg?t=1789147577"
+  },
+  {
+   "id": 16,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/bbf5c6c34f20533d8811b81e7b5f1a14e12c6877/ss_bbf5c6c34f20533d8811b81e7b5f1a14e12c6877.600x338.jpg?t=1789147577",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/bbf5c6c34f20533d8811b81e7b5f1a14e12c6877/ss_bbf5c6c34f20533d8811b81e7b5f1a14e12c6877.1920x1080.jpg?t=1789147577"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257415919,
+   "name": "Gameplay Reveal",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257415919/39196ef7473f46cdfab5d1d614bfc7cc8165dc96/movie_600x337.jpg?t=1788380356",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/3077140/1148499101/7c73b7fa789a7cc58c51fa853bdb1938b1cf515c/1788374972/dash_av1.mpd?t=1788380356",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/3077140/1148499101/7c73b7fa789a7cc58c51fa853bdb1938b1cf515c/1788374972/dash_h264.mpd?t=1788380356",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/3077140/1148499101/7c73b7fa789a7cc58c51fa853bdb1938b1cf515c/1788374972/hls_264_master.m3u8?t=1788380356",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "発表予定"
+ },
+ "support_info": {
+  "url": "https://bytebackstudios.com/help-%26-support",
+  "email": "william@bytebackstudios.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/3077140?t=1789147577",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3077140/295459b916947e67198e6420b10a0b2ca852c153/page_bg_raw.jpg?t=1789147577",
+ "content_descriptors": {
+  "ids": [
+   2,
+   5
+  ],
+  "notes": "Cartoon Blood\r\nCoarse Language\r\n"
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "14",
+   "required_age": "14",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Linguagem imprópria\nMedo"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "12",
+   "required_age": "12",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Derbe Sprache\nÄngstigende Inhalte"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Horor\nPenggunaan bahasa\nKekerasan"
+  }
+ }
+}

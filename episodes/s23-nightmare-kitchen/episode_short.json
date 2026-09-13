@@ -1,0 +1,80 @@
+{
+ "title_en": "Nightmare Kitchen",
+ "demo_appid": 5205560,
+ "full_appid": 5205560,
+ "developer": "Byteback Studios",
+ "workdir": "episodes/s23-nightmare-kitchen",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s23-nightmare-kitchen/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "GENRE",
+   "co-op roguelite FPS"
+  ],
+  [
+   "SETTING",
+   "mall food court"
+  ],
+  [
+   "PLAYERS",
+   "1 to 4"
+  ],
+  [
+   "INSTALLED",
+   "7 GB"
+  ],
+  [
+   "LANGUAGE",
+   "English"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Nightmare Kitchen",
+  "line2": "THE FOOD FIGHTS BACK.",
+  "size1": 70,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5205560/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Nightmare Kitchen: killer tacos, rabid salads and a food court chef with a gun #shorts",
+  "tags": "shorts,Nightmare Kitchen,Byteback Studios,steam demo,co-op,roguelite,fps,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

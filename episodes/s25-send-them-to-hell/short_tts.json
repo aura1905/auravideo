@@ -1,0 +1,92 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "One of the heroes in this game is a robot that launches corn.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 62.0
+  },
+  "sub": "One of the heroes in this game is a robot that launches corn."
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "At demons.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "At demons."
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 34.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Send Them to Hell. Pixel heroes in a three-D world, smashing demons back where they came from.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Send Them to Hell. Pixel heroes in a 3D world, smashing demons back where they came from."
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "The other picks are a holy knight, and a wizard girl with a very angry cat.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "The other picks are a holy knight, and a wizard girl with a very angry cat."
+ },
+ {
+  "id": "s5",
+  "sec": "intro",
+  "text": "Play it solo, or with four players online.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 56.0
+  },
+  "sub": "Play it solo, or with four players online."
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "The demo is about three gigabytes, and the full game is dated October twenty-ninth.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about three gigabytes, and the full game is dated October twenty-ninth."
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip. Bring the corn.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 88.0
+  },
+  "sub": "Worth a dip. Bring the corn."
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day."
+ }
+]

@@ -1,0 +1,109 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "You get sixty seconds to escape this basement, and the keys move every run.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "You get sixty seconds to escape this basement, and the keys move every run.",
+  "dur": 4.232,
+  "wav": "episodes/s21-mr-happyfunface/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "And don't look at him.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "And don't look at him.",
+  "dur": 1.123,
+  "wav": "episodes/s21-mr-happyfunface/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 1.0
+  },
+  "dur": 2.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Mr HappyFunFace. A child psychologist built a grinning figure to scare kids off their screens. Now it's watching you.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "Mr HappyFunFace. A child psychologist built a grinning figure to scare kids off their screens. Now it's watching you.",
+  "dur": 8.385,
+  "wav": "episodes/s21-mr-happyfunface/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "You die a lot, learn the route, and run it faster.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "You die a lot, learn the route, and run it faster.",
+  "dur": 3.448,
+  "wav": "episodes/s21-mr-happyfunface/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "The demo's file list has a whole web browser engine inside. Chromium, a hundred and forty-six megabytes.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo's file list has a whole web browser engine inside. Chromium, a hundred and forty-six megabytes.",
+  "dur": 6.191,
+  "wav": "episodes/s21-mr-happyfunface/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "In Unreal, that usually comes with the built-in browser plugin.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 58.0
+  },
+  "sub": "In Unreal, that usually comes with the built-in browser plugin.",
+  "dur": 3.5,
+  "wav": "episodes/s21-mr-happyfunface/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip, if you can last sixty seconds.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "Worth a dip, if you can last sixty seconds.",
+  "dur": 2.664,
+  "wav": "episodes/s21-mr-happyfunface/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day.",
+  "dur": 3.5,
+  "wav": "episodes/s21-mr-happyfunface/tts_short/s8.wav"
+ }
+]

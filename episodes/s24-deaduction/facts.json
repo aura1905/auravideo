@@ -1,0 +1,38 @@
+{
+ "demo_appid": 4049520,
+ "full_appid": 2521950,
+ "name": "Deaduction",
+ "developers": [
+  "Roadkill Games"
+ ],
+ "publishers": [
+  "Roadkill Games"
+ ],
+ "release": "To be announced",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Casual",
+  "Indie",
+  "RPG",
+  "Strategy",
+  "Early Access"
+ ],
+ "languages": "English**languages with full audio support",
+ "website": null,
+ "short": "An otherworldly murder mystery blending horror, prop hunt, and supernatural powers. Work the night shift in a possessed hotel as an innocent staff member, a poltergeist controlling objects, or a body swapping doppelganger. Earn money to buy tools to uncover the imposters and survive the night shift.",
+ "about": "                                                     Six workers begin another night shift at a mysterious hotel.  Cook meals, maintain the building, care for guests, and keep the hotel running. But beneath the routine lies a terrifying secret.   Not everyone is human.                                                                                                                                                                                              The Spirits hide among the staff,  blending in while secretly plotting their downfall.  Use  deception ,  sabotage , and  murder  to eliminate the innocent without revealing your true identity.  The Poltergeist  Possess objects throughout the hotel and turn the environment into a weapon. Drop chandeliers, launch vases, lock doors, sabotage tasks, and create deadly traps.  Disguise yourself as a prop and stalk your victims from the shadows.  The Doppelganger  Disguise yourself as another staff member and earn the group's trust before striking.  Every crime leaves evidence behind. Stay hidden, frame the innocent, and avoid the  Security Guard  long enough to finish the job.                                                                                                                                                                                                    Staff  The hotel can't run itself.  Grow fresh produce as the  Gardener , prepare meals as the  Chef , deliver orders as the  Bellboy , assist guests as the  Receptionist , maintain the building as the  Caretaker , or patrol the halls as the  Security   Guard .  Spend your earnings on powerful tools and equipment such as EMF Readers, Holy Water Sprayers, and Antique Pistols. Use them to expose Spirits, protect innocent staff, and fight back against the horrors stalking the hotel.  Watch your coworkers carefully. Strange behaviour, missing guests, broken equipment, and unexplained accidents may all point toward something far more sinister lurking within the staff.  The Security Guard  The Security Guard is responsible for investigating suspicious activity throughout the hotel. Search staff members, monitor surveillance cameras, collect evidence, and track down the killers hiding among your team.  The truth is out there—you just need to survive long enough to find it.            Decide Their Fate  Not every problem can be solved with a weapon.  Gather at the meeting table to share evidence, question suspects, and vote on who should be jailed. As the night progresses, accusations become convictions, and convictions become executions.  Trust no one.  Everyone has a job to do, but not everyone is who they claim to be.         ",
+ "min_req": " Minimum:     OS:  Windows 10 64 bit    Processor:  Intel i5-4590 @ 3.3GHz (4th Generation) or AMD Ryzen 3 1200    Memory:  8 GB RAM    Graphics:  NVIDIA GeForce GTX 1060 or AMD Radeon R9 580, with a minimum of 4GB of VRAM    DirectX:  Version 11    Storage:  30 GB available space    Sound Card:  DirectX compatible audio card    Additional Notes:  Best experienced with headphones  ",
+ "movies": [
+  {
+   "id": 256962430,
+   "name": "Deaduction Waltz"
+  }
+ ],
+ "screenshots": 21,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "title_en": "Evilos",
+ "demo_appid": 5080850,
+ "full_appid": 5080850,
+ "developer": "Bunch of Idiots Studio",
+ "workdir": "episodes/s28-evilos",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s28-evilos/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "GENRE",
+   "action tower defense"
+  ],
+  [
+   "YOU ARE",
+   "the final boss"
+  ],
+  [
+   "ACTS",
+   "10"
+  ],
+  [
+   "WINDOWS",
+   "769 MB"
+  ],
+  [
+   "LANGUAGES",
+   "12"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Evilos",
+  "line2": "YOU'RE THE FINAL BOSS.",
+  "size1": 96,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5080850/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Evilos: a tower defense game where you're the final boss #shorts",
+  "tags": "shorts,Evilos,Bunch of Idiots Studio,steam demo,tower defense,action,villain,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

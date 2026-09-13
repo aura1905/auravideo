@@ -1,0 +1,110 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "In this tower defense game, you're not defending the kingdom.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 1.0
+  },
+  "sub": "In this tower defense game, you're not defending the kingdom.",
+  "dur": 3.213,
+  "wav": "episodes/s28-evilos/tts_short/s1.wav"
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "You're the final boss.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "You're the final boss.",
+  "dur": 1.411,
+  "wav": "episodes/s28-evilos/tts_short/s2.wav"
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 16.0
+  },
+  "dur": 2.0,
+  "wav": null
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Evilos. An ancient evil sorcerer, holding off endless waves of heroes with meteors, lightning and magic guns.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Evilos. An ancient evil sorcerer, holding off endless waves of heroes with meteors, lightning and magic guns.",
+  "dur": 7.68,
+  "wav": "episodes/s28-evilos/tts_short/s3.wav"
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "Your undead bodyguards include Scary Potter and Arnold Schwarzenecro.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "Your undead bodyguards include Scary Potter and Arnold Schwarzenecro.",
+  "dur": 3.971,
+  "wav": "episodes/s28-evilos/tts_short/s4.wav"
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "Ten acts, each ending in a boss fight, and the store lists twelve languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "Ten acts, each ending in a boss fight, and the store lists twelve languages.",
+  "dur": 5.277,
+  "wav": "episodes/s28-evilos/tts_short/s5.wav"
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "The demo itself is under eight hundred megabytes.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 6.0
+  },
+  "sub": "The demo itself is under eight hundred megabytes.",
+  "dur": 2.847,
+  "wav": "episodes/s28-evilos/tts_short/s6.wav"
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip. Being evil looks fun.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.0
+  },
+  "sub": "Worth a dip. Being evil looks fun.",
+  "dur": 2.847,
+  "wav": "episodes/s28-evilos/tts_short/s7.wav"
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day.",
+  "dur": 3.5,
+  "wav": "episodes/s28-evilos/tts_short/s8.wav"
+ }
+]

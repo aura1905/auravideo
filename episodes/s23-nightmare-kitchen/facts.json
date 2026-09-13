@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5205560,
+ "full_appid": 3077140,
+ "name": "Nightmare Kitchen",
+ "developers": [
+  "Byteback Studios"
+ ],
+ "publishers": [
+  "Byteback Studios"
+ ],
+ "release": "To be announced",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Indie",
+  "RPG"
+ ],
+ "languages": "English**languages with full audio support",
+ "website": "https://bytebackstudios.com",
+ "short": "Clock in for mall chaos. Team up as 1–4 underpaid mall chefs and blast through the Tater Hills Mall food court with absurd culinary weapons and ridiculous upgrades in this co-op roguelite FPS.",
+ "about": "  Nightmare Kitchen: Welcome to the Greasepunk Apocalypse    The Story So Far            Welcome to Tater Hills Mall, the proud home of Spudnik Biosystems, creators of the nutritional wonder-ingredient &quot;Cholesterite.&quot; Once hailed as a miracle, Cholesterite's side effects are now clear: an insatiable, demented army of mutant food bent on devouring humanity. Unfortunately, you're on today's menu.  Play as chefs from the mall's abandoned food court who find themselves strangely mutated and uniquely suited to fight back. Join other survivors trapped in this neon-lit nightmare, alone or in Co-Op with up to four players, as you battle to escape the cursed culinary apocalypse.   Key Features      Food-Fueled Foes:           Face twisted, unsettling, and grotesque food monsters, each with  diabolical behaviors and attacks. Take on monstrous bosses like killer tacos, rabid salads, and vengeful desserts.     Procedurally Delicious Dungeons:           Explore ever-changing layouts filled with deadly traps, challenging puzzles, and environments themed around American, Mexican, Asian, Dessert, and Health food.     Absurd Culinary Arsenal:           Craft and wield  bizarre weapon combinations. Load your guns with  distinct food-based ammo types, each creating wild combat and environmental effects.      Loot A La Carte:           Gather mountains of weird and powerful loot. Boost your chef's stats to gain an edge against your culinary nightmares.     Roguelite Replayability:           Death comes at a cost: you'll drop loot, weapons, and temporary upgrades. But don't worry because permanent upgrades, story progress, and hidden secrets carry over, ensuring every run feels rewarding and unique.     Go Solo Or Bring The Whole Shift:           Clock in alone or bring up to three friends online.  Fight together, revive fallen coworkers, chase completely different builds, and attempt something resembling teamwork while the food court fills with more and more food monsters.  Nobody said food service would be easy. ",
+ "min_req": " Minimum:     OS:  Windows 10    Processor:  i5-1038NG7 / Ryzen 5 4600H    Memory:  2 GB RAM    Graphics:  NVIDIA GTX 980    DirectX:  Version 9.0    Storage:  10 GB available space  ",
+ "movies": [
+  {
+   "id": 257415919,
+   "name": "Gameplay Reveal"
+  }
+ ],
+ "screenshots": 17,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

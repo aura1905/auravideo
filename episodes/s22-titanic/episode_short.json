@@ -1,0 +1,80 @@
+{
+ "title_en": "Titanic",
+ "demo_appid": 5209150,
+ "full_appid": 5209150,
+ "developer": "White Star Line",
+ "workdir": "episodes/s22-titanic",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s22-titanic/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "GENRE",
+   "ocean liner tycoon"
+  ],
+  [
+   "ENGINE",
+   "Unity (Mono)"
+  ],
+  [
+   "ONE FILE",
+   "2.45 GB"
+  ],
+  [
+   "WATER",
+   "Dynamic Water Physics 2"
+  ],
+  [
+   "LANGUAGE",
+   "English"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Titanic",
+  "line2": "BY \"WHITE STAR LINE\".",
+  "size1": 96,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/5209150/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Titanic: a ship tycoon game made by a developer called White Star Line #shorts",
+  "tags": "shorts,Titanic,Titanic simulator,White Star Line,steam demo,ship simulator,tycoon,unity,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

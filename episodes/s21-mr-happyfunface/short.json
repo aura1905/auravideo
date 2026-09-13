@@ -1,0 +1,83 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "You get sixty seconds to escape this basement, and the keys move every run.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "And don't look at him.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 1.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Mr HappyFunFace. A child psychologist built a grinning figure to scare kids off their screens. Now it's watching you.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "You die a lot, learn the route, and run it faster.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "The demo's file list has a whole web browser engine inside. Chromium, a hundred and forty-six megabytes.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "In Unreal, that usually comes with the built-in browser plugin.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 58.0
+  }
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip, if you can last sixty seconds.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

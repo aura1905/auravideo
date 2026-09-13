@@ -1,0 +1,80 @@
+{
+ "title_en": "Deaduction",
+ "demo_appid": 4049520,
+ "full_appid": 4049520,
+ "developer": "Roadkill Games",
+ "workdir": "episodes/s24-deaduction",
+ "bgm": {
+  "file": "t0.mp4",
+  "volume": 0.07
+ },
+ "narration_volume": 1.6,
+ "script_timed": "episodes/s24-deaduction/short_tts_timed.json",
+ "hook_lines": 2,
+ "cold_open_lines": 2,
+ "still_lines": 0,
+ "sting": false,
+ "canvas": {
+  "width": 1080,
+  "height": 1920
+ },
+ "layer_prefix": "v_",
+ "tts_dir": "tts_short",
+ "visual_scale": 1.5,
+ "score_len": 9.5,
+ "labels": [
+  "",
+  "",
+  "",
+  ""
+ ],
+ "score_line_id": "s7",
+ "specs": [
+  [
+   "GENRE",
+   "hotel murder mystery"
+  ],
+  [
+   "SHIFT",
+   "night"
+  ],
+  [
+   "ROLES",
+   "3"
+  ],
+  [
+   "WINDOWS",
+   "6.1 GB"
+  ],
+  [
+   "LANGUAGE",
+   "English"
+  ]
+ ],
+ "verdict": "WORTH A DIP",
+ "opening_stamp": {
+  "line1": "Deaduction",
+  "line2": "NOT ALL OF THEM ARE HUMAN.",
+  "size1": 96,
+  "size2": 46
+ },
+ "stack": [
+  [
+   "The demo on Steam",
+   "https://store.steampowered.com/app/4049520/"
+  ]
+ ],
+ "chapters": {
+  "hook": "The hook",
+  "intro": "What it is",
+  "made": "The numbers",
+  "score": "The spec sheet"
+ },
+ "youtube": {
+  "title": "Deaduction: a hotel night shift where some of the staff aren't human #shorts",
+  "tags": "shorts,Deaduction,Roadkill Games,steam demo,social deduction,prop hunt,horror,multiplayer,demo dip",
+  "privacy": "private",
+  "lang": "en"
+ },
+ "sub_y": 560
+}

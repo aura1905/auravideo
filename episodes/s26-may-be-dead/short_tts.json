@@ -1,0 +1,92 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "In this game, the only way forward is to kill your friend May.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  },
+  "sub": "In this game, the only way forward is to kill your friend May."
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Again, and again.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Again, and again."
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "May, Be Dead. A first-person walk through endless hexagonal rooms of memory.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "May, Be Dead. A first-person walk through endless hexagonal rooms of memory."
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "The rooms borrow from theatre, film, literature and architecture.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "The rooms borrow from theatre, film, literature and architecture."
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "The demo is about seven hundred megabytes, for Windows and Mac, in English and Simplified Chinese.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about seven hundred megabytes, for Windows and Mac, in English and Simplified Chinese."
+ },
+ {
+  "id": "s6",
+  "sec": "made",
+  "text": "The full game has four chapters, due in December.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 50.0
+  },
+  "sub": "The full game has four chapters, due in December."
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip if you like your games strange and slow.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 16.0
+  },
+  "sub": "Worth a dip if you like your games strange and slow."
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip. A new Steam demo, every day."
+ }
+]

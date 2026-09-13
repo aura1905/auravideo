@@ -1,0 +1,74 @@
+[
+ {
+  "id": "s1",
+  "sec": "hook",
+  "text": "Four players, one warehouse, and a tool called ROPE that can throw anything.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  }
+ },
+ {
+  "id": "s2",
+  "sec": "hook",
+  "text": "Including the cargo you were meant to deliver.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "b1",
+  "sec": "intro",
+  "beat": 2.0,
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.0
+  }
+ },
+ {
+  "id": "s3",
+  "sec": "intro",
+  "text": "Stack the Pack. Pick the cargo, pack it, stack it, and ship the orders before everything falls apart.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s4",
+  "sec": "intro",
+  "text": "Break the cargo and you earn fewer coins.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "sec": "made",
+  "text": "The whole demo is about four hundred megabytes, in English, German and Polish.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s7",
+  "sec": "score",
+  "text": "Worth a dip with friends who can take a little yelling.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 44.0
+  }
+ },
+ {
+  "id": "s8",
+  "sec": "score",
+  "text": "That's Demo Dip. A new Steam demo, every day.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

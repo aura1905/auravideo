@@ -1,0 +1,21 @@
+Titanic — a free Steam demo where you own the ship, and the developer calls itself White Star Line.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5209150/
+Demo added to Steam on 11 Sep 2026.
+
+── The quick version ──
+What you do : pick routes, buy coal, sell tickets, haul cargo
+Best part   : walking up to the bridge in first person
+The catch   : passengers stand still in the trailer
+File list   : data.unity3d is 2.45 GB of a 2.7 GB demo
+Language    : English
+Verdict     : Worth A Dip
+
+The file list is read off SteamDB's public depot manifest; the rest comes from the
+Steam store page and the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to White Star Line.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

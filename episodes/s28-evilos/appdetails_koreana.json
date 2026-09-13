@@ -1,0 +1,174 @@
+{
+ "type": "game",
+ "name": "Evilos",
+ "steam_appid": 5035770,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  5080850
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" style=\"text-align: center\">《Evilos》는 고대의 사악한 마법사가 되어 끝없이 밀려오는 정의의 사도들의 물결에 맞서는 액션 타워 디펜스 게임입니다. 진화하는 방대한 마법 무기와 주문으로 왕국을 무너뜨리고, 10개의 막에 걸쳐 정예 권속들로 방어를 강화하세요. 이번엔 당신이 최종 보스다!</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/2a20c96587ef005ecf10dad725738b07.poster.avif?t=1787149174\" width=1170 height=772 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/2a20c96587ef005ecf10dad725738b07.webm?t=1787149174\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/2a20c96587ef005ecf10dad725738b07.mp4?t=1787149174\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" style=\"text-align: center\">운석, 토네이도, 번개 등 파멸의 주문으로 모든 영웅을 몰살하라.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/21cabc1a7bcafbe1394c96947cebc17a.poster.avif?t=1787149174\" width=1170 height=772 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/21cabc1a7bcafbe1394c96947cebc17a.webm?t=1787149174\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/21cabc1a7bcafbe1394c96947cebc17a.mp4?t=1787149174\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" style=\"text-align: center\">마법이 깃든 총기 무기고를 해방하여 적을 얼리고, 태우고, 감전시키고, 소멸시켜라.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/3a66d7289ef3c3f48218d55407d7a70f.poster.avif?t=1787149174\" width=1170 height=772 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/3a66d7289ef3c3f48218d55407d7a70f.webm?t=1787149174\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/3a66d7289ef3c3f48218d55407d7a70f.mp4?t=1787149174\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" style=\"text-align: center\">죽은 자를 되살려 당신의 개인 호위병으로 삼으세요. 잭 마로우, 니콜라스 립케이지, 스케어리 포터, 빈센트 반 고어, 아놀드 슈워제네크로가 당신의 명령을 기다립니다!</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/aaa540e63d0b72ff2e199d7d99ee8bb1.poster.avif?t=1787149174\" width=1170 height=772 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/aaa540e63d0b72ff2e199d7d99ee8bb1.webm?t=1787149174\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/aaa540e63d0b72ff2e199d7d99ee8bb1.mp4?t=1787149174\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" style=\"text-align: center\">무기와 주문을 강화하고 진화시켜 더욱 치명적인 새로운 형태로 만드세요.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/60b6dd9c49a8a0e21cda1f9e338a0e2c.poster.avif?t=1787149174\" width=1170 height=772 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/60b6dd9c49a8a0e21cda1f9e338a0e2c.webm?t=1787149174\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/60b6dd9c49a8a0e21cda1f9e338a0e2c.mp4?t=1787149174\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" style=\"text-align: center\">왕국 전역에 걸친 10개의 막을 통해 세상에 복수하세요. 각 막은 도전적인 보스전으로 마무리됩니다.</p><h2 class=\"bb_tag\" >주요 특징</h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong>악당이 되어 플레이하세요</strong> — 천 년 만에 깨어나 빼앗긴 힘을 되찾으려는 고대의 사악한 마법사</p></li><li><p class=\"bb_paragraph\" ><strong>저주받은 무기고</strong> — 수많은 무기와 주문 조합을 발견하고 아름답도록 사악한 시너지를 만들어 적을 파괴하세요</p></li><li><p class=\"bb_paragraph\" ><strong>강화와 진화</strong> — 모든 무기와 주문을 강화하고 더욱 치명적인 최종 형태로 진화시킬 수 있습니다</p></li><li><p class=\"bb_paragraph\" ><strong>죽은 자를 되살려라</strong> — 쓰러진 영웅들을 당신의 개인 권속으로 부리세요</p></li><li><p class=\"bb_paragraph\" ><strong>정복해야 할 왕국</strong> — 10개의 막으로 나뉜 100개의 레벨, 각 막은 장대한 보스전으로 마무리됩니다</p></li></ul><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><strong><i>왕국은 당신을 봉인하고 그것을 해피엔딩이라 불렀습니다. 이제 그것을 다시 쓸 때입니다 — Evilos를 위시리스트에 추가하고 최종 보스가 되세요.</i></strong></p>",
+ "about_the_game": "<p class=\"bb_paragraph\" style=\"text-align: center\">《Evilos》는 고대의 사악한 마법사가 되어 끝없이 밀려오는 정의의 사도들의 물결에 맞서는 액션 타워 디펜스 게임입니다. 진화하는 방대한 마법 무기와 주문으로 왕국을 무너뜨리고, 10개의 막에 걸쳐 정예 권속들로 방어를 강화하세요. 이번엔 당신이 최종 보스다!</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/2a20c96587ef005ecf10dad725738b07.poster.avif?t=1787149174\" width=1170 height=772 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/2a20c96587ef005ecf10dad725738b07.webm?t=1787149174\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/2a20c96587ef005ecf10dad725738b07.mp4?t=1787149174\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" style=\"text-align: center\">운석, 토네이도, 번개 등 파멸의 주문으로 모든 영웅을 몰살하라.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/21cabc1a7bcafbe1394c96947cebc17a.poster.avif?t=1787149174\" width=1170 height=772 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/21cabc1a7bcafbe1394c96947cebc17a.webm?t=1787149174\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/21cabc1a7bcafbe1394c96947cebc17a.mp4?t=1787149174\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" style=\"text-align: center\">마법이 깃든 총기 무기고를 해방하여 적을 얼리고, 태우고, 감전시키고, 소멸시켜라.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/3a66d7289ef3c3f48218d55407d7a70f.poster.avif?t=1787149174\" width=1170 height=772 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/3a66d7289ef3c3f48218d55407d7a70f.webm?t=1787149174\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/3a66d7289ef3c3f48218d55407d7a70f.mp4?t=1787149174\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" style=\"text-align: center\">죽은 자를 되살려 당신의 개인 호위병으로 삼으세요. 잭 마로우, 니콜라스 립케이지, 스케어리 포터, 빈센트 반 고어, 아놀드 슈워제네크로가 당신의 명령을 기다립니다!</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/aaa540e63d0b72ff2e199d7d99ee8bb1.poster.avif?t=1787149174\" width=1170 height=772 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/aaa540e63d0b72ff2e199d7d99ee8bb1.webm?t=1787149174\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/aaa540e63d0b72ff2e199d7d99ee8bb1.mp4?t=1787149174\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" style=\"text-align: center\">무기와 주문을 강화하고 진화시켜 더욱 치명적인 새로운 형태로 만드세요.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/60b6dd9c49a8a0e21cda1f9e338a0e2c.poster.avif?t=1787149174\" width=1170 height=772 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/60b6dd9c49a8a0e21cda1f9e338a0e2c.webm?t=1787149174\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/extras/60b6dd9c49a8a0e21cda1f9e338a0e2c.mp4?t=1787149174\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" style=\"text-align: center\">왕국 전역에 걸친 10개의 막을 통해 세상에 복수하세요. 각 막은 도전적인 보스전으로 마무리됩니다.</p><h2 class=\"bb_tag\" >주요 특징</h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" ><strong>악당이 되어 플레이하세요</strong> — 천 년 만에 깨어나 빼앗긴 힘을 되찾으려는 고대의 사악한 마법사</p></li><li><p class=\"bb_paragraph\" ><strong>저주받은 무기고</strong> — 수많은 무기와 주문 조합을 발견하고 아름답도록 사악한 시너지를 만들어 적을 파괴하세요</p></li><li><p class=\"bb_paragraph\" ><strong>강화와 진화</strong> — 모든 무기와 주문을 강화하고 더욱 치명적인 최종 형태로 진화시킬 수 있습니다</p></li><li><p class=\"bb_paragraph\" ><strong>죽은 자를 되살려라</strong> — 쓰러진 영웅들을 당신의 개인 권속으로 부리세요</p></li><li><p class=\"bb_paragraph\" ><strong>정복해야 할 왕국</strong> — 10개의 막으로 나뉜 100개의 레벨, 각 막은 장대한 보스전으로 마무리됩니다</p></li></ul><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" style=\"text-align: center\"><strong><i>왕국은 당신을 봉인하고 그것을 해피엔딩이라 불렀습니다. 이제 그것을 다시 쓸 때입니다 — Evilos를 위시리스트에 추가하고 최종 보스가 되세요.</i></strong></p>",
+ "short_description": "《Evilos》는 고대의 사악한 마법사가 되어 끝없이 밀려오는 정의의 사도들의 물결에 맞서는 액션 타워 디펜스 게임입니다. 진화하는 방대한 마법 무기와 주문으로 왕국을 무너뜨리고, 10개의 막에 걸쳐 정예 권속들로 방어를 강화하세요. 이번엔 당신이 최종 보스다!",
+ "supported_languages": "영어, 프랑스어, 이탈리아어, 독일어, 일본어, 한국어, 폴란드어, 포르투갈어 - 브라질, 러시아어, 중국어 간체, 스페인어 - 중남미, 튀르키예어",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/822f90ec5d6bc5a9a38eb1f7650d7be01f2ac327/header.jpg?t=1787149174",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/2e82f1cb39a322d55ad52fd7b4d450ff3e7edb2d/capsule_231x87.jpg?t=1787149174",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/2e82f1cb39a322d55ad52fd7b4d450ff3e7edb2d/capsule_184x69.jpg?t=1787149174",
+ "website": "https://bunchofidiots.website/games",
+ "pc_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"><li><strong>운영 체제:</strong> Windows 10 64비트<br></li><li><strong>프로세서:</strong> Intel Core i3 이상<br></li><li><strong>메모리:</strong> \t2 GB RAM<br></li><li><strong>그래픽:</strong> Intel HD Graphics 4000, 1 GB<br></li><li><strong>DirectX:</strong> 버전 11<br></li><li><strong>저장 공간:</strong> 800 MB 사용 가능 공간<br></li><li><strong>사운드카드:</strong> DirectX 호환</li></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"><li><strong>운영 체제:</strong> Windows 10/11 64-bit<br></li><li><strong>프로세서:</strong> Intel Core i5 or equivalent<br></li><li><strong>메모리:</strong> 4 GB RAM<br></li><li><strong>그래픽:</strong> Dedicated GPU with 2 GB VRAM<br></li><li><strong>DirectX:</strong> 버전 11<br></li><li><strong>저장 공간:</strong> 800 MB 사용 가능 공간<br></li><li><strong>사운드카드:</strong> DirectX Compatible</li></ul>"
+ },
+ "mac_requirements": [],
+ "linux_requirements": [],
+ "developers": [
+  "Bunch of Idiots Studio"
+ ],
+ "publishers": [
+  "Bunch of Idiots Studio"
+ ],
+ "demos": [
+  {
+   "appid": 5080850,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "싱글 플레이어"
+  },
+  {
+   "id": 67,
+   "description": "카메라 움직임 조정"
+  },
+  {
+   "id": 68,
+   "description": "음량 개별 조절"
+  },
+  {
+   "id": 76,
+   "description": "마우스 전용 옵션"
+  },
+  {
+   "id": 74,
+   "description": "퀵타임 이벤트 없이 플레이 가능"
+  },
+  {
+   "id": 69,
+   "description": "스테레오 사운드"
+  },
+  {
+   "id": 77,
+   "description": "터치 전용 옵션"
+  },
+  {
+   "id": 62,
+   "description": "가족 공유"
+  }
+ ],
+ "genres": [
+  {
+   "id": "1",
+   "description": "액션"
+  },
+  {
+   "id": "2",
+   "description": "전략"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/e5b8e86967bce3c2514203c4d03292643cb6e19e/ss_e5b8e86967bce3c2514203c4d03292643cb6e19e.600x338.jpg?t=1787149174",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/e5b8e86967bce3c2514203c4d03292643cb6e19e/ss_e5b8e86967bce3c2514203c4d03292643cb6e19e.1920x1080.jpg?t=1787149174"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/f708baaf4c8746bd9477494fefeca5696add5a2c/ss_f708baaf4c8746bd9477494fefeca5696add5a2c.600x338.jpg?t=1787149174",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/f708baaf4c8746bd9477494fefeca5696add5a2c/ss_f708baaf4c8746bd9477494fefeca5696add5a2c.1920x1080.jpg?t=1787149174"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/b52fd79a355e3d5df87c9600bc2c9964532fd13e/ss_b52fd79a355e3d5df87c9600bc2c9964532fd13e.600x338.jpg?t=1787149174",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/b52fd79a355e3d5df87c9600bc2c9964532fd13e/ss_b52fd79a355e3d5df87c9600bc2c9964532fd13e.1920x1080.jpg?t=1787149174"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/8dc343d3233e655c9eace614a3a0f2a2dc63ab85/ss_8dc343d3233e655c9eace614a3a0f2a2dc63ab85.600x338.jpg?t=1787149174",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/8dc343d3233e655c9eace614a3a0f2a2dc63ab85/ss_8dc343d3233e655c9eace614a3a0f2a2dc63ab85.1920x1080.jpg?t=1787149174"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/0ac46d91048b40b9cb18c244b148456024e7ad64/ss_0ac46d91048b40b9cb18c244b148456024e7ad64.600x338.jpg?t=1787149174",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/0ac46d91048b40b9cb18c244b148456024e7ad64/ss_0ac46d91048b40b9cb18c244b148456024e7ad64.1920x1080.jpg?t=1787149174"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/4748c7e1b6e59311464816c1a07a53a708583589/ss_4748c7e1b6e59311464816c1a07a53a708583589.600x338.jpg?t=1787149174",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/4748c7e1b6e59311464816c1a07a53a708583589/ss_4748c7e1b6e59311464816c1a07a53a708583589.1920x1080.jpg?t=1787149174"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/cd7fb917062234359aef694f8a87171507655768/ss_cd7fb917062234359aef694f8a87171507655768.600x338.jpg?t=1787149174",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/cd7fb917062234359aef694f8a87171507655768/ss_cd7fb917062234359aef694f8a87171507655768.1920x1080.jpg?t=1787149174"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257389094,
+   "name": "Announcement Trailer KO",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257389094/203d98b4a84389df667496ad08238789da449cd6/movie_600x337.jpg?t=1786027515",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5035770/1895158332/962c2f8a53bc90864cd4a844dc8accfa251fd5b1/1785492421/dash_av1.mpd?t=1786027515",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5035770/1895158332/962c2f8a53bc90864cd4a844dc8accfa251fd5b1/1785492421/dash_h264.mpd?t=1786027515",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5035770/1895158332/962c2f8a53bc90864cd4a844dc8accfa251fd5b1/1785492421/hls_264_master.m3u8?t=1786027515",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "출시 예정"
+ },
+ "support_info": {
+  "url": "https://bunchofidiots.website/contact",
+  "email": "studio.bunchofidiots@gmail.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5035770?t=1787149174",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5035770/5a39ab1e5c57b651f5a445ea0202713f5143096d/page_bg_raw.jpg?t=1787149174",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "10",
+   "required_age": "10",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Violência"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "12",
+   "required_age": "12",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Gewalt"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "15",
+   "required_age": "15",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Penggunaan bahasa\nKekerasan"
+  }
+ }
+}

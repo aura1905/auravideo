@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5180820,
+ "full_appid": 4958280,
+ "name": "Stack the Pack!",
+ "developers": [
+  "Super Duper Vibes"
+ ],
+ "publishers": [
+  "Super Duper Vibes"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Casual",
+  "Indie"
+ ],
+ "languages": "English*, German, Polish*languages with full audio support",
+ "website": null,
+ "short": "Stack the pack is a chaotic co-op game for up to 4 players where you must work together and complete orders, deliver important cargo and keep operations running while everything around you falls apart.",
+ "about": "  About This Game   Join up to 4 players (or go solo) and get paid for fulfilling the orders! You have to carry cargo, dodge obstacles and adapt to ever-growing chaos. From making the perfect delivery plan to coping with a spectacular failure, every single day will have hilarious moments you won’t stop talking about long after the working day is over!     Team Up   Communication is your greatest tool. Share duties, organize the delivery of cargoes and help each other cope with ever growing chaos.           R.O.P.E  (Remote Object Positioning Equipment)  Use the R.O.P.E to grab, drag, lift and throw cargo around the warehouse. Carry heavy items together, deliver delicate objects carefully or send all the cargo flying through the air.           Get the Job Done   Choose the right cargo, pack and sort it and send it to delivery. Make sure not to damage it to get more coins.  The faster you complete the order and the better condition you keep your cargo in, the greater your profit.           Work Hard, Play Hard   Go and test yourself in various party modes, including races, games, basketball and others. Work is not always serious!           Features      Chaotic online co-op  for  1–4 players      Physics-driven gameplay  every mistake creates new challenges     Learn the ropes of using the R.O.P.E  move cargo in creative and unpredictable ways      Unique warehouses  each with their own danger and rules     Multiple game modes , including Order Mode, races, co-op challenges and party games     Customize your character  and stand out from your teammates     Simple controls, endless chaos      More warehouses, cosmetics, and challenges coming in future updates        ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10    Processor:   i5 3550 / RYZEN 5 2500X    Memory:  4 GB RAM    Graphics:  NVIDIA GTX 1050 / AMD R9 270X    Storage:  200 MB available space  ",
+ "movies": [
+  {
+   "id": 257403150,
+   "name": "Trailer 1"
+  }
+ ],
+ "screenshots": 6,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

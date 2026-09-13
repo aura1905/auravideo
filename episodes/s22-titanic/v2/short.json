@@ -1,0 +1,98 @@
+[
+ {
+  "id": "s1",
+  "text": "Free Titanic demo on Steam, and you own the ship.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "The developer calls itself White Star Line. The company that owned the real one.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 16.2
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Is it any good? Here's the honest version.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Pick a route on the world map, buy coal, sell tickets, haul cargo.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 49.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Southampton to New York is on there. So are Egypt and Australia.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 63.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "Best part: first person. Walk up to the bridge, and it feels like your ship.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 78.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The catch? In the trailer, the passengers stand perfectly still. Like mannequins.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 97.0
+  }
+ },
+ {
+  "id": "s8",
+  "text": "We checked the file list. Almost the whole demo is one file, nearly two and a half gigs.",
+  "vis": {
+   "type": "image",
+   "file": "ev_band.png"
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Think Ship Simulator crossed with a shipping tycoon.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 105.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "Worth a dip if you've always wanted the Titanic to make it.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.5
+  }
+ },
+ {
+  "id": "s11",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]
