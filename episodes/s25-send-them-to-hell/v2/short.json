@@ -1,0 +1,86 @@
+[
+ {
+  "id": "s1",
+  "text": "Free roguelike demo where one of the heroes is a robot that launches corn.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 62.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "At demons. Hundreds of them.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Pixel-art heroes in a low-poly 3D world, surrounded by hordes, clearing the screen with huge attacks.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 10.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "The other picks are a holy knight, and a wizard girl with a very angry cat.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best moment in the trailer: a beam from the sky flattening everything around you.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 8.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? Some biomes, like the checkerboard one, look pretty empty.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 34.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "Solo or four-player online. The demo is about three gigs, and the full game is dated October twenty-ninth.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Vampire Survivors, but loud and in 3D.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 88.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip. Bring the corn.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 66.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

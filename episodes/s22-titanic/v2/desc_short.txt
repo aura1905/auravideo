@@ -1,7 +1,7 @@
 Titanic — a free Steam demo where you own the ship, and the developer calls itself White Star Line.
 
 ▶ Steam demo (free): https://store.steampowered.com/app/5209150/
-Demo added to Steam on 11 Sep 2026.
+Steam lists the demo as released 11 Sep 2026.
 
 ── The quick version ──
 What you do : pick routes, buy coal, sell tickets, haul cargo

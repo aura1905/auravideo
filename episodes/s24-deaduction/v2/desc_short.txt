@@ -1,0 +1,21 @@
+Deaduction — a free demo: six staff, one haunted hotel, and some of them aren't human.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4049520/
+Steam lists the demo as released 11 Sep 2026.
+
+── The quick version ──
+Roles     : staff, poltergeist, doppelganger
+Best shot : a room of floating furniture
+The catch : stiff running animations
+Windows   : just over 6 GB, English only
+Think     : Among Us meets prop hunt
+Verdict   : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Roadkill Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

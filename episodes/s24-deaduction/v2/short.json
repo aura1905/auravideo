@@ -1,0 +1,86 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: six staff, one haunted hotel, and some of them aren't human.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "s2",
+  "text": "You might be a normal worker, cooking, cleaning and hunting for imposters.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 8.0
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Or a poltergeist, possessing furniture and dropping chandeliers on people.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 15.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Or a doppelganger, disguised as a co-worker until you strike.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best shot in the trailer: a whole room of floating furniture around a guy reading his paper.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The running animations look stiff, and it kills the spooky a bit.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 26.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The Windows demo is just over six gigs, English only.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Among Us meets prop hunt, in a creepy old hotel.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip with friends you don't fully trust.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

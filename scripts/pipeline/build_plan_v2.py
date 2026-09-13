@@ -99,18 +99,25 @@ def caption_png(path, text, hot):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('dir')
-    ap.add_argument('--headline', nargs=2, required=True)
+    ap.add_argument('--headline', nargs=2, default=['', ''])
     ap.add_argument('--keywords', nargs='*', default=[])
     ap.add_argument('--bgm', default='t0.mp4')
     ap.add_argument('--bgm-volume', type=float, default=0.06)
     ap.add_argument('--media-zoom', type=float, default=1.0, help='extra zoom for letterboxed trailers')
+    ap.add_argument('--layout', choices=['band', 'classic'], default='classic',
+                    help="classic = the channel's screen layout (blur-filled frame, logo, no headline); "
+                         "band = the black-band trial. User kept classic, 2026-09-13.")
+    ap.add_argument('--brightness', type=float, default=0.0, help='lift trailer clips (eq brightness, -1..1)')
+    ap.add_argument('--card', default='ev_facts_v.png', help='classic: vertical evidence card in the episode folder')
     a = ap.parse_args()
     D = a.dir.replace('\\', '/').rstrip('/')
     ep = os.path.dirname(D)
     rel = os.path.abspath(ep).replace('\\', '/')     # media one level up; the bridge refuses ../ paths
     lines = json.load(open(f'{D}/short_tts_timed.json', encoding='utf-8'))
     os.makedirs(f'{D}/cap', exist_ok=True)
-    headline_png(f'{D}/headline.png', *a.headline)
+    classic = a.layout == 'classic'
+    if not classic:
+        headline_png(f'{D}/headline.png', *a.headline)
 
     clips, t = [], 0.0
     vis_runs = []            # [start, file, in, type]
@@ -141,7 +148,20 @@ def main():
 
     for i, (st, f, fin, typ) in enumerate(vis_runs):
         end = vis_runs[i + 1][0] if i + 1 < len(vis_runs) else total
-        src = f'{rel}/{f}' if not f.startswith('ev_') else f
+        if classic and f.startswith('ev_'):
+            f = a.card
+        src = f'{rel}/{f}' if (classic or not f.startswith('ev_')) else f
+        if classic:
+            if typ == 'image' and not f.startswith('ev_') and os.path.exists(f"{ep}/{f.rsplit('.', 1)[0]}_mv.mp4"):
+                src, typ, fin = f"{rel}/{f.rsplit('.', 1)[0]}_mv.mp4", 'video', 0.0
+            c = {'track': 'v4', 'file': src, 'start': round(st, 3), 'in': fin, 'out': round(fin + end - st, 3),
+                 'muted': True, 'fadeIn': 0.12, 'fadeOut': 0.12,
+                 'fillMode': 'fit' if f.startswith('ev_') else 'blur',
+                 'transformScale': 1.0 if f.startswith('ev_') else round(1.5 * a.media_zoom, 4)}
+            if a.brightness and f.endswith('.mp4'):
+                c['brightness'] = a.brightness   # dark horror trailers read as black on a phone
+            clips.append(c)
+            continue
         c = {'track': 'v4', 'file': src, 'start': round(st, 3), 'in': fin if typ == 'video' else 0,
              'out': round((fin if typ == 'video' else 0) + end - st, 3), 'muted': True, 'fadeIn': 0.12, 'fadeOut': 0.12,
              # cover at BAND_H/1920 puts a 16:9 frame exactly BAND_H tall; --media-zoom makes up for
@@ -150,7 +170,11 @@ def main():
              'transformScale': round(BAND_H / 1920 * a.media_zoom if typ == 'video' else 1.0, 4)}
         clips.append(c)
 
-    clips.append({'track': 'v1', 'file': 'headline.png', 'start': 0.0, 'in': 0, 'out': total, 'fillMode': 'fit', 'muted': True})
+    if classic:
+        clips.append({'track': 'v1', 'file': f'{rel}/logo_c_rgba.png', 'start': 0.5, 'in': 0, 'out': total - 0.5, 'fillMode': 'fit',
+                      'transformOpacity': 0.6, 'fadeIn': 0.5, 'transformScale': 0.14, 'transformX': 370, 'transformY': -830})
+    else:
+        clips.append({'track': 'v1', 'file': 'headline.png', 'start': 0.0, 'in': 0, 'out': total, 'fillMode': 'fit', 'muted': True})
     clips.append({'track': 'a2', 'file': f'{rel}/{a.bgm}', 'start': 0.0, 'in': 0, 'out': total,
                   'volume': a.bgm_volume, 'fadeIn': 0.6, 'fadeOut': 1.0})
     plan = {'settings': {'width': W, 'height': H, 'fps': 30}, 'clips': clips, 'subs': [],

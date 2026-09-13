@@ -1,0 +1,115 @@
+[
+ {
+  "id": "s1",
+  "text": "Free tower defense demo, except you're not defending the kingdom.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 1.0
+  },
+  "sub": "Free tower defense demo, except you're not defending the kingdom.",
+  "dur": 3.788,
+  "wav": "episodes/s28-evilos/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "You're the final boss.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "You're the final boss.",
+  "dur": 1.306,
+  "wav": "episodes/s28-evilos/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "An ancient sorcerer behind a magic shield, blasting endless waves of heroes with meteors, lightning and magic guns.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 15.0
+  },
+  "sub": "An ancient sorcerer behind a magic shield, blasting endless waves of heroes with meteors, lightning and magic guns.",
+  "dur": 6.975,
+  "wav": "episodes/s28-evilos/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Your undead bodyguards include Scary Potter and Arnold Schwarzenecro.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "Your undead bodyguards include Scary Potter and Arnold Schwarzenecro.",
+  "dur": 4.284,
+  "wav": "episodes/s28-evilos/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Best bit in the trailer: a giant golden laser that deletes a whole crowd.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 8.0
+  },
+  "sub": "Best bit in the trailer: a giant golden laser that deletes a whole crowd.",
+  "dur": 4.624,
+  "wav": "episodes/s28-evilos/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The animations are stiff, like paper puppets from an old Flash game.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 19.5
+  },
+  "sub": "The catch? The animations are stiff, like paper puppets from an old Flash game.",
+  "dur": 5.224,
+  "wav": "episodes/s28-evilos/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "Ten acts, twelve languages on the store page, and the demo is under eight hundred megabytes.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "Ten acts, twelve languages on the store page, and the demo is under eight hundred megabytes.",
+  "dur": 5.538,
+  "wav": "episodes/s28-evilos/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Defend Your Castle, if the castle was a warlock.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 3.0
+  },
+  "sub": "Think Defend Your Castle, if the castle was a warlock.",
+  "dur": 3.187,
+  "wav": "episodes/s28-evilos/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip. Being evil looks fun.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Worth a dip. Being evil looks fun.",
+  "dur": 2.534,
+  "wav": "episodes/s28-evilos/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.228,
+  "wav": "episodes/s28-evilos/v2/tts/s10.wav"
+ }
+]

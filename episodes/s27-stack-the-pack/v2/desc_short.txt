@@ -1,0 +1,22 @@
+Stack the Pack! — a free co-op demo: four players, one warehouse, and physics that hate you.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5180820/
+Steam lists the demo as released 12 Sep 2026.
+
+── The quick version ──
+What you do : grab, stack and ship cargo with the R.O.P.E. tether
+Best moment : a player trapped inside the box
+The catch   : simple, flat graphics
+Installed   : about 400 MB
+Languages   : English, German, Polish
+Think       : Moving Out meets Overcooked
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Super Duper Vibes.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

@@ -1,0 +1,23 @@
+Evilos — a free tower defense demo where you're the final boss.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5080850/
+Steam lists the demo as released 10 Sep 2026.
+
+── The quick version ──
+What you do : a sorcerer holding off waves of heroes
+Best bit    : a golden laser that clears a crowd
+The catch   : stiff, paper-puppet animations
+Acts        : 10
+Languages   : 12 on the store page
+Windows     : under 800 MB
+Think       : Defend Your Castle, as the warlock
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Bunch of Idiots Studio.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

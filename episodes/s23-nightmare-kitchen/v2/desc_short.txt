@@ -1,0 +1,21 @@
+Nightmare Kitchen — a free co-op shooter demo where the food fights back.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5205560/
+Steam lists the demo as released 11 Sep 2026.
+
+── The quick version ──
+What you do : mutant food court chefs, kitchen weapons, 1-4 players
+Feels like  : fast strafing and comic-book hit words
+The catch   : menus look like placeholders
+Installed   : just over 7 GB, English only
+Think       : Borderlands colours, Roboquest-style runs
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Byteback Studios.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

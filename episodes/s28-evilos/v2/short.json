@@ -1,0 +1,85 @@
+[
+ {
+  "id": "s1",
+  "text": "Free tower defense demo, except you're not defending the kingdom.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 1.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "You're the final boss.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "An ancient sorcerer behind a magic shield, blasting endless waves of heroes with meteors, lightning and magic guns.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 15.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Your undead bodyguards include Scary Potter and Arnold Schwarzenecro.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best bit in the trailer: a giant golden laser that deletes a whole crowd.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 8.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The animations are stiff, like paper puppets from an old Flash game.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 19.5
+  }
+ },
+ {
+  "id": "s7",
+  "text": "Ten acts, twelve languages on the store page, and the demo is under eight hundred megabytes.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Defend Your Castle, if the castle was a warlock.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 3.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip. Being evil looks fun.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

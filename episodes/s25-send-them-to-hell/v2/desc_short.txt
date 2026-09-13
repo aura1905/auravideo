@@ -1,0 +1,22 @@
+Send Them to Hell — a free roguelike demo where one of the heroes is a corn-launching robot.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5129630/
+Steam lists the demo as released 12 Sep 2026.
+
+── The quick version ──
+What you do : pixel heroes vs demon hordes in a 3D world
+Co-op       : solo or 4 players online
+The catch   : some biomes look empty
+Installed   : about 3 GB
+Full game   : 29 Oct 2026
+Think       : Vampire Survivors, loud and in 3D
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to cbgames.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

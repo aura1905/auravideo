@@ -1,0 +1,85 @@
+[
+ {
+  "id": "s1",
+  "text": "Free co-op shooter demo where the food fights back.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 217.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "Killer tacos, rabid salads, and a burger boss with teeth.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "You're a mutated food court chef with ridiculous kitchen weapons, and up to three friends.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 5.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "It plays fast. Strafe, jump, blast, and hits pop comic-book words on screen.",
+  "vis": {
+   "type": "image",
+   "file": "ss15.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Between fights, there's platforming over pits of green goo.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 49.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The menus look like placeholders next to all that colour.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The demo is over seven gigs on your drive, English only.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Borderlands colours in a Roboquest-style run.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 169.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip with friends and an empty stomach.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 229.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

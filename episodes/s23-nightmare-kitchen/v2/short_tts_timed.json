@@ -1,0 +1,115 @@
+[
+ {
+  "id": "s1",
+  "text": "Free co-op shooter demo where the food fights back.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 217.0
+  },
+  "sub": "Free co-op shooter demo where the food fights back.",
+  "dur": 3.187,
+  "wav": "episodes/s23-nightmare-kitchen/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Killer tacos, rabid salads, and a burger boss with teeth.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Killer tacos, rabid salads, and a burger boss with teeth.",
+  "dur": 3.814,
+  "wav": "episodes/s23-nightmare-kitchen/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "You're a mutated food court chef with ridiculous kitchen weapons, and up to three friends.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 5.0
+  },
+  "sub": "You're a mutated food court chef with ridiculous kitchen weapons, and up to three friends.",
+  "dur": 4.989,
+  "wav": "episodes/s23-nightmare-kitchen/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "It plays fast. Strafe, jump, blast, and hits pop comic-book words on screen.",
+  "vis": {
+   "type": "image",
+   "file": "ss15.jpg"
+  },
+  "sub": "It plays fast. Strafe, jump, blast, and hits pop comic-book words on screen.",
+  "dur": 5.068,
+  "wav": "episodes/s23-nightmare-kitchen/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Between fights, there's platforming over pits of green goo.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 49.0
+  },
+  "sub": "Between fights, there's platforming over pits of green goo.",
+  "dur": 3.631,
+  "wav": "episodes/s23-nightmare-kitchen/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The menus look like placeholders next to all that colour.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  },
+  "sub": "The catch? The menus look like placeholders next to all that colour.",
+  "dur": 4.023,
+  "wav": "episodes/s23-nightmare-kitchen/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "The demo is over seven gigs on your drive, English only.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is over seven gigs on your drive, English only.",
+  "dur": 3.396,
+  "wav": "episodes/s23-nightmare-kitchen/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Borderlands colours in a Roboquest-style run.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 169.0
+  },
+  "sub": "Think Borderlands colours in a Roboquest-style run.",
+  "dur": 3.396,
+  "wav": "episodes/s23-nightmare-kitchen/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip with friends and an empty stomach.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 229.0
+  },
+  "sub": "Worth a dip with friends and an empty stomach.",
+  "dur": 2.534,
+  "wav": "episodes/s23-nightmare-kitchen/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.228,
+  "wav": "episodes/s23-nightmare-kitchen/v2/tts/s10.wav"
+ }
+]

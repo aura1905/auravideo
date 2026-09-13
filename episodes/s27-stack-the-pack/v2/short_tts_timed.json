@@ -1,0 +1,116 @@
+[
+ {
+  "id": "s1",
+  "text": "Free co-op demo: four players, one warehouse, and physics that hate you.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.0
+  },
+  "sub": "Free co-op demo: four players, one warehouse, and physics that hate you.",
+  "dur": 4.624,
+  "wav": "episodes/s27-stack-the-pack/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "You ride around on a bouncy ball and grab cargo with a tether called ROPE.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "You ride around on a bouncy ball and grab cargo with a tether called ROPE.",
+  "dur": 4.153,
+  "wav": "episodes/s27-stack-the-pack/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Pack it, stack it, ship it, and try not to break it.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  },
+  "sub": "Pack it, stack it, ship it, and try not to break it.",
+  "dur": 3.318,
+  "wav": "episodes/s27-stack-the-pack/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best moment in the trailer: someone gets trapped inside the giant box they're meant to deliver.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 31.0
+  },
+  "sub": "Best moment in the trailer: someone gets trapped inside the giant box they're meant to deliver.",
+  "dur": 4.989,
+  "wav": "episodes/s27-stack-the-pack/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "There's a wobbly cardboard bridge, and even a quick game of football.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 44.0
+  },
+  "sub": "There's a wobbly cardboard bridge, and even a quick game of football.",
+  "dur": 3.631,
+  "wav": "episodes/s27-stack-the-pack/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The graphics are simple and flat.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "The catch? The graphics are simple and flat.",
+  "dur": 3.135,
+  "wav": "episodes/s27-stack-the-pack/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "The whole demo is about four hundred megabytes, in English, German and Polish.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The whole demo is about four hundred megabytes, in English, German and Polish.",
+  "dur": 4.519,
+  "wav": "episodes/s27-stack-the-pack/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Moving Out meets Overcooked.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 46.0
+  },
+  "sub": "Think Moving Out meets Overcooked.",
+  "dur": 2.247,
+  "wav": "episodes/s27-stack-the-pack/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip with friends who can take a little yelling.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Worth a dip with friends who can take a little yelling.",
+  "dur": 2.612,
+  "wav": "episodes/s27-stack-the-pack/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.228,
+  "wav": "episodes/s27-stack-the-pack/v2/tts/s10.wav"
+ }
+]

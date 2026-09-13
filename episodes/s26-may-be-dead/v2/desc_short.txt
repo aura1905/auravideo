@@ -1,0 +1,23 @@
+May, Be Dead — a free surreal demo where the only way forward is to kill your friend May.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5194100/
+Steam lists the demo as released 12 Sep 2026.
+
+── The quick version ──
+What you do : walk endless hexagonal rooms of memory
+Feels like  : slow, quiet, knife always in hand
+The catch   : bare rooms, May never moves
+Demo        : about 700 MB, Windows and Mac
+Languages   : English, Simplified Chinese
+Full game   : 4 chapters, December 2026
+Think       : Yume Nikki, in first person
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to DiBaDo Studio.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

@@ -1,0 +1,22 @@
+Mr HappyFunFace — a free horror demo: sixty seconds to escape a basement, and the keys move every run.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5208720/
+Steam lists the demo as released 11 Sep 2026.
+
+── The quick version ──
+What you do : find the keys, learn the maze, escape in 60 seconds
+Feels like  : heavy breathing, black corridors, slammed doors
+The catch   : lit walls look a bit basic
+Players     : full game out; 11 of 12 Steam reviews positive
+File list   : libcef.dll, a 146 MB Chromium browser engine
+Think       : Outlast, on a stopwatch
+Verdict     : Worth A Dip
+
+The file list is read off SteamDB's public depot manifest; the rest comes from the
+Steam store page, Steam's product info and the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Big Red Eight.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

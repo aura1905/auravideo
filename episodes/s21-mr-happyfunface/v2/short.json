@@ -1,0 +1,84 @@
+[
+ {
+  "id": "s1",
+  "text": "Free horror demo on Steam. You get sixty seconds to escape a basement.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "s2",
+  "text": "And this is Mr HappyFunFace. Don't look at him.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "The keys hide somewhere new every run. So you die, learn the maze, and run it faster.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 41.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "The trailer is all heavy breathing, pitch-black corridors and slammed doors. It looks properly stressful.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 48.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "The catch? When the lights do come on, the walls look a bit basic.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 58.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The full game is already out, and eleven of its twelve Steam reviews are positive.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  }
+ },
+ {
+  "id": "s7",
+  "text": "And the file list hides a whole Chromium web browser. A hundred and forty-six megabytes, in a horror game.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Outlast, on a stopwatch.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 11.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if you can keep your eyes on the floor.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

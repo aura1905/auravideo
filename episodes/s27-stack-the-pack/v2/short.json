@@ -1,0 +1,86 @@
+[
+ {
+  "id": "s1",
+  "text": "Free co-op demo: four players, one warehouse, and physics that hate you.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "You ride around on a bouncy ball and grab cargo with a tether called ROPE.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Pack it, stack it, ship it, and try not to break it.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best moment in the trailer: someone gets trapped inside the giant box they're meant to deliver.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 31.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "There's a wobbly cardboard bridge, and even a quick game of football.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 44.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The graphics are simple and flat.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The whole demo is about four hundred megabytes, in English, German and Polish.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Moving Out meets Overcooked.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 46.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip with friends who can take a little yelling.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

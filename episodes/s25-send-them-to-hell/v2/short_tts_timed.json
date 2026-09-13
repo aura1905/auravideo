@@ -1,0 +1,116 @@
+[
+ {
+  "id": "s1",
+  "text": "Free roguelike demo where one of the heroes is a robot that launches corn.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 62.0
+  },
+  "sub": "Free roguelike demo where one of the heroes is a robot that launches corn.",
+  "dur": 4.206,
+  "wav": "episodes/s25-send-them-to-hell/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "At demons. Hundreds of them.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "At demons. Hundreds of them.",
+  "dur": 2.116,
+  "wav": "episodes/s25-send-them-to-hell/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Pixel-art heroes in a low-poly three-D world, surrounded by hordes, clearing the screen with huge attacks.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 10.0
+  },
+  "sub": "Pixel-art heroes in a low-poly 3D world, surrounded by hordes, clearing the screen with huge attacks.",
+  "dur": 6.713,
+  "wav": "episodes/s25-send-them-to-hell/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "The other picks are a holy knight, and a wizard girl with a very angry cat.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "The other picks are a holy knight, and a wizard girl with a very angry cat.",
+  "dur": 4.336,
+  "wav": "episodes/s25-send-them-to-hell/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Best moment in the trailer: a beam from the sky flattening everything around you.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 8.0
+  },
+  "sub": "Best moment in the trailer: a beam from the sky flattening everything around you.",
+  "dur": 4.519,
+  "wav": "episodes/s25-send-them-to-hell/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? Some biomes, like the checkerboard one, look pretty empty.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 34.0
+  },
+  "sub": "The catch? Some biomes, like the checkerboard one, look pretty empty.",
+  "dur": 4.754,
+  "wav": "episodes/s25-send-them-to-hell/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "Solo or four-player online. The demo is about three gigs, and the full game is dated October twenty-ninth.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "Solo or four-player online. The demo is about three gigs, and the full game is dated October twenty-ninth.",
+  "dur": 6.844,
+  "wav": "episodes/s25-send-them-to-hell/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Vampire Survivors, but loud and in three-D.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 88.0
+  },
+  "sub": "Think Vampire Survivors, but loud and in 3D.",
+  "dur": 3.318,
+  "wav": "episodes/s25-send-them-to-hell/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip. Bring the corn.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 66.0
+  },
+  "sub": "Worth a dip. Bring the corn.",
+  "dur": 2.142,
+  "wav": "episodes/s25-send-them-to-hell/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.28,
+  "wav": "episodes/s25-send-them-to-hell/v2/tts/s10.wav"
+ }
+]

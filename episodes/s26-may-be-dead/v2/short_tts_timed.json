@@ -1,0 +1,117 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo where the only way forward is to kill your friend May.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.5
+  },
+  "sub": "Free demo where the only way forward is to kill your friend May.",
+  "dur": 3.631,
+  "wav": "episodes/s26-may-be-dead/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Again, and again.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Again, and again.",
+  "dur": 1.593,
+  "wav": "episodes/s26-may-be-dead/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "It's a first-person walk through endless hexagonal rooms of memory.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 35.0
+  },
+  "sub": "It's a first-person walk through endless hexagonal rooms of memory.",
+  "dur": 3.866,
+  "wav": "episodes/s26-may-be-dead/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Every door opens somewhere stranger. A kitchen of hanging phones. Chairs floating in the air.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.0
+  },
+  "sub": "Every door opens somewhere stranger. A kitchen of hanging phones. Chairs floating in the air.",
+  "dur": 5.825,
+  "wav": "episodes/s26-may-be-dead/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "It's slow and quiet, and the knife in your hand never goes away.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  },
+  "sub": "It's slow and quiet, and the knife in your hand never goes away.",
+  "dur": 4.232,
+  "wav": "episodes/s26-may-be-dead/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? Some rooms are pretty bare, and May herself doesn't move a muscle.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 44.0
+  },
+  "sub": "The catch? Some rooms are pretty bare, and May herself doesn't move a muscle.",
+  "dur": 4.702,
+  "wav": "episodes/s26-may-be-dead/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "About seven hundred megabytes, Windows and Mac, English and Simplified Chinese. Four chapters, out in December.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "About seven hundred megabytes, Windows and Mac, English and Simplified Chinese. Four chapters, out in December.",
+  "dur": 7.68,
+  "wav": "episodes/s26-may-be-dead/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Yume Nikki, in first person.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 50.5
+  },
+  "sub": "Think Yume Nikki, in first person.",
+  "dur": 2.194,
+  "wav": "episodes/s26-may-be-dead/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if you like your games strange and slow.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 17.5
+  },
+  "sub": "Worth a dip if you like your games strange and slow.",
+  "dur": 2.717,
+  "wav": "episodes/s26-may-be-dead/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.176,
+  "wav": "episodes/s26-may-be-dead/v2/tts/s10.wav"
+ }
+]
