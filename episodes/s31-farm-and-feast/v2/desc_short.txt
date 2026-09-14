@@ -1,0 +1,22 @@
+Farm & Feast — a free cozy demo where you grow the ingredients and run the restaurant.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4691110/
+
+── The quick version ──
+What you do  : farm, then take orders and serve
+Best part    : the busy restaurant running itself
+The catch    : mining looks weak
+Demo reviews : 31 of 32 positive
+Languages    : 14
+Full game    : 11 Nov 2026
+Think        : Stardew Valley meets Diner Dash
+Verdict      : Worth A Dip
+
+Numbers come from the Steam store page, the demo's Steam reviews and Steam's public
+product info; the rest comes from watching the official trailers. No files were
+downloaded, unpacked, decompiled, or redistributed. It is an outside reading, not a
+statement from the developer. All game footage and images belong to dummy dino.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

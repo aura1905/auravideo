@@ -1,0 +1,43 @@
+1
+00:00:00,000 --> 00:00:04,571
+Free RPG demo where you don't fight. You program your party.
+
+2
+00:00:04,721 --> 00:00:05,897
+Then you just watch.
+
+3
+00:00:06,047 --> 00:00:11,872
+You wire up little logic nodes, like: find the ally with the lowest HP, and heal them.
+
+4
+00:00:12,022 --> 00:00:15,758
+Send your golems up the tower, and they battle on their own.
+
+5
+00:00:15,908 --> 00:00:19,226
+They lose. You fix the nodes. You try again.
+
+6
+00:00:19,376 --> 00:00:25,149
+Best part? The music is by Yuzo Koshiro, a legend of that Genesis synth sound.
+
+7
+00:00:25,299 --> 00:00:30,288
+The catch? The dungeon sits in a small window, and menus fill the rest of the screen.
+
+8
+00:00:30,438 --> 00:00:35,375
+Forty-five of its forty-six Steam reviews are positive, and it's published by Raw Fury.
+
+9
+00:00:35,525 --> 00:00:39,261
+Think Final Fantasy Twelve's gambits, turned into a whole game.
+
+10
+00:00:39,411 --> 00:00:41,840
+Worth a dip if debugging sounds like fun.
+
+11
+00:00:41,990 --> 00:00:43,218
+That's Demo Dip.

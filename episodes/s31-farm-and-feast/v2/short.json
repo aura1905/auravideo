@@ -1,0 +1,89 @@
+[
+ {
+  "id": "s1",
+  "text": "Free cozy demo: grow your own ingredients, then cook them in your own restaurant.",
+  "vis": {
+   "type": "video",
+   "file": "t2.mp4",
+   "in": 0.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "Water the crops, break a few rocks, and keep the pantry full.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 8.2
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Then open the doors. Take orders, pour drinks, and keep every customer happy.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 26.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best part? When it's busy, the chef cooks and the waiter runs trays on their own, like a little ant farm.",
+  "vis": {
+   "type": "video",
+   "file": "t2.mp4",
+   "in": 40.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "There's even a beach to wander down.",
+  "vis": {
+   "type": "video",
+   "file": "t2.mp4",
+   "in": 26.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? Mining looks weak. The pickaxe barely seems to land.",
+  "vis": {
+   "type": "video",
+   "file": "t2.mp4",
+   "in": 57.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "Thirty-one of its thirty-two Steam reviews are positive, and it's in fourteen languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Stardew Valley meets Diner Dash.",
+  "vis": {
+   "type": "video",
+   "file": "t2.mp4",
+   "in": 49.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip for a slow evening. The full game is due November eleventh.",
+  "vis": {
+   "type": "video",
+   "file": "t2.mp4",
+   "in": 40.5
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

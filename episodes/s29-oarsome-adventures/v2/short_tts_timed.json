@@ -1,0 +1,117 @@
+[
+ {
+  "id": "s1",
+  "text": "Free co-op demo: up to eight friends, one raft, and a river that wants you dead.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 15.0
+  },
+  "sub": "Free co-op demo: up to eight friends, one raft, and a river that wants you dead.",
+  "dur": 5.721,
+  "wav": "episodes/s29-oarsome-adventures/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "You paddle together, steer through the rapids, and try not to go over the waterfall.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 8.0
+  },
+  "sub": "You paddle together, steer through the rapids, and try not to go over the waterfall.",
+  "dur": 4.336,
+  "wav": "episodes/s29-oarsome-adventures/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "You will go over the waterfall.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "You will go over the waterfall.",
+  "dur": 1.593,
+  "wav": "episodes/s29-oarsome-adventures/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best moment in the trailer: a whole raft wedged sideways on the rocks while everyone flails.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 18.0
+  },
+  "sub": "Best moment in the trailer: a whole raft wedged sideways on the rocks while everyone flails.",
+  "dur": 5.068,
+  "wav": "episodes/s29-oarsome-adventures/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Off the river, there are puzzles, campfires, bears at night, and a deer that gets hit by lightning.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 58.0
+  },
+  "sub": "Off the river, there are puzzles, campfires, bears at night, and a deer that gets hit by lightning.",
+  "dur": 5.46,
+  "wav": "episodes/s29-oarsome-adventures/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? On land, the running animations look stiff.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 36.0
+  },
+  "sub": "The catch? On land, the running animations look stiff.",
+  "dur": 4.153,
+  "wav": "episodes/s29-oarsome-adventures/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "The demo is about one point four gigs, in nineteen languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about one point four gigs, in nineteen languages.",
+  "dur": 3.971,
+  "wav": "episodes/s29-oarsome-adventures/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Human Fall Flat, on a whitewater raft.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.0
+  },
+  "sub": "Think Human Fall Flat, on a whitewater raft.",
+  "dur": 3.03,
+  "wav": "episodes/s29-oarsome-adventures/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip with friends who can't row in time.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.0
+  },
+  "sub": "Worth a dip with friends who can't row in time.",
+  "dur": 2.769,
+  "wav": "episodes/s29-oarsome-adventures/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.306,
+  "wav": "episodes/s29-oarsome-adventures/v2/tts/s10.wav"
+ }
+]

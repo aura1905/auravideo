@@ -1,0 +1,43 @@
+{
+ "demo_appid": 5095050,
+ "full_appid": 2731030,
+ "name": "Dungeon Automata",
+ "developers": [
+  "Medium-Rare Games"
+ ],
+ "publishers": [
+  "Kakehashi Games",
+  "Raw Fury"
+ ],
+ "release": "2026",
+ "coming_soon": true,
+ "genres": [
+  "Indie",
+  "RPG"
+ ],
+ "languages": "English, Japanese, French, German, Spanish - Spain, Korean, Simplified Chinese",
+ "website": "https://medium-rare.jpn.org/algolemeth/",
+ "short": "Dungeon Automata「Algolemeth」is an &quot;autologic&quot;: a JRPG dungeon crawler meets auto battler where you control your party with visual node-based programming. Program your party and conquer dungeons automatically. Master the dungeon through trial and error!",
+ "about": "  Connect the nodes and hack the Dungeon!   Dungeon Automata「Algolemeth」is an &quot;autologic&quot;: a new twist to the dungeon crawler genre. It’s an auto battler meets logic-based visual scripting, where you control golems’ behavior through programming. By analyzing enemy actions, optimizing your party members’ blueprints and studying how they support each other, you will conquer the dungeon through trial and error.                The world of Syntaxia is in peril     Monsters have emerged alongside The Tower of Corruption, threatening the way of humanity. Pushed to stop whatever evil resides within, you turn to your alchemy -  synthesizing a powerful party of golems and programing them to autonomously challenge the complex labyrinth leading to the tower’s summit.                 Decode the Dungeon    Each handcrafted level of the tower presents a unique set of challenges. Program your blueprints to handle all kinds of cases and situations: from traps to bosses. Once the golems are sent into the dungeon to automatically explore, all you can do is watch. Repeat again and again to decipher the challenge.               Find improvements and enhancements    Find catalysts to increase the golems physical abilities and nodes that allow for new action or targeting logic. Customize your party by creating your own unique golems with the parts you find!             Much more than monochrome    The world of Dungeon Automata is an expressive fantasy world with beautifully handcrafted 8-bit pixel art. Accompanying the incredibly striking visuals is a powerful soundtrack by none other than the legendary composer Yuzo Koshiro – known for his true Genesis synth style.              ",
+ "min_req": " Minimum:     OS:  Windows 10    Processor:  Intel Core i5-3330 / AMD FX-4300    Memory:  4 GB RAM    Graphics:  Nvidia GeForce GT 730 / AMD Radeon R7 250X    DirectX:  Version 11    Storage:  5 GB available space  ",
+ "movies": [
+  {
+   "id": 257420868,
+   "name": "Partner announcement"
+  },
+  {
+   "id": 257167512,
+   "name": "Algolemeth Trailer(202507)"
+  },
+  {
+   "id": 257131282,
+   "name": "Algolemeth Soundtrack Announcement: Composed by Yuzo Koshiro"
+  }
+ ],
+ "screenshots": 7,
+ "reviews": {
+  "total": 46,
+  "positive": 45,
+  "desc": "Positive"
+ }
+}

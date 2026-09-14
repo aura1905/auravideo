@@ -1,0 +1,21 @@
+Oar'some Adventures — a free co-op rafting demo for up to eight friends, and a river that wants you dead.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5057590/
+
+── The quick version ──
+What you do : paddle together, dodge rapids, solve puzzles on land
+Best moment : a raft wedged sideways on the rocks
+The catch   : stiff running animations on land
+Demo        : about 1.4 GB, Windows
+Languages   : 19
+Think       : Human Fall Flat, on a whitewater raft
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page, the demo's Steam reviews and Steam's public
+product info; the rest comes from watching the official trailers. No files were
+downloaded, unpacked, decompiled, or redistributed. It is an outside reading, not a
+statement from the developer. All game footage and images belong to Haymaker Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

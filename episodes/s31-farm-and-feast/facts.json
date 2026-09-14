@@ -1,0 +1,39 @@
+{
+ "demo_appid": 4691110,
+ "full_appid": 4521650,
+ "name": "Farm & Feast",
+ "developers": [
+  "dummy dino"
+ ],
+ "publishers": [
+  "dummy dino"
+ ],
+ "release": "11 Nov, 2026",
+ "coming_soon": true,
+ "genres": [
+  "Casual",
+  "Indie",
+  "Simulation"
+ ],
+ "languages": "English*, French, German, Spanish - Spain, Simplified Chinese, Traditional Chinese, Japanese, Korean, Spanish - Latin America, Portuguese - Portugal, Russian, Turkish, Ukrainian, Italian*languages with full audio support",
+ "website": null,
+ "short": "Grow fresh ingredients and run your own little restaurant. Enjoy a peaceful day that stretches from the field to the table. Plan a fresh menu for a delightful day, keep your pantry full, and make your customers happy. Earn your own money and build your little world step by step.",
+ "about": "  Welcome to Farm &amp; Feast! 🌿   Farm &amp; Feast is a relaxing simulation game where a warm little farm meets an adorable cozy restaurant. Everything moves at your own pace. Your fields are waiting, your restaurant is open, and so are your customers. Every day something new grows, and every service turns into a little moment of happiness.          The more care you show your customers, the warmer your restaurant becomes. Every smile, every order made with love, builds a bond that reaches far beyond the tables.          Sometimes the loveliest moments are the quietest ones. A gentle breeze, a path winding between the fields, and a world that feels made just for you. As you gently tend the soil, time slows down; only you and the greenery growing day by day remain. Caring for your field isn't a chore, it's a quiet peace where you get to be alone with yourself.          Greet every guest with a warm smile and welcome them to a comfortable table. Even a small &quot;Welcome&quot; can set the tone for an entire day.          Every service has a rhythm of its own. Fill your tray with drinks, move from table to table, and leave each glass with just the right owner. As you carry the drinks, gather up the smiles along the way and savor that delightful flow that keeps your restaurant cozy and warm.          Bring the orders to your chefs, and they'll handle the rest. While the pans sizzle, sweep the floors and clear the tables at your own rhythm. A cozy restaurant is built with patience and care for the little details.          Taking the bill is the finale of every lovely moment you share with a customer. The warm bond you've built throughout the day, the care you've shown, and every little smile all pay off in this final moment. When your guests leave the table happy, those little tips they leave alongside the bill become the sweetest thank-you for your hard work.          Take every order with care and listen closely to your customers. A wrong dish or a forgotten request upsets your guest and casts a shadow over your restaurant's warm reputation.          Your day begins in the morning on your farm and ends in the evening with happy customers at your restaurant. No rush, no pressure, just your day. FEATURES   🌾 Farming and Harvest  - Plant your seeds, water your crops with love, and watch them grow. When harvest time comes, gather your fresh produce and send it off to your restaurant.   🍽️ Restaurant Management  - Greet your customers with a warm smile, seat them at their tables, and take their orders with care. Let every service turn into a little moment of happiness.   🎮 Mini Games  - Add a little fun to your day with the charming mini games waiting for you at your restaurant.   🛒 Market  - Pick up the seeds and supplies you need at the market and stock up on what's missing. Grow your little business step by step.   🌍 Your Little World  - Find your own rhythm between the farm and the restaurant. Plan your day at a calm pace and savor every moment of it.   A warm little farm, an adorable restaurant, and a little world that belongs to you alone. Farm &amp; Feast is waiting for you.   ",
+ "min_req": " Minimum:     OS:  Windows 10 or newer    Processor:  Intel Core i5-7360U or better    Memory:  4 GB RAM    Graphics:  Intel UHD 630 or Better    DirectX:  Version 11    Storage:  5 GB available space  ",
+ "movies": [
+  {
+   "id": 257420929,
+   "name": "Gameplay Trailer 1"
+  },
+  {
+   "id": 257368408,
+   "name": "Gameplay Trailer 2"
+  }
+ ],
+ "screenshots": 12,
+ "reviews": {
+  "total": 32,
+  "positive": 31,
+  "desc": "Positive"
+ }
+}

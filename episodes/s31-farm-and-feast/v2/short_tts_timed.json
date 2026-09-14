@@ -1,0 +1,119 @@
+[
+ {
+  "id": "s1",
+  "text": "Free cozy demo: grow your own ingredients, then cook them in your own restaurant.",
+  "vis": {
+   "type": "video",
+   "file": "t2.mp4",
+   "in": 0.0
+  },
+  "sub": "Free cozy demo: grow your own ingredients, then cook them in your own restaurant.",
+  "dur": 4.754,
+  "wav": "episodes/s31-farm-and-feast/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Water the crops, break a few rocks, and keep the pantry full.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 8.2
+  },
+  "sub": "Water the crops, break a few rocks, and keep the pantry full.",
+  "dur": 3.788,
+  "wav": "episodes/s31-farm-and-feast/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Then open the doors. Take orders, pour drinks, and keep every customer happy.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 26.0
+  },
+  "sub": "Then open the doors. Take orders, pour drinks, and keep every customer happy.",
+  "dur": 4.65,
+  "wav": "episodes/s31-farm-and-feast/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best part? When it's busy, the chef cooks and the waiter runs trays on their own, like a little ant farm.",
+  "vis": {
+   "type": "video",
+   "file": "t2.mp4",
+   "in": 40.0
+  },
+  "sub": "Best part? When it's busy, the chef cooks and the waiter runs trays on their own, like a little ant farm.",
+  "dur": 5.721,
+  "wav": "episodes/s31-farm-and-feast/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "There's even a beach to wander down.",
+  "vis": {
+   "type": "video",
+   "file": "t2.mp4",
+   "in": 26.0
+  },
+  "sub": "There's even a beach to wander down.",
+  "dur": 2.011,
+  "wav": "episodes/s31-farm-and-feast/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? Mining looks weak. The pickaxe barely seems to land.",
+  "vis": {
+   "type": "video",
+   "file": "t2.mp4",
+   "in": 57.0
+  },
+  "sub": "The catch? Mining looks weak. The pickaxe barely seems to land.",
+  "dur": 4.571,
+  "wav": "episodes/s31-farm-and-feast/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "Thirty-one of its thirty-two Steam reviews are positive, and it's in fourteen languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "Thirty-one of its thirty-two Steam reviews are positive, and it's in fourteen languages.",
+  "dur": 4.885,
+  "wav": "episodes/s31-farm-and-feast/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Stardew Valley meets Diner Dash.",
+  "vis": {
+   "type": "video",
+   "file": "t2.mp4",
+   "in": 49.0
+  },
+  "sub": "Think Stardew Valley meets Diner Dash.",
+  "dur": 2.482,
+  "wav": "episodes/s31-farm-and-feast/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip for a slow evening. The full game is due November eleventh.",
+  "vis": {
+   "type": "video",
+   "file": "t2.mp4",
+   "in": 40.5
+  },
+  "sub": "Worth a dip for a slow evening. The full game is due November eleventh.",
+  "dur": 4.284,
+  "wav": "episodes/s31-farm-and-feast/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.176,
+  "wav": "episodes/s31-farm-and-feast/v2/tts/s10.wav"
+ }
+]

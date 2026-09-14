@@ -1,0 +1,39 @@
+{
+ "demo_appid": 5057590,
+ "full_appid": 4555210,
+ "name": "Oar'some Adventures",
+ "developers": [
+  "Haymaker Games"
+ ],
+ "publishers": [
+  "Haymaker Games"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Adventure",
+  "Indie"
+ ],
+ "languages": "English*, French, Italian, German, Spanish - Spain, Czech, Dutch, Indonesian, Japanese, Korean, Malay, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Thai, Turkish, Ukrainian, Vietnamese*languages with full audio support",
+ "website": "https://haymaker.games",
+ "short": "Paddles up, Hosers! OAR'SOME Adventures is a cozy/chaotic rafting and nature adventure for 1-8 players. Casually paddle your way down the river alone, or gather your friends for whitewater mischief and exploration in beautiful, yet dangerous, surroundings.",
+ "about": "   GAME OVERVIEW    You and your friends take a “relaxing” trip rafting down a massive river. Work together to navigate your way to the bottom of an elaborate river system and make it back to the safety of civilization.                PADDLE!    Keep Rowing! You’ll need to work with your friends to have any chance of making it to the bottom of the river. Synchronize your rowing in order to navigate through dangerous obstacles and wild river rapids!                EXPLORE!    Where to next? Explore a vast world full of beautiful rivers and unique landmarks and co-operative puzzles. Complete challenges to continue downstream, and make tough decisions on which river (or path) to follow! Each trip down the river becomes unique or as familiar as you want.                SURVIVE!    You can make it! Getting to the bottom of the river won’t be easy. Watch out for a wide variety of natural wildlife, some friendly, others not so much... Each bump and crash will hurt you and your boat too! use your items wisely to make sure you and your friends survive the journey!                 ",
+ "min_req": " Minimum:     OS:  Windows 10    Processor:  Intel Core i5 @ 2.5 GHz or equivalent    Memory:  8 GB RAM    Graphics:  GTX 1060 or RX 6600 XT    DirectX:  Version 12    Storage:  4 GB available space  ",
+ "movies": [
+  {
+   "id": 257407811,
+   "name": "OAR'SOME ADVENTURES - Gameplay Trailer - DEMO OUT NOW!"
+  },
+  {
+   "id": 257360045,
+   "name": "OAR'SOME - Meet The Joes! WISHLIST NOW!"
+  }
+ ],
+ "screenshots": 7,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

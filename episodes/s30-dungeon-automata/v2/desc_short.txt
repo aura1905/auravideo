@@ -1,0 +1,22 @@
+Dungeon Automata — a free JRPG demo where you program your party with logic nodes, then watch it fight.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5095050/
+
+── The quick version ──
+What you do  : build node logic for a golem party, then watch
+Music        : Yuzo Koshiro
+The catch    : small dungeon window, menus everywhere
+Demo reviews : 45 of 46 positive
+Publisher    : Raw Fury
+Demo         : 570 MB installed
+Think        : Final Fantasy XII's gambits, as a whole game
+Verdict      : Worth A Dip
+
+Numbers come from the Steam store page, the demo's Steam reviews and Steam's public
+product info; the rest comes from watching the official trailers. No files were
+downloaded, unpacked, decompiled, or redistributed. It is an outside reading, not a
+statement from the developer. All game footage and images belong to Medium-Rare Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

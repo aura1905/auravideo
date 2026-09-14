@@ -1,0 +1,579 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 4.754,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c000.png",
+   "start": 0.0,
+   "in": 0,
+   "out": 0.919,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c001.png",
+   "start": 0.929,
+   "in": 0,
+   "out": 0.81,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c002.png",
+   "start": 1.749,
+   "in": 0,
+   "out": 0.755,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c003.png",
+   "start": 2.514,
+   "in": 0,
+   "out": 1.028,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c004.png",
+   "start": 3.552,
+   "in": 0,
+   "out": 1.192,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s2.wav",
+   "start": 4.904,
+   "in": 0,
+   "out": 3.788,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c005.png",
+   "start": 4.904,
+   "in": 0,
+   "out": 1.023,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c006.png",
+   "start": 5.937,
+   "in": 0,
+   "out": 1.138,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c007.png",
+   "start": 7.085,
+   "in": 0,
+   "out": 0.794,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c008.png",
+   "start": 7.888,
+   "in": 0,
+   "out": 0.794,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s3.wav",
+   "start": 8.842,
+   "in": 0,
+   "out": 4.65,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c009.png",
+   "start": 8.842,
+   "in": 0,
+   "out": 1.223,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c010.png",
+   "start": 10.075,
+   "in": 0,
+   "out": 0.774,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c011.png",
+   "start": 10.859,
+   "in": 0,
+   "out": 0.774,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c012.png",
+   "start": 11.643,
+   "in": 0,
+   "out": 0.55,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c013.png",
+   "start": 12.203,
+   "in": 0,
+   "out": 1.279,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s4.wav",
+   "start": 13.642,
+   "in": 0,
+   "out": 5.721,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c014.png",
+   "start": 13.642,
+   "in": 0,
+   "out": 0.598,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c015.png",
+   "start": 14.25,
+   "in": 0,
+   "out": 0.851,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c016.png",
+   "start": 15.11,
+   "in": 0,
+   "out": 1.205,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c017.png",
+   "start": 16.325,
+   "in": 0,
+   "out": 1.104,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c018.png",
+   "start": 17.439,
+   "in": 0,
+   "out": 0.598,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c019.png",
+   "start": 18.047,
+   "in": 0,
+   "out": 0.749,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c020.png",
+   "start": 18.806,
+   "in": 0,
+   "out": 0.547,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s5.wav",
+   "start": 19.513,
+   "in": 0,
+   "out": 2.011,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c021.png",
+   "start": 19.513,
+   "in": 0,
+   "out": 1.124,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c022.png",
+   "start": 20.647,
+   "in": 0,
+   "out": 0.867,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s6.wav",
+   "start": 21.674,
+   "in": 0,
+   "out": 4.571,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c023.png",
+   "start": 21.674,
+   "in": 0,
+   "out": 0.797,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c024.png",
+   "start": 22.481,
+   "in": 0,
+   "out": 1.334,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c025.png",
+   "start": 23.825,
+   "in": 0,
+   "out": 1.334,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c026.png",
+   "start": 25.169,
+   "in": 0,
+   "out": 1.066,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s7.wav",
+   "start": 26.395,
+   "in": 0,
+   "out": 4.885,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c027.png",
+   "start": 26.395,
+   "in": 0,
+   "out": 0.977,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c028.png",
+   "start": 27.382,
+   "in": 0,
+   "out": 0.925,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c029.png",
+   "start": 28.318,
+   "in": 0,
+   "out": 1.185,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c030.png",
+   "start": 29.513,
+   "in": 0,
+   "out": 0.666,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c031.png",
+   "start": 30.189,
+   "in": 0,
+   "out": 1.081,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s8.wav",
+   "start": 31.43,
+   "in": 0,
+   "out": 2.482,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c032.png",
+   "start": 31.43,
+   "in": 0,
+   "out": 1.322,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c033.png",
+   "start": 32.762,
+   "in": 0,
+   "out": 1.14,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s9.wav",
+   "start": 34.062,
+   "in": 0,
+   "out": 4.284,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c034.png",
+   "start": 34.062,
+   "in": 0,
+   "out": 1.061,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c035.png",
+   "start": 35.133,
+   "in": 0,
+   "out": 0.836,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c036.png",
+   "start": 35.979,
+   "in": 0,
+   "out": 1.23,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c037.png",
+   "start": 37.219,
+   "in": 0,
+   "out": 1.117,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s10.wav",
+   "start": 38.496,
+   "in": 0,
+   "out": 1.176,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c038.png",
+   "start": 38.496,
+   "in": 0,
+   "out": 1.166,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s31-farm-and-feast/t2.mp4",
+   "start": 0.0,
+   "in": 0.0,
+   "out": 4.904,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s31-farm-and-feast/t0.mp4",
+   "start": 4.904,
+   "in": 8.2,
+   "out": 12.138,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s31-farm-and-feast/t0.mp4",
+   "start": 8.842,
+   "in": 26.0,
+   "out": 30.8,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s31-farm-and-feast/t2.mp4",
+   "start": 13.642,
+   "in": 40.0,
+   "out": 45.871,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s31-farm-and-feast/t2.mp4",
+   "start": 19.513,
+   "in": 26.0,
+   "out": 28.161,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s31-farm-and-feast/t2.mp4",
+   "start": 21.674,
+   "in": 57.0,
+   "out": 61.721,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s31-farm-and-feast/ev_facts_v.png",
+   "start": 26.395,
+   "in": 0.0,
+   "out": 5.035,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "fit",
+   "transformScale": 1.0
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s31-farm-and-feast/t2.mp4",
+   "start": 31.43,
+   "in": 49.0,
+   "out": 51.632,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s31-farm-and-feast/t2.mp4",
+   "start": 34.062,
+   "in": 40.5,
+   "out": 46.61,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v1",
+   "file": "C:/Git/auravideo/episodes/s31-farm-and-feast/logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 39.672,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "C:/Git/auravideo/episodes/s31-farm-and-feast/t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 40.172,
+   "volume": 0.06,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "subs": [],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "MEDIA"
+  }
+ ],
+ "total": 40.172
+}

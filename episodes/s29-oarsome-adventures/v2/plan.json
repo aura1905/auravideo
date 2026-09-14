@@ -1,0 +1,549 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 5.721,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c000.png",
+   "start": 0.0,
+   "in": 0,
+   "out": 1.187,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c001.png",
+   "start": 1.197,
+   "in": 0,
+   "out": 1.454,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c002.png",
+   "start": 2.661,
+   "in": 0,
+   "out": 0.722,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c003.png",
+   "start": 3.393,
+   "in": 0,
+   "out": 1.187,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c004.png",
+   "start": 4.59,
+   "in": 0,
+   "out": 1.121,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s2.wav",
+   "start": 5.871,
+   "in": 0,
+   "out": 4.336,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c005.png",
+   "start": 5.871,
+   "in": 0,
+   "out": 1.05,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c006.png",
+   "start": 6.931,
+   "in": 0,
+   "out": 0.713,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c007.png",
+   "start": 7.654,
+   "in": 0,
+   "out": 0.616,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c008.png",
+   "start": 8.28,
+   "in": 0,
+   "out": 1.146,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c009.png",
+   "start": 9.436,
+   "in": 0,
+   "out": 0.761,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s3.wav",
+   "start": 10.357,
+   "in": 0,
+   "out": 1.593,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c010.png",
+   "start": 10.357,
+   "in": 0,
+   "out": 0.833,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c011.png",
+   "start": 11.2,
+   "in": 0,
+   "out": 0.74,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s4.wav",
+   "start": 12.1,
+   "in": 0,
+   "out": 5.068,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c012.png",
+   "start": 12.1,
+   "in": 0,
+   "out": 0.809,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c013.png",
+   "start": 12.919,
+   "in": 0,
+   "out": 0.707,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c014.png",
+   "start": 13.636,
+   "in": 0,
+   "out": 0.707,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c015.png",
+   "start": 14.352,
+   "in": 0,
+   "out": 1.219,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c016.png",
+   "start": 15.581,
+   "in": 0,
+   "out": 1.116,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c017.png",
+   "start": 16.707,
+   "in": 0,
+   "out": 0.451,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s5.wav",
+   "start": 17.318,
+   "in": 0,
+   "out": 5.46,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c018.png",
+   "start": 17.318,
+   "in": 0,
+   "out": 0.814,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c019.png",
+   "start": 18.142,
+   "in": 0,
+   "out": 1.02,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c020.png",
+   "start": 19.172,
+   "in": 0,
+   "out": 0.608,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c021.png",
+   "start": 19.79,
+   "in": 0,
+   "out": 0.866,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c022.png",
+   "start": 20.666,
+   "in": 0,
+   "out": 1.123,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c023.png",
+   "start": 21.799,
+   "in": 0,
+   "out": 0.969,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s6.wav",
+   "start": 22.928,
+   "in": 0,
+   "out": 4.153,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c024.png",
+   "start": 22.928,
+   "in": 0,
+   "out": 0.835,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c025.png",
+   "start": 23.773,
+   "in": 0,
+   "out": 0.694,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c026.png",
+   "start": 24.477,
+   "in": 0,
+   "out": 0.905,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c027.png",
+   "start": 25.392,
+   "in": 0,
+   "out": 1.679,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s7.wav",
+   "start": 27.231,
+   "in": 0,
+   "out": 3.971,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c028.png",
+   "start": 27.231,
+   "in": 0,
+   "out": 1.395,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c029.png",
+   "start": 28.636,
+   "in": 0,
+   "out": 1.09,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c030.png",
+   "start": 29.736,
+   "in": 0,
+   "out": 1.456,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s8.wav",
+   "start": 31.352,
+   "in": 0,
+   "out": 3.03,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c031.png",
+   "start": 31.352,
+   "in": 0,
+   "out": 1.537,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c032.png",
+   "start": 32.899,
+   "in": 0,
+   "out": 1.473,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s9.wav",
+   "start": 34.532,
+   "in": 0,
+   "out": 2.769,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c033.png",
+   "start": 34.532,
+   "in": 0,
+   "out": 0.967,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c034.png",
+   "start": 35.509,
+   "in": 0,
+   "out": 1.022,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c035.png",
+   "start": 36.541,
+   "in": 0,
+   "out": 0.75,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s10.wav",
+   "start": 37.451,
+   "in": 0,
+   "out": 1.306,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c036.png",
+   "start": 37.451,
+   "in": 0,
+   "out": 1.296,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s29-oarsome-adventures/t0.mp4",
+   "start": 0.0,
+   "in": 15.0,
+   "out": 20.871,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s29-oarsome-adventures/t0.mp4",
+   "start": 5.871,
+   "in": 8.0,
+   "out": 14.229,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s29-oarsome-adventures/t0.mp4",
+   "start": 12.1,
+   "in": 18.0,
+   "out": 23.218,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s29-oarsome-adventures/t0.mp4",
+   "start": 17.318,
+   "in": 58.0,
+   "out": 63.61,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s29-oarsome-adventures/t1.mp4",
+   "start": 22.928,
+   "in": 36.0,
+   "out": 40.303,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s29-oarsome-adventures/ev_facts_v.png",
+   "start": 27.231,
+   "in": 0.0,
+   "out": 4.121,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "fit",
+   "transformScale": 1.0
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s29-oarsome-adventures/t0.mp4",
+   "start": 31.352,
+   "in": 21.0,
+   "out": 24.18,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s29-oarsome-adventures/t0.mp4",
+   "start": 34.532,
+   "in": 2.0,
+   "out": 6.725,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v1",
+   "file": "C:/Git/auravideo/episodes/s29-oarsome-adventures/logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 38.757,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "C:/Git/auravideo/episodes/s29-oarsome-adventures/t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 39.257,
+   "volume": 0.06,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "subs": [],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "MEDIA"
+  }
+ ],
+ "total": 39.257
+}

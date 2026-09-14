@@ -1,0 +1,128 @@
+[
+ {
+  "id": "s1",
+  "text": "Free R P G demo where you don't fight. You program your party.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 16.0
+  },
+  "sub": "Free RPG demo where you don't fight. You program your party.",
+  "dur": 4.571,
+  "wav": "episodes/s30-dungeon-automata/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Then you just watch.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Then you just watch.",
+  "dur": 1.176,
+  "wav": "episodes/s30-dungeon-automata/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "You wire up little logic nodes, like: find the ally with the lowest HP, and heal them.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 19.0
+  },
+  "sub": "You wire up little logic nodes, like: find the ally with the lowest HP, and heal them.",
+  "dur": 5.825,
+  "wav": "episodes/s30-dungeon-automata/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Send your golems up the tower, and they battle on their own.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.0
+  },
+  "sub": "Send your golems up the tower, and they battle on their own.",
+  "dur": 3.736,
+  "wav": "episodes/s30-dungeon-automata/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "They lose. You fix the nodes. You try again.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 12.0
+  },
+  "sub": "They lose. You fix the nodes. You try again.",
+  "dur": 3.318,
+  "wav": "episodes/s30-dungeon-automata/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "Best part? The music is by Yuzo Koshiro, a legend of that Genesis synth sound.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.0
+  },
+  "sub": "Best part? The music is by Yuzo Koshiro, a legend of that Genesis synth sound.",
+  "dur": 5.773,
+  "wav": "episodes/s30-dungeon-automata/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "The catch? The dungeon sits in a small window, and menus fill the rest of the screen.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  },
+  "sub": "The catch? The dungeon sits in a small window, and menus fill the rest of the screen.",
+  "dur": 4.989,
+  "wav": "episodes/s30-dungeon-automata/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Forty-five of its forty-six Steam reviews are positive, and it's published by Raw Fury.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "Forty-five of its forty-six Steam reviews are positive, and it's published by Raw Fury.",
+  "dur": 4.937,
+  "wav": "episodes/s30-dungeon-automata/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Think Final Fantasy Twelve's gambits, turned into a whole game.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 16.5
+  },
+  "sub": "Think Final Fantasy Twelve's gambits, turned into a whole game.",
+  "dur": 3.736,
+  "wav": "episodes/s30-dungeon-automata/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "Worth a dip if debugging sounds like fun.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Worth a dip if debugging sounds like fun.",
+  "dur": 2.429,
+  "wav": "episodes/s30-dungeon-automata/v2/tts/s10.wav"
+ },
+ {
+  "id": "s11",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.228,
+  "wav": "episodes/s30-dungeon-automata/v2/tts/s11.wav"
+ }
+]
