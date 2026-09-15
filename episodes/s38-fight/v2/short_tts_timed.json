@@ -1,0 +1,114 @@
+[
+ {
+  "id": "s1",
+  "text": "Free fighting game demo where you plan every move before the fight starts.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  },
+  "sub": "Free fighting game demo where you plan every move before the fight starts.",
+  "dur": 4.101,
+  "wav": "episodes/s38-fight/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Queue your steps, guards and strikes on a timeline, then commit blind.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 5.2
+  },
+  "sub": "Queue your steps, guards and strikes on a timeline, then commit blind.",
+  "dur": 4.153,
+  "wav": "episodes/s38-fight/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Your opponent does the same, and then you both watch the plans collide in real time.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.0
+  },
+  "sub": "Your opponent does the same, and then you both watch the plans collide in real time.",
+  "dur": 4.153,
+  "wav": "episodes/s38-fight/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "There are over twenty fighters, each built around a weapon.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "There are over twenty fighters, each built around a weapon.",
+  "dur": 3.082,
+  "wav": "episodes/s38-fight/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Best part: a ghost preview shows exactly what move you're locking in.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 5.5
+  },
+  "sub": "Best part: a ghost preview shows exactly what move you're locking in.",
+  "dur": 4.206,
+  "wav": "episodes/s38-fight/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? When the hits land, the animations feel a bit stiff.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "The catch? When the hits land, the animations feel a bit stiff.",
+  "dur": 4.153,
+  "wav": "episodes/s38-fight/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "The demo is about seven hundred megabytes, in English and Spanish.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about seven hundred megabytes, in English and Spanish.",
+  "dur": 4.284,
+  "wav": "episodes/s38-fight/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Your Only Move Is Hustle, with swords.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "Think Your Only Move Is Hustle, with swords.",
+  "dur": 2.717,
+  "wav": "episodes/s38-fight/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if you'd rather outthink people than out-react them.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  },
+  "sub": "Worth a dip if you'd rather outthink people than out-react them.",
+  "dur": 3.37,
+  "wav": "episodes/s38-fight/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.358,
+  "wav": "episodes/s38-fight/v2/tts/s10.wav"
+ }
+]

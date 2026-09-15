@@ -1,0 +1,505 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 4.153,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c000.png",
+   "start": 0.0,
+   "in": 0,
+   "out": 1.353,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c001.png",
+   "start": 1.363,
+   "in": 0,
+   "out": 1.482,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c002.png",
+   "start": 2.855,
+   "in": 0,
+   "out": 1.288,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s2.wav",
+   "start": 4.303,
+   "in": 0,
+   "out": 2.9,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c003.png",
+   "start": 4.303,
+   "in": 0,
+   "out": 0.847,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c004.png",
+   "start": 5.16,
+   "in": 0,
+   "out": 0.913,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c005.png",
+   "start": 6.083,
+   "in": 0,
+   "out": 1.11,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s3.wav",
+   "start": 7.353,
+   "in": 0,
+   "out": 4.807,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c006.png",
+   "start": 7.353,
+   "in": 0,
+   "out": 1.07,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c007.png",
+   "start": 8.433,
+   "in": 0,
+   "out": 0.908,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c008.png",
+   "start": 9.351,
+   "in": 0,
+   "out": 1.07,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c009.png",
+   "start": 10.432,
+   "in": 0,
+   "out": 0.962,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c010.png",
+   "start": 11.404,
+   "in": 0,
+   "out": 0.746,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s4.wav",
+   "start": 12.31,
+   "in": 0,
+   "out": 5.224,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c011.png",
+   "start": 12.31,
+   "in": 0,
+   "out": 0.702,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c012.png",
+   "start": 13.022,
+   "in": 0,
+   "out": 0.94,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c013.png",
+   "start": 13.972,
+   "in": 0,
+   "out": 1.355,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c014.png",
+   "start": 15.338,
+   "in": 0,
+   "out": 1.415,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c015.png",
+   "start": 16.762,
+   "in": 0,
+   "out": 0.762,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s5.wav",
+   "start": 17.684,
+   "in": 0,
+   "out": 4.206,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c016.png",
+   "start": 17.684,
+   "in": 0,
+   "out": 0.654,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c017.png",
+   "start": 18.348,
+   "in": 0,
+   "out": 1.152,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c018.png",
+   "start": 19.51,
+   "in": 0,
+   "out": 0.654,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c019.png",
+   "start": 20.174,
+   "in": 0,
+   "out": 1.208,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c020.png",
+   "start": 21.392,
+   "in": 0,
+   "out": 0.488,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s6.wav",
+   "start": 22.04,
+   "in": 0,
+   "out": 5.956,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c021.png",
+   "start": 22.04,
+   "in": 0,
+   "out": 0.91,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c022.png",
+   "start": 22.96,
+   "in": 0,
+   "out": 1.249,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c023.png",
+   "start": 24.219,
+   "in": 0,
+   "out": 0.716,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c024.png",
+   "start": 24.945,
+   "in": 0,
+   "out": 1.055,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c025.png",
+   "start": 26.011,
+   "in": 0,
+   "out": 0.619,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c026.png",
+   "start": 26.64,
+   "in": 0,
+   "out": 1.346,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s7.wav",
+   "start": 28.146,
+   "in": 0,
+   "out": 3.866,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c027.png",
+   "start": 28.146,
+   "in": 0,
+   "out": 1.694,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c028.png",
+   "start": 29.85,
+   "in": 0,
+   "out": 1.366,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c029.png",
+   "start": 31.226,
+   "in": 0,
+   "out": 0.776,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s8.wav",
+   "start": 32.162,
+   "in": 0,
+   "out": 2.064,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c030.png",
+   "start": 32.162,
+   "in": 0,
+   "out": 1.022,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c031.png",
+   "start": 33.194,
+   "in": 0,
+   "out": 1.022,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s9.wav",
+   "start": 34.376,
+   "in": 0,
+   "out": 0.993,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c032.png",
+   "start": 34.376,
+   "in": 0,
+   "out": 0.983,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s39-genome-fracture/t0.mp4",
+   "start": 0.0,
+   "in": 0.0,
+   "out": 4.303,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s39-genome-fracture/t0.mp4",
+   "start": 4.303,
+   "in": 11.5,
+   "out": 14.55,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s39-genome-fracture/t0.mp4",
+   "start": 7.353,
+   "in": 19.0,
+   "out": 23.957,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s39-genome-fracture/t0.mp4",
+   "start": 12.31,
+   "in": 45.5,
+   "out": 50.874,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s39-genome-fracture/t0.mp4",
+   "start": 17.684,
+   "in": 29.0,
+   "out": 33.356,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s39-genome-fracture/ev_facts_v.png",
+   "start": 22.04,
+   "in": 0.0,
+   "out": 6.106,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "fit",
+   "transformScale": 1.0
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s39-genome-fracture/t0.mp4",
+   "start": 28.146,
+   "in": 1.0,
+   "out": 5.016,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s39-genome-fracture/ss02_mv.mp4",
+   "start": 32.162,
+   "in": 0.0,
+   "out": 3.707,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v1",
+   "file": "C:/Git/auravideo/episodes/s39-genome-fracture/logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 35.369,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "C:/Git/auravideo/episodes/s39-genome-fracture/t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 35.869,
+   "volume": 0.06,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "subs": [],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "MEDIA"
+  }
+ ],
+ "total": 35.869
+}

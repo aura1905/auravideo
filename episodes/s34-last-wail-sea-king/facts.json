@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5153590,
+ "full_appid": 4948110,
+ "name": "Last Wail of the Sea King",
+ "developers": [
+  "Funke Munke"
+ ],
+ "publishers": [
+  "Funke Munke"
+ ],
+ "release": "2027",
+ "coming_soon": true,
+ "genres": [
+  "Adventure",
+  "Indie",
+  "RPG"
+ ],
+ "languages": "English*, French, Spanish - Spain, Dutch, Hungarian*languages with full audio support",
+ "website": "https://funkemunke.com/",
+ "short": "Explore the body of a dying sea beast in this first-person RPG with JRPG-inspired turn-based combat. Recruit bizarre companions, battle mutated creatures and uncover the secrets of the Sea King.",
+ "about": "   Explore  the body of a  dying sea beast  in this  first-person RPG  with JRPG-inspired  turn-based combat . Recruit  bizarre companions , battle  mutated creatures  and uncover the  secrets of the Sea King .        The inside of the creature has been  twisted and transformed  by years of ocean pollution.  Discover  the strange  creatures  and  people  living within as you delve deeper. But traveler, beware, for exploring the depths of this Sea King may well cost you your sanity… or your life !        Gather your party  and  face off  against tribal warriors, mutated fish and the foul creatures that call this place their home.  Exploration  can lead to all kinds of  gear and weapons  to  kit out your party  and survive your expedition within.        Play as Clyde the Intern , and explore a  surreal 3D world  populated with  weird 2D collage characters . Some will  join your expedition , while others will hinder your progress. Here, in this fleshy world,  your choices matter  – deciding who joins your crew.        Explore  the fleshy landscapes in first-person, with  characters to talk to  and  secrets to find . From  fleshy trash cities , to  lakes of stomach acid ,   Last Wail of the Sea King   is bound to surprise. So what are you waiting for?  The Company expects RESULTS!          ",
+ "min_req": " Minimum:     OS:  Windows 10 (64-bit)    Processor:   Intel Core i3 (10th Gen+) or AMD Ryzen 3 (3000 Series+)    Memory:  8 MB RAM    Graphics:  NVIDIA GeForce GTX 1050 / AMD Radeon RX 550 or better    Storage:  800 MB available space  ",
+ "movies": [
+  {
+   "id": 257407618,
+   "name": "Demo Trailer"
+  }
+ ],
+ "screenshots": 8,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

@@ -1,0 +1,86 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo where you drive an armed snowplow through a possessed toy apocalypse.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 19.5
+  }
+ },
+ {
+  "id": "s2",
+  "text": "Cute toys. Heavy machinery.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Shoot down incoming candy and ornaments, then charge up and ram through everything.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 25.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "There's a candy-cane minigun and a tinsel laser, and every weapon overheats if you get greedy.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 12.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best moment: a giant stitched-up teddy bear boss.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 29.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The big yellow explosions look flat, and they hide the action.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 33.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The whole demo is about three hundred megabytes, English only, and the full game has five winter regions.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Heavy Weapon, with Christmas gone wrong.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.5
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip. Santa's bad list needs road work.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

@@ -1,0 +1,128 @@
+[
+ {
+  "id": "s1",
+  "text": "Free R P G demo set inside the body of a dying sea monster.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 20.0
+  },
+  "sub": "Free RPG demo set inside the body of a dying sea monster.",
+  "dur": 3.971,
+  "wav": "episodes/s34-last-wail-sea-king/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "You play as Clyde the Intern.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "You play as Clyde the Intern.",
+  "dur": 2.011,
+  "wav": "episodes/s34-last-wail-sea-king/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "In there, people built a village, and somehow an office building, into the monster's flesh.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 25.0
+  },
+  "sub": "In there, people built a village, and somehow an office building, into the monster's flesh.",
+  "dur": 5.068,
+  "wav": "episodes/s34-last-wail-sea-king/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Fights are turn-based, J R P G style, with party members that look like cut-out photos.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.0
+  },
+  "sub": "Fights are turn-based, JRPG style, with party members that look like cut-out photos.",
+  "dur": 5.59,
+  "wav": "episodes/s34-last-wail-sea-king/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Best part: it's gloriously weird. A fisherman wants to destroy the soggy demon from within.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 5.0
+  },
+  "sub": "Best part: it's gloriously weird. A fisherman wants to destroy the soggy demon from within.",
+  "dur": 6.557,
+  "wav": "episodes/s34-last-wail-sea-king/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The animation is deliberately janky. Characters mostly just wobble.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 38.0
+  },
+  "sub": "The catch? The animation is deliberately janky. Characters mostly just wobble.",
+  "dur": 4.467,
+  "wav": "episodes/s34-last-wail-sea-king/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "There's even platforming, with a rope swing over pools of acid.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 32.0
+  },
+  "sub": "There's even platforming, with a rope swing over pools of acid.",
+  "dur": 3.553,
+  "wav": "episodes/s34-last-wail-sea-king/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "The demo is about two gigs, in five languages, and the full game is due in twenty twenty-seven.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about two gigs, in five languages, and the full game is due in twenty twenty-seven.",
+  "dur": 5.355,
+  "wav": "episodes/s34-last-wail-sea-king/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Think Earthbound, if it got swallowed by a whale.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "Think Earthbound, if it got swallowed by a whale.",
+  "dur": 3.03,
+  "wav": "episodes/s34-last-wail-sea-king/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "Worth a dip if you like your R P Gs strange.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.5
+  },
+  "sub": "Worth a dip if you like your RPGs strange.",
+  "dur": 2.847,
+  "wav": "episodes/s34-last-wail-sea-king/v2/tts/s10.wav"
+ },
+ {
+  "id": "s11",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.228,
+  "wav": "episodes/s34-last-wail-sea-king/v2/tts/s11.wav"
+ }
+]

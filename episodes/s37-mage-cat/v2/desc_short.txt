@@ -1,0 +1,20 @@
+Mage Cat: Endless Breakout Survivor — a free survivor demo starring a wizard cat against endless hordes.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5146680/
+
+── The quick version ──
+What you do : dodge; spells auto-fire; pick cards each wave
+Best part   : late-run light show
+The catch   : flat, empty sand arena
+Demo        : about 810 MB, English + Simplified Chinese
+Think       : Vampire Survivors, starring a cat
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page, the demo's Steam reviews and Steam's public
+product info; the rest comes from watching the official trailer. No files were
+downloaded, unpacked, decompiled, or redistributed. It is an outside reading, not a
+statement from the developer. All game footage and images belong to WANG LEI.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

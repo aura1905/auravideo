@@ -1,0 +1,83 @@
+[
+ {
+  "id": "s1",
+  "text": "Free horror casino demo: a slot machine is your weapon, and a creepy rabbit runs the table.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "s2",
+  "text": "Pull the lever, or die.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Every spin chains symbols into combos, and bigger combos beat the gamblers you duel.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 15.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Between rounds you buy new symbols and chips in a lucky shop, like a deckbuilder.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best moment in the trailer: a chain so big the score cracks the screen.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 34.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The enemies you're supposedly fighting barely show up on the board.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 54.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "There's PvP too. The demo is about four gigs installed, in six languages, and all three reviews so far are positive.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Luck be a Landlord, with Inscryption's creepy vibe.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if you like your gambling haunted.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

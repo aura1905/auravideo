@@ -1,0 +1,119 @@
+[
+ {
+  "id": "s1",
+  "text": "Free tower defense demo where your whole army is chickens.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 47.0
+  },
+  "sub": "Free tower defense demo where your whole army is chickens.",
+  "dur": 3.971,
+  "wav": "episodes/s33-hold-the-roost/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Build by day. Survive by night.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 39.0
+  },
+  "sub": "Build by day. Survive by night.",
+  "dur": 2.194,
+  "wav": "episodes/s33-hold-the-roost/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Every chicken gets a job. Shooters man the towers, looters sneak out for supplies.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 18.0
+  },
+  "sub": "Every chicken gets a job. Shooters man the towers, looters sneak out for supplies.",
+  "dur": 5.068,
+  "wav": "episodes/s33-hold-the-roost/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Hatch eggs for stronger birds, like one called Clucky Wattleton.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.0
+  },
+  "sub": "Hatch eggs for stronger birds, like one called Clucky Wattleton.",
+  "dur": 4.101,
+  "wav": "episodes/s33-hold-the-roost/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Best part: the night waves get huge, with swarms and damage numbers everywhere.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 44.0
+  },
+  "sub": "Best part: the night waves get huge, with swarms and damage numbers everywhere.",
+  "dur": 5.068,
+  "wav": "episodes/s33-hold-the-roost/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The menus look like an old browser game.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 25.0
+  },
+  "sub": "The catch? The menus look like an old browser game.",
+  "dur": 3.187,
+  "wav": "episodes/s33-hold-the-roost/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "The demo is about two gigs, English only.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about two gigs, English only.",
+  "dur": 2.534,
+  "wav": "episodes/s33-hold-the-roost/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Bloons TD, if the monkeys were chickens.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  },
+  "sub": "Think Bloons TD, if the monkeys were chickens.",
+  "dur": 3.318,
+  "wav": "episodes/s33-hold-the-roost/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip. The forest is hungry.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 49.0
+  },
+  "sub": "Worth a dip. The forest is hungry.",
+  "dur": 2.847,
+  "wav": "episodes/s33-hold-the-roost/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.228,
+  "wav": "episodes/s33-hold-the-roost/v2/tts/s10.wav"
+ }
+]

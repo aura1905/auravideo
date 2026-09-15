@@ -1,0 +1,34 @@
+{
+ "demo_appid": 5199470,
+ "full_appid": 5199430,
+ "name": "PLOW",
+ "developers": [
+  "Last Exit Diner"
+ ],
+ "publishers": [
+  "Last Exit Diner"
+ ],
+ "release": "Q4 2026",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Indie"
+ ],
+ "languages": "English",
+ "website": null,
+ "short": "Drive an armed snowplow through a possessed toy apocalypse. Shred enemy fire, crush corrupted Christmas toys, overheat outrageous weapons, and upgrade your machine across five escalating winter regions.",
+ "about": " Cute toys. Heavy machinery. No survivors.  PLOW is a fast side-scrolling action roguelite about driving an armed snowplow through a possessed toy apocalypse. Hold the road against waves of corrupted Christmas toys, intercept their arcing attacks, and turn every opening into a crushing counterattack. Weaponize the Winter  Unload a high-rate candy-cane minigun, arc globs from the Frosting Sprayer, or chain a Tinsel Tesla beam through dangerous targets. Every weapon builds heat, so reckless fire turns the mount red and forces a smoky cooldown at the worst possible moment. Charge the PLOW  Shoot hostile candy, fruit, ornaments, and other festive ammunition out of the air to charge the PLOW meter. When it is ready, become briefly unstoppable and drive across most of the battlefield, smashing everything in your path before reversing back into position. Build a Better Snowplow  Return to the garage between runs to equip weapons and improve the machine. Balance hull integrity with a rechargeable shield, manage weapon heat, and adapt your loadout to increasingly dangerous enemy combinations. Fight a Toy Apocalypse  - Battle ground and flying enemy archetypes with distinct movement and animated attacks. - Prioritize visible, destructible projectiles before they overwhelm the plow. - Push through five escalating winter regions. - Face Teddy Titan, a towering ground boss that patrols the battlefield and survives a direct PLOW impact. - Play with mouse and keyboard or a gamepad.",
+ "min_req": " Minimum:     Memory:  4 GB RAM    DirectX:  Version 11    Storage:  1 GB available space  ",
+ "movies": [
+  {
+   "id": 257415060,
+   "name": "Official Gameplay"
+  }
+ ],
+ "screenshots": 5,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

@@ -1,0 +1,119 @@
+[
+ {
+  "id": "s1",
+  "text": "This free R P G demo is thirteen gigs on your drive.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 63.0
+  },
+  "sub": "This free RPG demo is thirteen gigs on your drive.",
+  "dur": 3.631,
+  "wav": "episodes/s35-everlast/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "It's Everlast: Undying Tale, an MMO-lite you can play solo or with friends.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 54.0
+  },
+  "sub": "It's Everlast: Undying Tale, an MMO-lite you can play solo or with friends.",
+  "dur": 5.721,
+  "wav": "episodes/s35-everlast/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Fight the undead, then mine, chop trees, craft at the anvil, or just go fishing.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.0
+  },
+  "sub": "Fight the undead, then mine, chop trees, craft at the anvil, or just go fishing.",
+  "dur": 5.277,
+  "wav": "episodes/s35-everlast/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best part: the world. Bright flower fields, swamps, and caves full of glowing mushrooms.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 67.0
+  },
+  "sub": "Best part: the world. Bright flower fields, swamps, and caves full of glowing mushrooms.",
+  "dur": 5.956,
+  "wav": "episodes/s35-everlast/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "You can even glide off a cliff, straight into a fight.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 48.0
+  },
+  "sub": "You can even glide off a cliff, straight into a fight.",
+  "dur": 2.978,
+  "wav": "episodes/s35-everlast/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The trailer is pre-alpha footage, and the animations look stiff.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 29.0
+  },
+  "sub": "The catch? The trailer is pre-alpha footage, and the animations look stiff.",
+  "dur": 5.12,
+  "wav": "episodes/s35-everlast/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "It's English only, and the full game is aimed at the end of this year.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "It's English only, and the full game is aimed at the end of this year.",
+  "dur": 3.683,
+  "wav": "episodes/s35-everlast/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Palia, with more monsters.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 37.0
+  },
+  "sub": "Think Palia, with more monsters.",
+  "dur": 2.351,
+  "wav": "episodes/s35-everlast/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if you've got the space.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 4.0
+  },
+  "sub": "Worth a dip if you've got the space.",
+  "dur": 1.959,
+  "wav": "episodes/s35-everlast/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.045,
+  "wav": "episodes/s35-everlast/v2/tts/s10.wav"
+ }
+]

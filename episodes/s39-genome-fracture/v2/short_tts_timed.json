@@ -1,0 +1,106 @@
+[
+ {
+  "id": "s1",
+  "text": "Free roguelite demo where reality changes every two minutes.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  },
+  "sub": "Free roguelite demo where reality changes every two minutes.",
+  "dur": 4.153,
+  "wav": "episodes/s39-genome-fracture/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "The ground, the enemies, even the rules.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 11.5
+  },
+  "sub": "The ground, the enemies, even the rules.",
+  "dur": 2.9,
+  "wav": "episodes/s39-genome-fracture/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "You pick mutations like lightning, poison and lasers, and combine them into builds.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 19.0
+  },
+  "sub": "You pick mutations like lightning, poison and lasers, and combine them into builds.",
+  "dur": 4.807,
+  "wav": "episodes/s39-genome-fracture/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best part: late in a run, chain lightning and a huge purple blast fill the screen.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 45.5
+  },
+  "sub": "Best part: late in a run, chain lightning and a huge purple blast fill the screen.",
+  "dur": 5.224,
+  "wav": "episodes/s39-genome-fracture/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "The catch? Some of the scenery looks like flat stickers on the ground.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 29.0
+  },
+  "sub": "The catch? Some of the scenery looks like flat stickers on the ground.",
+  "dur": 4.206,
+  "wav": "episodes/s39-genome-fracture/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The demo is about eight hundred megabytes, English only, and the full game is planned for early twenty twenty-seven.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about eight hundred megabytes, English only, and the full game is planned for early twenty twenty-seven.",
+  "dur": 5.956,
+  "wav": "episodes/s39-genome-fracture/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "Think Vampire Survivors, where the map won't sit still.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 1.0
+  },
+  "sub": "Think Vampire Survivors, where the map won't sit still.",
+  "dur": 3.866,
+  "wav": "episodes/s39-genome-fracture/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Worth a dip if one arena gets boring.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "Worth a dip if one arena gets boring.",
+  "dur": 2.064,
+  "wav": "episodes/s39-genome-fracture/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 0.993,
+  "wav": "episodes/s39-genome-fracture/v2/tts/s9.wav"
+ }
+]

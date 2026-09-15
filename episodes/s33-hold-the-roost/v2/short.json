@@ -1,0 +1,89 @@
+[
+ {
+  "id": "s1",
+  "text": "Free tower defense demo where your whole army is chickens.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 47.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "Build by day. Survive by night.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 39.0
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Every chicken gets a job. Shooters man the towers, looters sneak out for supplies.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 18.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Hatch eggs for stronger birds, like one called Clucky Wattleton.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best part: the night waves get huge, with swarms and damage numbers everywhere.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 44.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The menus look like an old browser game.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 25.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The demo is about two gigs, English only.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Bloons TD, if the monkeys were chickens.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip. The forest is hungry.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 49.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

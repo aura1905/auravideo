@@ -1,0 +1,21 @@
+PLOW — a free demo where you drive an armed snowplow through a possessed toy apocalypse.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5199470/
+
+── The quick version ──
+What you do : shoot down toy fire, charge, ram
+Weapons     : candy-cane minigun, tinsel laser, overheat
+Best moment : a giant teddy bear boss
+The catch   : flat explosions hide the action
+Demo        : about 316 MB, English
+Think       : Heavy Weapon, Christmas gone wrong
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page, the demo's Steam reviews and Steam's public
+product info; the rest comes from watching the official trailer. No files were
+downloaded, unpacked, decompiled, or redistributed. It is an outside reading, not a
+statement from the developer. All game footage and images belong to Last Exit Diner.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

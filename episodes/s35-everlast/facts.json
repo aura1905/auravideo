@@ -1,0 +1,47 @@
+{
+ "demo_appid": 5059180,
+ "full_appid": 3818450,
+ "name": "Everlast: Undying Tale",
+ "developers": [
+  "InSpades"
+ ],
+ "publishers": [
+  "InSpades"
+ ],
+ "release": "Q4 2026",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Adventure",
+  "RPG"
+ ],
+ "languages": "English**languages with full audio support",
+ "website": "https://www.inspades.net/",
+ "short": "On Everlast: Undying Tale’s magical world of Sarkis, the undead have risen. Gather, explore, skill, and craft in this MMO-Lite Action RPG Adventure. Only by bridging the gap between the living and the dead can you break Death’s curse.",
+ "about": " Everlast: Undying Tale is a modern take on classic RPG adventures, set in a handcrafted open world. Play solo or with friends as you engage in quests and progress through the epic fantasy-themed story. Mine and harvest resources, craft items, repair the battle torn landscape, and face off against the forces of the undead in the ultimate showdown for the fate of the world! ...or just hang out and fish, it's up to you!                Explore a beautiful high-fantasy open world filled with adventure. Our lovingly handcrafted environment features vast rolling hills and plains, deep mysterious caves, unique biomes, and sweeping vistas. Engage in quests, uncover the world’s mysteries, and discover the animals, creatures, and adventurers who call the world of Everlast: Undying Tale home.            Answer the call of your ancestors and step into an RPG adventure worthy of the heroes of old. Master the sword, bow, or staff as you shape your character into the hero they were meant to become. Find loot, craft items, level up skills, and learn spells. Take part in an epic story that sees you befriend Death, repair the broken lands, stem the surge of the undead, and save the people of South Umbardom.          Become a knight, ranger, or wizard, but on your terms. Want to be a wizard who also wields a greatsword? In Everlast: Undying Tale, you can. Level different skills as you interact with the world. Mine and harvest resources, relax while fishing, cook food, or brew potions of all types. What you choose to focus on is up to you, and each decision helps to shape who your character will become.            Originally designed as an MMO, we listened intently to player feedback and corrected course to a Co-op PvE Adventure. Play completely solo or with friends! Take your character into other servers without losing any gear or character progression.            Everlast: Undying Tale is built from the ground up by a small, passionate team of engineers, artists, and musicians.  This is the first game from our studio, and we have poured our hearts into bringing it from a distant dream to a vibrant reality. We hope that love and care shines through in every moment, both big and small. ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10    Processor:  Processor: Intel Core i5-6400 (2.7 GHz 4 Core) / AMD Ryzen 5 1500X (3.5 GHz 4 Core) or equivalent    Memory:  16 GB RAM    Graphics:  NVIDIA GeForce GTX 1060 (req. 6GB VRAM) / AMD Radeon RX 580 (req. 6GB VRAM) / Intel ARC A380    Network:  Broadband Internet connection    Storage:  20 GB available space    Sound Card:  on board  ",
+ "movies": [
+  {
+   "id": 257424149,
+   "name": "Gameplay Trailer"
+  },
+  {
+   "id": 257183127,
+   "name": "Everlast: Undying Tale Teaser HD"
+  },
+  {
+   "id": 257249363,
+   "name": "Everlast: Playtest Announcment"
+  },
+  {
+   "id": 257336773,
+   "name": "Official Playtest Trailer"
+  }
+ ],
+ "screenshots": 6,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

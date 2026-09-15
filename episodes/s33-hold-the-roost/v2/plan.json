@@ -1,0 +1,507 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 3.971,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c000.png",
+   "start": 0.0,
+   "in": 0,
+   "out": 1.591,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c001.png",
+   "start": 1.601,
+   "in": 0,
+   "out": 1.463,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c002.png",
+   "start": 3.074,
+   "in": 0,
+   "out": 0.887,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s2.wav",
+   "start": 4.121,
+   "in": 0,
+   "out": 2.194,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c003.png",
+   "start": 4.121,
+   "in": 0,
+   "out": 0.958,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c004.png",
+   "start": 5.089,
+   "in": 0,
+   "out": 1.216,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s3.wav",
+   "start": 6.465,
+   "in": 0,
+   "out": 5.068,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c005.png",
+   "start": 6.465,
+   "in": 0,
+   "out": 0.854,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c006.png",
+   "start": 7.329,
+   "in": 0,
+   "out": 0.739,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c007.png",
+   "start": 8.078,
+   "in": 0,
+   "out": 1.487,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c008.png",
+   "start": 9.575,
+   "in": 0,
+   "out": 1.084,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c009.png",
+   "start": 10.669,
+   "in": 0,
+   "out": 0.854,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s4.wav",
+   "start": 11.683,
+   "in": 0,
+   "out": 4.101,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c010.png",
+   "start": 11.683,
+   "in": 0,
+   "out": 0.941,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c011.png",
+   "start": 12.634,
+   "in": 0,
+   "out": 1.0,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c012.png",
+   "start": 13.644,
+   "in": 0,
+   "out": 1.0,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c013.png",
+   "start": 14.655,
+   "in": 0,
+   "out": 1.119,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s5.wav",
+   "start": 15.934,
+   "in": 0,
+   "out": 5.068,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c014.png",
+   "start": 15.934,
+   "in": 0,
+   "out": 0.705,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c015.png",
+   "start": 16.649,
+   "in": 0,
+   "out": 1.004,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c016.png",
+   "start": 17.663,
+   "in": 0,
+   "out": 0.646,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c017.png",
+   "start": 18.319,
+   "in": 0,
+   "out": 1.421,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c018.png",
+   "start": 19.75,
+   "in": 0,
+   "out": 1.242,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s6.wav",
+   "start": 21.152,
+   "in": 0,
+   "out": 3.187,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c019.png",
+   "start": 21.152,
+   "in": 0,
+   "out": 0.685,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c020.png",
+   "start": 21.847,
+   "in": 0,
+   "out": 1.381,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c021.png",
+   "start": 23.238,
+   "in": 0,
+   "out": 1.091,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s7.wav",
+   "start": 24.489,
+   "in": 0,
+   "out": 2.534,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c022.png",
+   "start": 24.489,
+   "in": 0,
+   "out": 1.06,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c023.png",
+   "start": 25.559,
+   "in": 0,
+   "out": 0.609,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c024.png",
+   "start": 26.178,
+   "in": 0,
+   "out": 0.835,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s8.wav",
+   "start": 27.173,
+   "in": 0,
+   "out": 3.318,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c025.png",
+   "start": 27.173,
+   "in": 0,
+   "out": 1.184,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c026.png",
+   "start": 28.367,
+   "in": 0,
+   "out": 1.052,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c027.png",
+   "start": 29.429,
+   "in": 0,
+   "out": 1.052,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s9.wav",
+   "start": 30.641,
+   "in": 0,
+   "out": 2.847,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c028.png",
+   "start": 30.641,
+   "in": 0,
+   "out": 1.067,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c029.png",
+   "start": 31.718,
+   "in": 0,
+   "out": 1.76,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s10.wav",
+   "start": 33.638,
+   "in": 0,
+   "out": 1.228,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c030.png",
+   "start": 33.638,
+   "in": 0,
+   "out": 1.218,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s33-hold-the-roost/t0.mp4",
+   "start": 0.0,
+   "in": 47.0,
+   "out": 51.121,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s33-hold-the-roost/t0.mp4",
+   "start": 4.121,
+   "in": 39.0,
+   "out": 41.344,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s33-hold-the-roost/t0.mp4",
+   "start": 6.465,
+   "in": 18.0,
+   "out": 23.218,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s33-hold-the-roost/t0.mp4",
+   "start": 11.683,
+   "in": 30.0,
+   "out": 34.251,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s33-hold-the-roost/t0.mp4",
+   "start": 15.934,
+   "in": 44.0,
+   "out": 49.218,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s33-hold-the-roost/t0.mp4",
+   "start": 21.152,
+   "in": 25.0,
+   "out": 28.337,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s33-hold-the-roost/ev_facts_v.png",
+   "start": 24.489,
+   "in": 0.0,
+   "out": 2.684,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "fit",
+   "transformScale": 1.0
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s33-hold-the-roost/t0.mp4",
+   "start": 27.173,
+   "in": 0.0,
+   "out": 3.468,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s33-hold-the-roost/t0.mp4",
+   "start": 30.641,
+   "in": 49.0,
+   "out": 53.725,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v1",
+   "file": "C:/Git/auravideo/episodes/s33-hold-the-roost/logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 34.866,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "C:/Git/auravideo/episodes/s33-hold-the-roost/t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 35.366,
+   "volume": 0.06,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "subs": [],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "MEDIA"
+  }
+ ],
+ "total": 35.366
+}

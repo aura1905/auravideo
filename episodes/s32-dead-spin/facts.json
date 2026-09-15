@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5231750,
+ "full_appid": 3705670,
+ "name": "DEAD SPIN",
+ "developers": [
+  "Strong Monkey Games"
+ ],
+ "publishers": [
+  "Strong Monkey Games"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Indie",
+  "Simulation",
+  "Strategy"
+ ],
+ "languages": "English*, Russian*, French*, German*, Spanish - Spain*, Japanese**languages with full audio support",
+ "website": null,
+ "short": "Gamble your way through a deadly casino in this dark roguelite deckbuilder. Survive the campaign or challenge other players in PvP mode. Discover broken synergies and keep spinning for your freedom!",
+ "about": "  SURVIVE A DEADLY CAMPAIGN   Face the lunatic gamblers of an abandoned casino in deadly duels. Each opponent has their own deck, unique tactics, and dirty tricks. Figure out how they play and find a way to win.           COMPETE AGAINST OTHER PLAYERS   Challange other players in deadly PvP duels inside the casino. Defeat your opponents, make your way to the top, and become champion of the arena.          ENHANCE YOUR ODDS  With 7 reels symbol types, every run is about deciding which symbols to prioritize for the  strongest trigger chains.               SCALE YOUR BULD   Choose the right cursed chips to multiply your strategy and send your score through the roof.           EXPLOIT THE ECONOMY    A powerful build needs cash. Choose coins that trigger off your strategy and turn the casino’s economy against itself.           CHEAT THE SYSTEM    When the odds turn against you, use trinkets to outsmart the rules.           FEATURES     Singleplayer Camaign: defeat 8 unique Enemies    PvP-mode: challange other Players    Endless mode against unique Boss    130+ special Symbols    150+ special Chips    20+ consumable Trinkets             ",
+ "min_req": " Minimum:     OS *:  Windows 7    Processor:  Intel Core i5-760 (4 * 2800); AMD Athlon II X4 645 AM3 (4 * 3100)    Memory:  4  GB RAM    Graphics:  GeForce GTX 550 Ti (3072 VRAM); Radeon HD 6850 (1024 VRAM)    Storage:  3 GB available space  ",
+ "movies": [
+  {
+   "id": 257368487,
+   "name": "Dead Spin Trailer"
+  }
+ ],
+ "screenshots": 7,
+ "reviews": {
+  "total": 3,
+  "positive": 3,
+  "desc": "3 user reviews"
+ }
+}

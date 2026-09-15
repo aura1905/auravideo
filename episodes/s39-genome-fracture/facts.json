@@ -1,0 +1,34 @@
+{
+ "demo_appid": 5200490,
+ "full_appid": 5086320,
+ "name": "Genome Fracture",
+ "developers": [
+  "Rising Ash Studios"
+ ],
+ "publishers": [
+  "Rising Ash Studios"
+ ],
+ "release": "Q1 2027",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Indie"
+ ],
+ "languages": "English",
+ "website": null,
+ "short": "A fast-paced bullet heaven roguelite where reality shifts every two minutes. Evolve powerful mutation families, create devastating synergies and adapt as enemies, hazards and world rules fracture around you. Can you survive the Convergence?",
+ "about": "  Survive a reality that refuses to stay still.    Genome Fracture  is a fast-paced bullet heaven action roguelite where the world changes around you as you fight. Every two minutes, reality fractures — changing the battlefield, its enemies and the rules you have to survive by.  Build your genome from powerful mutation families, evolve them down different paths, and combine their effects into increasingly destructive builds. Chain lightning through crowds. Split projectiles into more projectiles. Spread toxins between enemies. Freeze entire groups. Tear through them with unstable ballistic effects.  But your build isn't the only thing evolving.  THE WORLD KEEPS CHANGING  You won't spend twenty minutes fighting on the same battlefield.  Reality periodically shifts, changing the enemies you face, the hazards around you and even the rules your build has to survive by. One reality might alter your movement, another interfere with your ability to recover, while others can strengthen or hinder particular mutations.  And when a world disappears, it doesn't always disappear cleanly.  Enemies from previous realities can  bleed into the next , creating combinations of threats that weren't meant to exist together.          EVOLVE YOUR GENOME  Mutations aren't just passive stat increases.  Build into distinct mutation families and choose how they evolve. Each family develops through branching upgrades that can fundamentally change how it behaves, allowing the same starting mutation to develop into different tools from one run to another.  Then start combining them.  Your projectiles can split. Those splits can inherit other mutation effects. Electrical attacks can jump across groups. Toxic effects can propagate. Cryogenic mutations can control crowds while other mutations exploit them.  The right interactions can turn a simple attack into a chain reaction.          SURVIVE THE CONVERGENCE  The longer you survive, the less stable reality becomes.  Eventually, the boundaries between worlds begin to collapse.  Enemies, hazards and mechanics from fractured realities converge into one final escalation, putting the build you've created throughout the run to the test.   Twenty minutes. One genome. Five realities.    Can you survive the Convergence?   ",
+ "min_req": " Minimum:     OS:  Windows 10 64-Bit    Processor:  Intel Core i3-6100 / AMD FX-8350 or equivalent    Memory:  4 GB RAM    Graphics:  NVIDIA GeForce GTX 750 Ti / AMD Radeon R7 360 or equivalent    DirectX:  Version 11    Storage:  2 GB available space    Sound Card:  DirectX Compatible  ",
+ "movies": [
+  {
+   "id": 257396051,
+   "name": "Official Gameplay Trailer"
+  }
+ ],
+ "screenshots": 7,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

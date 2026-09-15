@@ -1,0 +1,117 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo where you're a wizard cat against endless monster hordes.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  },
+  "sub": "Free demo where you're a wizard cat against endless monster hordes.",
+  "dur": 3.866,
+  "wav": "episodes/s37-mage-cat/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "You just dodge. The spells fire themselves.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "You just dodge. The spells fire themselves.",
+  "dur": 3.187,
+  "wav": "episodes/s37-mage-cat/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "After each wave you pick a card, and your build turns into giant fireballs, bouncing snowballs, or spinning swords.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 5.0
+  },
+  "sub": "After each wave you pick a card, and your build turns into giant fireballs, bouncing snowballs, or spinning swords.",
+  "dur": 7.027,
+  "wav": "episodes/s37-mage-cat/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best part: late in a run, the whole screen turns into a light show.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 15.0
+  },
+  "sub": "Best part: late in a run, the whole screen turns into a light show.",
+  "dur": 4.049,
+  "wav": "episodes/s37-mage-cat/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "There's a boss fight against a big winged demon too.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 26.0
+  },
+  "sub": "There's a boss fight against a big winged demon too.",
+  "dur": 2.978,
+  "wav": "episodes/s37-mage-cat/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The arena is mostly flat sand, and it looks empty.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.0
+  },
+  "sub": "The catch? The arena is mostly flat sand, and it looks empty.",
+  "dur": 4.284,
+  "wav": "episodes/s37-mage-cat/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "The demo is about eight hundred megabytes, in English and Chinese.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about eight hundred megabytes, in English and Chinese.",
+  "dur": 3.448,
+  "wav": "episodes/s37-mage-cat/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Vampire Survivors, starring a cat.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 10.0
+  },
+  "sub": "Think Vampire Survivors, starring a cat.",
+  "dur": 2.847,
+  "wav": "episodes/s37-mage-cat/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if you've ever wanted to be a very powerful cat.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.0
+  },
+  "sub": "Worth a dip if you've ever wanted to be a very powerful cat.",
+  "dur": 3.187,
+  "wav": "episodes/s37-mage-cat/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.228,
+  "wav": "episodes/s37-mage-cat/v2/tts/s10.wav"
+ }
+]

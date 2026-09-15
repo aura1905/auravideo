@@ -1,0 +1,89 @@
+[
+ {
+  "id": "s1",
+  "text": "This free RPG demo is thirteen gigs on your drive.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 63.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "It's Everlast: Undying Tale, an MMO-lite you can play solo or with friends.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 54.0
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Fight the undead, then mine, chop trees, craft at the anvil, or just go fishing.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best part: the world. Bright flower fields, swamps, and caves full of glowing mushrooms.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 67.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "You can even glide off a cliff, straight into a fight.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 48.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The trailer is pre-alpha footage, and the animations look stiff.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 29.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "It's English only, and the full game is aimed at the end of this year.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Palia, with more monsters.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 37.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if you've got the space.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 4.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

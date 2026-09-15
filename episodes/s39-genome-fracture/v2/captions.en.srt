@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:04,153
+Free roguelite demo where reality changes every two minutes.
+
+2
+00:00:04,303 --> 00:00:07,203
+The ground, the enemies, even the rules.
+
+3
+00:00:07,353 --> 00:00:12,160
+You pick mutations like lightning, poison and lasers, and combine them into builds.
+
+4
+00:00:12,310 --> 00:00:17,534
+Best part: late in a run, chain lightning and a huge purple blast fill the screen.
+
+5
+00:00:17,684 --> 00:00:21,890
+The catch? Some of the scenery looks like flat stickers on the ground.
+
+6
+00:00:22,040 --> 00:00:27,996
+The demo is about eight hundred megabytes, English only, and the full game is planned for early twenty twenty-seven.
+
+7
+00:00:28,146 --> 00:00:32,012
+Think Vampire Survivors, where the map won't sit still.
+
+8
+00:00:32,162 --> 00:00:34,226
+Worth a dip if one arena gets boring.
+
+9
+00:00:34,376 --> 00:00:35,369
+That's Demo Dip.

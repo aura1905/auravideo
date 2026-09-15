@@ -1,0 +1,543 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 4.101,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c000.png",
+   "start": 0.0,
+   "in": 0,
+   "out": 1.028,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c001.png",
+   "start": 1.038,
+   "in": 0,
+   "out": 0.821,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c002.png",
+   "start": 1.869,
+   "in": 0,
+   "out": 1.236,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c003.png",
+   "start": 3.115,
+   "in": 0,
+   "out": 0.976,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s2.wav",
+   "start": 4.251,
+   "in": 0,
+   "out": 4.153,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c004.png",
+   "start": 4.251,
+   "in": 0,
+   "out": 1.042,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c005.png",
+   "start": 5.303,
+   "in": 0,
+   "out": 1.097,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c006.png",
+   "start": 6.411,
+   "in": 0,
+   "out": 0.876,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c007.png",
+   "start": 7.297,
+   "in": 0,
+   "out": 1.097,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s3.wav",
+   "start": 8.554,
+   "in": 0,
+   "out": 4.153,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c008.png",
+   "start": 8.554,
+   "in": 0,
+   "out": 0.913,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c009.png",
+   "start": 9.477,
+   "in": 0,
+   "out": 0.498,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c010.png",
+   "start": 9.984,
+   "in": 0,
+   "out": 0.867,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c011.png",
+   "start": 10.861,
+   "in": 0,
+   "out": 0.774,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c012.png",
+   "start": 11.646,
+   "in": 0,
+   "out": 1.051,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s4.wav",
+   "start": 12.857,
+   "in": 0,
+   "out": 3.082,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c013.png",
+   "start": 12.857,
+   "in": 0,
+   "out": 0.76,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c014.png",
+   "start": 13.627,
+   "in": 0,
+   "out": 0.857,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c015.png",
+   "start": 14.494,
+   "in": 0,
+   "out": 0.905,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c016.png",
+   "start": 15.409,
+   "in": 0,
+   "out": 0.52,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s5.wav",
+   "start": 16.089,
+   "in": 0,
+   "out": 4.206,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c017.png",
+   "start": 16.089,
+   "in": 0,
+   "out": 0.672,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c018.png",
+   "start": 16.771,
+   "in": 0,
+   "out": 1.297,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c019.png",
+   "start": 18.078,
+   "in": 0,
+   "out": 1.07,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c020.png",
+   "start": 19.158,
+   "in": 0,
+   "out": 1.127,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s6.wav",
+   "start": 20.445,
+   "in": 0,
+   "out": 4.153,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c021.png",
+   "start": 20.445,
+   "in": 0,
+   "out": 0.723,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c022.png",
+   "start": 21.178,
+   "in": 0,
+   "out": 1.273,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c023.png",
+   "start": 22.46,
+   "in": 0,
+   "out": 1.273,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c024.png",
+   "start": 23.743,
+   "in": 0,
+   "out": 0.845,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s7.wav",
+   "start": 24.748,
+   "in": 0,
+   "out": 4.284,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c025.png",
+   "start": 24.748,
+   "in": 0,
+   "out": 1.153,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c026.png",
+   "start": 25.911,
+   "in": 0,
+   "out": 1.581,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c027.png",
+   "start": 27.502,
+   "in": 0,
+   "out": 1.52,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s8.wav",
+   "start": 29.182,
+   "in": 0,
+   "out": 2.717,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c028.png",
+   "start": 29.182,
+   "in": 0,
+   "out": 0.386,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c029.png",
+   "start": 29.578,
+   "in": 0,
+   "out": 1.518,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c030.png",
+   "start": 31.107,
+   "in": 0,
+   "out": 0.782,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s9.wav",
+   "start": 32.049,
+   "in": 0,
+   "out": 3.37,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c031.png",
+   "start": 32.049,
+   "in": 0,
+   "out": 1.08,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c032.png",
+   "start": 33.139,
+   "in": 0,
+   "out": 1.179,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c033.png",
+   "start": 34.329,
+   "in": 0,
+   "out": 1.08,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s10.wav",
+   "start": 35.569,
+   "in": 0,
+   "out": 1.358,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c034.png",
+   "start": 35.569,
+   "in": 0,
+   "out": 1.348,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s38-fight/ss07_mv.mp4",
+   "start": 0.0,
+   "in": 0.0,
+   "out": 4.251,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s38-fight/t0.mp4",
+   "start": 4.251,
+   "in": 5.2,
+   "out": 9.503,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s38-fight/t0.mp4",
+   "start": 8.554,
+   "in": 9.0,
+   "out": 13.303,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s38-fight/ss01_mv.mp4",
+   "start": 12.857,
+   "in": 0.0,
+   "out": 3.232,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s38-fight/t0.mp4",
+   "start": 16.089,
+   "in": 5.5,
+   "out": 9.856,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s38-fight/ss02_mv.mp4",
+   "start": 20.445,
+   "in": 0.0,
+   "out": 4.303,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s38-fight/ev_facts_v.png",
+   "start": 24.748,
+   "in": 0.0,
+   "out": 4.434,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "fit",
+   "transformScale": 1.0
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s38-fight/ss03_mv.mp4",
+   "start": 29.182,
+   "in": 0.0,
+   "out": 2.867,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s38-fight/ss04_mv.mp4",
+   "start": 32.049,
+   "in": 0.0,
+   "out": 5.378,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v1",
+   "file": "C:/Git/auravideo/episodes/s38-fight/logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 36.927,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "C:/Git/auravideo/episodes/s38-fight/t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 37.427,
+   "volume": 0.06,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "subs": [],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "MEDIA"
+  }
+ ],
+ "total": 37.427
+}

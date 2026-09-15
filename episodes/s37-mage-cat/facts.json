@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5146680,
+ "full_appid": 5015320,
+ "name": "Mage Cat:Endless Breakout Survivor",
+ "developers": [
+  "WANG LEI"
+ ],
+ "publishers": [
+  "WANG LEI"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Casual",
+  "Indie"
+ ],
+ "languages": "English, Simplified Chinese",
+ "website": null,
+ "short": "Mage Cat: Endless Breakout Survivor is a 2D cartoon action survivor. Play as a magic cat, dodge foes, and build power with strategy cards and bonds. Upgrade talents and gear, then conquer campaign, Abyss, and Endless modes.",
+ "about": " Play as a magic cat and break through endless hordes!  Witch Cat: Endless Breakthrough is a 2D cartoon action survivor. Control a magic cat, dodge dense enemy swarms, and craft powerful builds with strategy cards and bonds. Upgrade talents and reforge gear in the hub, take on harder challenges, and hunt for better loot to push your limits.  Fast-paced combat — movement is key  Classic survivor action:attacks plus manual dodging through crowded enemy waves  Varied monsters and boss mechanics  Cartoon pixel art with snappy hit feedback. Easy to learn, hard to master.  Strategy cards × bond synergies  Pick 1 of 3 cards after each wave — White, Blue, Purple, and Gold tiers  Many bond schools: Element, Collision, Orbs, Summoning, and more — unlock powerful effects as you collect  Every run can be a completely different build — fresh experience each time  Meta progression that keeps you growing  Account talent tree: four branches with permanent stat and combat boosts  Weapons and gear: Common → Rare → Epic → Radiance → Mythic — quality tiers unlock as you progress  Reforge mythic gear sub-affixes to fine-tune your perfect loadout  Three modes, endless challenges  Main Story: advance chapters to raise loot quality caps and beat chapter bosses for chest rewards  Abyss: challenge Abyss bosses and earn Mythic weapon shards  Endless: survive wave after wave — how far can you go?  Ready to break through?  Choose your cards, stack your bonds, gear up — your endless run starts now. ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10 64-bit    Processor:  Intel Core i3-6100 / AMD FX-6300 or equivalent    Memory:  4 GB RAM    Graphics:  GPU with DirectX 11 support    DirectX:  Version 11    Storage:  1024 MB available space    Sound Card:  Any DirectX-compatible sound card  ",
+ "movies": [
+  {
+   "id": 257413913,
+   "name": "Gameplay Trailer"
+  }
+ ],
+ "screenshots": 6,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

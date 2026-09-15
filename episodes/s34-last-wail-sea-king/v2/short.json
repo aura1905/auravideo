@@ -1,0 +1,95 @@
+[
+ {
+  "id": "s1",
+  "text": "Free RPG demo set inside the body of a dying sea monster.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 20.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "You play as Clyde the Intern.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "In there, people built a village, and somehow an office building, into the monster's flesh.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 25.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Fights are turn-based, JRPG style, with party members that look like cut-out photos.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best part: it's gloriously weird. A fisherman wants to destroy the soggy demon from within.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 5.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The animation is deliberately janky. Characters mostly just wobble.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 38.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "There's even platforming, with a rope swing over pools of acid.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 32.0
+  }
+ },
+ {
+  "id": "s8",
+  "text": "The demo is about two gigs, in five languages, and the full game is due in twenty twenty-seven.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Think Earthbound, if it got swallowed by a whale.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "s10",
+  "text": "Worth a dip if you like your RPGs strange.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.5
+  }
+ },
+ {
+  "id": "s11",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

@@ -1,0 +1,22 @@
+Genome Fracture — a free roguelite demo where reality changes every two minutes.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5200490/
+
+── The quick version ──
+What you do : survive hordes, evolve mutation builds
+Twist       : the world and its rules shift every 2 minutes
+Best part   : screen-filling lightning builds
+The catch   : flat-looking scenery
+Demo        : about 790 MB, English
+Full game   : Q1 2027
+Think       : Vampire Survivors, on a map that won't sit still
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page, the demo's Steam reviews and Steam's public
+product info; the rest comes from watching the official trailer. No files were
+downloaded, unpacked, decompiled, or redistributed. It is an outside reading, not a
+statement from the developer. All game footage and images belong to Rising Ash Studios.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

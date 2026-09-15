@@ -1,0 +1,543 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 3.631,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c000.png",
+   "start": 0.0,
+   "in": 0,
+   "out": 1.335,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c001.png",
+   "start": 1.345,
+   "in": 0,
+   "out": 1.402,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c002.png",
+   "start": 2.757,
+   "in": 0,
+   "out": 0.864,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s2.wav",
+   "start": 3.781,
+   "in": 0,
+   "out": 5.721,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c003.png",
+   "start": 3.781,
+   "in": 0,
+   "out": 1.134,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c004.png",
+   "start": 4.925,
+   "in": 0,
+   "out": 1.063,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c005.png",
+   "start": 5.998,
+   "in": 0,
+   "out": 1.849,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c006.png",
+   "start": 7.857,
+   "in": 0,
+   "out": 1.635,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s3.wav",
+   "start": 9.652,
+   "in": 0,
+   "out": 5.277,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c007.png",
+   "start": 9.652,
+   "in": 0,
+   "out": 1.156,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c008.png",
+   "start": 10.818,
+   "in": 0,
+   "out": 0.726,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c009.png",
+   "start": 11.554,
+   "in": 0,
+   "out": 0.788,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c010.png",
+   "start": 12.352,
+   "in": 0,
+   "out": 1.279,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c011.png",
+   "start": 13.64,
+   "in": 0,
+   "out": 1.279,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s4.wav",
+   "start": 15.079,
+   "in": 0,
+   "out": 5.956,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c012.png",
+   "start": 15.079,
+   "in": 0,
+   "out": 0.742,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c013.png",
+   "start": 15.831,
+   "in": 0,
+   "out": 0.742,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c014.png",
+   "start": 16.584,
+   "in": 0,
+   "out": 1.432,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c015.png",
+   "start": 18.026,
+   "in": 0,
+   "out": 0.554,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c016.png",
+   "start": 18.59,
+   "in": 0,
+   "out": 1.181,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c017.png",
+   "start": 19.781,
+   "in": 0,
+   "out": 1.244,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s5.wav",
+   "start": 21.185,
+   "in": 0,
+   "out": 2.978,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c018.png",
+   "start": 21.185,
+   "in": 0,
+   "out": 1.017,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c019.png",
+   "start": 22.212,
+   "in": 0,
+   "out": 0.709,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c020.png",
+   "start": 22.931,
+   "in": 0,
+   "out": 1.222,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s6.wav",
+   "start": 24.313,
+   "in": 0,
+   "out": 5.12,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c021.png",
+   "start": 24.313,
+   "in": 0,
+   "out": 0.749,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c022.png",
+   "start": 25.072,
+   "in": 0,
+   "out": 1.001,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c023.png",
+   "start": 26.083,
+   "in": 0,
+   "out": 1.254,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c024.png",
+   "start": 27.347,
+   "in": 0,
+   "out": 1.254,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c025.png",
+   "start": 28.611,
+   "in": 0,
+   "out": 0.812,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s7.wav",
+   "start": 29.583,
+   "in": 0,
+   "out": 3.683,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c026.png",
+   "start": 29.583,
+   "in": 0,
+   "out": 0.972,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c027.png",
+   "start": 30.565,
+   "in": 0,
+   "out": 1.07,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c028.png",
+   "start": 31.645,
+   "in": 0,
+   "out": 1.021,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c029.png",
+   "start": 32.677,
+   "in": 0,
+   "out": 0.579,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s8.wav",
+   "start": 33.416,
+   "in": 0,
+   "out": 2.351,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c030.png",
+   "start": 33.416,
+   "in": 0,
+   "out": 0.93,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c031.png",
+   "start": 34.356,
+   "in": 0,
+   "out": 1.401,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s9.wav",
+   "start": 35.917,
+   "in": 0,
+   "out": 1.959,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c032.png",
+   "start": 35.917,
+   "in": 0,
+   "out": 1.145,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c033.png",
+   "start": 37.072,
+   "in": 0,
+   "out": 0.794,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s10.wav",
+   "start": 38.026,
+   "in": 0,
+   "out": 1.045,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c034.png",
+   "start": 38.026,
+   "in": 0,
+   "out": 1.035,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s35-everlast/t0.mp4",
+   "start": 0.0,
+   "in": 63.0,
+   "out": 66.781,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s35-everlast/t0.mp4",
+   "start": 3.781,
+   "in": 54.0,
+   "out": 59.871,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s35-everlast/t0.mp4",
+   "start": 9.652,
+   "in": 22.0,
+   "out": 27.427,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s35-everlast/t0.mp4",
+   "start": 15.079,
+   "in": 67.0,
+   "out": 73.106,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s35-everlast/t0.mp4",
+   "start": 21.185,
+   "in": 48.0,
+   "out": 51.128,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s35-everlast/t0.mp4",
+   "start": 24.313,
+   "in": 29.0,
+   "out": 34.27,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s35-everlast/ev_facts_v.png",
+   "start": 29.583,
+   "in": 0.0,
+   "out": 3.833,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "fit",
+   "transformScale": 1.0
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s35-everlast/t0.mp4",
+   "start": 33.416,
+   "in": 37.0,
+   "out": 39.501,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s35-everlast/t0.mp4",
+   "start": 35.917,
+   "in": 4.0,
+   "out": 7.654,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v1",
+   "file": "C:/Git/auravideo/episodes/s35-everlast/logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 39.071,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "C:/Git/auravideo/episodes/s35-everlast/t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 39.571,
+   "volume": 0.06,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "subs": [],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "MEDIA"
+  }
+ ],
+ "total": 39.571
+}

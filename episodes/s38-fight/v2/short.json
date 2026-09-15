@@ -1,0 +1,84 @@
+[
+ {
+  "id": "s1",
+  "text": "Free fighting game demo where you plan every move before the fight starts.",
+  "vis": {
+   "type": "image",
+   "file": "ss07.jpg"
+  }
+ },
+ {
+  "id": "s2",
+  "text": "Queue your steps, guards and strikes on a timeline, then commit blind.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 5.2
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Your opponent does the same, and then you both watch the plans collide in real time.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "There are over twenty fighters, each built around a weapon.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best part: a ghost preview shows exactly what move you're locking in.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 5.5
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? When the hits land, the animations feel a bit stiff.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The demo is about seven hundred megabytes, in English and Spanish.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Your Only Move Is Hustle, with swords.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if you'd rather outthink people than out-react them.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

@@ -1,0 +1,36 @@
+{
+ "demo_appid": 5200560,
+ "full_appid": 5200410,
+ "name": "FIGHT",
+ "developers": [
+  "Trevor"
+ ],
+ "publishers": [
+  "Trevor"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Indie",
+  "Strategy",
+  "Early Access"
+ ],
+ "languages": "English*, Spanish - Spain*languages with full audio support",
+ "website": null,
+ "short": "Let's FIGHT. Queue your steps, guards, and strikes, then commit blind and watch both plans collide into skill based warfare. Master over twenty weapon-bound fighters, posture breaks, parries, projectiles with real time replays to watch the battle back in style.",
+ "about": "         FIGHT is a tactical fighting game about hidden plans. Queue movement, guards, strikes, and special attacks on a shared timeline. Commit before you know the opposing plan. Then watch the two sequences meet in real time. FIGHT rewards choices made before impact. Close the distance with aggressive strikes, hold ground with guards and parries, create space for a projectile, or use movement to bait an answer.             Choose from over twenty weapon-led fighters. Each move set changes the questions you ask: who controls distance, who threatens a guard, and which attack creates space for the next plan. Learn what every fighter can represent before both players lock in.             Choose the arena before the round begins. Every stage frames the same focused duel on a 2.5D combat plane, where spacing, timing, and your opponent’s next decision stay visible.            Every action has a place on the timeline. Build a chain of movement, defense, strikes, and specials, then commit blind. You do not see the opposing sequence until both plans resolve. Damage matters, but posture creates the opening: pressure a guarded opponent, force a response, and turn a broken defense into a punish.            Once both players commit, the fight runs in real time. Watch the collision, pause on the decision that changed the exchange, and replay the sequence to see how a guard, parry, strike, projectile, or repositioning determined the result.   ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10 64-bit    Processor:   Intel Core i3-6100 or AMD Ryzen 3 1200    Memory:  8 GB RAM    Graphics:   NVIDIA GeForce GTX 750 Ti, AMD Radeon R7 260X, or Intel UHD Graphics 620    DirectX:  Version 11    Network:  Broadband Internet connection    Storage:  1 GB available space    Sound Card:   DirectX-compatible sound device    Additional Notes:  Online play requires Steam running. Single-player needs no connection.  ",
+ "movies": [
+  {
+   "id": 257416964,
+   "name": "Teaser"
+  }
+ ],
+ "screenshots": 10,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

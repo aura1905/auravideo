@@ -1,0 +1,614 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 3.971,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c000.png",
+   "start": 0.0,
+   "in": 0,
+   "out": 1.227,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c001.png",
+   "start": 1.237,
+   "in": 0,
+   "out": 1.422,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c002.png",
+   "start": 2.669,
+   "in": 0,
+   "out": 1.292,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s2.wav",
+   "start": 4.121,
+   "in": 0,
+   "out": 2.011,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c003.png",
+   "start": 4.121,
+   "in": 0,
+   "out": 0.807,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c004.png",
+   "start": 4.938,
+   "in": 0,
+   "out": 1.184,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s3.wav",
+   "start": 6.282,
+   "in": 0,
+   "out": 5.068,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c005.png",
+   "start": 6.282,
+   "in": 0,
+   "out": 0.559,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c006.png",
+   "start": 6.851,
+   "in": 0,
+   "out": 1.283,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c007.png",
+   "start": 8.144,
+   "in": 0,
+   "out": 0.817,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c008.png",
+   "start": 8.971,
+   "in": 0,
+   "out": 0.921,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c009.png",
+   "start": 9.902,
+   "in": 0,
+   "out": 0.507,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c010.png",
+   "start": 10.419,
+   "in": 0,
+   "out": 0.921,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s4.wav",
+   "start": 11.5,
+   "in": 0,
+   "out": 5.59,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c011.png",
+   "start": 11.5,
+   "in": 0,
+   "out": 1.481,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c012.png",
+   "start": 12.991,
+   "in": 0,
+   "out": 0.797,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c013.png",
+   "start": 13.798,
+   "in": 0,
+   "out": 1.232,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c014.png",
+   "start": 15.04,
+   "in": 0,
+   "out": 0.984,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c015.png",
+   "start": 16.034,
+   "in": 0,
+   "out": 1.046,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s5.wav",
+   "start": 17.24,
+   "in": 0,
+   "out": 6.557,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c016.png",
+   "start": 17.24,
+   "in": 0,
+   "out": 0.801,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c017.png",
+   "start": 18.051,
+   "in": 0,
+   "out": 1.612,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c018.png",
+   "start": 19.674,
+   "in": 0,
+   "out": 1.477,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c019.png",
+   "start": 21.161,
+   "in": 0,
+   "out": 1.68,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c020.png",
+   "start": 22.851,
+   "in": 0,
+   "out": 0.936,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s6.wav",
+   "start": 23.947,
+   "in": 0,
+   "out": 4.467,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c021.png",
+   "start": 23.947,
+   "in": 0,
+   "out": 0.628,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c022.png",
+   "start": 24.585,
+   "in": 0,
+   "out": 0.947,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c023.png",
+   "start": 25.542,
+   "in": 0,
+   "out": 1.107,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c024.png",
+   "start": 26.659,
+   "in": 0,
+   "out": 1.0,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c025.png",
+   "start": 27.67,
+   "in": 0,
+   "out": 0.734,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s7.wav",
+   "start": 28.564,
+   "in": 0,
+   "out": 3.553,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c026.png",
+   "start": 28.564,
+   "in": 0,
+   "out": 0.721,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c027.png",
+   "start": 29.296,
+   "in": 0,
+   "out": 0.721,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c028.png",
+   "start": 30.027,
+   "in": 0,
+   "out": 1.244,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c029.png",
+   "start": 31.281,
+   "in": 0,
+   "out": 0.826,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s8.wav",
+   "start": 32.267,
+   "in": 0,
+   "out": 5.355,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c030.png",
+   "start": 32.267,
+   "in": 0,
+   "out": 0.988,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c031.png",
+   "start": 33.265,
+   "in": 0,
+   "out": 0.568,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c032.png",
+   "start": 33.842,
+   "in": 0,
+   "out": 1.04,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c033.png",
+   "start": 34.892,
+   "in": 0,
+   "out": 1.145,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c034.png",
+   "start": 36.047,
+   "in": 0,
+   "out": 0.777,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c035.png",
+   "start": 36.835,
+   "in": 0,
+   "out": 0.777,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s9.wav",
+   "start": 37.772,
+   "in": 0,
+   "out": 3.03,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c036.png",
+   "start": 37.772,
+   "in": 0,
+   "out": 1.076,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c037.png",
+   "start": 38.858,
+   "in": 0,
+   "out": 1.191,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c038.png",
+   "start": 40.059,
+   "in": 0,
+   "out": 0.733,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s10.wav",
+   "start": 40.952,
+   "in": 0,
+   "out": 2.847,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c039.png",
+   "start": 40.952,
+   "in": 0,
+   "out": 1.572,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c040.png",
+   "start": 42.534,
+   "in": 0,
+   "out": 1.255,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s11.wav",
+   "start": 43.949,
+   "in": 0,
+   "out": 1.228,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c041.png",
+   "start": 43.949,
+   "in": 0,
+   "out": 1.218,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s34-last-wail-sea-king/t0.mp4",
+   "start": 0.0,
+   "in": 20.0,
+   "out": 26.282,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s34-last-wail-sea-king/t0.mp4",
+   "start": 6.282,
+   "in": 25.0,
+   "out": 30.218,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s34-last-wail-sea-king/t0.mp4",
+   "start": 11.5,
+   "in": 13.0,
+   "out": 18.74,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s34-last-wail-sea-king/t0.mp4",
+   "start": 17.24,
+   "in": 5.0,
+   "out": 11.707,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s34-last-wail-sea-king/t0.mp4",
+   "start": 23.947,
+   "in": 38.0,
+   "out": 42.617,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s34-last-wail-sea-king/t0.mp4",
+   "start": 28.564,
+   "in": 32.0,
+   "out": 35.703,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s34-last-wail-sea-king/ev_facts_v.png",
+   "start": 32.267,
+   "in": 0.0,
+   "out": 5.505,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "fit",
+   "transformScale": 1.0
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s34-last-wail-sea-king/ss02_mv.mp4",
+   "start": 37.772,
+   "in": 0.0,
+   "out": 3.18,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s34-last-wail-sea-king/t0.mp4",
+   "start": 40.952,
+   "in": 21.5,
+   "out": 26.225,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v1",
+   "file": "C:/Git/auravideo/episodes/s34-last-wail-sea-king/logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 45.177,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "C:/Git/auravideo/episodes/s34-last-wail-sea-king/t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 45.677,
+   "volume": 0.06,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "subs": [],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "MEDIA"
+  }
+ ],
+ "total": 45.677
+}

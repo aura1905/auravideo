@@ -1,0 +1,23 @@
+Dead Spin — a free horror casino demo where a slot machine is your weapon.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5231750/
+
+── The quick version ──
+What you do  : spin, chain symbol combos, beat gamblers in duels
+Deckbuilding : buy symbols and chips in the lucky shop
+Best moment  : a combo big enough to crack the screen
+The catch    : enemies barely show on the board
+Modes        : campaign + PvP
+Demo         : about 4 GB installed, 6 languages
+Reviews      : 3 of 3 positive
+Think        : Luck be a Landlord with Inscryption's vibe
+Verdict      : Worth A Dip
+
+Numbers come from the Steam store page, the demo's Steam reviews and Steam's public
+product info; the rest comes from watching the official trailer. No files were
+downloaded, unpacked, decompiled, or redistributed. It is an outside reading, not a
+statement from the developer. All game footage and images belong to Strong Monkey Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

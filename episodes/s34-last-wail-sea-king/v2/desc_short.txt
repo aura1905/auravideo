@@ -1,0 +1,21 @@
+Last Wail of the Sea King — a free RPG demo set inside the body of a dying sea monster.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5153590/
+
+── The quick version ──
+What you do : explore, recruit odd companions, turn-based fights
+Best part   : gloriously weird world
+The catch   : deliberately janky animation
+Demo        : about 2 GB, 5 languages
+Full game   : 2027
+Think       : Earthbound, swallowed by a whale
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page, the demo's Steam reviews and Steam's public
+product info; the rest comes from watching the official trailer. No files were
+downloaded, unpacked, decompiled, or redistributed. It is an outside reading, not a
+statement from the developer. All game footage and images belong to Funke Munke.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

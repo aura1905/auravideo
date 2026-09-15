@@ -1,0 +1,79 @@
+[
+ {
+  "id": "s1",
+  "text": "Free roguelite demo where reality changes every two minutes.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "The ground, the enemies, even the rules.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 11.5
+  }
+ },
+ {
+  "id": "s3",
+  "text": "You pick mutations like lightning, poison and lasers, and combine them into builds.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 19.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best part: late in a run, chain lightning and a huge purple blast fill the screen.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 45.5
+  }
+ },
+ {
+  "id": "s5",
+  "text": "The catch? Some of the scenery looks like flat stickers on the ground.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 29.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The demo is about eight hundred megabytes, English only, and the full game is planned for early twenty twenty-seven.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s7",
+  "text": "Think Vampire Survivors, where the map won't sit still.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 1.0
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Worth a dip if one arena gets boring.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "s9",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

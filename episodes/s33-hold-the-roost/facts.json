@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5221970,
+ "full_appid": 4433080,
+ "name": "Hold The Roost",
+ "developers": [
+  "Battle Bongo"
+ ],
+ "publishers": [
+  "Battle Bongo"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Indie",
+  "Simulation",
+  "Strategy"
+ ],
+ "languages": "English",
+ "website": null,
+ "short": "Build by day. Defend by night. Command a flock of chickens in a tactical tower-defense survival game where every bird has a job. Gather resources, hatch and recruit stronger chickens, customize weapons and targeting, and outsmart predators with tricks of their own.",
+ "about": "  THE ROOST IS VULNERABLE. THE FOREST HAS NOTICED.    Hold The Roost is a tactical tower-defense survival game about turning a helpless chicken yard into a fortress — and a flock into an army.   Use the daylight to build new defenses, manage your flock, hatch eggs, configure tower loadouts and prepare for the next attack. When night falls, light the fires, man the towers, send your looters out to work, and defend the roost while the forest closes in.   Every chicken matters. Every egg could become your next champion. How long can your roost survive?    BUILD BY DAY. SURVIVE BY NIGHT.   Use the daylight to build towers, campfires and traps, organize your flock, hatch new chickens, and configure your defenses for the threats ahead.  When night falls, your plan is put to the test. Shooters man the defenses while Looters venture out to gather the resources you'll need to keep building. Survive increasingly dangerous predators, learn where your defenses are weakest, and prepare to do it better the next day.           EVERY CHICKEN HAS A JOB.   Assign chickens as shooters, looters, or brooders, putting their individual strengths where they'll matter most. Build a team that can fight, gather, incubate and keep the roost running while everything around it is trying to eat them.           BUILD A LOADOUT — NOT JUST A TOWER.   Equip towers with different weapons, ammunition, targeting behavior, and specialized chickens to define your defensive strategy.  Tell a weapon to stay locked on until its target dies or reconsider after every shot. Prioritize the healthiest, fastest, closest or farthest enemy and combine those rules with ammunition effects to build more effective boss killers, crowd controllers and status spreaders.  Assign your best shooters with optimal stats for damage, attack speed, and attack range.           YOU CAN'T SHOOT WHAT YOU CAN'T SEE.   Darkness is a variable on the battlefield.  Campfires reveal approaching predators and define where your defenses can see. Light the right areas, extend your coverage and use burning enemies to keep threats exposed even after they disappear back into the night.           THE PREDATORS DON'T PLAY FAIR.   These aren't just bags of health marching in.  Foxes can tunnel past defenses. Snakes can shed negative effects. Powerful elite enemies  can interfere with traps, visibility and the battlefield itself.  Learn what each predator is capable of — then build a defense specifically designed to ruin its night.           HATCH THE NEXT GENERATION.   Incubate and hatch new chickens with their own stats and potential. When a special chicken emerges, use a Medal of Eggcellence to recruit it into your permanent collection and bring your strongest cluckers into future runs.           GROW STRONGER. DEFINE YOUR STRATEGY.   As the fight progresses, invest  Skill Points  into upgrades that improve your defenses and open new ways to shape your strategy.  Strengthen the parts of your setup you rely on most, compensate for weaknesses, or build toward specialized combinations that make your flock and fortifications work better together.   There isn’t one correct build — just the one you’re betting the roost on.            WHEN SURVIVING THE LEVEL ISN’T ENOUGH.    Clearing a level doesn’t necessarily mean the fight is over. Prepare for the long night.    After surviving the required nights, you can push your defenses into  Challenge Mode — an escalating endurance battle that will test your defenses, flock and strategy you developed during the run.    Survive endless, increasingly dangerous waves, build your score and compete on the leaderboards to see how far your preparation can carry you.    ",
+ "min_req": " Minimum:     OS:  Windows 10/11    Processor:  Intel Core 15-6600 (3.3 Ghz) or AMD    Memory:  8 GB RAM    Graphics:  NVIDIA GeForce GTX 960 4GB or AMD    DirectX:  Version 12    Storage:  6 GB available space  ",
+ "movies": [
+  {
+   "id": 257293144,
+   "name": "Hold The Roost First Gameplay Trailer"
+  }
+ ],
+ "screenshots": 6,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

@@ -1,0 +1,113 @@
+[
+ {
+  "id": "s1",
+  "text": "Free horror casino demo: a slot machine is your weapon, and a creepy rabbit runs the table.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "Free horror casino demo: a slot machine is your weapon, and a creepy rabbit runs the table.",
+  "dur": 5.46,
+  "wav": "episodes/s32-dead-spin/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Pull the lever, or die.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Pull the lever, or die.",
+  "dur": 1.698,
+  "wav": "episodes/s32-dead-spin/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Every spin chains symbols into combos, and bigger combos beat the gamblers you duel.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 15.0
+  },
+  "sub": "Every spin chains symbols into combos, and bigger combos beat the gamblers you duel.",
+  "dur": 5.12,
+  "wav": "episodes/s32-dead-spin/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Between rounds you buy new symbols and chips in a lucky shop, like a deckbuilder.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  },
+  "sub": "Between rounds you buy new symbols and chips in a lucky shop, like a deckbuilder.",
+  "dur": 4.624,
+  "wav": "episodes/s32-dead-spin/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Best moment in the trailer: a chain so big the score cracks the screen.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 34.0
+  },
+  "sub": "Best moment in the trailer: a chain so big the score cracks the screen.",
+  "dur": 4.571,
+  "wav": "episodes/s32-dead-spin/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The enemies you're supposedly fighting barely show up on the board.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 54.0
+  },
+  "sub": "The catch? The enemies you're supposedly fighting barely show up on the board.",
+  "dur": 4.441,
+  "wav": "episodes/s32-dead-spin/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "There's P v P too. The demo is about four gigs installed, in six languages, and all three reviews so far are positive.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "There's PvP too. The demo is about four gigs installed, in six languages, and all three reviews so far are positive.",
+  "dur": 8.333,
+  "wav": "episodes/s32-dead-spin/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Luck be a Landlord, with Inscryption's creepy vibe.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  },
+  "sub": "Think Luck be a Landlord, with Inscryption's creepy vibe.",
+  "dur": 3.631,
+  "wav": "episodes/s32-dead-spin/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if you like your gambling haunted.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Worth a dip if you like your gambling haunted.",
+  "dur": 2.429,
+  "wav": "episodes/s32-dead-spin/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.228,
+  "wav": "episodes/s32-dead-spin/v2/tts/s10.wav"
+ }
+]

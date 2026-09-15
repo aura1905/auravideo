@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:04,101
+Free fighting game demo where you plan every move before the fight starts.
+
+2
+00:00:04,251 --> 00:00:08,404
+Queue your steps, guards and strikes on a timeline, then commit blind.
+
+3
+00:00:08,554 --> 00:00:12,707
+Your opponent does the same, and then you both watch the plans collide in real time.
+
+4
+00:00:12,857 --> 00:00:15,939
+There are over twenty fighters, each built around a weapon.
+
+5
+00:00:16,089 --> 00:00:20,295
+Best part: a ghost preview shows exactly what move you're locking in.
+
+6
+00:00:20,445 --> 00:00:24,598
+The catch? When the hits land, the animations feel a bit stiff.
+
+7
+00:00:24,748 --> 00:00:29,032
+The demo is about seven hundred megabytes, in English and Spanish.
+
+8
+00:00:29,182 --> 00:00:31,899
+Think Your Only Move Is Hustle, with swords.
+
+9
+00:00:32,049 --> 00:00:35,419
+Worth a dip if you'd rather outthink people than out-react them.
+
+10
+00:00:35,569 --> 00:00:36,927
+That's Demo Dip.
