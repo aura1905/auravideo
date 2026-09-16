@@ -1,0 +1,106 @@
+[
+ {
+  "id": "s1",
+  "text": "Free R P G demo that looks like a lost Super Nintendo classic, set in England, eleven seventy-three.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 43.0
+  },
+  "sub": "Free RPG demo that looks like a lost Super Nintendo classic, set in England, eleven seventy-three.",
+  "dur": 7.21,
+  "wav": "episodes/s42-foundlings/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "A healer's apprentice and a guilt-ridden ex-executioner, both arrested for illegal magic.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.0
+  },
+  "sub": "A healer's apprentice and a guilt-ridden ex-executioner, both arrested for illegal magic.",
+  "dur": 5.224,
+  "wav": "episodes/s42-foundlings/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "You forge your own spells, trade favours with lords and peasants, and keep your humours in balance.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 48.0
+  },
+  "sub": "You forge your own spells, trade favours with lords and peasants, and keep your humours in balance.",
+  "dur": 6.008,
+  "wav": "episodes/s42-foundlings/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best part: the combat. Spells sit on a glowing ring of planets around your party.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 19.0
+  },
+  "sub": "Best part: the combat. Spells sit on a glowing ring of planets around your party.",
+  "dur": 5.355,
+  "wav": "episodes/s42-foundlings/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "The catch? Walking around, the characters feel a little stiff.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 28.0
+  },
+  "sub": "The catch? Walking around, the characters feel a little stiff.",
+  "dur": 3.5,
+  "wav": "episodes/s42-foundlings/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "It's English only, and all ten reviews of the demo so far are positive.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "It's English only, and all ten reviews of the demo so far are positive.",
+  "dur": 4.232,
+  "wav": "episodes/s42-foundlings/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "Think Chrono Trigger, with medieval politics.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.0
+  },
+  "sub": "Think Chrono Trigger, with medieval politics.",
+  "dur": 2.978,
+  "wav": "episodes/s42-foundlings/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Worth a dip if you miss sixteen-bit R P Gs.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "Worth a dip if you miss sixteen-bit RPGs.",
+  "dur": 2.795,
+  "wav": "episodes/s42-foundlings/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.097,
+  "wav": "episodes/s42-foundlings/v2/tts/s9.wav"
+ }
+]

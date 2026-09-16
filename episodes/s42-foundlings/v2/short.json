@@ -1,0 +1,79 @@
+[
+ {
+  "id": "s1",
+  "text": "Free RPG demo that looks like a lost Super Nintendo classic, set in England, eleven seventy-three.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 43.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "A healer's apprentice and a guilt-ridden ex-executioner, both arrested for illegal magic.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.0
+  }
+ },
+ {
+  "id": "s3",
+  "text": "You forge your own spells, trade favours with lords and peasants, and keep your humours in balance.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 48.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best part: the combat. Spells sit on a glowing ring of planets around your party.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 19.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "The catch? Walking around, the characters feel a little stiff.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 28.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "It's English only, and all ten reviews of the demo so far are positive.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s7",
+  "text": "Think Chrono Trigger, with medieval politics.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.0
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Worth a dip if you miss sixteen-bit RPGs.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "s9",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

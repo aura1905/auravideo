@@ -1,0 +1,117 @@
+[
+ {
+  "id": "s1",
+  "text": "Wo Long 2 just dropped a free alpha demo on Steam.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 15.0
+  },
+  "sub": "Wo Long 2 just dropped a free alpha demo on Steam.",
+  "dur": 3.448,
+  "wav": "episodes/s40-wo-long-2/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "It's ninety gigabytes installed. Nearly fifty just to download.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "It's ninety gigabytes installed. Nearly fifty just to download.",
+  "dur": 4.284,
+  "wav": "episodes/s40-wo-long-2/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "It's Team NINJA's Three Kingdoms action R P G, where you fight demons with Chinese martial arts.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 35.0
+  },
+  "sub": "It's Team NINJA's Three Kingdoms action RPG, where you fight demons with Chinese martial arts.",
+  "dur": 5.303,
+  "wav": "episodes/s40-wo-long-2/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Combat looks fast and aggressive. Dodge, parry, and punish, against bosses that fill the screen.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 45.0
+  },
+  "sub": "Combat looks fast and aggressive. Dodge, parry, and punish, against bosses that fill the screen.",
+  "dur": 6.374,
+  "wav": "episodes/s40-wo-long-2/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Best moment in the trailer: you sprout wings of fire and slam a giant boss.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 69.0
+  },
+  "sub": "Best moment in the trailer: you sprout wings of fire and slam a giant boss.",
+  "dur": 4.937,
+  "wav": "episodes/s40-wo-long-2/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? In the busiest fights, the sparks and effects make enemy attacks hard to read.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 47.0
+  },
+  "sub": "The catch? In the busiest fights, the sparks and effects make enemy attacks hard to read.",
+  "dur": 5.59,
+  "wav": "episodes/s40-wo-long-2/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "It's in eleven languages, and the full game lands March fourth, twenty twenty-seven.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "It's in eleven languages, and the full game lands March fourth, twenty twenty-seven.",
+  "dur": 4.624,
+  "wav": "episodes/s40-wo-long-2/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Nioh, with a dash of Sekiro.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 37.0
+  },
+  "sub": "Think Nioh, with a dash of Sekiro.",
+  "dur": 2.377,
+  "wav": "episodes/s40-wo-long-2/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip, if you've got ninety gigs free.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 72.0
+  },
+  "sub": "Worth a dip, if you've got ninety gigs free.",
+  "dur": 2.664,
+  "wav": "episodes/s40-wo-long-2/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.123,
+  "wav": "episodes/s40-wo-long-2/v2/tts/s10.wav"
+ }
+]

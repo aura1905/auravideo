@@ -1,0 +1,22 @@
+Graveyard Keeper 2 — a free demo of the unhinged cemetery sim sequel, where zombies do the work.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5075680/
+
+── The quick version ──
+What you do  : run a graveyard, automate with zombie workers, rebuild a town
+Best part    : manual labour to a full undead factory
+The catch    : stiff, clumpy battles
+Demo reviews : 136 of 169 positive
+Demo         : about 1.4 GB installed
+Full game    : 22 Sep 2026
+Think        : Stardew Valley run like Factorio
+Verdict      : Worth A Dip
+
+Numbers come from the Steam store page, the demo's Steam reviews and Steam's public
+product info; the rest comes from watching the official trailer. No files were
+downloaded, unpacked, decompiled, or redistributed. It is an outside reading, not a
+statement from the developer. All game footage and images belong to Lazy Bear Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

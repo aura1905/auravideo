@@ -1,0 +1,36 @@
+{
+ "demo_appid": 4644560,
+ "full_appid": 3784610,
+ "name": "Foundlings",
+ "developers": [
+  "Maypole Games"
+ ],
+ "publishers": [
+  "Maypole Games"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Adventure",
+  "Indie",
+  "RPG"
+ ],
+ "languages": "English",
+ "website": null,
+ "short": "Guide two troubled mages through a civil war-torn 12th-century England in this spellcasting RPG. Forge spells by combining conduits, trade favours with lords and serfs, watch the motions of the planets and keep your Humours in check as you help them find their purpose.",
+ "about": "           Foundlings    is a story-driven RPG revolving around a journey of maturing, self-discovery and forgiveness.   Taking cues from classic SNES RPGs and adding a pinch of branching dialogue and character building,  Foundlings  seeks to explore new and exciting ways of crafting an RPG experience.               After getting arrested on the same night due to performing unsanctioned magical acts, young healer's apprentice  Agnes  and remorseful ex-executioner  Frant  are brought together by the whim of a local feudal lord.  They are tasked with tracking down the head of a deviant mages' guild, whom they suspect to be responsible for the recent unrest among both the local wildlife and the inhabitants of the surrounding villages.             Explore a Ravaged Medieval Land   Journey through a war-torn 12th-century England filled with mystical forests, forgotten battlefields, and ancient burial grounds.       A Heartfelt Tale of Hardship   Guide two outcast mages during the Revolt of 1173. Every choice shapes life, death, and redemption.     A Living Narrative World   Meet nobles, peasants, scholars, and fellow outcasts. Shape your relationships through choices, knowing that not every outcome is yours to decide.                    Real-Time Spellcasting   Experience tactical planning with real-time spell execution using conduits, scrolls, and potions.     Dual Character Control   Switch between Agnes and Frant, each with evolving behaviors and abilities.     From Novice to Initiate   Study medieval disciplines, practice alchemy, acquire conduits, and craft new spells to build your personal spellbook.     The Four Humours   System   Balance blood, phlegm, yellow bile and black bile to stabilize your emotions in combat.     Celestial Influence   Align spells with planetary movements to enhance their effects.     Paths to Mastery   Study liberal arts like Rhetoric and Theology, and delve into true-to-life alchemy and occult practices.    Key Features:    A touching, character-driven story      Tactical positioning and resource management meet real-time spellcasting action    Character customization via dialogue and combat choices    Branching dialogue paths &amp; stat-based skill checks    Enemies visible within the game's levels, without random encounters    Unique stats and resources based on historical science and philosophy    Exploration that reveals the mysterious forces governing the medieval world      20+ spells, scrolls and items    10+ alternate endings    16-bit pixel aesthetics + illustrations inspired by medieval European art    Soundtrack blending progressive rock, SNES-era game music &amp; Balkan/Middle Eastern folk   ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10    Processor:  Intel Core i3-6100 or AMD FX-6350    Memory:  6 GB RAM    Graphics:  Nvidia GTX 650 or AMD HD 7750    DirectX:  Version 11    Storage:  300 MB available space  ",
+ "movies": [
+  {
+   "id": 257421782,
+   "name": "Foundlings - Demo Trailer"
+  }
+ ],
+ "screenshots": 8,
+ "reviews": {
+  "total": 10,
+  "positive": 10,
+  "desc": "Positive"
+ }
+}

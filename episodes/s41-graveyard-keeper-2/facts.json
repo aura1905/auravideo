@@ -1,0 +1,43 @@
+{
+ "demo_appid": 5075680,
+ "full_appid": 4358690,
+ "name": "Graveyard Keeper 2",
+ "developers": [
+  "Lazy Bear Games"
+ ],
+ "publishers": [
+  "tinyBuild"
+ ],
+ "release": "22 Sep, 2026",
+ "coming_soon": true,
+ "genres": [
+  "Adventure",
+  "RPG",
+  "Simulation"
+ ],
+ "languages": "English*, French, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Turkish*languages with full audio support",
+ "website": null,
+ "short": "The most inaccurate medieval cemetery sim is back! Restore The Town, manage the graveyard, automate production, lead your undead army into battle and turn the zombie problem into a thriving business! Graveyard Keeper 2 is the grotesque sequel that's deeper than six feet, and more unhinged than ever!",
+ "about": " You are the Grand Inquisitor now! Restore the Town and lead your undead army into battle to save the realm from a zombie apocalypse. Welcome to Graveyard Keeper 2 - the sequel to the original, unhinged classic!      Manage your own medieval graveyard     Automate your production like never before    Lead your zombie army into battle and fortify the Town against the undead    Rebuild The Town and milk its residents for maximum profits    A world full of unhinged humour, grotesque characters and a twisted story                             Build and manage your own medieval graveyard. Harvest as much flora, fauna, and human remains as you can to build extraordinary machinery, automate production, and expand your graveyard for pure profit.                   Become the Inquisitor and lead your undead army into battle to save the Kingdom from a zombie apocalypse. Build towers and fortifications, craft powerful armour and weapons, arm and train your not-so-smart troops, and slash your way to victory!                   Help the townsfolk restore their homes and turn their problems into revenue. Complete quests throughout the city, as your undead workers take care of the heavy lifting behind the scenes. With zombie-based automation and structured systems, you can transform local efforts into a scalable and profitable operation. ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10 x64 or higher    Processor:  Intel Core i3 (13 gen) or similar    Memory:  6 GB RAM    Graphics:  GeForce GTX 1650 or similar    DirectX:  Version 12    Storage:  4 GB available space  ",
+ "movies": [
+  {
+   "id": 257421926,
+   "name": "Demo Trailer"
+  },
+  {
+   "id": 257405097,
+   "name": "Release date Trailer"
+  },
+  {
+   "id": 257315681,
+   "name": "Announcement trailer"
+  }
+ ],
+ "screenshots": 8,
+ "reviews": {
+  "total": 162,
+  "positive": 129,
+  "desc": "Mostly Positive"
+ }
+}

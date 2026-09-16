@@ -1,0 +1,21 @@
+Foundlings — a free SNES-style RPG demo set in England, 1173.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4644560/
+
+── The quick version ──
+What you do  : forge spells, trade favours, balance your humours
+Best part    : spellcasting on a ring of planets
+The catch    : stiff walking animation
+Demo reviews : 10 of 10 positive
+Language     : English
+Think        : Chrono Trigger with medieval politics
+Verdict      : Worth A Dip
+
+Numbers come from the Steam store page, the demo's Steam reviews and Steam's public
+product info; the rest comes from watching the official trailer. No files were
+downloaded, unpacked, decompiled, or redistributed. It is an outside reading, not a
+statement from the developer. All game footage and images belong to Maypole Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

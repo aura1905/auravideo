@@ -1,0 +1,21 @@
+Culdcept BEGINS — a free demo of the board-game card battler, back after ten years.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4217720/
+
+── The quick version ──
+What you do : roll dice, claim land, defend with creature cards
+Cards       : 400+ with new art
+Best part   : attacks burst out of the cards
+The catch   : plain battle health bars
+Demo        : about 2.6 GB installed, 5 languages
+Think       : Monopoly meets Magic: The Gathering
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page, the demo's Steam reviews and Steam's public
+product info; the rest comes from watching the official trailer. No files were
+downloaded, unpacked, decompiled, or redistributed. It is an outside reading, not a
+statement from the developer. All game footage and images belong to Neos Corporation.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

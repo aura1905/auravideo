@@ -1,0 +1,87 @@
+[
+ {
+  "id": "s1",
+  "text": "Wo Long 2 just dropped a free alpha demo on Steam.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 15.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "It's ninety gigabytes installed. Nearly fifty just to download.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "It's Team NINJA's Three Kingdoms action RPG, where you fight demons with Chinese martial arts.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 35.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Combat looks fast and aggressive. Dodge, parry, and punish, against bosses that fill the screen.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 45.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best moment in the trailer: you sprout wings of fire and slam a giant boss.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 69.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? In the busiest fights, the sparks and effects make enemy attacks hard to read.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 47.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "It's in eleven languages, and the full game lands March fourth, twenty twenty-seven.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Nioh, with a dash of Sekiro.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 37.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip, if you've got ninety gigs free.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 72.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

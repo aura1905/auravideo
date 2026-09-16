@@ -1,0 +1,88 @@
+[
+ {
+  "id": "s1",
+  "text": "Graveyard Keeper 2 has a free demo, and the most unhinged cemetery sim is back.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 6.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "You bury the bodies, then turn the leftovers into profit.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "This time, zombies do the work. They farm, they craft, they run your whole factory.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 27.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "You're the Grand Inquisitor now, rebuilding a ruined town and leading an undead army into battle.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 62.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best part: watching it go from carrying corpses by hand to a fully automated undead workforce.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 70.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The battles look stiff. Mostly zombies bumping into zombies.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 86.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "Most of its hundred and sixty-nine demo reviews are positive, and it launches September twenty-second.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Stardew Valley, run like Factorio, by the dead.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 29.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip. Death is just onboarding.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 96.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

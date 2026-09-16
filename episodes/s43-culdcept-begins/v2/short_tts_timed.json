@@ -1,0 +1,117 @@
+[
+ {
+  "id": "s1",
+  "text": "Culdcept is back after ten years, and there's a free demo.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.0
+  },
+  "sub": "Culdcept is back after ten years, and there's a free demo.",
+  "dur": 3.448,
+  "wav": "episodes/s43-culdcept-begins/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "It's Monopoly, but every square is a fight.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "It's Monopoly, but every square is a fight.",
+  "dur": 2.717,
+  "wav": "episodes/s43-culdcept-begins/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Roll the dice, claim land, and defend it with creature cards when someone lands on you.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  },
+  "sub": "Roll the dice, claim land, and defend it with creature cards when someone lands on you.",
+  "dur": 4.702,
+  "wav": "episodes/s43-culdcept-begins/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "There are over four hundred cards, all with new art.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 65.0
+  },
+  "sub": "There are over four hundred cards, all with new art.",
+  "dur": 2.978,
+  "wav": "episodes/s43-culdcept-begins/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Best part: attacks burst right out of the cards, like a salamander breathing fire.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 29.0
+  },
+  "sub": "Best part: attacks burst right out of the cards, like a salamander breathing fire.",
+  "dur": 4.885,
+  "wav": "episodes/s43-culdcept-begins/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The battle health bars look plain next to all that art.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 35.0
+  },
+  "sub": "The catch? The battle health bars look plain next to all that art.",
+  "dur": 4.232,
+  "wav": "episodes/s43-culdcept-begins/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "The demo is about two and a half gigs, in five languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about two and a half gigs, in five languages.",
+  "dur": 3.318,
+  "wav": "episodes/s43-culdcept-begins/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Monopoly meets Magic: The Gathering.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 76.0
+  },
+  "sub": "Think Monopoly meets Magic: The Gathering.",
+  "dur": 2.351,
+  "wav": "episodes/s43-culdcept-begins/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if you like your luck with some strategy.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 43.0
+  },
+  "sub": "Worth a dip if you like your luck with some strategy.",
+  "dur": 2.717,
+  "wav": "episodes/s43-culdcept-begins/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.123,
+  "wav": "episodes/s43-culdcept-begins/v2/tts/s10.wav"
+ }
+]
