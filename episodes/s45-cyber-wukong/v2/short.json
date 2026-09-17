@@ -1,0 +1,87 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: Journey to the West, but cyberpunk.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 13.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "Magic is black tech, and the final boss is a mechanical Buddha with a gun.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "It's a fast top-down roguelite. Dash through hordes and clear the screen with huge attacks.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 23.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best moment in the trailer: a giant skeleton boss that turns the fight into bullet hell.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 58.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "There's a ranged summoner style too, so builds actually feel different.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 38.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The trailer spells roguelike wrong, the whole way through.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 30.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The Windows demo is about four and a half gigs, in three languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Hades, with Wukong in a cyber-monk squad.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 14.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if Black Myth left you wanting more monkey.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 60.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

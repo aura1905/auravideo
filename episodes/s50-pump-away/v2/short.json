@@ -1,0 +1,89 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: a whole game that lives in a strip at the bottom of your screen.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 7.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "Kat and Doug just broke out of jail, and their escape vehicle is a railroad pump car.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.0
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Click to go faster, or let it idle while you work.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best part: that 1930s rubber-hose cartoon look, down to the silly diving suits.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 39.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "There are fourteen cartoon biomes, even outer space and a hellscape.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 42.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? It's a small strip, and clicking plus upgrades could get repetitive.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 25.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The demo is about six hundred megabytes, English only.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Rusty's Retirement, drawn like Cuphead.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 15.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip for your second monitor.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 28.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

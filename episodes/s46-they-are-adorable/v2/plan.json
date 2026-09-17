@@ -1,0 +1,558 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 3.814,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c000.png",
+   "start": 0.0,
+   "in": 0,
+   "out": 0.6,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c001.png",
+   "start": 0.61,
+   "in": 0,
+   "out": 1.109,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c002.png",
+   "start": 1.729,
+   "in": 0,
+   "out": 1.21,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c003.png",
+   "start": 2.949,
+   "in": 0,
+   "out": 0.855,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s2.wav",
+   "start": 3.964,
+   "in": 0,
+   "out": 2.534,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c004.png",
+   "start": 3.964,
+   "in": 0,
+   "out": 1.169,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c005.png",
+   "start": 5.143,
+   "in": 0,
+   "out": 1.345,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s3.wav",
+   "start": 6.648,
+   "in": 0,
+   "out": 5.042,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c006.png",
+   "start": 6.648,
+   "in": 0,
+   "out": 1.293,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c007.png",
+   "start": 7.951,
+   "in": 0,
+   "out": 1.18,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c008.png",
+   "start": 9.141,
+   "in": 0,
+   "out": 1.52,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c009.png",
+   "start": 10.67,
+   "in": 0,
+   "out": 1.01,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s4.wav",
+   "start": 11.84,
+   "in": 0,
+   "out": 4.571,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c010.png",
+   "start": 11.84,
+   "in": 0,
+   "out": 0.883,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c011.png",
+   "start": 12.733,
+   "in": 0,
+   "out": 1.093,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c012.png",
+   "start": 13.837,
+   "in": 0,
+   "out": 0.936,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c013.png",
+   "start": 14.782,
+   "in": 0,
+   "out": 1.041,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c014.png",
+   "start": 15.833,
+   "in": 0,
+   "out": 0.568,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s5.wav",
+   "start": 16.561,
+   "in": 0,
+   "out": 5.46,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c015.png",
+   "start": 16.561,
+   "in": 0,
+   "out": 0.809,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c016.png",
+   "start": 17.38,
+   "in": 0,
+   "out": 0.809,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c017.png",
+   "start": 18.199,
+   "in": 0,
+   "out": 1.014,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c018.png",
+   "start": 19.223,
+   "in": 0,
+   "out": 1.014,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c019.png",
+   "start": 20.246,
+   "in": 0,
+   "out": 0.877,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c020.png",
+   "start": 21.134,
+   "in": 0,
+   "out": 0.877,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s6.wav",
+   "start": 22.171,
+   "in": 0,
+   "out": 5.12,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c021.png",
+   "start": 22.171,
+   "in": 0,
+   "out": 0.749,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c022.png",
+   "start": 22.93,
+   "in": 0,
+   "out": 0.938,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c023.png",
+   "start": 23.878,
+   "in": 0,
+   "out": 1.128,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c024.png",
+   "start": 25.015,
+   "in": 0,
+   "out": 1.065,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c025.png",
+   "start": 26.09,
+   "in": 0,
+   "out": 1.191,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s7.wav",
+   "start": 27.441,
+   "in": 0,
+   "out": 5.956,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c026.png",
+   "start": 27.441,
+   "in": 0,
+   "out": 1.117,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c027.png",
+   "start": 28.568,
+   "in": 0,
+   "out": 1.063,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c028.png",
+   "start": 29.641,
+   "in": 0,
+   "out": 0.634,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c029.png",
+   "start": 30.285,
+   "in": 0,
+   "out": 1.224,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c030.png",
+   "start": 31.519,
+   "in": 0,
+   "out": 1.063,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c031.png",
+   "start": 32.592,
+   "in": 0,
+   "out": 0.795,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s8.wav",
+   "start": 33.547,
+   "in": 0,
+   "out": 3.866,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c032.png",
+   "start": 33.547,
+   "in": 0,
+   "out": 1.638,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c033.png",
+   "start": 35.195,
+   "in": 0,
+   "out": 1.131,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c034.png",
+   "start": 36.336,
+   "in": 0,
+   "out": 1.067,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s9.wav",
+   "start": 37.563,
+   "in": 0,
+   "out": 2.482,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c035.png",
+   "start": 37.563,
+   "in": 0,
+   "out": 0.881,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c036.png",
+   "start": 38.454,
+   "in": 0,
+   "out": 1.581,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s10.wav",
+   "start": 40.195,
+   "in": 0,
+   "out": 1.228,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c037.png",
+   "start": 40.195,
+   "in": 0,
+   "out": 1.218,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s46-they-are-adorable/t0.mp4",
+   "start": 0.0,
+   "in": 0.0,
+   "out": 6.648,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s46-they-are-adorable/t0.mp4",
+   "start": 6.648,
+   "in": 29.0,
+   "out": 34.192,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s46-they-are-adorable/t0.mp4",
+   "start": 11.84,
+   "in": 24.0,
+   "out": 28.721,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s46-they-are-adorable/t0.mp4",
+   "start": 16.561,
+   "in": 31.0,
+   "out": 36.61,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s46-they-are-adorable/t0.mp4",
+   "start": 22.171,
+   "in": 12.0,
+   "out": 17.27,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s46-they-are-adorable/ev_facts_v.png",
+   "start": 27.441,
+   "in": 0.0,
+   "out": 6.106,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "fit",
+   "transformScale": 1.0
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s46-they-are-adorable/t0.mp4",
+   "start": 33.547,
+   "in": 38.0,
+   "out": 42.016,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s46-they-are-adorable/t0.mp4",
+   "start": 37.563,
+   "in": 2.0,
+   "out": 6.36,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v1",
+   "file": "C:/Git/auravideo/episodes/s46-they-are-adorable/logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 41.423,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "C:/Git/auravideo/episodes/s46-they-are-adorable/t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 41.923,
+   "volume": 0.06,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "subs": [],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "MEDIA"
+  }
+ ],
+ "total": 41.923
+}

@@ -1,0 +1,21 @@
+Pump Away! — a free 1930s-cartoon idle game that lives at the bottom of your desktop.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5241720/
+
+── The quick version ──
+What you do : click or idle a pump car, buy upgrades
+Best part   : rubber-hose cartoon style
+The catch   : small strip, repetitive loop
+Biomes      : 14
+Demo        : 612 MB, English
+Think       : Rusty's Retirement drawn like Cuphead
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Low HP Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

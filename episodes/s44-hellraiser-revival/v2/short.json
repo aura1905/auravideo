@@ -1,0 +1,83 @@
+[
+ {
+  "id": "s1",
+  "text": "A free Hellraiser demo just landed on Steam.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s2",
+  "text": "It's thirty-two gigs, and Pinhead is waiting.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "You play Aidan, using the famous puzzle box to survive a deal with the Cenobites.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  }
+ },
+ {
+  "id": "s4",
+  "text": "It's first-person action horror. Grimy halls, spiked bats, shotguns, and a lot of blood.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 148.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best moment in the trailer: one brutal swing of a spiked bat in a filthy hallway.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 150.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? This trailer is almost all cutscene. Barely twenty seconds is actual gameplay.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  }
+ },
+ {
+  "id": "s7",
+  "text": "It's in eight languages, and the full game is out October eighth.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Resident Evil 7, with Condemned's melee.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 153.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip, if your drive has room for hell.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

@@ -1,0 +1,36 @@
+{
+ "demo_appid": 5241890,
+ "full_appid": 5113530,
+ "name": "Megastore Chaos",
+ "developers": [
+  "Dynamic Dice"
+ ],
+ "publishers": [
+  "Dynamic Dice"
+ ],
+ "release": "18 Sep, 2026",
+ "coming_soon": true,
+ "genres": [
+  "Casual",
+  "Indie",
+  "Simulation",
+  "Early Access"
+ ],
+ "languages": "English, French, Italian, German, Spanish - Spain, Simplified Chinese, Portuguese - Brazil, Traditional Chinese, Japanese, Spanish - Latin America, Portuguese - Portugal, Russian, Turkish, Polish",
+ "website": "https://dynamicdice.games/",
+ "short": "Relaxing organization simulator set in a massive shopping mall. Sort 30,452 items across 6 unique stores including supermarkets, bookstores, electronics, games, wine and toys. Unlock new skills and turn every messy shop into perfect order at your own pace.",
+ "about": "  A Relaxing Journey from Chaos to Order   Are you ready to restore out-of-control shops in a massive shopping mall to their former glory?  Megastore Chaos  is a single-player simulation game focused entirely on relaxation without any time pressure, where you organize messy stores.           Manage and Organize Stores   Every shop awaits you with its own unique mess. Place products in their correct categories, organize the shelves, and make the store appealing to customers again. Experience the unique satisfaction of turning a chaotic environment into perfect order step by step in a realistic atmosphere.           6 Different Shops, Tens of Thousands of Items!   In this adventure that you start with a small store, unlock different sections of the giant shopping mall with the money you earn. With over 30,000 items in total across these shops, every detail will be shaped by your hands:     Supermarket:  Clear the biggest mess in the mall and perfect the shelves with 8,044 supermarket products.     Game World:  Recreate a gamer's paradise by categorizing and stacking 7,776 game DVDs.     Book Store:  Create a literary and peaceful order by sorting 6,090 books and magazines by genre.     Electronic City:  Build a modern and sleek tech store by organizing 3,242 technological items.     Wine Store:  Capture the look of an elegant cellar by carefully placing 2,944 wine bottles on the shelves.     Toy Store:  Bring a colorful toy shop back to life by organizing 2,356 toys and placing them in their proper display areas.     Upgrade Your Character   It's not just the shops—you are leveling up too! Strengthen your character through the in-game skill system. Become the most sought-after organization expert in the mall by unlocking new abilities like faster organizing or carrying items more efficiently.   Key Features:      Stress-Free Gameplay:  There is no countdown to rush you; play at your own pace.     Satisfying Organization:  The relaxing feeling of gathering messy items and arranging them on shelves by category.     Massive Scale:  The opportunity to organize a total of 30,452 individual items across 6 differently themed shops.     Skill System:  The chance to increase your character's abilities according to your playstyle with the experience you gain.   ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10 64-bit    Processor:  Intel i3 / AMD equivalent    Memory:  8 GB RAM    Graphics:  NVIDIA GeForce GTX 1050 4GB or AMD Radeon RX 560 4GB    Storage:  5 GB available space  ",
+ "movies": [
+  {
+   "id": 257424985,
+   "name": "MegaStore Chaos Gameplay"
+  }
+ ],
+ "screenshots": 19,
+ "reviews": {
+  "total": 2,
+  "positive": 1,
+  "desc": "2 user reviews"
+ }
+}

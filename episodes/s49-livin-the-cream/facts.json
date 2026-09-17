@@ -1,0 +1,34 @@
+{
+ "demo_appid": 5100290,
+ "full_appid": 4621810,
+ "name": "Livin' the Cream: Ice Cream Simulator",
+ "developers": [
+  "Clover Rock Games"
+ ],
+ "publishers": [
+  "Clover Rock Games",
+  "Ritual Interactive"
+ ],
+ "release": "Q4 2026",
+ "coming_soon": true,
+ "genres": [
+  "Simulation"
+ ],
+ "languages": "English*, French, Italian, German, Spanish - Spain, Simplified Chinese, Portuguese - Brazil, Indonesian, Dutch, Japanese, Korean, Polish, Portuguese - Portugal, Russian, Turkish, Vietnamese, Spanish - Latin America*languages with full audio support",
+ "website": null,
+ "short": "Run your own ice cream shop in a vibrant Caribbean setting. Prepare ice cream, mix flavors, add toppings, serve customers, keep your shop clean, restock ingredients, hire staff, and expand your shop from a small stand into a busy business.",
+ "about": "      Experience the smooth, satisfying flow of ice cream in real time.                 Craft delicious ice cream from scratch using fresh ingredients, mix flavors, and create the perfect texture. Turn simple ingredients into tasty, satisfying ice cream delights.                 Customize the ice cream based on each customer’s request with a variety of toppings and combinations. Serve exactly what they want and keep your customers happy.                 Keep your shop clean while things get messy. A clean space keeps the experience sweet for everyone.                 Turn an empty space into your dream ice cream shop. Customize your shop’s look and style to make it your own.                 Buy fresh ingredients from local markets, stock your shop, and keep your business running.         ",
+ "min_req": " Minimum:     OS:  Windows (64-bit) 10    Processor:  i5 3550 / RYZEN 5 2500X    Memory:  8 GB RAM    Graphics:  NVIDIA GTX 1050 / AMD R9 270X    DirectX:  Version 11    Storage:  5 GB available space  ",
+ "movies": [
+  {
+   "id": 257321086,
+   "name": "Trailer"
+  }
+ ],
+ "screenshots": 12,
+ "reviews": {
+  "total": 1,
+  "positive": 1,
+  "desc": "1 user reviews"
+ }
+}

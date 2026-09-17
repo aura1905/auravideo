@@ -1,0 +1,87 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: a meteor hit your uncle's game store.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "Now there are over five thousand game boxes on the floor.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Sort them by genre and platform. PC, Slashstation, Pbox, and Nibnetho.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "It's slow and cozy. Pick up, walk, shelve, repeat.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 7.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best moment in the trailer: a bomb blows the pile apart, then a time-lapse fixes the whole store.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? Boxes just pop into perfect slots, so it doesn't feel very hands-on.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The demo is under a gig, in fifteen languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Supermarket Simulator, but after an asteroid.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 28.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip, especially if you know those parody consoles.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 16.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

@@ -1,0 +1,21 @@
+Cyber Wukong — Journey to the West goes cyberpunk in a free roguelite demo.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4838220/
+
+── The quick version ──
+What you do  : top-down roguelite, dash and clear hordes
+Best moment  : bullet-hell giant skeleton boss
+The catch    : the trailer misspells roguelike
+Windows demo : about 4.6 GB, 3 languages
+Full game    : Q4 2026
+Think        : Hades with a cyber Wukong
+Verdict      : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Chengdu Fangcunshan.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

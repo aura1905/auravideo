@@ -1,0 +1,21 @@
+Megastore Chaos — a free demo where you tidy 30,452 items across a wrecked shopping mall.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5241890/
+
+── The quick version ──
+What you do : sort items into six stores, no timer
+Best part   : dozens of items snap onto shelves at once
+The catch   : debug-looking item labels
+Demo        : about 2.7 GB, 14 languages
+Full game   : 18 Sep 2026
+Think       : Unpacking meets House Flipper
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Dynamic Dice.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

@@ -1,0 +1,36 @@
+{
+ "demo_appid": 4838220,
+ "full_appid": 4833600,
+ "name": "Cyber Wukong",
+ "developers": [
+  "成都方寸山"
+ ],
+ "publishers": [
+  "摸鱼游戏"
+ ],
+ "release": "Q4 2026",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Adventure",
+  "Indie",
+  "RPG"
+ ],
+ "languages": "English*, Simplified Chinese*, Traditional Chinese**languages with full audio support",
+ "website": null,
+ "short": "Cyber Wukong is an exhilarating Roguelite action game! Here, immortal arts are black tech, and magical treasures are cybernetic creations. Enter a twisted West world of data, steel, and incense. Forge your combat style and face the mechanical Buddha, chanting scriptures and wielding a gun",
+ "about": " Cyber Wukong  A cyberpunk roguelite action game following a five-person squad’s odyssey across the wasteland.   One monk with no recollection of his own identity, and four monsters cast out by both the Heavenly Court and Spirit Mountain.  They will traverse the eerie Guanyin Temple, White Tiger Ridge—the Graveyard of Lost Memories, the Cave of Silken Threads, a den of unbridled desire, and the False Buddha Pure Land of Lesser Western Heaven. Their final destination is Lion Camel Ridge, where the bloodiest secret of the Golden Cicada Project lies buried: the sole &quot;finished product&quot; born from a thousand years of scheming.  Every cycle of reincarnation marks a new journey of immortal cultivation.   Craft your cyber immortal arts, awaken long-lost divine weapons, and cling to survival amid the divide of cold steel and sacred scriptures.  Diverse Build Combinations  Dozens of skills, paired with an extensive roster of magic treasures and divine weapons alongside dual light/heavy strike combat paths, enable entirely unpredictable gameplay builds.          Distinct Playable Classes  Five uniquely specialized characters spanning melee, ranged, spellcasting and gunplay. Each delivers a wholly distinct gameplay experience.          Roguelite Gameplay — Every Adventure Is One of a Kind  Death fuels progression; reincarnation begets power. No two runs will ever be identical.          Magic Treasures, Innate Talents &amp; Divine Weapons  Countless divine weapons, each wielding unique divine powers; hundreds of magic treasures imbued with extraordinary abilities. Forge your one-of-a-kind cyber combat build.          Bosses You Will Confront  Elder Jinchi, who harvests spiritual essence within his fabricated &quot;Buddha Realm&quot;.   Lady White Bone, fused from countless forgotten wandering souls.   The Seven Fairies and Hundred-Eyed Demon Lord, who lure victims with desire and trade flesh as merchandise.   Maitreya, who proclaims himself the &quot;Future Buddha&quot; and refines living mortals to craft immortality elixirs.   And deep within Lion Camel Ridge, the ultimate truth forged from eight million aggrieved spirits.          Welcome to the cyber myth born upon this desolate wasteland!      ",
+ "min_req": " Minimum:     OS *:  Windows 7/8/10    Processor:  Intel i3+    Memory:  4 GB RAM    Graphics:  Nvidia GeForce GTX 750    DirectX:  Version 10    Storage:  8 GB available space  ",
+ "movies": [
+  {
+   "id": 257372170,
+   "name": "Cyber Wukong"
+  }
+ ],
+ "screenshots": 11,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

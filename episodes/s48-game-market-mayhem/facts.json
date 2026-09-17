@@ -1,0 +1,34 @@
+{
+ "demo_appid": 5153820,
+ "full_appid": 5144470,
+ "name": "Game Market Mayhem",
+ "developers": [
+  "Poisonic Studio"
+ ],
+ "publishers": [
+  "PlayWay S.A."
+ ],
+ "release": "October 2026",
+ "coming_soon": true,
+ "genres": [
+  "Casual",
+  "Simulation"
+ ],
+ "languages": "English, French, Italian, German, Spanish - Spain, Simplified Chinese, Portuguese - Brazil, Traditional Chinese, Japanese, Korean, Polish, Hungarian, Portuguese - Portugal, Russian, Turkish",
+ "website": "https://poisonicstudio.com/",
+ "short": "Game Market Mayhem is a cozy organization simulator where you sort 5,120 scattered game boxes according to their genres and platforms. Transform a massive pile of boxes into the perfect game store. Fill the shelves, unwind, and enjoy the satisfaction of everything being in order!",
+ "about": " Game Market Mayhem is a cozy and satisfying organization simulator where you restore order to a massive game store thrown into chaos by a meteor disaster. Sort 5,120 game boxes from PC, Slashstation, Pbox, and Nibnetho into the correct shelves and enjoy the soothing satisfaction of watching the enormous mess slowly transform into a perfectly organized store.   A Chaotic Yet Cozy Store Organization Simulator   It all started when a stray meteor came crashing down from the sky onto the beautiful game store your uncle had been running for years. Luckily, the shop itself was still standing, but all the products inside had turned into a massive, colorful mess. Your uncle's offer is simple: &quot;If you can restore this store to its former state on your own within the given time, you'll become a 50% partner in the shop!&quot;  There’s no need to worry. Take a deep breath and get to work. As you organize the store, use the XP you earn to upgrade your skill tree. Increase your carrying capacity to haul tower-like stacks of boxes, pull the products you’re looking for from a distance with “Vacuum Hands,” or watch the shelves magically fill up as you blow everything around you sky-high with the “Magnetic Bomb.” Clean up the chaos your way, at your own pace!           Clean up the massive mess caused by the meteor! Pick up the games scattered on the floor, fill the shelves, and restore the store to perfect order.             Pick up each box, check its color to identify its platform and genre. Feel the rhythm of placing each one on the right shelf!               Unlock new abilities and combine them! Beat the clock, win the bet you made with your uncle, and claim half the shop!         ",
+ "min_req": " Minimum:     OS:  Windows (64-bit) 10    Processor:  i5 3550 / RYZEN 3 1300X    Memory:  8 GB RAM    Graphics:  NVIDIA GTX 1050 4GB / AMD R9 270X 4GB    DirectX:  Version 11    Storage:  1 GB available space  ",
+ "movies": [
+  {
+   "id": 257405746,
+   "name": "Game Market Mayhem Trailer"
+  }
+ ],
+ "screenshots": 8,
+ "reviews": {
+  "total": 1,
+  "positive": 1,
+  "desc": "1 user reviews"
+ }
+}

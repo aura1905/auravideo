@@ -1,0 +1,522 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 2.952,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c000.png",
+   "start": 0.0,
+   "in": 0,
+   "out": 0.671,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c001.png",
+   "start": 0.681,
+   "in": 0,
+   "out": 1.069,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c002.png",
+   "start": 1.76,
+   "in": 0,
+   "out": 1.182,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s2.wav",
+   "start": 3.102,
+   "in": 0,
+   "out": 3.213,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c003.png",
+   "start": 3.102,
+   "in": 0,
+   "out": 1.043,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c004.png",
+   "start": 4.155,
+   "in": 0,
+   "out": 1.043,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c005.png",
+   "start": 5.209,
+   "in": 0,
+   "out": 1.096,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s3.wav",
+   "start": 6.465,
+   "in": 0,
+   "out": 5.59,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c006.png",
+   "start": 6.465,
+   "in": 0,
+   "out": 1.481,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c007.png",
+   "start": 7.956,
+   "in": 0,
+   "out": 1.108,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c008.png",
+   "start": 9.074,
+   "in": 0,
+   "out": 1.853,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c009.png",
+   "start": 10.937,
+   "in": 0,
+   "out": 1.108,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s4.wav",
+   "start": 12.205,
+   "in": 0,
+   "out": 4.101,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c010.png",
+   "start": 12.205,
+   "in": 0,
+   "out": 1.585,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c011.png",
+   "start": 13.8,
+   "in": 0,
+   "out": 1.813,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c012.png",
+   "start": 15.623,
+   "in": 0,
+   "out": 0.673,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s5.wav",
+   "start": 16.456,
+   "in": 0,
+   "out": 5.59,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c013.png",
+   "start": 16.456,
+   "in": 0,
+   "out": 0.85,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c014.png",
+   "start": 17.316,
+   "in": 0,
+   "out": 0.742,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c015.png",
+   "start": 18.069,
+   "in": 0,
+   "out": 0.958,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c016.png",
+   "start": 19.036,
+   "in": 0,
+   "out": 0.689,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c017.png",
+   "start": 19.735,
+   "in": 0,
+   "out": 1.334,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c018.png",
+   "start": 21.079,
+   "in": 0,
+   "out": 0.958,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s6.wav",
+   "start": 22.196,
+   "in": 0,
+   "out": 4.989,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c019.png",
+   "start": 22.196,
+   "in": 0,
+   "out": 0.694,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c020.png",
+   "start": 22.9,
+   "in": 0,
+   "out": 1.223,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c021.png",
+   "start": 24.133,
+   "in": 0,
+   "out": 0.929,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c022.png",
+   "start": 25.072,
+   "in": 0,
+   "out": 1.164,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c023.png",
+   "start": 26.246,
+   "in": 0,
+   "out": 0.929,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s7.wav",
+   "start": 27.335,
+   "in": 0,
+   "out": 3.213,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c024.png",
+   "start": 27.335,
+   "in": 0,
+   "out": 0.825,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c025.png",
+   "start": 28.17,
+   "in": 0,
+   "out": 0.89,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c026.png",
+   "start": 29.07,
+   "in": 0,
+   "out": 1.468,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s8.wav",
+   "start": 30.698,
+   "in": 0,
+   "out": 3.187,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c027.png",
+   "start": 30.698,
+   "in": 0,
+   "out": 0.396,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c028.png",
+   "start": 31.104,
+   "in": 0,
+   "out": 1.381,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c029.png",
+   "start": 32.494,
+   "in": 0,
+   "out": 1.381,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s9.wav",
+   "start": 34.035,
+   "in": 0,
+   "out": 3.448,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c030.png",
+   "start": 34.035,
+   "in": 0,
+   "out": 0.769,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c031.png",
+   "start": 34.814,
+   "in": 0,
+   "out": 1.047,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c032.png",
+   "start": 35.87,
+   "in": 0,
+   "out": 1.603,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s10.wav",
+   "start": 37.633,
+   "in": 0,
+   "out": 1.411,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c033.png",
+   "start": 37.633,
+   "in": 0,
+   "out": 1.401,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s48-game-market-mayhem/t0.mp4",
+   "start": 0.0,
+   "in": 0.0,
+   "out": 6.465,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s48-game-market-mayhem/t0.mp4",
+   "start": 6.465,
+   "in": 2.0,
+   "out": 7.74,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s48-game-market-mayhem/t0.mp4",
+   "start": 12.205,
+   "in": 7.0,
+   "out": 11.251,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s48-game-market-mayhem/t0.mp4",
+   "start": 16.456,
+   "in": 22.0,
+   "out": 27.74,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s48-game-market-mayhem/t0.mp4",
+   "start": 22.196,
+   "in": 13.0,
+   "out": 18.139,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s48-game-market-mayhem/ev_facts_v.png",
+   "start": 27.335,
+   "in": 0.0,
+   "out": 3.363,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "fit",
+   "transformScale": 1.0
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s48-game-market-mayhem/t0.mp4",
+   "start": 30.698,
+   "in": 28.0,
+   "out": 31.337,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s48-game-market-mayhem/t0.mp4",
+   "start": 34.035,
+   "in": 16.0,
+   "out": 21.509,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v1",
+   "file": "C:/Git/auravideo/episodes/s48-game-market-mayhem/logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 39.044,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "C:/Git/auravideo/episodes/s48-game-market-mayhem/t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 39.544,
+   "volume": 0.06,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "subs": [],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "MEDIA"
+  }
+ ],
+ "total": 39.544
+}

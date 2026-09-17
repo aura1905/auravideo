@@ -1,0 +1,22 @@
+Clive Barker's Hellraiser: Revival — a free demo of the first-person Hellraiser horror game, and it is 32 GB.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5184670/
+
+── The quick version ──
+What it is : first-person action horror with the puzzle box
+Feels like : grimy halls, brutal melee, shotguns
+The catch  : the trailer is mostly cutscene
+Demo       : 32.2 GB installed, 29 GB download
+Languages  : 8
+Full game  : 8 Oct 2026
+Think      : Resident Evil 7 with Condemned's melee
+Verdict    : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Saber Interactive.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

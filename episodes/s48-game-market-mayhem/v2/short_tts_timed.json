@@ -1,0 +1,117 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: a meteor hit your uncle's game store.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  },
+  "sub": "Free demo: a meteor hit your uncle's game store.",
+  "dur": 2.952,
+  "wav": "episodes/s48-game-market-mayhem/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Now there are over five thousand game boxes on the floor.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Now there are over five thousand game boxes on the floor.",
+  "dur": 3.213,
+  "wav": "episodes/s48-game-market-mayhem/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Sort them by genre and platform. P C, Slashstation, Pbox, and Nibnetho.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.0
+  },
+  "sub": "Sort them by genre and platform. PC, Slashstation, Pbox, and Nibnetho.",
+  "dur": 5.59,
+  "wav": "episodes/s48-game-market-mayhem/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "It's slow and cozy. Pick up, walk, shelve, repeat.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 7.0
+  },
+  "sub": "It's slow and cozy. Pick up, walk, shelve, repeat.",
+  "dur": 4.101,
+  "wav": "episodes/s48-game-market-mayhem/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Best moment in the trailer: a bomb blows the pile apart, then a time-lapse fixes the whole store.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.0
+  },
+  "sub": "Best moment in the trailer: a bomb blows the pile apart, then a time-lapse fixes the whole store.",
+  "dur": 5.59,
+  "wav": "episodes/s48-game-market-mayhem/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? Boxes just pop into perfect slots, so it doesn't feel very hands-on.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.0
+  },
+  "sub": "The catch? Boxes just pop into perfect slots, so it doesn't feel very hands-on.",
+  "dur": 4.989,
+  "wav": "episodes/s48-game-market-mayhem/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "The demo is under a gig, in fifteen languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is under a gig, in fifteen languages.",
+  "dur": 3.213,
+  "wav": "episodes/s48-game-market-mayhem/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Supermarket Simulator, but after an asteroid.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 28.0
+  },
+  "sub": "Think Supermarket Simulator, but after an asteroid.",
+  "dur": 3.187,
+  "wav": "episodes/s48-game-market-mayhem/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip, especially if you know those parody consoles.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 16.0
+  },
+  "sub": "Worth a dip, especially if you know those parody consoles.",
+  "dur": 3.448,
+  "wav": "episodes/s48-game-market-mayhem/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.411,
+  "wav": "episodes/s48-game-market-mayhem/v2/tts/s10.wav"
+ }
+]

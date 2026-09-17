@@ -1,0 +1,478 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 4.049,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c000.png",
+   "start": 0.0,
+   "in": 0,
+   "out": 0.665,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c001.png",
+   "start": 0.675,
+   "in": 0,
+   "out": 0.777,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c002.png",
+   "start": 1.462,
+   "in": 0,
+   "out": 0.946,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c003.png",
+   "start": 2.418,
+   "in": 0,
+   "out": 1.621,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s2.wav",
+   "start": 4.199,
+   "in": 0,
+   "out": 3.788,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c004.png",
+   "start": 4.199,
+   "in": 0,
+   "out": 1.164,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c005.png",
+   "start": 5.373,
+   "in": 0,
+   "out": 1.11,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c006.png",
+   "start": 6.493,
+   "in": 0,
+   "out": 1.484,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s3.wav",
+   "start": 8.137,
+   "in": 0,
+   "out": 5.068,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c007.png",
+   "start": 8.137,
+   "in": 0,
+   "out": 0.906,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c008.png",
+   "start": 9.053,
+   "in": 0,
+   "out": 0.662,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c009.png",
+   "start": 9.725,
+   "in": 0,
+   "out": 0.784,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c010.png",
+   "start": 10.518,
+   "in": 0,
+   "out": 1.517,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c011.png",
+   "start": 12.045,
+   "in": 0,
+   "out": 1.15,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s4.wav",
+   "start": 13.355,
+   "in": 0,
+   "out": 5.904,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c012.png",
+   "start": 13.355,
+   "in": 0,
+   "out": 0.736,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c013.png",
+   "start": 14.101,
+   "in": 0,
+   "out": 1.482,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c014.png",
+   "start": 15.592,
+   "in": 0,
+   "out": 1.171,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c015.png",
+   "start": 16.773,
+   "in": 0,
+   "out": 1.295,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c016.png",
+   "start": 18.078,
+   "in": 0,
+   "out": 1.171,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s5.wav",
+   "start": 19.409,
+   "in": 0,
+   "out": 4.101,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c017.png",
+   "start": 19.409,
+   "in": 0,
+   "out": 0.664,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c018.png",
+   "start": 20.083,
+   "in": 0,
+   "out": 1.114,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c019.png",
+   "start": 21.207,
+   "in": 0,
+   "out": 1.338,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c020.png",
+   "start": 22.555,
+   "in": 0,
+   "out": 0.945,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s6.wav",
+   "start": 23.66,
+   "in": 0,
+   "out": 4.049,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c021.png",
+   "start": 23.66,
+   "in": 0,
+   "out": 1.38,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c022.png",
+   "start": 25.05,
+   "in": 0,
+   "out": 1.32,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c023.png",
+   "start": 26.379,
+   "in": 0,
+   "out": 1.32,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s7.wav",
+   "start": 27.859,
+   "in": 0,
+   "out": 3.318,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c024.png",
+   "start": 27.859,
+   "in": 0,
+   "out": 0.42,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c025.png",
+   "start": 28.289,
+   "in": 0,
+   "out": 1.465,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c026.png",
+   "start": 29.764,
+   "in": 0,
+   "out": 1.403,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s8.wav",
+   "start": 31.327,
+   "in": 0,
+   "out": 2.351,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c027.png",
+   "start": 31.327,
+   "in": 0,
+   "out": 1.087,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c028.png",
+   "start": 32.424,
+   "in": 0,
+   "out": 1.244,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s9.wav",
+   "start": 33.828,
+   "in": 0,
+   "out": 1.228,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c029.png",
+   "start": 33.828,
+   "in": 0,
+   "out": 1.218,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s49-livin-the-cream/t0.mp4",
+   "start": 0.0,
+   "in": 0.0,
+   "out": 4.199,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s49-livin-the-cream/t0.mp4",
+   "start": 4.199,
+   "in": 9.0,
+   "out": 12.938,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s49-livin-the-cream/t0.mp4",
+   "start": 8.137,
+   "in": 17.0,
+   "out": 22.218,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s49-livin-the-cream/t0.mp4",
+   "start": 13.355,
+   "in": 82.0,
+   "out": 88.054,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s49-livin-the-cream/t0.mp4",
+   "start": 19.409,
+   "in": 71.0,
+   "out": 75.251,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s49-livin-the-cream/ev_facts_v.png",
+   "start": 23.66,
+   "in": 0.0,
+   "out": 4.199,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "fit",
+   "transformScale": 1.0
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s49-livin-the-cream/t0.mp4",
+   "start": 27.859,
+   "in": 37.0,
+   "out": 40.468,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s49-livin-the-cream/t0.mp4",
+   "start": 31.327,
+   "in": 2.0,
+   "out": 6.229,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v1",
+   "file": "C:/Git/auravideo/episodes/s49-livin-the-cream/logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 35.056,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "C:/Git/auravideo/episodes/s49-livin-the-cream/t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 35.556,
+   "volume": 0.06,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "subs": [],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "MEDIA"
+  }
+ ],
+ "total": 35.556
+}

@@ -1,0 +1,20 @@
+Game Market Mayhem — a free demo where you sort 5,120 game boxes after a meteor hits the store.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5153820/
+
+── The quick version ──
+What you do : sort boxes by genre and platform
+Best moment : a bomb and a store time-lapse
+The catch   : boxes just pop into slots
+Demo        : 956 MB, 15 languages
+Think       : Supermarket Simulator after an asteroid
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Poisonic Studio.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

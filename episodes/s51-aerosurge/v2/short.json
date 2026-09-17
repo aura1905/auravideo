@@ -1,0 +1,80 @@
+[
+ {
+  "id": "s1",
+  "text": "Free arcade flying demo: flips, barrel rolls and drifts, at full speed.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 1.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "Blast targets and weave through the terrain before the mission timer runs out.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 18.0
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Between missions you upgrade your weapons, then head to another planet.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best moment in the trailer: flying upside down through a tight canyon.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 53.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "The catch? The landscapes look a bit empty, and the HUD takes up a lot of screen.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 14.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The Windows demo is about four hundred megabytes, in nine languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s7",
+  "text": "Think Star Fox, with more drifting.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 39.0
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Worth a dip if you miss arcade flyers.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

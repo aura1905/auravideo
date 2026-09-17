@@ -1,0 +1,117 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: Journey to the West, but cyberpunk.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 13.0
+  },
+  "sub": "Free demo: Journey to the West, but cyberpunk.",
+  "dur": 3.187,
+  "wav": "episodes/s45-cyber-wukong/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Magic is black tech, and the final boss is a mechanical Buddha with a gun.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Magic is black tech, and the final boss is a mechanical Buddha with a gun.",
+  "dur": 4.101,
+  "wav": "episodes/s45-cyber-wukong/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "It's a fast top-down roguelite. Dash through hordes and clear the screen with huge attacks.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 23.0
+  },
+  "sub": "It's a fast top-down roguelite. Dash through hordes and clear the screen with huge attacks.",
+  "dur": 5.59,
+  "wav": "episodes/s45-cyber-wukong/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best moment in the trailer: a giant skeleton boss that turns the fight into bullet hell.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 58.0
+  },
+  "sub": "Best moment in the trailer: a giant skeleton boss that turns the fight into bullet hell.",
+  "dur": 5.277,
+  "wav": "episodes/s45-cyber-wukong/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "There's a ranged summoner style too, so builds actually feel different.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 38.0
+  },
+  "sub": "There's a ranged summoner style too, so builds actually feel different.",
+  "dur": 3.788,
+  "wav": "episodes/s45-cyber-wukong/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The trailer spells roguelike wrong, the whole way through.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 30.0
+  },
+  "sub": "The catch? The trailer spells roguelike wrong, the whole way through.",
+  "dur": 4.467,
+  "wav": "episodes/s45-cyber-wukong/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "The Windows demo is about four and a half gigs, in three languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The Windows demo is about four and a half gigs, in three languages.",
+  "dur": 4.101,
+  "wav": "episodes/s45-cyber-wukong/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Hades, with Wukong in a cyber-monk squad.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 14.0
+  },
+  "sub": "Think Hades, with Wukong in a cyber-monk squad.",
+  "dur": 3.5,
+  "wav": "episodes/s45-cyber-wukong/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if Black Myth left you wanting more monkey.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 60.0
+  },
+  "sub": "Worth a dip if Black Myth left you wanting more monkey.",
+  "dur": 2.978,
+  "wav": "episodes/s45-cyber-wukong/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.123,
+  "wav": "episodes/s45-cyber-wukong/v2/tts/s10.wav"
+ }
+]

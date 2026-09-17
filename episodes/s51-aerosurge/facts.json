@@ -1,0 +1,33 @@
+{
+ "demo_appid": 4902400,
+ "full_appid": 3752970,
+ "name": "Aerosurge",
+ "developers": [
+  "Korpeki Digital"
+ ],
+ "publishers": [
+  "Korpeki Digital"
+ ],
+ "release": "2026",
+ "coming_soon": true,
+ "genres": [
+  "Action"
+ ],
+ "languages": "English*, French*, German*, Spanish - Spain*, Japanese*, Portuguese - Portugal*, Russian*, Simplified Chinese*, Spanish - Latin America**languages with full audio support",
+ "website": null,
+ "short": "Perform daring aerial stunts, destroy your enemies and weave through hazardous environments to complete your missions before the time runs out! Upgrade your weapons and abilities between objectives, before taking out enemies across a variety of landscapes and planets",
+ "about": "  Aerosurge  is a fast-paced arcade flying game that puts you in control of an agile jet built for high-speed action. With ultra-responsive and fluid flight controls, every turn, boost, and drift feels smooth, precise, and incredibly satisfying.             Features     Perform flips, barrel-rolls and drifts with  responsive, physics-based flight controls  that feel intuitive and precise    Take on intense  missions  that put your flying skills to the test and reward you for taking risks    Unlock  upgrades  to take on increasingly harder enemies    Explore  diverse   planets  that present unique challenges and hazards   ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10 (64-bit)    Processor:  Intel Core i5 3.6 GHz or AMD equivalent    Memory:  8 GB RAM    Graphics:  Nvidia GeForce GTX770 or AMD equivalent    Storage:  2 GB available space  ",
+ "movies": [
+  {
+   "id": 257420878,
+   "name": "Aerosurge Gameplay Trailer"
+  }
+ ],
+ "screenshots": 6,
+ "reviews": {
+  "total": 2,
+  "positive": 1,
+  "desc": "2 user reviews"
+ }
+}

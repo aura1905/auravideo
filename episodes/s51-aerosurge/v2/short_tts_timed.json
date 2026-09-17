@@ -1,0 +1,107 @@
+[
+ {
+  "id": "s1",
+  "text": "Free arcade flying demo: flips, barrel rolls and drifts, at full speed.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 1.0
+  },
+  "sub": "Free arcade flying demo: flips, barrel rolls and drifts, at full speed.",
+  "dur": 4.885,
+  "wav": "episodes/s51-aerosurge/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Blast targets and weave through the terrain before the mission timer runs out.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 18.0
+  },
+  "sub": "Blast targets and weave through the terrain before the mission timer runs out.",
+  "dur": 3.918,
+  "wav": "episodes/s51-aerosurge/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Between missions you upgrade your weapons, then head to another planet.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.0
+  },
+  "sub": "Between missions you upgrade your weapons, then head to another planet.",
+  "dur": 3.736,
+  "wav": "episodes/s51-aerosurge/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best moment in the trailer: flying upside down through a tight canyon.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 53.0
+  },
+  "sub": "Best moment in the trailer: flying upside down through a tight canyon.",
+  "dur": 4.049,
+  "wav": "episodes/s51-aerosurge/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "The catch? The landscapes look a bit empty, and the HUD takes up a lot of screen.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 14.0
+  },
+  "sub": "The catch? The landscapes look a bit empty, and the HUD takes up a lot of screen.",
+  "dur": 5.042,
+  "wav": "episodes/s51-aerosurge/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The Windows demo is about four hundred megabytes, in nine languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The Windows demo is about four hundred megabytes, in nine languages.",
+  "dur": 3.971,
+  "wav": "episodes/s51-aerosurge/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "Think Star Fox, with more drifting.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 39.0
+  },
+  "sub": "Think Star Fox, with more drifting.",
+  "dur": 2.847,
+  "wav": "episodes/s51-aerosurge/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Worth a dip if you miss arcade flyers.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.0
+  },
+  "sub": "Worth a dip if you miss arcade flyers.",
+  "dur": 2.194,
+  "wav": "episodes/s51-aerosurge/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.541,
+  "wav": "episodes/s51-aerosurge/v2/tts/s9.wav"
+ }
+]

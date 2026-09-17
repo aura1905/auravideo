@@ -1,0 +1,107 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: run your own ice cream shop, somewhere in the Caribbean.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  },
+  "sub": "Free demo: run your own ice cream shop, somewhere in the Caribbean.",
+  "dur": 4.049,
+  "wav": "episodes/s49-livin-the-cream/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Pull the soft serve, scoop the flavours, dip the cones in toppings.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.0
+  },
+  "sub": "Pull the soft serve, scoop the flavours, dip the cones in toppings.",
+  "dur": 3.788,
+  "wav": "episodes/s49-livin-the-cream/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Then restock, clean up, hire staff, and grow a little stand into a busy shop.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 17.0
+  },
+  "sub": "Then restock, clean up, hire staff, and grow a little stand into a busy shop.",
+  "dur": 5.068,
+  "wav": "episodes/s49-livin-the-cream/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best part: the ice cream physics. It flows, swirls, and you can build a ridiculous tower.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 82.0
+  },
+  "sub": "Best part: the ice cream physics. It flows, swirls, and you can build a ridiculous tower.",
+  "dur": 5.904,
+  "wav": "episodes/s49-livin-the-cream/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "The catch? The customers look stiff next to how good the food looks.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 71.0
+  },
+  "sub": "The catch? The customers look stiff next to how good the food looks.",
+  "dur": 4.101,
+  "wav": "episodes/s49-livin-the-cream/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The demo is about two point seven gigs, in seventeen languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about two point seven gigs, in seventeen languages.",
+  "dur": 4.049,
+  "wav": "episodes/s49-livin-the-cream/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "Think Supermarket Simulator, but everything melts.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 37.0
+  },
+  "sub": "Think Supermarket Simulator, but everything melts.",
+  "dur": 3.318,
+  "wav": "episodes/s49-livin-the-cream/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Worth a dip. Bring a spoon.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.0
+  },
+  "sub": "Worth a dip. Bring a spoon.",
+  "dur": 2.351,
+  "wav": "episodes/s49-livin-the-cream/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.228,
+  "wav": "episodes/s49-livin-the-cream/v2/tts/s9.wav"
+ }
+]

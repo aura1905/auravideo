@@ -1,0 +1,540 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 3.187,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c000.png",
+   "start": 0.0,
+   "in": 0,
+   "out": 0.755,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c001.png",
+   "start": 0.765,
+   "in": 0,
+   "out": 1.392,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c002.png",
+   "start": 2.167,
+   "in": 0,
+   "out": 1.01,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s2.wav",
+   "start": 3.337,
+   "in": 0,
+   "out": 4.101,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c003.png",
+   "start": 3.337,
+   "in": 0,
+   "out": 1.132,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c004.png",
+   "start": 4.479,
+   "in": 0,
+   "out": 1.184,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c005.png",
+   "start": 5.673,
+   "in": 0,
+   "out": 1.08,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c006.png",
+   "start": 6.763,
+   "in": 0,
+   "out": 0.665,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s3.wav",
+   "start": 7.588,
+   "in": 0,
+   "out": 5.59,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c007.png",
+   "start": 7.588,
+   "in": 0,
+   "out": 0.739,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c008.png",
+   "start": 8.337,
+   "in": 0,
+   "out": 1.2,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c009.png",
+   "start": 9.547,
+   "in": 0,
+   "out": 1.431,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c010.png",
+   "start": 10.988,
+   "in": 0,
+   "out": 1.315,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c011.png",
+   "start": 12.314,
+   "in": 0,
+   "out": 0.854,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s4.wav",
+   "start": 13.328,
+   "in": 0,
+   "out": 5.277,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c012.png",
+   "start": 13.328,
+   "in": 0,
+   "out": 0.888,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c013.png",
+   "start": 14.226,
+   "in": 0,
+   "out": 0.776,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c014.png",
+   "start": 15.012,
+   "in": 0,
+   "out": 1.281,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c015.png",
+   "start": 16.303,
+   "in": 0,
+   "out": 1.225,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c016.png",
+   "start": 17.538,
+   "in": 0,
+   "out": 1.057,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s5.wav",
+   "start": 18.755,
+   "in": 0,
+   "out": 3.788,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c017.png",
+   "start": 18.755,
+   "in": 0,
+   "out": 0.887,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c018.png",
+   "start": 19.652,
+   "in": 0,
+   "out": 1.037,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c019.png",
+   "start": 20.699,
+   "in": 0,
+   "out": 0.987,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c020.png",
+   "start": 21.696,
+   "in": 0,
+   "out": 0.837,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s6.wav",
+   "start": 22.693,
+   "in": 0,
+   "out": 4.467,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c021.png",
+   "start": 22.693,
+   "in": 0,
+   "out": 0.714,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c022.png",
+   "start": 23.417,
+   "in": 0,
+   "out": 1.197,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c023.png",
+   "start": 24.625,
+   "in": 0,
+   "out": 1.077,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c024.png",
+   "start": 25.711,
+   "in": 0,
+   "out": 1.439,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s7.wav",
+   "start": 27.31,
+   "in": 0,
+   "out": 4.101,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c025.png",
+   "start": 27.31,
+   "in": 0,
+   "out": 1.186,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c026.png",
+   "start": 28.506,
+   "in": 0,
+   "out": 1.015,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c027.png",
+   "start": 29.531,
+   "in": 0,
+   "out": 0.673,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c028.png",
+   "start": 30.215,
+   "in": 0,
+   "out": 1.186,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s8.wav",
+   "start": 31.561,
+   "in": 0,
+   "out": 3.5,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c029.png",
+   "start": 31.561,
+   "in": 0,
+   "out": 0.951,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c030.png",
+   "start": 32.522,
+   "in": 0,
+   "out": 1.225,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c031.png",
+   "start": 33.757,
+   "in": 0,
+   "out": 1.294,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s9.wav",
+   "start": 35.211,
+   "in": 0,
+   "out": 2.978,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c032.png",
+   "start": 35.211,
+   "in": 0,
+   "out": 1.1,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c033.png",
+   "start": 36.321,
+   "in": 0,
+   "out": 1.151,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c034.png",
+   "start": 37.482,
+   "in": 0,
+   "out": 0.697,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s10.wav",
+   "start": 38.339,
+   "in": 0,
+   "out": 1.123,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c035.png",
+   "start": 38.339,
+   "in": 0,
+   "out": 1.113,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s45-cyber-wukong/t1.mp4",
+   "start": 0.0,
+   "in": 13.0,
+   "out": 20.588,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s45-cyber-wukong/t1.mp4",
+   "start": 7.588,
+   "in": 23.0,
+   "out": 28.74,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s45-cyber-wukong/t1.mp4",
+   "start": 13.328,
+   "in": 58.0,
+   "out": 63.427,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s45-cyber-wukong/t1.mp4",
+   "start": 18.755,
+   "in": 38.0,
+   "out": 41.938,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s45-cyber-wukong/t1.mp4",
+   "start": 22.693,
+   "in": 30.0,
+   "out": 34.617,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s45-cyber-wukong/ev_facts_v.png",
+   "start": 27.31,
+   "in": 0.0,
+   "out": 4.251,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "fit",
+   "transformScale": 1.0
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s45-cyber-wukong/t1.mp4",
+   "start": 31.561,
+   "in": 14.0,
+   "out": 17.65,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s45-cyber-wukong/t1.mp4",
+   "start": 35.211,
+   "in": 60.0,
+   "out": 64.751,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v1",
+   "file": "C:/Git/auravideo/episodes/s45-cyber-wukong/logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 39.462,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "C:/Git/auravideo/episodes/s45-cyber-wukong/t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 39.962,
+   "volume": 0.06,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "subs": [],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "MEDIA"
+  }
+ ],
+ "total": 39.962
+}

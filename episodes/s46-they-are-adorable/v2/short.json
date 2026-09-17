@@ -1,0 +1,87 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: tens of thousands of adorable creatures are coming for you.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "They are adorable. This changes nothing.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "You man huge guns and carve visible holes through crowds that cover whole hillsides.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 29.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Every run earns permanent upgrades, so the wave that beat you becomes a massacre.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best part: the scale. A sea of cute little blobs, splattering like paint.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 31.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The walls and levels look flat and unfinished, like a prototype.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 12.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The Windows demo is under four hundred megabytes, in fifteen languages, with the full game due November.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Vampire Survivors, in first person, with artillery.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 38.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip. Don't make eye contact.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

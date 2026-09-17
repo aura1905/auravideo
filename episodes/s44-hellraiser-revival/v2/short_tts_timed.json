@@ -1,0 +1,113 @@
+[
+ {
+  "id": "s1",
+  "text": "A free Hellraiser demo just landed on Steam.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "A free Hellraiser demo just landed on Steam.",
+  "dur": 3.03,
+  "wav": "episodes/s44-hellraiser-revival/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "It's thirty-two gigs, and Pinhead is waiting.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "It's thirty-two gigs, and Pinhead is waiting.",
+  "dur": 2.795,
+  "wav": "episodes/s44-hellraiser-revival/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "You play Aidan, using the famous puzzle box to survive a deal with the Cenobites.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  },
+  "sub": "You play Aidan, using the famous puzzle box to survive a deal with the Cenobites.",
+  "dur": 4.624,
+  "wav": "episodes/s44-hellraiser-revival/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "It's first-person action horror. Grimy halls, spiked bats, shotguns, and a lot of blood.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 148.0
+  },
+  "sub": "It's first-person action horror. Grimy halls, spiked bats, shotguns, and a lot of blood.",
+  "dur": 6.609,
+  "wav": "episodes/s44-hellraiser-revival/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Best moment in the trailer: one brutal swing of a spiked bat in a filthy hallway.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 150.0
+  },
+  "sub": "Best moment in the trailer: one brutal swing of a spiked bat in a filthy hallway.",
+  "dur": 5.224,
+  "wav": "episodes/s44-hellraiser-revival/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? This trailer is almost all cutscene. Barely twenty seconds is actual gameplay.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  },
+  "sub": "The catch? This trailer is almost all cutscene. Barely twenty seconds is actual gameplay.",
+  "dur": 6.06,
+  "wav": "episodes/s44-hellraiser-revival/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "It's in eight languages, and the full game is out October eighth.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "It's in eight languages, and the full game is out October eighth.",
+  "dur": 3.605,
+  "wav": "episodes/s44-hellraiser-revival/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Resident Evil 7, with Condemned's melee.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 153.0
+  },
+  "sub": "Think Resident Evil 7, with Condemned's melee.",
+  "dur": 3.318,
+  "wav": "episodes/s44-hellraiser-revival/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip, if your drive has room for hell.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "Worth a dip, if your drive has room for hell.",
+  "dur": 2.717,
+  "wav": "episodes/s44-hellraiser-revival/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.097,
+  "wav": "episodes/s44-hellraiser-revival/v2/tts/s10.wav"
+ }
+]

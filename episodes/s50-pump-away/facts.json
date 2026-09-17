@@ -1,0 +1,34 @@
+{
+ "demo_appid": 5241720,
+ "full_appid": 4631520,
+ "name": "Pump Away!",
+ "developers": [
+  "Low HP Games"
+ ],
+ "publishers": [
+  "Low HP Games"
+ ],
+ "release": "2026",
+ "coming_soon": true,
+ "genres": [
+  "Casual",
+  "Indie"
+ ],
+ "languages": "English",
+ "website": null,
+ "short": "A railroad adventure that sits at the bottom of your screen! Click to make the car go brrr or let it idle - this cat and dog duo will pump away and liven up your desktop.",
+ "about": " Pump Away! is the story of Kat and Doug - a jail-breaking duo on the run from the fuzz. Your pump car is your escape vehicle, so get to pumpin'!             Clicker or idler - your choice   Pump Away! is a game that doesn't scream for your attention -  you can either click to gather up momentum and get more loot, or play it as an idler and only check in whenever you feel like it.   Upgrades, baby!   Find Low Down Lou in every station you stop in and upgrade your pump car using the cash you've found. Fit your rig with boost canisters, speed enhancers and friction removers...          Or just buy an autobooster and upgrade it so it does all the work for you!   Places to go, things to see   Travel through 14 crazy cartoon biomes and change your clothes to fit in, or don't and look goofy on purpose!          Don't let officer S. Nail catch up to you. Pump Away!          No generative AI of any kind was used in the making of this game.   ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  10    Processor:  Dual-core 2.4 GHz (Intel Core i3)    Memory:  4 GB RAM    Graphics:  Integrated Graphics (Intel HD 4000)    Storage:  800 MB available space    Sound Card:  Any sound card.  ",
+ "movies": [
+  {
+   "id": 257320143,
+   "name": "Announcement Trailer"
+  }
+ ],
+ "screenshots": 11,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

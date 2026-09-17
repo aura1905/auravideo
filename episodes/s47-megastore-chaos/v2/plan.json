@@ -1,0 +1,496 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 4.153,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c000.png",
+   "start": 0.0,
+   "in": 0,
+   "out": 0.692,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c001.png",
+   "start": 0.702,
+   "in": 0,
+   "out": 1.335,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c002.png",
+   "start": 2.047,
+   "in": 0,
+   "out": 1.043,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c003.png",
+   "start": 3.1,
+   "in": 0,
+   "out": 1.043,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s2.wav",
+   "start": 4.303,
+   "in": 0,
+   "out": 5.407,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c004.png",
+   "start": 4.303,
+   "in": 0,
+   "out": 2.053,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c005.png",
+   "start": 6.366,
+   "in": 0,
+   "out": 1.413,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c006.png",
+   "start": 7.789,
+   "in": 0,
+   "out": 1.911,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s3.wav",
+   "start": 9.86,
+   "in": 0,
+   "out": 4.206,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c007.png",
+   "start": 9.86,
+   "in": 0,
+   "out": 0.67,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c008.png",
+   "start": 10.54,
+   "in": 0,
+   "out": 0.856,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c009.png",
+   "start": 11.406,
+   "in": 0,
+   "out": 1.536,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c010.png",
+   "start": 12.953,
+   "in": 0,
+   "out": 1.103,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s4.wav",
+   "start": 14.216,
+   "in": 0,
+   "out": 5.224,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c011.png",
+   "start": 14.216,
+   "in": 0,
+   "out": 0.679,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c012.png",
+   "start": 14.905,
+   "in": 0,
+   "out": 1.196,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c013.png",
+   "start": 16.11,
+   "in": 0,
+   "out": 1.196,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c014.png",
+   "start": 17.316,
+   "in": 0,
+   "out": 1.368,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c015.png",
+   "start": 18.694,
+   "in": 0,
+   "out": 0.736,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s5.wav",
+   "start": 19.59,
+   "in": 0,
+   "out": 4.101,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c016.png",
+   "start": 19.59,
+   "in": 0,
+   "out": 0.736,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c017.png",
+   "start": 20.336,
+   "in": 0,
+   "out": 1.233,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c018.png",
+   "start": 21.578,
+   "in": 0,
+   "out": 1.295,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c019.png",
+   "start": 22.883,
+   "in": 0,
+   "out": 0.798,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s6.wav",
+   "start": 23.841,
+   "in": 0,
+   "out": 6.06,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c020.png",
+   "start": 23.841,
+   "in": 0,
+   "out": 1.192,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c021.png",
+   "start": 25.043,
+   "in": 0,
+   "out": 0.983,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c022.png",
+   "start": 26.035,
+   "in": 0,
+   "out": 1.244,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c023.png",
+   "start": 27.289,
+   "in": 0,
+   "out": 0.983,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c024.png",
+   "start": 28.282,
+   "in": 0,
+   "out": 0.93,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c025.png",
+   "start": 29.222,
+   "in": 0,
+   "out": 0.669,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s7.wav",
+   "start": 30.051,
+   "in": 0,
+   "out": 3.318,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c026.png",
+   "start": 30.051,
+   "in": 0,
+   "out": 1.139,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c027.png",
+   "start": 31.2,
+   "in": 0,
+   "out": 1.394,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c028.png",
+   "start": 32.603,
+   "in": 0,
+   "out": 0.756,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s8.wav",
+   "start": 33.519,
+   "in": 0,
+   "out": 2.142,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c029.png",
+   "start": 33.519,
+   "in": 0,
+   "out": 1.143,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c030.png",
+   "start": 34.672,
+   "in": 0,
+   "out": 0.979,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s9.wav",
+   "start": 35.811,
+   "in": 0,
+   "out": 1.228,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c031.png",
+   "start": 35.811,
+   "in": 0,
+   "out": 1.218,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s47-megastore-chaos/t0.mp4",
+   "start": 0.0,
+   "in": 17.0,
+   "out": 21.303,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s47-megastore-chaos/t0.mp4",
+   "start": 4.303,
+   "in": 34.0,
+   "out": 39.557,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s47-megastore-chaos/t0.mp4",
+   "start": 9.86,
+   "in": 25.0,
+   "out": 29.356,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s47-megastore-chaos/t0.mp4",
+   "start": 14.216,
+   "in": 40.0,
+   "out": 45.374,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s47-megastore-chaos/t0.mp4",
+   "start": 19.59,
+   "in": 57.0,
+   "out": 61.251,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s47-megastore-chaos/ev_facts_v.png",
+   "start": 23.841,
+   "in": 0.0,
+   "out": 6.21,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "fit",
+   "transformScale": 1.0
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s47-megastore-chaos/t0.mp4",
+   "start": 30.051,
+   "in": 60.0,
+   "out": 63.468,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s47-megastore-chaos/t0.mp4",
+   "start": 33.519,
+   "in": 36.0,
+   "out": 40.02,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v1",
+   "file": "C:/Git/auravideo/episodes/s47-megastore-chaos/logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 37.039,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "C:/Git/auravideo/episodes/s47-megastore-chaos/t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 37.539,
+   "volume": 0.06,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "subs": [],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "MEDIA"
+  }
+ ],
+ "total": 37.539
+}

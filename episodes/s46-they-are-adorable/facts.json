@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5221030,
+ "full_appid": 5009860,
+ "name": "They Are Adorable",
+ "developers": [
+  "3kittens"
+ ],
+ "publishers": [
+  "3kittens"
+ ],
+ "release": "November 2026",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Casual",
+  "Indie"
+ ],
+ "languages": "English, French, Italian, German, Spanish - Spain, Czech, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Spanish - Latin America, Turkish, Ukrainian",
+ "website": null,
+ "short": "An incremental horde FPS where tens of thousands of adorable creatures come for you. Operate absurdly overpowered guns, tear visible holes through the crowd, earn permanent upgrades every run, and come back strong enough to massacre the wave that stopped you.",
+ "about": "  TENS OF THOUSANDS OF THEM      They don't arrive in squads. They arrive in  absurd numbers .     Man huge guns in first person and tear visible holes through crowds that cover roads, forts and entire hillsides. Rotary cannons mow lanes through the mass. Mortars erase packed formations. Plow rounds carve through columns hundreds deep. Chain shells turn a crowd into a cascading explosion.      They are adorable. This changes nothing.              GET STUPIDLY OVERPOWERED      Every attempt makes you stronger.     Kill thousands, earn currency, and permanently upgrade your arsenal with bigger blasts, more rounds and increasingly unreasonable transformations.     Hit a wall. Upgrade. Come back.      Turn the wave that killed you into a massacre, then find out how many more it takes to stop you.              YOU ARE THE ONE FIRING      No automated towers are having the fun for you.     Snap between cannon positions, choose the weapon that fits the crowd in front of you, and pull the trigger yourself.     As your arsenal grows, so do the hordes.      Thousands become tens of thousands. And you keep firing.                EVERY RUN PAYS   Win or lose, every attempt feeds a permanent upgrade tree: new cannons, bigger blasts, more heat to spend. Hit a wall, get stronger, break through.    They panic when you aim at them. This changes nothing. ",
+ "min_req": " Minimum:     OS:  Windows 10 64-bit    Processor:  Intel i5-8300H / Ryzen 5 3550H or equivalent    Memory:  4 GB RAM    Graphics:  GTX 1650 / RX 580 or equivalent    Storage:  500 MB available space  ",
+ "movies": [
+  {
+   "id": 257424420,
+   "name": "Demo Trailer"
+  }
+ ],
+ "screenshots": 6,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

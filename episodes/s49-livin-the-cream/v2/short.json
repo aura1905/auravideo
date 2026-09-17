@@ -1,0 +1,80 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: run your own ice cream shop, somewhere in the Caribbean.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "Pull the soft serve, scoop the flavours, dip the cones in toppings.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.0
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Then restock, clean up, hire staff, and grow a little stand into a busy shop.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 17.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best part: the ice cream physics. It flows, swirls, and you can build a ridiculous tower.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 82.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "The catch? The customers look stiff next to how good the food looks.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 71.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The demo is about two point seven gigs, in seventeen languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s7",
+  "text": "Think Supermarket Simulator, but everything melts.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 37.0
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Worth a dip. Bring a spoon.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

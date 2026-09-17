@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:04,885
+Free arcade flying demo: flips, barrel rolls and drifts, at full speed.
+
+2
+00:00:05,035 --> 00:00:08,953
+Blast targets and weave through the terrain before the mission timer runs out.
+
+3
+00:00:09,103 --> 00:00:12,839
+Between missions you upgrade your weapons, then head to another planet.
+
+4
+00:00:12,989 --> 00:00:17,038
+Best moment in the trailer: flying upside down through a tight canyon.
+
+5
+00:00:17,188 --> 00:00:22,230
+The catch? The landscapes look a bit empty, and the HUD takes up a lot of screen.
+
+6
+00:00:22,380 --> 00:00:26,351
+The Windows demo is about four hundred megabytes, in nine languages.
+
+7
+00:00:26,501 --> 00:00:29,348
+Think Star Fox, with more drifting.
+
+8
+00:00:29,498 --> 00:00:31,692
+Worth a dip if you miss arcade flyers.
+
+9
+00:00:31,842 --> 00:00:33,383
+That's Demo Dip.

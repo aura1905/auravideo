@@ -1,0 +1,107 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: a whole shopping mall is a total mess, and you tidy it.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 17.0
+  },
+  "sub": "Free demo: a whole shopping mall is a total mess, and you tidy it.",
+  "dur": 4.153,
+  "wav": "episodes/s47-megastore-chaos/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Over thirty thousand items, across six stores. Toys, books, wine, games.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 34.0
+  },
+  "sub": "Over thirty thousand items, across six stores. Toys, books, wine, games.",
+  "dur": 5.407,
+  "wav": "episodes/s47-megastore-chaos/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "No timer, no pressure. Just turning chaos into perfect shelves.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 25.0
+  },
+  "sub": "No timer, no pressure. Just turning chaos into perfect shelves.",
+  "dur": 4.206,
+  "wav": "episodes/s47-megastore-chaos/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best part: look at a shelf and dozens of items fly off the floor and snap into place.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 40.0
+  },
+  "sub": "Best part: look at a shelf and dozens of items fly off the floor and snap into place.",
+  "dur": 5.224,
+  "wav": "episodes/s47-megastore-chaos/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "The catch? The item labels on the floor look like debug text.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 57.0
+  },
+  "sub": "The catch? The item labels on the floor look like debug text.",
+  "dur": 4.101,
+  "wav": "episodes/s47-megastore-chaos/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The demo is about two point seven gigs, in fourteen languages, and the full game is out September eighteenth.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about two point seven gigs, in fourteen languages, and the full game is out September eighteenth.",
+  "dur": 6.06,
+  "wav": "episodes/s47-megastore-chaos/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "Think Unpacking, meets House Flipper, in a mall.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 60.0
+  },
+  "sub": "Think Unpacking, meets House Flipper, in a mall.",
+  "dur": 3.318,
+  "wav": "episodes/s47-megastore-chaos/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Worth a dip if mess makes you itchy.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.0
+  },
+  "sub": "Worth a dip if mess makes you itchy.",
+  "dur": 2.142,
+  "wav": "episodes/s47-megastore-chaos/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.228,
+  "wav": "episodes/s47-megastore-chaos/v2/tts/s9.wav"
+ }
+]

@@ -1,0 +1,21 @@
+They Are Adorable — a free horde FPS demo against tens of thousands of cute creatures.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5221030/
+
+── The quick version ──
+What you do  : man huge guns, carve holes through crowds
+Progress     : permanent upgrades every run
+The catch    : flat, prototype-looking levels
+Windows demo : 374 MB, 15 languages
+Full game    : November 2026
+Think        : Vampire Survivors in first person
+Verdict      : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to 3kittens.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo
