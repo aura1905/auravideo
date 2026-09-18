@@ -1,0 +1,117 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: the stairs are closed, and you're too claustrophobic for the elevator.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  },
+  "sub": "Free demo: the stairs are closed, and you're too claustrophobic for the elevator.",
+  "dur": 4.519,
+  "wav": "episodes/s52-no-elevator/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "So you climb the building from the outside.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "So you climb the building from the outside.",
+  "dur": 2.534,
+  "wav": "episodes/s52-no-elevator/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Your only tool is a plank gun. Shoot a plank into the wall, jump on it, shoot the next.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 10.0
+  },
+  "sub": "Your only tool is a plank gun. Shoot a plank into the wall, jump on it, shoot the next.",
+  "dur": 5.303,
+  "wav": "episodes/s52-no-elevator/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Planks are limited, and not every wall takes one. Miss a shot and you're stuck.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 19.0
+  },
+  "sub": "Planks are limited, and not every wall takes one. Miss a shot and you're stuck.",
+  "dur": 4.937,
+  "wav": "episodes/s52-no-elevator/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "The camera loves pointing straight down. It's properly dizzying.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 16.0
+  },
+  "sub": "The camera loves pointing straight down. It's properly dizzying.",
+  "dur": 3.683,
+  "wav": "episodes/s52-no-elevator/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The buildings and props look pretty basic.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 31.0
+  },
+  "sub": "The catch? The buildings and props look pretty basic.",
+  "dur": 2.978,
+  "wav": "episodes/s52-no-elevator/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "Both demo reviews are positive, and the full game is due in December.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "Both demo reviews are positive, and the full game is due in December.",
+  "dur": 3.683,
+  "wav": "episodes/s52-no-elevator/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Only Up, with a nail gun.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 12.0
+  },
+  "sub": "Think Only Up, with a nail gun.",
+  "dur": 2.56,
+  "wav": "episodes/s52-no-elevator/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip. Get home before your coffee gets cold.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.0
+  },
+  "sub": "Worth a dip. Get home before your coffee gets cold.",
+  "dur": 3.631,
+  "wav": "episodes/s52-no-elevator/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.358,
+  "wav": "episodes/s52-no-elevator/v2/tts/s10.wav"
+ }
+]

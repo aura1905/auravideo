@@ -1,0 +1,36 @@
+{
+ "demo_appid": 5190760,
+ "full_appid": 3581970,
+ "name": "Swarm Slasher",
+ "developers": [
+  "Elusor Games"
+ ],
+ "publishers": [
+  "Elusor Games"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Casual",
+  "Indie",
+  "Strategy"
+ ],
+ "languages": "English, Russian, Italian, Spanish - Spain, French, German, Traditional Chinese, Simplified Chinese, Korean, Portuguese - Portugal, Japanese",
+ "website": null,
+ "short": "An endless, seething swarm of tens of thousands of monsters is coming for you. Hold back the tide of biomass in frantic battles! Build your defenses, annihilate everything that moves, and upgrade your death blender to insane power. Can you withstand 100,000 enemies at once?",
+ "about": "  Swarm Slasher  is an incremental meat-grinder simulator where your greatest enemy is the sheer critical mass of monsters — and your greatest ally is your arsenal. Forget dull text-based idle clickers. Here, progress is measured in millions of dismembered creatures and rivers of bones flowing steadily into your pocket.     KEY FEATURES      Living Biomass : Tens of thousands of monsters burst onto the arena at once. Tiny bugs, towering golems, and everything in between crush one another and flow around obstacles, forming a genuine living river.             Build Your Blender : Buy and upgrade automated instruments of death. Trigger chain lightning, plant spikes, and scorch entire sectors with lasers, grinding the incoming swarm into mincemeat.             Endless Progression:  Level up your base, your weapons, and their synergies — everything you need to survive to the final boss.             Pure meat.          ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  Windows 10    Processor:  i3    Memory:  8 GB RAM    Graphics:  Geforce 1650  ",
+ "movies": [
+  {
+   "id": 257407523,
+   "name": "Trailer 1"
+  }
+ ],
+ "screenshots": 5,
+ "reviews": {
+  "total": 1,
+  "positive": 1,
+  "desc": "1 user reviews"
+ }
+}

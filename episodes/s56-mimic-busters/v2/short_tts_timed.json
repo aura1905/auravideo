@@ -1,0 +1,116 @@
+[
+ {
+  "id": "s1",
+  "text": "Free prop hunt demo, but there are no props to pick.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 13.0
+  },
+  "sub": "Free prop hunt demo, but there are no props to pick.",
+  "dur": 3.082,
+  "wav": "episodes/s56-mimic-busters/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "You're a cube, and you have to build your own disguise.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "You're a cube, and you have to build your own disguise.",
+  "dur": 2.978,
+  "wav": "episodes/s56-mimic-busters/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Model it, paint it, and blend into the room before the Busters come looking.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 16.0
+  },
+  "sub": "Model it, paint it, and blend into the room before the Busters come looking.",
+  "dur": 3.918,
+  "wav": "episodes/s56-mimic-busters/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Hide close to a hunter and you score double. Bigger disguise, bigger payout.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 44.0
+  },
+  "sub": "Hide close to a hunter and you score double. Bigger disguise, bigger payout.",
+  "dur": 4.989,
+  "wav": "episodes/s56-mimic-busters/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Best part: watching someone pass off a wobbly block sculpture as a book on a shelf.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 60.0
+  },
+  "sub": "Best part: watching someone pass off a wobbly block sculpture as a book on a shelf.",
+  "dur": 4.885,
+  "wav": "episodes/s56-mimic-busters/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? If you're bad at building, you'll get caught instantly.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 50.0
+  },
+  "sub": "The catch? If you're bad at building, you'll get caught instantly.",
+  "dur": 3.265,
+  "wav": "episodes/s56-mimic-busters/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "The demo is about six hundred megabytes, in fourteen languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about six hundred megabytes, in fourteen languages.",
+  "dur": 4.206,
+  "wav": "episodes/s56-mimic-busters/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Garry's Mod prop hunt, built in Minecraft.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 47.0
+  },
+  "sub": "Think Garry's Mod prop hunt, built in Minecraft.",
+  "dur": 3.318,
+  "wav": "episodes/s56-mimic-busters/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip with friends who can't draw.",
+  "vis": {
+   "type": "image",
+   "file": "ss05.jpg"
+  },
+  "sub": "Worth a dip with friends who can't draw.",
+  "dur": 2.116,
+  "wav": "episodes/s56-mimic-busters/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.228,
+  "wav": "episodes/s56-mimic-busters/v2/tts/s10.wav"
+ }
+]

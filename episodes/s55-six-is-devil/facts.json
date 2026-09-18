@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5203050,
+ "full_appid": 5049130,
+ "name": "Six is Devil",
+ "developers": [
+  "NaltGames"
+ ],
+ "publishers": [
+  "NaltGames"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Casual",
+  "Indie",
+  "Simulation"
+ ],
+ "languages": "English**languages with full audio support",
+ "website": null,
+ "short": "An incremental game about rolling dice until all dice land on 6. Improve your odds, corrupt your dice, and place bets to achieve the perfect roll. Can you get all 6s?",
+ "about": "  Roll. Upgrade. Corrupt. Bet. Repeat.   You start with 3 dice and terrible odds. Your goal is simple: roll until every die lands on 6.  Every roll rewards you with  coins , which you can use to:    Unlock powerful upgrades.    Corrupt your dice by sacrificing other faces.      Place risky bets for greater rewards.               Corrupt your dice.   Sacrifice unwanted dice rolls and increase your chances of rolling 6... but remember,  Six is Devil .  As you progress, you will unlock new upgrades, bets, and combos that help you manipulate your odds. Every choice matters — push your luck, take risks, and bend probability in your favor.  But even a corrupted die is never a guarantee. Luck can still turn against you.  Can you achieve the  Perfect Roll ? Can you hit all the 6s?         ",
+ "min_req": " Minimum:     OS:  Windows 10    Memory:  4 GB RAM    Storage:  1 GB available space  ",
+ "movies": [
+  {
+   "id": 257409044,
+   "name": "Six is Devil Trailer"
+  }
+ ],
+ "screenshots": 6,
+ "reviews": {
+  "total": 4,
+  "positive": 4,
+  "desc": "4 user reviews"
+ }
+}

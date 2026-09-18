@@ -1,0 +1,22 @@
+No Elevator — a free demo where you climb a building from the outside with a plank gun.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5104520/
+
+── The quick version ──
+What you do  : shoot planks into walls and climb
+Feels like   : dizzying, limited planks, one miss and you are stuck
+The catch    : basic-looking buildings
+Demo reviews : 2 of 2 positive
+Demo         : 777 MB, English
+Full game    : December 2026
+Think        : Only Up with a nail gun
+Verdict      : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Silent Cats.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

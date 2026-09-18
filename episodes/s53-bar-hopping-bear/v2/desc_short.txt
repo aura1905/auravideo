@@ -1,0 +1,20 @@
+bar-hopping-bear. — a free cozy night-out demo through tiny bars full of giant teddy bears.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5197560/
+
+── The quick version ──
+What you do : order, chat, look around, remember
+Best part   : warm little bars
+The catch   : the bears never move
+Demo        : 781 MB, 2 languages
+Think       : Coffee Talk, but you're the one drinking
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Rojiura Studio.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

@@ -1,0 +1,21 @@
+Six is Devil — a free incremental dice demo: roll until every die lands on six.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5203050/
+
+── The quick version ──
+What you do  : roll, upgrade, bet, corrupt your dice
+Best part    : corrupting dice to bend the odds
+The catch    : a cheap-looking unlock effect
+Demo reviews : 4 of 4 positive
+Demo         : 256 MB, English
+Think        : Cookie Clicker with Balatro's odds
+Verdict      : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to NaltGames.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

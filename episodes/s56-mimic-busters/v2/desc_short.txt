@@ -1,0 +1,21 @@
+Mimic Busters — a free prop-hunt demo where you build your own disguise.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5231380/
+
+── The quick version ──
+What you do : model and paint a disguise, or hunt
+Best part   : block sculptures passing as furniture
+The catch   : bad builders get caught fast
+Demo        : 625 MB, 14 languages
+Full game   : Q4 2026
+Think       : Garry's Mod prop hunt in Minecraft
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to DevAdam.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

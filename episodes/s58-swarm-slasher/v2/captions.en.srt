@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:04,153
+Free demo: can your base survive a hundred thousand monsters at once?
+
+2
+00:00:04,303 --> 00:00:06,785
+You don't fight. You build a death blender.
+
+3
+00:00:06,935 --> 00:00:12,630
+Lasers, spikes and chain lightning grind the swarm down, and every kill pays for upgrades.
+
+4
+00:00:12,780 --> 00:00:17,299
+Best part: the swarm moves like a river, flowing around your walls.
+
+5
+00:00:17,449 --> 00:00:21,263
+The catch? The ground is flat and the monsters are tiny blobs.
+
+6
+00:00:21,413 --> 00:00:25,749
+The Windows demo is under two hundred megabytes, in eleven languages.
+
+7
+00:00:25,899 --> 00:00:28,563
+Think Vampire Survivors, if you were the tower.
+
+8
+00:00:28,713 --> 00:00:31,195
+Worth a dip if you like watching numbers go up.
+
+9
+00:00:31,345 --> 00:00:32,442
+That's Demo Dip.

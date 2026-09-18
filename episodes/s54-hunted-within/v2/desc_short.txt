@@ -1,0 +1,20 @@
+Hunted Within: Terminal Rust — a free survival-horror FPS demo where you drive your own train through a wasteland.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5235030/
+
+── The quick version ──
+What you do  : drive, shoot, saw through mutants
+Best moment  : a giant mechanical scorpion
+The catch    : light hits, sticker-like blood
+Windows demo : 5.8 GB, 13 languages
+Think        : Metro crossed with Rage
+Verdict      : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to LRDev Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

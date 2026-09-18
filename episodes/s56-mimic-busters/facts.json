@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5231380,
+ "full_appid": 5167420,
+ "name": "Mimic Busters",
+ "developers": [
+  "DevAdam",
+  "Tape Corps"
+ ],
+ "publishers": [
+  "GameDev.ist"
+ ],
+ "release": "Q4 2026",
+ "coming_soon": true,
+ "genres": [
+  "Casual",
+  "Indie"
+ ],
+ "languages": "English, French, German, Spanish - Spain, Simplified Chinese, Traditional Chinese, Japanese, Korean, Russian, Turkish, Arabic, Portuguese - Brazil, Ukrainian, Greek",
+ "website": null,
+ "short": "Model, paint, and mimic everything to hide from the Busters! Mimic Busters is an online multiplayer game where you are either a cube with a sentience or a hunter with no mercy. Mimics create their disguise using simple 3D modeling tools and Busters hunt the Mimics before the time runs out!",
+ "about": "         MODEL. PAINT. MIMIC. HIDE FROM THE BUSTERS!  Mimic Busters is an  online multiplayer game  where you are either a sentient cube or a hunter with no mercy.  Mimics build their disguise with simple 3D modeling tools, and Busters hunt them before the time runs out!  YOU ARE WHAT YOU HIDE IN  Use a simple, intuitive set of 3D modeling tools to model and paint yourself into the environment.  Pick any prop you see and turn yourself from a walking cube into whatever helps you blend in.  NO MODELING SKILLS REQUIRED  If the Busters buy it, it's good enough.  BE BIG OR GO HOME  Mimics earn double points when hiding near MBI agents. The bigger your model, the bigger your payout.  LISTEN. SEARCH. HUNT! BUST THE MIMICS!  Mimics squeak every 30 seconds. Keep your ears open to pinpoint their location. But don't spray the room to hope for a stray bullet to find its target. Because every bullet costs you health.  CUSTOMIZE YOUR LOOK AND WEAPONS  The same 3D tools also let you build your character's head, body, arms, and legs. Your weapon gets a skin you painted yourself. Save your models and characters to the library for later revisions. It's all your work!  GAME MODE: GUESS THE MIMIC!  This is where you step onto the stage as a proud Mimic ready to showcase their talents instead of hiding. One player is crowned the Mimic and secretly picks a word to model from different categories.  Their job is to model that word for the lobby while everyone races to guess it first. Think of it as a training scenario for MBI agents. Gotta know thy enemy!  PLAY THE FREE DEMO ON STEAM  [h3]Note[/h3]  Mimic Busters is still in development. More modes, more maps and plenty of balancing are on the way. ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  10    Processor:  i5-4460 / FX-6300    Memory:  8 GB RAM    Graphics:  GTX 750 Ti / R7 260X    DirectX:  Version 11    Network:  Broadband Internet connection    Storage:  2 GB available space  ",
+ "movies": [
+  {
+   "id": 257427419,
+   "name": "Mimic Busters - Gameplay Reveal Trailer"
+  }
+ ],
+ "screenshots": 12,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

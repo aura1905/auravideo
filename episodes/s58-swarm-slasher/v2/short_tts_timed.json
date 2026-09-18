@@ -1,0 +1,104 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: can your base survive a hundred thousand monsters at once?",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 19.0
+  },
+  "sub": "Free demo: can your base survive a hundred thousand monsters at once?",
+  "dur": 4.153,
+  "wav": "episodes/s58-swarm-slasher/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "You don't fight. You build a death blender.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "You don't fight. You build a death blender.",
+  "dur": 2.482,
+  "wav": "episodes/s58-swarm-slasher/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Lasers, spikes and chain lightning grind the swarm down, and every kill pays for upgrades.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  },
+  "sub": "Lasers, spikes and chain lightning grind the swarm down, and every kill pays for upgrades.",
+  "dur": 5.695,
+  "wav": "episodes/s58-swarm-slasher/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best part: the swarm moves like a river, flowing around your walls.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 28.0
+  },
+  "sub": "Best part: the swarm moves like a river, flowing around your walls.",
+  "dur": 4.519,
+  "wav": "episodes/s58-swarm-slasher/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "The catch? The ground is flat and the monsters are tiny blobs.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.0
+  },
+  "sub": "The catch? The ground is flat and the monsters are tiny blobs.",
+  "dur": 3.814,
+  "wav": "episodes/s58-swarm-slasher/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The Windows demo is under two hundred megabytes, in eleven languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The Windows demo is under two hundred megabytes, in eleven languages.",
+  "dur": 4.336,
+  "wav": "episodes/s58-swarm-slasher/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "Think Vampire Survivors, if you were the tower.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.0
+  },
+  "sub": "Think Vampire Survivors, if you were the tower.",
+  "dur": 2.664,
+  "wav": "episodes/s58-swarm-slasher/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Worth a dip if you like watching numbers go up.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Worth a dip if you like watching numbers go up.",
+  "dur": 2.482,
+  "wav": "episodes/s58-swarm-slasher/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.097,
+  "wav": "episodes/s58-swarm-slasher/v2/tts/s9.wav"
+ }
+]

@@ -1,0 +1,116 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: raise a flock of rubber ducks.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 6.0
+  },
+  "sub": "Free demo: raise a flock of rubber ducks.",
+  "dur": 2.769,
+  "wav": "episodes/s59-ducks-vs-demons/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Then defend your pond from demons.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Then defend your pond from demons.",
+  "dur": 2.064,
+  "wav": "episodes/s59-ducks-vs-demons/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Feed them, they grow, they drop loot, and you spend it on more ducks.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 19.0
+  },
+  "sub": "Feed them, they grow, they drop loot, and you spend it on more ducks.",
+  "dur": 4.441,
+  "wav": "episodes/s59-ducks-vs-demons/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best part: a little devil duck in a floatie, shooting at a giant demon hand coming out of the water.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 12.0
+  },
+  "sub": "Best part: a little devil duck in a floatie, shooting at a giant demon hand coming out of the water.",
+  "dur": 5.277,
+  "wav": "episodes/s59-ducks-vs-demons/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "There's even a Peaceful Mode if you just want ducks.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 29.0
+  },
+  "sub": "There's even a Peaceful Mode if you just want ducks.",
+  "dur": 2.795,
+  "wav": "episodes/s59-ducks-vs-demons/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The pond is a flat blue background, like an old web game.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 1.0
+  },
+  "sub": "The catch? The pond is a flat blue background, like an old web game.",
+  "dur": 4.65,
+  "wav": "episodes/s59-ducks-vs-demons/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "The demo is about six hundred megabytes, English only.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about six hundred megabytes, English only.",
+  "dur": 2.978,
+  "wav": "episodes/s59-ducks-vs-demons/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Insaniquarium, with rubber ducks.",
+  "vis": {
+   "type": "video",
+   "file": "t1.mp4",
+   "in": 31.0
+  },
+  "sub": "Think Insaniquarium, with rubber ducks.",
+  "dur": 2.952,
+  "wav": "episodes/s59-ducks-vs-demons/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip. Quack.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  },
+  "sub": "Worth a dip. Quack.",
+  "dur": 1.698,
+  "wav": "episodes/s59-ducks-vs-demons/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.228,
+  "wav": "episodes/s59-ducks-vs-demons/v2/tts/s10.wav"
+ }
+]

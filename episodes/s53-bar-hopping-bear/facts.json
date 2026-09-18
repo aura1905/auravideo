@@ -1,0 +1,33 @@
+{
+ "demo_appid": 5197560,
+ "full_appid": 5086700,
+ "name": "bar-hopping-bear.",
+ "developers": [
+  "Rojiura Studio"
+ ],
+ "publishers": [
+  "Rojiura Studio"
+ ],
+ "release": "2026",
+ "coming_soon": true,
+ "genres": [
+  "Adventure"
+ ],
+ "languages": "English, Japanese",
+ "website": null,
+ "short": "Bar by bar, a young woman wanders through the night. Conversations with bar owners and patrons, along with little things that catch her eye, bring back memories of her father, mother, grandfather, and family trips in this narrative exploration adventure.",
+ "about": "  One bar, then another. Tonight, she's taking the long way home.   The protagonist is a woman in her twenties. She wanders through the streets at night, visiting small, cozy bars along the way.  Order a drink or something to eat, chat with the owner and the other patrons at the counter, and take a look around. You never know what little detail might catch your eye.  An old photograph. A small object sitting on a shelf. Something strangely familiar...  Examining these seemingly ordinary things can spark new conversations—and before long, those conversations begin to stir memories of her own.  Her father. Her mother. Her grandfather. That family trip from long ago.  She hadn't forgotten them. She just hadn't thought about them in a while.   Look Around and Listen   Examine interesting objects around each bar to discover new conversations. Choose how to respond and enjoy the little moments you share with the owners and patrons you meet along the way.   What Will You Order Tonight?   Each bar has its own selection of drinks and dishes to discover. Everything you order is added to your list, creating a record of your night of bar-hopping.   Collect the Little Things You Love   Whenever something catches the protagonist's eye as cute or simply intriguing, it can find its way onto her  Cute List . With every new bar, her collection of little favorites grows.   Follow the Memories   A conversation with a stranger. Something found tucked away in a bar. Small encounters can bring back memories of family and days gone by.  As she makes her way from bar to bar, the protagonist slowly looks back on the pieces of her past.  bar-hopping-bear.  is a narrative exploration adventure about bar-hopping, chance conversations, small discoveries, and the memories of family they bring back.  ",
+ "min_req": " Minimum:     OS:  Windows 10 64-bit    Processor:  Intel Core i3 or equivalent    Memory:  4  GB RAM    Graphics:  DirectX 11 compatible graphics    DirectX:  Version 11    Storage:  2 GB available space  ",
+ "movies": [
+  {
+   "id": 257415557,
+   "name": "Official Trailer"
+  }
+ ],
+ "screenshots": 5,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

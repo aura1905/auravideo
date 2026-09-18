@@ -1,0 +1,86 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: one bar, then another. Tonight, she's taking the long way home.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "And the regulars look like giant teddy bears.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Order a drink, chat with the owner and whoever is at the counter, and look around.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 7.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "An old photo, a little object on a shelf, and slowly, memories of her family come back.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 20.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best part: the bars. Warm light, tiny cozy rooms, and a fuzzy bear on every stool.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 49.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The bears never move. They just sit there, very still.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 12.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The demo is under eight hundred megabytes, in two languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Coffee Talk, but you're the one having the drink.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 45.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip for a quiet night in.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

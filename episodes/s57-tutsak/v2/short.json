@@ -1,0 +1,83 @@
+[
+ {
+  "id": "s1",
+  "text": "Free co-op horror demo, where the monster doesn't just kill you.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s2",
+  "text": "It drags you off and locks you in a cell.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Up to four players, abandoned buildings, flashlights, and keys to find.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 11.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "If you get caught, your friends have to find the prison key before it's too late.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best moment in the trailer: a slow walk up to a wardrobe, and then it opens.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 19.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The running animations look stiff.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 32.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The demo is about six gigs, in fourteen languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Phasmophobia, with a jail.",
+  "vis": {
+   "type": "image",
+   "file": "ss04.jpg"
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip with friends you'd actually come back for.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

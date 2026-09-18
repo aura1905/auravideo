@@ -1,0 +1,84 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: you drive your own survival train through a wasteland of sandstorms.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s2",
+  "text": "And you're hunting the Psycho Doctor who made you.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Rusty guns, a buzzsaw for close range, and mutants everywhere.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 10.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best moment in the trailer: a giant mechanical scorpion with glowing eyes, down in the caves.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 41.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "You can smash crates and traps along the way too.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 22.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The hits feel light, and the blood splatter looks like a sticker on the screen.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 16.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The Windows demo is almost six gigs, in thirteen languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Metro, crossed with Rage.",
+  "vis": {
+   "type": "image",
+   "file": "ss02.jpg"
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if you like your horror rusty.",
+  "vis": {
+   "type": "image",
+   "file": "ss03.jpg"
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

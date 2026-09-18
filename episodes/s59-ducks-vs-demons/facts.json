@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5189320,
+ "full_appid": 5140590,
+ "name": "Ducks VS Demons",
+ "developers": [
+  "Bad Duck Games"
+ ],
+ "publishers": [
+  "Bad Duck Games"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Casual",
+  "Indie",
+  "Simulation"
+ ],
+ "languages": "English**languages with full audio support",
+ "website": "https://www.badduckgames.com/",
+ "short": "Raise a flock of rubber ducks. Watch them grow and evolve! Collect loot, buy upgrades, and defend your pond from demons in this incremental clicker.",
+ "about": "  Ducks VS Demons  is a short incremental clicker game about raising a flock of rubber ducks and collecting the loot they drop, all while defending your pond from waves of demons. The game features a linear Adventure Mode and an endurance-based Survival Mode.           Play At Your Own Pace    Idle:  Freely toggle the ability to  passively collect loot .   Relax:  Enable  Peaceful Mode  for a more laid-back, demon-free experience.   Automate:  Evolve your ducks to handle repopulation, feeding, and demon defense  on their own .   Simple and Satisfying Progression   Feed your ducks and they'll grow, level up, and drop more valuable loot.  Collect the loot they drop to purchase upgrades and additional ducks.  Well-fed ducks will evolve, gaining special abilities.  Defend your ducks from waves of demons to earn extra money and experience.   Features      Adventure Mode  - Play through 6 ponds to unlock additional duck evolutions.     Survival Mode  - Test your limits against an endless and increasingly difficult horde of demons.     Milestone Rewards  - Every dollar earned contributes to unlocking bonuses for future runs in Survival Mode.     Six Duck Evolutions  - Each with its own special ability.     Boss Demons  - Extra tough demons provide an additional challenge.     Duck Naming  - Give your ducks custom names, or roll a random one.     ",
+ "min_req": " Minimum:     OS:  Windows 10 64-bit    Processor:  2.0 GHz Dual Core Processor    Memory:  4 GB RAM    Graphics:  Integrated Graphics with DirectX 11 support    DirectX:  Version 11    Storage:  500 MB available space    Additional Notes:  Requires a 64-bit processor and operating system  ",
+ "movies": [
+  {
+   "id": 257418132,
+   "name": "Ducks VS Demons Announcement Trailer"
+  }
+ ],
+ "screenshots": 5,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

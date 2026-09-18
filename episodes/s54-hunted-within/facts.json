@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5235030,
+ "full_appid": 5048700,
+ "name": "Hunted Within: Terminal Rust",
+ "developers": [
+  "LRDev Games"
+ ],
+ "publishers": [
+  "LRDev Games"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Adventure",
+  "Indie"
+ ],
+ "languages": "English*, French, Italian, German, Spanish - Spain, Arabic, Dutch, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese*languages with full audio support",
+ "website": "https://www.lrdevgames.com",
+ "short": "In a wasteland consumed by sandstorms, gravity anomalies, and grotesque biomechanical horrors, blast your way through a brutal survival horror experience to hunt down your worst enemy, the psycho Doctor.",
+ "about": " In  Hunted Within: Terminal Rust , you traverse a harsh wasteland consumed by blinding sandstorms,  deadly gravity anomalies, and grotesque biomechanical horrors.           Armed with  makeshift rusty industrial weaponry  and your trusty  dual-detection terminal ,    Pilot your own survival train through  the desolate desert and pitch-black caverns, and abandoned areas.            Monitor your terminal for environmental threats, conserve your momentum, and fight back against  relentless mutations to survive.           THE STORY   In this chapter of  Hunted Within , your hunt for your  ultimate   nemesis continues.    The   Psycho Doctor  has executed all of his test subjects -except you- and unleashed a catastrophic bio-virus  onto your final remaining companion  in the Metro.     The MISSION   Your mission is simple: track the psycho doctor down across the desolate surface and put a permanent end  to his nightmare experiments.   KEY FEATURES      The Survival train:  it's your mobile base, your refuge, and your key to reaching new areas,       The Dual-Detector Terminal:  Keep your terminal scanner close. Track invisible, crushing gravitational field anomalies and incoming sandstorms in real time to navigate safely through lethal terrain.       Rust-Tech Warfare:  Wield and upgrade heavy, makeshift industrial weaponry—from high-torque saw-blade melee weapons to devastating triple-barrel, break-action shotguns.       Adaptive Biomechanical Horrors:  Face blind photosensitive stalkers, mutated titans, burrowing scorpions, and savage cavern dwellers and more creepy and deadly experiment subjects.     ",
+ "min_req": " Minimum:     OS:  Windows 10 Or Later    Processor:  AMD Ryzen 3 3300X Or i3 12100F Processor Or Higher    Memory:  8 GB RAM    Graphics:  Nvidia Geforce GTX 1650 4GB Or Amd Radeon RX 570 4GB Or Higher    DirectX:  Version 12    Storage:  6 GB available space  ",
+ "movies": [
+  {
+   "id": 257425015,
+   "name": "Demo Gameplay Trailer"
+  }
+ ],
+ "screenshots": 15,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

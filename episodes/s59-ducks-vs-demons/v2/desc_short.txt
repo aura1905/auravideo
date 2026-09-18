@@ -1,0 +1,20 @@
+Ducks VS Demons — a free clicker demo: raise rubber ducks, defend the pond from demons.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5189320/
+
+── The quick version ──
+What you do : feed ducks, collect loot, upgrade
+Best part   : a devil duck vs a giant demon hand
+The catch   : flat blue pond
+Demo        : 661 MB, English
+Think       : Insaniquarium with rubber ducks
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Bad Duck Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

@@ -1,0 +1,87 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo with one goal: roll until every single die lands on six.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 5.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "You start with three dice and terrible odds.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Every roll pays coins. Spend them on faster rolls, upgrades, and risky bets.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best part: you can corrupt your dice. Sacrifice the other faces to make six more likely.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 23.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "And you can plaster the machine in stickers, for no reason at all.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 15.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The rainbow unlock effect looks cheap next to the neat retro screen.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 38.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "It's tiny, under three hundred megabytes, and all four demo reviews are positive.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Cookie Clicker, with Balatro's odds.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 8.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip. Six is devil.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 25.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

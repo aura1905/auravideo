@@ -1,0 +1,77 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: can your base survive a hundred thousand monsters at once?",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 19.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "You don't fight. You build a death blender.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Lasers, spikes and chain lightning grind the swarm down, and every kill pays for upgrades.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best part: the swarm moves like a river, flowing around your walls.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 28.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "The catch? The ground is flat and the monsters are tiny blobs.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The Windows demo is under two hundred megabytes, in eleven languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s7",
+  "text": "Think Vampire Survivors, if you were the tower.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.0
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Worth a dip if you like watching numbers go up.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s9",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

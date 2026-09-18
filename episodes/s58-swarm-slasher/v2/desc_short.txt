@@ -1,0 +1,20 @@
+Swarm Slasher — a free demo: can your base hold off 100,000 monsters at once?
+
+▶ Steam demo (free): https://store.steampowered.com/app/5190760/
+
+── The quick version ──
+What you do  : build and upgrade a death blender
+Best part    : the swarm flows like a river
+The catch    : flat ground, blob monsters
+Windows demo : 198 MB, 11 languages
+Think        : Vampire Survivors, as the tower
+Verdict      : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Elusor Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

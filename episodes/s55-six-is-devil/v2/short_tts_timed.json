@@ -1,0 +1,117 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo with one goal: roll until every single die lands on six.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 5.0
+  },
+  "sub": "Free demo with one goal: roll until every single die lands on six.",
+  "dur": 5.224,
+  "wav": "episodes/s55-six-is-devil/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "You start with three dice and terrible odds.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "You start with three dice and terrible odds.",
+  "dur": 2.664,
+  "wav": "episodes/s55-six-is-devil/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Every roll pays coins. Spend them on faster rolls, upgrades, and risky bets.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.0
+  },
+  "sub": "Every roll pays coins. Spend them on faster rolls, upgrades, and risky bets.",
+  "dur": 4.989,
+  "wav": "episodes/s55-six-is-devil/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best part: you can corrupt your dice. Sacrifice the other faces to make six more likely.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 23.0
+  },
+  "sub": "Best part: you can corrupt your dice. Sacrifice the other faces to make six more likely.",
+  "dur": 5.773,
+  "wav": "episodes/s55-six-is-devil/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "And you can plaster the machine in stickers, for no reason at all.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 15.0
+  },
+  "sub": "And you can plaster the machine in stickers, for no reason at all.",
+  "dur": 3.448,
+  "wav": "episodes/s55-six-is-devil/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The rainbow unlock effect looks cheap next to the neat retro screen.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 38.0
+  },
+  "sub": "The catch? The rainbow unlock effect looks cheap next to the neat retro screen.",
+  "dur": 5.277,
+  "wav": "episodes/s55-six-is-devil/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "It's tiny, under three hundred megabytes, and all four demo reviews are positive.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "It's tiny, under three hundred megabytes, and all four demo reviews are positive.",
+  "dur": 4.702,
+  "wav": "episodes/s55-six-is-devil/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Cookie Clicker, with Balatro's odds.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 8.0
+  },
+  "sub": "Think Cookie Clicker, with Balatro's odds.",
+  "dur": 2.9,
+  "wav": "episodes/s55-six-is-devil/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip. Six is devil.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 25.0
+  },
+  "sub": "Worth a dip. Six is devil.",
+  "dur": 2.534,
+  "wav": "episodes/s55-six-is-devil/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.306,
+  "wav": "episodes/s55-six-is-devil/v2/tts/s10.wav"
+ }
+]

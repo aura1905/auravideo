@@ -1,0 +1,21 @@
+Tutsak — a free co-op horror demo where the monster locks you in a cell.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5158960/
+
+── The quick version ──
+What you do : find keys, hide, rescue captured friends
+Players     : 1 to 4
+Best moment : the wardrobe
+The catch   : stiff running animations
+Demo        : 5.8 GB, 14 languages
+Think       : Phasmophobia with a jail
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Roni Studio.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

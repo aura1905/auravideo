@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:03,082
+Free prop hunt demo, but there are no props to pick.
+
+2
+00:00:03,232 --> 00:00:06,210
+You're a cube, and you have to build your own disguise.
+
+3
+00:00:06,360 --> 00:00:10,278
+Model it, paint it, and blend into the room before the Busters come looking.
+
+4
+00:00:10,428 --> 00:00:15,417
+Hide close to a hunter and you score double. Bigger disguise, bigger payout.
+
+5
+00:00:15,567 --> 00:00:20,452
+Best part: watching someone pass off a wobbly block sculpture as a book on a shelf.
+
+6
+00:00:20,602 --> 00:00:23,867
+The catch? If you're bad at building, you'll get caught instantly.
+
+7
+00:00:24,017 --> 00:00:28,223
+The demo is about six hundred megabytes, in fourteen languages.
+
+8
+00:00:28,373 --> 00:00:31,691
+Think Garry's Mod prop hunt, built in Minecraft.
+
+9
+00:00:31,841 --> 00:00:33,957
+Worth a dip with friends who can't draw.
+
+10
+00:00:34,107 --> 00:00:35,335
+That's Demo Dip.

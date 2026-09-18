@@ -1,0 +1,116 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: one bar, then another. Tonight, she's taking the long way home.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 30.0
+  },
+  "sub": "Free demo: one bar, then another. Tonight, she's taking the long way home.",
+  "dur": 5.042,
+  "wav": "episodes/s53-bar-hopping-bear/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "And the regulars look like giant teddy bears.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "And the regulars look like giant teddy bears.",
+  "dur": 2.795,
+  "wav": "episodes/s53-bar-hopping-bear/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Order a drink, chat with the owner and whoever is at the counter, and look around.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 7.0
+  },
+  "sub": "Order a drink, chat with the owner and whoever is at the counter, and look around.",
+  "dur": 4.153,
+  "wav": "episodes/s53-bar-hopping-bear/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "An old photo, a little object on a shelf, and slowly, memories of her family come back.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 20.0
+  },
+  "sub": "An old photo, a little object on a shelf, and slowly, memories of her family come back.",
+  "dur": 5.355,
+  "wav": "episodes/s53-bar-hopping-bear/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Best part: the bars. Warm light, tiny cozy rooms, and a fuzzy bear on every stool.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 49.0
+  },
+  "sub": "Best part: the bars. Warm light, tiny cozy rooms, and a fuzzy bear on every stool.",
+  "dur": 5.59,
+  "wav": "episodes/s53-bar-hopping-bear/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The bears never move. They just sit there, very still.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 12.0
+  },
+  "sub": "The catch? The bears never move. They just sit there, very still.",
+  "dur": 4.441,
+  "wav": "episodes/s53-bar-hopping-bear/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "The demo is under eight hundred megabytes, in two languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is under eight hundred megabytes, in two languages.",
+  "dur": 3.631,
+  "wav": "episodes/s53-bar-hopping-bear/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Coffee Talk, but you're the one having the drink.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 45.0
+  },
+  "sub": "Think Coffee Talk, but you're the one having the drink.",
+  "dur": 3.03,
+  "wav": "episodes/s53-bar-hopping-bear/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip for a quiet night in.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "Worth a dip for a quiet night in.",
+  "dur": 2.011,
+  "wav": "episodes/s53-bar-hopping-bear/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.228,
+  "wav": "episodes/s53-bar-hopping-bear/v2/tts/s10.wav"
+ }
+]
