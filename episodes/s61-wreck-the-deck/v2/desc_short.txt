@@ -1,0 +1,21 @@
+Wreck the Deck — a free physics demo: a pirate cannon against everything on the enemy deck.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5235700/
+
+── The quick version ──
+What you do : aim, fire, wreck, upgrade
+Best part   : a tin-can tower collapsing
+The catch   : no sound effects in the trailer
+Demo        : 600 MB, English
+Full game   : Q4 2026
+Think       : Angry Birds in 3D, at sea
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Tabsil.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

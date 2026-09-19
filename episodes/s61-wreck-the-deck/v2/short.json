@@ -1,0 +1,87 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: you're a pirate cannon, and everything on the enemy deck is about to become flying debris.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "Aim, fire, and sink their ship.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Every wreck pays cash for upgrades, like shockwaves and a whole lot more cannonballs.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best part: knocking down a giant tower of tin cans and watching every single one tumble.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 7.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Explosive barrels help with the heavy stuff.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 33.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? In the trailer, the explosions have no sound effects. Just a sea shanty.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The demo is about six hundred megabytes, English only.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Angry Birds in 3D, on the open sea.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip for five minutes of pure destruction.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

@@ -1,0 +1,89 @@
+[
+ {
+  "id": "s1",
+  "text": "Free co-op demo: tiny gnomes, one ship, a very big ocean, and absolutely no idea what they're doing.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 7.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "Sail from island to island for fuel and food, and patch the leaks when things go wrong.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 20.0
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Things go wrong a lot. Whirlpools, giant waves, and a giant octopus.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 11.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best part: the gnomes have stretchy noodle arms, so even slapping a friend looks ridiculous.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 54.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "And yes, there's a gorilla.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 57.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The islands and menus look pretty basic.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 20.5
+  }
+ },
+ {
+  "id": "s7",
+  "text": "All fifteen demo reviews so far are positive, and it's in thirteen languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Sea of Thieves, played by Human Fall Flat characters.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 43.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip with your least reliable friends.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 25.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

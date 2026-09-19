@@ -1,0 +1,117 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: you're a pirate cannon, and everything on the enemy deck is about to become flying debris.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  },
+  "sub": "Free demo: you're a pirate cannon, and everything on the enemy deck is about to become flying debris.",
+  "dur": 5.59,
+  "wav": "episodes/s61-wreck-the-deck/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Aim, fire, and sink their ship.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Aim, fire, and sink their ship.",
+  "dur": 2.194,
+  "wav": "episodes/s61-wreck-the-deck/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Every wreck pays cash for upgrades, like shockwaves and a whole lot more cannonballs.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.0
+  },
+  "sub": "Every wreck pays cash for upgrades, like shockwaves and a whole lot more cannonballs.",
+  "dur": 5.12,
+  "wav": "episodes/s61-wreck-the-deck/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best part: knocking down a giant tower of tin cans and watching every single one tumble.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 7.0
+  },
+  "sub": "Best part: knocking down a giant tower of tin cans and watching every single one tumble.",
+  "dur": 5.59,
+  "wav": "episodes/s61-wreck-the-deck/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Explosive barrels help with the heavy stuff.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 33.0
+  },
+  "sub": "Explosive barrels help with the heavy stuff.",
+  "dur": 2.769,
+  "wav": "episodes/s61-wreck-the-deck/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? In the trailer, the explosions have no sound effects. Just a sea shanty.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.0
+  },
+  "sub": "The catch? In the trailer, the explosions have no sound effects. Just a sea shanty.",
+  "dur": 5.224,
+  "wav": "episodes/s61-wreck-the-deck/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "The demo is about six hundred megabytes, English only.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is about six hundred megabytes, English only.",
+  "dur": 3.448,
+  "wav": "episodes/s61-wreck-the-deck/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Angry Birds in three-D, on the open sea.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 36.0
+  },
+  "sub": "Think Angry Birds in 3D, on the open sea.",
+  "dur": 3.082,
+  "wav": "episodes/s61-wreck-the-deck/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip for five minutes of pure destruction.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.0
+  },
+  "sub": "Worth a dip for five minutes of pure destruction.",
+  "dur": 2.717,
+  "wav": "episodes/s61-wreck-the-deck/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.097,
+  "wav": "episodes/s61-wreck-the-deck/v2/tts/s10.wav"
+ }
+]

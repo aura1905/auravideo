@@ -1,0 +1,80 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: you're a hole in the ground.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "And you swallow the farm. Apples, eggs, crops, all of it.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 11.0
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Open card packs to unlock new trees and animals, plant them, and sell what you collect.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Best part: upgrade the hole and it slurps up everything at once.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 48.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "The catch? The customers you trade with look stiff and basic.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 61.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The demo is under five hundred megabytes, in twelve languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s7",
+  "text": "Think Donut County, running a farm business.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 33.0
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Worth a dip if you've always wanted to be a hole.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.0
+  }
+ },
+ {
+  "id": "s9",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

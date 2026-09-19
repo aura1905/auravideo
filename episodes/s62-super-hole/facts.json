@@ -1,0 +1,39 @@
+{
+ "demo_appid": 4888610,
+ "full_appid": 4868890,
+ "name": "Super Hole",
+ "developers": [
+  "Spearl Games"
+ ],
+ "publishers": [
+  "Spearl Games"
+ ],
+ "release": "2026",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Adventure",
+  "Casual",
+  "Indie",
+  "Simulation",
+  "Strategy",
+  "Early Access"
+ ],
+ "languages": "English, French, Italian, German, Spanish - Spain, Simplified Chinese, Portuguese - Brazil, Japanese, Polish, Turkish, Korean, Russian",
+ "website": null,
+ "short": "Collect, upgrade, produce, and profit! Start with a small hole, gather resources, unlock powerful cards, enhance your hole with unique upgrades, accelerate your production, and build a thriving business by trading with customers.",
+ "about": " Super Hole is a relaxing first-person simulation game focused on resource gathering, card collecting, production, and trading.  Start with a small Hole and gradually build your own production business. Discover new cards by opening boxes, expand your production areas, collect resources with your Hole, and grow your business through trading.  Gather Resources         Collect resources produced in your production areas using your Hole and store them in your inventory. Upgrade your Hole to gather resources more efficiently and increase your productivity.  Discover New Cards         Purchase boxes and obtain random cards. Each card unlocks new trees, plants, or animals that can be placed in your production areas and help expand your business.  Expand Your Production Areas         Place the trees, plants, and animals you unlock into your production areas. Increase your production capacity, unlock new areas, and fulfill larger customer orders.  Trade With Customers         Meet different customer types and evaluate incoming offers. Accept, reject, or hold orders for later. Make profitable deals and keep your business growing.  Upgrade Your Hole         Invest your earnings into Hole upgrades. Improve your efficiency, collect resources faster, and support your expanding production operation.  Merge Cards  Combine cards of the same rarity to obtain higher rarity cards. Build a stronger collection and unlock new opportunities as your business grows.  Grow Your Business  Discover new cards, produce more resources, expand your production areas, and build an ever-growing trading network. Every investment brings you closer to a larger and more profitable business.  Features  • Unique Hole-based resource gathering system  • Random card opening system  • Card merging and rarity progression  • Tree, plant, and animal-based production  • Customer offers and trading mechanics  • Different customer types  • Area expansion and progression system  • Various Hole upgrades  • Relaxing gameplay at your own pace ",
+ "min_req": " Minimum:     OS:  Windows 10 64-bit    Processor:  Intel Core i5-4460 / AMD FX-6300    Memory:  8 GB RAM    Graphics:  NVIDIA GeForce GTX 960 2GB / AMD Radeon R9 280    DirectX:  Version 11    Storage:  1 GB available space    Additional Notes:  SSD recommended. Performance may vary with large numbers of active objects.  ",
+ "movies": [
+  {
+   "id": 257398239,
+   "name": "Super Hole Gameplay"
+  }
+ ],
+ "screenshots": 10,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

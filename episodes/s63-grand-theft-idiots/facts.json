@@ -1,0 +1,41 @@
+{
+ "demo_appid": 5231810,
+ "full_appid": 4919380,
+ "name": "Grand Theft Idiots",
+ "developers": [
+  "BlackScale"
+ ],
+ "publishers": [
+  "BlackScale"
+ ],
+ "release": "2 Nov, 2026",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Adventure",
+  "Casual",
+  "Indie",
+  "Simulation"
+ ],
+ "languages": "English*, French, German, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Spanish - Latin America, Turkish*languages with full audio support",
+ "website": null,
+ "short": "A chaotic free-for-all heist game where you backstab your friends for the biggest payout. Trigger fire alarms, tase your rivals, and steal their loot right out of their hands. Race to the getaway van before the cops arrive, because until you extract, nothing you stole is truly yours.",
+ "about": "         The mall never truly sleeps. Even after dark, the lights stay on, the rain keeps falling, and life continues inside while you plan your next move. Every location has its own atmosphere, bringing the world around your heists to life.  Play with a classic 4-player crew, or adjust the match settings and turn the chaos up to 12 players. Customize match times, rounds, extraction vans, modifiers, difficulty, loot rules, and more to create your perfect custom lobby.  Steal valuable items, sabotage your rivals, and escape with the biggest payout before security shuts everything down. Just remember: if you haven't extracted yet, nothing you stole is truly yours.          Explore a sprawling shopping mall filled with unique stores, valuable loot, security cameras, and unpredictable crowds.  Grab small valuables for quick escapes or risk everything on massive haul items worth thousands. Bigger loot means bigger rewards but everyone can see what you're carrying.         Stealing an item doesn't make it yours.  Every valuable must be loaded into an extraction van before you can leave the match. Once you extract, everything inside the van is automatically sold.  The player who last carried an item before extraction receives the money.         Why steal from the stores when you can steal from the competition?  Use utility items like Stun Guns, Paintball Guns, Door Blockers, Rope, and more to interrupt escapes, ambush other players, and take their loot before they can extract.  Sometimes the fastest way to get rich is letting someone else do the hard work first.         Every match becomes more dangerous over time.  Commit crimes, trigger alarms, attract security, and raise the mall's heat level. As security escalates, police become more aggressive, making every trip to the extraction van increasingly risky.  Decide when to cash out or push your luck for an even bigger score.         Dynamic run modifiers, changing store layouts, and unique events constantly reshape the mall. Every round forces you to adapt to situations like:  •  Procedural Layouts:  Randomized loot placement and shifting store variants keep you on your toes.  •  Power Outages:  The lights and security cameras go down. It's harder to see, but easier to steal. •  Black Friday:  The mall is flooded with aggressive shoppers and massive crowds.         Everything you successfully extract becomes Blood Money, your permanent lifetime score.  Blood Money also generates Clean Money, which can be spent between rounds on utility items without affecting your leaderboard ranking.  Build your loadout, unlock Steam achievements, earn new character skins, and compete to become the richest thief.         Create your own maps, gameplay mods, and custom experiences using the official modding SDK.  The game supports BepInEx modding from day one, with example projects, export tools, and creator resources available through the community Discord and GitHub.  Build new maps, add new mechanics, or create entirely new ways to play. The tools are ready for creators who want to expand the world of Grand Theft Idiots. ",
+ "min_req": " Minimum:     OS:  Windows 10 64-bit    Processor:  Intel Core i5-4460 / AMD Ryzen 3 1200 (quad-core)    Memory:  8 GB RAM    Graphics:  NVIDIA GTX 960 2GB / AMD Radeon R9 280 / Intel Arc A310    DirectX:  Version 11    Network:  Broadband Internet connection    Storage:  2 GB available space  ",
+ "movies": [
+  {
+   "id": 257405408,
+   "name": "Single Player Gameplay"
+  },
+  {
+   "id": 257392040,
+   "name": "Flythrough Teaser"
+  }
+ ],
+ "screenshots": 10,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

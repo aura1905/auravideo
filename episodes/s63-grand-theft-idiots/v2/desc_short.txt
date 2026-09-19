@@ -1,0 +1,21 @@
+Grand Theft Idiots — a free heist demo where you rob the mall and your friends.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5231810/
+
+── The quick version ──
+What you do : steal, sabotage, reach the getaway van
+Players     : 4 by default, up to 12
+The catch   : looks early: empty mall, sleepy guards
+Demo        : about 1 GB, 11 languages
+Full game   : 2 Nov 2026
+Think       : Payday, but everyone is a traitor
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to BlackScale.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

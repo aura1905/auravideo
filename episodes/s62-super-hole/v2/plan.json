@@ -1,0 +1,469 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 2.429,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c000.png",
+   "start": 0.0,
+   "in": 0,
+   "out": 0.668,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c001.png",
+   "start": 0.678,
+   "in": 0,
+   "out": 1.007,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c002.png",
+   "start": 1.695,
+   "in": 0,
+   "out": 0.724,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s2.wav",
+   "start": 2.579,
+   "in": 0,
+   "out": 4.467,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c003.png",
+   "start": 2.579,
+   "in": 0,
+   "out": 1.215,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c004.png",
+   "start": 3.804,
+   "in": 0,
+   "out": 0.783,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c005.png",
+   "start": 4.596,
+   "in": 0,
+   "out": 1.575,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c006.png",
+   "start": 6.181,
+   "in": 0,
+   "out": 0.855,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s3.wav",
+   "start": 7.196,
+   "in": 0,
+   "out": 4.859,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c007.png",
+   "start": 7.196,
+   "in": 0,
+   "out": 1.035,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c008.png",
+   "start": 8.241,
+   "in": 0,
+   "out": 1.139,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c009.png",
+   "start": 9.39,
+   "in": 0,
+   "out": 0.512,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c010.png",
+   "start": 9.913,
+   "in": 0,
+   "out": 0.669,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c011.png",
+   "start": 10.592,
+   "in": 0,
+   "out": 1.453,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s4.wav",
+   "start": 12.205,
+   "in": 0,
+   "out": 4.624,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c012.png",
+   "start": 12.205,
+   "in": 0,
+   "out": 0.794,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c013.png",
+   "start": 13.009,
+   "in": 0,
+   "out": 1.464,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c014.png",
+   "start": 14.483,
+   "in": 0,
+   "out": 0.928,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c015.png",
+   "start": 15.422,
+   "in": 0,
+   "out": 1.397,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s5.wav",
+   "start": 16.979,
+   "in": 0,
+   "out": 3.683,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c016.png",
+   "start": 16.979,
+   "in": 0,
+   "out": 0.66,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c017.png",
+   "start": 17.649,
+   "in": 0,
+   "out": 1.05,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c018.png",
+   "start": 18.709,
+   "in": 0,
+   "out": 0.939,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c019.png",
+   "start": 19.658,
+   "in": 0,
+   "out": 0.994,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s6.wav",
+   "start": 20.812,
+   "in": 0,
+   "out": 3.788,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c020.png",
+   "start": 20.812,
+   "in": 0,
+   "out": 1.367,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c021.png",
+   "start": 22.189,
+   "in": 0,
+   "out": 1.138,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c022.png",
+   "start": 23.337,
+   "in": 0,
+   "out": 1.253,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s7.wav",
+   "start": 24.75,
+   "in": 0,
+   "out": 2.978,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c023.png",
+   "start": 24.75,
+   "in": 0,
+   "out": 1.321,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c024.png",
+   "start": 26.081,
+   "in": 0,
+   "out": 1.637,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s8.wav",
+   "start": 27.878,
+   "in": 0,
+   "out": 2.377,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c025.png",
+   "start": 27.878,
+   "in": 0,
+   "out": 0.708,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c026.png",
+   "start": 28.596,
+   "in": 0,
+   "out": 0.977,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c027.png",
+   "start": 29.582,
+   "in": 0,
+   "out": 0.663,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s9.wav",
+   "start": 30.405,
+   "in": 0,
+   "out": 0.993,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c028.png",
+   "start": 30.405,
+   "in": 0,
+   "out": 0.983,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s62-super-hole/t0.mp4",
+   "start": 0.0,
+   "in": 0.0,
+   "out": 2.579,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s62-super-hole/t0.mp4",
+   "start": 2.579,
+   "in": 11.0,
+   "out": 15.617,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s62-super-hole/t0.mp4",
+   "start": 7.196,
+   "in": 24.0,
+   "out": 29.009,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s62-super-hole/t0.mp4",
+   "start": 12.205,
+   "in": 48.0,
+   "out": 52.774,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s62-super-hole/t0.mp4",
+   "start": 16.979,
+   "in": 61.0,
+   "out": 64.833,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s62-super-hole/ev_facts_v.png",
+   "start": 20.812,
+   "in": 0.0,
+   "out": 3.938,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "fit",
+   "transformScale": 1.0
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s62-super-hole/t0.mp4",
+   "start": 24.75,
+   "in": 33.0,
+   "out": 36.128,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s62-super-hole/t0.mp4",
+   "start": 27.878,
+   "in": 2.0,
+   "out": 6.02,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v1",
+   "file": "C:/Git/auravideo/episodes/s62-super-hole/logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 31.398,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "C:/Git/auravideo/episodes/s62-super-hole/t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 31.898,
+   "volume": 0.06,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "subs": [],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "MEDIA"
+  }
+ ],
+ "total": 31.898
+}

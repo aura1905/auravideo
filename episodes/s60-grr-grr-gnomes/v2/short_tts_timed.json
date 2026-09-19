@@ -1,0 +1,119 @@
+[
+ {
+  "id": "s1",
+  "text": "Free co-op demo: tiny gnomes, one ship, a very big ocean, and absolutely no idea what they're doing.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 7.0
+  },
+  "sub": "Free co-op demo: tiny gnomes, one ship, a very big ocean, and absolutely no idea what they're doing.",
+  "dur": 7.21,
+  "wav": "episodes/s60-grr-grr-gnomes/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Sail from island to island for fuel and food, and patch the leaks when things go wrong.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 20.0
+  },
+  "sub": "Sail from island to island for fuel and food, and patch the leaks when things go wrong.",
+  "dur": 5.12,
+  "wav": "episodes/s60-grr-grr-gnomes/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Things go wrong a lot. Whirlpools, giant waves, and a giant octopus.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 11.0
+  },
+  "sub": "Things go wrong a lot. Whirlpools, giant waves, and a giant octopus.",
+  "dur": 5.355,
+  "wav": "episodes/s60-grr-grr-gnomes/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best part: the gnomes have stretchy noodle arms, so even slapping a friend looks ridiculous.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 54.0
+  },
+  "sub": "Best part: the gnomes have stretchy noodle arms, so even slapping a friend looks ridiculous.",
+  "dur": 5.303,
+  "wav": "episodes/s60-grr-grr-gnomes/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "And yes, there's a gorilla.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 57.0
+  },
+  "sub": "And yes, there's a gorilla.",
+  "dur": 1.724,
+  "wav": "episodes/s60-grr-grr-gnomes/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The islands and menus look pretty basic.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 20.5
+  },
+  "sub": "The catch? The islands and menus look pretty basic.",
+  "dur": 3.318,
+  "wav": "episodes/s60-grr-grr-gnomes/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "All fifteen demo reviews so far are positive, and it's in thirteen languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "All fifteen demo reviews so far are positive, and it's in thirteen languages.",
+  "dur": 4.65,
+  "wav": "episodes/s60-grr-grr-gnomes/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Sea of Thieves, played by Human Fall Flat characters.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 43.0
+  },
+  "sub": "Think Sea of Thieves, played by Human Fall Flat characters.",
+  "dur": 3.683,
+  "wav": "episodes/s60-grr-grr-gnomes/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip with your least reliable friends.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 25.0
+  },
+  "sub": "Worth a dip with your least reliable friends.",
+  "dur": 2.534,
+  "wav": "episodes/s60-grr-grr-gnomes/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.097,
+  "wav": "episodes/s60-grr-grr-gnomes/v2/tts/s10.wav"
+ }
+]

@@ -1,0 +1,21 @@
+Grr Grr Gnomes — a free co-op demo: tiny gnomes, one ship, a very big ocean.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5214090/
+
+── The quick version ──
+What you do  : sail, scavenge islands, patch leaks, survive
+Best part    : stretchy noodle-arm physics
+The catch    : basic islands and menus
+Demo reviews : 15 of 15 positive
+Demo         : about 2.4 GB, 13 languages
+Think        : Sea of Thieves meets Human Fall Flat
+Verdict      : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to emolingodev.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

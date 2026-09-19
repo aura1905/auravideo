@@ -1,0 +1,116 @@
+[
+ {
+  "id": "s1",
+  "text": "Free heist demo where your crew is also your competition.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 45.0
+  },
+  "sub": "Free heist demo where your crew is also your competition.",
+  "dur": 3.135,
+  "wav": "episodes/s63-grand-theft-idiots/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "Rob the mall, then steal your friends' loot right out of their hands.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "Rob the mall, then steal your friends' loot right out of their hands.",
+  "dur": 3.683,
+  "wav": "episodes/s63-grand-theft-idiots/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Trigger fire alarms, tase your rivals, and race to the getaway van before the cops arrive.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 58.0
+  },
+  "sub": "Trigger fire alarms, tase your rivals, and race to the getaway van before the cops arrive.",
+  "dur": 5.46,
+  "wav": "episodes/s63-grand-theft-idiots/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Until you extract, nothing you stole is really yours.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 95.0
+  },
+  "sub": "Until you extract, nothing you stole is really yours.",
+  "dur": 3.37,
+  "wav": "episodes/s63-grand-theft-idiots/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "Best part: you can push a whole shopping cart of loot to the van.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 95.0
+  },
+  "sub": "Best part: you can push a whole shopping cart of loot to the van.",
+  "dur": 3.918,
+  "wav": "episodes/s63-grand-theft-idiots/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The catch? Right now it looks early. The mall is empty and the guards barely react.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 35.0
+  },
+  "sub": "The catch? Right now it looks early. The mall is empty and the guards barely react.",
+  "dur": 5.068,
+  "wav": "episodes/s63-grand-theft-idiots/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "Four players by default, up to twelve, and the full game is due November second.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "Four players by default, up to twelve, and the full game is due November second.",
+  "dur": 4.519,
+  "wav": "episodes/s63-grand-theft-idiots/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Think Payday, but everyone's a traitor.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 70.0
+  },
+  "sub": "Think Payday, but everyone's a traitor.",
+  "dur": 2.429,
+  "wav": "episodes/s63-grand-theft-idiots/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip with friends you'd happily betray.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  },
+  "sub": "Worth a dip with friends you'd happily betray.",
+  "dur": 2.717,
+  "wav": "episodes/s63-grand-theft-idiots/v2/tts/s9.wav"
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 1.358,
+  "wav": "episodes/s63-grand-theft-idiots/v2/tts/s10.wav"
+ }
+]

@@ -1,0 +1,107 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: you're a hole in the ground.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 0.0
+  },
+  "sub": "Free demo: you're a hole in the ground.",
+  "dur": 2.429,
+  "wav": "episodes/s62-super-hole/v2/tts/s1.wav"
+ },
+ {
+  "id": "s2",
+  "text": "And you swallow the farm. Apples, eggs, crops, all of it.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 11.0
+  },
+  "sub": "And you swallow the farm. Apples, eggs, crops, all of it.",
+  "dur": 4.467,
+  "wav": "episodes/s62-super-hole/v2/tts/s2.wav"
+ },
+ {
+  "id": "s3",
+  "text": "Open card packs to unlock new trees and animals, plant them, and sell what you collect.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  },
+  "sub": "Open card packs to unlock new trees and animals, plant them, and sell what you collect.",
+  "dur": 4.859,
+  "wav": "episodes/s62-super-hole/v2/tts/s3.wav"
+ },
+ {
+  "id": "s4",
+  "text": "Best part: upgrade the hole and it slurps up everything at once.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 48.0
+  },
+  "sub": "Best part: upgrade the hole and it slurps up everything at once.",
+  "dur": 4.624,
+  "wav": "episodes/s62-super-hole/v2/tts/s4.wav"
+ },
+ {
+  "id": "s5",
+  "text": "The catch? The customers you trade with look stiff and basic.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 61.0
+  },
+  "sub": "The catch? The customers you trade with look stiff and basic.",
+  "dur": 3.683,
+  "wav": "episodes/s62-super-hole/v2/tts/s5.wav"
+ },
+ {
+  "id": "s6",
+  "text": "The demo is under five hundred megabytes, in twelve languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  },
+  "sub": "The demo is under five hundred megabytes, in twelve languages.",
+  "dur": 3.788,
+  "wav": "episodes/s62-super-hole/v2/tts/s6.wav"
+ },
+ {
+  "id": "s7",
+  "text": "Think Donut County, running a farm business.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 33.0
+  },
+  "sub": "Think Donut County, running a farm business.",
+  "dur": 2.978,
+  "wav": "episodes/s62-super-hole/v2/tts/s7.wav"
+ },
+ {
+  "id": "s8",
+  "text": "Worth a dip if you've always wanted to be a hole.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 2.0
+  },
+  "sub": "Worth a dip if you've always wanted to be a hole.",
+  "dur": 2.377,
+  "wav": "episodes/s62-super-hole/v2/tts/s8.wav"
+ },
+ {
+  "id": "s9",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  },
+  "sub": "That's Demo Dip.",
+  "dur": 0.993,
+  "wav": "episodes/s62-super-hole/v2/tts/s9.wav"
+ }
+]

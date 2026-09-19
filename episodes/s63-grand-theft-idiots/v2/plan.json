@@ -1,0 +1,531 @@
+{
+ "settings": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "clips": [
+  {
+   "track": "a1",
+   "file": "tts/s1.wav",
+   "start": 0.0,
+   "in": 0,
+   "out": 3.135,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c000.png",
+   "start": 0.0,
+   "in": 0,
+   "out": 1.172,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c001.png",
+   "start": 1.182,
+   "in": 0,
+   "out": 1.223,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c002.png",
+   "start": 2.415,
+   "in": 0,
+   "out": 0.71,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s2.wav",
+   "start": 3.285,
+   "in": 0,
+   "out": 3.683,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c003.png",
+   "start": 3.285,
+   "in": 0,
+   "out": 0.737,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c004.png",
+   "start": 4.032,
+   "in": 0,
+   "out": 0.836,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c005.png",
+   "start": 4.878,
+   "in": 0,
+   "out": 1.035,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c006.png",
+   "start": 5.923,
+   "in": 0,
+   "out": 1.035,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s3.wav",
+   "start": 7.118,
+   "in": 0,
+   "out": 5.46,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c007.png",
+   "start": 7.118,
+   "in": 0,
+   "out": 1.241,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c008.png",
+   "start": 8.369,
+   "in": 0,
+   "out": 1.071,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c009.png",
+   "start": 9.45,
+   "in": 0,
+   "out": 0.957,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c010.png",
+   "start": 10.417,
+   "in": 0,
+   "out": 1.127,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c011.png",
+   "start": 11.554,
+   "in": 0,
+   "out": 1.014,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s4.wav",
+   "start": 12.728,
+   "in": 0,
+   "out": 3.37,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c012.png",
+   "start": 12.728,
+   "in": 0,
+   "out": 1.172,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c013.png",
+   "start": 13.91,
+   "in": 0,
+   "out": 1.291,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c014.png",
+   "start": 15.211,
+   "in": 0,
+   "out": 0.877,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s5.wav",
+   "start": 16.248,
+   "in": 0,
+   "out": 3.918,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c015.png",
+   "start": 16.248,
+   "in": 0,
+   "out": 0.662,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c016.png",
+   "start": 16.92,
+   "in": 0,
+   "out": 1.221,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c017.png",
+   "start": 18.151,
+   "in": 0,
+   "out": 1.277,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c018.png",
+   "start": 19.438,
+   "in": 0,
+   "out": 0.718,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s6.wav",
+   "start": 20.316,
+   "in": 0,
+   "out": 5.068,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c019.png",
+   "start": 20.316,
+   "in": 0,
+   "out": 0.666,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c020.png",
+   "start": 20.992,
+   "in": 0,
+   "out": 0.778,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c021.png",
+   "start": 21.78,
+   "in": 0,
+   "out": 0.778,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c022.png",
+   "start": 22.568,
+   "in": 0,
+   "out": 1.06,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c023.png",
+   "start": 23.638,
+   "in": 0,
+   "out": 0.891,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c024.png",
+   "start": 24.539,
+   "in": 0,
+   "out": 0.835,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s7.wav",
+   "start": 25.534,
+   "in": 0,
+   "out": 4.519,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c025.png",
+   "start": 25.534,
+   "in": 0,
+   "out": 1.372,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c026.png",
+   "start": 26.916,
+   "in": 0,
+   "out": 0.787,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c027.png",
+   "start": 27.714,
+   "in": 0,
+   "out": 1.372,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c028.png",
+   "start": 29.096,
+   "in": 0,
+   "out": 0.947,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s8.wav",
+   "start": 30.203,
+   "in": 0,
+   "out": 2.429,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c029.png",
+   "start": 30.203,
+   "in": 0,
+   "out": 0.857,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c030.png",
+   "start": 31.071,
+   "in": 0,
+   "out": 1.551,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s9.wav",
+   "start": 32.782,
+   "in": 0,
+   "out": 2.717,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c031.png",
+   "start": 32.782,
+   "in": 0,
+   "out": 0.968,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c032.png",
+   "start": 33.76,
+   "in": 0,
+   "out": 0.805,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v2",
+   "file": "cap/c033.png",
+   "start": 34.575,
+   "in": 0,
+   "out": 0.914,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "a1",
+   "file": "tts/s10.wav",
+   "start": 35.649,
+   "in": 0,
+   "out": 1.358,
+   "volume": 1.6
+  },
+  {
+   "track": "v2",
+   "file": "cap/c034.png",
+   "start": 35.649,
+   "in": 0,
+   "out": 1.348,
+   "fillMode": "fit",
+   "muted": true
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s63-grand-theft-idiots/t0.mp4",
+   "start": 0.0,
+   "in": 45.0,
+   "out": 52.118,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s63-grand-theft-idiots/t0.mp4",
+   "start": 7.118,
+   "in": 58.0,
+   "out": 63.61,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s63-grand-theft-idiots/t0.mp4",
+   "start": 12.728,
+   "in": 95.0,
+   "out": 98.52,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s63-grand-theft-idiots/t0.mp4",
+   "start": 16.248,
+   "in": 95.0,
+   "out": 99.068,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s63-grand-theft-idiots/t0.mp4",
+   "start": 20.316,
+   "in": 35.0,
+   "out": 40.218,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s63-grand-theft-idiots/ev_facts_v.png",
+   "start": 25.534,
+   "in": 0.0,
+   "out": 4.669,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "fit",
+   "transformScale": 1.0
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s63-grand-theft-idiots/t0.mp4",
+   "start": 30.203,
+   "in": 70.0,
+   "out": 72.579,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v4",
+   "file": "C:/Git/auravideo/episodes/s63-grand-theft-idiots/ss00_mv.mp4",
+   "start": 32.782,
+   "in": 0.0,
+   "out": 4.725,
+   "muted": true,
+   "fadeIn": 0.12,
+   "fadeOut": 0.12,
+   "fillMode": "blur",
+   "transformScale": 1.5
+  },
+  {
+   "track": "v1",
+   "file": "C:/Git/auravideo/episodes/s63-grand-theft-idiots/logo_c_rgba.png",
+   "start": 0.5,
+   "in": 0,
+   "out": 37.007,
+   "fillMode": "fit",
+   "transformOpacity": 0.6,
+   "fadeIn": 0.5,
+   "transformScale": 0.14,
+   "transformX": 370,
+   "transformY": -830
+  },
+  {
+   "track": "a2",
+   "file": "C:/Git/auravideo/episodes/s63-grand-theft-idiots/t0.mp4",
+   "start": 0.0,
+   "in": 0,
+   "out": 37.507,
+   "volume": 0.06,
+   "fadeIn": 0.6,
+   "fadeOut": 1.0
+  }
+ ],
+ "subs": [],
+ "tracks_extra": [
+  {
+   "kind": "video",
+   "name": "MEDIA"
+  }
+ ],
+ "total": 37.507
+}

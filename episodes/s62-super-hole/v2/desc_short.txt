@@ -1,0 +1,20 @@
+Super Hole — a free demo where you're a hole that swallows the farm.
+
+▶ Steam demo (free): https://store.steampowered.com/app/4888610/
+
+── The quick version ──
+What you do : collect with the hole, open card packs, trade
+Best part   : an upgraded hole slurping everything
+The catch   : stiff, basic customers
+Demo        : 494 MB, 12 languages
+Think       : Donut County running a farm
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Spearl Games.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo
