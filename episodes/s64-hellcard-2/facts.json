@@ -1,0 +1,36 @@
+{
+ "demo_appid": 5246950,
+ "full_appid": 3106270,
+ "name": "HELLCARD II",
+ "developers": [
+  "Thing Trunk"
+ ],
+ "publishers": [
+  "Skystone Games"
+ ],
+ "release": "Q1 2027",
+ "coming_soon": true,
+ "genres": [
+  "Adventure",
+  "Indie",
+  "RPG",
+  "Strategy"
+ ],
+ "languages": "English*, French, Italian, German, Polish, Spanish - Spain, Japanese, Korean, Russian, Simplified Chinese, Spanish - Latin America, Traditional Chinese, Ukrainian*languages with full audio support",
+ "website": "https://thingtrunk.com/",
+ "short": "Hellcard II is a unique co-op deck-builder roguelike game. Descend into the paper dungeons on your own or invite friends to fast-paced tactical card battles against hordes of evil and dragons. Lots of dragons!",
+ "about": "   HELLCARD II is a cooperative roguelike deckbuilder that can be played solo or with a team of up to four players. The game takes place in the paper dungeons known from HELLCARD and Book of Demons, expanding into new biomes and storylines.           Nothing is purely cosmetic here  The solid deckbuilding foundation of the first game returns, now expanded with character stats and a deeper persistent layer: equipment. Unlock gear that transforms your hero's appearance while modifying your deck, stats, and buffs. Play the way you want, right out of the gate!                 Watch where you step  What makes HELLCARD II unique and different from most deck-building games is that monster placement actually matters and can be used to your advantage. With monsters placed in either melee or ranged distances and divided between heroes, placement is vital for executing the most powerful combos.          Strategize with friends or solo  HELLCARD II supports co-op battles with up to four heroes facing the dragon threat. In single-player mode, you control all characters and all strategy. Play as a lone wolf with the power of an entire party at your disposal. In multiplayer mode, coordinate with your friends or strangers to defeat multitudes of foes.          Unfold the story  Every adventure is unique. The story evolves as you play. Rally your friends, gear up, and defend the realm to uncover the truth behind the dragon menace.          If you are excited about HELLCARD II, be sure to wishlist the game on Steam. Otherwise, consider wishlisting anyway - who knows, we might surprise you yet!            About Return 2 Games       Return 2 Games is a series of unique mid-core games inspired by the golden days of PC gaming. Each R2G title is a tribute to a single hit game from the '90s: a reimagining of a single universal story for a brand-new audience, using modern means and innovative, often vastly simplified gameplay mechanics.       If you want to learn more about Return 2 Games or support us in developing the series, visit the Supporter Pack store page. On release, HELLCARD II will be a part of it.   ",
+ "min_req": " Minimum:     OS:   Windows 10, 11    Processor:  Quad-core CPU or greater    Memory:  8 GB RAM    Graphics:  DirectX 11/12 GPU    DirectX:  Version 11    Network:  Broadband Internet connection  ",
+ "movies": [
+  {
+   "id": 257274931,
+   "name": "HELLCARD II Annoucement Trailer"
+  }
+ ],
+ "screenshots": 8,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

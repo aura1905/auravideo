@@ -1,0 +1,183 @@
+{
+ "type": "game",
+ "name": "Scrappy Craft",
+ "steam_appid": 4359360,
+ "required_age": 0,
+ "is_free": false,
+ "dlc": [
+  5093300
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" style=\"text-align: center\"> 쓰레기를 보물로 바꾸는 대장간에 오신 걸 환영합니다. 잡동사니를 이리저리 짜 맞춰 아주 색다른 무기 수천 가지를 만들고, 가게를 업그레이드하고, 새로운 제작법으로 무기고를 넓히세요. 개성 넘치는 드래곤, 할머니, 펭귄, 로봇 등등의 별난 손님들을 만족시키세요.</p><p class=\"bb_paragraph\" > </p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/d27a7af97f287078648a8942dfdf3b4e.webp?t=1789877581\" alt=\"Scavenge the trash\" width=337 height=42 /></span></p><p class=\"bb_paragraph\" >쓰레기 더미를 박박 뒤져 다음 무기로 변신시킬 만한 완벽한 재료를 찾아내세요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/972f78a9f31c1799cbfd8d983304195a.poster.avif?t=1789877581\" aria-label=\"Trash being collected from a trash can\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/972f78a9f31c1799cbfd8d983304195a.webm?t=1789877581\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/972f78a9f31c1799cbfd8d983304195a.mp4?t=1789877581\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/e43d5db66b5e72875a3f7df8e73384d0.webp?t=1789877581\" alt=\"Craft Wacky Weapons\" width=418 height=42 /></span></p><p class=\"bb_paragraph\" >찾아낸 재료를 모아 가장 창의적인 무기를 만들어보세요. 조랑말 망치도 좋고, 쿠키 방패도 멋지겠네요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/55dc5dd85e889d02c0984c01ba63cb45.poster.avif?t=1789877581\" aria-label=\"rhythm minigames being played\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/55dc5dd85e889d02c0984c01ba63cb45.webm?t=1789877581\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/55dc5dd85e889d02c0984c01ba63cb45.mp4?t=1789877581\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/ce020c40edbdae103b406d7d3cdd55cc.webp?t=1789877581\" alt=\"Serve unconventional customers\" width=450 height=42 /></span></p><p class=\"bb_paragraph\" >강아지, 미라, 괴물들까지! 희한한 손님들에게 제작품을 판매하세요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/cc617851976502f3e2ac97e1312c1d9d.poster.avif?t=1789877581\" aria-label=\"Short clips of different customers\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/cc617851976502f3e2ac97e1312c1d9d.webm?t=1789877581\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/cc617851976502f3e2ac97e1312c1d9d.mp4?t=1789877581\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/4338e17876d4ba651d7d430ad892e23d.webp?t=1789877581\" alt=\"Upgrade your store\" width=404 height=42 /></span></p><p class=\"bb_paragraph\" >라쿤 디오게네스에게서 여러 종류의 장식품을 구매해 대장간을 업그레이드하세요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/6af827e5adca8246f223e563abfe84e2.poster.avif?t=1789877581\" aria-label=\"The black hole upgrade is bought and then used to clean trash\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/6af827e5adca8246f223e563abfe84e2.webm?t=1789877581\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/6af827e5adca8246f223e563abfe84e2.mp4?t=1789877581\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >특징</h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" >쓰레기 더미에서 찾아내는 제작 재료</p></li><li><p class=\"bb_paragraph\" >재료를 합쳐 만드는 우스꽝스러운 무기</p></li><li><p class=\"bb_paragraph\" >완벽한 제작품을 위한 미니게임</p></li><li><p class=\"bb_paragraph\" >이상하고 인상깊은 손님들과의 거래</p></li><li><p class=\"bb_paragraph\" >대장간 업그레이드 및 쓰레기 기반 사업의 자동화</p></li></ul>",
+ "about_the_game": "<p class=\"bb_paragraph\" style=\"text-align: center\"> 쓰레기를 보물로 바꾸는 대장간에 오신 걸 환영합니다. 잡동사니를 이리저리 짜 맞춰 아주 색다른 무기 수천 가지를 만들고, 가게를 업그레이드하고, 새로운 제작법으로 무기고를 넓히세요. 개성 넘치는 드래곤, 할머니, 펭귄, 로봇 등등의 별난 손님들을 만족시키세요.</p><p class=\"bb_paragraph\" > </p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/d27a7af97f287078648a8942dfdf3b4e.webp?t=1789877581\" alt=\"Scavenge the trash\" width=337 height=42 /></span></p><p class=\"bb_paragraph\" >쓰레기 더미를 박박 뒤져 다음 무기로 변신시킬 만한 완벽한 재료를 찾아내세요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/972f78a9f31c1799cbfd8d983304195a.poster.avif?t=1789877581\" aria-label=\"Trash being collected from a trash can\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/972f78a9f31c1799cbfd8d983304195a.webm?t=1789877581\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/972f78a9f31c1799cbfd8d983304195a.mp4?t=1789877581\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/e43d5db66b5e72875a3f7df8e73384d0.webp?t=1789877581\" alt=\"Craft Wacky Weapons\" width=418 height=42 /></span></p><p class=\"bb_paragraph\" >찾아낸 재료를 모아 가장 창의적인 무기를 만들어보세요. 조랑말 망치도 좋고, 쿠키 방패도 멋지겠네요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/55dc5dd85e889d02c0984c01ba63cb45.poster.avif?t=1789877581\" aria-label=\"rhythm minigames being played\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/55dc5dd85e889d02c0984c01ba63cb45.webm?t=1789877581\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/55dc5dd85e889d02c0984c01ba63cb45.mp4?t=1789877581\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/ce020c40edbdae103b406d7d3cdd55cc.webp?t=1789877581\" alt=\"Serve unconventional customers\" width=450 height=42 /></span></p><p class=\"bb_paragraph\" >강아지, 미라, 괴물들까지! 희한한 손님들에게 제작품을 판매하세요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/cc617851976502f3e2ac97e1312c1d9d.poster.avif?t=1789877581\" aria-label=\"Short clips of different customers\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/cc617851976502f3e2ac97e1312c1d9d.webm?t=1789877581\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/cc617851976502f3e2ac97e1312c1d9d.mp4?t=1789877581\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/4338e17876d4ba651d7d430ad892e23d.webp?t=1789877581\" alt=\"Upgrade your store\" width=404 height=42 /></span></p><p class=\"bb_paragraph\" >라쿤 디오게네스에게서 여러 종류의 장식품을 구매해 대장간을 업그레이드하세요.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/6af827e5adca8246f223e563abfe84e2.poster.avif?t=1789877581\" aria-label=\"The black hole upgrade is bought and then used to clean trash\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/6af827e5adca8246f223e563abfe84e2.webm?t=1789877581\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/extras/6af827e5adca8246f223e563abfe84e2.mp4?t=1789877581\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >특징</h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" >쓰레기 더미에서 찾아내는 제작 재료</p></li><li><p class=\"bb_paragraph\" >재료를 합쳐 만드는 우스꽝스러운 무기</p></li><li><p class=\"bb_paragraph\" >완벽한 제작품을 위한 미니게임</p></li><li><p class=\"bb_paragraph\" >이상하고 인상깊은 손님들과의 거래</p></li><li><p class=\"bb_paragraph\" >대장간 업그레이드 및 쓰레기 기반 사업의 자동화</p></li></ul>",
+ "short_description": "고물 보물 공방은 작은 대장간을 운영하는 게임입니다. 쓰레기통을 뒤져서 쓸만한 것들을 모으고 합쳐 바나나 검이나 원반 방패 같은 골때리는 무기(10,000종류 이상!)를 만들어보세요. 업그레이드를 구매하고, 새로운 제작법을 배울 수도 있습니다. 넥타이를 맨 수달이나 스파게티 괴물 같은 요상한 손님들에게 요상한 제작품을 판매해보세요.",
+ "supported_languages": "영어, 스페인어 - 중남미, 일본어, 중국어 간체, 프랑스어, 이탈리아어, 독일어, 한국어, 포르투갈어 - 브라질, 포르투갈어 - 포르투갈, 중국어 번체, 튀르키예어",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/a65f231b5c0bcf309442c87c7ca74070b0d22280/header_koreana.jpg?t=1789877581",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/bc7d7c529076b616ff2ec73c0efad9874ce1a9a6/capsule_231x87_koreana.jpg?t=1789877581",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/bc7d7c529076b616ff2ec73c0efad9874ce1a9a6/capsule_184x69_koreana.jpg?t=1789877581",
+ "website": "https://rogueduck.net",
+ "pc_requirements": {
+  "minimum": "<strong>최소:</strong><br><ul class=\"bb_ul\"><li><strong>운영 체제:</strong> Windows 10<br></li><li><strong>프로세서:</strong> 2코어, 2013년 이후<br></li><li><strong>메모리:</strong> 4 GB RAM<br></li><li><strong>그래픽:</strong> 내장 그래픽<br></li><li><strong>저장 공간:</strong> 200 MB 사용 가능 공간</li></ul>",
+  "recommended": "<strong>권장:</strong><br><ul class=\"bb_ul\"><li><strong>운영 체제:</strong> Windows 11<br></li><li><strong>프로세서:</strong> 2코어, 2013년 이후<br></li><li><strong>메모리:</strong> 4 GB RAM<br></li><li><strong>그래픽:</strong> 내장 그래픽<br></li><li><strong>저장 공간:</strong> 200 MB 사용 가능 공간</li></ul>"
+ },
+ "mac_requirements": [],
+ "linux_requirements": [],
+ "legal_notice": "2026 - Team Momoy, Published by Rogue Duck Interactive LLC and Co-published in Asia Regions (China, Korea, Japan) by Gamersky Games",
+ "developers": [
+  "Team Momoy"
+ ],
+ "publishers": [
+  "Rogue Duck Interactive",
+  "Gamersky Games"
+ ],
+ "demos": [
+  {
+   "appid": 5093300,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "싱글 플레이어"
+  },
+  {
+   "id": 22,
+   "description": "Steam 도전 과제"
+  },
+  {
+   "id": 68,
+   "description": "음량 개별 조절"
+  },
+  {
+   "id": 78,
+   "description": "난이도 조정"
+  },
+  {
+   "id": 76,
+   "description": "마우스 전용 옵션"
+  },
+  {
+   "id": 79,
+   "description": "수시 저장"
+  },
+  {
+   "id": 77,
+   "description": "터치 전용 옵션"
+  },
+  {
+   "id": 23,
+   "description": "Steam Cloud"
+  },
+  {
+   "id": 62,
+   "description": "가족 공유"
+  }
+ ],
+ "genres": [
+  {
+   "id": "4",
+   "description": "캐주얼"
+  },
+  {
+   "id": "23",
+   "description": "인디"
+  },
+  {
+   "id": "28",
+   "description": "시뮬레이션"
+  },
+  {
+   "id": "2",
+   "description": "전략"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/b75883dc531ffb1b9f2396a3e0ef085208f4fd83/ss_b75883dc531ffb1b9f2396a3e0ef085208f4fd83.600x338.jpg?t=1789877581",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/b75883dc531ffb1b9f2396a3e0ef085208f4fd83/ss_b75883dc531ffb1b9f2396a3e0ef085208f4fd83.1920x1080.jpg?t=1789877581"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/3e2322d81a4d66c12258cf76387a400f784fb5a3/ss_3e2322d81a4d66c12258cf76387a400f784fb5a3.600x338.jpg?t=1789877581",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/3e2322d81a4d66c12258cf76387a400f784fb5a3/ss_3e2322d81a4d66c12258cf76387a400f784fb5a3.1920x1080.jpg?t=1789877581"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/7dc26f2998b3d382252f1ca8f8a28e37149c42c7/ss_7dc26f2998b3d382252f1ca8f8a28e37149c42c7.600x338.jpg?t=1789877581",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/7dc26f2998b3d382252f1ca8f8a28e37149c42c7/ss_7dc26f2998b3d382252f1ca8f8a28e37149c42c7.1920x1080.jpg?t=1789877581"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/c50792e33c863ea9687e3e100663c89fa045fb17/ss_c50792e33c863ea9687e3e100663c89fa045fb17.600x338.jpg?t=1789877581",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/c50792e33c863ea9687e3e100663c89fa045fb17/ss_c50792e33c863ea9687e3e100663c89fa045fb17.1920x1080.jpg?t=1789877581"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/117d6233afbae4121df62410a034793ba097b9d8/ss_117d6233afbae4121df62410a034793ba097b9d8.600x338.jpg?t=1789877581",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/117d6233afbae4121df62410a034793ba097b9d8/ss_117d6233afbae4121df62410a034793ba097b9d8.1920x1080.jpg?t=1789877581"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/f175f33d9867d38a309b3afa1df30e2a998ff6e2/ss_f175f33d9867d38a309b3afa1df30e2a998ff6e2.600x338.jpg?t=1789877581",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/f175f33d9867d38a309b3afa1df30e2a998ff6e2/ss_f175f33d9867d38a309b3afa1df30e2a998ff6e2.1920x1080.jpg?t=1789877581"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257429600,
+   "name": "Scrappy Craft Announcement Trailer KR",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257429600/3e8ea765d48252c00d8d275bc75a51a8cf386de2/movie_600x337.jpg?t=1789876581",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/4359360/211404203/0e991399507ac2a18ef1181da7fe6d91e7d1e0c6/1789874578/dash_av1.mpd?t=1789876581",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/4359360/211404203/0e991399507ac2a18ef1181da7fe6d91e7d1e0c6/1789874578/dash_h264.mpd?t=1789876581",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/4359360/211404203/0e991399507ac2a18ef1181da7fe6d91e7d1e0c6/1789874578/hls_264_master.m3u8?t=1789876581",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "2026년 4분기"
+ },
+ "support_info": {
+  "url": "https://rogueduck.net",
+  "email": "tokakburak@gmail.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/4359360?t=1789877581",
+ "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4359360/8652fef1cfa6f2bd516bfc9900f46d2b7222e02f/page_bg_raw.jpg?t=1789877581",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "10",
+   "required_age": "10",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Violência"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "12",
+   "required_age": "12",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Gewalt"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "13",
+   "required_age": "13",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Kekerasan"
+  }
+ }
+}

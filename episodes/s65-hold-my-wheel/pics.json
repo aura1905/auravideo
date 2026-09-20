@@ -1,0 +1,13 @@
+{
+ "name": "HOLD MY WHEEL Demo",
+ "type": "Demo",
+ "depots": [
+  {
+   "depot": 5097471,
+   "gid": "5535435607788657230",
+   "size": 3937229249,
+   "download": 3143925856,
+   "oslist": ""
+  }
+ ]
+}

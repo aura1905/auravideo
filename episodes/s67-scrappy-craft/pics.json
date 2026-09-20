@@ -1,0 +1,13 @@
+{
+ "name": "Scrappy Craft Demo",
+ "type": "Demo",
+ "depots": [
+  {
+   "depot": 5093301,
+   "gid": "8461931708936892979",
+   "size": 351508746,
+   "download": 235054432,
+   "oslist": ""
+  }
+ ]
+}

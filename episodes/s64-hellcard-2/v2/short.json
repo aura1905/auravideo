@@ -1,0 +1,85 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo, and it's the sequel to Hellcard, from the Book of Demons studio.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s2",
+  "text": "The whole dungeon is made of paper, and it pops up out of a book.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.0
+  }
+ },
+ {
+  "id": "s3",
+  "text": "You and your friends fight back-to-back in the middle of a circle of monsters.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 24.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Everything you do is a card. Attack, block, burn.",
+  "vis": {
+   "type": "image",
+   "file": "ss00.jpg"
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Between fights you get little story rooms. A campfire, a cracked eggshell, a sarcophagus you probably shouldn't open.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 17.5
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The trailer barely shows the combat. About five seconds of it.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 25.5
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The demo is nearly five gigs, in thirteen languages, and the full game is due in twenty twenty-seven.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Slay the Spire, with friends and a lot of dragons.",
+  "vis": {
+   "type": "image",
+   "file": "ss06.jpg"
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if paper monsters are your thing.",
+  "vis": {
+   "type": "image",
+   "file": "ss01.jpg"
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

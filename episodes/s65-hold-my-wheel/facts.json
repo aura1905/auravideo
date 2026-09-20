@@ -1,0 +1,40 @@
+{
+ "demo_appid": 5097470,
+ "full_appid": 4410360,
+ "name": "HOLD MY WHEEL",
+ "developers": [
+  "Tessermind"
+ ],
+ "publishers": [
+  "Tessermind"
+ ],
+ "release": "3 Nov, 2026",
+ "coming_soon": true,
+ "genres": [
+  "Action",
+  "Adventure",
+  "Casual",
+  "Indie"
+ ],
+ "languages": "English, French, Italian, German, Polish, Russian, Turkish, Ukrainian, Swedish, Spanish - Spain, Simplified Chinese, Korean, Portuguese - Brazil, Japanese",
+ "website": "https://tessermind.com/games/hold-my-wheel/",
+ "short": "Co-op about keeping your bus running. And not eating your friends.",
+ "about": " Wasteland to Paradise  Cross the scenic wastes with your dudes. Traditional roads are gone - forge your own path.           Home on Wheels  Your bus is your shelter, your transport, and your last line of defense. Lose it and you're walking through hell.  Friends Change  Stay hungry too long and you'll start eyeing your teammates. Get bitten by a zombie or hit by radiation and you turn into one yourself. The squad you started with isn't the one you'll finish with.            Magnetic Gun  Use a unique magnetic gun to lift, flip, and throw your bus anywhere. Just try not to wreck it - it's your only home.             Scrap Cannon  Your bus comes armed. It fires whatever junk you load into it — bottles, cans, scrap. Aim at zombies. Or teammates.            Death is Not the End  Waiting to respawn sucks. Instead, you can become a ghost, a zombie, or a floppy ragdoll. Keep playing with unique perks and limitations until a Hell-Kitty helps you regain your human form.    Junkyard Paradise  Bottles, cans, scrap — anything you find becomes ammo for the Scrap Cannon. Got a battery? Use it to patch up the bus   Features:     5-player co-op bus management      Roof-mounted Scrap Cannon      Magnetic gun: lift, flip, throw the bus      Bridge highways from scrap      Playable Ghost / Zombie / Ragdoll / Hungry states      Voice chat &amp; Online Co-op      Ice-cold Atomic Cola and Green Burger    ",
+ "min_req": " Minimum:    Requires a 64-bit processor and operating system    OS:  WINDOWS 10, 11 (64-BIT)    Processor:  Intel Core i5    Memory:  8 GB RAM    Graphics:  NVIDIA GeForce GTX 1060    DirectX:  Version 10    Storage:  5 GB available space  ",
+ "movies": [
+  {
+   "id": 257400608,
+   "name": "HOLD MY WHEEL - Gameplay"
+  },
+  {
+   "id": 257322370,
+   "name": "HOLD MY WHEEL - Gameplay teaser"
+  }
+ ],
+ "screenshots": 10,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}

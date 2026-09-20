@@ -1,0 +1,188 @@
+{
+ "type": "game",
+ "name": "FailRooms",
+ "steam_appid": 5217440,
+ "required_age": 0,
+ "is_free": false,
+ "controller_support": "full",
+ "dlc": [
+  5246140
+ ],
+ "detailed_description": "<p class=\"bb_paragraph\" ><strong>閉じ込められた？いいえ、ただ「場違い」なだけです。</strong></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >無限に続く空間？はい。暗闇に潜む危険？残念ながら。2人用のトイレ？なぜかあります。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >『Failrooms』へようこそ。本作は、リミナルスペースの裏側に迫る一人称視点の探索ゲームです。未知への緊張感と、史上最悪の建築デザインが真正面から衝突する、無駄にリアルな空間へと飛び込みましょう。</p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" ><strong>都市伝説が隠したがる、もう一つの顔：</strong></h2><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >恐ろしいほど馬鹿げている </h2><p class=\"bb_paragraph\" >意味不明な廊下、天井に続く階段、水のないプールに、高品質なグラフィックを完全に無駄遣い。雰囲気は「危険」を警告していますが、現実はただの「ポンコツ」です。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/5d244ac10a45cd65db24ce38fd00984c.poster.avif?t=1789868673\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/5d244ac10a45cd65db24ce38fd00984c.webm?t=1789868673\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/5d244ac10a45cd65db24ce38fd00984c.mp4?t=1789868673\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >リミナル・パロディ </h2><p class=\"bb_paragraph\" >「The Backrooms」の最も象徴的な要素にツッコミを入れたくなるようなオマージュの数々。あなたの最悪の悪夢に、コミカルなひねりを加えました。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/4179d82d3582173dbbe89eaf78b3d803.poster.avif?t=1789868673\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/4179d82d3582173dbbe89eaf78b3d803.webm?t=1789868673\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/4179d82d3582173dbbe89eaf78b3d803.mp4?t=1789868673\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >決して油断しないでください </h2><p class=\"bb_paragraph\" >ひどすぎるインテリアデザインに笑い始めたその瞬間、この空間はあなたの顔から笑顔を消し去りに来るでしょう。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/4daaff81df4da5251f7247054c180cf6.poster.avif?t=1789868673\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/4daaff81df4da5251f7247054c180cf6.webm?t=1789868673\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/4daaff81df4da5251f7247054c180cf6.mp4?t=1789868673\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >何もない廊下や偽物のドア、そして特にあの「ラバーダック」は絶対に信用しないでください。この次元は、あなたの心と神経を弄ぶのが大好きなのです。 さあ、この建築の悪ふざけを生き延びる覚悟はありますか？</p>",
+ "about_the_game": "<p class=\"bb_paragraph\" ><strong>閉じ込められた？いいえ、ただ「場違い」なだけです。</strong></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >無限に続く空間？はい。暗闇に潜む危険？残念ながら。2人用のトイレ？なぜかあります。</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >『Failrooms』へようこそ。本作は、リミナルスペースの裏側に迫る一人称視点の探索ゲームです。未知への緊張感と、史上最悪の建築デザインが真正面から衝突する、無駄にリアルな空間へと飛び込みましょう。</p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" ><strong>都市伝説が隠したがる、もう一つの顔：</strong></h2><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >恐ろしいほど馬鹿げている </h2><p class=\"bb_paragraph\" >意味不明な廊下、天井に続く階段、水のないプールに、高品質なグラフィックを完全に無駄遣い。雰囲気は「危険」を警告していますが、現実はただの「ポンコツ」です。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/5d244ac10a45cd65db24ce38fd00984c.poster.avif?t=1789868673\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/5d244ac10a45cd65db24ce38fd00984c.webm?t=1789868673\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/5d244ac10a45cd65db24ce38fd00984c.mp4?t=1789868673\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >リミナル・パロディ </h2><p class=\"bb_paragraph\" >「The Backrooms」の最も象徴的な要素にツッコミを入れたくなるようなオマージュの数々。あなたの最悪の悪夢に、コミカルなひねりを加えました。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/4179d82d3582173dbbe89eaf78b3d803.poster.avif?t=1789868673\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/4179d82d3582173dbbe89eaf78b3d803.webm?t=1789868673\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/4179d82d3582173dbbe89eaf78b3d803.mp4?t=1789868673\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >決して油断しないでください </h2><p class=\"bb_paragraph\" >ひどすぎるインテリアデザインに笑い始めたその瞬間、この空間はあなたの顔から笑顔を消し去りに来るでしょう。</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/4daaff81df4da5251f7247054c180cf6.poster.avif?t=1789868673\" width=1170 height=658 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/4daaff81df4da5251f7247054c180cf6.webm?t=1789868673\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/extras/4daaff81df4da5251f7247054c180cf6.mp4?t=1789868673\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >何もない廊下や偽物のドア、そして特にあの「ラバーダック」は絶対に信用しないでください。この次元は、あなたの心と神経を弄ぶのが大好きなのです。 さあ、この建築の悪ふざけを生き延びる覚悟はありますか？</p>",
+ "short_description": "『Failrooms』はリミナルスペースをパロディ化した一人称視点の探索ゲームです。未知の恐怖が想像を絶するほど無能な建築物と衝突する、フォトリアルな環境を探索しましょう。正気を失わずに、この次元のイタズラを生き残れますか？",
+ "supported_languages": "英語<strong>*</strong>, フランス語<strong>*</strong>, イタリア語<strong>*</strong>, ドイツ語<strong>*</strong>, スペイン語 - スペイン<strong>*</strong>, 中国語（簡体字）<strong>*</strong>, 韓国語<strong>*</strong>, 日本語<strong>*</strong>, ロシア語<strong>*</strong>, スペイン語－ラテンアメリカ<strong>*</strong>, ポルトガル語－ブラジル<strong>*</strong><br><strong>*</strong>フル音声対応言語",
+ "reviews": "“Who needs The Backrooms when you got The FailRooms? Better in every possible way, no doubt about it!”<br>Markiplier<br><br>“Failrooms is a very funny Backrooms parody game filled with clever gags, a giant duck and toilets built for two.”<br> Alpha Beta Gamer<br>",
+ "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/8b9d14003ec599deaf71a66863c34bf47b37b960/header.jpg?t=1789868673",
+ "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/e1cac47b2d443ee8eae17fd252b47b700c54bccd/capsule_231x87.jpg?t=1789868673",
+ "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/e1cac47b2d443ee8eae17fd252b47b700c54bccd/capsule_184x69.jpg?t=1789868673",
+ "website": null,
+ "pc_requirements": {
+  "minimum": "<strong>最低:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 10 or newer<br></li><li><strong>プロセッサー:</strong> Intel i5 or AMD Ryzen 5 from around 2016 or later<br></li><li><strong>グラフィック:</strong> NVIDIA GTX 1060 or AMD Radeon RX 580 or newer<br></li><li><strong>ストレージ:</strong> 3 MB の空き容量</li></ul>",
+  "recommended": "<strong>推奨:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 10 or newer<br></li><li><strong>プロセッサー:</strong> Intel i5 or AMD Ryzen 7 from 2018 or later<br></li><li><strong>グラフィック:</strong> NVIDIA GeForce RTX 3060 or AMD Radeon RX 6700 XT or newer<br></li><li><strong>ストレージ:</strong> 4 MB の空き容量</li></ul>"
+ },
+ "mac_requirements": [],
+ "linux_requirements": [],
+ "legal_notice": "© 2026 Andes Interactive. All rights reserved.",
+ "developers": [
+  "Leonn Camayo",
+  "Andes Interactive"
+ ],
+ "publishers": [
+  "Andes Interactive"
+ ],
+ "demos": [
+  {
+   "appid": 5246140,
+   "description": ""
+  }
+ ],
+ "package_groups": [],
+ "platforms": {
+  "windows": true,
+  "mac": false,
+  "linux": false
+ },
+ "categories": [
+  {
+   "id": 2,
+   "description": "シングルプレイヤー"
+  },
+  {
+   "id": 22,
+   "description": "Steam実績"
+  },
+  {
+   "id": 28,
+   "description": "フルコントローラサポート"
+  },
+  {
+   "id": 13,
+   "description": "キャプション使用可能"
+  },
+  {
+   "id": 79,
+   "description": "いつでもセーブ可能"
+  },
+  {
+   "id": 69,
+   "description": "ステレオサウンド"
+  },
+  {
+   "id": 65,
+   "description": "字幕オプション"
+  },
+  {
+   "id": 62,
+   "description": "ファミリーシェアリング"
+  }
+ ],
+ "genres": [
+  {
+   "id": "25",
+   "description": "アドベンチャー"
+  },
+  {
+   "id": "23",
+   "description": "インディー"
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 0,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/a2831e09ca9ad0e829954197b82a74abe9f22608/ss_a2831e09ca9ad0e829954197b82a74abe9f22608.600x338.jpg?t=1789868673",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/a2831e09ca9ad0e829954197b82a74abe9f22608/ss_a2831e09ca9ad0e829954197b82a74abe9f22608.1920x1080.jpg?t=1789868673"
+  },
+  {
+   "id": 1,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/547b8df4e59ab9757e45eb05f0c52655723514d1/ss_547b8df4e59ab9757e45eb05f0c52655723514d1.600x338.jpg?t=1789868673",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/547b8df4e59ab9757e45eb05f0c52655723514d1/ss_547b8df4e59ab9757e45eb05f0c52655723514d1.1920x1080.jpg?t=1789868673"
+  },
+  {
+   "id": 2,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/72f3b9f36e0343ce86a7f9a0d58cc0ccbe65b706/ss_72f3b9f36e0343ce86a7f9a0d58cc0ccbe65b706.600x338.jpg?t=1789868673",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/72f3b9f36e0343ce86a7f9a0d58cc0ccbe65b706/ss_72f3b9f36e0343ce86a7f9a0d58cc0ccbe65b706.1920x1080.jpg?t=1789868673"
+  },
+  {
+   "id": 3,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/7f17f9ced95b108212ebbfe5f23bb996f772c27e/ss_7f17f9ced95b108212ebbfe5f23bb996f772c27e.600x338.jpg?t=1789868673",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/7f17f9ced95b108212ebbfe5f23bb996f772c27e/ss_7f17f9ced95b108212ebbfe5f23bb996f772c27e.1920x1080.jpg?t=1789868673"
+  },
+  {
+   "id": 4,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/71161ddc0a53d0bb21f84349cfb0a60fba9dbbce/ss_71161ddc0a53d0bb21f84349cfb0a60fba9dbbce.600x338.jpg?t=1789868673",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/71161ddc0a53d0bb21f84349cfb0a60fba9dbbce/ss_71161ddc0a53d0bb21f84349cfb0a60fba9dbbce.1920x1080.jpg?t=1789868673"
+  },
+  {
+   "id": 5,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/9a87b774e12857750d5cbd9a9681d4cad409dd6c/ss_9a87b774e12857750d5cbd9a9681d4cad409dd6c.600x338.jpg?t=1789868673",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/9a87b774e12857750d5cbd9a9681d4cad409dd6c/ss_9a87b774e12857750d5cbd9a9681d4cad409dd6c.1920x1080.jpg?t=1789868673"
+  },
+  {
+   "id": 6,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/8c822808478e3fa8e0088d61852400ea25798eb5/ss_8c822808478e3fa8e0088d61852400ea25798eb5.600x338.jpg?t=1789868673",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/8c822808478e3fa8e0088d61852400ea25798eb5/ss_8c822808478e3fa8e0088d61852400ea25798eb5.1920x1080.jpg?t=1789868673"
+  },
+  {
+   "id": 7,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/454837b5472cf23691c971dbccb2663db320a635/ss_454837b5472cf23691c971dbccb2663db320a635.600x338.jpg?t=1789868673",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/454837b5472cf23691c971dbccb2663db320a635/ss_454837b5472cf23691c971dbccb2663db320a635.1920x1080.jpg?t=1789868673"
+  },
+  {
+   "id": 8,
+   "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/dd6edd10bbd0b71bce6e5d00324c387e8b2bc5e3/ss_dd6edd10bbd0b71bce6e5d00324c387e8b2bc5e3.600x338.jpg?t=1789868673",
+   "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5217440/dd6edd10bbd0b71bce6e5d00324c387e8b2bc5e3/ss_dd6edd10bbd0b71bce6e5d00324c387e8b2bc5e3.1920x1080.jpg?t=1789868673"
+  }
+ ],
+ "movies": [
+  {
+   "id": 257423668,
+   "name": "FailRooms Official Trailer 1",
+   "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257423668/b04b8055b689b39ace0a2b722b70d8135c541e92/movie_600x337.jpg?t=1789252640",
+   "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/5217440/1761562584/39f0bddd57fb2936ab317924fc3e4d1d86d2aead/1789252216/dash_av1.mpd?t=1789252640",
+   "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/5217440/1761562584/39f0bddd57fb2936ab317924fc3e4d1d86d2aead/1789252216/dash_h264.mpd?t=1789252640",
+   "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/5217440/1761562584/39f0bddd57fb2936ab317924fc3e4d1d86d2aead/1789252216/hls_264_master.m3u8?t=1789252640",
+   "highlight": true
+  }
+ ],
+ "release_date": {
+  "coming_soon": true,
+  "date": "近日登場"
+ },
+ "support_info": {
+  "url": "andesinteractive@gmail.com",
+  "email": "leonncamayo@gmail.com"
+ },
+ "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5217440?t=1789868673",
+ "background_raw": "https://store.akamai.steamstatic.com/images/storepagebackground/app/5217440?t=1789868673",
+ "content_descriptors": {
+  "ids": [],
+  "notes": null
+ },
+ "ratings": {
+  "dejus": {
+   "rating_generated": "1",
+   "rating": "14",
+   "required_age": "14",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Linguagem imprópria\nViolência\nMedo"
+  },
+  "steam_germany": {
+   "rating_generated": "1",
+   "rating": "16",
+   "required_age": "16",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Horror\nDerbe Sprache"
+  },
+  "igrs": {
+   "rating_generated": "1",
+   "rating": "18",
+   "required_age": "18",
+   "banned": "0",
+   "use_age_gate": "0",
+   "descriptors": "Horor\nPenggunaan bahasa\nKekerasan"
+  }
+ }
+}

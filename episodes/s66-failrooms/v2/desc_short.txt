@@ -1,0 +1,21 @@
+FailRooms — the Backrooms, if the architect had absolutely no idea what they were doing.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5246140/
+
+── The quick version ──
+What you do : walk through liminal spaces and find out what is wrong with each one
+Best bit    : a single toilet on a podium, facing a stadium full of cheering seats
+The catch   : photoreal rooms, but the characters move like looping props
+Demo        : about 890 MB, voice acting in 11 languages
+Full game   : coming soon
+Think       : Escape the Backrooms, rewritten by the Stanley Parable narrator
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Andes Interactive.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

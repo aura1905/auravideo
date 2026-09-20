@@ -1,0 +1,96 @@
+[
+ {
+  "id": "s1",
+  "text": "Free co-op demo about keeping one bus running across a wasteland.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 41.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "And not eating your friends.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "There are no roads left, so you make your own. Someone drives, someone patches the walls from the inside.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 10.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "Your main tool fires magnetic arrows. Stick one to a wreck, one to the ground, and drag it out of the way.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.0
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best part: at the end of the trailer they try to winch the whole bus up a cliff with it.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 79.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "It explodes. Game over.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 84.5
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The catch? The bus slides around like it weighs nothing, and the animations are stiff.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.0
+  }
+ },
+ {
+  "id": "s8",
+  "text": "The demo is almost four gigs, in fourteen languages, and the full game lands November third.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Think Pacific Drive, but the car is a bus and your friends are in it.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 45.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "Worth a dip. Hold my wheel.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 1.0
+  }
+ },
+ {
+  "id": "s11",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

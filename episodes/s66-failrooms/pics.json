@@ -1,0 +1,13 @@
+{
+ "name": "FailRooms Demo",
+ "type": "Demo",
+ "depots": [
+  {
+   "depot": 5246141,
+   "gid": "6299354575448388115",
+   "size": 934534439,
+   "download": 778692064,
+   "oslist": ""
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+HELLCARD II — a co-op deck-builder where the whole dungeon pops up out of a paper book.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5246950/
+
+── The quick version ──
+What you do : fight back-to-back in a circle of monsters, one card at a time
+Best bit    : the papercraft world folding up out of the book
+The catch   : the trailer shows about five seconds of actual combat
+Demo        : about 4.7 GB, 13 languages
+Full game   : Q1 2027
+Think       : Slay the Spire, with friends and a lot of dragons
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Thing Trunk.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

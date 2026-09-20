@@ -1,0 +1,21 @@
+HOLD MY WHEEL — a co-op demo about keeping one bus alive, and not eating your friends.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5097470/
+
+── The quick version ──
+What you do : drive, patch the walls, drag wrecks out of the way with magnetic arrows
+Best bit    : winching the whole bus up a cliff, right before it explodes
+The catch   : the bus slides like it weighs nothing and the animations are stiff
+Demo        : about 3.7 GB, 14 languages
+Full game   : 3 Nov 2026
+Think       : Pacific Drive, but the car is a bus and your friends are in it
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Tessermind.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

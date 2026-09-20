@@ -1,0 +1,21 @@
+Scrappy Craft — a forge where the raw material is garbage and the hammer has teeth.
+
+▶ Steam demo (free): https://store.steampowered.com/app/5093300/
+
+── The quick version ──
+What you do : scavenge junk, forge it into absurd weapons, sell them to strange customers
+Best bit    : a portal opening over the bin and dumping a mountain of trash
+The catch   : the crafting itself is one timing bar
+Demo        : about 335 MB, 12 languages
+Full game   : Q4 2026
+Think       : Potion Craft, if the potions were cursed junk
+Verdict     : Worth A Dip
+
+Numbers come from the Steam store page and Steam's public product info; the rest
+comes from watching the official trailer. No files were downloaded, unpacked,
+decompiled, or redistributed. It is an outside reading, not a statement from the
+developer. All game footage and images belong to Team Momoy.
+
+Made by someone who's been building games for over twenty years.
+
+#indiedev #gamedev #steamdemo

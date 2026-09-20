@@ -1,0 +1,20 @@
+{
+ "name": "HELLCARD II Demo",
+ "type": "Demo",
+ "depots": [
+  {
+   "depot": 5246951,
+   "gid": "5119039208289186302",
+   "size": 3355637329,
+   "download": 2817706032,
+   "oslist": ""
+  },
+  {
+   "depot": 5246952,
+   "gid": "647756202127920029",
+   "size": 1704366080,
+   "download": 374700432,
+   "oslist": ""
+  }
+ ]
+}

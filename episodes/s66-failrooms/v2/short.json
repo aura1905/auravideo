@@ -1,0 +1,85 @@
+[
+ {
+  "id": "s1",
+  "text": "Free demo: it's the Backrooms, except the architect had no idea what they were doing.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 3.0
+  }
+ },
+ {
+  "id": "s2",
+  "text": "Same yellow wallpaper, same humming lights, same feeling that you shouldn't be here.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s3",
+  "text": "Then you walk into a white tiled room where a single toilet sits on a podium, facing a stadium full of seats.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 18.0
+  }
+ },
+ {
+  "id": "s4",
+  "text": "And the crowd is cheering.",
+  "vis": {
+   "type": "continue"
+  }
+ },
+ {
+  "id": "s5",
+  "text": "Best bits: a skeleton stuck halfway through a wall, and a giant rubber duck in an indoor pool.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 21.0
+  }
+ },
+ {
+  "id": "s6",
+  "text": "The catch? The rooms look photorealistic, but the characters move like looping props.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 9.0
+  }
+ },
+ {
+  "id": "s7",
+  "text": "The demo is under nine hundred megabytes, with voice acting in eleven languages.",
+  "vis": {
+   "type": "image",
+   "file": "ev_facts_v.png"
+  }
+ },
+ {
+  "id": "s8",
+  "text": "Think Escape the Backrooms, rewritten by the Stanley Parable narrator.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 13.5
+  }
+ },
+ {
+  "id": "s9",
+  "text": "Worth a dip if liminal spaces make you laugh instead of scared.",
+  "vis": {
+   "type": "video",
+   "file": "t0.mp4",
+   "in": 6.0
+  }
+ },
+ {
+  "id": "s10",
+  "text": "That's Demo Dip.",
+  "vis": {
+   "type": "continue"
+  }
+ }
+]

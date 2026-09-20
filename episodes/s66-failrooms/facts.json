@@ -1,0 +1,35 @@
+{
+ "demo_appid": 5246140,
+ "full_appid": 5217440,
+ "name": "FailRooms",
+ "developers": [
+  "Leonn Camayo",
+  "Andes Interactive"
+ ],
+ "publishers": [
+  "Andes Interactive"
+ ],
+ "release": "Coming soon",
+ "coming_soon": true,
+ "genres": [
+  "Adventure",
+  "Indie"
+ ],
+ "languages": "English*, French*, Italian*, German*, Spanish - Spain*, Simplified Chinese*, Korean*, Japanese*, Russian*, Spanish - Latin America*, Portuguese - Brazil**languages with full audio support",
+ "website": null,
+ "short": "Failrooms is a first-person exploration game that parodies liminal spaces. Delve into photorealistic environments where the terror of the unknown collides with the most incompetent architecture imaginable. Can you survive this dimensional prank without losing your mind?",
+ "about": "  You're not trapped, you're just misplaced.         Infinite spaces? Yes. Dangers lurking in the dark? Unfortunately. A toilet built for two? Definitely.    Welcome to  Failrooms , a first-person exploration game that takes you behind the scenes of liminal spaces. Get ready to immerse yourself in a photorealistic environment where the tension of the unknown collides head-on with the worst architectural design choices imaginable.       Discover the side the creepypastas don't want you to see:   Terrifyingly absurd  High-quality graphics completely wasted on nonsensical hallways, ceiling stairs, and waterless pools. The atmosphere screams &quot;danger,&quot; but reality screams &quot;incompetence.&quot;             Liminal parody  Explore ridiculous versions and direct references to the most iconic elements of the Backrooms, giving a comedic twist to your worst nightmares.             Don't let your guard down  Just when you start laughing at the terrible interior design, the place will make sure to wipe that smile right off your face.               Never trust an empty hallway, or fake doors, and  especially  not that rubber duck. This dimension loves to play with your mind... and your nerves. Do you have what it takes to survive this architectural prank? ",
+ "min_req": " Minimum:     OS:  Windows 10 or newer    Processor:  Intel i5 or AMD Ryzen 5 from around 2016 or later    Graphics:  NVIDIA GTX 1060 or AMD Radeon RX 580 or newer    Storage:  3 MB available space  ",
+ "movies": [
+  {
+   "id": 257423668,
+   "name": "FailRooms Official Trailer 1"
+  }
+ ],
+ "screenshots": 9,
+ "reviews": {
+  "total": 0,
+  "positive": 0,
+  "desc": "No user reviews"
+ }
+}
